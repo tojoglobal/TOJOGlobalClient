@@ -1,0 +1,294 @@
+/*
+ * Team Page  style  *
+  
+ */
+.meetOurteamHeroTextStyleDiv {
+    position: relative;
+    z-index: 20;
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.meetOurteamHeroTextStyleDiv h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 4.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 5.1rem */
+
+}
+
+.meetOurTeamHeroStyleTextDiv {
+    background: var(--Gradient2, linear-gradient(249deg, #18C8FF 19.43%, #C608FF 77.43%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Poppins;
+
+}
+
+.meetOurteamHeroTextStyleDiv p {
+    color: #FFF;
+    text-align: center;
+    /* font-family: "--font-poppins"; */
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125rem;
+}
+
+.meetOurTeamHeroGradinetDiv {
+    position: absolute;
+    top: -36rem;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    width: 78.1875rem;
+    height: 43.625rem;
+    border-radius: 78.1875rem;
+    background: linear-gradient(242deg, rgba(198, 8, 255, 0.79) 14.09%, #18C8FF 91.45%);
+    filter: blur(71.69999694824219px);
+}
+
+/* ====================== */
+/* teamMemberCard_div */
+/* ================================== */
+.teamMemberCardMain_div {
+    position: relative;
+}
+
+.teamMemberCardMain_div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background: url(/Images/homePage/ClientReviewBgGradient.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+/* .teamMemberCardMain_div {
+    position: relative;
+    min-height: 40rem;
+}
+
+.teamMemberCardMain_div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/Images/homePage/ClientReviewBgGradient.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+} */
+
+
+.teamMemberCard_div {
+    min-width: 76.9375rem;
+    width: 100%;
+    /* max-height: 94.3125rem; */
+    border-radius: 3.125rem;
+    backdrop-filter: blur(12.5px);
+    padding: 2.75rem 3.44rem;
+    background: linear-gradient(180deg,
+            rgba(119, 201, 255, 0.2) 0%,
+            rgba(131, 135, 137, 0.024) 100%);
+    box-shadow: 0px 14px 25px 11px rgba(23, 20, 80, 0.35);
+    box-sizing: border-box;
+    border: 1px solid #ffffff70;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 4rem;
+}
+
+.teamMemberCard_div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: -1;
+    border-radius: inherit;
+}
+
+.teamMemberCard_header_container {
+    position: relative;
+}
+
+.teamMemberCard_header_container::after {
+    content: "";
+    position: absolute;
+    top: 85%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    width: 77%;
+    height: 0.1rem;
+    border-radius: 50%;
+    background: var(--Gradient1, linear-gradient(249deg, #18C8FF 19.43%, #C608FF 77.43%));
+    backdrop-filter: blur(12.5px);
+    z-index: 10;
+}
+
+.teamMemberCard_header_container h1 {
+    width: 20%;
+    text-align: left;
+    color: var(--WHite, #FFF);
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+/* ====================== */
+/* teamMember_image_div  */
+/* ================================== */
+.teamMember_image_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.2rem;
+}
+
+.teamMemberCard_image_container {
+    position: relative;
+    min-width: 22rem;
+    width: 100%;
+    height: 24.8125rem;
+    border-radius: 1.5625rem;
+    border: 1px solid var(--strke-knr, #FFF);
+    box-shadow: 0px 0px 24.8px 11px rgba(24, 200, 255, 0.20);
+    overflow: hidden;
+}
+
+
+/* Info Container - Initial State */
+.teamMemberCard_info_container {
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(7.5px);
+    color: white;
+    opacity: 0;
+    transform: translateZ(10px);
+    transition: all 0.5s ease-in-out;
+    border-bottom-left-radius: 1.5625rem;
+    border-bottom-right-radius: 1.5625rem;
+
+}
+
+
+.teamMemberCard_info_container h2 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.teamMemberCard_info_container p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+
+
+.teamMemberCard_image_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.4925rem;
+}
+
+.teamMemberCard_image_container img {
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+}
+
+.teamMemberCard_image_container img {
+    float: left;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+
+.teamMemberCard_image_container:hover img {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+
+}
+
+/* Hover Effect on Info Container */
+.teamMemberCard_image_container:hover .teamMemberCard_info_container {
+    opacity: 1;
+    transform: translateZ(0px);
+    bottom: 0;
+
+}
+
+
+/* ====================== */
+/* media query  */
+/* ================================== */
+/* desktop */
+@media (max-width: 1398px) {
+    /* ...
+        // rules here apply to devices from 1202px to 1398px (inclusive)
+        ... */
+}
+
+/* laptop Media Queries */
+@media (max-width: 1200px) {
+    /* ...
+        // rules here apply to devices from 993px to 1200px (inclusive)
+        ... */
+}
+
+/* tab device */
+@media (max-width: 992px) {
+    /* ...
+        // rules here apply to devices from 769px to 992px (inclusive)
+        ... */
+}
+
+/* moblie device  */
+@media (max-width: 768px) {
+    /* ...
+        // rules here apply to devices from 0px to 768px (inclusive)
+        ... */
+}
+
+/* optional */
+
+/* vary small device  */
+@media (max-width: 460px) {
+    /* ...
+        // rules here apply to devices from 0px to 460px (inclusive)
+        ... */
+}

@@ -1,0 +1,1271 @@
+/* community-management */
+.univarsal_service_padding {
+  padding: 0rem 0.39rem 2.8rem 0rem;
+}
+
+.univarsal_service_padding_second_div {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.communityManagement_top_part {
+  background: #060044;
+  padding-bottom: 9.85rem;
+}
+
+.communityManagement_hero_part {
+  padding: 5.3rem 4.39rem 6.8rem 5rem;
+  position: relative;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1550' height='1143' viewBox='0 0 1280 915' fill='none'><g filter='url(%23filter0_f_337_4608)'><path d='M871.213 451.958C1172.84 493.029 1247.11 658.56 1246.54 736.191L1246.6 742.641C1235.95 750.696 1231.12 612.95 1128.01 656.653C989.518 715.35 1099.28 613.052 925.021 632.085C750.758 651.118 811.738 702.161 737.276 585.444C662.813 468.726 634.826 435.441 580.488 475.941C526.15 516.44 576.667 619.187 500.355 650.214C424.044 681.241 467.492 576.978 359.583 393.481C251.673 209.984 190.585 494.392 162.075 543.683C133.566 592.975 59.6377 186.605 74.1781 158.087C88.7186 129.568 184.584 124.809 288.743 250.927C392.902 377.045 817.251 116.364 850.287 208.306C883.324 300.248 494.18 400.62 871.213 451.958Z' fill='url(%23paint0_linear_337_4608)'/><path d='M871.213 451.958C1172.84 493.029 1247.11 658.56 1246.54 736.191L1246.6 742.641C1235.95 750.696 1231.12 612.95 1128.01 656.653C989.518 715.35 1099.28 613.052 925.021 632.085C750.758 651.118 811.738 702.161 737.276 585.444C662.813 468.726 634.826 435.441 580.488 475.941C526.15 516.44 576.667 619.187 500.355 650.214C424.044 681.241 467.492 576.978 359.583 393.481C251.673 209.984 190.585 494.392 162.075 543.683C133.566 592.975 59.6377 186.605 74.1781 158.087C88.7186 129.568 184.584 124.809 288.743 250.927C392.902 377.045 817.251 116.364 850.287 208.306C883.324 300.248 494.18 400.62 871.213 451.958Z' stroke='%23B74A4A'/></g><defs><filter id='filter0_f_337_4608' x='-98.7965' y='-29.6527' width='1516.5' height='943.735' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/><feGaussianBlur stdDeviation='85.3' result='effect1_foregroundBlur_337_4608'/></filter><linearGradient id='paint0_linear_337_4608' x1='296.08' y1='205.011' x2='659.254' y2='883.344' gradientUnits='userSpaceOnUse'><stop stop-color='%2318C8FF'/><stop offset='1' stop-color='%23C608FF'/></linearGradient></defs></svg>");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.communityManagement_hero_part_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-right: 4.38rem;
+  padding-left: 5rem; */
+  gap: 0.75rem;
+  flex-shrink: 1;
+}
+
+.communityManagement_hero_text_div h1 {
+  color: #fff;
+  text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.communityManagement_hero_text_style_telegram {
+  background: linear-gradient(241deg, #18c8ff 14.59%, #c608ff 59.76%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.125rem;
+}
+
+.communityManagement_hero_text_div p {
+  color: #fff;
+  text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
+
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-right: 11.06rem;
+}
+
+.communityManagement_hero_part_image_div img {
+  width: 38.875rem;
+  height: 38.875rem;
+}
+
+.communityManagement_second_part {
+  padding: 0rem 4.39rem 0.8rem 5rem;
+  margin-top: -2rem;
+}
+
+.communityManagement_second_part_div {
+  padding-left: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.communityManagement_second_part_image_div {
+  position: relative;
+}
+
+.communityManagement_second_part_image_div::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  width: 36.375rem;
+  height: 36.6875rem;
+  border-radius: 36.6875rem;
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  filter: blur(125px);
+}
+
+.communityManagement_second_part_image_div img {
+  border-radius: 1.875rem;
+  background: lightgray 50% / cover no-repeat;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.35);
+  position: relative;
+  z-index: 10;
+}
+
+.communityManagement_second_text_div {
+  display: flex;
+  width: 57%;
+  padding: 7rem 1rem 7rem 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9375rem;
+  flex-shrink: 0;
+  border-radius: 1.5625rem;
+  border: var(--sds-size-stroke-border) solid var(--strke-knr, #fff);
+  background: rgba(24, 200, 255, 0.15);
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(50px);
+  transform: translateX(-7%);
+}
+
+.communityManagement_second_text_div h4 {
+  color: #fff;
+  text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
+
+  /* font-size: 1.5rem; */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.communityManagement_second_text_div p {
+  color: #fff;
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+/* =============================================================== */
+/* communityManagement Crypto project */
+.communityManagement_Crypto_project {
+  background: #081457;
+  padding-top: 3.19rem;
+  padding-bottom: 3.19rem;
+}
+
+.communityManagement_Crypto_project_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.19rem;
+}
+
+.communityManagement_Crypto_project_div h1 {
+  color: #fff;
+
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.125rem;
+  width: 37.1875rem;
+}
+
+.communityManagement_Crypto_project_Card div:nth-child(1) {
+  border-radius: 1.5625rem;
+  border: 1px solid #818080c4;
+  background: rgba(24, 200, 255, 0.15);
+  backdrop-filter: blur(50px);
+  padding: 2.19rem 1.19rem 2.29rem 3.29rem;
+  width: 26.37075rem;
+  height: 11.92963rem;
+  position: relative;
+  margin-bottom: 2.44rem;
+}
+
+.communityManagement_Crypto_project_Card div:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -35px;
+  transform: translateY(-50%);
+  width: 4.46488rem;
+  height: 4.46488rem;
+  padding: 5px;
+  border-radius: 1.5625rem;
+  background-color: #5d6af2;
+  background-image: url("/Images/ServicesImage/icons/comunity-mangement-discord-image.png");
+  background-size: calc(100% - 20px);
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.communityManagement_Crypto_project_Card div:nth-child(2) {
+  border-radius: 1.5625rem;
+  border: 1px solid #818080c4;
+  background: rgba(24, 200, 255, 0.15);
+  backdrop-filter: blur(50px);
+  padding: 2.19rem 1.19rem 2.29rem 3.29rem;
+  width: 26.37075rem;
+  height: 11.92963rem;
+  position: relative;
+  margin-bottom: 2.44rem;
+}
+
+.communityManagement_Crypto_project_Card div:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -35px;
+  transform: translateY(-50%);
+  width: 4.46488rem;
+  height: 4.46488rem;
+  border-radius: 1.5625rem;
+  background-color: #088cce;
+  background-image: url("/Images/ServicesImage/icons/comunity-mangement-telegram-image.png");
+  background-size: calc(100% - 20px);
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.communityManagement_Crypto_project_Card div p {
+  color: #fff;
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+/* ======================================== */
+/* community Management  all features */
+
+.communityManagement_features {
+  background: #060044;
+}
+
+.communityManagement_features_div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 3.16rem;
+  padding: 8.31rem 0rem;
+}
+
+.features_circel_div {
+  position: relative;
+}
+
+.features_cirecle {
+  width: 16.68056rem;
+  height: 16.38656rem;
+  border-radius: 16.68056rem;
+  background: #060044;
+  box-shadow: 0px 4px 15.2px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 50;
+  transition: filter 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.features_cirecle:hover {
+  filter: brightness(0.9);
+}
+
+.features_cirecle::before {
+  content: "";
+  width: 20rem;
+  height: 20rem;
+  border-radius: 71.6875rem;
+  background: linear-gradient(247deg,
+      rgba(24, 201, 255, 0.705) 11.9%,
+      rgba(197, 8, 255, 0.623) 82.04%);
+  filter: blur(125.4px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.features_middle_cirecle {
+  width: 18.68056rem;
+  height: 10.38656rem;
+  border-radius: 0 0 156px 156px;
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  position: absolute;
+  top: 112px;
+  left: -17px;
+  z-index: 5;
+}
+
+.features_cirecle p {
+  color: #fff;
+  text-align: center;
+
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.625rem;
+  width: 13.125rem;
+  height: 7.17206rem;
+}
+
+.features_cirecle:hover::before {
+  filter: blur(150px) brightness(0.9);
+}
+
+/* circule mangement  */
+.features_div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.9rem;
+  margin-bottom: 2.59rem;
+}
+
+.features_text_div {
+  width: 15.75rem;
+  text-align: right;
+}
+
+.features_text_div h6 {
+  color: var(--Color-2, #18c8ff);
+
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6875rem;
+}
+
+.features_text_div p {
+  color: #fff;
+
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+/* text left center div outline ---- */
+.center_text_left_center_div_outline {
+  position: relative;
+  margin-top: -5px;
+}
+
+.center_text_left_center_frist_outline {
+  width: 9px;
+  height: 4.5rem;
+  background: #18c8ff;
+}
+
+.center_text_left_center_second_outline {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 0.2rem;
+  background: #18c8ff;
+}
+
+.left_text_top_bottom_second_outline {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6rem;
+  height: 0.2rem;
+  background: #18c8ff;
+}
+
+.topBottom_left_cirecel {
+  z-index: 10;
+  left: 3.2rem;
+}
+
+.features_small_circel {
+  width: 7.0625rem;
+  height: 6.97744rem;
+  position: relative;
+  border-radius: 16.68056rem;
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  box-shadow: 0px 4px 15.2px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+/* text right div outline ---- */
+.features_right_text_div {
+  width: 15.75rem;
+  text-align: left;
+}
+
+.features_right_text_div h6 {
+  color: var(--Color-2, #18c8ff);
+
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6875rem;
+}
+
+.features_right_text_div p {
+  color: #fff;
+
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+.topBottom_right_cirecel {
+  z-index: 15;
+  left: -3.2rem;
+}
+
+.topBottom_text_right_div_outline {
+  position: relative;
+}
+
+.center_text_right_center_second_outline {
+  position: absolute;
+  top: 50%;
+  left: -3rem;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 0.2rem;
+  background: #18c8ff;
+}
+
+.right_text_top_bottom_second_outline {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 6rem;
+  height: 0.2rem;
+  background: #18c8ff;
+}
+
+.left_sideFeatcher {
+  margin-right: 50px;
+}
+
+.right_sideFeatcher {
+  margin-left: 50px;
+}
+
+/* ===================== */
+/* services contact us section */
+.services_contactus_text_div {
+  margin-top: 1rem;
+}
+
+.service_contact_us {
+  color: var(--Color-2, #18c8ff);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.service_contactus_text_heading {
+  color: #fff;
+
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.service_contactus_text_para {
+  color: #fff;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.service_contactus_bottom_text_div {
+  margin-top: 6.4rem;
+  counter-reset: section;
+}
+
+.service_contactus_bottom_text_div h4 {
+  color: #fff;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 2.9rem;
+}
+
+.service_contactus_bottom_text_div .service_contactus_bottom_para_div p {
+  color: #fff;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 2rem;
+}
+
+/* Increment the counter and add it as content */
+.service_contactus_bottom_para_div p::before {
+  counter-increment: section;
+  content: counter(section);
+  position: absolute;
+  left: -36px;
+  width: 25px;
+  height: 25px;
+  background-color: #18c8ff;
+  border-radius: 50%;
+  color: #060044;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* services offfers */
+
+.communityManagement_service_offers_heading {
+  color: #fff;
+  text-align: center;
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+
+.communityManagement_service_offers {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-content: center;
+  gap: 0.9rem;
+  margin-top: 2.81rem;
+  margin-bottom: 13.5rem;
+}
+
+.communityManagement_service_offers_div {
+  padding: 1.5rem;
+  height: 9.875rem;
+  border-radius: 0.625rem;
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  position: relative;
+}
+
+.communityManagement_service_offers_div:hover {
+  background: var(--BG-15, rgba(24, 200, 255, 0.10));
+}
+
+.communityManagement_service_offers_div::before {
+  content: "";
+  width: 3px;
+  height: 9.575rem;
+  border-radius: 1.625rem;
+  background: linear-gradient(247deg,
+      rgba(24, 201, 255, 0.705) 11.9%,
+      rgba(197, 8, 255, 0.623) 82.04%);
+  position: absolute;
+  left: -2px;
+}
+
+.communityManagement_service_offers_img_div {
+  width: 6.375rem;
+  height: 3.375rem;
+  border-radius: 2.1875rem;
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.communityManagement_service_offers_img_div img {
+  width: 3.275rem;
+}
+
+.GrowthManagement_img {
+  width: 2.5rem !important;
+}
+
+.communityManagement_service_offers_div h4 {
+  color: #fff;
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+.communityManagement_service_offers_div p {
+  color: #fff;
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+/* managementHelp  section */
+.managementHelp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.37rem;
+  margin-bottom: 13.6rem;
+}
+
+.managementHelp_image_div {
+  position: relative;
+  z-index: 1;
+}
+
+.managementHelp_image_div::before {
+  content: "";
+  position: absolute;
+  top: -3.19rem;
+  left: -3.69rem;
+  width: 10.6875rem;
+  height: 10.6875rem;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='183' height='183' viewBox='0 0 183 183' fill='none'%3E%3Cg filter='url(%23filter0_f_428_6599)'%3E%3Ccircle cx='91.5' cy='91.5' r='85.5' fill='%2318C8FF'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_428_6599' x='0.7' y='0.7' width='181.6' height='181.6' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='2.65' result='effect1_foregroundBlur_428_6599'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(2.6500000953674316px);
+}
+
+.managementHelp_image_div::after {
+  content: "";
+  position: absolute;
+  bottom: -1.56rem;
+  right: -1.69rem;
+  width: 7.6875rem;
+  height: 7.6875rem;
+  border-radius: 2rem;
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  filter: blur(4.900000095367432px);
+  z-index: -1;
+}
+
+.managementHelp_text_div {
+  margin-top: 2.37rem;
+  width: 34.625rem;
+}
+
+.managementHelp_text_div h2 {
+  color: #fff;
+
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.375rem;
+  margin-bottom: 1.94rem;
+}
+
+.managementHelp_text_div p {
+  color: var(--Color-4, #818cb6);
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+/* services faq  */
+.services_management_faqs {
+  padding-top: 3.69rem;
+  padding-bottom: 13.6rem;
+  width: 47.875rem;
+  margin: 0 auto;
+}
+
+/* ====================== */
+/* media query  */
+/* ================================== */
+/* desktop */
+@media (max-width: 1398px) {
+
+  /* ...
+     rules here apply to devices from 1200px to 1398px (inclusive)
+      ... */
+  .univarsal_service_padding_second_div {
+    padding-right: 0.38rem;
+    padding-left: 0.3rem;
+  }
+
+  .communityManagement_hero_part_div {
+    padding-right: 0.38rem;
+    padding-left: 0rem;
+  }
+
+  .communityManagement_hero_part_image_div img {
+    width: 32.875rem;
+    height: 31.875rem;
+  }
+
+  .communityManagement_service_offers_div {
+    height: 100%;
+  }
+
+  .communityManagement_service_offers_div::before {
+    height: 100%;
+  }
+
+  .communityManagement_second_part_div {
+    padding-left: 2rem;
+  }
+
+  .communityManagement_second_text_div {
+    display: flex;
+    width: 61%;
+    padding: 1.25rem 3rem;
+    transform: translateX(-4%);
+  }
+
+  .communityManagement_service_offers {
+    margin-bottom: 5rem;
+  }
+
+  .managementHelp {
+    margin-bottom: 6.6rem;
+  }
+
+  .communityManagement_features_div {
+    gap: 1.16rem;
+  }
+}
+
+/* laptop Media Queries */
+@media (max-width: 1200px) {
+
+  /* ...
+   rules here apply to devices from 993px to 1200px (inclusive)
+      ... */
+  .communityManagement_hero_part_image_div img {
+    width: 27.875rem;
+    height: 25.875rem;
+  }
+
+  .communityManagement_hero_text_div h1 {
+    line-height: 2.8rem;
+  }
+
+  .communityManagement_hero_part {
+    padding: 5.3rem 2.39rem 6.8rem 2.5rem;
+  }
+
+  .communityManagement_Crypto_project_div {
+    padding-top: 3rem;
+  }
+
+  .managementHelp_image_div img {
+    width: 100%;
+  }
+
+  .communityManagement_second_text_div {
+    width: 34.375rem;
+    height: 19.125rem;
+    margin-left: -20rem;
+  }
+
+  .communityManagement_second_text_div h4 {
+    padding-top: 1rem !important;
+  }
+
+  .features_cirecle {
+    width: 13.68056rem;
+    height: 13.38656rem;
+  }
+
+  .features_middle_cirecle {
+    width: 15.98056rem;
+    height: 7.58656rem;
+    top: 109px;
+    left: -18px;
+  }
+
+  .features_cirecle p {
+    font-size: 2.2rem;
+    width: 11.125rem;
+  }
+
+  .features_small_circel {
+    width: 4.0625rem;
+    height: 3.97744rem;
+  }
+
+  .features_small_circel img {
+    width: 2.475rem;
+  }
+
+  .left_sideFeatcher {
+    margin-right: 26px;
+  }
+
+  .right_sideFeatcher {
+    margin-left: 23px;
+  }
+
+  .topBottom_left_cirecel {
+    z-index: 10;
+    left: 2.2rem;
+  }
+
+  .topBottom_right_cirecel {
+    z-index: 15;
+    left: -2.2rem;
+  }
+
+  .center_text_left_center_frist_outline {
+    width: 4px;
+  }
+
+  .univarsal_service_padding {
+    padding: 0rem 2.39rem 0.8rem 2rem;
+  }
+
+  .communityManagement_second_part_image_div::before {
+    left: 3px;
+  }
+
+  .communityManagement_second_part {
+    padding: 0rem 2.39rem 0.8rem 2rem;
+  }
+}
+
+/* tab device */
+@media (max-width: 992px) {
+
+  /* ...
+      rules here apply to devices from 769px to 992px (inclusive)
+      ... */
+  /* hero  part style */
+
+  .communityManagement_hero_part {
+    padding: 7.3rem 1.39rem 4.8rem 2.5rem;
+  }
+
+  .communityManagement_hero_part_image_div img {
+    width: 18.875rem;
+    height: 19.875rem;
+  }
+
+
+  .communityManagement_hero_text_div h1 {
+    font-size: 2rem;
+  }
+
+  .communityManagement_hero_text_style_telegram {
+    font-size: 2rem;
+  }
+
+  .communityManagement_hero_text_div p {
+    margin-right: 0.06rem;
+  }
+
+  .hero_btn_style {
+    flex-direction: column;
+    gap: 0.525rem !important;
+    margin-top: 0rem !important;
+  }
+
+  /* fetcher circel  */
+  .features_cirecle {
+    width: 11.68056rem;
+    height: 11.38656rem;
+  }
+
+
+  .features_cirecle p {
+    font-size: 2rem;
+    width: 10.125rem;
+  }
+
+  .features_middle_cirecle {
+    width: 13.2056rem;
+    height: 6.88656rem;
+    top: 85px;
+    left: -12px;
+  }
+
+  .left_sideFeatcher {
+    margin-right: 14px;
+  }
+
+  .right_sideFeatcher {
+    margin-left: 13px;
+  }
+
+  .features_right_text_div {
+    width: 11.75rem;
+    text-align: left;
+  }
+
+  .features_text_div {
+    width: 11.75rem;
+    text-align: right;
+  }
+
+  .features_div {
+    margin-bottom: 1.59rem;
+    gap: 0.4rem;
+  }
+
+  /* tojo global offer you  */
+  .communityManagement_service_offers_div {
+    padding: 1rem;
+  }
+
+  /* comunity management second text div */
+  .communityManagement_second_text_div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .communityManagement_second_part_image_div img {
+    display: none;
+  }
+
+  .communityManagement_second_text_div h4 {
+    padding-top: 1.7rem !important;
+  }
+
+  .communityManagement_second_text_div {
+    padding: 0.25rem 0.9rem;
+    gap: 0.2375rem;
+    transform: translateX(-5%);
+  }
+
+  /* communityManagement_Crypto_project_div */
+
+  .communityManagement_Crypto_project_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.19rem;
+  }
+
+  .communityManagement_Crypto_project_div h1 {
+    text-align: center;
+    width: 75%;
+  }
+
+  /* communityManagement_service_offers */
+  .communityManagement_service_offers {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 7.5rem;
+  }
+
+  /* managementHelp */
+  .managementHelp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.37rem;
+    margin-bottom: 13.6rem;
+  }
+
+}
+
+/* moblie device  */
+@media (max-width: 768px) {
+  /* ...
+      rules here apply to devices from 500px to 768px (inclusive)
+      ... */
+
+  /* community mangement hero part div */
+  .communityManagement_hero_part {
+    padding: 4.3rem 1.39rem 4.8rem 2.5rem;
+  }
+
+  .communityManagement_hero_part_div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.38rem;
+    padding-left: 0rem;
+  }
+
+  .communityManagement_hero_text_div {
+    order: 2
+  }
+
+  .communityManagement_hero_part_image_div {
+    order: 1
+  }
+
+  .communityManagement_hero_part_image_div img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .communityManagement_second_part_image_div::before {
+
+    width: 28.375rem;
+    height: 35.6875rem;
+
+  }
+
+  .communityManagement_Crypto_project_div h1 {
+    text-align: center;
+    width: 90%;
+  }
+
+  /* fetcher circel  */
+  .communityManagement_service_section {
+    margin-top: 4rem;
+    /* padding: 0rem 1.39rem 0.8rem 0rem; */
+  }
+
+  .community_management_key_fetcher {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .searchEngineMarketing_WhoHelp_top_text_div p {
+    margin-top: 1.69rem;
+    max-width: 81%;
+  }
+
+  .communityManagemtn_keyfetcher_main_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-top: 3.38rem;
+    gap: 0.81rem;
+    position: relative;
+  }
+
+  .searchEngineMarketing_leadGenaration_card_div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+}
+
+
+/* vary small device  */
+@media (max-width: 500px) {
+
+  /* ...
+       rules here apply to devices from 0px to 500px (inclusive)
+      ... */
+  /* univarsal  */
+  .univarsal_service_padding {
+    padding: 0rem 0.39rem 0.8rem 0rem;
+  }
+
+  /* contact use div from  */
+  .univarsal_service_padding_second_div {
+    padding-right: 0.58rem;
+    padding-left: 0.9rem;
+  }
+
+  .managementHelp {
+    margin-bottom: 2.6rem;
+  }
+
+  .communityManagement_hero_text_style_telegram {
+    font-size: 28px !important;
+    font-family: var(--font-poppins) !important;
+    line-height: 2rem;
+  }
+
+
+  /* community mangement top  */
+  .communityManagement_top_part {
+    background: #060044;
+    padding-bottom: 2.85rem;
+  }
+
+  .communityManagement_hero_text_div h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  /* leadGenaration_service_section */
+  .leadGenaration_service_section {
+    margin-top: 4rem;
+    padding: 0rem 0.3rem 0.8rem 0.6rem;
+  }
+
+  /* hero part */
+  .communityManagement_hero_part {
+    padding: 4.3rem 0.39rem 2.8rem 0.5rem;
+  }
+
+  .communityManagement_hero_text_div p {
+    margin-right: 0.06rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+  }
+
+  /* tlegram disocrd management */
+  .communityManagement_second_text_div {
+    padding: 0rem 1rem;
+    transform: translateX(0%);
+    height: 34.125rem;
+    justify-content: start;
+  }
+
+  .communityManagement_second_part_div {
+    padding-left: 0rem;
+  }
+
+  /* talegram and discord  */
+  .communityManagement_second_part_image_div::before {
+    width: 16.375rem;
+    height: 35.6875rem;
+  }
+
+  .communityManagement_service_offers {
+    display: grid;
+    grid-template-columns: auto;
+    margin-bottom: 7.5rem;
+  }
+
+  /* management help  */
+  .managementHelp_text_div {
+    margin-top: 2.37rem;
+    width: 100%;
+  }
+
+  .managementHelp_text_div h2 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .managementHelp_text_div p {
+    color: var(--Color-4, #818cb6);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .managementHelp_image_div::before {
+    content: "";
+    position: absolute;
+    top: -3.19rem;
+    left: -1.69rem;
+  }
+
+  .managementHelp_image_div::after {
+    content: "";
+    position: absolute;
+    bottom: -1.56rem;
+    right: -0.69rem;
+  }
+
+  /* key fetcher */
+  .communityManagemtn_keyfetcher_main_div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* communityManagement_Crypto_project*/
+  .communityManagement_Crypto_project_div h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+
+  .communityManagement_Crypto_project_Card div:nth-child(1) {
+    padding: 3.5rem 1.19rem 1.29rem 1.29rem;
+    width: 19.37075rem;
+    height: 15.92963rem;
+    margin: 0 auto;
+  }
+
+  .communityManagement_Crypto_project_Card div:nth-child(1)::before {
+    top: -18%;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+  .communityManagement_Crypto_project_Card div:nth-child(2) {
+    padding: 3.5rem 1rem 1.29rem 1.1rem;
+    width: 19.37075rem;
+    height: 15.2rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+
+  .communityManagement_Crypto_project_Card div:nth-child(2)::before {
+    top: -18%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* service_contactus_section style */
+  .service_contactus_text_heading {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .service_contact_us {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+
+  .service_contactus_text_para {
+    font-size: 0.8rem;
+    line-height: 23px;
+  }
+
+  .service_contactus_bottom_text_div {
+    margin-top: 2.4rem;
+  }
+
+  .service_contactus_bottom_text_div h4 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 0.9rem;
+  }
+
+  .service_contactus_bottom_text_div .service_contactus_bottom_para_div p {
+    font-size: 0.8rem;
+    line-height: 15px;
+    margin-bottom: 0.5rem;
+  }
+
+  /* communityManagement_service_offers  */
+  .communityManagement_service_offers_heading {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .communityManagement_service_offers_div p {
+    font-size: 0.8rem;
+  }
+
+
+
+}

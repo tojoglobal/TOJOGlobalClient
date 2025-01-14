@@ -1,0 +1,674 @@
+/*
+ * search engine marketing page *  
+ */
+
+/* ====================================== */
+/* searchEngineMarketing_top_hero_section  */
+/* ====================== ===============*/
+.searchEngineMarketing_top_hero_section {
+  padding: 9.3rem 4.39rem 11.8rem 5rem;
+  background-image: url("/Images/ServicesImage/banner_images/bg.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  object-fit: contain;
+  position: relative;
+  z-index: 5;
+}
+
+.searchEngineMarketing_hero_text_div {
+  padding-right: 7rem;
+}
+
+.searchEngineMarketing_hero_text_div h1 {
+  color: #fff;
+  text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
+
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.125rem;
+}
+
+.searchEngineMarketing_hero_text_div p {
+  color: #fff;
+  text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
+
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-right: 1.06rem;
+}
+
+.searchEngineMarketing_hero_image_div {
+  width: 100%;
+}
+
+.searchEngineMarketing_hero_image_div img {
+  margin: 0 auto;
+  max-width: 25.125rem;
+  max-height: 25.125rem;
+  object-fit: contain;
+}
+
+.searchEngineMarketing_second_part {
+  margin-top: -4.69rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  gap: 0.87rem;
+}
+
+.searchEngineMarketing_second_part div:nth-child(1) {
+  align-self: center;
+}
+
+.searchEngineMarketing_second_part_frist_text h2 {
+  color: #fff;
+
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.75rem;
+}
+
+.searchEngineMarketing_second_part_frist_text span {
+  /* background: linear-gradient(241deg, #18c8ff 38.39%, #c608ff 55.25%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.75rem; */
+}
+
+.searchEngineMarketing_second_part_frist_text_bottom_border {
+  width: 10.6875rem;
+  height: 0.3125rem;
+  margin-top: 1.5rem;
+  background: linear-gradient(109deg, #18c8ff -101.91%, #c608ff -10.71%);
+}
+
+.searchEngineMarketing_second_part_card {
+  border-radius: 1.5625rem;
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+  padding: 0.88rem 0.94rem;
+  text-align: left;
+  transition: background 0.5s ease-in-out;
+  position: relative;
+  z-index: 10;
+}
+
+.searchEngineMarketing_second_part_card:hover {
+  background: var(--BG-15, rgba(24, 200, 255, 0.10));
+}
+
+.searchEngineMarketing_second_part_card h4 {
+  color: #fff;
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.searchEngineMarketing_second_part_card p {
+  color: var(--Color-4, #818cb6);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+/* How Can TOJO GLOBAL’s Strategic Search Engine Marketing Increase Your Revenue? We’re Happy to Explain. */
+.searchEngineMarketing_IncreaseRevenue_section {
+  padding: 9.3rem 4.39rem 0.8rem 8rem;
+  background: var(--Color-5, #060044);
+}
+
+.searchEngineMarketing_IncreaseRevenue_headingtext {
+  color: #fff;
+  text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.searchEngineMarketing_IncreaseRevenue_main_div {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  align-items: center;
+  column-gap: 3.06rem;
+}
+
+.searchEngineMarketing_IncreaseRevenue_main_div_image {
+  position: relative;
+}
+
+.searchEngineMarketing_IncreaseRevenue_main_div_image_buttom_gradient {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30.4375rem;
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  filter: blur(126px);
+  width: 28.75rem;
+  height: 30.4375rem;
+  z-index: 0;
+}
+
+.searchEngineMarketing_IncreaseRevenue_main_div_image img {
+  position: relative;
+  z-index: 5;
+}
+
+.searchEngineMarketing_IncreaseRevenue_text_div {
+  padding-right: 0.2rem;
+}
+
+/* ==================================== */
+/* Who We Help */
+/* ================================== */
+.searchEngineMarketing_WhoHelp_top_text_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.searchEngineMarketing_WhoHelp_top_text_div h1 {
+  color: #fff;
+  text-align: center;
+
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.75rem;
+}
+
+.searchEngineMarketing_WhoHelp_top_text_div p {
+  color: var(--Color-4, #818cb6);
+  text-align: center;
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.searchEngineMarketing_whoHelp_main_div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  align-items: center;
+  margin-top: 2.38rem;
+  position: relative;
+}
+
+.searchEngineMarketing_whoHelp_items_div {
+  display: flex;
+  flex-direction: column;
+  width: 21.875rem;
+  padding: 0.625rem 1.25rem;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.searchEngineMarketing_whoHelp_item {
+  border-radius: 0.625rem;
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+  padding: 0.625rem 1.25rem;
+  width: 100%;
+  transition: background 0.5s ease-in-out;
+}
+
+.searchEngineMarketing_whoHelp_item:hover {
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+}
+
+.searchEngineMarketing_whoHelp_item span {
+  color: #fff;
+
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.searchEngineMarketing_whoHelp_para_div {
+  position: relative;
+  margin: 0px 55px;
+}
+
+.searchEngineMarketing_whoHelp_para_div::before {
+  content: '';
+  position: absolute;
+  left: -7%;
+  top: -50%;
+  width: 0.0625rem;
+  height: 22.5rem;
+  background: #fff;
+}
+
+.searchEngineMarketing_whoHelp_para_div::after {
+  content: '';
+  position: absolute;
+  right: -7%;
+  top: -50%;
+  width: 0.0625rem;
+  height: 22.5rem;
+  background: #fff;
+}
+
+.searchEngineMarketing_whoHelp_para_div p {
+  color: var(--WHite, #fff);
+
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6875rem;
+}
+
+.searchEngineMarketing_whoHelp_image_div {
+  position: relative;
+}
+
+.searchEngineMarketing_whoHelp_service_image_gradinet {
+  width: 14.625rem;
+  height: 14.625rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30.4375rem;
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  filter: blur(126px);
+  z-index: 0;
+}
+
+.searchEngineMarketing_whoHelp_image_div img {
+  position: relative;
+  z-index: 5;
+}
+
+/* ==================================== */
+/* media query  */
+.searchEngineMarketing_SEMService_section {
+  padding: 9.3rem 1.39rem 0.8rem 0rem;
+  background: var(--Color-5, #060044);
+}
+
+.searchEngineMarketing_SEMService_main_div {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  align-content: center;
+  margin-top: 3.38rem;
+  gap: 1.21rem;
+  position: relative;
+}
+
+.searchEngineMarketing_SEMService_card_div {
+  width: 19.2rem;
+  border-radius: 1.5625rem;
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+  padding: 1.14rem 2rem 2.81rem 1.94rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchEngineMarketing_SEMService_card_div:hover {
+  background: var(--BG-15, rgba(24, 200, 255, 0.10));
+}
+
+.searchEngineMarketing_SEMService_card_div img {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+.searchEngineMarketing_SEMService_card_div h4 {
+  color: #fff;
+  text-align: center;
+
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  margin-top: 0.88rem;
+}
+
+/* ==================================== */
+/* media query  */
+/* ================================== */
+/* desktop */
+@media (max-width: 1398px) {
+
+  /* ...
+        rules here apply to devices from 1202px to 1398px (inclusive)
+        ... */
+  .searchEngineMarketing_IncreaseRevenue_section {
+    padding: 9.3rem 2.39rem 0.38rem 3rem;
+  }
+
+  /* searchEngineMarketing_hero_text_div */
+  .searchEngineMarketing_hero_text_div {
+    padding-right: 0rem;
+  }
+
+  .searchEngineMarketing_hero_text_div h1 {
+    font-size: 2.4rem;
+  }
+
+  .searchEngineMarketing_IncreaseRevenue_main_div {
+    column-gap: 0.06rem;
+  }
+
+  .searchEngineMarketing_IncreaseRevenue_text_div {
+    padding-right: 2.6rem;
+  }
+
+
+
+  .searchEngineMarketing_SEMService_card_div {
+    width: 16.5rem;
+    padding: 1.14rem 1rem 1.81rem 0.94rem;
+  }
+
+
+  .searchEngineMarketing_whoHelp_para_div::before {
+    content: none;
+  }
+
+  .searchEngineMarketing_whoHelp_para_div::after {
+    right: -17%;
+    top: -26%;
+  }
+
+  .searchEngineMarketing_whoHelp_para_div {
+    margin: 0px 13px;
+    margin-left: 20px;
+  }
+}
+
+/* laptop Media Queries */
+@media (max-width: 1200px) {
+  /* ...
+      rules here apply to devices from 993px to 1200px (inclusive)
+        ... */
+
+  .searchEngineMarketing_SEMService_main_div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .searchEngineMarketing_IncreaseRevenue_main_div_image img {
+    width: 33rem;
+  }
+
+  .searchEngineMarketing_IncreaseRevenue_text_div {
+    padding-right: 0.6rem;
+  }
+
+  .searchEngineMarketing_SEMService_card_div {
+    width: 100%;
+  }
+
+  .searchEngineMarketing_SEMService_main_div div:nth-last-child(1) {
+    display: none;
+  }
+
+  .searchEngineMarketing_SEMService_main_div div:nth-last-child(2) {
+    grid-column: 2 /3;
+  }
+
+  .searchEngineMarketing_SEMService_main_div div:nth-last-child(4) {
+    display: none;
+  }
+
+  .searchEngineMarketing_whoHelp_items_div {
+    width: 19.875rem;
+  }
+
+  .searchEngineMarketing_whoHelp_para_div {
+    margin: 0px 16px;
+    text-align: justify;
+  }
+
+  .searchEngineMarketing_IncreaseRevenue_section {
+    padding: 9.3rem 1.39rem 0.38rem 1rem;
+  }
+
+  .searchEngineMarketing_whoHelp_image_div img {
+    width: 100%;
+  }
+
+  .searchEngineMarketing_whoHelp_side_border_left {
+    left: calc(133% - 100%);
+  }
+
+  .searchEngineMarketing_whoHelp_side_border_right {
+    right: calc(127% - 100%);
+    height: 15rem;
+  }
+}
+
+/* tab device */
+@media (max-width: 992px) {
+  /* ...
+     rules here apply to devices from 769px to 992px (inclusive)
+        ... */
+}
+
+/* moblie device  */
+@media (max-width: 768px) {
+  /* ...
+        // rules here apply to devices from 0px to 768px (inclusive)
+        ... */
+}
+
+/* optional */
+
+/* vary small device  */
+@media (max-width: 500px) {
+
+  /* ...
+        rules here apply to devices from 0px to 460px (inclusive)
+        ... */
+  /* searchEngineMarketing_top_hero_section */
+  .searchEngineMarketing_top_hero_section {
+    padding: 6.3rem 0.39rem 3.8rem 0.6rem;
+  }
+
+  .searchEngineMarketing_hero_text_div {
+    order: 2;
+    padding-right: 0rem;
+  }
+
+  .searchEngineMarketing_hero_text_div h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .searchEngineMarketing_hero_text_div p {
+    font-size: 0.8rem;
+    margin-right: 0rem;
+  }
+
+  .searchEngineMarketing_hero_image_div {
+    text-align: center;
+    width: 99%;
+  }
+
+  .searchEngineMarketing_hero_image_div img {
+    max-width: 19.125rem;
+    max-height: 18.125rem;
+    object-fit: contain;
+  }
+
+  .searchEngineMarketing_hero_text_div {
+    padding-right: 0rem !important;
+  }
+
+  /* searchEngineMarketing_second_part */
+  .searchEngineMarketing_second_part {
+    margin-top: 2.69rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0.87rem;
+  }
+
+  .searchEngineMarketing_second_part_frist_text h2 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .searchEngineMarketing_second_part_frist_text_bottom_border {
+    height: 0.125rem;
+  }
+
+  .searchEngineMarketing_second_part_card p {
+    font-family: var(--font-main);
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  /* searchEngineMarketing_IncreaseRevenue_section */
+  .searchEngineMarketing_IncreaseRevenue_section {
+    padding: 3.3rem 0.5rem 0.38rem 0.5rem;
+  }
+
+  .searchEngineMarketing_IncreaseRevenue_main_div {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+    column-gap: 3.06rem;
+  }
+
+  .searchEngineMarketing_IncreaseRevenue_main_div_image {
+    width: 20rem;
+    text-align: center;
+  }
+
+  .searchEngineMarketing_IncreaseRevenue_main_div_image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .searchEngineMarketing_IncreaseRevenue_main_div_image_buttom_gradient {
+    width: 18.75rem;
+    height: 16.4375rem;
+  }
+
+  /* searchEngineMarketing_WhoHelp_top_text_div */
+  .searchEngineMarketing_WhoHelp_top_text_div h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  /* searchEngineMarketing_WhoHelp_top_text_div */
+  .searchEngineMarketing_WhoHelp_top_text_div p {
+    margin-top: 1rem;
+    max-width: 99% !important;
+    font-size: 0.8rem;
+  }
+
+  .searchEngineMarketing_whoHelp_main_div {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2.38rem;
+    position: relative;
+  }
+
+  .searchEngineMarketing_whoHelp_items_div {
+    width: 100%;
+    margin: 0 auto;
+    align-items: normal;
+    padding: 0.625rem 0.5rem;
+  }
+
+  .searchEngineMarketingWhoWeHelpCard_text {
+    text-align: left;
+    padding-left: 1.06rem;
+    padding-bottom: 1rem;
+  }
+
+  .searchEngineMarketingWhoWeHelpCard_text h4 {
+    color: #fff;
+    text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
+
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1rem;
+  }
+
+  .searchEngineMarketingWhoWeHelpCard_text p {
+    color: #fff;
+    text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
+
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+
+
+  /* searchEngineMarketing_SEMService_section */
+  .searchEngineMarketing_SEMService_section {
+    padding: 3.3rem 0.5rem 0.8rem 0.5rem;
+  }
+
+
+
+  .searchEngineMarketing_SEMService_main_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .searchEngineMarketing_SEMService_card_div {
+    padding: 0.5rem;
+  }
+
+  .searchEngineMarketing_SEMService_card_div img {
+    width: 4.25rem;
+    height: 4.25rem;
+  }
+
+  .searchEngineMarketing_SEMService_card_div h4 {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+
+
+
+
+}

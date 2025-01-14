@@ -1,0 +1,667 @@
+/*====================================
+ * Socail media management*
+  =============================
+ */
+.socialMediaManagement_hero_part {
+  background: radial-gradient(83.46% 64.32% at 69.9% 50.09%,
+      #4a16a5 0%,
+      #060044 97.56%);
+  padding: 5.3rem 4.39rem 6.8rem 5rem;
+  position: relative;
+}
+
+.socialMediaManagement_hero_part_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  gap: 0.75rem;
+}
+
+.socialMediaManagement_hero_text_div h1 {
+  color: #fff;
+  text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.socialMediaManagement_hero_text_div p {
+  color: #fff;
+  text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  /* margin: 2.19rem 0rem; */
+}
+
+.socialMediaManagement_hero_part_image_div img {
+  width: 45.875rem;
+  height: 33.875rem;
+}
+
+/*====================================
+ * We OfferS ervices social media management *
+  =============================
+ */
+.WeOfferServices_hero_part {
+  background: var(--Color-5, #060044);
+  padding: 5.3rem 4.39rem 6.8rem 5rem;
+  position: relative;
+}
+
+.WeOfferServices_hero_part_div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-content: center;
+  padding-right: 0.5rem;
+  padding-left: 0.55rem;
+  gap: 1.56rem;
+}
+
+.WeOfferServices_card_one {
+  border-radius: 1.5625rem;
+  border-left: 4px solid var(--Color-2, #18c8ff);
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+  padding: 1.34rem;
+  color: #fff;
+}
+
+.WeOfferServices_card_one:hover {
+  background: var(--BG-15, rgba(24, 200, 255, 0.10));
+}
+
+.WeOfferServices_card_two {
+  border-radius: 1.5625rem;
+  border-left: 4px solid var(--Color-3, #c608ff);
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+  padding: 1.34rem;
+  color: #fff;
+}
+
+.WeOfferServices_card_two:hover {
+  background: var(--BG-15, rgba(24, 200, 255, 0.10));
+}
+
+.WeOfferServices_card_iconTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.88rem;
+}
+
+.WeOfferServices_card_iconTitle img {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.WeOfferServices_card_iconTitle h4 {
+
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  margin-bottom: 0rem;
+}
+
+.WeOfferServices_card_para {
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.WeOfferServices_card_heading {
+  color: #fff;
+
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+
+.WeOfferServices_card_last_para {
+  color: var(--Color-4, #818cb6);
+
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6875rem;
+  padding-top: 2.25rem;
+}
+
+/* ====================== */
+/* Social Media Management Service.*/
+/* ================================== */
+.WeOfferServices_service_offers_heading {
+  width: 39.5rem;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-main);
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5rem;
+  margin-bottom: 4.19rem;
+}
+
+.scmServices_grid_part_div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-content: center;
+  column-gap: 8.66rem;
+  position: relative;
+  margin-bottom: 15.2rem;
+}
+
+.scmServices_circel_div {
+  cursor: pointer;
+  display: flex;
+  width: 19.875rem;
+  height: 18.875rem;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 0px 25px rgba(24, 200, 255, 0.1));
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22310%22%20height%3D%22310%22%20viewBox%3D%220%200%20310%20310%22%20fill%3D%22none%22%3E%0A%20%20%3Cg%20filter%3D%22url(%23filter0_d_704_2434)%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22155%22%20cy%3D%22155%22%20r%3D%22119%22%20fill%3D%22%23060044%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cfilter%20id%3D%22filter0_d_704_2434%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22310%22%20height%3D%22310%22%20filterUnits%3D%22userSpaceOnUse%22%20color-interpolation-filters%3D%22sRGB%22%3E%0A%20%20%20%20%20%20%3CfeFlood%20flood-opacity%3D%220%22%20result%3D%22BackgroundImageFix%22%2F%3E%0A%20%20%20%20%20%20%3CfeColorMatrix%20in%3D%22SourceAlpha%22%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200%22%20result%3D%22hardAlpha%22%2F%3E%0A%20%20%20%20%20%20%3CfeMorphology%20radius%3D%2211%22%20operator%3D%22dilate%22%20in%3D%22SourceAlpha%22%20result%3D%22effect1_dropShadow_704_2434%22%2F%3E%0A%20%20%20%20%20%20%3CfeOffset%2F%3E%0A%20%20%20%20%20%20%3CfeGaussianBlur%20stdDeviation%3D%2212.5%22%2F%3E%0A%20%20%20%20%20%20%3CfeComposite%20in2%3D%22hardAlpha%22%20operator%3D%22out%22%2F%3E%0A%20%20%20%20%20%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200.0941176%200%200%200%200%200.784314%200%200%200%200%201%200%200%200%200.1%200%22%2F%3E%0A%20%20%20%20%20%20%3CfeBlend%20mode%3D%22normal%22%20in2%3D%22BackgroundImageFix%22%20result%3D%22effect1_dropShadow_704_2434%22%2F%3E%0A%20%20%20%20%20%20%3CfeBlend%20mode%3D%22normal%22%20in%3D%22SourceGraphic%22%20in2%3D%22effect1_dropShadow_704_2434%22%20result%3D%22shape%22%2F%3E%0A%20%20%20%20%3C%2Ffilter%3E%0A%20%20%3C%2Fdefs%3E%0A%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.scmServices_circel_div:hover {
+  filter: drop-shadow(0px 0px 40px rgba(24, 200, 255, 0.4));
+  transform: scale(1.05);
+  /* Slight scaling effect */
+}
+
+.scmServices_grid_part_div .scmServices_circel_div:nth-last-child(1) {
+  position: absolute;
+  right: 328px;
+  top: 260px;
+}
+
+.scmServices_grid_part_div .scmServices_circel_div:nth-last-child(2) {
+  position: absolute;
+  left: 328px;
+  top: 260px;
+}
+
+.scmServices_circel_text_div {
+  text-align: center;
+  color: #fff;
+
+}
+
+.scmServices_circel_text_div img {
+  width: 3.6875rem;
+  height: 3.6875rem;
+}
+
+.scmServices_text_div {
+  width: 68%;
+  margin: 0 auto;
+}
+
+
+.scmServices_circel_text_div h4 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.scmServices_circel_text_div p {
+  color: var(--Color-4, #818cb6);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+/* ====================== */
+/* Our Social Media Management Services */
+/* ================================== */
+.ourSocialServices_grid_part_div {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
+  margin-bottom: 5.2rem;
+  padding: 0rem 0.5rem;
+}
+
+.ourSocialServices_left_text_grid_part_div {
+  margin-right: 2.5rem;
+  width: 25.3125rem;
+  grid-row: 1 / 3;
+  align-self: center;
+}
+
+.ourSocialServices_left_text_grid_part_div h2 {
+  color: #fff;
+
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+
+.ourSocialServices_left_text_grid_part_div p {
+  color: var(--Color-4, #818cb6);
+
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6875rem;
+  margin: 1.19rem 0rem;
+}
+
+.ourSocialServices_card_text_div {
+  width: 15.4375rem;
+  height: 19.9375rem;
+  padding: 0.98rem;
+  border-radius: 1.5625rem;
+  border-bottom: 4px solid #18c8ff;
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+}
+
+.ourSocialServices_card_text_div:hover {
+  background: var(--BG-15, rgba(24, 200, 255, 0.10));
+}
+
+.ourSocialServices_card_text_div:nth-child(3) {
+  margin-top: 1.75rem;
+}
+
+.ourSocialServices_card_text_div:nth-child(6) {
+  margin-top: 1.75rem;
+}
+
+.ourSocialServices_card_text_div img {
+  width: 3.75rem;
+  height: 3.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.ourSocialServices_card_text_div h4 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin-bottom: 0.89rem;
+}
+
+.ourSocialServices_card_text_div p {
+  color: #fff;
+
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+/* ====================== */
+/* media query  */
+/* ================================== */
+/* desktop */
+@media (max-width: 1398px) {
+
+  /* ...
+      rules here apply to devices from 1202px to 1398px (inclusive)
+        ... */
+  .WeOfferServices_hero_part_div {
+    padding-right: 0.38rem;
+    padding-left: 0rem;
+  }
+
+  .scmServices_grid_part_div {
+    column-gap: 6.66rem;
+  }
+
+  .scmServices_grid_part_div .scmServices_circel_div:nth-last-child(1) {
+    position: absolute;
+    right: 190px;
+    top: 241px;
+  }
+
+  .scmServices_grid_part_div .scmServices_circel_div:nth-last-child(2) {
+    position: absolute;
+    left: 187px;
+    top: 241px;
+  }
+
+  .ourSocialServices_card_text_div {
+    width: 14.4375rem;
+    height: 21rem;
+  }
+
+  .socail_media_mangement_Services_hero_part {
+    padding: 2.3rem 0rem 4.8rem 0rem;
+  }
+
+  .ourSocialServices_left_text_grid_part_div {
+    margin-right: 1.19rem;
+    width: 25.3125rem;
+  }
+
+  .ourSocialServices_grid_part_div {
+    padding: 0rem 0.15rem 0rem 0.19rem;
+  }
+
+  .socialMediaManagement_hero_part_image_div img {
+    width: 34.6875rem;
+    height: 23.0625rem;
+  }
+
+  .socialMediaManagement_hero_part_div {
+    padding-right: 1.38rem;
+    padding-left: 0rem;
+  }
+
+  .socialMediaManagement_hero_part {
+    padding: 8.3rem 4.39rem 6.8rem 5rem;
+  }
+
+  .service_contactus_text_para {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+/* laptop Media Queries */
+@media (max-width: 1200px) {
+
+  /* ...
+        rules here apply to devices from 993px to 1200px (inclusive)
+        ... */
+  .socialMediaManagement_hero_part {
+    padding: 8.3rem 0.7rem 6.8rem 3.5rem;
+  }
+
+  .socialMediaManagement_hero_part_image_div img {
+    width: 32.6875rem;
+    height: 27.0625rem;
+  }
+
+  .socialMediaManagement_hero_text_div h1 {
+    font-size: 2.425rem;
+  }
+
+
+  .professionalModeration_div {
+    margin: 1.5rem 0rem;
+  }
+
+  .scmServices_grid_part_div {
+    column-gap: 1.66rem;
+  }
+
+  .scmServices_grid_part_div .scmServices_circel_div:nth-last-child(2) {
+    position: absolute;
+    left: 99px;
+    top: 241px;
+  }
+
+  .scmServices_grid_part_div .scmServices_circel_div:nth-last-child(1) {
+    position: absolute;
+    right: 92px;
+    top: 241px;
+  }
+
+  .ourSocialServices_grid_part_div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-template-rows: auto auto auto; */
+    gap: 1rem;
+    margin-bottom: 5.2rem;
+    padding: 0rem 2.5rem;
+  }
+
+  .ourSocialServices_left_text_grid_part_div div {
+    display: none;
+  }
+
+  .ourSocialServices_left_text_grid_part_div {
+    text-align: center;
+    margin-right: 0rem;
+    width: 80%;
+    grid-column: 1 / 4;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .ourSocialServices_card_text_div {
+    width: 100%;
+    height: 18.5rem;
+  }
+}
+
+/* tab device */
+@media (max-width: 992px) {
+
+  /* ...
+       rules here apply to devices from 769px to 992px (inclusive)
+        ... */
+  /* home page  */
+  .socialMediaManagement_hero_part_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 4.38rem;
+    padding-left: 5rem;
+    gap: 0.75rem;
+  }
+
+  .WeOfferServices_hero_part_div {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-content: center;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    gap: 1.56rem;
+  }
+}
+
+/* moblie device  */
+@media (max-width: 768px) {
+  /* ...
+      rules here apply to devices from 0px to 768px (inclusive)
+        ... */
+}
+
+/* vary small device  */
+@media (max-width: 500px) {
+
+  /* ...
+       rules here apply to devices from 0px to 500px 
+        ... */
+  /* home page  */
+  .socialMediaManagement_hero_part_div {
+    padding-right: 0.38rem;
+    padding-left: 0rem;
+  }
+
+  .socialMediaManagement_hero_part {
+    padding: 5.3rem 0.7rem 4.8rem 0.9rem;
+  }
+
+  .socialMediaManagement_hero_text_div {
+    order: 2;
+  }
+
+  .socialMediaManagement_hero_part_image_div img {
+    width: 21.6875rem;
+    height: 18.0625rem;
+  }
+
+  .socialMediaManagement_hero_text_div h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .socialMediaManagement_hero_text_div p {
+    font-size: 0.8rem;
+    margin: 0.5rem 0rem;
+  }
+
+
+  /* we offer services hero part */
+  .WeOfferServices_hero_part {
+    padding: 1.3rem 0.9rem 2rem 0.9rem;
+  }
+
+  .WeOfferServices_card_heading {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .WeOfferServices_card_iconTitle h4 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  .WeOfferServices_card_para {
+    font-size: 0.8rem;
+  }
+
+  .WeOfferServices_hero_part_div {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    gap: 1.56rem;
+  }
+
+  .WeOfferServices_card_last_para {
+    font-size: 0.8rem;
+    padding-top: 0.25rem;
+  }
+
+  /* scm services  */
+  .scmServices_grid_part_div {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    column-gap: 8.66rem;
+    position: static;
+    margin-bottom: 0.2rem;
+  }
+
+  .scmServices_grid_part_div .scmServices_circel_div:nth-last-child(2) {
+    position: static;
+  }
+
+  .scmServices_grid_part_div .scmServices_circel_div:nth-last-child(1) {
+    position: static;
+  }
+
+  /* we offer sevice */
+  .WeOfferServices_service_offers_heading {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2.19rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .scmServices_circel_text_div p {
+    font-size: 0.8rem;
+  }
+
+  .scmServices_circel_text_div h4 {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+
+  /* ourSocialServices_grid_part_div */
+  .ourSocialServices_left_text_grid_part_div h2 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .ourSocialServices_left_text_grid_part_div p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    margin: 0.5rem 0rem;
+  }
+
+  .ourSocialServices_grid_part_div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0rem 0.5rem;
+  }
+
+  .ourSocialServices_left_text_grid_part_div {
+    text-align: center;
+    margin-right: 0rem;
+    width: 100%;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+  }
+
+
+
+
+
+}
+
+/*
+ * page name *
+  
+ */
+
+/* ====================== */
+/* media query  */
+/* ================================== */
+/* desktop */
+@media (max-width: 1398px) {
+  /* ...
+        // rules here apply to devices from 1202px to 1398px (inclusive)
+        ... */
+}
+
+/* laptop Media Queries */
+@media (max-width: 1200px) {
+  /* ...
+        // rules here apply to devices from 993px to 1200px (inclusive)
+        ... */
+}
+
+/* tab device */
+@media (max-width: 992px) {
+  /* ...
+        // rules here apply to devices from 769px to 992px (inclusive)
+        ... */
+}
+
+/* moblie device  */
+@media (max-width: 768px) {
+  /* ...
+        // rules here apply to devices from 0px to 768px (inclusive)
+        ... */
+}
+
+/* optional */
+
+/* vary small device  */
+@media (max-width: 460px) {
+  /* ...
+        // rules here apply to devices from 0px to 460px (inclusive)
+        ... */
+}

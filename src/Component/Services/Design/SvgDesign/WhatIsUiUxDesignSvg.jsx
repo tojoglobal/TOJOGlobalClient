@@ -1,0 +1,66 @@
+import React from "react";
+
+export const WhatIsUiUxDesignSvg = () => {
+  return (
+    <>
+      <svg
+        id="WhatIsUiUxDesignSvg"
+        viewBox="0 0 501 303"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g filter="url(#filter0_b_2398_4637)">
+          <mask id="path-1-inside-1_2398_4637" fill="white">
+            <path d="M0 47C0 21.0426 21.0426 0 47 0H454C479.957 0 501 21.0426 501 47V256C501 281.957 479.957 303 454 303H47C21.0426 303 0 281.957 0 256V47Z" />
+          </mask>
+          <path
+            d="M0 47C0 21.0426 21.0426 0 47 0H454C479.957 0 501 21.0426 501 47V256C501 281.957 479.957 303 454 303H47C21.0426 303 0 281.957 0 256V47Z"
+            fill="#18C8FF"
+            fill-opacity="0.15"
+          />
+          <path
+            d="M0 47C0 12.7583 27.7583 -15 62 -15H439C473.242 -15 501 12.7583 501 47C501 29.3269 479.957 15 454 15H47C21.0426 15 0 29.3269 0 47ZM501 303H0H501ZM0 303V0V303ZM501 0V303V0Z"
+            fill="url(#paint0_linear_2398_4637)"
+            mask="url(#path-1-inside-1_2398_4637)"
+          />
+        </g>
+        <defs>
+          <filter
+            id="filter0_b_2398_4637"
+            x="-15"
+            y="-15"
+            width="531"
+            height="333"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feGaussianBlur in="BackgroundImageFix" stdDeviation="7.5" />
+            <feComposite
+              in2="SourceAlpha"
+              operator="in"
+              result="effect1_backgroundBlur_2398_4637"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_backgroundBlur_2398_4637"
+              result="shape"
+            />
+          </filter>
+          <linearGradient
+            id="paint0_linear_2398_4637"
+            x1="395.285"
+            y1="309.176"
+            x2="141.442"
+            y2="267.101"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#18C8FF" />
+            <stop offset="1" stop-color="#C608FF" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </>
+  );
+};

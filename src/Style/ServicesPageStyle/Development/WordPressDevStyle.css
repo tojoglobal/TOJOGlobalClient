@@ -1,0 +1,661 @@
+/*
+ *
+ wordpress development page *  
+ */
+.wordpressDevelopment_hero_part {
+  position: relative;
+  background: var(--Color-5, #060044);
+}
+
+.wordpressDevelopment_hero_part_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.wordpressDevelopment_hero_part_image_div {
+  margin-top: 4rem;
+  position: relative;
+  z-index: 5;
+}
+
+.wordpressDevelopment_hero_part_image_div::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25.5rem;
+  height: 25.5rem;
+  border-radius: 25.5rem;
+  background: var(--Gradient2, linear-gradient(225deg, #18C8FF 14.89%, #C608FF 85.85%));
+  filter: blur(87.5999984741211px);
+
+}
+
+/* ====================== */
+/* wordpressDevelopment_whyChoose_main_div  */
+/* ================================== */
+
+.wordpressDevelopment_whyChoose_section {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 9rem;
+}
+
+.wordpressDevelopment_whyChoose_main_div {
+  width: 85%;
+  margin: 6rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px;
+  justify-content: center;
+  border-radius: 2.9375rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  /* Light transparent background */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  /* Softer shadow for depth */
+  backdrop-filter: blur(20px);
+  /* Stronger blur for glass effect */
+  -webkit-backdrop-filter: blur(20px);
+  /* Support for Safari */
+
+}
+
+.wordpressDevelopment_whyChoose_main_topGradient_div {
+  position: absolute;
+  top: -124px;
+  right: 27px;
+  z-index: -15;
+}
+
+.wordpressDevelopment_whyChoose_center_topGradient02_div {
+  position: absolute;
+  top: 50%;
+  right: 229px;
+  transform: translateY(-50%);
+  z-index: -15;
+}
+
+.wordpressDevelopment_whyChoose_bottom_topGradient03_div {
+  position: absolute;
+  bottom: -67px;
+  right: 50%;
+  transform: translateX(-50%);
+  z-index: -15;
+}
+
+
+.wordpressDevelopment_whyChoose_text_div {
+  align-self: center;
+}
+
+.wordpressDevelopment_whyChoose_text_div h2 {
+  color: #fff;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.wordpressDevelopment_whyChoose_text_div p {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/* ====================== */
+/* wordpressDevelopment_whyChoose_keyPoint_main_div  */
+/* ================================== */
+.wordpressDevelopment_whyChoose_keyPoint_main_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+
+.wordpressDevelopment_whyChoose_keyPoint_div {
+  padding-right: 3rem;
+}
+
+.wordpressDevelopment_whyChoose_keyPoint_div h4 {
+  color: #fff;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.wordpressDevelopment_whyChoose_keyPoint_div p {
+  color: var(--Color-4, #818cb6);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.wordpressDevelopment_whyChoose_keyPoint_svgIcon {
+  transform: translate(32px, 32px);
+}
+
+/* ====================== */
+/* wordpressWebsiteDevelopment_customer_keyPoint_main_div */
+/* ================================== */
+.wordpressWebsiteDevelopment_customer_keyPoint_main_div {
+  width: 95%;
+  margin: 6rem auto;
+  border-radius: 40px;
+  border-left: 10px solid #18c8ff;
+  background: rgba(88, 185, 255, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(7.5px);
+  min-height: 606px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.wordpressWebsiteDevelopment_customer_keyPoint_text_div {
+  align-self: center;
+}
+
+.wordpressWebsiteDevelopment_customer_keyPoint_text_div h1 {
+  color: #fff;
+
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.wordpressWebsiteDevelopment_customer_keyPoint_text_div p {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.wordpressWebsiteDevelopment_customer_keyPoint_text_div strong {
+  color: #fff;
+  font-family: "Barlow Condensed";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.wordpressWebsiteDevelopment_customer_keyPoint_div {
+  padding: 25px;
+  position: relative;
+}
+
+.wordpressWebsiteDevelopment_customer_keyPoint_div::before {
+  content: "";
+  position: absolute;
+  left: 42px;
+  top: -10px;
+  width: 4px;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%224%22%20height%3D%22553%22%20viewBox%3D%220%200%204%20553%22%20fill%3D%22none%22%3E%0A%20%20%3Cg%20filter%3D%22url(%23filter0_f_2102_6005)%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M2%201V551.5%22%20stroke%3D%22%23C608FF%22%20stroke-width%3D%220.75%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cfilter%20id%3D%22filter0_f_2102_6005%22%20x%3D%220.625%22%20y%3D%220%22%20width%3D%222.75%22%20height%3D%22552.5%22%20filterUnits%3D%22userSpaceOnUse%22%20color-interpolation-filters%3D%22sRGB%22%3E%0A%20%20%20%20%20%20%3CfeFlood%20flood-opacity%3D%220%22%20result%3D%22BackgroundImageFix%22%2F%3E%0A%20%20%20%20%20%20%3CfeBlend%20mode%3D%22normal%22%20in%3D%22SourceGraphic%22%20in2%3D%22BackgroundImageFix%22%20result%3D%22shape%22%2F%3E%0A%20%20%20%20%20%20%3CfeGaussianBlur%20stdDeviation%3D%220.5%22%20result%3D%22effect1_foregroundBlur_2102_6005%22%2F%3E%0A%20%20%20%20%3C%2Ffilter%3E%0A%20%20%3C%2Fdefs%3E%0A%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 5;
+}
+
+.wordpressWebsiteDevelopment_customer_keyPoint {
+  position: relative;
+  padding-left: 62px;
+  padding-bottom: 1rem;
+}
+
+.wordpressWebsiteDevelopment_customer_keyPoint:nth-last-child(1) {
+  padding-bottom: 0rem;
+}
+
+.wordpressWebsiteDevelopment_customer_keyPoint::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0px;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2221%22%20height%3D%2222%22%20viewBox%3D%220%200%2021%2022%22%20fill%3D%22none%22%3E%0A%20%20%3Cg%20filter%3D%22url(%23filter0_f_2102_6006)%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2210.5%22%20cy%3D%2211%22%20r%3D%227.5%22%20fill%3D%22url(%23paint0_linear_2102_6006)%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cfilter%20id%3D%22filter0_f_2102_6006%22%20x%3D%220%22%20y%3D%220.5%22%20width%3D%2221%22%20height%3D%2221%22%20filterUnits%3D%22userSpaceOnUse%22%20color-interpolation-filters%3D%22sRGB%22%3E%0A%20%20%20%20%20%20%3CfeFlood%20flood-opacity%3D%220%22%20result%3D%22BackgroundImageFix%22%2F%3E%0A%20%20%20%20%20%20%3CfeBlend%20mode%3D%22normal%22%20in%3D%22SourceGraphic%22%20in2%3D%22BackgroundImageFix%22%20result%3D%22shape%22%2F%3E%0A%20%20%20%20%20%20%3CfeGaussianBlur%20stdDeviation%3D%221.5%22%20result%3D%22effect1_foregroundBlur_2102_6006%22%2F%3E%0A%20%20%20%20%3C%2Ffilter%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22paint0_linear_2102_6006%22%20x1%3D%2213.5751%22%20y1%3D%222.93%22%20x2%3D%2220.3629%22%20y2%3D%2211.7591%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0A%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%2318C8FF%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23C608FF%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 15;
+}
+
+.wordpressWebsiteDevelopment_customer_keyPoint h4 {
+  color: #fff;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  /* 125% */
+}
+
+.wordpressWebsiteDevelopment_customer_keyPoint p {
+  color: #fff;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 112.5% */
+}
+
+/* ====================== */
+/* wordpressWebsiteDevelopment_whyExpertise_keyPoint_main_div */
+/* ================================== */
+.wordpressWebsiteDevelopment_whyExpertise_keyPoint_main_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 95%;
+  margin: 0 auto;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.wordpressWebsiteDevelopment_whyExpertise_keyPoint_main_gradinetDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 31.6875rem;
+  height: 31.6875rem;
+  border-radius: 31.6875rem;
+  background: var(--Linear,
+      linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%));
+  filter: blur(116.19999694824219px);
+}
+
+.wordpressWebsiteDevelopment_whyExpertise_keyPoint_div {
+  position: relative;
+}
+
+.WordpressWebsiteDevelopmentWhyExpertiseKeyPointSvgStyle {
+  width: 375px;
+  height: 207px;
+}
+
+.wordpressWebsiteDevelopment_whyExpertise_keyPoint_text_div img {
+  width: 4.4375rem;
+  height: 4.4375rem;
+}
+
+.wordpressWebsiteDevelopment_whyExpertise_keyPoint_text_div {
+  position: absolute;
+  top: 48%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  text-align: center;
+}
+
+.wordpressWebsiteDevelopment_whyExpertise_keyPoint_div:nth-last-child(1) {
+  transform: translate(195px, 5px);
+}
+
+.wordpressWebsiteDevelopment_whyExpertise_keyPoint_div:nth-last-child(2) {
+  transform: translate(195px, 5px);
+}
+
+.wordpressWebsiteDevelopmentOurExpertisekeyPointSmallHeadingStyle {
+  color: var(--WBG, #ecf2f2);
+  text-align: center;
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+/* ====================== */
+/* WordPressDevelopment Target Companies  */
+/* ================================== */
+.WordPressDevelopment_Target_Companies_main_div {
+  border-radius: 2.5rem;
+  border-left: 10px solid #18c8ff;
+  background: rgba(88, 185, 255, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(7.5px);
+  width: 80%;
+  margin: 10rem auto;
+  min-height: 20.25rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 4rem;
+}
+
+.WordPressDevelopment_Target_Companies_text_div {
+  align-self: center;
+  padding-right: 3rem;
+}
+
+.WordPressDevelopment_target_companies_bottom_borderInText_div {
+  width: 11.3125rem;
+  height: 0.3125rem;
+  background: #d9d9d9;
+  margin-bottom: 1rem;
+}
+
+.WordPressDevelopment_Target_Companies_text_div h2 {
+  color: #fff;
+
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.75rem;
+}
+
+.WordPressDevelopment_Target_Companies_text_div p {
+  color: #fff;
+
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  /* 133.333% */
+}
+
+.WordPressDevelopment_Target_Companies_keyPoint_div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.WordPressDevelopment_Target_Companies_keyPoint_div h4 {
+  color: #fff;
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+  /* 125% */
+  position: relative;
+  padding-left: 2rem;
+}
+
+.WordPressDevelopment_Target_Companies_keyPoint_div h4::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: -4px;
+  width: 1rem;
+  height: 15.625rem;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%22204%22%20viewBox%3D%220%200%2018%20204%22%20fill%3D%22none%22%3E%0A%20%20%3Ccircle%20cx%3D%229%22%20cy%3D%229%22%20r%3D%226%22%20fill%3D%22url(%23paint0_linear_2102_5864)%22%2F%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22paint0_linear_2102_5864%22%20x1%3D%2211.4601%22%20y1%3D%222.544%22%20x2%3D%2216.8903%22%20y2%3D%229.6073%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0A%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%2318C8FF%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23C608FF%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22paint1_linear_2102_5864%22%20x1%3D%2211.4601%22%20y1%3D%2239.544%22%20x2%3D%2216.8903%22%20y2%3D%2246.6073%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0A%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%2318C8FF%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23C608FF%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22paint2_linear_2102_5864%22%20x1%3D%2211.4601%22%20y1%3D%2278.544%22%20x2%3D%2216.8903%22%20y2%3D%2285.6073%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0A%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%2318C8FF%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23C608FF%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22paint3_linear_2102_5864%22%20x1%3D%2211.4601%22%20y1%3D%22116.544%22%20x2%3D%2216.8903%22%20y2%3D%22123.607%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0A%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%2318C8FF%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23C608FF%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22paint4_linear_2102_5864%22%20x1%3D%2211.4601%22%20y1%3D%22154.544%22%20x2%3D%2216.8903%22%20y2%3D%22161.607%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0A%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%2318C8FF%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23C608FF%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22paint5_linear_2102_5864%22%20x1%3D%2211.4601%22%20y1%3D%22188.544%22%20x2%3D%2216.8903%22%20y2%3D%22195.607%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0A%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%2318C8FF%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23C608FF%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* ====================== */
+/* media query  */
+/* ================================== */
+/* desktop */
+@media (max-width: 1398px) {
+  /* ...
+        // rules here apply to devices from 1202px to 1398px (inclusive)
+        ... */
+
+  .wordpressDevelopment_whyChoose_keyPoint_svgIcon {
+    transform: translate(32px, 31px);
+
+  }
+
+  .wordpressWebsiteDevelopment_whyExpertise_keyPoint_main_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin: 0 auto;
+    gap: 0rem;
+    position: relative;
+  }
+
+
+  .wordpressWebsiteDevelopment_whyExpertise_keyPoint_text_div {
+    position: absolute;
+    top: 47%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+}
+
+/* laptop Media Queries */
+@media (max-width: 1200px) {
+  /* ...
+        // rules here apply to devices from 993px to 1200px (inclusive)
+        ... */
+}
+
+/* tab device */
+@media (max-width: 992px) {
+  /* ...
+        // rules here apply to devices from 769px to 992px (inclusive)
+        ... */
+}
+
+/* moblie device  */
+@media (max-width: 768px) {
+  /* ...
+     rules here apply to devices from 0px to 768px (inclusive)
+        ... */
+}
+
+/* vary small device  */
+@media (max-width: 500px) {
+
+  /* ...
+       rules here apply to devices from 0px to 460px (inclusive)
+        ... */
+  /* wordpressDevelopment_hero_part */
+  .wordpressDevelopment_hero_part {
+    padding: 2.3rem 0.5rem 2.8rem 0.5rem;
+  }
+
+  .wordpressDevelopment_hero_part_div {
+    flex-direction: column;
+  }
+
+  .communityManagement_hero_text_div p {
+    margin-right: 0.06rem;
+    margin-bottom: 1rem;
+  }
+
+  .wordpressDevelopment_hero_part_image_div::before {
+    width: 11.5rem;
+  }
+
+
+  /* wordpressDevelopment_whyChoose_image_div */
+  .wordpressDevelopment_whyChoose_main_div {
+    width: 100%;
+    margin: 3rem auto;
+    grid-template-columns: 1fr;
+    padding: 22px 10px;
+    justify-content: flex-start;
+    border-radius: 0.5375rem;
+  }
+
+  .wordpressDevelopment_whyChoose_text_div h2 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .wordpressDevelopment_whyChoose_text_div p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .wordpressDevelopment_whyChoose_image_div img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .wordpressDevelopment_whyChoose_main_topGradient_div {
+    position: absolute;
+    top: -62px;
+    right: 35px;
+    z-index: -15;
+  }
+
+  .wordpressDevelopment_whyChoose_bottom_topGradient03_div {
+    position: absolute;
+    bottom: -38px;
+    right: -19%;
+    transform: translateX(-50%);
+    z-index: -15;
+  }
+
+  .wordpressDevelopment_whyChoose_section {
+    margin-bottom: 4rem;
+  }
+
+  /* wordpressDevelopment_whyChoose_keyPoint_main_div */
+  .wordpressDevelopment_whyChoose_keyPoint_main_div {
+    grid-template-columns: 1fr;
+    width: 99%;
+  }
+
+  .wordpressWebsiteDevelopment_customer_keyPoint_main_div {
+    width: 100%;
+    margin: 3rem auto;
+    border-radius: 27px;
+    border-left: 5px solid #18c8ff;
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+
+  .wordpressWebsiteDevelopment_customer_keyPoint_div::before {
+    content: none;
+  }
+
+  .wordpressWebsiteDevelopment_customer_keyPoint {
+    padding-left: 5px;
+  }
+
+  .wordpressWebsiteDevelopment_customer_keyPoint_div {
+    padding: 2rem 0rem;
+    position: relative;
+  }
+
+  .wordpressWebsiteDevelopment_customer_keyPoint::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 0px;
+  }
+
+  .wordpressDevelopment_whyChoose_keyPoint_div h4 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+
+  }
+
+  .wordpressDevelopment_whyChoose_keyPoint_div p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  /* wordpressWebsiteDevelopment_whyExpertise_keyPoint_main_div */
+  .wordpressWebsiteDevelopment_whyExpertise_keyPoint_main_div {
+    grid-template-columns: 1fr;
+  }
+
+  .wordpressWebsiteDevelopment_customer_keyPoint_text_div h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+
+  }
+
+  .wordpressWebsiteDevelopment_customer_keyPoint_text_div p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .wordpressWebsiteDevelopment_customer_keyPoint_text_div strong {
+    font-size: 18px;
+    margin: 1rem 0rem;
+  }
+
+  .wordpressWebsiteDevelopment_customer_keyPoint p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .wordpressWebsiteDevelopment_whyExpertise_keyPoint_main_gradinetDiv {
+    display: none;
+  }
+
+  /* WordPressDevelopment_Target_Companies_main_div */
+  .WordPressDevelopment_Target_Companies_main_div {
+    border-radius: 1.5rem;
+    border-left: 5px solid #18c8ff;
+    width: 100%;
+    margin: 3rem auto;
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+    padding: 2.5rem 0.5rem;
+  }
+
+  .WordPressDevelopment_Target_Companies_text_div h2 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .WordPressDevelopment_target_companies_bottom_borderInText_div {
+    width: 9.3125rem;
+    height: 0.125rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .WordPressDevelopment_Target_Companies_text_div p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .WordPressDevelopment_Target_Companies_text_div {
+    align-self: self-start;
+    padding-right: 0rem;
+  }
+
+  /* WordpressWebsiteDevelopmentWhyExpertiseKeyPointSvgStyle */
+  .WordpressWebsiteDevelopmentWhyExpertiseKeyPointSvgStyle {
+    width: 100%;
+    height: 175px;
+  }
+
+  .wordpressWebsiteDevelopment_whyExpertise_keyPoint_text_div {
+    left: 48%;
+    width: 75%;
+  }
+
+  .wordpressWebsiteDevelopment_whyExpertise_keyPoint_text_div img {
+    width: 3.4375rem;
+    height: 5.4375rem;
+  }
+
+  .wordpressWebsiteDevelopmentOurExpertisekeyPointSmallHeadingStyle {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+}

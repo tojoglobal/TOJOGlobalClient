@@ -1,0 +1,708 @@
+/*
+ * Socail Media Marketing (smms)*
+  
+ */
+.InfluencerMarketing_hero_section {
+  overflow: hidden;
+  background: linear-gradient(225deg,
+      rgba(24, 200, 255, 0.3) 14.89%,
+      rgba(198, 8, 255, 0.3) 85.85%),
+    url("/Images/ServicesImage/banner_images/influencer 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.InfluencerMarketing_hero_text_div {
+  text-align: right;
+  width: 100%;
+  padding: 7.56rem 2.5rem 7rem 0.56rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.InfluencerMarketing_hero_text_div h1 {
+  margin-top: 5rem;
+  color: #fff;
+  text-align: right;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+  width: 50rem;
+}
+
+.InfluencerMarketing_hero_text_div p {
+  color: #fff;
+  text-align: right;
+
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6875rem;
+  width: 27rem;
+}
+
+/* ====================== */
+/* InfluencerMarketing_OurExpertise_section  */
+.InfluencerMarketing_OurExpertise_section {
+  background: var(--Color-5, #060044);
+  padding-top: 9rem;
+}
+
+.InfluencerMarketing_OurExpertise_card_div {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+  justify-content: center;
+  gap: 6.69rem;
+  padding: 3.06rem 1.38rem 0.6rem 3.38rem;
+}
+
+.InfluencerMarketing_OurExpertise_Text_card_div {
+  border-radius: 1.5625rem;
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+  padding: 2.94rem 2.75rem 2.69rem 5.62rem;
+  box-shadow: 0px 4px 19.8px 0px rgba(0, 0, 0, 0.3), #c508ff 0px 1px 1px 0px,
+    #18c9ff 1px 0px 1px 1px;
+
+  position: relative;
+}
+
+.InfluencerMarketing_OurExpertise_Text_card_div h4 {
+  color: #fff;
+
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.InfluencerMarketing_OurExpertise_Text_card_div p {
+  color: #fff;
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.InfluencerMarketing_OurExpertise_card_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.375rem;
+  height: 6.375rem;
+  border-radius: 3.4375rem;
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  position: absolute;
+  left: -52px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.InfluencerMarketing_OurExpertise_card_icon img {
+  width: 4rem;
+  height: 4rem;
+}
+
+/* ================================== */
+/* ====================== */
+/*InfluencerMarketing talented */
+.InfluencerMarketing_talented_card_div {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+  justify-content: center;
+  gap: 4.89rem;
+  padding: 3.06rem 1.38rem 0.5rem 0.8rem;
+}
+
+.InfluencerMarketing_talented_Text_card_div {
+  margin-top: 3.31rem;
+}
+
+.InfluencerMarketing_talented_Text_card_div h2 {
+  color: #fff;
+
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.75rem;
+}
+
+.InfluencerMarketing_talented_Text_card_div p {
+  color: var(--Color-4, #818cb6);
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+/* Container holding the big image */
+.InfluencerMarketing_talented_card_icon {
+  position: relative;
+  z-index: 20;
+  width: 30.1875rem;
+  height: 30.125rem;
+}
+
+/* Apply fade-in animation for big image */
+.InfluencerMarketing_talented_card_icon img {
+  width: 26.1875rem;
+  height: 26.125rem;
+  border-radius: 1.875rem;
+  animation: bigImageAnimation 3s ease-in-out;
+}
+
+@keyframes bigImageAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Container for small image */
+.InfluencerMarketing_talented_card_bottom_small_img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+}
+
+/* Apply fade-in animation for small image */
+.InfluencerMarketing_talented_card_bottom_small_img img {
+  width: 11.6875rem;
+  height: 11.625rem;
+  border-radius: 1.5625rem;
+
+  transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(0.9, 0.9);
+
+  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease-in-out transform;
+
+  animation: smallImageAnimation 5s ease-in-out;
+}
+
+@keyframes smallImageAnimation {
+  0% {
+    transform: translate3d(0px, 0px, -250px);
+  }
+
+  100% {
+    transform: perspective(750px) translate3d(50px, 0px, -550px) rotate3d(0, 190, 0, 85deg) scale3d(1.5, 1, 0.8);
+  }
+}
+
+.InfluencerMarketing_talented_image_card {
+  position: relative;
+}
+
+/* .talented_image_card_small_gradient {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  width: 9.5rem;
+  height: 9.4375rem;
+  border-radius: 3.125rem;
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  filter: blur(4.050000190734863px);
+  z-index: 1;
+} */
+
+/* .talented_image_card_big_gradient {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 14.5625rem;
+  height: 14.5625rem;
+  border-radius: 1.5625rem;
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  filter: blur(57.400001525878906px);
+  z-index: 1;
+} */
+
+/* ================================== */
+/* ====================== */
+/*tailoredInfluencer */
+.tailoredInfluencer_OurExpertise_card_div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  gap: 0.88rem;
+  padding: 3.06rem 0.38rem 7.5rem 0.38rem;
+}
+
+.tailoredInfluencer_OurExpertise_Text_card_div {
+  width: 95%;
+  padding: 10.5rem 1.75rem 1.31rem 1.62rem;
+  position: relative;
+  border-radius: 1.5625rem;
+  box-shadow: 0px 14px 25px 11px rgba(3, 0, 65, 0.33);
+  cursor: pointer;
+}
+
+.tailoredInfluencer_OurExpertise_Text_card_div h4 {
+  color: #fff;
+  font-family: var(--font-main);
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.875rem;
+  position: relative;
+  z-index: 5;
+}
+
+.tailoredInfluencer_OurExpertise_Text_card_div p {
+  color: var(--WHite, #fff);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+  position: relative;
+  z-index: 5;
+}
+
+/* Image styling inside the card */
+.InfluencerMarketing_OurExpertise_card_imge {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  padding: 1.15rem 3.31rem 2.94rem 1.31rem;
+  border-radius: 1.49rem 0.5rem 11rem 0.5rem;
+  filter: drop-shadow(0px 14px 25px rgba(3, 0, 65, 0.33));
+  -webkit-filter: drop-shadow(0px 14px 25px rgba(3, 0, 65, 0.33));
+}
+
+/*Hover effect on the image background inside the card */
+.tailoredInfluencer_OurExpertise_Text_card_div:hover .InfluencerMarketing_OurExpertise_card_imge {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.49rem;
+  transition: background 0.5s ease-in-out;
+}
+
+.B2C_Influencer_Marketing {
+  background: linear-gradient(359deg,
+      rgba(1, 28, 82, 0.25) 7.39%,
+      rgba(0, 205, 233, 0.25) 75.72%);
+}
+
+.B2C_Influencer_Marketing_icon {
+  background: linear-gradient(358deg,
+      rgba(1, 28, 82, 0.25) -235.25%,
+      rgba(0, 205, 233, 0.25) 12.12%);
+  transition: background 0.5s ease-in-out;
+}
+
+.B2C_Influencer_Marketing:hover .B2C_Influencer_Marketing_icon {
+  background: linear-gradient(359deg,
+      rgba(1, 28, 82, 0.5) 10%,
+      rgba(0, 205, 233, 0.5) 70%);
+}
+
+.Building_Credibility {
+  background: linear-gradient(24deg,
+      rgba(115, 0, 255, 0.25) 30.42%,
+      rgba(255, 158, 245, 0.25) 68.48%);
+}
+
+.Building_Credibility_icon {
+  background: linear-gradient(261deg,
+      rgba(115, 0, 255, 0.3) -77.82%,
+      rgba(255, 158, 245, 0.3) 109.67%);
+  transition: background 0.5s ease-in-out;
+}
+
+.Building_Credibility:hover .Building_Credibility_icon {
+  background: linear-gradient(261deg,
+      rgba(115, 0, 255, 0.3) -77.82%,
+      rgba(255, 158, 245, 0.3) 109.67%);
+}
+
+.Increasing_Campaign_Impact {
+  background: linear-gradient(359deg,
+      rgba(1, 28, 82, 0.25) 7.39%,
+      rgba(0, 205, 233, 0.25) 75.72%);
+}
+
+.Increasing_Campaign_Impact_icon {
+  background: linear-gradient(358deg,
+      rgba(1, 28, 82, 0.25) -235.25%,
+      rgba(0, 205, 233, 0.25) 12.12%);
+  transition: background 0.5s ease-in-out;
+}
+
+.Increasing_Campaign_Impact:hover .Increasing_Campaign_Impact {
+  background: linear-gradient(359deg,
+      rgba(1, 28, 82, 0.5) 10%,
+      rgba(0, 205, 233, 0.5) 70%);
+}
+
+/* ================================== */
+/* ====================== */
+/* socail-media-marketing We Offer section */
+.InfluencerMarketing_weOffer_section {
+  background: linear-gradient(270deg,
+      rgba(132, 41, 248, 0.27) 0.42%,
+      #060044 96.26%),
+    url("/Images/ServicesImage/banner_images/an-influencer-in-photography-with-his-mobile-of-hi.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.InfluencerMarketing_weOffer_section_div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  align-items: center;
+  padding: 3rem 0.69rem 2.62rem 0.62rem;
+  overflow: hidden;
+}
+
+.InfluencerMarketing_weOffer_section_left_text_div {
+  grid-column: 1 / span 2;
+  padding: 0 100px 0 0;
+}
+
+.InfluencerMarketing_weOffer_section_left_text_div h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+.InfluencerMarketing_weOffer_section_left_text_div p {
+  color: var(--WHite, #fff);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6875rem;
+}
+
+.InfluencerMarketing_weOffer_section_right_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.InfluencerMarketing_weOffer_section_right_card_div {
+  border-radius: 1.5625rem;
+  border-left: 1px solid #fff;
+
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+
+  box-shadow: 0px 4px 13.8px 0px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  padding: 1.94rem 1.88rem;
+}
+
+.InfluencerMarketing_weOffer_section_right_card_div h4 {
+  color: var(--WHite, #fff);
+
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.InfluencerMarketing_weOffer_section_right_card_div p {
+  color: var(--WHite, #fff);
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+/* ================================== */
+/* ====================== */
+/* media query  */
+/* ================================== */
+/* desktop */
+@media (max-width: 1398px) {
+
+  /* ...
+      rules here apply to devices from 1202px to 1398px (inclusive)
+          ... */
+  .InfluencerMarketing_hero_text_div {
+    padding: 9.56rem 5.36rem 7rem 0.56rem;
+  }
+
+  .InfluencerMarketing_OurExpertise_card_div {
+    margin: 3.06rem 6.38rem 0 3.38rem;
+  }
+
+  .InfluencerMarketing_talented_card_bottom_small_img {
+    right: 5px;
+    bottom: 50px;
+  }
+
+  .talented_image_card_big_gradient {
+    left: -40px;
+    bottom: 42px;
+  }
+
+  .InfluencerMarketing_talented_card_div {
+    margin: 3.06rem 4rem 0 6rem;
+  }
+
+  .tailoredInfluencer_OurExpertise_card_div {
+    margin: 3.06rem 4.38rem 10.5rem 4.38rem;
+  }
+
+  .tailoredInfluencer_OurExpertise_Text_card_div h4 {
+    margin-bottom: 1rem;
+  }
+
+  .InfluencerMarketing_weOffer_section_left_text_div p {
+    margin-right: 5.4rem;
+  }
+
+}
+
+/* laptop Media Queries */
+@media (max-width: 1200px) {
+
+  /* ...
+       rules here apply to devices from 993px to 1200px (inclusive)
+          ... */
+  .InfluencerMarketing_hero_text_div {
+    padding: 0.56rem 3.36rem 7rem 0.56rem;
+  }
+
+  .InfluencerMarketing_hero_text_div h1 {
+    margin-top: 10rem;
+    font-size: 3rem;
+    width: 39.0625rem;
+  }
+
+  .InfluencerMarketing_hero_text_div p {
+    width: 33rem;
+  }
+
+  .InfluencerMarketing_hero_section {
+    background-position: center center;
+    object-fit: cover;
+  }
+
+  .InfluencerMarketing_OurExpertise_card_div {
+    margin: 3.06rem 3rem 0 5rem;
+    gap: 4.69rem;
+  }
+
+  .InfluencerMarketing_OurExpertise_card_icon {
+    left: -40px;
+  }
+
+  .InfluencerMarketing_talented_card_div {
+    margin: 3.06rem 2rem 0 2rem;
+    gap: 1.18rem;
+  }
+
+  .InfluencerMarketing_talented_card_bottom_small_img {
+    right: 0px;
+    bottom: 36px;
+  }
+
+  .tailoredInfluencer_OurExpertise_card_div {
+    margin: 3.06rem 2.38rem 10.5rem 1.38rem;
+    gap: 0;
+  }
+
+  .InfluencerMarketing_weOffer_section_div {
+    padding: 3rem 1rem 2.62rem 0.88rem;
+  }
+
+  .InfluencerMarketing_weOffer_section_left_text_div p {
+    margin-right: 2.4rem;
+  }
+}
+
+/* tab device */
+@media (max-width: 992px) {
+  /* ...
+          // rules here apply to devices from 769px to 992px (inclusive)
+          ... */
+}
+
+/* moblie device  */
+@media (max-width: 768px) {
+  /* ...
+          // rules here apply to devices from 0px to 768px (inclusive)
+          ... */
+}
+
+/* vary small device  */
+@media (max-width: 500px) {
+
+  /* ...
+     rules here apply to devices from 0px to 460px (inclusive)
+          ... */
+  /* InfluencerMarketing_hero_text_div */
+  .InfluencerMarketing_hero_text_div {
+    padding: 0.56rem 0.6rem 3rem 0.56rem;
+  }
+
+  .InfluencerMarketing_hero_text_div h1 {
+    margin-top: 6rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    width: 100%;
+  }
+
+  .InfluencerMarketing_hero_text_div p {
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  /* InfluencerMarketing_OurExpertise_card_div */
+  .InfluencerMarketing_OurExpertise_card_div {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 4.69rem;
+    padding: 0.5rem;
+    width: 100%;
+    margin: 5rem auto 0rem auto;
+  }
+
+  .InfluencerMarketing_OurExpertise_Text_card_div p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .InfluencerMarketing_OurExpertise_card_icon {
+    left: 147px;
+    top: -3%;
+    transform: translate(-50%, -50%);
+  }
+
+  .InfluencerMarketing_OurExpertise_section {
+    padding-top: 3rem;
+  }
+
+  .InfluencerMarketing_OurExpertise_Text_card_div {
+    padding: 3.94rem 0.95rem 2.69rem 0.95rem;
+  }
+
+  /* InfluencerMarketing_talented_card_div */
+
+  .InfluencerMarketing_talented_card_div {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0rem;
+    justify-items: center;
+    gap: 0rem;
+  }
+
+  .InfluencerMarketing_talented_card_icon img {
+    width: 100%;
+    height: 20.125rem;
+  }
+
+  /* Apply fade-in animation for small image */
+  .InfluencerMarketing_talented_card_bottom_small_img img {
+    width: 11rem;
+    height: 11.625rem;
+    transform: perspective(750px) translate3d(25px, 15px, -220px) rotateX(27deg) scale(0.9, 0.9);
+  }
+
+  .InfluencerMarketing_talented_Text_card_div {
+    margin-top: 0.9rem;
+    padding: 0rem 0.8rem;
+  }
+
+  .InfluencerMarketing_talented_Text_card_div h2 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .InfluencerMarketing_talented_Text_card_div p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+
+  }
+
+  .talented_image_card_small_gradient {
+    display: none;
+  }
+
+  .talented_image_card_big_gradient {
+    display: none;
+  }
+
+  .InfluencerMarketing_talented_card_icon {
+    position: relative;
+    z-index: 20;
+    width: 19.1875rem;
+    height: 23.125rem;
+  }
+
+  .tailoredInfluencer_OurExpertise_card_div {
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2.88rem;
+    padding: 2rem 0.38rem 3rem 0.38rem;
+  }
+
+  .tailoredInfluencer_OurExpertise_Text_card_div p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  /* InfluencerMarketing_weOffer_section_div */
+  .InfluencerMarketing_weOffer_section_div {
+    grid-template-columns: 1fr;
+  }
+
+  .InfluencerMarketing_weOffer_section_div {
+    padding: 3rem 0.5rem 2.62rem 0.5rem;
+  }
+
+  .InfluencerMarketing_weOffer_section_left_text_div p {
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .InfluencerMarketing_weOffer_section_right_card_div {
+    padding: 1rem 1rem;
+    min-height: 8rem;
+  }
+
+  .InfluencerMarketing_weOffer_section_left_text_div h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .InfluencerMarketing_weOffer_section_right_card_div h4 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .InfluencerMarketing_weOffer_section_right_card_div p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+}

@@ -1,0 +1,341 @@
+/*
+ * socail media marketing page  *
+  
+ */
+.socailMediaMarketing_hero_section {
+  overflow: hidden;
+  background: linear-gradient(278deg,
+      rgba(198, 8, 255, 0.5) -4.99%,
+      rgba(24, 200, 255, 0.41) 106.17%);
+}
+
+/* ====================== */
+/*socailMediaMarketing who We Serve*/
+/* ================================== */
+.socailMediaMarketing_whoWeServe_main_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.socailMediaMarketing_whoWeServe_div {
+  position: relative;
+}
+
+.socailMediaMarketing_whoWeServe_main_div div:nth-child(4) {
+  transform: translate(169px, -119px);
+}
+
+.socailMediaMarketing_whoWeServe_main_div div:nth-child(5) {
+  transform: translate(176px, -122px);
+}
+
+.socailMediaMarketing_whoWeServe_text_div {
+  position: absolute;
+  top: 118px;
+  left: 75px;
+  width: 180px;
+}
+
+.whoWeServe_heading_style {
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-main);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+
+.whoWeServe_para_style {
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-main);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+/* ====================== */
+/* socailMediaMarketing OurServices section  */
+/* ================================== */
+.socailMediaMarketing_OurServices_section {
+  background: url("https://i.ibb.co.com/Wp1GvH0/socail-Media-Marketing-Our-Services-section-Bg-Image.png"),
+    rgba(6, 0, 68, 0.697);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.socailMediaMarketing_OurServices_heading {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.9rem;
+}
+
+.socailMediaMarketing_OurServices_para_style {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+.socailMediaMarketing_elementParaText {
+  color: #fff;
+  text-align: center;
+  font-size: 1.225rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  width: 57%;
+  margin: 0 auto;
+}
+
+.socailMediaMarketing_OurServices_main_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 85%;
+  margin: 0 auto;
+}
+
+.socailMediaMarketing_OurServices_div {
+  position: relative;
+}
+
+.SocailMediaMarketingOurServicesSvg {
+  width: 100% !important;
+}
+
+.socailMediaMarketing_OurServices_Text_icon_div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 59%;
+  text-align: center;
+}
+
+/* ====================== */
+/* socailMediaMarketing_KeyForBusinessGrowth_main_div */
+/* ================================== */
+.socailMediaMarketing_KeyForBusinessGrowth_main_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 5.6rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#SMMKeyForBusinessGrowthSvg {
+  width: 291px;
+  height: 430px;
+}
+
+.SMMKeyForBusinessGrowthSvgImage {
+  transform: translate(105px, 43px);
+  width: 4.6875rem;
+  height: 4.6875rem;
+}
+
+.socailMediaMarketing_KeyForBusinessGrowth_div {
+  justify-self: center;
+  position: relative;
+}
+
+.socailMediaMarketing_KeyForBusinessGrowth_text_div {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 87%;
+}
+
+/* ====================== */
+/*socailMediaMarketing specialize card*/
+/* ================================== */
+.socailMediaMarketing_specialize_card {
+  border-radius: 3.125rem;
+  background: linear-gradient(180deg,
+      rgba(0, 119, 255, 0.95) 0%,
+      rgba(10, 0, 116, 0.78) 50%,
+      rgba(198, 8, 255, 0.95) 100%);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 5.3rem 4.39rem 6.8rem 5rem;
+  position: relative;
+}
+
+/* ====================== */
+/* media query  */
+/* ================================== */
+/* desktop */
+@media (max-width: 1398px) {
+
+  /* ...
+  rules here apply to devices from 1202px to 1398px (inclusive)
+      ... */
+  /* socailMediaMarketing_OurServices_main_div */
+  .socailMediaMarketing_OurServices_main_div {
+    width: 100%;
+  }
+
+  .socailMediaMarketing_OurServices_heading {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+  }
+
+  .socailMediaMarketing_OurServices_Text_icon_div {
+    width: 70%;
+  }
+}
+
+/* laptop Media Queries */
+@media (max-width: 1200px) {
+  /* ...
+      rules here apply to devices from 993px to 1200px (inclusive)
+      ... */
+}
+
+/* tab device */
+@media (max-width: 992px) {
+  /* ...
+      rules here apply to devices from 769px to 992px (inclusive)
+      ... */
+}
+
+/* moblie device  */
+@media (max-width: 768px) {
+  /* ...
+     rules here apply to devices from 0px to 768px (inclusive)
+      ... */
+}
+
+/* vary small device  */
+@media (max-width: 500px) {
+  /* ...
+     rules here apply to devices from 0px to 460px
+      ... */
+
+  /* sectionTopTextstyle */
+  .sectionTopTextstyle {
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    width: 99%;
+    margin: 0 auto;
+  }
+
+  /* socailMediaMarketing_whoWeServe_main_div */
+  .socailMediaMarketing_whoWeServe_main_div {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 99%;
+    margin: 0 auto;
+    padding-top: 3rem;
+  }
+
+  .whoWeServe_heading_style {
+    font-size: 1rem;
+  }
+
+  /* socailMediaMarketing_whoWeServe_div */
+  .socailMediaMarketing_whoWeServe_div {
+    position: relative;
+  }
+
+  .socailMediaMarketing_OurServices_heading {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .socailMediaMarketing_OurServices_para_style {
+    font-size: 0.8rem;
+  }
+
+
+  .socailMediaMarketing_whoWeServe_main_div div:nth-child(4) {
+    transform: translate(0px, 0px) !important;
+  }
+
+  .socailMediaMarketing_whoWeServe_main_div div:nth-child(5) {
+    transform: translate(0px, 0px) !important;
+  }
+
+  .socailMediaMarketing_whoWeServe_text_div {
+    position: absolute;
+    top: 96px;
+    left: 75px;
+    width: 180px;
+  }
+
+  /*  socailMediaMarketing OurServices main div*/
+  .socailMediaMarketing_OurServices_main_div {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+
+  .socailMediaMarketing_elementParaText {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    width: 99%;
+    margin: 0 auto;
+  }
+
+  .SocailMediaMarketingOurServicesSvg {
+    display: none;
+  }
+
+  .socailMediaMarketing_OurServices_div {
+    background-color: #6d709ad2;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    padding: 1.7rem;
+  }
+
+  .socailMediaMarketing_OurServices_Text_icon_div {
+    position: static;
+    width: 100%;
+    transform: translate(0%, 0%);
+    text-align: center;
+  }
+
+
+  /* socailMediaMarketing_KeyForBusinessGrowth_main_div */
+  .socailMediaMarketing_KeyForBusinessGrowth_main_div {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0.6rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #SMMKeyForBusinessGrowthSvg {
+    width: 268px;
+    height: 381px;
+  }
+
+  /* socailMediaMarketing_specialize_card */
+  .socailMediaMarketing_specialize_card {
+    padding: 2.3rem 0.5rem 0.8rem 0.5rem;
+    position: relative;
+  }
+
+}

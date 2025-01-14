@@ -1,0 +1,146 @@
+/*
+ * motion Graphices page  *  
+ */
+.motionGraphices_WhyChoose_TOJOGlobal_main_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.motionGraphices_WhyChoose_TOJOGlobal_div {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 27.42406rem;
+  border-radius: 8.72863rem;
+  background: linear-gradient(142deg, #18C8FF 28.49%, #C608FF 81.44%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.motionGraphices_WhyChoose_TOJOGlobal_div::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 93%;
+  height: 93%;
+  border-radius: 7.87338rem;
+  background: #060044;
+
+}
+
+.motionGraphices_WhyChoose_TOJOGlobal_text_icon_div {
+  display: flex;
+  row-gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ====================== */
+/*motionGraphicesBenifit_text_div  */
+/* ================================== */
+.motionGraphicesBenifit_text_div {
+  position: relative;
+}
+
+.motionGraphicesBenifit_text_div_main {
+  margin-bottom: 2rem;
+}
+
+.motionGraphicesBenifit_text_div::before {
+  content: "";
+  position: absolute;
+  top: -1%;
+  left: -7%;
+  display: inline-block;
+  width: 1.6875rem;
+  height: 1.6875rem;
+  border-radius: 50%;
+  background: var(--Linear, linear-gradient(142deg, #18C8FF 28.49%, #C608FF 81.44%));
+  filter: blur(3px);
+}
+
+/* ====================== */
+/* Get Started with TOJO Global with motion Graphics  */
+/* ================================== */
+.blockChainSolution_specialize_card {
+  border-radius: 3.6875rem;
+  background: linear-gradient(180deg, rgba(0, 119, 255, 0.95) 0%, rgba(6, 0, 67, 0.79) 52.17%, rgba(198, 8, 255, 0.95) 100%), url(/Images/ServicesImage/videoEditing/MotionGraphicesGetstartedCompanyPeopleCeminerblackSuit.png);
+  box-shadow: 0px 14px 25px 11px rgba(3, 0, 65, 0.33);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 5.3rem 4.39rem 6.8rem 5rem;
+  position: relative;
+}
+
+/* ====================== */
+/* media query  */
+/* ================================== */
+/* desktop */
+@media (max-width: 1398px) {
+  /* ...
+      rules here apply to devices from 1202px to 1398px (inclusive)
+        ... */
+}
+
+/* laptop Media Queries */
+@media (max-width: 1200px) {
+  /* ...
+     rules here apply to devices from 993px to 1200px (inclusive)
+        ... */
+}
+
+/* tab device */
+@media (max-width: 992px) {
+  /* ...
+       rules here apply to devices from 769px to 992px (inclusive)
+        ... */
+}
+
+/* moblie device  */
+@media (max-width: 768px) {
+  /* ...
+        rules here apply to devices from 0px to 768px (inclusive)
+        ... */
+}
+
+/* vary small device  */
+@media (max-width: 500px) {
+  /* ...
+       rules here apply to devices from 0px to 500px 
+        ... */
+
+  /* motionGraphices_WhyChoose_TOJOGlobal_main_div */
+  .motionGraphices_WhyChoose_TOJOGlobal_main_div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .motionGraphicesBenifit_text_div {
+    margin-left: 1.5rem;
+  }
+
+  .motionGraphicesBenifit_text_div::before {
+    top: 3%;
+    left: -9%;
+    width: 1.2rem;
+    height: 1.2rem;
+    filter: blur(0.1px);
+  }
+
+}

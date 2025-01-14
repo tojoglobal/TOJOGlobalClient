@@ -1,0 +1,392 @@
+/*
+ * ui ux design page *
+  
+ */
+.uiuxDesign_hero_section {
+    background: linear-gradient(78deg, rgba(196, 0, 255, 0.33) 0%, rgba(0, 187, 255, 0.33) 100.45%);
+}
+
+.w-md-50 {
+    width: 50%;
+}
+
+/* ====================== */
+/* whatIs_uiuxDesign_main_div  */
+/* ================================== */
+.whatIs_uiuxDesign_main_div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    z-index: 5;
+}
+
+#WhatIsUiUxDesignSvg {
+    width: 653px;
+    height: 358px;
+}
+
+.whatIs_uiuxDesign_gradient_center_div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(142deg, #18C8FF 28.49%, #C608FF 81.44%);
+    filter: blur(125px);
+    width: 14.75rem;
+    height: 14.75rem;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.whatIs_uiuxDesign_div {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+}
+
+.whatIs_uiuxDesign_text_div {
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    width: 60%;
+}
+
+.whatIs_uiuxDesign_services_text_Heading {
+    color: #fff;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 131%;
+}
+
+.whatIs_uiuxDesign_services_text_subHeading {
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+    margin-top: 1.5rem;
+}
+
+.sectionBottomTextstyle {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    width: 51%;
+    margin: 0 auto;
+}
+
+.whatIs_uiuxDesign_paratextStyle {
+    color: #FFF;
+    text-align: center;
+
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.75rem;
+    /* 116.667% */
+}
+
+/* ====================== */
+/* uiuxDesig_services_card_main_div  */
+/* ================================== */
+.uiuxDesig_services_card_main_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.uiuxDesig_services_card_div {
+    width: 100%;
+    min-height: 26rem;
+    border-radius: 32px;
+    background: linear-gradient(142deg, rgba(24, 200, 255, 0.30) 28.49%, rgba(198, 8, 255, 0.30) 81.44%);
+
+}
+
+.uiuxDesig_services_card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    row-gap: 0.5rem;
+    padding: 7px 7px;
+    text-align: center;
+}
+
+.uiuxDesig_services_card_content img {
+    width: 100%;
+    height: 14rem;
+    border-radius: 27px;
+}
+
+/* ============================ */
+/* whyChoose_ux_ui_design_main_div */
+/* ================================== */
+.whyChoose_ux_ui_design_main_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.whyChoose_ux_ui_design_div {
+    position: relative;
+}
+
+#svg_ux_ui_design_why_choose {
+    width: 329px;
+    height: 320px;
+}
+
+.whyChoose_ux_ui_design_div_text {
+    text-align: center;
+    position: absolute;
+    top: 11%;
+    left: 6%;
+    width: 67%;
+}
+
+
+.whyChoose_ux_ui_design_text_icon_div {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.whyChoose_ux_ui_design_text_icon_div::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    width: 5rem;
+    height: 5.1875rem;
+    border-radius: 0.875rem;
+    background: linear-gradient(142deg, #18C8FF 28.49%, #C608FF 81.44%);
+    filter: blur(40px);
+}
+
+.whyChoose_ux_ui_design_text_icon_div img {
+    position: relative;
+    z-index: 1;
+}
+
+/* ============================*/
+/* benefits_UX_UI_Design_main_div */
+/* ================================== */
+.benefits_UX_UI_Design_main_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.benefits_UX_UI_Design_div {
+    position: relative;
+}
+
+#benefitsUXUIDesignService {
+    width: 336px;
+    height: 429px;
+}
+
+.benefits_UX_UI_Design_centered_icon {
+    clip-path: circle(61px at 50px 61px);
+    x: 124px;
+    y: 22px;
+    width: 87px;
+    height: 87px;
+}
+
+.benefits_UX_UI_Design_text_div {
+    position: absolute;
+    top: 55%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* ====================== */
+/* media query  */
+/* ================================== */
+/* desktop */
+@media (max-width: 1398px) {
+
+    /* ...
+     rules here apply to devices from 1202px to 1398px (inclusive)
+        ... */
+    #WhatIsUiUxDesignSvg {
+        width: 553px;
+        height: 358px;
+    }
+
+    .whatIs_uiuxDesign_text_div {
+        position: absolute;
+        top: 25%;
+        left: 12%;
+        width: 75%;
+    }
+
+    /* whyChoose_ux_ui_design_div_text */
+    .whyChoose_ux_ui_design_div_text {
+        text-align: center;
+        position: absolute;
+        top: 11%;
+        left: 5%;
+        width: 80%;
+    }
+
+    /* benefits_UX_UI_Design_text_div */
+    .benefits_UX_UI_Design_text_div {
+        position: absolute;
+        top: 57%;
+        left: 48%;
+        width: 72%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .uiuxDesig_services_card_main_div {
+        width: 99%;
+    }
+}
+
+/* laptop Media Queries */
+@media (max-width: 1200px) {
+    /* ...
+   rules here apply to devices from 993px to 1200px (inclusive)
+        ... */
+}
+
+/* tab device */
+@media (max-width: 992px) {
+    /* ...
+        rules here apply to devices from 769px to 992px (inclusive)
+        ... */
+}
+
+/* moblie device  */
+@media (max-width: 768px) {
+    /* ...
+       rules here apply to devices from 0px to 768px (inclusive)
+        ... */
+}
+
+/* vary small device  */
+@media (max-width: 500px) {
+    /* ...
+         rules here apply to devices from 0px to 500px (inclusive)
+        ... */
+
+    /* whatIs_uiuxDesign_main_div */
+
+    .whatIs_uiuxDesign_main_div {
+        grid-template-columns: 1fr;
+    }
+
+    #WhatIsUiUxDesignSvg {
+        width: 100%;
+        height: 200px;
+    }
+
+    .whatIs_uiuxDesign_text_div {
+        position: absolute;
+        top: 20%;
+        left: 3%;
+        width: 92%;
+    }
+
+    .whatIs_uiuxDesign_services_text_Heading {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        font-family: var(--font-main);
+    }
+
+    .whatIs_uiuxDesign_services_text_subHeading {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-family: var(--font-main);
+        margin-top: 0.5rem;
+    }
+
+    /* uiuxDesig_services_card_div */
+    .sectionBottomTextstyle {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .uiuxDesig_services_card_main_div {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .uiuxDesig_services_card_div {
+        width: 100%;
+        min-height: 26.55225rem;
+        border-radius: 2rem;
+    }
+
+    .uiuxDesig_services_card_content {
+        padding: 0.7rem 0.5rem 2rem;
+    }
+
+    .uiuxDesig_services_card_content img {
+        width: 100%;
+    }
+
+    /* whyChoose_ux_ui_design_main_div */
+    .whyChoose_ux_ui_design_main_div {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .whyChoose_ux_ui_design_div_text {
+        text-align: center;
+        position: absolute;
+        top: 18%;
+        left: 8%;
+        width: 75%;
+    }
+
+    #svg_ux_ui_design_why_choose {
+        width: 100%;
+        height: 320px;
+    }
+
+    /* benefits_UX_UI_Design_main_div */
+    .benefits_UX_UI_Design_main_div {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    #benefitsUXUIDesignService {
+        width: 100%;
+        height: 429px;
+    }
+
+    .benefits_UX_UI_Design_text_div {
+        position: absolute;
+        top: 51%;
+        left: 50%;
+        width: 81%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .w-md-50 {
+        width: 100%;
+    }
+}

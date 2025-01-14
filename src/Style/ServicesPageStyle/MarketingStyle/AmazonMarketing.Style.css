@@ -1,0 +1,337 @@
+/*
+ * Amazon marketing page  *
+  
+ */
+
+/* ====================== */
+/* whatIs_amazon_marketing_image_div  */
+/* ================================== */
+
+.whatIs_amazon_marketing_main_div {
+    position: relative;
+    z-index: 10;
+}
+
+.whatIs_amazon_marketing_main_div::before {
+    content: "";
+    position: absolute;
+    top: -124px;
+    left: -118px;
+    z-index: -1;
+    width: 31.4375rem;
+    height: 31.4375rem;
+    transform: rotate(175.087deg);
+    border-radius: 31.4375rem;
+    background: linear-gradient(142deg, rgba(24, 200, 255, 0.69) 28.49%, rgba(198, 8, 255, 0.69) 81.44%);
+    filter: blur(75px);
+
+}
+
+.whatIs_amazon_marketing_main_div::after {
+    content: "";
+    position: absolute;
+    right: -60px;
+    bottom: -89px;
+    z-index: -1;
+    width: 17.1875rem;
+    height: 17.1875rem;
+    border-radius: 17.1875rem;
+    background: linear-gradient(142deg, rgba(24, 200, 255, 0.69) 28.49%, rgba(198, 8, 255, 0.69) 81.44%);
+    filter: blur(75px);
+
+}
+
+.wordpressDevelopment_whyChoose_text_div {
+    position: relative;
+    z-index: 15;
+}
+
+.amazonMarketing_whatIsAmazonM_para_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.amazonMarketing_whatIsAmazonM_para_text p {
+    color: #fff;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.amazonMarketing_whatIsAmazonM_para_text h2 {
+    color: #fff;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.whatIs_amazon_marketing_image_div {
+    text-align: end;
+    position: relative;
+    z-index: 15;
+}
+
+.whatIs_amazon_marketing_image_div::before {
+    content: "";
+    position: absolute;
+    top: 49%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 84%;
+    height: 106%;
+    border-radius: 2.6rem;
+    background: linear-gradient(142deg, rgba(24, 200, 255, 0.60) 28.49%, rgba(198, 8, 255, 0.60) 81.44%);
+    box-shadow: 6px 6px 15.2px 0px rgba(7, 1, 70, 0.35);
+}
+
+/* ====================== */
+/* keyComponents_amazon_marketing_section */
+/* ================================== */
+.keyComponents_amazon_marketing_section {
+    margin-top: -16rem;
+}
+
+.keyComponents_amazon_marketing_main_div {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.KeyComponentsAmazonMarketingSvg {
+    width: 100%;
+    height: auto;
+
+}
+
+/* ====================== */
+/*amazonMediaMarketing_OurServices_section */
+/* ================================== */
+.amazonMediaMarketing_OurService_main_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.amazonMediaMarketing_OurService_div {
+    position: relative;
+
+}
+
+.amazonMediaMarketing_OurService_number_box_div {
+    position: relative;
+}
+
+.amazonMediaMarketing_OurService_number_box_div h3 {
+    position: absolute;
+    top: 2px;
+    left: 39.9%;
+    transform: translateX(-50%);
+    color: #FFF;
+    text-align: center;
+    font-family: "Barlow Condensed";
+    font-size: 3.575rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 7.29594rem;
+}
+
+.amazonMediaMarketing_OurService_Text_div {
+    position: absolute;
+    top: 68%;
+    left: 39.9%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* ====================== */
+/* WhyChooseTojoGlobalAmazonMarketing_section  */
+/* ================================== */
+.WhyChooseTojoGlobalAmazonMarketing_section {
+    margin-top: 8rem;
+}
+
+/* ====================== */
+/* AmazonMedia Marketing Benifits   */
+/* ================================== */
+
+.amazonMediaMarketing_Benifits_number_box_div {
+    position: relative;
+}
+
+.amazonMediaMarketing_Benifits_number_box_div h3 {
+    position: absolute;
+    top: -14px;
+    left: 42.9%;
+    z-index: 10;
+    transform: translateX(-50%);
+    color: #FFF;
+    text-align: center;
+    font-family: "Barlow Condensed";
+    font-size: 3.575rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 7.29594rem;
+}
+
+.amazonMediaMarketing_Benifits_number_box_div h3::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    left: 42.9%;
+    transform: translateX(-50%);
+    width: 8.625rem;
+    height: 8.625rem;
+    background: linear-gradient(142deg, #18C8FF 28.49%, #C608FF 81.44%);
+    filter: blur(75px);
+}
+
+.amazonMediaMarketing_Benifits_div {
+    position: relative;
+}
+
+.amazonMediaMarketing_Benifits_Text_div {
+    position: absolute;
+    top: 34%;
+    left: 36.9px;
+    width: 67%;
+    text-align: center;
+}
+
+/* ====================== */
+/* media query  */
+/* ================================== */
+/* desktop */
+@media (max-width: 1398px) {
+    /* ...
+        // rules here apply to devices from 1202px to 1398px (inclusive)
+        ... */
+
+    .whatIs_amazon_marketing_image_div::before {
+        content: "";
+        position: absolute;
+        top: 49%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        width: 100%;
+        height: 106%;
+    }
+
+    .amazonMediaMarketing_OurService_number_box_div h3 {
+        left: 48.9%;
+    }
+
+    .amazonMediaMarketing_OurService_Text_div {
+        left: 45.9%;
+        width: 80%;
+    }
+
+    .amazonMediaMarketing_Benifits_number_box_div h3 {
+        left: 50.9%;
+    }
+}
+
+/* laptop Media Queries */
+@media (max-width: 1200px) {
+    /* ...
+        // rules here apply to devices from 993px to 1200px (inclusive)
+        ... */
+}
+
+/* tab device */
+@media (max-width: 992px) {
+    /* ...
+        // rules here apply to devices from 769px to 992px (inclusive)
+        ... */
+}
+
+/* moblie device  */
+@media (max-width: 768px) {
+    /* ...
+        // rules here apply to devices from 0px to 768px (inclusive)
+        ... */
+}
+
+/* optional */
+
+/* vary small device  */
+@media (max-width: 500px) {
+    /* ...
+         rules here apply to devices from 0px to 460px (inclusive)
+        ... */
+
+
+
+    .whatIs_amazon_marketing_image_div::before {
+        content: none;
+    }
+
+    .whatIs_amazon_marketing_main_div::before {
+        content: none;
+    }
+
+    .whatIs_amazon_marketing_main_div::after {
+        content: none;
+    }
+
+    .wordpressDevelopment_whyChoose_text_div {
+        order: 2;
+    }
+
+    .whatIs_amazon_marketing_image_div {
+        margin-bottom: 0.9rem;
+        order: 1;
+    }
+
+    .whatIs_amazon_marketing_image_div img {
+        width: 100%;
+        height: 13rem;
+    }
+
+
+    /* amazonMediaMarketing_OurService_main_div */
+    .amazonMediaMarketing_OurService_main_div {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 1rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .amazonMediaMarketing_OurService_Text_div {
+        left: 47.9%;
+        width: 90%;
+        top: 64%;
+    }
+
+    /* keyComponents_amazon_marketing_section */
+    .keyComponents_amazon_marketing_section {
+        display: none;
+    }
+
+    /* .WhyChooseTojoGlobalAmazonMarketing_section */
+    .WhyChooseTojoGlobalAmazonMarketing_section {
+        display: none;
+    }
+
+    /* amazonMediaMarketing_Benifits_Text_div */
+    .amazonMediaMarketing_Benifits_Text_div {
+        position: absolute;
+        top: 37%;
+        left: 44.9px;
+        width: 71%;
+        text-align: center;
+    }
+
+
+
+}

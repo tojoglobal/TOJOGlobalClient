@@ -1,0 +1,18 @@
+{
+  "short_name": "TG",
+  "name": "TOJO Global",
+  "icons": [
+    {
+      "src": "Favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "192x192"
+    },
+    {
+      "src": "Favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "https://www.tojoglobal.com",
+  "display": "standalone"
+}

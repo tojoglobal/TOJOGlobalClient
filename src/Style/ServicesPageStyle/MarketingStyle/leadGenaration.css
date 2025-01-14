@@ -1,0 +1,624 @@
+/*
+ * lead Genaration page *  
+ */
+
+/* ====================== */
+/* media query  */
+
+.leadGenaration_service_section {
+  margin-top: -2rem;
+  padding: 2rem 1.39rem 0.8rem 0rem;
+}
+
+.leadGeneration_hero_section {
+  padding: 9.3rem 4.39rem 11.8rem 5rem;
+  background-image: url("/Images/ServicesImage/banner_images/bg.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  object-fit: contain;
+  position: relative;
+  z-index: 5;
+}
+
+.leadGenaration_service_hero_text_div {
+  padding-right: 1rem;
+}
+
+.leadGenaration_service_hero_text_div h1 {
+  color: #fff;
+  text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+
+.leadGenaration_service_hero_text_div p {
+  color: #fff;
+  text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-right: 1.06rem;
+}
+
+.searchEngineMarketing_leadGenaration_main_div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  margin-top: 3.38rem;
+  gap: 0.81rem;
+  position: relative;
+}
+
+.searchEngineMarketing_leadGenaration_card_div {
+  width: 26rem;
+  border-radius: 1.5625rem;
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+  padding: 1.14rem 2rem 2.81rem 1.94rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.searchEngineMarketing_leadGenaration_card_div:hover {
+  background: var(--BG-15, rgba(24, 200, 255, 0.20));
+}
+
+.searchEngineMarketing_leadGenaration_card_div_img {
+  border-radius: 50%;
+  background: var(--Linear,
+      linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.75rem;
+  height: 4.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.searchEngineMarketing_leadGenaration_card_div_img img {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+
+.searchEngineMarketing_leadGenaration_card_div h4 {
+  color: #fff;
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.searchEngineMarketing_leadGenaration_card_div p {
+  color: var(--Color-4, #818cb6);
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.approach_leadGenaration_service_section {
+  margin-top: 12rem;
+  padding: 0rem 1.39rem 0.8rem 0rem;
+}
+
+.approach_leadGenaration_service_section_div {
+  display: grid;
+  grid-template-columns: 20% 10% 70%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.38rem;
+  gap: 0.81rem;
+  position: relative;
+}
+
+.approach_leadGenaration_service_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.circel_div {
+  position: relative;
+  z-index: 10;
+}
+
+.beloww_circel {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  width: 15.375rem;
+  height: 15.375rem;
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+}
+
+.main-circle {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 12.875rem;
+  height: 12.8125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 20;
+}
+
+.circle-text {
+  text-align: center;
+  position: relative;
+}
+
+.circle-text span {
+  font-family: var(--font-main);
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.steps-container {
+  width: 60%;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.step-number {
+  background-color: #00c7f2;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: var(--Color-5, #060044);
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-right: 8rem;
+  position: relative;
+  z-index: 5;
+}
+
+/* Dotted line step-number steps */
+.step-number::before {
+  content: "";
+  position: absolute;
+  left: 41px;
+  top: 24px;
+  width: 8.375rem;
+  height: 0.0725rem;
+  background: repeating-linear-gradient(to right,
+      #00c7f2 1px,
+      #00c7f2 2px,
+      transparent 2px,
+      transparent 5px);
+}
+
+.stepNumber3::before {
+  content: "";
+  position: absolute;
+  left: -294px;
+  top: 24px;
+  width: 29.375rem;
+  height: 0.0725rem;
+  background: repeating-linear-gradient(to right,
+      #00c7f2 1px,
+      #00c7f2 2px,
+      transparent 2px,
+      transparent 5px);
+  z-index: -1;
+}
+
+.step_text_icon_div {
+  border-radius: 4.6875rem;
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.88rem 1.25rem 0.44rem 0.25rem;
+  width: 37.5rem;
+  height: 6.9375rem;
+  position: relative;
+}
+
+.step_buttom_gradinet {
+  position: absolute;
+  top: 5px;
+  left: 1px;
+  width: 6.75rem;
+  height: 6.75rem;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2292%22%20height%3D%2292%22%20viewBox%3D%220%200%2092%2092%22%20fill%3D%22none%22%3E%0A%20%20%3Cpath%20d%3D%22M0%2012C0%205.37258%205.37258%200%2012%200H79.4081C90.0449%200%2095.4231%2012.8142%2087.9723%2020.4056L55%2054L20.4071%2087.964C12.8163%2095.4167%200%2090.039%200%2079.4012V12Z%22%20fill%3D%22url(%23paint0_linear_864_4523)%22%2F%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22paint0_linear_864_4523%22%20x1%3D%2287.3529%22%20y1%3D%2211.5147%22%20x2%3D%2210.7206%22%20y2%3D%2288.1471%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0A%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%2318C8FF%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23C608FF%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.step-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 16rem;
+  height: 6rem;
+  position: relative;
+}
+
+.step:nth-child(2) .step-icon {
+  width: 17.5rem;
+}
+
+.step-icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: fill;
+}
+
+
+
+
+.step-content {
+  max-width: 500px;
+  padding-left: 27px;
+}
+
+.step-content h3 {
+  color: var(--Color-2, #18c8ff);
+
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.625rem;
+}
+
+.step-content p {
+  color: #fff;
+
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+/* Dotted line between steps */
+.steps-container::before {
+  content: "";
+  position: absolute;
+  left: 21px;
+  top: 39px;
+  width: 2px;
+  height: 84%;
+  background: repeating-linear-gradient(to bottom,
+      #00c7f2,
+      #00c7f2 0px,
+      transparent 3px,
+      transparent 4px);
+}
+
+/* ====================== */
+/*brand_leadGenaration_service_div  */
+.brand_leadGenaration_service_section {
+  padding: 12rem 1.39rem 12rem 0rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.brand_leadGenaration_service_section_gradient {
+  position: absolute;
+  right: -84px;
+  bottom: 81px;
+  width: 45.9375rem;
+  height: 38.5625rem;
+  border-radius: 50%;
+  background: linear-gradient(191deg, #18c8ff 13.55%, #c608ff 91.78%);
+  z-index: 5;
+}
+
+.brand_leadGenaration_service_div {
+  max-width: 80.3125rem;
+  height: 24.125rem;
+  margin: 0 auto;
+  border-radius: 1.875rem;
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+  box-shadow: 0px 14px 25px 11px rgba(3, 0, 65, 0.33);
+  padding: 3.69rem 1.94rem 3rem 5.45rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 20;
+}
+
+.brand_leadGenaration_service_text_div h1 {
+  color: #fff;
+
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.75rem;
+}
+
+.brand_leadGenaration_service_text_div p {
+  color: #fff;
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.brand_leadGenaration_service_imge_div {
+  margin-left: 8.25rem;
+}
+
+.brand_leadGenaration_service_imge_div img {
+  width: 19.25rem;
+  height: 19.25rem;
+}
+
+/* ================================== */
+/* ====================== */
+/* lead generation service Items   */
+.leadGenaration_service_card_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 0.88rem;
+}
+
+.leadGenaration_service_card_div div:nth-last-child(1) {
+  grid-column: 2 / 3;
+  justify-self: center;
+  align-self: center;
+}
+
+/* ================================== */
+/* ====================== */
+/* media query  */
+/* ================================== */
+/* small desktop */
+@media (max-width: 1398px) {
+
+  /* ...
+        // rules here apply to devices from 1202px to 1398px (inclusive)
+        ... */
+  .searchEngineMarketing_leadGenaration_card_div {
+    max-width: 22rem;
+  }
+
+  .searchEngineMarketing_WhoHelp_top_text_div p {
+    margin-top: 1.69rem;
+    max-width: 58%;
+  }
+
+  .approach_leadGenaration_service_container {
+    padding: 2.75rem 17px;
+  }
+
+  .step-icon {
+    width: 16.375rem;
+    height: 5.375rem;
+  }
+
+  .step-icon img {
+    width: 3.375rem;
+    height: 3.375rem;
+  }
+
+  .step_text_icon_div {
+    padding: 0.88rem 1rem 0.44rem 0.25rem;
+    width: 39.5rem;
+  }
+
+  .brand_leadGenaration_service_section_gradient {
+    right: -193px;
+    bottom: 106px;
+    width: 42.9375rem;
+    height: 33.5625rem;
+  }
+
+  .brand_leadGenaration_service_div {
+    max-width: 68.3125rem;
+    padding: 3.69rem 1.94rem 3rem 3.6rem;
+  }
+}
+
+/* laptop Media Queries */
+@media (max-width: 1200px) {
+
+  /* ...
+        // rules here apply to devices from 993px to 1200px (inclusive)
+        ... */
+  .searchEngineMarketing_hero_text_div {
+    padding-right: 3rem;
+  }
+
+  .searchEngineMarketing_leadGenaration_card_div {
+    width: 26rem;
+    border-radius: 1.5625rem;
+    background: var(--BG-15, rgba(24, 200, 255, 0.15));
+    padding: 1.14rem 0.5rem 0.81rem 0.94rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .searchEngineMarketing_leadGenaration_card_div {
+    width: 18rem;
+    padding: 1.14rem 0.5rem 0.81rem 0.94rem;
+  }
+
+  .approach_leadGenaration_service_container {
+    justify-content: space-evenly;
+    padding: 2.75rem 0px;
+  }
+
+  .step_text_icon_div {
+    /* align-items: center;
+    padding: 0.88rem 1.25rem 0.44rem 0.25rem; */
+    /* width: 37.5rem; */
+    height: 8rem;
+    /* position: relative; */
+  }
+
+  .step-icon {
+    width: 15.375rem;
+    height: 5.375rem;
+  }
+
+  .step-content {
+    min-width: 210px;
+    padding-left: 61px;
+  }
+
+  .step-number {
+    margin-right: 3rem;
+    z-index: 0;
+  }
+
+  .step-number::before {
+    width: 7.375rem;
+  }
+
+  .stepNumber3::before {
+    content: "";
+    position: absolute;
+    left: -281px;
+    top: 24px;
+    width: 28.375rem;
+    height: 0.0725rem;
+    background: repeating-linear-gradient(to right,
+        #00c7f2 1px,
+        #00c7f2 2px,
+        transparent 2px,
+        transparent 5px);
+    z-index: -1;
+  }
+
+  .brand_leadGenaration_service_section {
+    padding: 12rem 2.39rem 7.8rem 2rem;
+  }
+
+  .brand_leadGenaration_service_imge_div {
+    margin-left: 2.25rem;
+  }
+
+  .brand_leadGenaration_service_section_gradient {
+    right: -264px;
+    bottom: 17px;
+  }
+
+  .brand_leadGenaration_service_div {
+    padding: 3.69rem 1.94rem 3rem 1.6rem;
+  }
+}
+
+/* tab device */
+@media (max-width: 992px) {
+  /* ...
+        // rules here apply to devices from 769px to 992px (inclusive)
+        ... */
+}
+
+/* moblie device  */
+@media (max-width: 768px) {
+  /* ...
+        // rules here apply to devices from 0px to 768px (inclusive)
+        ... */
+}
+
+/* optional */
+
+/* vary small device  */
+@media (max-width: 500px) {
+  /* ...
+         rules here apply to devices from 0px to 460px (inclusive)
+        ... */
+
+  .searchEngineMarketing_leadGenaration_main_div {
+    display: grid;
+    grid-template-columns: auto !important;
+    justify-content: center;
+    margin-top: 3.38rem;
+    gap: 0.81rem;
+    position: relative;
+  }
+
+  /* approach_leadGenaration_service_section */
+  .approach_leadGenaration_service_section {
+    display: none;
+  }
+
+  /* leadGenaration_service_card_div */
+  .leadGenaration_service_card_div {
+    grid-template-columns: 1fr;
+    gap: 3.88rem;
+  }
+
+  .leadGenaration_service_card_div div:nth-last-child(1) {
+    grid-column: auto;
+    justify-self: center;
+    align-self: center;
+  }
+
+  /* brand_leadGenaration_service_div */
+  .brand_leadGenaration_service_section {
+    padding: 5rem 0.5rem 4.8rem 0.5rem;
+  }
+
+  .brand_leadGenaration_service_div {
+    padding: 2.69rem 0.5rem 1rem 0.6rem;
+    height: 49rem;
+    flex-direction: column;
+  }
+
+  .brand_leadGenaration_service_text_div h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .brand_leadGenaration_service_text_div p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .brand_leadGenaration_service_imge_div {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+
+  .brand_leadGenaration_service_section_gradient {
+    width: 35.9375rem;
+    height: 30.5625rem;
+    right: -232px;
+    bottom: 25px;
+  }
+
+
+
+
+}

@@ -1,0 +1,316 @@
+/*
+ *White paper content writng *
+  
+ */
+.WhatisWhitePapeContertSvg {
+    width: 1077px;
+    height: 433px;
+}
+
+.what_is_whitepaperContent_div {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.what_is_whitepaperContent_div::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    min-height: 26.119rem;
+    border-radius: 41.875rem;
+    background: linear-gradient(142deg, #18C8FF 28.49%, #C608FF 81.44%);
+    filter: blur(250px);
+    z-index: -1;
+
+}
+
+.what_is_whitepaperContent_text_div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 88%;
+    min-height: 24.119rem;
+    border-radius: 1.88244rem;
+    background: var(--BG-15, rgba(24, 200, 255, 0.15));
+    backdrop-filter: blur(4.706144332885742px);
+    text-align: center;
+    padding: 3.5rem 3.9rem;
+}
+
+.whitepaperContent_para_text {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.625rem;
+}
+
+.whitepaperContent_subPara_text {
+    color: #FFF;
+
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    /* 133.333% */
+}
+
+/* ====================== */
+/*our_whitepaperContent_design  */
+/* ================================== */
+
+.our_whitepaperContent_designService_maindiv {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+}
+
+.our_whitepaperContent_designService_text_div {
+    width: 90%;
+    min-height: 10.1875rem;
+    border-radius: 1.875rem;
+    border-left: 21px solid #18C8FF;
+    background: #58b9ff4d;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(7.5px);
+    padding: 1.5rem 2rem;
+}
+
+/* ====================== */
+/* Benefits of Professional White Paper Design  */
+/* ================================== */
+.benefits_of_professional_whitepaperDesign_section {
+    margin-top: 8rem;
+    background: linear-gradient(247deg, rgba(24, 200, 255, 0.15) 30.42%, rgba(198, 8, 255, 0.15) 55.55%);
+}
+
+.benefits_of_professional_whitepaperDesign_div {
+    width: 82%;
+    padding: 2.58rem 0rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1rem;
+}
+
+.benefits_of_professional_whitepaperDesign_card {
+    padding: 4.4rem 2rem 2.4rem 2rem;
+    text-align: center;
+}
+
+/* ====================== */
+/*whyChoose_whitepaperContent_designService_maindiv  */
+/* ================================== */
+.whyChoose_whitepaperContent_designService_maindiv {
+    width: 92%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1rem;
+}
+
+.whyChoose_whitepaperContent_designService_card_div {
+    border-radius: 1.44531rem;
+    border-bottom: 9.25px solid var(--Linear, #18C8FF);
+    background: var(--BG-15, rgba(24, 200, 255, 0.15));
+}
+
+
+
+/*Hover effect on the image background inside the card */
+.tailoredInfluencer_OurExpertise_Text_card_div:hover .InfluencerMarketing_OurExpertise_card_imge {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.49rem;
+    transition: background 0.5s ease-in-out;
+}
+
+.whyChoose_whitepaperContent_designService_icon {
+    background: linear-gradient(359deg,
+            rgba(1, 28, 82, 0.25) 7.39%,
+            rgba(0, 205, 233, 0.25) 75.72%);
+}
+
+.whyChoose_whitepaperContent_designService_icon {
+    background: linear-gradient(142deg, rgba(24, 200, 255, 0.50) 28.49%, rgba(198, 8, 255, 0.50) 81.44%);
+    filter: drop-shadow(0px 6px 6px rgba(6, 0, 68, 0.25));
+    transition: background 0.5s ease-in-out;
+}
+
+.whyChoose_whitepaperContent_designService_card_div:hover .whyChoose_whitepaperContent_designService_icon {
+    background: linear-gradient(142deg, rgba(24, 200, 255, 0.50) 28.49%, rgba(198, 8, 255, 0.50) 81.44%);
+}
+
+/* ====================== */
+/* media query  */
+/* ================================== */
+/* desktop */
+@media (max-width: 1398px) {
+
+    /* ...
+     rules here apply to devices from 1202px to 1398px (inclusive)
+        ... */
+    /* what_is_whitepaperContent_text_div */
+    .WhatisWhitePapeContertSvg {
+        display: none;
+    }
+
+    .what_is_whitepaperContent_text_div {
+        left: 52.5%;
+        width: 100%;
+    }
+
+    .what_is_whitepaperContent_text_div {
+        position: static;
+        transform: none;
+    }
+
+    .whitepaperContent_para_text {
+        color: #FFF;
+        font-size: 1.12rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+    }
+}
+
+/* laptop Media Queries */
+@media (max-width: 1200px) {
+    /* ...
+     rules here apply to devices from 993px to 1200px (inclusive)
+        ... */
+}
+
+/* tab device */
+@media (max-width: 992px) {
+    /* ...
+        // rules here apply to devices from 769px to 992px (inclusive)
+        ... */
+}
+
+/* moblie device  */
+@media (max-width: 768px) {
+    /* ...
+         rules here apply to devices from 0px to 768px (inclusive)
+        ... */
+}
+
+/* vary small device  */
+@media (max-width: 500px) {
+    /* ...
+        rules here apply to devices from 0px to 460px (inclusive)
+        ... */
+
+
+    /* WhatisWhitePapeContert */
+    .WhatisWhitePapeContertSvg {
+        display: none;
+    }
+
+    .what_is_whitepaperContent_div {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        position: static;
+    }
+
+    .whitepaperContent_para_text {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    .whitepaperContent_subPara_text {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    /* what_is_whitepaperContent_mobile_div */
+    .what_is_whitepaperContent_mobile_div {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+    }
+
+    .what_is_whitepaperContent_mobile_div::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        min-height: 26.119rem;
+        border-radius: 41.875rem;
+        background: linear-gradient(142deg, #18C8FF 28.49%, #C608FF 81.44%);
+        filter: blur(250px);
+
+    }
+
+    .what_is_whitepaperContent_mobile_text_div {
+        width: 100%;
+        min-height: 24.119rem;
+        border-radius: 1.88244rem;
+        background: var(--BG-15, rgba(24, 200, 255, 0.15));
+        backdrop-filter: blur(4.706144332885742px);
+        text-align: center;
+        padding: 2rem 0.5rem;
+    }
+
+    /* our_whitepaperContent_designService_maindiv */
+    .our_whitepaperContent_designService_maindiv {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        column-gap: 2rem;
+        align-items: center;
+    }
+
+    .our_whitepaperContent_designService_text_div {
+        width: 100%;
+        border-radius: 1.875rem;
+        border-left: 6px solid #18C8FF;
+        padding: 1.5rem 1rem;
+    }
+
+    /* benefits_of_professional_whitepaperDesign_div */
+    .benefits_of_professional_whitepaperDesign_section {
+        margin-top: 3rem;
+    }
+
+    .benefits_of_professional_whitepaperDesign_div {
+        width: 95%;
+        padding: 1rem 0rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .searchEngineMarketing_second_part_frist_text_bottom_border {
+        margin-top: 0.5rem;
+    }
+
+    .benefits_of_professional_whitepaperDesign_card {
+        padding: 1.4rem 1rem 1.4rem 1rem;
+    }
+
+    .whyChoose_whitepaperContent_designService_maindiv {
+        width: 100%;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 3rem;
+    }
+}

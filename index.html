@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- For favicon.ico -->
+    <link
+      data-react-helmet="true"
+      rel="icon"
+      href="/Favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- For SVG icons -->
+    <link
+      data-react-helmet="true"
+      rel="icon"
+      href="/Favicon.svg"
+      type="image/svg+xml"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title data-react-helmet="true">
+      TOJO Global - Digital Services & Marketing Solutions
+    </title>
+
+    <!-- Meta Description for SEO -->
+    <meta
+      data-react-helmet="true"
+      name="description"
+      content="Tojo Global - Your one-stop solution for all digital services, including Marketing, Development, Design, and more. Grow your business with Tojo Global today!"
+    />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      data-react-helmet="true"
+      property="og:description"
+      content="Your one-stop solution for all digital services, including Marketing, Development, Design, and more."
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:title"
+      content="TOJO Global - Digital Services & Marketing Solutions"
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:url"
+      content="https://www.tojoglobal.com"
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:site_name"
+      content="TOJO Global"
+    />
+    <meta
+      data-react-helmet="true"
+      name="keywords"
+      content="digital marketing , marketing digital marketing , marketing and digital marketing , digital and marketing , digitas marketing"
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:image"
+      content="https://www.tojoglobal.com/Favicon.ico"
+    />
+
+    <!-- Aos Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.tojoglobal.com" />
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "TOJO Global",
+        "alternateName": "TG",
+        "url": "https://www.tojoglobal.com",
+        "sameAs": [
+          "https://www.facebook.com/tojoglobal",
+          "https://www.twitter.com/tojoglobal",
+          "https://www.linkedin.com/company/tojoglobal"
+        ],
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.tojoglobal.com/search?query={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div itemscope itemtype="https://schema.org/WebSite">
+      <meta itemprop="url" content="https://www.tojoglobal.com" />
+      <meta itemprop="name" content="TOJO Global" />
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <!-- Aos Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 2000, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+      });
+    </script>
+  </body>
+</html>

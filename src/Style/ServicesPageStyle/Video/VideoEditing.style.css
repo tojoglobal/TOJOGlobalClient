@@ -1,0 +1,1480 @@
+/*
+ *video editing page *
+  
+ */
+/*univarsal style */
+.topHeadingStyle {
+  color: #fff;
+  text-align: center;
+
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.75rem;
+}
+
+.smallHeadingStyle {
+  color: var(--WBG, #ecf2f2);
+  text-align: center;
+
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  /* 116.667% */
+}
+
+.paraStyle {
+  width: 70%;
+  margin: 0 auto;
+  color: var(--Color-4, #818cb6);
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+.sectionTopTextstyle {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.videoEditing_hero_section {
+  overflow: hidden;
+  background: radial-gradient(64% 75.78% at 51.63% 58.55%,
+      #00cde9 0%,
+      #011c52 100%);
+}
+
+/* ====================== */
+/* videoEditing_hiring_img_div */
+/* ================================== */
+.videoEditing_hiring_section {
+  padding: 7.3rem 0rem 3rem;
+}
+
+.videoEditing_hiring_main_div {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  justify-items: center;
+  align-items: center;
+  column-gap: 1.06rem;
+}
+
+.ideoEditing_hiringTextHeddingStyle {
+  color: #fff;
+  text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
+
+  font-size: 1.725rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.125rem;
+}
+
+.ideoEditing_hiring_text_div {
+  margin-left: 1.2rem;
+}
+
+
+
+.videoEditong_hiring_video_div {
+  margin-top: 0rem;
+  margin-bottom: 0;
+}
+
+/* .videoEditing_hiring_img_div {
+  border-radius: 2.125rem;
+  border: 10.378px solid rgba(24, 200, 255, 0.6);
+  position: relative;
+  z-index: 0;
+  padding: 0.9rem;
+} */
+
+.videoPlayButton_icon_svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+}
+
+
+
+.videoEditong_hiring_image_topright_gradient {
+  position: absolute;
+  top: -111px;
+  right: -69px;
+  width: 18.0625rem;
+  height: 16.9375rem;
+  border-radius: 18.0625rem;
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  filter: blur(126px);
+  z-index: 7;
+}
+
+.videoEditong_hiring_image_bottomleft_gradient {
+  position: absolute;
+  bottom: -111px;
+  left: -69px;
+  width: 18.0625rem;
+  height: 16.9375rem;
+  border-radius: 18.0625rem;
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  filter: blur(126px);
+  z-index: 7;
+}
+
+.heroTextHeddingStyle {
+  color: #fff;
+  text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
+
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.125rem;
+}
+
+.heroTextParaStyle {
+  color: #fff;
+  text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
+
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-right: 1.06rem;
+}
+
+/* ====================== */
+/* vfx_videoEdditing_video_box */
+/* ================================== */
+.vfx_videoEdditing_video_box {
+  /* width: 90%;
+  height: 25rem; */
+
+  /* background: var(--BG-15, rgba(24, 200, 255, 0.15)); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.videoItems {
+  margin: 5rem auto;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 1.125rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.vfx_videoEdditing_video_box_icon {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.svgPauseIcon {
+  transform: translateX(-10px);
+}
+
+#videoItems .videoPlayPauseButton {
+  opacity: 0;
+}
+
+#videoItems:hover .videoPlayPauseButton {
+  opacity: 1;
+
+}
+
+.vfx_how_it_works_text_div {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.videoEditing_vfx_service_main_div {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.88rem;
+  align-items: center;
+}
+
+.videoEditing_vfx_service_div {
+  border-radius: 0.69731rem;
+  border-right: 4px solid var(--Linear, #18c8ff);
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+
+  width: 46.8125rem;
+  height: 7.125rem;
+  padding: 1.44rem 2.38rem 0.62rem 5.62rem;
+  position: relative;
+  transition: opacity 0.3s ease;
+}
+
+.videoEditing_vfx_service_div:hover {
+  background: linear-gradient(186deg, #18c8ff 9.72%, #c608ff 93.82%);
+}
+
+.videoEditing_vfx_services_svg_div {
+  position: absolute;
+  top: -14px;
+  left: -77px;
+}
+
+/* Initially show the default circle */
+.circle_default {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.circle_hover {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* On hover, switch visibility between the two circles */
+.videoEditing_vfx_service_div:hover .circle_default {
+  opacity: 0;
+}
+
+.videoEditing_vfx_service_div:hover .circle_hover {
+  opacity: 1;
+  /* Show the hover circle */
+}
+
+.videoEditing_vfx_services_svg_div svg {
+  width: 147px;
+  height: 146px;
+}
+
+.videoEditing_vfx_services_svg_middle_graddint {
+  transform: translate(17px, 15px);
+}
+
+.videoEditing_vfx_services_svg_middle_icon {
+  transform: translate(46px, 35px);
+  height: 4.5rem;
+  width: 3.2rem;
+}
+
+.videoEditing_vfx_service_div h4 {
+  color: var(--WBG, #ecf2f2);
+  text-align: left;
+
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+.videoEditing_vfx_service_div p {
+  color: var(--WBG, #ecf2f2);
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+/* ====================== */
+/* youtube_video_editing_services_main_div  */
+/* ================================== */
+.youtube_video_editing_services_main_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.youtube_video_editing_services_div {
+  position: relative;
+}
+
+.youtube_video_editing_services_div img {
+  width: 100%;
+}
+
+.youtube_video_editing_services_text_div {
+  position: absolute;
+  top: 86px;
+  left: 167px;
+  width: 12.0625rem;
+}
+
+.youtube_video_editing_services_text_div h4 {
+  color: #fff;
+  font-family: "Barlow Condensed";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  /* 166.667% */
+}
+
+.youtube_video_editing_services_text_div p {
+  color: #fff;
+  /* font-family: "--font-poppins"; */
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+.whyChoose_youtube_video_editor_main_div {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.whyChoose_youtube_video_editor_div {
+  width: 90%;
+}
+
+#whychooser_youtebe_video_editor_svg {
+  width: 233px;
+  height: 233px;
+}
+
+.whyChoose_youtube_video_editor_imageAndText_div {
+  display: flex;
+  align-items: center;
+}
+
+.whyChoose_youtube_video_editor_imageAndgradientSvg_div {
+  position: relative;
+}
+
+.whyChoose_youtube_video_editor_imageAndgradientSvg_div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.whyChoose_youtube_video_editor_Text_div h4 {
+  text-align: left !important;
+}
+
+.whyChoose_youtube_video_editor_Text_div p {
+  text-align: left !important;
+  margin: 0 auto;
+  color: var(--Color-4, #818cb6);
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+
+/* ====================== */
+/* brand_video_editing_offer_main_div */
+/* ================================== */
+.brand_video_editing_offer_main_div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.brand_video_editing_offer_div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.brand_video_editing_offer_div_icon {
+  transform: translate(54px, 45px);
+  width: 4.375rem;
+  height: 4.375rem;
+}
+
+.brand_video_editing_offer_text_Main_div {
+  position: relative;
+}
+
+.brand_video_editing_offer_text_div {
+  position: absolute;
+  top: 36px;
+  left: 59px;
+  width: 75%;
+}
+
+.brand_video_editing_offer_text_right_div {
+  text-align: right;
+}
+
+.brand_video_editing_offer_text_div h4 {
+  color: var(--WBG, #ecf2f2);
+
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  /* 116.667% */
+}
+
+.brand_video_editing_offer_text_div p {
+  color: var(--Color-4, #818cb6);
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+  /* 112.5% */
+}
+
+.brand_video_editing_choose_main_div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 85%;
+  row-gap: 2rem;
+  margin: 0 auto;
+}
+
+.brand_video_editing_choose_div {
+  width: 31.9125rem;
+  height: 16.4375rem;
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+  border-radius: 1rem;
+  padding: 2.19rem;
+}
+
+.brand_video_editing_choose_text_icon_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  justify-content: center;
+}
+
+.brand_video_editing_choose_text_icon_div h4 {
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+.brand_video_editing_choose_text_icon_div p {
+  color: var(--WHite, #fff);
+  text-align: center;
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+/* ====================== */
+/* prodCast videoEditing main div */
+/* ================================== */
+
+.prodCast_videoEditing_main_div {
+  width: 95%;
+  margin: 0 auto;
+  height: 23.125rem;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 15;
+}
+
+.prodCast_videoEditing_main_div img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.prodCast_videoEditing_gradient_div {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
+  width: 69.25rem;
+  height: 21.1875rem;
+  border-radius: 69.25rem;
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  filter: blur(126px);
+}
+
+.prodCast_videoEditing_div {
+  position: absolute;
+  /* left: 0px;
+  bottom: 0px; */
+  width: 50%;
+  height: 100%;
+  background: rgba(6, 0, 68, 0.7);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 0rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.prodCast_videoEditing_div h4 {
+  color: #fff;
+  text-align: left;
+  font-family: var(--font-main);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.prodCast_videoEditing_div p {
+  color: var(--WBG, #ecf2f2);
+  font-family: var(--font-main);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.625rem;
+}
+
+.prodcast_video_editing_process_main_div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 90%;
+  margin: 0 auto;
+  padding: 10rem 0rem;
+}
+
+.prodcast_video_editing_process_div {
+  position: relative;
+}
+
+.prodcast_video_editing_process_SvgElement {
+  width: 279px;
+  height: 272px;
+}
+
+.prodcast_videoEditing_process_svg_icon {
+  transform: translate(58px, 51px);
+}
+
+.prodcast_videoEditing_process_bottom_svg_icon {
+  transform: translate(57px, 78px);
+}
+
+.prodcast_videoEditing_process_svg_number {
+  transform: translate(71px, 145px);
+}
+
+.prodcast_videoEditing_process_top_svg_number {
+  transform: translate(71px, 145px);
+}
+
+.prodcast_videoEditing_process_bottom_svg_number {
+  transform: translate(69px, 16px);
+}
+
+.prodcast_videoEditing_process_svg_top_ployline {
+  position: absolute;
+  transform: translate(85px, -16px);
+}
+
+.prodcast_videoEditing_process_svg_bottom_ployline {
+  position: absolute;
+  transform: translate(85px, 172px);
+}
+
+.prodcast_video_editing_process_top_text_div {
+  position: absolute;
+  top: -104px;
+  left: -3px;
+  width: 100%;
+  text-align: center;
+}
+
+.prodcast_video_editing_process_bottom_text_div {
+  position: absolute;
+  bottom: -107px;
+  left: -2px;
+  width: 100%;
+  text-align: center;
+}
+
+.elementHeadingText {
+  color: var(--WBG, #ecf2f2);
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  /* 116.667% */
+}
+
+.elementParaText {
+  color: var(--Color-4, #818cb6);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+/*  Why choose ? prodcast Video editor in Tojo Gloabl*/
+
+.whyChoose_prodcast_video_editor_main_div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.25rem;
+}
+
+.whyChoose_prodcast_video_editor_div {
+  width: 46.19169rem;
+  height: 9.8035rem;
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+  box-shadow: 0px 3.691px 11.349px 0px rgba(25, 189, 255, 0.37);
+  padding: 2.6rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1.88rem;
+}
+
+.whyChoose_prodcast_video_editor_icon {
+  transform: translate(14px, 10px);
+}
+
+.whyChoose_prodcast_video_editorText_div {
+  text-align: left;
+  width: 70%;
+}
+
+.whyChoose_prodcast_video_editorLeftText_div {
+  text-align: right;
+  width: 70%;
+}
+
+/* ====================== */
+/* explainer_video_editing_process_div */
+/* ================================== */
+.explainer_video_editing_process_main_div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+
+.explainer_video_editing_process_div {
+  position: relative;
+}
+
+.explainer_video_editing_process_leftPloyline_svg {
+  position: absolute;
+  right: 50px;
+  top: 51%;
+  transform: translate(0%, -50%);
+}
+
+.explainer_video_editing_process_Text_div {
+  position: absolute;
+  left: 38%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 52%;
+}
+
+.explainer_video_editing_process_Text_div h2 {
+  color: var(--WHite, #fff);
+  font-family: var(--font-main);
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+.explainer_video_editing_process_Text_div p {
+  color: var(--WHite, #fff);
+
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+/* explainer_video_editing_whyChooseIcon_main_div */
+.explainer_video_editing_whyChooseIcon_main_div {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 8rem;
+}
+
+.explainer_video_editing_whyChooseIcon_div {
+  text-align: center;
+  position: relative;
+}
+
+.explainer_video_editing_skilled_Editors_text_div {
+  position: absolute;
+  left: 63px;
+  top: 115px;
+  width: 20%;
+  text-align: right;
+}
+
+.explainer_video_editing_Custom_Tailored_Videos_text_div {
+  position: absolute;
+  left: 142px;
+  top: 338px;
+  width: 20%;
+  text-align: right;
+}
+
+.explainer_video_editing_optimized_Platform_text_div {
+  position: absolute;
+  left: 439px;
+  bottom: -137px;
+  width: 24%;
+  text-align: center;
+}
+
+.explainer_video_editing_Unique_content_text_div {
+  position: absolute;
+  right: 142px;
+  top: 338px;
+  width: 20%;
+  text-align: left;
+}
+
+.explainer_video_editing_fast_delivery_text_div {
+  position: absolute;
+  right: 63px;
+  top: 115px;
+  width: 20%;
+  text-align: left;
+}
+
+/* ====================== */
+/* Documentary_into_video_editing_main_div  */
+/* ================================== */
+.Documentary_into_video_editing_main_div {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr;
+  margin: 0 auto;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+
+.documentary_into_video_editing_text_div {
+  text-align: left;
+  align-self: center;
+  width: 90%;
+}
+
+.documentary_into_video_editing_text_div h2 {
+  color: var(--WBG, #ecf2f2);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.documentary_into_video_editing_centerPloyline_div {
+  align-self: center;
+  justify-self: center;
+  width: 2px;
+  height: 224px;
+}
+
+.documentary_into_video_div {
+  height: 25.9375rem;
+  border-radius: 5.47469rem;
+  background: url("/Images/ServicesImage/videoEditing/documentary-video-editing_intro_video.png") lightgray 50% / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+.documentary_video_editing_process_main_div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.documentary_video_editing_process_div {
+  position: relative;
+}
+
+#DocumentaryVideoEditingProcesSvg {
+  width: 581px;
+  height: 260px;
+}
+
+.explainer_video_editing_process_number span {
+  position: absolute;
+  top: 55px;
+  left: 14px;
+  text-align: center;
+  font-family: var(--font-main);
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+  background: var(--Linear,
+      linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.explainer_video_editing_Text_div {
+  position: absolute;
+  left: 50%;
+  top: 32%;
+  transform: translate(-50%, -50%);
+  width: 333px;
+}
+
+.explainer_video_editing_Text_div h2 {
+  color: var(--Color-5, #060044);
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.explainer_video_editing_Text_div p {
+  color: var(--Color-5, #060044);
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+  /* 112.5% */
+}
+
+/* documentary_video_editing_whyChoose_main_div */
+.documentary_video_editing_whyChoose_main_div {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+
+.documentary_video_editing_whyChoose_div {
+  position: relative;
+}
+
+.explainer_video_editing_WhyChoose_icon {
+  position: absolute;
+  /* top: 34%;
+  left: 40%; */
+  top: 26%;
+  left: 39%;
+  transform: translate(-50%, -50%);
+}
+
+.explainer_video_editing_whyChoose_Text_div {
+  padding-top: 1.5rem;
+  text-align: center;
+  /* position: absolute; */
+  transform: translateX(-27px);
+}
+
+/* documentary_video_editing_best_features_main_div */
+.documentary_video_editing_best_features_main_div {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.documentary_video_editing_best_features_div {
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+
+#DocumentaryVideoEditingBestFeatureSvg {
+  width: 340px;
+  height: 273px;
+}
+
+.documentary_video_editing_best_features_number span {
+  position: absolute;
+  top: 11%;
+  left: 41%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-main);
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  /* 125% */
+}
+
+.documentary_video_editing_best_features_text_div {
+  position: absolute;
+  top: 64%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  width: 282px;
+  text-align: center;
+}
+
+/* documentary_video_editing_why_you_need_main_div */
+.documentary_video_editing_why_you_need_main_div {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  gap: 2.5rem;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.documentary_video_editing_why_you_need_div {
+  justify-items: center;
+}
+
+.documentary_video_editing_why_you_need_text_div {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+/* .documentary_video_editing_why_you_need_text_div p {
+  text-align: justify;
+  word-spacing: -1px;
+  padding: 0rem 0.5rem;
+} */
+.documentary_video_editing_why_you_need_icon {
+  transform: translate(22px, 26px);
+}
+
+/* ====================== */
+/* media query  */
+/* ================================== */
+/* desktop */
+@media (max-width: 1398px) {
+  /* ...
+        // rules here apply to devices from 1202px to 1398px (inclusive)
+        ... */
+
+  .documentary_video_editing_process_main_div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .brand_video_editing_choose_main_div {
+
+    width: 100%;
+    row-gap: 2.5rem;
+  }
+
+  .prodcast_video_editing_process_main_div {
+    width: 100%;
+  }
+
+  .explainer_video_editing_process_main_div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .explainer_video_editing_process_leftPloyline_svg {
+    right: 4px;
+  }
+
+  .explainer_video_editing_process_Text_div {
+    left: 45%;
+  }
+
+  .explainer_video_editing_whyChooseIcon_main_div {
+    width: 98%;
+  }
+
+  .documentary_video_editing_whyChoose_main_div {
+    width: 100%;
+  }
+
+  .explainer_video_editing_WhyChoose_icon {
+    left: 43%;
+  }
+
+  .explainer_video_editing_whyChoose_Text_div {
+    transform: translateX(-10px);
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .documentary_video_editing_best_features_main_div {
+    width: 103%;
+  }
+
+  .documentary_video_editing_best_features_number span {
+    left: 43%;
+
+  }
+
+  #DocumentaryVideoEditingProcesSvg {
+    width: 570px;
+    height: 260px;
+  }
+
+  /* explainer_video_editing_fast_delivery_text_div */
+  .explainer_video_editing_fast_delivery_text_div {
+    position: absolute;
+    right: 55px;
+    top: 115px;
+    width: 20%;
+    text-align: left;
+  }
+
+  .explainer_video_editing_skilled_Editors_text_div {
+    position: absolute;
+    left: 52px;
+    top: 107px;
+    width: 20%;
+    text-align: right;
+  }
+
+  .explainer_video_editing_Custom_Tailored_Videos_text_div {
+    position: absolute;
+    left: 126px;
+    top: 314px;
+    width: 20%;
+    text-align: right;
+  }
+
+  .explainer_video_editing_optimized_Platform_text_div {
+    position: absolute;
+    left: 418px;
+    bottom: -145px;
+    width: 24%;
+    text-align: center;
+  }
+
+  .explainer_video_editing_Unique_content_text_div {
+    position: absolute;
+    right: 129px;
+    top: 323px;
+    width: 20%;
+    text-align: left;
+  }
+}
+
+/* laptop Media Queries */
+@media (max-width: 1200px) {
+  /* ...
+        rules here apply to devices from 993px to 1200px (inclusive)
+        ... */
+}
+
+/* tab device */
+@media (max-width: 992px) {
+  /* ...
+         rules here apply to devices from 769px to 992px (inclusive)
+        ... */
+}
+
+/* moblie device  */
+@media (max-width: 768px) {
+  /* ...
+         rules here apply to devices from 0px to 768px (inclusive)
+        ... */
+}
+
+/* vary small device  */
+@media (max-width: 500px) {
+
+  /* ...
+      rules here apply to devices from 0px to 460px (inclusive)
+        ... */
+
+
+  /* video editing page universal style  */
+  .elementParaText {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  /* videoEditing_hiring_main_div */
+  .videoEditing_hiring_main_div {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    row-gap: 1.06rem;
+  }
+
+  .videoEditing_hiring_section {
+    padding: 2.3rem 0rem 2rem;
+  }
+
+  .sectionTopTextstyle {
+    padding-top: 0rem !important;
+    padding-bottom: 1rem;
+    width: 99%;
+    margin: 0 auto;
+  }
+
+  .ideoEditing_hiringTextHeddingStyle {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .heroTextParaStyle {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin-right: 0.6rem;
+  }
+
+
+  /* videoItems */
+  .videoItems {
+    margin: 1rem auto;
+  }
+
+  /* videoEditing_vfx_service_div */
+  .videoEditing_vfx_service_div {
+    border-radius: 0.69731rem;
+    width: 100%;
+    height: 10.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem 0.5rem 0.62rem 1rem;
+  }
+
+  #videoEditing_vfx_services_svg {
+    display: none;
+  }
+
+  .videoEditing_vfx_services_svg_div {
+    position: absolute;
+    top: 18px;
+    left: -67px;
+  }
+
+  .videoEditing_vfx_service_div h4 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .videoEditing_vfx_service_div p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .paraStyle {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .vfx_how_it_works_text_div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* youtube_video_editing_services_main_div */
+  .youtube_video_editing_services_main_div {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 1.5rem;
+  }
+
+  .youtube_video_editing_services_text_div {
+    position: absolute;
+    top: 67px;
+    left: 129px;
+    width: 53%;
+  }
+
+  .youtube_video_editing_services_text_div h4 {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+
+  .youtube_video_editing_services_text_div p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  /* whyChoose_youtube_video_editor_main_div */
+  .whyChoose_youtube_video_editor_main_div {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5rem;
+  }
+
+  #whychooser_youtebe_video_editor_svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .whyChoose_youtube_video_editor_div {
+    width: 100%;
+  }
+
+  .whyChoose_youtube_video_editor_imageAndgradientSvg_div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 29px;
+  }
+
+  .whyChoose_youtube_video_editor_imageAndgradientSvg_div {
+    width: 65%;
+  }
+
+  .whyChoose_youtube_video_editor_imageAndText_div {
+    display: flex;
+    justify-content: start;
+  }
+
+  /* brand_video_editing_offer_main_section */
+  .brand_video_editing_offer_main_section {
+    display: none;
+  }
+
+  /* brand_video_editing_choose_main_div */
+  .brand_video_editing_choose_main_div {
+    grid-template-columns: 1fr;
+  }
+
+  .brand_video_editing_choose_div {
+    width: 100%;
+    height: 16.4375rem;
+    padding: 1.19rem;
+  }
+
+  /* prodCast_videoEditing_main_div */
+  .prodCast_videoEditing_main_div img {
+    display: none;
+  }
+
+  .whyChoose_prodcast_video_editor_div {
+    width: 100%;
+    height: 14.8035rem;
+    padding: 1.6rem 0.5rem;
+    column-gap: 0.9rem;
+  }
+
+  .prodCast_videoEditing_div {
+    position: static;
+    width: 100%;
+    padding: 0rem 0rem;
+    flex-direction: column;
+  }
+
+  .prodCast_videoEditing_gradient_div {
+    display: none;
+  }
+
+  /* prodcast_video_editing_process_main_div */
+  .prodCast_videoEditing_main_div {
+    margin-top: 2rem;
+    width: 100%;
+    height: 9.125rem;
+  }
+
+  .prodcast_video_editing_process_main_div {
+    grid-template-columns: 1rem;
+    padding: 10rem 0rem;
+  }
+
+  .prodCast_videoEditing_div h4 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    padding-bottom: 0rem;
+  }
+
+  .prodCast_videoEditing_div p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    font-family: var(--font-poppins);
+  }
+
+  /* explainer_video_editing_process_main_div */
+  .explainer_video_editing_process_main_div {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+    justify-items: center;
+  }
+
+  .explainer_video_editing_process_Text_div p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .explainer_video_editing_process_leftPloyline_svg {
+    top: auto;
+    bottom: -22px;
+    left: 110px;
+    transform: rotate(92deg);
+  }
+
+  .explainer_video_editing_process_Text_div {
+    top: 48%;
+    left: 50%;
+    width: 70%;
+  }
+
+  .explainer_video_editing_process_number span {
+    top: 37px;
+    left: 9px;
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  .explainer_video_editing_Text_div p {
+    display: none;
+  }
+
+  .explainer_video_editing_Text_div {
+    position: absolute;
+    left: 54%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 205px;
+  }
+
+  /* Documentary_into_video_editing_main_div */
+  .Documentary_into_video_editing_main_div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .documentary_into_video_editing_centerPloyline_div {
+    display: none;
+  }
+
+  .documentary_into_video_div {
+    height: 100%;
+    margin-top: 2rem;
+    border-radius: 1.47469rem;
+  }
+
+  /* documentary_video_editing_process_main_div */
+  .documentary_video_editing_process_main_div {
+    grid-template-columns: 1fr;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+  }
+
+  .documentary_video_editing_process_div {
+    height: 6rem;
+  }
+
+  #DocumentaryVideoEditingProcesSvg {
+    width: 100%;
+    height: 150px;
+  }
+
+  /* documentary_video_editing_whyChoose_main_div */
+  .documentary_video_editing_whyChoose_div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .documentary_video_editing_whyChoose_main_div {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+  }
+
+  .explainer_video_editing_WhyChoose_icon {
+    left: 50%;
+    top: 27%;
+  }
+
+  .explainer_video_editing_whyChoose_Text_div {
+    transform: translateX(0px);
+    padding-top: 0.5rem;
+    width: 100%;
+  }
+
+  /* documentary_video_editing_best_features_main_div */
+  .documentary_video_editing_best_features_main_div {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  #DocumentaryVideoEditingBestFeatureSvg {
+    width: 100%;
+    height: 248px;
+  }
+
+  .documentary_video_editing_best_features_text_div {
+    top: 64%;
+    left: 49%;
+  }
+
+  .documentary_video_editing_best_features_number span {
+    left: 49%;
+  }
+
+  /* documentary_video_editing_why_you_need_main_div */
+  .documentary_video_editing_why_you_need_main_div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 2.5rem;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .documentary_into_video_editing_text_div h2 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    padding-bottom: 0rem;
+  }
+
+}

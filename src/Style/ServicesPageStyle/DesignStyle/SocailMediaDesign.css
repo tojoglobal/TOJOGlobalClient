@@ -1,0 +1,1040 @@
+/*
+ *  SocailMediaDesign*
+  
+ */
+.maindiv {
+  background-color: rgb(6, 0, 66);
+  padding-bottom: 4rem;
+}
+
+.socailMediaDesign_top_hero_section {
+  padding: 9.3rem 4.39rem 4.8rem 5rem;
+  background: radial-gradient(83.46% 64.32% at 69.9% 50.09%,
+      #4a16a5 0%,
+      #060044 97.56%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  object-fit: contain;
+  position: relative;
+  z-index: 5;
+}
+
+.socailMediaDesign_service_section {
+  margin-top: 5rem;
+  padding: 0rem 1.39rem 0.8rem 0rem;
+}
+
+.socailMediaDesign_services_main_div {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: center;
+  margin-top: 3.38rem;
+  gap: 0.81rem;
+  position: relative;
+}
+
+.socailMediaDesign_services_div {
+  width: 248px;
+  border-radius: 25px;
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+  text-align: center;
+  padding: 1rem 0.7rem;
+}
+
+.socailMediaDesign_services_div img {
+  margin-bottom: 1rem;
+}
+
+.socailMediaDesign_services_div h4 {
+  color: #fff;
+  text-align: center;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  /* 112.5% */
+}
+
+.socailMediaDesign_services_div p {
+  color: var(--Color-4, #818cb6);
+  text-align: center;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 112.5% */
+}
+
+.socailMediaDesign_features_cirecle {
+  width: 16.68056rem;
+  height: 16.38656rem;
+  border-radius: 16.68056rem;
+  background: var(--Color-5, #060044);
+  box-shadow: 0px 4px 15.2px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  transition: filter 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.socailMediaDesign_features_cirecle:hover {
+  filter: brightness(0.9);
+}
+
+.socailMediaDesign_features_middle_cirecle {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 71.6875rem;
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+  filter: blur(25px);
+}
+
+.socailMediaDesign_features_cirecle p {
+  color: #fff;
+  text-align: center;
+
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 43px;
+  width: 210px;
+}
+
+/* ====================== */
+/* The Right Design Pulls in Your Audience  */
+/* ================================== */
+.socailMediaDesign_pull_section {
+  margin-top: 5rem;
+  padding: 0rem 1.39rem 0.8rem 0rem;
+}
+
+.socailMediaDesign_mediaKey_section {
+  margin-top: 2rem;
+  padding: 6.31rem 1.39rem 1.8rem 0rem;
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+}
+
+.socailMediaDesign_mediaKey_main_div {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem auto;
+  gap: 1rem;
+}
+
+.socailMediaDesign_mediaKey_text_div {
+  /* grid-column: 1/2; */
+}
+
+.socailMediaDesign_mediaKey_text_div h1 {
+  color: var(--WBG, #ecf2f2);
+
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.75rem;
+  /* 104.762% */
+}
+
+.socailMediaDesign_mediaKey_text_div p {
+  color: var(--WBG, #ecf2f2);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6875rem;
+  padding-right: 4rem;
+}
+
+.socailMediaDesign_mediaKey_rounded_center_circel_div {
+  /* grid-column: 2/3; */
+}
+
+.socailMediaDesign_mediaKey_rounded_under_circel {
+  width: 16.06219rem;
+  height: 16.06219rem;
+  transform: rotate(45deg);
+  border-radius: 3.6875rem;
+  background: linear-gradient(135deg, #18c8ff 8.65%, #c608ff 96.15%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socailMediaDesign_mediaKey_rounded_top_circel {
+  width: 12.51281rem;
+  height: 12.51281rem;
+  transform: rotate(0deg);
+  border-radius: 2.25rem;
+  background: var(--Color-5, #060044);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socailMediaDesign_mediaKey_rounded_top_circel h3 {
+  color: #fff;
+  text-align: center;
+
+  font-size: 2.20844rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.52925rem;
+  transform: rotate(315deg);
+}
+
+.socailMediaDesign_mediaKey_rounded_top_circel h3 span {
+  color: #fff;
+  text-align: center;
+
+  font-size: 1.2119rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.35288rem;
+  letter-spacing: 0.08556rem;
+}
+
+.socailMediaDesign_mediaKey_rounded_socail_main_div {
+  margin-left: 10rem;
+}
+
+.socailMediaDesign_mediaKey_rounded_socail_div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 3.3rem;
+}
+
+.socailMediaDesign_mediaKey_rounded_socail_div div:nth-child(1) {
+  position: absolute;
+  top: -93px;
+  left: -104px;
+}
+
+.socailMediaDesign_mediaKey_rounded_socail_div div:nth-child(2) {
+  position: absolute;
+  bottom: -93px;
+  left: -98px;
+}
+
+.socailMediaDesign_mediaKey_rounded_socail_div div:nth-child(5) {
+  position: absolute;
+  top: -104px;
+  left: 76px;
+}
+
+.socailMediaDesign_mediaKey_rounded_socail_div div:nth-child(6) {
+  position: absolute;
+  bottom: -104px;
+  left: 76px;
+}
+
+.socailMediaDesign_mediaKey_rounded_socail {
+  width: 6.25rem;
+  height: 6.25rem;
+  transform: rotate(45deg);
+  border-radius: 1.875rem;
+  background: linear-gradient(135deg, #18c8ff 8.65%, #c608ff 96.15%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socailMediaDesign_mediaKey_rounded_socail_icon {
+  transform: rotate(-44deg);
+}
+
+/* ====================== */
+/* socailMediaDesign_Process_section */
+.socailMediaDesign_Process_section {
+  padding: 7.75rem 5.31rem 5rem 5.31rem;
+  background: var(--Color-5, #060044);
+}
+
+.socailMediaDesign_Process_div {
+  padding-top: 21.5rem;
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.socailMediaDesign_Process_svg_icon {
+  text-align: center;
+  width: 100%;
+}
+
+.socailMediaDesign_Process_div_threee {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Process_counter_div {
+  width: 1.99094rem;
+  height: 1.99094rem;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: #060044;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.48rem;
+}
+
+.Process_counter_div span {
+  margin-top: 0.4rem;
+  color: #fff;
+  text-align: center;
+
+  font-size: 1.54413rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.61763rem;
+  /* 104.762% */
+}
+
+.Process_counter_under_circel_div {
+  position: absolute;
+  bottom: 62px;
+  left: 10%;
+  transform: translateX(-50%);
+  width: 6.85419rem;
+  height: 5.76769rem;
+}
+
+.Process_counter_top_circel_div {
+  position: absolute;
+  top: 63%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 4.6875rem;
+  height: 4.6875rem;
+  background-color: var(--Color-5, #060044);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Process_counter_three_text_div {
+  position: absolute;
+  top: -136px;
+  left: -129px;
+  text-align: center;
+  width: 25.1875rem;
+}
+
+.Process_counter_text_div h3 {
+  color: #fff;
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.Process_counter_text_div p {
+  color: var(--Color-4, #818cb6);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+/* two numnber counter  */
+.socailMediaDesign_Process_div_two {
+  position: absolute;
+  bottom: 61px;
+  left: 528px;
+}
+
+.Process_counter_two_under_circel_div {
+  position: absolute;
+  bottom: 48px;
+  left: -112px;
+  width: 6.85419rem;
+  height: 5.76769rem;
+}
+
+.Process_two_counter_top_circel_div {
+  position: absolute;
+  top: 66%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 4.6875rem;
+  height: 4.6875rem;
+  background-color: var(--Color-5, #060044);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Process_counter_two_text_div {
+  position: absolute;
+  top: -94px;
+  left: -236px;
+  text-align: left;
+  width: 16.5625rem;
+}
+
+/* one numnber counter  */
+.socailMediaDesign_Process_div_one {
+  position: absolute;
+  bottom: -24px;
+  left: 464px;
+}
+
+.Process_counter_one_under_circel_div {
+  position: absolute;
+  bottom: -4px;
+  left: -112px;
+  width: 6.85419rem;
+  height: 5.76769rem;
+}
+
+.Process_one_counter_top_circel_div {
+  position: absolute;
+  top: 53%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 4.6875rem;
+  height: 4.6875rem;
+  background-color: var(--Color-5, #060044);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Process_counter_one_text_div {
+  position: absolute;
+  top: 20px;
+  left: -279px;
+  text-align: left;
+  width: 16.5625rem;
+}
+
+/* four numnber counter  */
+.socailMediaDesign_Process_div_four {
+  position: absolute;
+  bottom: 61px;
+  right: 528px;
+}
+
+.Process_counter_four_under_circel_div {
+  position: absolute;
+  bottom: 47px;
+  right: -80px;
+  width: 6.85419rem;
+  height: 5.76769rem;
+}
+
+.Process_four_counter_top_circel_div {
+  position: absolute;
+  top: 66%;
+  right: -39%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 4.6875rem;
+  height: 4.6875rem;
+  background-color: var(--Color-5, #060044);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Process_counter_four_text_div {
+  position: absolute;
+  top: -77px;
+  right: -315px;
+  text-align: left;
+  width: 16.5625rem;
+}
+
+/* five numnber counter  */
+.socailMediaDesign_Process_div_five {
+  position: absolute;
+  bottom: -24px;
+  right: 464px;
+}
+
+.Process_counter_five_under_circel_div {
+  position: absolute;
+  bottom: -4px;
+  right: -112px;
+  width: 6.85419rem;
+  height: 5.76769rem;
+}
+
+.Process_five_counter_top_circel_div {
+  position: absolute;
+  top: 53%;
+  right: -28%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 4.6875rem;
+  height: 4.6875rem;
+  background-color: var(--Color-5, #060044);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Process_counter_five_text_div {
+  position: absolute;
+  top: -35px;
+  right: -307px;
+  text-align: left;
+  width: 16.5625rem;
+}
+
+/* ================================== */
+/* ====================== */
+/* WHY CHOOSE OUR SOCIAL MEDIA DESIGN SERVICES?  */
+.socailMediaDesign_whyChooseServices_section {
+  padding: 7.75rem 5.31rem 5rem 5.31rem;
+  background: var(--Color-5, #060044);
+}
+
+.socailMediaDesign_whyChooseService_section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  column-gap: 2.44rem;
+  padding-top: 5rem;
+}
+
+.socailMediaDesign_whyChooseService_card_div {
+  max-width: 25.4375rem;
+  min-height: 25.5625rem;
+  border-radius: 1.5625rem;
+  border-top: 5px solid var(--Color-2, #18c8ff);
+  background: rgba(24, 200, 255, 0.05);
+  padding: 2.42rem 1.88rem;
+  text-align: center;
+}
+
+.socailMediaDesign_whyChooseService_card_icon {
+  width: 5.0625rem;
+  height: 5.0625rem;
+  background: var(--Linear,
+      linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%));
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.socailMediaDesign_whyChooseService_card_div h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.875rem;
+  padding: 1.16rem 0rem;
+}
+
+.socailMediaDesign_whyChooseService_card_div p {
+  color: var(--Color-4, #818cb6);
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+/* ================================== */
+/* ====================== */
+/* socailMediaDesign services section */
+.socailMediaDesign_services_section {
+  display: flex;
+  flex-direction: column;
+  gap: 3.11rem;
+  padding: 5rem 4rem;
+}
+
+.socailMediaDesign_services_section .socailMediaDesign_services_social_card:nth-child(even) {
+  margin-left: 35rem;
+}
+
+.socailMediaDesign_services_social_card {
+  display: flex;
+  align-items: center;
+  gap: 4.4rem;
+}
+
+.socailMediaDesign_services_social_card_image {
+  position: relative;
+}
+
+.socailMediaDesign_services_social_card_image img {
+  position: relative;
+  z-index: 10;
+}
+
+.socailMediaDesign_services_social_card_image_under_gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 9.3125rem;
+  height: 9.3125rem;
+  border-radius: 4.65625rem;
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  filter: blur(44.849998474121094px);
+}
+
+.socailMediaDesign_services_social_card_text h2 {
+  color: var(--WHite, #fff);
+
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5rem;
+  /* 133.333% */
+}
+
+.socailMediaDesign_services_social_card_text p {
+  width: 31.8125rem;
+  height: 4.5625rem;
+  color: var(--Color-4, #818cb6);
+
+  /* p2 */
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+  /* 137.5% */
+}
+
+.professionalService_card_socailMediaDesign_page {
+  background: linear-gradient(177deg,
+      #c608ff -76.32%,
+      rgba(24, 200, 255, 0.3) 57%,
+      #c608ff 180.57%);
+}
+
+/* ================================== */
+/* ================================== */
+/* ====================== */
+/* media query  */
+/* ================================== */
+/* desktop */
+@media (max-width: 1398px) {
+
+  /* ...
+        // rules here apply to devices from 1202px to 1398px (inclusive)
+        ... */
+  .socailMediaDesign_services_section .socailMediaDesign_services_social_card:nth-child(even) {
+    margin-left: 22rem;
+  }
+
+  .socailMediaDesign_services_div {
+    width: 210px;
+  }
+
+  .socailMediaDesign_mediaKey_main_div {
+    margin: 0rem 5rem;
+  }
+
+  .socailMediaDesign_mediaKey_text_div {
+    padding-right: 1rem;
+  }
+
+  .socailMediaDesign_Process_div_one {
+    position: absolute;
+    bottom: -11px;
+    left: 388px;
+  }
+
+  .socailMediaDesign_Process_div_two {
+    position: absolute;
+    bottom: 61px;
+    left: 443px;
+  }
+
+  .socailMediaDesign_Process_div_four {
+    position: absolute;
+    bottom: 61px;
+    right: 446px;
+  }
+
+  .socailMediaDesign_Process_div_five {
+    position: absolute;
+    bottom: -18px;
+    right: 383px;
+  }
+}
+
+/* laptop Media Queries */
+@media (max-width: 1200px) {
+  /* ...
+        // rules here apply to devices from 993px to 1200px (inclusive)
+        ... */
+
+  .socailMediaDesign_services_main_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin-top: 3.38rem;
+    gap: 0.81rem;
+    position: relative;
+    margin: 0rem 2.5rem;
+  }
+
+  .socailMediaDesign_services_div {
+    width: 100%;
+  }
+
+  .socailMediaDesign_services_section .socailMediaDesign_services_social_card:nth-child(even) {
+    margin-left: 6rem;
+  }
+
+  .socailMediaDesign_mediaKey_text_div {
+    grid-column: 1 / 5;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  .socailMediaDesign_mediaKey_section {
+    padding: 6.31rem 1.39rem 6.31rem 0rem;
+  }
+
+  .socailMediaDesign_mediaKey_main_div {
+    margin: 0rem 3rem;
+  }
+
+  .socailMediaDesign_mediaKey_rounded_center_circel_div {
+    grid-column: 1 / 3;
+    margin-left: 5rem;
+  }
+
+  .socailMediaDesign_Process_div_one {
+    position: absolute;
+    bottom: -4px;
+    left: 244px;
+  }
+
+  .socailMediaDesign_Process_div_two {
+    position: absolute;
+    bottom: 61px;
+    left: 302px;
+  }
+
+  .socailMediaDesign_Process_div_four {
+    position: absolute;
+    bottom: 61px;
+    right: 310px;
+  }
+
+  .socailMediaDesign_Process_section {
+    padding: 7.75rem 5.31rem 9rem 5.31rem;
+  }
+
+  .socailMediaDesign_Process_div_five {
+    position: absolute;
+    bottom: -10px;
+    right: 244px;
+  }
+
+  .Process_counter_three_text_div {
+    position: absolute;
+    top: -160px;
+    left: -49px;
+    width: 15.1875rem;
+  }
+
+  .Process_counter_four_text_div {
+    position: absolute;
+    top: -100px;
+    right: -207px;
+    text-align: justify;
+    word-spacing: -1px;
+    width: 11.5625rem;
+  }
+
+  .Process_counter_five_text_div {
+    position: absolute;
+    top: -6px;
+    right: -213px;
+    text-align: justify;
+    word-spacing: -1px;
+    width: 12.5625rem;
+  }
+
+  .Process_counter_two_text_div {
+    position: absolute;
+    top: -134px;
+    left: -195px;
+    text-align: justify;
+    word-spacing: -1px;
+    width: 12.5625rem;
+  }
+
+  .Process_counter_one_text_div {
+    position: absolute;
+    top: -30px;
+    left: -197px;
+    text-align: justify;
+    word-spacing: -1px;
+    width: 11.5625rem;
+  }
+
+  .Process_counter_one_text_div h3 {
+    text-align: left;
+    word-spacing: 2px;
+  }
+
+  .socailMediaDesign_whyChooseServices_section {
+    padding: 7.75rem 3rem 5rem 3rem;
+  }
+}
+
+/* tab device */
+@media (max-width: 992px) {
+  /* ...
+        // rules here apply to devices from 769px to 992px (inclusive)
+        ... */
+}
+
+/* moblie device  */
+@media (max-width: 768px) {
+  /* ...
+        // rules here apply to devices from 0px to 768px (inclusive)
+        ... */
+}
+
+/* vary small device  */
+@media (max-width: 500px) {
+
+  /* ...
+       rules here apply to devices from 0px to 500px 
+        ... */
+  .socailMediaDesign_top_hero_section {
+    padding: 6.3rem 0.5rem 2.8rem 0.5rem;
+  }
+
+  /* socailMediaDesign_services_main_div */
+  .socailMediaDesign_service_section {
+    margin-top: 4rem;
+    padding: 0rem 0.39rem 0.8rem 0.5rem;
+  }
+
+  .socailMediaDesign_services_main_div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.91rem;
+    position: relative;
+    width: 100%;
+    margin: 0rem auto;
+  }
+
+  /* WhyUtilizeSocialMediaServiceSection */
+  .WhyUtilizeSocialMediaServiceSection {
+    display: none;
+  }
+
+  /* socailMediaDesign_mediaKey_section */
+  .socailMediaDesign_mediaKey_section {
+    padding: 2.31rem 0.5rem 10.31rem 0.5rem;
+  }
+
+  .socailMediaDesign_mediaKey_main_div {
+    margin: 0rem 0rem;
+  }
+
+  .socailMediaDesign_mediaKey_main_div {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0rem 0rem;
+    gap: 1rem;
+  }
+
+  .socailMediaDesign_mediaKey_text_div {
+    grid-column: auto;
+    margin-bottom: 4rem;
+    padding-right: 0rem;
+  }
+
+  .socailMediaDesign_mediaKey_rounded_center_circel_div {
+    grid-column: auto;
+    justify-items: center;
+    margin-left: 0rem;
+  }
+
+  .socailMediaDesign_mediaKey_rounded_socail_div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 9rem;
+  }
+
+  .socailMediaDesign_mediaKey_rounded_socail_main_div {
+    margin-left: 6rem;
+  }
+
+  .socailMediaDesign_mediaKey_rounded_under_circel {
+    width: 14.06219rem;
+    height: 14.06219rem;
+    border-radius: 3.1875rem;
+  }
+
+  .socailMediaDesign_mediaKey_rounded_socail_div div:nth-child(1) {
+    position: absolute;
+    top: -64px;
+    left: -78px;
+  }
+
+  .socailMediaDesign_mediaKey_rounded_socail_div div:nth-child(2) {
+    position: absolute;
+    bottom: -66px;
+    left: -81px;
+  }
+
+  .socailMediaDesign_mediaKey_rounded_socail_div div:nth-child(5) {
+    position: absolute;
+    top: -80px;
+    left: 65px;
+  }
+
+  .socailMediaDesign_mediaKey_rounded_socail_div div:nth-child(6) {
+    position: absolute;
+    bottom: -84px;
+    left: 72px;
+  }
+
+  .socailMediaDesign_mediaKey_text_div h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .socailMediaDesign_mediaKey_text_div p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    padding-right: 0rem;
+  }
+
+
+
+  .socailMediaDesign_mediaKey_rounded_socail {
+    width: 5rem;
+    height: 5rem;
+    transform: rotate(43deg);
+    border-radius: 1.5rem;
+  }
+
+  /* socailMediaDesign_Process_section */
+  .socailMediaDesign_section {
+    display: none;
+  }
+
+  /* socailMediaDesign_whyChooseServices_section */
+  .socailMediaDesign_whyChooseServices_section {
+    padding: 3.75rem 0.9em 4rem 0.9rem;
+  }
+
+  .socailMediaDesign_whyChooseService_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    row-gap: 2.44rem;
+    padding-top: 3rem;
+  }
+
+  .socailMediaDesign_whyChooseService_card_div {
+    padding: 1rem 0.88rem;
+    min-height: 20.5625rem;
+  }
+
+  .socailMediaDesign_whyChooseService_card_div h3 {
+    padding: 0.5rem 0rem;
+  }
+
+  .socailMediaDesign_whyChooseService_card_div p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  /* socailMediaDesign_Process_section */
+
+  .socailMediaDesign_Process_section {
+    padding: 2rem 0.5rem 2rem 0.5rem;
+  }
+
+  /* socailMediaDesign_services section */
+  .socailMediaDesign_services_social_card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .socailMediaDesign_services_section {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5rem 0rem;
+  }
+
+  .socailMediaDesign_services_social_card_image img {
+    width: 70%;
+  }
+
+  .socailMediaDesign_services_social_card_text h2 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+
+  }
+
+  .socailMediaDesign_services_social_card_text p {
+    width: 100%;
+    height: 100%;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .socailMediaDesign_services_social_card_image_under_gradient {
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    width: 6.3125rem;
+    height: 6.3125rem;
+  }
+
+  .socailMediaDesign_services_section .socailMediaDesign_services_social_card:nth-child(even) {
+    margin-left: 0rem;
+  }
+
+  /* socailMediaDesign_services */
+  .ouerServiceCoverHeading {
+    margin-bottom: 2rem;
+  }
+
+  .socailMediaDesign_services_div p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+
+
+}

@@ -1,0 +1,422 @@
+/*
+ * One page seo  marketing *
+  
+ */
+
+.OnePageSeo_hero_part {
+  padding: 7.3rem 4.39rem 5.8rem 5rem;
+  position: relative;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1550' height='1143' viewBox='0 0 1280 915' fill='none'><g filter='url(%23filter0_f_337_4608)'><path d='M871.213 451.958C1172.84 493.029 1247.11 658.56 1246.54 736.191L1246.6 742.641C1235.95 750.696 1231.12 612.95 1128.01 656.653C989.518 715.35 1099.28 613.052 925.021 632.085C750.758 651.118 811.738 702.161 737.276 585.444C662.813 468.726 634.826 435.441 580.488 475.941C526.15 516.44 576.667 619.187 500.355 650.214C424.044 681.241 467.492 576.978 359.583 393.481C251.673 209.984 190.585 494.392 162.075 543.683C133.566 592.975 59.6377 186.605 74.1781 158.087C88.7186 129.568 184.584 124.809 288.743 250.927C392.902 377.045 817.251 116.364 850.287 208.306C883.324 300.248 494.18 400.62 871.213 451.958Z' fill='url(%23paint0_linear_337_4608)'/><path d='M871.213 451.958C1172.84 493.029 1247.11 658.56 1246.54 736.191L1246.6 742.641C1235.95 750.696 1231.12 612.95 1128.01 656.653C989.518 715.35 1099.28 613.052 925.021 632.085C750.758 651.118 811.738 702.161 737.276 585.444C662.813 468.726 634.826 435.441 580.488 475.941C526.15 516.44 576.667 619.187 500.355 650.214C424.044 681.241 467.492 576.978 359.583 393.481C251.673 209.984 190.585 494.392 162.075 543.683C133.566 592.975 59.6377 186.605 74.1781 158.087C88.7186 129.568 184.584 124.809 288.743 250.927C392.902 377.045 817.251 116.364 850.287 208.306C883.324 300.248 494.18 400.62 871.213 451.958Z' stroke='%23B74A4A'/></g><defs><filter id='filter0_f_337_4608' x='-98.7965' y='-29.6527' width='1516.5' height='943.735' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/><feGaussianBlur stdDeviation='85.3' result='effect1_foregroundBlur_337_4608'/></filter><linearGradient id='paint0_linear_337_4608' x1='296.08' y1='205.011' x2='659.254' y2='883.344' gradientUnits='userSpaceOnUse'><stop stop-color='%2318C8FF'/><stop offset='1' stop-color='%23C608FF'/></linearGradient></defs></svg>");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.OnePageSeo_hero_part_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  gap: 3.69rem;
+  flex-shrink: 1;
+}
+
+.OnePageSeo_hero_part_image_div img {
+  width: 40.875rem;
+  height: 23.875rem;
+}
+
+.OnePageSeo_second_part {
+  padding: 0rem 4.39rem 0.8rem 5rem;
+  margin-top: 4rem;
+  background: var(--Color-5, #060044);
+}
+
+.OnePageSeo_second_part_heading {
+  color: #fff;
+  text-align: center;
+
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5rem;
+  margin: 0 auto;
+}
+
+/* OnePageSeo_second_part_Card */
+.OnePageSeo_second_part_Card {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-content: center;
+  gap: 3.88rem;
+  margin-top: 6.19rem;
+}
+
+.OnePageSeo_second_part_Card_div {
+  width: 32.6875rem;
+  height: 22rem;
+  border-radius: 1.75rem;
+  border-top: 5px solid #c508ffdc;
+  background: var(--BG-15, rgba(24, 200, 255, 0.15));
+  padding: 4.56rem 2.06rem 2.81rem 2.06rem;
+  position: relative;
+}
+
+.OnePageSeo_second_part_Card_icon {
+  position: absolute;
+  top: -58px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6.25rem;
+  height: 6.25rem;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22110%22%20height%3D%22110%22%20viewBox%3D%220%200%20110%20110%22%20fill%3D%22none%22%3E%0A%20%20%3Ccircle%20cx%3D%2255%22%20cy%3D%2255%22%20r%3D%2252.5%22%20fill%3D%22url(%23paint0_linear_645_3941)%22%20stroke%3D%22%23060044%22%20stroke-width%3D%225%22%2F%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22paint0_linear_645_3941%22%20x1%3D%2285.8824%22%20y1%3D%2215.6618%22%20x2%3D%2214.9265%22%20y2%3D%2286.6176%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0A%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%2318C8FF%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23C608FF%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.OnePageSeo_second_part_Card_div h3 {
+  color: #fff;
+  text-align: center;
+
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+
+.OnePageSeo_second_part_Card_div p {
+  color: #fff;
+  text-align: center;
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+
+/* Connect with Tojo Global for Innovative SEO Strategies That Expand Your Brand */
+.InnovativeSEOStrategies_hero_part {
+  background: rgba(24, 200, 255, 0.1);
+  padding: 7.3rem 4.39rem 6.8rem 5rem;
+}
+
+.InnovativeSEOStrategies_text_part {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.InnovativeSEOStrategies_text_part h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.5rem;
+  max-width: 56rem;
+  margin-bottom: 0.9rem;
+}
+
+.InnovativeSEOStrategies_text_part p {
+  color: var(--Color-4, #818cb6);
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+  max-width: 58rem;
+}
+
+/* ====================== */
+/*seo Specialities */
+/* ====================== */
+.seoSpecialities_text_div {
+  text-align: center;
+  margin: 0 auto;
+
+  color: #fff;
+}
+
+.seoSpecialities_text_div h1 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+
+.seoSpecialities_text_div h4 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.seoSpecialities_text_div p {
+  margin: 0 auto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+  width: 47.625rem;
+}
+
+.seoSpecialities_text_card {
+  text-align: center !important;
+}
+
+.seoSpecialities_text_card p {
+  margin: 0 auto !important;
+}
+
+.seoSpecialities_text_card .smIndustries_services_card_icon {
+  margin: 0 auto !important;
+}
+
+.smIndustries_Small_leftOutline {
+  position: absolute;
+  left: 29.2rem;
+  top: 35px;
+  width: 0.0625rem;
+  height: 91%;
+  background-color: var(--Color-4, #818cb6);
+  z-index: 20;
+}
+
+.smIndustries_Small_rightOutline {
+  position: absolute;
+  right: 29.2rem;
+  top: 35px;
+  width: 0.0625rem;
+  height: 91%;
+  background-color: var(--Color-4, #818cb6);
+  z-index: 20;
+}
+
+.smIndustries_Small_centerOutline {
+  position: absolute;
+  top: 52%;
+  transform: translateY(-52%);
+  right: 11px;
+  width: 96%;
+  height: 0.0625rem;
+  background-color: var(--Color-4, #818cb6);
+  z-index: 20;
+}
+
+.professionalService_card_onSeo_page {
+  background: linear-gradient(264deg, #632090 -2.79%, #203bc1 96.78%);
+}
+
+/* media query  */
+/* ================================== */
+/* desktop */
+@media (max-width: 1398px) {
+
+  /* ...
+        // rules here apply to devices from 1202px to 1398px (inclusive)
+        ... */
+  .OnePageSeo_hero_part {
+    padding: 7.3rem 4.5rem 5.8rem 5.5rem;
+  }
+
+  .OnePageSeo_hero_part_image_div img {
+    width: 30.875rem;
+    height: 30.875rem;
+    padding: 6.75544rem 0.52388rem 6.75388rem 0.52719rem;
+  }
+
+  .OnePageSeo_hero_part_div {
+    padding-right: 0.38rem;
+    padding-left: 0rem;
+  }
+
+  .smIndustries_Small_leftOutline {
+    left: 34.2%;
+  }
+
+  .smIndustries_Small_rightOutline {
+    right: 34.4%;
+  }
+
+  .smIndustries_Small_centerOutline {
+    right: 76px;
+    width: 88%;
+  }
+
+  .professionalModeration_service_offers_para {
+    width: 95%;
+  }
+}
+
+/* laptop Media Queries */
+@media (max-width: 1200px) {
+
+  /* ...
+         rules here apply to devices from 993px to 1200px (inclusive)
+        ... */
+  .OnePageSeo_second_part {
+    padding: 0rem 8.39rem 0.8rem 8rem;
+  }
+
+  .OnePageSeo_second_part_Card_div {
+    width: 27.6875rem;
+    height: 23.75rem;
+  }
+
+
+  .smIndustries_services_card_div {
+    text-align: left;
+  }
+
+  .smIndustries_Small_leftOutline {
+    left: calc(133% - 100%);
+  }
+
+  .smIndustries_Small_rightOutline {
+    left: calc(167% - 100%);
+  }
+
+  .seoSpecialities_text_card {
+    padding: 2.25rem 0.19rem !important;
+  }
+
+  .smIndustries_services_Text_card_div h4 {
+    font-size: 1.9rem;
+    width: 15.875rem;
+  }
+
+  .smIndustries_services_Text_card_div p {
+    font-size: 1rem;
+    width: 15rem;
+  }
+
+  .communityManagement_hero_text_div p {
+    margin-right: 4.06rem;
+  }
+}
+
+/* tab device */
+@media (max-width: 992px) {
+  /* ...
+      rules here apply to devices from 769px to 992px (inclusive)
+        ... */
+}
+
+/* moblie device  */
+@media (max-width: 768px) {
+  /* ...
+         rules here apply to devices from 0px to 768px (inclusive)
+        ... */
+}
+
+/* vary small device  */
+@media (max-width: 500px) {
+
+  /* ...
+        rules here apply to devices from 0px to 500
+        ... */
+  /* hero part  */
+  .OnePageSeo_hero_part {
+    padding: 4.3rem 0.5rem 2.8rem 0.5rem;
+  }
+
+  .OnePageSeo_hero_part_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.69rem;
+    flex-shrink: 1;
+  }
+
+  .OnePageSeo_hero_part_image_div img {
+    width: 20.875rem;
+    height: 14.875rem;
+    padding: 1.75544rem 0.52388rem 0.75388rem 0.52719rem;
+  }
+
+  /* OnePageSeo_second_part */
+  .OnePageSeo_second_part {
+    margin-top: 0rem;
+    padding: 0rem 0.39rem 0.8rem 0.5rem;
+  }
+
+  .OnePageSeo_second_part_Card {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    gap: 4.88rem;
+    margin-top: 4.19rem;
+  }
+
+  .OnePageSeo_second_part_heading {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .OnePageSeo_second_part_Card_div {
+    width: 19.6875rem;
+    height: 22.75rem;
+    margin: 0 auto;
+    padding: 4.56rem 0.6rem 2.81rem 0.6rem;
+  }
+
+  /* InnovativeSEOStrategies_hero_part */
+  .InnovativeSEOStrategies_hero_part {
+    padding: 3.3rem 0.5rem 3.8rem 0.5rem;
+  }
+
+  .InnovativeSEOStrategies_text_part h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .InnovativeSEOStrategies_text_part p {
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+
+
+  .smIndustries_Small_leftOutline,
+  .smIndustries_Small_rightOutline,
+  .smIndustries_Small_centerOutline {
+    display: none;
+  }
+
+  .smIndustries_services_card_div .Small_Businesses_div::before {
+    content: none;
+    display: none;
+  }
+
+  /* OnePageSeo_second_part_Card_div */
+  .OnePageSeo_second_part_Card_div h3 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .OnePageSeo_second_part_Card_div p {
+    font-size: 0.8rem;
+  }
+
+  /* seoSpecialities_text_div */
+  .seoSpecialities_text_div h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .seoSpecialities_text_div p {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+}
