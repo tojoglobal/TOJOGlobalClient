@@ -480,14 +480,14 @@ function NavbarNav() {
 
                       <div className="dropdown_menu comapny_dropdown_menu">
                         <ul className="submenu_list">
-                          <li style={{ width: "148px" }}>
+                          {/* <li style={{ width: "148px" }}>
                             <NavLink
                               to="/about-us"
                               className="dropdown-item submenu_servces_name"
                             >
                               <span className="subMainfont">About</span>
                             </NavLink>
-                          </li>
+                          </li> */}
 
                           <li style={{ width: "148px" }}>
                             <NavLink

@@ -292,6 +292,10 @@
     width: 15.875rem;
   }
 
+  .smIndustries_Small_centerOutline {
+    top: 48%;
+  }
+
   .smIndustries_services_Text_card_div p {
     font-size: 1rem;
     width: 15rem;

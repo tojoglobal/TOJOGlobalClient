@@ -209,6 +209,15 @@
   /* ...
       rules here apply to devices from 993px to 1200px (inclusive)
       ... */
+
+  .socailMediaMarketing_whoWeServe_main_div {
+    justify-content: center;
+  }
+
+  .socailMediaMarketing_OurServices_main_div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* tab device */

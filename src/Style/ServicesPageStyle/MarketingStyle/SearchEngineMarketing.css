@@ -418,7 +418,7 @@
   }
 
   .searchEngineMarketing_IncreaseRevenue_main_div_image img {
-    width: 33rem;
+    width: 28rem;
   }
 
   .searchEngineMarketing_IncreaseRevenue_text_div {
@@ -465,6 +465,11 @@
   .searchEngineMarketing_whoHelp_side_border_right {
     right: calc(127% - 100%);
     height: 15rem;
+  }
+
+  /* searchEngineMarketing_whoHelp_para_div */
+  .searchEngineMarketing_whoHelp_para_div::after {
+    content: none;
   }
 }
 

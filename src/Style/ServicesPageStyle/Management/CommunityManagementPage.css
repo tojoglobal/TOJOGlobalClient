@@ -780,14 +780,20 @@
     width: 100%;
   }
 
+  /* communityManagement_second_text_div */
   .communityManagement_second_text_div {
-    width: 34.375rem;
-    height: 19.125rem;
-    margin-left: -20rem;
+    width: 40.375rem;
+    height: 18.125rem;
+    margin-left: -13rem;
+    padding: 1rem;
   }
 
   .communityManagement_second_text_div h4 {
     padding-top: 1rem !important;
+  }
+
+  .communityManagement_second_part_image_div img {
+    z-index: 0;
   }
 
   .features_cirecle {

@@ -808,7 +808,7 @@
 @media (max-width: 1398px) {
 
   /* ...
-        // rules here apply to devices from 1202px to 1398px (inclusive)
+         rules here apply to devices from 1202px to 1398px (inclusive)
         ... */
   .blockChainCryptoTokenLeftImage {
     position: absolute;
@@ -923,22 +923,117 @@
 
 /* laptop Media Queries */
 @media (max-width: 1200px) {
+
   /* ...
-        // rules here apply to devices from 993px to 1200px (inclusive)
+       rules here apply to devices from 993px to 1200px (inclusive)
         ... */
+  /* blockChain_dev_PlayToEarn_Benefit_icon_image_div */
+  #blockChainDevPlayToEarnBenefit {
+    width: 100%;
+    height: 328px;
+  }
+
+  .blockChain_dev_PlayToEarn_Benefit_icon_image_div {
+    gap: 0.4rem;
+    padding: 0.2rem;
+  }
+
+  /* blockChain_nftPlatfromkeyFeatures_services_center_img */
+  .blockChain_nftPlatfromkeyFeatures_services_center_img img {
+    width: 375px;
+  }
+
+  /* BlockChaniNftPlatfromDevWhyChoose_main_div */
+  .BlockChaniNftPlatfromDevWhyChoose_main_div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #BlockChainNFTPlatformDevelopmentWhyChooseSvg {
+    width: 100%;
+    height: 415px;
+  }
+
+  /* blockChainDevPlayToEarnBenefitsSvg */
+  #blockChainDevPlayToEarnBenefitsSvg {
+    width: 100%;
+    height: 196px;
+  }
+
+  .blockChainDev_PlayToEarn_benefits_icon_text_div {
+    display: grid;
+    grid-template-columns: 19% auto;
+    row-gap: 0.5rem;
+    width: 95%;
+    margin: 0 auto;
+    position: absolute;
+    top: 23%;
+    left: 5%;
+  }
+
+  /* blockChainDev_playToEarn_testingDeployment_text_div */
+  .blockChainDev_playToEarn_testingDeployment_text_div {
+    position: absolute;
+    right: 3%;
+    top: 25%;
+    width: 19%;
+  }
+
+  .blockChainDev_playToEarn_ongoingMaintenance_text_div {
+    width: 21%;
+  }
+
+  .blockChainDev_playToEarn_consultation_text_div {
+    position: absolute;
+    left: 2%;
+    top: 25%;
+    width: 20%;
+    text-align: right;
+  }
+
+  .blockChainDev_playToEarn_planning_text_div {
+    position: absolute;
+    left: 8%;
+    top: 69%;
+    width: 23%;
+    text-align: right;
+  }
+
+  .blockChainDev_playToEarn_development_text_div {
+    position: absolute;
+    left: 36%;
+    bottom: -38%;
+    width: 27%;
+    text-align: center;
+  }
+
+  /* blockChain_dev_PlayToEarn_whyChoose_main_div */
+  .blockChain_dev_PlayToEarn_whyChoose_main_div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem 2rem;
+  }
+
+  /* blockChain_dev_PlayToEarn_expertise_main_box_div */
+  .blockChain_dev_PlayToEarn_expertise_main_box_div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
 }
 
 /* tab device */
 @media (max-width: 992px) {
   /* ...
-        // rules here apply to devices from 769px to 992px (inclusive)
+       rules here apply to devices from 769px to 992px (inclusive)
         ... */
 }
 
 /* moblie device  */
 @media (max-width: 768px) {
   /* ...
-        // rules here apply to devices from 0px to 768px (inclusive)
+        rules here apply to devices from 0px to 768px (inclusive)
         ... */
 }
 

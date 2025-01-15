@@ -3596,9 +3596,10 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     bottom: 41rem;
   }
 
-  /* faq */
-  .accordion_button_text {
-    font-size: 1.4rem;
+  /* about page */
+  /* about section  */
+  .about_div {
+    padding: 7rem 0rem 3rem;
   }
 }
 
@@ -3615,6 +3616,19 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   /*navbar responsive  */
+  .navbar>.container,
+  .navbar>.container-fluid,
+  .navbar>.container-lg,
+  .navbar>.container-md,
+  .navbar>.container-sm,
+  .navbar>.container-xl,
+  .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: center;
+  }
+
   .navbar-nav {
     margin-left: 2.4rem;
   }
@@ -3630,8 +3644,8 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 
   /* universal design */
   .col_image_style img {
-    height: 23rem;
-    margin-top: 2rem;
+    /* height: 23rem;
+    margin-top: 2rem; */
   }
 
   .border_style {
@@ -3651,6 +3665,26 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   .keyDownGradinet {
     left: -3rem;
     top: 11.5rem;
+  }
+
+  /* about page */
+  /* about section  */
+  .about_div {
+    padding: 3.8rem 0rem 3rem;
+  }
+
+  .Our_Value_Services_text_div {
+    position: relative;
+    z-index: 20;
+  }
+
+  .Our_Value_Services_text_div P {
+    height: 61.067px;
+  }
+
+  .Our_Value_text_heading {
+    position: relative;
+    z-index: 10;
   }
 
   /* services  */
@@ -3687,7 +3721,14 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   .frist_blog_owner_text_style {
+    flex-direction: column;
+    align-items: normal;
     padding-top: 1rem;
+    row-gap: 1.2rem;
+  }
+
+  .blog_time {
+    text-align: right;
   }
 
   .blog_recommended_card {
@@ -3764,16 +3805,16 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   .customFooterBoxbtn1 {
-    width: 54%;
+    width: -33%;
     height: 45px;
-    transform: translateX(-12px);
+    transform: none;
     font-size: 1.1rem;
   }
 
   .customFooterBoxbtn2 {
-    width: 50%;
+    width: -33%;
     height: 45px;
-    transform: translateX(82px);
+    transform: none;
     font-size: 1.1rem;
   }
 
@@ -3814,6 +3855,11 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     margin-right: 0rem;
   }
 
+  .contactus_text_section {
+    margin-top: 6rem;
+  }
+
+
   /* package section */
   .ManagementPackage_col_text_style {
     margin: 0rem !important;
@@ -3830,6 +3876,10 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 
   .section_price span:nth-child(3) {
     font-size: 20px;
+  }
+
+  .section_price span:nth-child(1) {
+    vertical-align: middle;
   }
 
   .startup_center_right_gradient {

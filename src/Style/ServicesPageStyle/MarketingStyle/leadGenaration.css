@@ -450,10 +450,10 @@
 @media (max-width: 1200px) {
 
   /* ...
-        // rules here apply to devices from 993px to 1200px (inclusive)
+         rules here apply to devices from 993px to 1200px (inclusive)
         ... */
   .searchEngineMarketing_hero_text_div {
-    padding-right: 3rem;
+    padding-right: 0rem;
   }
 
   .searchEngineMarketing_leadGenaration_card_div {
@@ -473,16 +473,12 @@
   }
 
   .approach_leadGenaration_service_container {
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 2.75rem 0px;
   }
 
   .step_text_icon_div {
-    /* align-items: center;
-    padding: 0.88rem 1.25rem 0.44rem 0.25rem; */
-    /* width: 37.5rem; */
     height: 8rem;
-    /* position: relative; */
   }
 
   .step-icon {
@@ -492,31 +488,35 @@
 
   .step-content {
     min-width: 210px;
-    padding-left: 61px;
+    padding-left: 28px;
   }
 
   .step-number {
-    margin-right: 3rem;
+    margin-right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
     z-index: 0;
   }
 
   .step-number::before {
-    width: 7.375rem;
+    width: 2rem;
+    left: 32px;
+  }
+
+  .steps-container::before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 45px;
+    height: 83%;
   }
 
   .stepNumber3::before {
     content: "";
     position: absolute;
-    left: -281px;
-    top: 24px;
-    width: 28.375rem;
-    height: 0.0725rem;
-    background: repeating-linear-gradient(to right,
-        #00c7f2 1px,
-        #00c7f2 2px,
-        transparent 2px,
-        transparent 5px);
-    z-index: -1;
+    left: -175px;
+    width: 19rem;
+    z-index: -12;
   }
 
   .brand_leadGenaration_service_section {

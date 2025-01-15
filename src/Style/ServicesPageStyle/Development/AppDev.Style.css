@@ -352,6 +352,14 @@
   /* ...
      rules here apply to devices from 993px to 1200px (inclusive)
         ... */
+
+  /* appDev_industries_services_div */
+  .appDev_industries_services_div {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: space-between;
+    column-gap: 0rem;
+  }
 }
 
 /* tab device */
