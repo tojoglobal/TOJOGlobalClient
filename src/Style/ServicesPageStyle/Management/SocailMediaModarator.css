@@ -357,7 +357,7 @@
 @media (max-width: 1398px) {
 
   /* ...
-        // rules here apply to devices from 1202px to 1398px (inclusive)
+        rules here apply to devices from 1202px to 1398px (inclusive)
         ... */
   .smBrandGrowth_services_card_div {
     margin: 5.5rem 5.5rem 0rem 5.5rem;
@@ -437,14 +437,14 @@
 /* tab device */
 @media (max-width: 992px) {
   /* ...
-        // rules here apply to devices from 769px to 992px (inclusive)
+        rules here apply to devices from 769px to 992px (inclusive)
         ... */
 }
 
 /* moblie device  */
 @media (max-width: 768px) {
   /* ...
-        // rules here apply to devices from 0px to 768px (inclusive)
+        rules here apply to devices from 0px to 768px (inclusive)
         ... */
 }
 

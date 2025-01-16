@@ -420,7 +420,7 @@
 @media (max-width: 1398px) {
 
   /* ...
-        // rules here apply to devices from 1202px to 1398px (inclusive)
+        rules here apply to devices from 1202px to 1398px (inclusive)
         ... */
   .logoDesign_logoProcess_step_content {
     width: 86%;
@@ -440,7 +440,7 @@
 @media (max-width: 1200px) {
 
   /* ...
-        // rules here apply to devices from 993px to 1200px (inclusive)
+        rules here apply to devices from 993px to 1200px (inclusive)
         ... */
   .logoDesginPage_hero_part {
     padding: 5.3rem 2.39rem 6.8rem 2rem;

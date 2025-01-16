@@ -643,7 +643,7 @@
 @media (max-width: 1398px) {
 
   /* ...
-        // rules here apply to devices from 1202px to 1398px (inclusive)
+        rules here apply to devices from 1202px to 1398px (inclusive)
         ... */
   .socailMediaDesign_services_section .socailMediaDesign_services_social_card:nth-child(even) {
     margin-left: 22rem;
@@ -689,7 +689,7 @@
 /* laptop Media Queries */
 @media (max-width: 1200px) {
   /* ...
-        // rules here apply to devices from 993px to 1200px (inclusive)
+       rules here apply to devices from 993px to 1200px (inclusive)
         ... */
 
   .socailMediaDesign_services_main_div {
@@ -731,31 +731,33 @@
 
   .socailMediaDesign_Process_div_one {
     position: absolute;
-    bottom: -4px;
-    left: 244px;
+    bottom: -10px;
+    left: 274px;
   }
 
   .socailMediaDesign_Process_div_two {
     position: absolute;
-    bottom: 61px;
-    left: 302px;
+    bottom: 68px;
+    left: 343px;
   }
 
   .socailMediaDesign_Process_div_four {
     position: absolute;
-    bottom: 61px;
-    right: 310px;
+    bottom: 62px;
+    right: 333px;
+  }
+
+  .socailMediaDesign_Process_div_five {
+    position: absolute;
+    bottom: -4px;
+    right: 284px;
   }
 
   .socailMediaDesign_Process_section {
     padding: 7.75rem 5.31rem 9rem 5.31rem;
   }
 
-  .socailMediaDesign_Process_div_five {
-    position: absolute;
-    bottom: -10px;
-    right: 244px;
-  }
+
 
   .Process_counter_three_text_div {
     position: absolute;
@@ -813,14 +815,14 @@
 /* tab device */
 @media (max-width: 992px) {
   /* ...
-        // rules here apply to devices from 769px to 992px (inclusive)
+        rules here apply to devices from 769px to 992px (inclusive)
         ... */
 }
 
 /* moblie device  */
 @media (max-width: 768px) {
   /* ...
-        // rules here apply to devices from 0px to 768px (inclusive)
+        rules here apply to devices from 0px to 768px (inclusive)
         ... */
 }
 

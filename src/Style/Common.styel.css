@@ -9,28 +9,28 @@
 /* desktop */
 @media (max-width: 1398px) {
   /* ...
-      // rules here apply to devices from 1202px to 1398px (inclusive)
+      rules here apply to devices from 1202px to 1398px (inclusive)
       ... */
 }
 
 /* laptop Media Queries */
 @media (max-width: 1200px) {
   /* ...
-      // rules here apply to devices from 993px to 1200px (inclusive)
+      rules here apply to devices from 993px to 1200px (inclusive)
       ... */
 }
 
 /* tab device */
 @media (max-width: 992px) {
   /* ...
-      // rules here apply to devices from 769px to 992px (inclusive)
+      rules here apply to devices from 769px to 992px (inclusive)
       ... */
 }
 
 /* moblie device  */
 @media (max-width: 768px) {
   /* ...
-      // rules here apply to devices from 0px to 768px (inclusive)
+      rules here apply to devices from 0px to 768px (inclusive)
       ... */
 }
 
@@ -39,6 +39,6 @@
 /* vary small device  */
 @media (max-width: 460px) {
   /* ...
-      // rules here apply to devices from 0px to 460px (inclusive)
+      rules here apply to devices from 0px to 460px (inclusive)
       ... */
 }

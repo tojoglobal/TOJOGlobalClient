@@ -261,9 +261,56 @@
 
 /* laptop Media Queries */
 @media (max-width: 1200px) {
+
     /* ...
    rules here apply to devices from 993px to 1200px (inclusive)
         ... */
+    /* benefits_UX_UI_Design_main_div */
+    .benefits_UX_UI_Design_main_div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .benefits_UX_UI_Design_text_div {
+        position: absolute;
+        top: 58%;
+        left: 49%;
+        width: 67%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    #benefitsUXUIDesignService {
+        width: 100%;
+        height: 507px;
+    }
+
+    /* whyChoose_ux_ui_design_main_div */
+    .whyChoose_ux_ui_design_main_div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0rem;
+        row-gap: 2rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* WhatIsUiUxDesignSvg */
+    .whatIs_uiuxDesign_text_div {
+        position: absolute;
+        top: 24%;
+        left: 7%;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #WhatIsUiUxDesignSvg {
+        width: 100%;
+        height: 362px;
+    }
 }
 
 /* tab device */

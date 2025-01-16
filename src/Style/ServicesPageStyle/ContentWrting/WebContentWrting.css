@@ -1176,7 +1176,7 @@
 @media (max-width: 1398px) {
 
   /* ...
-        // rules here apply to devices from 1202px to 1398px (inclusive)
+        rules here apply to devices from 1202px to 1398px (inclusive)
         ... */
   .webContentWriting_hero_text_part {
     padding: 0rem 13rem;
@@ -1230,7 +1230,7 @@
 @media (max-width: 1200px) {
 
   /* ...
-        // rules here apply to devices from 993px to 1200px (inclusive)
+        rules here apply to devices from 993px to 1200px (inclusive)
         ... */
   .webContentWriting_hero_text_part {
     padding: 0rem 5rem;
@@ -1338,14 +1338,14 @@
 /* tab device */
 @media (max-width: 992px) {
   /* ...
-        // rules here apply to devices from 769px to 992px (inclusive)
+        rules here apply to devices from 769px to 992px (inclusive)
         ... */
 }
 
 /* moblie device  */
 @media (max-width: 768px) {
   /* ...
-        // rules here apply to devices from 0px to 768px (inclusive)
+        rules here apply to devices from 0px to 768px (inclusive)
         ... */
 }
 
