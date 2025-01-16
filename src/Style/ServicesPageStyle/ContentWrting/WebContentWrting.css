@@ -638,8 +638,19 @@
   font-style: normal;
   font-weight: 700;
   line-height: 2rem;
-  /* 133.333% */
   width: 12.625rem;
+}
+
+.webContet_features_middle_cirecle {
+  width: 18.68056rem;
+  height: 10.38656rem;
+  border-radius: 0 0 156px 156px;
+  background: var(--Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  position: absolute;
+  top: 112px;
+  left: -17px;
+  z-index: 5;
 }
 
 .webContentWriting_features_circel_div {
@@ -1232,13 +1243,25 @@
   /* ...
         rules here apply to devices from 993px to 1200px (inclusive)
         ... */
+  /* webContentWriting_service_section */
+  .webContentWriting_service_section {
+    padding-top: 4rem;
+    padding-bottom: 3.5rem;
+  }
+
+  /* webContentWriting_articalWriteOffers_section */
+  .webContentWriting_articalWriteOffers_section {
+    padding-top: 5rem;
+  }
+
+  /* webContentWriting_hero_text_part */
   .webContentWriting_hero_text_part {
     padding: 0rem 5rem;
   }
 
   .webContentWriting_blogWriting_text_div {
     align-self: center;
-    padding-right: 4rem;
+    padding-right: 1rem;
   }
 
   .webContentWriting_blogWriting_card_div {
@@ -1250,6 +1273,7 @@
     padding: 1rem 0rem;
   }
 
+  /* webContentWriting_service_card_div */
   .webContentWriting_service_card_div {
     padding: 0rem 1rem;
     margin-top: -7rem;
@@ -1260,6 +1284,7 @@
     padding: 1.5rem;
   }
 
+  /* webContentWriting_articalWriteOffers_text_div */
   .webContentWriting_articalWriteOffers_text_div {
     position: absolute;
     width: 12rem;
@@ -1298,6 +1323,15 @@
     height: 13rem;
   }
 
+
+  /* webContentWriting_technicalWriting_card_text_div */
+  .webContentWriting_technicalWriting_card_text_div {
+    color: #fff;
+    text-align: center;
+    margin-top: 5rem;
+    padding: 0rem 0.5rem;
+  }
+
   .webContentWriting_technicalWriting_card_div {
     width: 14rem;
     height: 17rem;
@@ -1309,8 +1343,43 @@
     padding: 0.15rem;
   }
 
+  /* webContentWriting_caseStudies_card_div */
+  .webContentWriting_caseStudies_main_div {
+    padding-bottom: 3rem;
+  }
+
   .webContentWriting_caseStudies_card_div {
     width: 30.875rem;
+  }
+
+  .webContentWriting_caseStudies_card_icon_div {
+    width: 13.375rem;
+    height: 4.375rem;
+  }
+
+  .iconTwoDiv {
+    width: 9.9rem !important;
+  }
+
+  /* webContentWriting_products_container_card */
+  .webContentWriting_products_container_card {
+    height: 20.795rem;
+    padding: 1.5rem;
+  }
+
+  .webContentWriting_products_container_text {
+    position: absolute;
+    right: 18px;
+    top: -17px;
+    width: 36.25rem;
+  }
+
+  /* webContentWriting_whitePaperContent_card_main_div */
+  .webContentWriting_whitePaperContent_card_main_div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 3rem;
+    padding-bottom: 7rem;
   }
 
   .webContentWriting_whitePaperContent_card_top_gradient {
@@ -1323,16 +1392,16 @@
   }
 
   .webContentWriting_whitePaperContent_card_text_div {
-    width: 10.8125rem;
+    width: 9.8rem;
   }
 
-  /* .webContentWriting_technicalWriting_card_image_div {
-    width: 6.77163rem;
-    height: 6.77163rem;
+  /* webContentWriting_brandContent_section */
+  .webContentWriting_brandContent_section {
+    padding-bottom: 0rem;
   }
-  .webContentWriting_technicalWriting_card_top_gradinet_div svg {
-    width: 175px;
-  } */
+
+
+
 }
 
 /* tab device */

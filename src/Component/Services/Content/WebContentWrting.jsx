@@ -940,7 +940,7 @@ const WebContentWrting = () => {
                 With Our Expertise, We Can Help You Shine on Every Platform!
               </p>
             </div>
-            <div className="features_middle_cirecle"></div>
+            <div className="webContet_features_middle_cirecle"></div>
             <div className="webContentWriting_features_socail_icon">
               {/* facebook */}
               <div className="socailMediaDesign_services_social_card_image one">

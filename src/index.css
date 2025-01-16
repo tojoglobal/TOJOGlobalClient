@@ -3643,11 +3643,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   /* universal design */
-  .col_image_style img {
-    /* height: 23rem;
-    margin-top: 2rem; */
-  }
-
   .border_style {
     width: 120px;
   }
@@ -3967,6 +3962,19 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   /* navbar in tablet */
+  .navbar>.container,
+  .navbar>.container-fluid,
+  .navbar>.container-lg,
+  .navbar>.container-md,
+  .navbar>.container-sm,
+  .navbar>.container-xl,
+  .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .responsive-navbar-nav {
     display: none;
   }

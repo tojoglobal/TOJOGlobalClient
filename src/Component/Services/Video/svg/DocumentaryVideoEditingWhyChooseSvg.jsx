@@ -4,8 +4,7 @@ const DocumentaryVideoEditingWhyChooseSvg = () => {
   return (
     <>
       <svg
-        width="249"
-        height="344"
+        className="documentaryVideoEditingWhyChooseSvg"
         viewBox="0 0 249 344"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

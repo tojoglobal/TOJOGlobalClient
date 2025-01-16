@@ -886,10 +886,13 @@
   position: relative;
 }
 
+.documentaryVideoEditingWhyChooseSvg {
+  width: 249px;
+  height: 344px;
+}
+
 .explainer_video_editing_WhyChoose_icon {
   position: absolute;
-  /* top: 34%;
-  left: 40%; */
   top: 26%;
   left: 39%;
   transform: translate(-50%, -50%);
@@ -1095,9 +1098,172 @@
 
 /* laptop Media Queries */
 @media (max-width: 1200px) {
+
   /* ...
         rules here apply to devices from 993px to 1200px (inclusive)
         ... */
+  /* DocumentaryVideoEditingProcesSvg */
+  #DocumentaryVideoEditingProcesSvg {
+    width: 100%;
+    height: 204px;
+  }
+
+  /* explainer_video_editing_process_number */
+  .explainer_video_editing_process_number span {
+    top: 35px;
+    left: 10px;
+    font-size: 2.5rem;
+    line-height: 125%;
+  }
+
+  .explainer_video_editing_Text_div {
+    position: absolute;
+    left: 56%;
+    top: 33%;
+    transform: translate(-50%, -50%);
+    width: 312px;
+  }
+
+  /* prodcast_video_editing_process_SvgElement */
+  .prodcast_video_editing_process_SvgElement {
+    width: 216px;
+    height: 255px;
+  }
+
+  .prodcast_video_editing_process_top_text_div {
+    position: absolute;
+    top: -131px;
+    left: -3px;
+  }
+
+  .prodcast_video_editing_process_bottom_text_div {
+    position: absolute;
+    bottom: -130px;
+  }
+
+  /* prodCast_videoEditing_gradient_div */
+  .prodCast_videoEditing_gradient_div {
+    width: 50.25rem;
+    height: 18.1875rem;
+  }
+
+  /* brand_video_editing_choose_main_div */
+  .brand_video_editing_choose_main_div {
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .brand_video_editing_choose_div {
+    width: 100%;
+    height: 15.4375rem;
+    background: var(--BG-15, rgba(24, 200, 255, 0.15));
+    border-radius: 1rem;
+    padding: 2.19rem;
+  }
+
+  /* DocumentaryVideoEditingBestFeatureSvg */
+  .documentary_video_editing_best_features_number span {
+    left: 49%;
+  }
+
+  #DocumentaryVideoEditingBestFeatureSvg {
+    width: 100%;
+    height: 241px;
+  }
+
+  .documentary_video_editing_best_features_text_div {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    width: 280px;
+  }
+
+  .documentary_video_editing_best_features_div {
+    margin-bottom: 2rem;
+  }
+
+  .documentary_video_editing_why_you_need_main_div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .documentaryVideoEditingWhyChooseSvg {
+    width: 100%;
+  }
+
+  .explainer_video_editing_WhyChoose_icon {
+    left: 49%;
+  }
+
+  .documentary_video_editing_whyChoose_main_div {
+    padding-top: 0rem;
+  }
+
+  /* explainer_video_editing_fast_delivery_text_div */
+  .explainer_video_editing_fast_delivery_text_div {
+    position: absolute;
+    right: -5px;
+    top: 76px;
+  }
+
+  .explainer_video_editing_skilled_Editors_text_div {
+    position: absolute;
+    left: -7px;
+    top: 73px;
+  }
+
+  .explainer_video_editing_Custom_Tailored_Videos_text_div {
+    position: absolute;
+    left: 70px;
+    top: 275px;
+  }
+
+  .explainer_video_editing_Unique_content_text_div {
+    position: absolute;
+    right: 71px;
+    top: 276px;
+  }
+
+  .explainer_video_editing_optimized_Platform_text_div {
+    position: absolute;
+    left: 352px;
+    bottom: -177px;
+  }
+
+  /* Documentary_into_video_editing_main_div */
+  .Documentary_into_video_editing_main_div {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .documentary_video_editing_process_main_div {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    gap: 0rem;
+  }
+
+  /* explainer_video_editing_process_leftPloyline_svg */
+  .explainer_video_editing_process_leftPloyline_svg {
+    display: none;
+  }
+
+  .explainer_video_editing_process_Text_div {
+    width: 72%;
+    left: 50%;
+  }
+
+  /* youtube_video_editing_services_text_div */
+  .youtube_video_editing_services_text_div {
+    position: absolute;
+    top: 40px;
+    left: 120px;
+    width: 12.0625rem;
+  }
 }
 
 /* tab device */

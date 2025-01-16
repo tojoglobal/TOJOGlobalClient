@@ -100,6 +100,33 @@
   /* ...
      rules here apply to devices from 993px to 1200px (inclusive)
         ... */
+
+  .motionGraphices_WhyChoose_TOJOGlobal_div {
+    width: 100%;
+    min-height: 26.42406rem;
+    border-radius: 0.72863rem;
+  }
+
+  .motionGraphices_WhyChoose_TOJOGlobal_main_div {
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .motionGraphices_WhyChoose_TOJOGlobal_div::before {
+    width: 95%;
+    height: 97%;
+    border-radius: 0.7338rem;
+  }
+
+  /* motionGraphicesBenifit_text_div */
+  .motionGraphicesBenifit_text_div {
+    position: relative;
+    margin-left: 1rem;
+  }
+
+  .motionGraphicesBenifit_text_div::before {
+    content: none;
+  }
 }
 
 /* tab device */
