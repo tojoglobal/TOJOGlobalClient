@@ -442,15 +442,53 @@
 
 /* laptop Media Queries */
 @media (max-width: 1200px) {
+
   /* ...
-        // rules here apply to devices from 993px to 1200px (inclusive)
+        rules here apply to devices from 993px to 1200px (inclusive)
         ... */
+  /* wordpressDevelopment_hero_part */
+  .wordpressDevelopment_hero_part {
+    padding-top: 3rem;
+  }
+
+  /* WordpressWebsiteDevelopmentWhyExpertiseKeyPointSvgStyle */
+
+  .WordpressWebsiteDevelopmentWhyExpertiseKeyPointSvgStyle {
+    width: 100%;
+    height: 170px;
+  }
+
+  .wordpressWebsiteDevelopment_whyExpertise_keyPoint_text_div img {
+    width: 3.4375rem;
+    height: 4.4375rem;
+  }
+
+  /* wordpressDevelopment_whyChoose_keyPoint_div */
+  .wordpressDevelopment_whyChoose_keyPoint_div {
+    padding-right: 0rem;
+  }
+
+  /* wordpressDevelopment_whyChoose_main_div */
+  .wordpressDevelopment_whyChoose_main_div {
+    width: 100%;
+    margin: 7rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  /* WordPressDevelopment_Target_Companies_main_div */
+  .WordPressDevelopment_Target_Companies_main_div {
+    width: 96%;
+    margin: 5rem auto;
+    padding: 3rem;
+  }
 }
 
 /* tab device */
 @media (max-width: 992px) {
   /* ...
-        // rules here apply to devices from 769px to 992px (inclusive)
+       rules here apply to devices from 769px to 992px (inclusive)
         ... */
 }
 

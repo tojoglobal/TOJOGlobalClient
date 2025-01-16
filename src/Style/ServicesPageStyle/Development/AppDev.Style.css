@@ -99,7 +99,8 @@
 
 .appDevService_ourServices_card_div {
   display: grid;
-  grid-template-columns: repeat(5, minmax(260px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -110,7 +111,6 @@
   background: rgba(24, 200, 255, 0.3);
   box-shadow: 0px 4px 4px 0px rgba(6, 0, 68, 0.25);
   backdrop-filter: blur(22px);
-  width: 13.3125rem;
   height: 19.3125rem;
   display: flex;
   justify-content: center;
@@ -127,7 +127,6 @@
   padding-top: 1rem;
   color: #fff;
   text-align: center;
-
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
@@ -137,7 +136,6 @@
 .appDevService_ourServices_card p {
   color: #fff;
   text-align: center;
-
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
@@ -325,7 +323,6 @@
 
   .appDevService_whyChoose_main_div {
     width: 88%;
-    gap: 3rem;
   }
 
 
@@ -360,6 +357,44 @@
     justify-content: space-between;
     column-gap: 0rem;
   }
+
+  /* appDevService_ourServices_card_div */
+  .appDevService_Our_Services_main_div {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .appDevService_ourServices_card_div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .appDevService_ourServices_card {
+    border-radius: 1.75rem;
+    width: 100%;
+  }
+
+  /* appDev_Partnering_services_div  */
+  .appDev_Partnering_services_main_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .appDev_Partnering_services_main_div .appDev_Partnering_services_div:last-child {
+    display: none;
+  }
+
+  .appDev_Partnering_services_text_div {
+    position: absolute;
+    top: 60%;
+    left: 42%;
+  }
+
+  /* appDevService_whyChoose_main_div */
+  .appDevService_whyChoose_main_div {
+    width: 100%;
+    gap: 1rem;
+  }
+
 }
 
 /* tab device */
