@@ -225,7 +225,10 @@ const BlockchainDev = () => {
           </div>
         </div>
         {/* blockchain devlopment Our Services Include */}
-        <div className="blockchain_dev_OurServicesInclude">
+        <div
+          className="blockchain_dev_OurServicesInclude"
+          style={{ paddingTop: "5rem" }}
+        >
           <h1
             data-aos="fade-down"
             className="blockchain_dev_OurServicesInclude_headding"

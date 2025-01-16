@@ -3669,8 +3669,22 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 
   /* about page */
   /* about section  */
+  .col_text_style h2 {
+    font-size: 2.5rem;
+    line-height: 125%;
+  }
+
+  .about_col_text_style p {
+    padding-top: 0.5rem;
+  }
+
   .about_div {
-    padding: 3.8rem 0rem 3rem;
+    padding: 4.8rem 0rem 3rem;
+  }
+
+  .col_text_style .about_second_para {
+    font-size: 14px;
+    line-height: 125%;
   }
 
   .Our_Value_Services_text_div {
@@ -3685,6 +3699,14 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   .Our_Value_text_heading {
     position: relative;
     z-index: 10;
+  }
+
+  .Who_We_Are_text_div {
+    padding-bottom: 0.5rem;
+  }
+
+  .about_col_text_style {
+    padding-top: 1rem;
   }
 
   /* services  */
@@ -3857,6 +3879,20 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 
   .contactus_text_section {
     margin-top: 6rem;
+  }
+
+  /* home page hero part  */
+  .hero_div {
+    padding: 4.5rem 0rem 3rem 0;
+  }
+
+  .hero_text_style h1 {
+    font-size: 2.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .hero_text_style {
+    row-gap: 0.5rem;
   }
 
 

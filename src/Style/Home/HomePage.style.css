@@ -1022,8 +1022,8 @@
     }
 
     .hero_text_style h1 {
-        font-size: 3.2rem;
-        padding-right: 0rem;
+        /* font-size: 3.2rem;
+        padding-right: 0rem; */
     }
 
     /* homePage_latestBlog_container */
@@ -1119,7 +1119,7 @@
     .home_servers_weOffer_CardImages img {
         width: 100%;
         max-width: 100%;
-        min-height: 31.5rem;
+        min-height: 33.5rem;
         height: 100%;
         aspect-ratio: 16 / 7;
         margin: 0 auto;
@@ -1130,9 +1130,6 @@
         height: 54px;
     }
 
-    .category-image {
-        display: none;
-    }
 
     /* progress */
     .progress_card_text {
@@ -1234,8 +1231,6 @@
         line-height: 1.25rem;
     }
 
-
-
     .homePageOurPrgoress_cardMainDiv {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1300,7 +1295,6 @@
     .OurTrustedClient_card_image_container {
         position: relative;
         z-index: 20;
-        /* background: url("/Images/homePage/HomePageOurTrustedClientCardDivSvg.svg"); */
         background-repeat: no-repeat;
         background-size: cover;
         object-fit: cover;
@@ -1333,6 +1327,11 @@
         position: relative;
         height: 3.2rem;
         z-index: 20;
+    }
+
+    /* home page catagory image  */
+    .category-image {
+        display: none;
     }
 
 }

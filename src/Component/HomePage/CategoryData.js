@@ -73,30 +73,32 @@ export const categoryData = [
         serviceName: "Crypto Token Development",
         serviceLink: "/services/development/crypto-token-development",
       },
+
+      {
+        serviceName: "Web Development",
+        serviceLink: "/services/development/web-development",
+      },
       {
         serviceName: "NFT Platform Development",
         serviceLink: "/services/development/nft-platform-development",
+      },
+      {
+        serviceName: "WordPress Development",
+        serviceLink: "/services/wordpress-development",
+      },
+      {
+        serviceName: "App Development",
+        serviceLink: "/services/development/app-development",
       },
 
       {
         serviceName: "Play-to-Earn Game Development",
         serviceLink: "/services/development/play-to-earn-game-development",
       },
-      {
-        serviceName: "Web Development",
-        serviceLink: "/services/development/web-development",
-      },
-      {
-        serviceName: "App Development",
-        serviceLink: "/services/development/app-development",
-      },
+
       {
         serviceName: "WooCommerce Development",
         serviceLink: "/services/development/woocommerce-development",
-      },
-      {
-        serviceName: "WordPress Development",
-        serviceLink: "/services/wordpress-development",
       },
     ],
   },

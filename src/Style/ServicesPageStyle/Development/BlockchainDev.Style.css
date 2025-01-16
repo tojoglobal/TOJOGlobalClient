@@ -68,12 +68,43 @@
   position: absolute;
   left: -141px;
   bottom: -107px;
+  transition: transform 0.3s ease-in-out;
+  animation: bounce1 5s infinite ease-in-out;
 }
 
 .blockChainCryptoTokenRightImage {
   position: absolute;
   right: -119px;
   bottom: -107px;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+  animation: bounce2 5s infinite ease-in-out;
+}
+
+@keyframes bounce1 {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(30px);
+
+  }
+}
+
+@keyframes bounce2 {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+
+    transform: translateX(-42px);
+  }
 }
 
 .blockChain_cryptoToken_development_top_part_image_div::before {
@@ -1019,6 +1050,68 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+
+  /* blockchain_services_main_div */
+  .blockchain_services_main_div {
+    width: 92%;
+  }
+
+  /* blockChainCryptoTokenLeftImage */
+  .blockChainCryptoTokenLeftImage {
+    position: absolute;
+    left: -74px;
+    bottom: -118px;
+    width: 73%;
+  }
+
+  .blockChainCryptoTokenRightImage {
+    position: absolute;
+    right: -57px;
+    bottom: -91px;
+    width: 73%;
+  }
+
+  /* Benefits_BlockChain_Development_textDiv_div */
+  .Benefits_BlockChain_Development_textDiv_div {
+    width: 30%;
+  }
+
+  .Benefits_BlockChain_vectorText_901 {
+    position: absolute;
+    top: -4%;
+    left: -1%;
+  }
+
+  .Benefits_BlockChain_vectorText_903 {
+    position: absolute;
+    top: 5%;
+    left: 34%;
+  }
+
+  .Benefits_BlockChain_vectorText_902 {
+    position: absolute;
+    bottom: 2%;
+    left: 15%;
+  }
+
+  .Benefits_BlockChain_vectorText_904 {
+    position: absolute;
+    bottom: -4%;
+    right: 14%;
+  }
+
+  /* whyChoose_blockChain_development_div */
+
+  .whyChoose_blockChain_development_div:nth-child(even)::before {
+    right: -61px;
+  }
+
+  /* blockChain_deve_nft_platfrom_subHeading */
+  .blockChain_deve_nft_platfrom_subHeading {
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 1rem;
   }
 
 }
