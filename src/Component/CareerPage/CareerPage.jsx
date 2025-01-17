@@ -24,7 +24,6 @@ const CareerPage = () => {
         }
       })
       .catch((err) => {
-        console.log(err);
         setErrorMessage("An error occurred while fetching data.");
       });
   }, [apiUrl]);

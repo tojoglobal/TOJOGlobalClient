@@ -38,8 +38,6 @@ export default function JobDescription() {
     setJObDesctiption(matchItems);
   }, [Job, jobId]);
 
-  console.log(jObDesctiption);
-
   useEffect(() => {
     const mediaPlatforms = document.querySelectorAll(
       '.social-share-buttons a[data-type]:not([data-type=""])'

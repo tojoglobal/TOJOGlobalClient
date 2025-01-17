@@ -13,7 +13,7 @@ export const LatestBlogPost = () => {
   const [blogpost, setBlogpost] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
-  const itemsToShow = 3;
+  const itemsToShow = isLargeMobileView ? 1 : 3;
 
   // Fetch blog data
   useEffect(() => {
@@ -22,7 +22,8 @@ export const LatestBlogPost = () => {
       .get(`${apiUrl}/api/admin/blogpost`)
       .then((result) => {
         if (result.data.Status) {
-          setBlogpost(result.data.Result);
+          const blogData = result.data.Result.slice(0, 6);
+          setBlogpost(blogData);
         } else {
           setErrorMessage(result.data.Error || "No data available");
         }
@@ -73,13 +74,13 @@ export const LatestBlogPost = () => {
     <div className="container">
       {/* Product Description */}
       <div
-        className="homePageSectionHeroTextstyle text-white"
+        className="homePageSectionHeroTextstyle homepageLatestBlogSection text-white"
         data-aos="fade-down"
       >
-        <h1>
+        <h1 className="topHeadingStyle homePageOurProgresssText">
           Our Latest  <span className="headdingGradientText">articles</span>
         </h1>
-        <p className="text-white">
+        <p className="paraStyle text-white">
           We can help your businesses to go skyrocket! With our premier digital
           marketing and web design and development services, We are able to
           market your businesses to the millions of prospects. Grab our web
@@ -93,24 +94,32 @@ export const LatestBlogPost = () => {
           <LoadingSvg />
         ) : blogpost.length > 0 ? (
           isLargeMobileView ? (
+            // small device
             <>
-              {getVisibleItems().map((blog, i) => (
-                <div className="row">
-                  <ArticalColum
-                    articalInfo={{
-                      key: { i },
-                      imgName: blog.blogImg,
-                      title: blog.blogtitle,
-                      shortDes: blog.description,
-                      Author: blog.authorName,
-                      TimeStampData: blog.timestamp_column,
-                    }}
-                  />
-                </div>
-              ))}
+              {getVisibleItems().map(
+                (blog, i) => (
+                  console.log(blog),
+                  (
+                    <div className="row">
+                      <ArticalColum
+                        articalInfo={{
+                          key: { i },
+                          imgName: blog.blogImg,
+                          title: blog.blogtitle,
+                          shortDes: blog.description,
+                          Author: blog.authorName,
+                          TimeStampData: blog.timestamp_column,
+                        }}
+                      />
+                    </div>
+                  )
+                  // </div>
+                )
+              )}
             </>
           ) : (
             <>
+              {/* large device  */}
               {getVisibleItems().map((blog, i) => (
                 <div className="homePage_latestBlog_card" key={i}>
                   <img

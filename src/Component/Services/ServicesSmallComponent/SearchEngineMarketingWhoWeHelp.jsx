@@ -46,7 +46,6 @@ const whoWeHelpData = [
 
 const SearchEngineMarketingWhoWeHelpCard = (data) => {
   const { title, image, description } = data;
-  console.log(title);
   return (
     <>
       {/* <div className="blog_col_section"> */}

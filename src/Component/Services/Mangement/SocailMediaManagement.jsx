@@ -12,8 +12,6 @@ const SocailMediaManagement = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  console.log(apiUrl, isLargeMobileView);
-
   return (
     <main className="maindiv">
       {/* social service management top part  */}

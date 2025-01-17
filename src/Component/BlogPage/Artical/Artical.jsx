@@ -77,8 +77,6 @@ const Artical = () => {
         .required("Comment is required"),
     }),
     onSubmit: async (values, { resetForm }) => {
-      console.log(values);
-
       try {
         const response = await axios.post(
           `${apiUrl}/api/admin/comment/submited`,

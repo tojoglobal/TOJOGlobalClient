@@ -7,23 +7,18 @@ export const OurProgress = () => {
 
   useEffect(() => {
     const section = progressSectionRef.current;
-
-    // Create an Intersection Observer
     const observer = new IntersectionObserver(
       (entries) => {
-        // If the section is intersecting (in view), set isInView to true
         if (entries[0].isIntersecting) {
           setIsInView(true);
-          observer.unobserve(section); // Stop observing once it's in view
+          observer.unobserve(section);
         }
       },
-      { threshold: 0.2 } // Trigger when 20% of the section is visible
+      { threshold: 0.2 }
     );
-
     if (section) {
       observer.observe(section);
     }
-
     // Cleanup observer when component unmounts
     return () => {
       if (section) observer.unobserve(section);
@@ -32,8 +27,11 @@ export const OurProgress = () => {
 
   return (
     <section className="container" ref={progressSectionRef}>
-      <div className="homePageSectionHeroTextstyle" data-aos="fade-down">
-        <h1 className="topHeadingStyle">
+      <div
+        className="homePageSectionHeroTextstyle homepageOurProgressSection"
+        data-aos="fade-down"
+      >
+        <h1 className="topHeadingStyle homePageOurProgresssText">
           {"Our "}
           <span className="headdingGradientText">Progress</span>{" "}
         </h1>

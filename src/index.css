@@ -4621,7 +4621,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 
   .hero_btn2 {
     width: 100%;
-    /*padding: 0.375rem 4rem;*/
     font-weight: 500;
   }
 
@@ -5196,7 +5195,7 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   .key_features_main_div {
-    padding: 8.62rem 0.5rem 0.5rem 0.5rem;
+    padding: 3.62rem 0.5rem 0.5rem 0.5rem;
     width: 342px;
     margin: 0 auto;
   }
@@ -5266,11 +5265,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     padding: 5.5rem 0.69rem 2.57rem 0.69rem;
   }
 
-  .homePage_HeroRightSvg {
-    width: 338px;
-    height: 293px;
-  }
-
   .hero_text_style {
     padding-left: 0.5rem;
     padding-right: 0rem !important;
@@ -5315,7 +5309,7 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   .about_row_style {
-    padding: 1.62rem 0.5rem;
+    padding: 2.62rem 0.4rem 1rem 0.4rem;
   }
 
   .about_row_style {
@@ -5360,6 +5354,10 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     font-size: 1.5rem;
     line-height: 1.8rem;
     margin-top: 50px;
+  }
+
+  .homePageOurProgresssText {
+    margin-top: 0px;
   }
 
 
