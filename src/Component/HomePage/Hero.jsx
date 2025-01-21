@@ -9,7 +9,20 @@ const Hero = () => {
         <div className="heroTopGradinet"></div>
         <div className="container hero_row_style">
           <div className="hero_text_style" data-aos="fade-right">
-            <h1>Transforming Brands with Innovative Digital Solutions</h1>
+            {/* <h1>
+              Transforming Brands <br /> with Innovative Digital Solutions
+            </h1> */}
+            <div className="hero_page_strongText">
+              <h2>
+                {" "}
+                Transforming{" "}
+                <span className="headdingGradientText">Brands</span>
+              </h2>
+              <h3 className="homePageHeroSubHeadingFristText">
+                with Innovative Digital{" "}
+              </h3>
+              <h3 className="homePageHeroSubHeadingSecondText">Solutions</h3>
+            </div>
 
             <p className="hero_seconde_para">
               Tojo Global empowers startups to stand out and thrive with a full

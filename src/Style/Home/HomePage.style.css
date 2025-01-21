@@ -1544,6 +1544,30 @@
         object-fit: contain;
     }
 
+    .hero_bottom_card_div {
+        /* display: flex; */
+    }
+
+    .HeroPageWhyus_card_image_container {
+        /* display: block; */
+    }
+
+    .HeroPageWhyus-logo {
+        max-width: 70px;
+        height: 44px;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+
+    .HeroPageWhyus_text {
+        color: #FFF;
+        text-align: center;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%;
+    }
+
     .hero_card_div {
         position: absolute;
         top: 15%;
@@ -1572,6 +1596,10 @@
     /* about page */
     .about-basics-benefits-content {
         gap: 0rem;
+    }
+
+    .about-us-heading {
+        font-size: 28px !important;
     }
 
     /* Trusted Client Slider */
@@ -1622,7 +1650,7 @@
     }
 
     .mobile_homePage_tustedClient {
-        font-size: 1.9rem !important;
+        font-size: 28px !important;
     }
 
     .homePage_trustedClient_section {
@@ -1681,7 +1709,15 @@
 
     .about_basics_benefits_item span {
         background: none;
-        font-size: 14px;
+        font-size: 12px;
+        white-space: nowrap;
+        padding: 0.25rem 1.2rem 0.25rem 1.56rem !important;
+    }
+
+    .about_basics_benefits_item span::before {
+        content: '';
+        left: 1.5px;
+
     }
 
     /* home page our progress */

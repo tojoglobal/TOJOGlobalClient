@@ -629,7 +629,24 @@ a {
 
 .hero_text_style h1 {
   color: #FFF;
-  /* font-family: "Poppins", sans-serif; */
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  padding-right: 1.5rem;
+}
+
+.hero_page_strongText h2 {
+  color: #FFF;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  padding-right: 1.5rem;
+}
+
+.hero_page_strongText h3 {
+  color: #FFF;
   font-size: 3.75rem;
   font-style: normal;
   font-weight: 700;
@@ -656,7 +673,6 @@ a {
 
 .col_text_style .about_second_para {
   color: var(--text-color);
-  /* font-family: "Poppins", sans-serif; */
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -4519,13 +4535,14 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   .hero_seconde_para {
-    font-family: 'Poppins', Arial, sans-serif;
+    /* font-family: 'Poppins', Arial, sans-serif; */
     font-size: 14px;
   }
 
   .col_text_style .about_second_para {
-    font-family: 'Poppins', Arial, sans-serif;
-    font-size: 14px;
+    text-align: justify !important;
+    margin: 0.5rem 0.1rem;
+    font-size: 12px;
   }
 }
 
@@ -4652,7 +4669,8 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 
   /* home about us section*/
   .about_div {
-    padding: 1rem 0rem;
+    padding: 0rem 0rem;
+    padding-bottom: 1rem;
   }
 
   .col_image_style img {
@@ -5201,13 +5219,15 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   .hero_text_style .hero_seconde_para {
+    text-align: justify;
     padding: 0 0;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .col_text_style.about_second_para {
+    text-align: justify !important;
     padding: 0 0;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   /* key fertcher */
@@ -5262,7 +5282,7 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   /* home page hero part */
   /* hero section */
   .hero_div {
-    padding: 5.5rem 0.69rem 2.57rem 0.69rem;
+    padding: 5.7rem 0.69rem 2.57rem 0.69rem;
   }
 
   .hero_text_style {
@@ -5272,12 +5292,45 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 
   /* home page hero part  */
   .hero_text_style h1 {
+    text-align: center;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
     padding-right: 0.5rem;
     line-height: 2.1rem;
   }
+
+  .hero_page_strongText {
+    text-align: center;
+  }
+
+  .hero_page_strongText h2 {
+    font-size: 28px;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 700;
+    padding-right: 0.5rem;
+    line-height: 2.1rem;
+  }
+
+  .hero_page_strongText .homePageHeroSubHeadingFristText {
+    font-size: 21px;
+    margin-top: -11px;
+    font-style: normal;
+    font-weight: 700;
+    padding-right: 0.5rem;
+    line-height: 2.1rem;
+  }
+
+  .hero_page_strongText .homePageHeroSubHeadingSecondText {
+    font-size: 21px;
+    margin-top: -15px;
+    font-style: normal;
+    font-weight: 700;
+    padding-right: 0.5rem;
+    line-height: 2.1rem;
+  }
+
 
   .hero_btn1,
   .hero_btn2 {
@@ -5309,7 +5362,7 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   .about_row_style {
-    padding: 2.62rem 0.4rem 1rem 0.4rem;
+    padding: 0rem 0.4rem 1rem 0.4rem;
   }
 
   .about_row_style {

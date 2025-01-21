@@ -18,7 +18,7 @@ const About = () => {
       <div className="about_div animation-image">
         <div className="container">
           <div className="row gap-3 about_row_style">
-            <div className="col-sm-12 col-lg-6 about_col_image_style col_image_style mt-4 mt-md-1">
+            <div className="col-sm-12 col-lg-6 about_col_image_style col_image_style mt-0 mt-md-1">
               <img
                 src="/Images/banner/aboutUsHero.png"
                 alt="banner_img4.png"
@@ -28,19 +28,22 @@ const About = () => {
 
             <div className=" col-sm-12 col-lg-6 about_col_text_style col_text_style">
               <div className="about_page_strongText" data-aos="fade-right">
-                <h2>
-                  About <span className="headdingGradientText">Tojo</span>{" "}
+                <h2
+                  style={{ textAlign: "center", marginBottom: "20px" }}
+                  className="about-us-heading"
+                >
+                  About <span className="headdingGradientText">TOGO</span>{" "}
                   Global
                 </h2>
               </div>
               <p className="about_second_para" data-aos="fade-right">
                 We redefine excellence in business solution at TOJO Global. Our
-                unique services in marketing, management, design, development,
-                and listing enables us to support industries in the blockchain,
-                fintech, cryptocurrency, small company, and B2B sectors.
-                Discover success, efficiency, and innovation with TOJO
-                Global—where your goals become our mission. Welcome to a new era
-                of business transformation.
+                unique services in marketing, branding, management, design,
+                development, and listing enables us to support industries &
+                companies in the blockchain, fintech, edtech, cryptocurrency,
+                small company, and B2B sectors. Discover success, efficiency,
+                and innovation with TOJO Global—where your goals become our
+                mission. Welcome to a new era of business transformation.
               </p>
 
               {/* Package services dynamically listed */}
