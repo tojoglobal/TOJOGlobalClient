@@ -52,12 +52,15 @@ const SurffessImageInfluncer = () => {
           </div>
         </div>
 
-        {/* Talented Text Card */}
+        {/* Talented Text Card 
+        Connect with talented influencers to easily connect and grow engagement with your customer*/}
         <div className="InfluencerMarketing_talented_Text_card_div">
-          <h2>
-            Connect with talented influencers to easily connect and grow
-            engagement with your customer
-          </h2>
+          <h2>Connect with Influencers to Boost Engagement Effortlessly</h2>
+          <h3 className="influencerMarketing_talented_second_text_card_div">
+            We link you with influencers who match your brand’s values. From
+            nano to macro influencers, reach new audiences and build trust
+            through their recommendations.
+          </h3>
           <p className="mt-0 mt-md-4">
             We connect you with influencers who genuinely align with your
             brand’s values and goals. Whether you need nano, micro, or macro

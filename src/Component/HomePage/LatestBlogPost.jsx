@@ -98,7 +98,6 @@ export const LatestBlogPost = () => {
             <>
               {getVisibleItems().map(
                 (blog, i) => (
-                  console.log(blog),
                   (
                     <div className="row">
                       <ArticalColum

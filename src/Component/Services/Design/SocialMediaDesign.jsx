@@ -894,7 +894,7 @@ const SocialMediaDesign = () => {
         </div>
       </section>
 
-      {/* WHY CHOOSE OUR SOCIAL MEDIA DESIGN SERVICES?       */}
+      {/* WHY CHOOSE OUR SOCIAL MEDIA DESIGN SERVICES?*/}
       <section className="socailMediaDesign_whyChooseServices_section">
         <div className="searchEngineMarketing_WhoHelp_top_text_div">
           <div data-aos="fade-down">
@@ -937,10 +937,10 @@ const SocialMediaDesign = () => {
             </div>
             <h3>Dedicated industry Experts Designer</h3>
             <p>
-              Our team consists of experienced designers who focus only on
-              social media design. This means we understand what works best for
-              your needs. Plus, we do all our design work in-house, ensuring
-              quality and consistency.
+              Our team of skilled designers specializes in social media design,
+              ensuring the best results for your needs. We handle all designs
+              in-house, guaranteeing top quality, consistency, and designs that
+              truly work to boost your online presence and engagement.
             </p>
           </div>
           {/* Complete Digital Marketing Solutions*/}

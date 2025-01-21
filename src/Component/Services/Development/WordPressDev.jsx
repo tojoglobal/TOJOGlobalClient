@@ -618,8 +618,8 @@ export const WordPressDev = () => {
           </svg>
           <h4>Easy Communication</h4>
           <p>
-          We know clear communication is key. Our team speaks fluent English, making it easy to connect with you.
-
+            We know clear communication is key. Our team speaks fluent English,
+            making it easy to connect with you.
           </p>
         </div>
         {/* 08 */}
@@ -1017,11 +1017,28 @@ export const WordPressDev = () => {
             <WordpressWebsiteDevelopmentWhyExpertiseKeyPoint />
             <div className="wordpressWebsiteDevelopment_whyExpertise_keyPoint_text_div">
               <img
-                src="/Images/ServicesImage/development/wordpressWebsiteDevelopmentOurExpertisekeyPointIcon01.svg"
+                src="/Images/ServicesImage/development/wordpressWebsiteDevelopmentOurExpertisekeyPointIcon08.svg"
                 alt="wordpressWebsiteDevelopmentOurExpertisekeyPointIcon"
               />
               <h4 className="wordpressWebsiteDevelopmentOurExpertisekeyPointSmallHeadingStyle mt-1">
                 Managing Multiple WordPress Sites
+              </h4>
+            </div>
+          </div>
+          {/* 09 */}
+          <div
+            className="wordpressWebsiteDevelopment_whyExpertise_keyPoint_div"
+            data-aos="fade-down"
+            data-aos-delay={8 * 200}
+          >
+            <WordpressWebsiteDevelopmentWhyExpertiseKeyPoint />
+            <div className="wordpressWebsiteDevelopment_whyExpertise_keyPoint_text_div">
+              <img
+                src="/Images/ServicesImage/development/wordpressWebsiteDevelopmentOurExpertisekeyPointIcon03.svg"
+                alt="wordpressWebsiteDevelopmentOurExpertisekeyPointIcon"
+              />
+              <h4 className="wordpressWebsiteDevelopmentOurExpertisekeyPointSmallHeadingStyle mt-1">
+                SEO Optimization for WordPress Websites
               </h4>
             </div>
           </div>

@@ -538,10 +538,7 @@ const VideoEditting = () => {
             />
             <div className="youtube_video_editing_services_text_div">
               <h4>We Edit It for You</h4>
-              <p>
-                Our team of expert editors enhances your video by trimming,
-                adding transitions, and making it visually appealing.
-              </p>
+              <p>Our Expert editors refine your video for visual appeal.</p>
             </div>
           </div>
           {/*03 Get the Final Video */}
@@ -556,10 +553,7 @@ const VideoEditting = () => {
             />
             <div className="youtube_video_editing_services_text_div">
               <h4>Get the Final Video</h4>
-              <p>
-                Once editing is complete, we’ll deliver the final video ready to
-                upload on your YouTube channel.
-              </p>
+              <p>Receive a polished, upload-ready video for YouTube.</p>
             </div>
           </div>
         </div>
@@ -2126,7 +2120,7 @@ const VideoEditting = () => {
 
             <div className="explainer_video_editing_process_Text_div">
               <h2>03</h2>
-              <p>Include animations or graphics to make the message clear.</p>
+              <p>Use animations or graphics for clearer communication</p>
             </div>
           </div>
           {/* process 4 */}
@@ -2177,7 +2171,7 @@ const VideoEditting = () => {
 
             <div className="explainer_video_editing_process_Text_div">
               <h2>04</h2>
-              <p>Ensure the video aligns with your brand style and message.</p>
+              <p>Align video style with your brand message perfectly</p>
             </div>
           </div>
         </div>
@@ -2537,8 +2531,9 @@ const VideoEditting = () => {
             <div className="documentary_video_editing_best_features_text_div">
               <h2 className="elementHeadingText">Professional Editing</h2>
               <p className="elementParaText">
-                Our team of experienced editors ensures that your documentary is
-                smooth, engaging, and visually appealing.
+                Our expert editors make your documentary smooth, engaging, and
+                visually appealing, with seamless transitions and clear
+                storytelling to create a polished and captivating final product.
               </p>
             </div>
           </div>

@@ -37,7 +37,6 @@
 .InfluencerMarketing_hero_text_div p {
   color: #fff;
   text-align: right;
-
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
@@ -67,13 +66,11 @@
   padding: 2.94rem 2.75rem 2.69rem 5.62rem;
   box-shadow: 0px 4px 19.8px 0px rgba(0, 0, 0, 0.3), #c508ff 0px 1px 1px 0px,
     #18c9ff 1px 0px 1px 1px;
-
   position: relative;
 }
 
 .InfluencerMarketing_OurExpertise_Text_card_div h4 {
   color: #fff;
-
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
@@ -82,7 +79,6 @@
 
 .InfluencerMarketing_OurExpertise_Text_card_div p {
   color: #fff;
-
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -127,16 +123,26 @@
 
 .InfluencerMarketing_talented_Text_card_div h2 {
   color: #fff;
-
   font-size: 2.625rem;
   font-style: normal;
   font-weight: 600;
   line-height: 2.75rem;
 }
 
+.influencerMarketing_talented_second_text_card_div {
+  color: #fff;
+  /* font-family: var(--font-main); */
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.875rem;
+  position: relative;
+  z-index: 5;
+}
+
 .InfluencerMarketing_talented_Text_card_div p {
   color: var(--Color-4, #818cb6);
-
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -186,12 +192,9 @@
   width: 11.6875rem;
   height: 11.625rem;
   border-radius: 1.5625rem;
-
   transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(0.9, 0.9);
-
   box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
   transition: 0.4s ease-in-out transform;
-
   animation: smallImageAnimation 5s ease-in-out;
 }
 
