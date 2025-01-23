@@ -5213,8 +5213,8 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   .key_features_main_div {
-    padding: 3.62rem 0.5rem 0.5rem 0.5rem;
-    width: 342px;
+    padding: 1.6rem 0rem 1.8rem 0rem;
+    width: 320px;
     margin: 0 auto;
   }
 
@@ -5231,10 +5231,11 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   /* key fertcher */
+
   .key_features_box_div {
-    margin-left: 0.2rem;
-    margin-right: 2.96rem;
-    width: 8.84644rem;
+    margin-left: -1rem;
+    margin-right: 4rem;
+    width: 7.5rem;
     height: 5.89194rem;
     z-index: 0;
   }
@@ -5251,7 +5252,7 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 
   .tooltipTopArrow2 {
     position: absolute;
-    right: -1rem;
+    right: -4rem;
     bottom: 2.5rem;
   }
 
@@ -5346,6 +5347,11 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     margin-bottom: 0rem;
   }
 
+  /* home page services section  */
+  .home_page_servicesHeaddingText {
+    margin-top: 10px !important;
+  }
+
   /* about section */
   .Who_We_Are_text_div span {
     font-size: 1.6rem;
@@ -5392,6 +5398,7 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 
   .Our_Value_Services_text_div P {
     width: 250px;
+    height: 42.067px;
   }
 
 
@@ -5425,8 +5432,13 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 
 
   /* footer div */
+  .footer-div-style {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
   .footer_box_text_div {
-    padding-top: 0.7rem;
+    padding-top: 31px;
   }
 
   .footer_heading {
@@ -5460,12 +5472,12 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   .footer_box_services_div .footer_box_icon {
-    margin-top: 0.3rem;
-    margin-right: 1px;
+    margin-top: 7px;
+    margin-right: 4px;
   }
 
   .footer_menubar_col_text img {
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     height: 100%;
     width: 45%;
   }
@@ -5478,11 +5490,15 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   .footer_menubar_col_text p {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 119%;
+    text-align: justify;
+    word-spacing: 2px;
+    padding: 0px 13px;
     width: 100%;
     margin-bottom: 0.9rem;
+
   }
 
   .footer_menubar {
@@ -5497,9 +5513,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     left: 52%;
     width: 100%;
   }
-
-
-
 
   /* responsive mobile  menu bar  */
   .submenu_list_main_name ul {

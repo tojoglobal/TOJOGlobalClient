@@ -26,7 +26,7 @@ const Services = () => {
   return (
     <section className="container home_servers_weOffer_section" ref={btnRef}>
       <div className="homePageSectionTopTextstyle" data-aos="fade-down">
-        <h1 className="topHeadingStyle">
+        <h1 className="topHeadingStyle home_page_servicesHeaddingText">
           <span className="headdingGradientText mobile_homePage_tustedClient">
             Services
           </span>{" "}
@@ -66,19 +66,27 @@ const Services = () => {
                   }
                 />
                 {/* Mobile-specific content rendering */}
-                {isMobileView && openIndex === index && (
-                  <div className="home_servers_weOffer_mobileCategoryData">
-                    <div className="home_servers_weOffer_catagoryItemsMaindiv">
-                      {category.items.map((item, idx) => (
-                        <Link to={item.serviceLink} key={idx}>
-                          <div className="home_servers_weOffer_catagoryItemDivbtn">
-                            <span>{item.serviceName}</span>
-                          </div>
-                        </Link>
-                      ))}
+
+                {isMobileView &&
+                  openIndex === index &&
+                  (console.log(
+                    `home_servers_weOffer_catagoryItemsMaindiv${openIndex}`
+                  ),
+                  (
+                    <div className="home_servers_weOffer_mobileCategoryData">
+                      <div
+                        className={`home_servers_weOffer_catagoryItemsMaindiv${openIndex}`}
+                      >
+                        {category.items.map((item, idx) => (
+                          <Link to={item.serviceLink} key={idx}>
+                            <div className="home_servers_weOffer_catagoryItemDivbtn">
+                              <span>{item.serviceName}</span>
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                )}
+                  ))}
               </div>
             ))}
           </div>

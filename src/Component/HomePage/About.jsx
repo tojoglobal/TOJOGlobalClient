@@ -32,7 +32,7 @@ const About = () => {
                   style={{ textAlign: "center", marginBottom: "20px" }}
                   className="about-us-heading"
                 >
-                  About <span className="headdingGradientText">TOGO</span>{" "}
+                  About <span className="headdingGradientText">TOJO</span>{" "}
                   Global
                 </h2>
               </div>

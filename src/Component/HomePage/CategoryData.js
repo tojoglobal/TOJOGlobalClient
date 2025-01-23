@@ -38,11 +38,13 @@ export const categoryData = [
         serviceLink: "/services/marketing/influencer-marketing",
       },
       {
-        serviceName: "Social Media Marketing (SMM)",
+        // serviceName: "Social Media Marketing (SMM)",
+        serviceName: "SMM",
         serviceLink: "/services/marketing/socail-media-marketing",
       },
       {
-        serviceName: "Search Engine Marketing (SEM)",
+        // serviceName: "Search Engine Marketing (SEM)",
+        serviceName: "SEM",
         serviceLink: "/services/marketing/search-engine-marketing",
       },
       {
@@ -66,11 +68,13 @@ export const categoryData = [
       "Images/homePage/homeservisesCatagoeyImgaeclose-short-markering-agency-meeting-in-a-room-pur1.png",
     items: [
       {
-        serviceName: "Blockchain Development",
+        // serviceName: "Blockchain Development",
+        serviceName: "Blockchain Dev",
         serviceLink: "/services/development/blockchain-development",
       },
       {
-        serviceName: "Crypto Token Development",
+        // serviceName: "Crypto Token Development",
+        serviceName: "Crypto Token Dev",
         serviceLink: "/services/development/crypto-token-development",
       },
 
@@ -79,25 +83,28 @@ export const categoryData = [
         serviceLink: "/services/development/web-development",
       },
       {
-        serviceName: "NFT Platform Development",
+        // serviceName: "NFT Platform Development",
+        serviceName: "NFT Platform Dev",
         serviceLink: "/services/development/nft-platform-development",
       },
       {
-        serviceName: "WordPress Development",
+        // serviceName: "WordPress Development",
+        serviceName: "WordPress Dev",
         serviceLink: "/services/wordpress-development",
       },
-      {
-        serviceName: "App Development",
-        serviceLink: "/services/development/app-development",
-      },
 
       {
-        serviceName: "Play-to-Earn Game Development",
+        // serviceName: "Play-to-Earn Game Development",
+        serviceName: "Play-to-Earn Game Dev",
         serviceLink: "/services/development/play-to-earn-game-development",
       },
-
       {
-        serviceName: "WooCommerce Development",
+        // serviceName: "App Development",
+        serviceName: "App Dev",
+        serviceLink: "/services/development/app-development",
+      },
+      {
+        serviceName: "WooCommerce Dev",
         serviceLink: "/services/development/woocommerce-development",
       },
     ],
@@ -121,9 +128,10 @@ export const categoryData = [
         serviceLink: "/services/design/social-media-design",
       },
       {
-        serviceName: "Ecommerce Photo Editing",
-        serviceLink: "/services/design/e-commerce-photo-editing",
+        serviceName: "UI/UX design",
+        serviceLink: "/services/design/ui-ux-design",
       },
+
       {
         serviceName: "White Paper Design",
         serviceLink: "/services/design/white-paper-design",
@@ -133,8 +141,9 @@ export const categoryData = [
         serviceLink: "/services/design/web-design",
       },
       {
-        serviceName: "UI/UX design",
-        serviceLink: "/services/design/ui-ux-design",
+        // serviceName: "Ecommerce Photo Editing",
+        serviceName: "Ecommerce Photo Edit",
+        serviceLink: "/services/design/e-commerce-photo-editing",
       },
     ],
   },
