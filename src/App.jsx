@@ -1,3 +1,5 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   BrowserRouter as Router,
   Routes,
@@ -57,6 +59,7 @@ import { NftPlatformDevelopment } from "./Component/Services/Development/NftPlat
 import PlayToEarnGameDevelopment from "./Component/Services/Development/PlayToEarnGameDevelopment";
 import WebDevelopment from "./Component/Services/Development/WebDevelopment";
 import WooCommerceDevelopment from "./Component/Services/Development/WooCommerceDevelopment";
+import { useEffect } from "react";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -208,6 +211,13 @@ const AnimatedRoutes = () => {
 };
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: true,
+    });
+  }, []);
+
   return (
     <HelmetProvider>
       <AppProvider>

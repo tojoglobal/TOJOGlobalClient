@@ -8,12 +8,12 @@ import "aos/dist/aos.css";
 import { HeroPageWhyus } from "../UniversalComponent/JSON/HeroPageWhyus";
 
 export const HeroSectionBottomCard = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 3000,
-      once: true,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 3000,
+  //     once: true,
+  //   });
+  // }, []);
 
   const settings = {
     infinite: true,

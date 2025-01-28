@@ -1,20 +1,21 @@
 import { useEffect } from "react";
-// import { FaCheckCircle } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const About = () => {
+  const pathName = location.pathname;
+
   useEffect(() => {
-    AOS.init({
-      duration: 3000,
-      once: true,
-    });
-  }, []);
+    const aboutDiv = document.querySelector(".about_div");
+    if (pathName === "/about-us" && aboutDiv) {
+      aboutDiv.style.padding = "5rem 0rem";
+      aboutDiv.style.paddingBottom = "1rem";
+    }
+  }, [pathName]);
+
   return (
     <>
-      {/* ================================================================================
+      {/* ============================================
                   about section 
-=========================================================================== */}
+========================================*/}
       <div className="about_div animation-image">
         <div className="container">
           <div className="row gap-3 about_row_style">
@@ -29,8 +30,8 @@ const About = () => {
             <div className=" col-sm-12 col-lg-6 about_col_text_style col_text_style">
               <div className="about_page_strongText" data-aos="fade-right">
                 <h2
-                  style={{ textAlign: "center", marginBottom: "20px" }}
-                  className="about-us-heading"
+                  style={{ marginBottom: "20px" }}
+                  className="about-us-heading text-center text-md-start"
                 >
                   About <span className="headdingGradientText">TOJO</span>{" "}
                   Global
