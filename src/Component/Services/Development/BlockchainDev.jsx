@@ -851,11 +851,10 @@ const BlockchainDev = () => {
                 Expertise in NFTs and Blockchain
               </h4>
               <p className="paraTextStyle">
-                We bring extensive experience in blockchain and NFT markets,
-                allowing us to build platforms that are both technically sound
-                and future-proof. Whether you need Ethereum-based NFTs or
-                multi-chain functionality, we have the expertise to make it
-                happen.
+                We have strong experience in blockchain and NFTs, creating
+                secure, future-ready platforms. Whether Ethereum-based or
+                multi-chain, we ensure your project is technically solid and
+                meets your needs.
               </p>
             </div>
           </div>
@@ -1076,6 +1075,28 @@ const BlockchainDev = () => {
               platform with advanced features will set you apart. TOJO Global
               ensures your platform is not only functional but offers a top-tier
               experience for users.
+            </p>
+          </div>
+          {/* 06 */}
+          <div
+            className="BlockChaniNftPlatfromDevHelp_div"
+            data-aos="fade-down"
+            data-aos-delay={5 * 200}
+          >
+            <div className="BlockChaniNftPlatfromDevHelp_icon_div">
+              <img
+                src="/Images/ServicesImage/development/BlockChaniNftPlatfromDevHelp_icon05.svg"
+                alt="BlockChaniNftPlatfromDevHelp_icon01.svg"
+              />
+            </div>
+            <h4 className="appDev_industries_services_subHeading">
+              Unlock New Opportunities
+            </h4>
+            <p className="paraTextStyle">
+              NFTs go beyond art and collectibles. They can represent real
+              estate, tickets, certifications, and more. Our platform lets you
+              explore diverse possibilities, helping you innovate and tap into
+              new markets with ease.
             </p>
           </div>
         </div>
@@ -1445,10 +1466,9 @@ const BlockchainDev = () => {
                     </div>
 
                     <p className="paraTextStyle">
-                      We leverage the latest technologies to deliver games that
-                      are not only entertaining but also technologically
-                      advanced, ensuring seamless gameplay and robust blockchain
-                      integration.
+                      We use the latest technologies to create fun, advanced
+                      games with smooth gameplay and strong blockchain
+                      integration for a great experience.
                     </p>
                     {/* text key pont why to tojo gloabl  */}
                     <div className="blockChaninPlayToEarnGameDevelopmentWhyChoose_keyPoint"></div>

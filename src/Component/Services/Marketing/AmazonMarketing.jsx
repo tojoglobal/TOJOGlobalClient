@@ -182,10 +182,9 @@ const AmazonMarketing = () => {
                 Amazon Store Creation & Management
               </h3>
               <p className="contentMarketingService_paraTextStyle">
-                We assist with the design and management of your Amazon Store,
-                ensuring it effectively showcases your brand and products. A
-                well-executed storefront strengthens brand recognition and
-                enhances the customer shopping experience.
+                We design and manage your Amazon Store to showcase your brand
+                and products, boosting recognition and creating a smooth
+                customer shopping experience.
               </p>
             </div>
           </div>
@@ -235,6 +234,31 @@ const AmazonMarketing = () => {
                 metrics such as traffic, sales, and ad efficiency. Our reports
                 provide actionable insights, helping you make adjustments that
                 improve results.
+              </p>
+            </div>
+          </div>
+          {/* 06 Amazon Inventory & Order Management */}
+          <div
+            className="amazonMediaMarketing_OurService_div"
+            data-aos="fade-down"
+            data-aos-delay={5 * 200}
+          >
+            <div className="amazonMediaMarketing_OurService_number_box_div">
+              <img
+                src="/Images/ServicesImage/Marketing/AmazonMediaMarketingOurServiceSvg.svg"
+                alt=""
+              />
+              <h3>06</h3>
+            </div>
+            <div className="amazonMediaMarketing_OurService_Text_div">
+              <h3 className="appDev_industries_services_subHeading">
+                Amazon Inventory & Order Management
+              </h3>
+              <p className="contentMarketingService_paraTextStyle">
+                We help you manage inventory levels and streamline order
+                processing on Amazon, ensuring your products stay in stock and
+                customers receive timely deliveries for a seamless shopping
+                experience.
               </p>
             </div>
           </div>

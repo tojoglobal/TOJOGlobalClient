@@ -8,9 +8,9 @@ const SocailMediaManagement = () => {
   const { apiUrl, isLargeMobileView } = useContext(AppContext);
 
   // Scroll to the top when the component mounts
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <main className="maindiv">
@@ -293,8 +293,8 @@ const SocailMediaManagement = () => {
             />
             <h4>Content Creation and Curation</h4>
             <p>
-              We create engaging, shareable content that resonates with your
-              target audience while aligning with your brand voice.
+              We create engaging, shareable content that connects with your
+              audience and reflects your brand's voice.
             </p>
           </div>
           {/*03 Social Media Strategy Development */}
@@ -309,9 +309,8 @@ const SocailMediaManagement = () => {
             />
             <h4>Social Media Strategy Development</h4>
             <p>
-              Our team will design a customized social media strategy that
-              focuses on your business objectives, whether it’s increasing
-              followers, boosting engagement, or driving conversions
+              Our team designs custom social media strategies to meet your
+              business goals, like increasing followers or driving conversions.
             </p>
           </div>
           {/*04  Platform Management*/}
@@ -326,9 +325,8 @@ const SocailMediaManagement = () => {
             />
             <h4>Platform Management</h4>
             <p>
-              We manage your accounts across all major platforms, including
-              Facebook, Instagram, LinkedIn, Twitter, and more, ensuring
-              consistent and impactful posting schedules
+              We manage your social media accounts across platforms, ensuring
+              consistent posts that engage your audience and maintain impact.
             </p>
           </div>
           {/*05  Community Management*/}
@@ -343,8 +341,9 @@ const SocailMediaManagement = () => {
             />
             <h4>Community Management</h4>
             <p>
-              Our team actively engages with your followers, responding to
-              comments, questions, and messages to build stronger relationships
+              We engage with your followers, responding to comments and
+              messages, building strong relationships, and fostering brand
+              loyalty.
             </p>
           </div>
           {/* 06 Social Media Advertising */}
@@ -359,9 +358,8 @@ const SocailMediaManagement = () => {
             />
             <h4>Social Media Advertising</h4>
             <p>
-              With expertise in paid social campaigns, we handle everything from
-              ad creation to performance tracking, ensuring you get the best
-              return on your advertising spend
+              We manage paid social campaigns, creating ads and tracking
+              performance to ensure you get the best return on investment.
             </p>
           </div>
           {/*07 Performance Analytics and Reporting */}
@@ -376,9 +374,8 @@ const SocailMediaManagement = () => {
             />
             <h4>Performance Analytics and Reporting</h4>
             <p>
-              We provide regular reports and insights into how your social media
-              efforts are performing, with data-driven adjustments to improve
-              results continuously
+              We provide regular performance reports and adjust strategies based
+              on data to improve your social media results.
             </p>
           </div>
         </div>

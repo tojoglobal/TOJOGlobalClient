@@ -289,6 +289,48 @@ const UxUi = () => {
               </p>
             </div>
           </div>
+          {/* card 08 */}
+          <div
+            className="uiuxDesig_services_card_div"
+            data-aos="fade-down"
+            data-aos-delay={7 * 200}
+          >
+            <div className="uiuxDesig_services_card_content">
+              <img
+                src="/Images/ServicesImage/Design/ux-ui-design-services-03.png"
+                alt="ux-ui-design-services-03"
+              />
+              <h4 className="appDev_industries_services_subHeading mt-3">
+                Accessibility Design
+              </h4>
+              <p className="paraTextStyle">
+                We design with inclusivity in mind, ensuring your platform is
+                accessible to everyone, including users with disabilities, by
+                following best practices and accessibility standards.
+              </p>
+            </div>
+          </div>
+          {/* card 09 */}
+          <div
+            className="uiuxDesig_services_card_div"
+            data-aos="fade-down"
+            data-aos-delay={7 * 200}
+          >
+            <div className="uiuxDesig_services_card_content">
+              <img
+                src="/Images/ServicesImage/Design/ux-ui-design-services-02.jpg"
+                alt="ux-ui-design-services-02"
+              />
+              <h4 className="appDev_industries_services_subHeading mt-3">
+                Performance Optimization
+              </h4>
+              <p className="paraTextStyle">
+                We optimize the design for speed and performance, ensuring fast
+                load times and smooth navigation for an improved user experience
+                across all devices.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -386,14 +428,14 @@ const UxUi = () => {
               <div className="whyChoose_ux_ui_design_text_icon_div">
                 <img
                   src="/Images/ServicesImage/Design/ux-ui-design-why-choose-02.svg"
-                  alt="ux-ui-design-why-choose-01"
+                  alt="ux-ui-design-why-choose-02"
                 />
               </div>
               <h2 className="elementHeadingText">Experienced Professionals</h2>
               <p className="whatIs_uiuxDesign_services_text_subHeading ">
                 Our team has broad experience across industries like e-commerce,
-                fintech, healthcare, and education, delivering creative and
-                practical designs for your business.
+                fintech and education, delivering creative and practical designs
+                for your business.
               </p>
             </div>
           </div>
@@ -539,6 +581,54 @@ const UxUi = () => {
               </p>
             </div>
           </div>
+          {/* 06 */}
+          <div
+            className="whyChoose_ux_ui_design_div"
+            data-aos="fade-down"
+            data-aos-delay={5 * 200}
+          >
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="svg_ux_ui_design_why_choose"
+                viewBox="0 0 329 320"
+                fill="none"
+              >
+                <path
+                  d="M329 314L318.693 308.049V319.951L329 314ZM32.9216 3.03072H259.085V0.969279H32.9216V3.03072ZM319.724 312.969H32.9216V315.031H319.724V312.969ZM3.03072 283.078V32.9216H0.969279V283.078H3.03072ZM288.976 32.9216V172.479H291.038V32.9216H288.976ZM288.976 172.479V257.719H291.038V172.479H288.976ZM32.9216 312.969C16.4133 312.969 3.03072 299.587 3.03072 283.078H0.969279C0.969279 300.725 15.2748 315.031 32.9216 315.031V312.969ZM259.085 3.03072C275.593 3.03072 288.976 16.4133 288.976 32.9216H291.038C291.038 15.2748 276.732 0.969279 259.085 0.969279V3.03072ZM32.9216 0.969279C15.2748 0.969279 0.969279 15.2748 0.969279 32.9216H3.03072C3.03072 16.4133 16.4133 3.03072 32.9216 3.03072V0.969279Z"
+                  fill="url(#paint0_linear_2408_5179)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_2408_5179"
+                    x1="232.538"
+                    y1="-9.85595"
+                    x2="371.887"
+                    y2="180.116"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#18C8FF" />
+                    <stop offset="1" stop-color="#C608FF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            {/* icon and text div  */}
+            <div className="whyChoose_ux_ui_design_div_text">
+              <div className="whyChoose_ux_ui_design_text_icon_div">
+                <img
+                  src="/Images/ServicesImage/Design/ux-ui-design-why-choose-03.svg"
+                  alt="ux-ui-design-why-choose-03"
+                />
+              </div>
+              <h2 className="elementHeadingText">Clear Communication</h2>
+              <p className="whatIs_uiuxDesign_services_text_subHeading">
+                We prioritize clear, open communication throughout the design
+                process to ensure all your needs are met and you’re always
+                updated.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -550,7 +640,6 @@ const UxUi = () => {
             Benefits of TOJO Global's UX/UI Design Services
           </h1>
         </div>
-
         <div className="benefits_UX_UI_Design_main_div">
           {/* 01 */}
           <div
@@ -638,10 +727,27 @@ const UxUi = () => {
             <div className="benefits_UX_UI_Design_text_div">
               <h2 className="elementHeadingText">Reduce Development Cost</h2>
               <p className="paraTextStyle">
-                Investing in UX/UI design from the start helps avoid expensive
-                redesigns down the line. A well-thought-out interface simplifies
-                development and minimizes the need for significant changes later
-                on.
+                Starting with good UX/UI design helps prevent costly redesigns,
+                streamline development and reduce the need for major changes in
+                the future.
+              </p>
+            </div>
+          </div>
+          {/* 06 */}
+          <div
+            className="benefits_UX_UI_Design_div"
+            data-aos="fade-down"
+            data-aos-delay={5 * 200}
+          >
+            <BenefitsUXUIDesignService
+              imgeUrl={"benefits-ux-ui-design-05.svg"}
+            />
+            <div className="benefits_UX_UI_Design_text_div">
+              <h2 className="elementHeadingText">Improve Accessibility</h2>
+              <p className="paraTextStyle">
+                A user-friendly design ensures that everyone, including those
+                with disabilities, can easily navigate and interact with your
+                platform, expanding your audience and promoting inclusivity.
               </p>
             </div>
           </div>

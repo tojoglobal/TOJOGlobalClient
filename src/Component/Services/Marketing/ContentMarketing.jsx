@@ -230,12 +230,9 @@ const ContentMarketing = () => {
                 Effective Solutions
               </h4>
               <p className="contentMarketingService_paraTextStyle">
-                TOJO Global's content marketing services help businesses create,
-                distribute, and optimize content that engages audiences and
-                drives growth. By focusing on creating high-quality content that
-                resonates with your audience and maximizing your online
-                visibility, you increase your chances of success and attracting
-                more customers.
+                TOJO Global helps businesses create, distribute, and optimize
+                content that engages audiences and drives growth, increasing
+                online visibility and attracting more customers.
               </p>
             </div>
           </div>
@@ -258,12 +255,9 @@ const ContentMarketing = () => {
                 Experienced Team
               </h4>
               <p className="contentMarketingService_paraTextStyle">
-                Our team consists of skilled content creators, SEO specialists,
-                and digital marketing professionals dedicated to producing
-                content that captivates and delivers results. We continuously
-                follow the latest industry trends, ensuring that the content we
-                create for your brand is both relevant and high-quality, keeping
-                you competitive in the market.
+                Our skilled team of content creators, SEO specialists, and
+                marketers ensures your content is high-quality, relevant, and
+                competitive, keeping your brand ahead of the market trends.
               </p>
             </div>
           </div>
@@ -312,10 +306,9 @@ const ContentMarketing = () => {
                 Proven Results
               </h4>
               <p className="contentMarketingService_paraTextStyle">
-                Our clients have seen measurable improvements in website
-                traffic, search engine rankings, and lead generation through our
-                content marketing services. We take pride in our proven success
-                across various industries.
+                Our content marketing services have driven measurable
+                improvements in website traffic, search rankings, and lead
+                generation for our clients across different industries.
               </p>
             </div>
           </div>
@@ -338,11 +331,34 @@ const ContentMarketing = () => {
                 Comprehensive Services
               </h4>
               <p className="contentMarketingService_paraTextStyle">
-                From planning and content creation to distribution and
-                performance analysis, we offer a full-service content marketing
-                solution. With TOJO Global, all aspects of your content
-                marketing efforts are handled efficiently, allowing you to focus
-                on other business priorities.
+                We handle everything from planning, content creation, and
+                distribution to optimization, providing you with a complete
+                content marketing service that drives business growth.
+              </p>
+            </div>
+          </div>
+          {/* 06 */}
+          <div
+            className="contentMarketingService_whyChoose_div"
+            data-aos="fade-down"
+            data-aos-delay={5 * 200}
+          >
+            <img
+              src="/Images/ServicesImage/Marketing/contentMarketingService_whyChooseSvg.svg"
+              alt=""
+              className="img-fluid whyChooseContentMarketingIcon"
+            />
+            <div className="contentMarketingService_whyChoose_center_div">
+              <div className="contentMarketingService_whyChoose_number_div">
+                <h1>06</h1>
+              </div>
+              <h4 className="appDev_industries_services_subHeading">
+                Customizable Strategies
+              </h4>
+              <p className="contentMarketingService_paraTextStyle">
+                We create tailored content marketing strategies that suit your
+                business needs. Our flexible approach ensures your unique goals
+                are met, helping you grow and stand out in your industry.
               </p>
             </div>
           </div>

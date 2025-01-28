@@ -3,6 +3,7 @@ import "../../../Style/ServicesPageStyle/MarketingStyle/SearchEngineMarketing.cs
 import { Link } from "react-router-dom";
 import { AppContext } from "../../../AppContext";
 import SearchEngineMarketingWhoWeHelp from "../ServicesSmallComponent/SearchEngineMarketingWhoWeHelp";
+import SearchEngineMarketingWhoWeHelpDeskTop from "../ServicesSmallComponent/SearchEngineMarketingWhoWeHelpDeskTop";
 const SearchEngineMarketing = () => {
   const { isLargeMobileView } = useContext(AppContext);
 
@@ -268,75 +269,7 @@ const SearchEngineMarketing = () => {
           <SearchEngineMarketingWhoWeHelp />
         ) : (
           <>
-            {" "}
-            <div className="searchEngineMarketing_whoHelp_main_div container">
-              {/* all services items */}
-              <div className="searchEngineMarketing_whoHelp_items_div">
-                <div
-                  className="searchEngineMarketing_whoHelp_item"
-                  data-aos="fade-left"
-                  data-aos-delay={1 * 200}
-                >
-                  <span>E-commerce</span>
-                </div>
-                <div
-                  className="searchEngineMarketing_whoHelp_item"
-                  data-aos="fade-left"
-                  data-aos-delay={2 * 200}
-                >
-                  <span>Small Businesses</span>
-                </div>
-                <div
-                  className="searchEngineMarketing_whoHelp_item"
-                  data-aos="fade-left"
-                  data-aos-delay={3 * 200}
-                >
-                  <span>Startups</span>
-                </div>
-                <div
-                  className="searchEngineMarketing_whoHelp_item"
-                  data-aos="fade-left"
-                  data-aos-delay={4 * 200}
-                >
-                  <span>Local Businesses</span>
-                </div>
-                <div
-                  className="searchEngineMarketing_whoHelp_item"
-                  data-aos="fade-left"
-                  data-aos-delay={5 * 200}
-                >
-                  <span>B2B</span>
-                </div>
-                <div
-                  className="searchEngineMarketing_whoHelp_item"
-                  data-aos="fade-left"
-                  data-aos-delay={6 * 200}
-                >
-                  <span>Retail Chains</span>
-                </div>
-              </div>
-              {/* servise related text  */}
-              <div
-                className="searchEngineMarketing_whoHelp_para_div"
-                data-aos="fade-down"
-              >
-                <p>
-                  More people are shopping online than ever before, making
-                  competition fierce. Our SEM strategies focus on reaching your
-                  target audience with the right message, quality visuals, and
-                  optimized product feeds to drive sales.
-                </p>
-              </div>
-              {/* servise related image  */}
-              <div className="searchEngineMarketing_whoHelp_image_div">
-                <div className="searchEngineMarketing_whoHelp_service_image_gradinet"></div>
-                <img
-                  data-aos="fade-up"
-                  src="/Images/ServicesImage/banner_images/E-commerce 1.png"
-                  alt="/ServicesImage/banner_images/E-commerce 1.png"
-                />
-              </div>
-            </div>
+            <SearchEngineMarketingWhoWeHelpDeskTop />
           </>
         )}
       </section>

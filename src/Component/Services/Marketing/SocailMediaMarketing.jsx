@@ -48,10 +48,10 @@ const SocailMediaMarketing = () => {
       },
       scrollTrigger: {
         trigger: ".socailMediaMarketing_whoWeServe_section",
-        start: "top 80%",
-        end: "bottom 50%",
+        start: "top 20%",
+        end: "bottom 100%",
         scrub: 1,
-        once: false,
+        once: true,
       },
     });
   }, []);
@@ -126,9 +126,8 @@ const SocailMediaMarketing = () => {
                 Corporate Enterprises
               </h4>
               <p className="whoWeServe_para_style">
-                We develop professional strategies that focus on reputation
-                management, customer engagement, and thought leadership,
-                especially on platforms like LinkedIn.
+                We create strategies focused on reputation management, customer
+                engagement, and thought leadership, particularly on LinkedIn.
               </p>
             </div>
           </div>
@@ -153,9 +152,8 @@ const SocailMediaMarketing = () => {
                 Nonprofits & Charities
               </h4>
               <p className="whoWeServe_para_style">
-                We empower mission-driven organizations to share their stories,
-                raise awareness, and engage supporters through effective social
-                media strategies.
+                We help mission-driven organizations tell their stories, raise
+                awareness, and engage supporters through social media.
               </p>
             </div>
           </div>

@@ -197,6 +197,24 @@ const AppDev = () => {
               </p>
             </div>
           </div>
+          {/* 06  Innovative Design Approach*/}
+          <div
+            className="appDevService_whyChoose_div"
+            data-aos="fade-down"
+            data-aos-delay={5 * 200}
+          >
+            <AppDevServiceWhyChooseSvg />
+            <div className="appDevService_whyChoose_text_div">
+              <h2 className="elementHeadingText">
+                 Innovative Design Approach
+              </h2>
+              <p>
+                We create user-friendly and attractive designs that improve
+                usability, ensuring your app delivers a seamless and engaging
+                experience for all users.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       {/* app dev Our Services TOJO Global */}
@@ -597,9 +615,8 @@ const AppDev = () => {
             <div className="appDev_Partnering_services_text_div">
               <h4 className="mb-3">Affordable Solutions</h4>
               <p>
-                We offer high-quality app development services designed to meet
-                your budget, ensuring excellent results without sacrificing
-                standards
+                We provide top-quality app development within your budget,
+                delivering excellent results every time.
               </p>
             </div>
           </div>
@@ -632,9 +649,8 @@ const AppDev = () => {
             <div className="appDev_Partnering_services_text_div">
               <h4 className="mb-3">Continuous Post-Launch Support</h4>
               <p>
-                We offer ongoing assistance after your app goes live, delivering
-                updates, fixing bugs, and adding new features to ensure your app
-                stays relevant and competitive.
+                We offer updates, bug fixes, and new features to keep your app
+                competitive and user friendly.
               </p>
             </div>
           </div>
