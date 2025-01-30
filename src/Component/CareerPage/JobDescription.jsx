@@ -139,7 +139,7 @@ export default function JobDescription() {
           </Link>
         </div>
       </div>
-      <div className="job_details_container">
+      <div className="job_details_container text-white">
         <div className="job-details__content">
           <div className="job-details__content-desc">
             <div
@@ -155,28 +155,30 @@ export default function JobDescription() {
               <div className="basics-benefits-content">
                 <div className="basics-benefits__item">
                   <PiHandshakeThin />
-                  <span>Exceptional work culture and environment</span>
+                  <span className="text-white">
+                    Exceptional work culture and environment
+                  </span>
                 </div>
                 <div className="basics-benefits__item">
                   <PiGift />
-                  <span>Two festival bonuses</span>
+                  <span className="text-white">Two festival bonuses</span>
                 </div>
                 <div className="basics-benefits__item">
                   <PiHandHeart />
-                  <span>Loyalty bonus</span>
+                  <span className="text-white">Loyalty bonus</span>
                 </div>
               </div>
             </div>
             <div className="share-job social-share-buttons">
-              <span>Share</span>
+              <span className="text-white">Share</span>
               <a href="javascript:void(0);" data-type="twitter">
-                <RiTwitterXLine />
+                <RiTwitterXLine className="text-white" />
               </a>
               <a href="javascript:void(0);" data-type="linkedin">
-                <RiLinkedinFill />
+                <RiLinkedinFill className="text-white" />
               </a>
               <a href="javascript:void(0);" data-type="facebook">
-                <RiFacebookFill />
+                <RiFacebookFill className="text-white" />
               </a>
             </div>
           </div>

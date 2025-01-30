@@ -11,7 +11,7 @@ import { useEffect } from "react";
 const ApplyForm = () => {
   const { jobId } = useParams();
   const { apiUrl } = useContext(AppContext);
-  const cities = City.getCitiesOfCountry("BD"); // Use this variable as the list of cities
+  const cities = City.getCitiesOfCountry("BD");
 
   const [errorMessage, setErrorMessage] = useState(null);
   const [submitMessage, setSubmitMessage] = useState("");
@@ -20,8 +20,8 @@ const ApplyForm = () => {
   const [Job, setJob] = useState([]);
   const [jObDesctiption, setJObDesctiption] = useState([]);
 
-  const [filteredCities, setFilteredCities] = useState(cities); // Filtered cities for the search
-  const [isOpen, setIsOpen] = useState(false); // Dropdown state
+  const [filteredCities, setFilteredCities] = useState(cities);
+  const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
 
   // Fetch job data
@@ -104,7 +104,6 @@ const ApplyForm = () => {
         ),
     }),
     onSubmit: async (values, { resetForm }) => {
-
       const formData = new FormData();
       formData.append("fullName", values.fullName);
       formData.append("email", values.email);
@@ -113,7 +112,7 @@ const ApplyForm = () => {
       formData.append("website", values.website);
       formData.append("city", values.city);
       formData.append("phone", values.phone);
-      formData.append("resume", values.resume); // Add the file
+      formData.append("resume", values.resume);
 
       try {
         const response = await axios.post(
@@ -128,7 +127,7 @@ const ApplyForm = () => {
         if (response.data.Status) {
           setErrorMessage(null);
           setSubmitMessage("Application submitted successfully!");
-          setFormVisible(false); // Hide form on success
+          setFormVisible(false);
         }
       } catch (error) {
         setErrorMessage(`${error}`);
@@ -164,13 +163,13 @@ const ApplyForm = () => {
       <div className="job_apply_container">
         <div className="form__container">
           <div className="form__header">
-            <h1>
+            <h1 className="text-white">
               {jObDesctiption[0]?.jobName} <span></span>
             </h1>
-            <div className="apply-form-location">
-              <span>{jObDesctiption[0]?.jobType}</span>
+            <div className="apply-form-location text-white">
+              <span className="text-white">{jObDesctiption[0]?.jobType}</span>
               <span className="circle"></span>
-              <span>Dhaka, Bangladesh</span>
+              <span className="text-white">Dhaka, Bangladesh</span>
             </div>
           </div>
           <div className="card">

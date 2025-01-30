@@ -32,10 +32,11 @@ const SearchEngineMarketing = () => {
                     <span>Lets Make a Call</span>
                   </button>
                 </Link>
-
-                <button className="custombtn hero_btn1 secondBtn">
-                  <span>OUR WORKS</span>
-                </button>
+                <a href="https://www.behance.net/TOJO_Global" target="_blank">
+                  <button className="custombtn hero_btn1 secondBtn">
+                    <span>OUR WORKS</span>
+                  </button>
+                </a>
               </div>
             </div>
             <div

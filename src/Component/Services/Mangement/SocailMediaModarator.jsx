@@ -35,10 +35,11 @@ function SocailMediaModarator() {
                     <span>Lets Make a Call</span>
                   </button>
                 </Link>
-
-                <button className="custombtn hero_btn1 secondBtn">
-                  <span>Check Packages</span>
-                </button>
+                <Link to="/packages">
+                  <button className="custombtn hero_btn1 secondBtn">
+                    <span>Check Packages</span>
+                  </button>
+                </Link>
               </div>
             </div>
             <div

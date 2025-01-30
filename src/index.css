@@ -1644,7 +1644,6 @@ a {
 }
 
 .apply-form-location span:first-child {
-  color: var(--bg-color) !important;
   font-weight: 600 !important;
   position: relative;
   display: inline-block;

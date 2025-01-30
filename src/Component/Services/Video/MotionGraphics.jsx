@@ -51,9 +51,11 @@ export const MotionGraphics = () => {
               effectively.
             </p>
             <div className="hero_btn_style">
-              <button className="custombtn hero_btn1 secondBtn">
-                <span>OUR WORKS</span>
-              </button>
+              <a href="https://www.behance.net/TOJO_Global" target="_blank">
+                <button className="custombtn hero_btn1 secondBtn">
+                  <span>OUR WORKS</span>
+                </button>
+              </a>
               <Link to="/contact">
                 <button className="custombtn hero_btn2 fristBtn">
                   <span>Lets Make a Call</span>
