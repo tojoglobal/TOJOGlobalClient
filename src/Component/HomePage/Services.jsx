@@ -67,26 +67,31 @@ const Services = () => {
                 />
                 {/* Mobile-specific content rendering */}
 
-                {isMobileView &&
-                  openIndex === index &&
-                  (console.log(
-                    `home_servers_weOffer_catagoryItemsMaindiv${openIndex}`
-                  ),
-                  (
-                    <div className="home_servers_weOffer_mobileCategoryData">
-                      <div
-                        className={`home_servers_weOffer_catagoryItemsMaindiv${openIndex}`}
-                      >
-                        {category.items.map((item, idx) => (
-                          <Link to={item.serviceLink} key={idx}>
-                            <div className="home_servers_weOffer_catagoryItemDivbtn">
-                              <span>{item.serviceName}</span>
-                            </div>
-                          </Link>
-                        ))}
-                      </div>
+                {isMobileView && openIndex === index && (
+                  <div className="home_servers_weOffer_mobileCategoryData">
+                    <div
+                      className={`home_servers_weOffer_catagoryItemsMaindiv${openIndex}`}
+                    >
+                      {category.items.map(
+                        (item, idx) => (
+                          console.log(item),
+                          (
+                            <Link to={item.serviceLink} key={idx}>
+                              <div
+                                className={`home_servers_weOffer_catagoryItemDivbtn mobile_responsive_${item.serviceName.replace(
+                                  /\s+/g,
+                                  "_"
+                                )}`}
+                              >
+                                <span>{item.serviceName}</span>
+                              </div>
+                            </Link>
+                          )
+                        )
+                      )}
                     </div>
-                  ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>

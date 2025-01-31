@@ -71,7 +71,7 @@ const SearchEngineMarketing = () => {
             data-aos-delay={2 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/PPC Management 1.svg"
+              src="/Images/ServicesImage/Marketing/searchEngineMarketingServicesInclude01.png"
               alt="icons/PPC Management 1.svg"
             />
             <h4>PPC Management</h4>
@@ -89,7 +89,7 @@ const SearchEngineMarketing = () => {
             data-aos-delay={3 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/PPC Management 1.svg"
+              src="/Images/ServicesImage/Marketing/searchEngineMarketingServicesInclude02.png"
               alt="icons/Search Engine Optimization (SEO) 1.svg"
             />
             <h4>Search Engine Optimization (SEO)</h4>
@@ -107,7 +107,7 @@ const SearchEngineMarketing = () => {
             data-aos-delay={4 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/PPC Management 1.svg"
+              src="/Images/ServicesImage/Marketing/searchEngineMarketingServicesInclude03.png"
               alt="icons/Content Marketing 1.svg"
             />
             <h4>Content Marketing</h4>
@@ -124,7 +124,7 @@ const SearchEngineMarketing = () => {
             data-aos-delay={5 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Conversion Rate Optimization 1 (1).svg"
+              src="/Images/ServicesImage/Marketing/searchEngineMarketingServicesInclude04.png"
               alt="icons/Conversion Rate Optimization 1 (1).svg"
             />
             <h4>Conversion Rate Optimization</h4>
@@ -142,7 +142,7 @@ const SearchEngineMarketing = () => {
             data-aos-delay={6 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Paid Social Media Marketing 1.svg"
+              src="/Images/ServicesImage/Marketing/searchEngineMarketingServicesInclude05.png"
               alt="icons/Paid Social Media Marketing 1.svg"
             />
             <h4>Paid Social Media Marketing</h4>
@@ -159,7 +159,7 @@ const SearchEngineMarketing = () => {
             data-aos-delay={7 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Performance Display Advertisingtent 1.svg"
+              src="/Images/ServicesImage/Marketing/searchEngineMarketingServicesInclude06.png"
               alt="icons/Performance Display Advertisingtent 1.svg"
             />
             <h4>Performance Display Advertisingtent</h4>
@@ -169,14 +169,14 @@ const SearchEngineMarketing = () => {
               to drive immediate responses.
             </p>
           </div>
-          {/* Remarketing*/}
+          {/*08 Remarketing*/}
           <div
             className="searchEngineMarketing_second_part_card"
             data-aos="fade-down"
             data-aos-delay={8 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Remarketing 1.svg"
+              src="/Images/ServicesImage/Marketing/searchEngineMarketingServicesInclude07.png"
               alt="icons/Remarketing 1.svg"
             />
             <h4>Remarketing</h4>
@@ -193,7 +193,7 @@ const SearchEngineMarketing = () => {
             data-aos-delay={9 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Shopping & Feed Management 1.svg"
+              src="/Images/ServicesImage/Marketing/searchEngineMarketingServicesInclude08.png"
               alt="icons/Shopping & Feed Management 1.svg"
             />
             <h4>Shopping & Feed Management</h4>

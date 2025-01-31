@@ -326,6 +326,9 @@
     text-align: center;
   }
 
+  .socailMediaMarketing_OurServices_topText_div {
+    padding-top: 2.5rem !important;
+  }
 
   /* socailMediaMarketing_KeyForBusinessGrowth_main_div */
   .socailMediaMarketing_KeyForBusinessGrowth_main_div {
@@ -343,7 +346,8 @@
 
   /* socailMediaMarketing_specialize_card */
   .socailMediaMarketing_specialize_card {
-    padding: 2.3rem 0.5rem 0.8rem 0.5rem;
+    padding: 1.3rem 0.5rem 1.3rem 0.5rem;
+    border-radius: 0.9rem;
     position: relative;
   }
 

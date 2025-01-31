@@ -19,19 +19,19 @@ const SocailMediaMarketing = () => {
       .from(".webContentWriting_hero_text_part h1", {
         x: -560,
         opacity: 0,
-        duration: 1,
+        duration: 0.5,
         delay: 0.2,
       })
       .from(".webContentWriting_hero_text_part p", {
         x: 560,
         opacity: 0,
-        duration: 1,
+        duration: 0.5,
         delay: 0.2,
       })
       .from(".hero_btn_style", {
         y: 560,
         opacity: 0,
-        duration: 1,
+        duration: 0.5,
         delay: 0.2,
       });
     // Animation for "Who We Serve" Section with ScrollTrigger
@@ -165,7 +165,7 @@ const SocailMediaMarketing = () => {
       <section className="socailMediaMarketing_OurServices_section">
         {/* text */}
         <div className="sectionTopTextstyle container" data-aos="fade-up">
-          <h1 className="topHeadingStyle">
+          <h1 className="topHeadingStyle socailMediaMarketing_OurServices_topText_div">
             Our Social Media Marketing Services
           </h1>
           <p className="socailMediaMarketing_elementParaText">

@@ -298,7 +298,6 @@
     justify-content: center;
     align-items: center;
     border-radius: 0.625rem;
-    /* border: 1px solid var(--strke-knr, #FFF); */
     background: var(--BG-15, rgba(24, 200, 255, 0.15));
 }
 
@@ -1742,6 +1741,14 @@
     .home_servers_weOffer_catagoryItemDivbtn {
         padding: 0.5rem 0.3rem;
         width: 100%;
+        white-space: wrap;
+    }
+
+    .mobile_responsive_Community_Management,
+    .mobile_responsive_Social_Media_Management,
+    .mobile_responsive_Social_Media_Moderation {
+        padding: 0.5rem 0.3rem;
+        width: 91%;
         white-space: wrap;
     }
 
