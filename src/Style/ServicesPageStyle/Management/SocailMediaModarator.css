@@ -456,8 +456,8 @@
         ... */
   /* smModaration_services_text_div*/
   .smModaration_service_offers_heading {
-    font-size: 1.7rem;
-    line-height: 1.8rem;
+    font-size: 1.5rem;
+    line-height: 125%;
     width: 100%;
     margin: 0 auto;
   }

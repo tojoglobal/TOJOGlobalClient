@@ -555,10 +555,27 @@
 
 /* vary small device  */
 @media (max-width: 500px) {
+
   /* ...
          rules here apply to devices from 0px to 460px (inclusive)
         ... */
+  /* leadGenaration_service_hero_text_div */
+  .leadGenaration_service_hero_text_div {
+    order: 2;
+  }
 
+  .leadGenaration_service_hero_text_div h1 {
+    font-size: 1.5rem;
+    line-height: 120%;
+  }
+
+  .leadGenaration_service_hero_text_div p {
+    font-size: 0.8rem;
+    line-height: 125%;
+    margin-right: 0rem;
+  }
+
+  /* searchEngineMarketing_leadGenaration_main_div */
   .searchEngineMarketing_leadGenaration_main_div {
     display: grid;
     grid-template-columns: auto !important;
@@ -574,6 +591,7 @@
   }
 
   /* leadGenaration_service_card_div */
+
   .leadGenaration_service_card_div {
     grid-template-columns: 1fr;
     gap: 3.88rem;
@@ -583,6 +601,12 @@
     grid-column: auto;
     justify-self: center;
     align-self: center;
+  }
+
+  /* leadGenaration_service_section */
+  .leadGenaration_service_section {
+    margin-top: 0rem;
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
   }
 
   /* brand_leadGenaration_service_div */

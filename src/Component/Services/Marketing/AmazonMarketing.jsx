@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import "../../../Style/ServicesPageStyle/MarketingStyle/AmazonMarketing.Style.css";
@@ -34,6 +34,20 @@ const AmazonMarketing = () => {
       });
   }, []);
 
+  const pathName = location.pathname;
+
+  useEffect(() => {
+    const professionalModeration = document.querySelector(
+      ".amazonMarketing_professionalModeration_section"
+    );
+    if (
+      pathName === "/services/marketing/amazon-marketing" &&
+      professionalModeration
+    ) {
+      professionalModeration.style.paddingTop = "5rem";
+    }
+  }, [pathName]);
+
   return (
     <main className="maindiv">
       <Helmet>
@@ -67,7 +81,7 @@ const AmazonMarketing = () => {
       </section>
 
       {/* What is Amazon Marketing? */}
-      <section className="container whatIs_amazon_marketing_section ">
+      <section className="container whatIs_amazon_marketing_section">
         <div
           className="wordpressDevelopment_whyChoose_main_div whatIs_amazon_marketing_main_div"
           data-aos="fade-up"
@@ -411,7 +425,7 @@ const AmazonMarketing = () => {
       </section>
 
       {/*Ready to Elevate Your White Papers?*/}
-      <section className="container">
+      <section className="container amazonMarketing_professionalModeration_section">
         <div
           className="professionalModeration_div blockChainSolution_specialize_card  mt-1 mt-md-5"
           data-aos="fade-down"

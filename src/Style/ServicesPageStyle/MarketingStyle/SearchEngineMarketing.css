@@ -33,7 +33,6 @@
 .searchEngineMarketing_hero_text_div p {
   color: #fff;
   text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
-
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
@@ -520,6 +519,7 @@
 
   .searchEngineMarketing_hero_text_div p {
     font-size: 0.8rem;
+    line-height: 125%;
     margin-right: 0rem;
   }
 
@@ -598,6 +598,12 @@
     line-height: 1.8rem;
     font-style: normal;
     font-weight: 700;
+  }
+
+  /* searchEngineMarketing_IncreaseRevenue_headingtext */
+  .searchEngineMarketing_IncreaseRevenue_headingtext {
+    font-size: 1.5rem;
+    line-height: 125%;
   }
 
   /* searchEngineMarketing_WhoHelp_top_text_div */

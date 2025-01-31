@@ -226,21 +226,26 @@
   }
 
   .contentMarketing_topHeadingStyle {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 34px;
+    line-height: 125%;
   }
-
 
   .what_is_contentMarketing_div {
     position: static;
     gap: 0rem;
     transform: translate(0%, 0%);
     width: 100%;
-    height: 38.119rem;
+    height: 44rem;
     grid-template-columns: 1fr;
     text-align: left;
     padding: 0.8rem 0.7rem;
   }
+
+  .contentMarketing_para_text {
+    font-size: 15px;
+  }
+
+
 
   /* our_contentMarketing_services_main_div */
   .our_contentMarketing_services_main_div {
@@ -248,32 +253,35 @@
     width: 100%;
     margin: 0 auto;
     gap: 2rem;
+    padding-top: 1.5rem;
   }
 
   /* contentMarketingService_whyChoose_main_div */
-
   .contentMarketingService_whyChoose_main_div {
     grid-template-columns: 1fr;
     width: 100%;
     margin: 0 auto;
     row-gap: 4rem;
+    padding-top: 1.5rem;
   }
 
   .contentMarketingService_whyChoose_center_div {
     position: absolute;
-    top: 37%;
+    top: 49%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 84%;
     text-align: center;
   }
 
+  /* contentMarketing_services_main_div */
   .contentMarketing_services_main_div {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
     margin: 0 auto;
     gap: 1.5rem;
+    padding-top: 1.5rem;
   }
 
   .contentMarketing_services_textNumber_div h1 {

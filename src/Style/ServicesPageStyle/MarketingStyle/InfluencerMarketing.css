@@ -592,9 +592,16 @@
   }
 
   .InfluencerMarketing_OurExpertise_card_icon {
-    left: 147px;
+    left: 50%;
     top: -3%;
     transform: translate(-50%, -50%);
+  }
+
+  .influencerMarketing_talented_second_text_card_div {
+    font-size: 16px;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    line-height: 120%;
   }
 
   .InfluencerMarketing_OurExpertise_section {
@@ -679,6 +686,11 @@
 
   .InfluencerMarketing_weOffer_section_div {
     padding: 3rem 0.5rem 2.62rem 0.5rem;
+  }
+
+  .InfluencerMarketing_weOffer_section_left_text_div {
+    padding: 0px;
+    margin-bottom: 1.5rem;
   }
 
   .InfluencerMarketing_weOffer_section_left_text_div p {
