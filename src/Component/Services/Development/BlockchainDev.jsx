@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../../../src/Style/ServicesPageStyle/Development/BlockchainDev.Style.css";
 import BlockchainDevelopmentServiceSvg from "./SVGDev/BlockchainDevelopmentServiceSvg";
@@ -37,6 +37,20 @@ const BlockchainDev = () => {
         delay: 0.2,
       });
   }, []);
+
+  const pathName = location.pathname;
+  // useEffect(() => {
+  //   const aboutDiv = document.querySelector(
+  //     ".blockchain_conclusionnft_platfrom_topTextstyle"
+  //   );
+  //   if (
+  //     pathName === "/services/development/blockchain-development" &&
+  //     aboutDiv
+  //   ) {
+  //     aboutDiv.style.paddingBottom = "1.5rem";
+  //   }
+  // }, [pathName]);
+
   return (
     <main className="maindiv">
       {/*Shape The Future With TOJO Global’s Blockchain Innovation */}

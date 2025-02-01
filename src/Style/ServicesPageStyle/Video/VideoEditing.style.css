@@ -1383,8 +1383,8 @@
 
   .youtube_video_editing_services_text_div {
     position: absolute;
-    top: 67px;
-    left: 129px;
+    top: 87px;
+    left: 138px;
     width: 53%;
   }
 
@@ -1500,6 +1500,7 @@
     grid-template-columns: 1fr;
     row-gap: 2.5rem;
     justify-items: center;
+    padding-top: 4rem;
   }
 
   .explainer_video_editing_process_Text_div p {

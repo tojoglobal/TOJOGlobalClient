@@ -1862,6 +1862,10 @@
     align-items: center;
   }
 
+  .iconTwoDiv {
+    width: 5.2rem !important;
+  }
+
   .webContentWriting_caseStudies_card_div {
     width: 100%;
     padding: 0.9rem 0.5rem;

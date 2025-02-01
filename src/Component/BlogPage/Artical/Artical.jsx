@@ -126,7 +126,7 @@ const Artical = () => {
                                 {author}
                               </div>
                             </div>
-                            <div className="ps-5">
+                            <div className="ps-1 ps-md-4 articalSmallDeviceBlogTime">
                               <span className="blog_time">
                                 <SetTime time={publishedAt} />
                               </span>
@@ -180,7 +180,7 @@ const Artical = () => {
                                 type="submit"
                                 className="artical_submit_btn"
                               >
-                                <span className="mt-2">Submit</span>
+                                <span>Submit</span>
                               </button>
                             </form>
                           )}

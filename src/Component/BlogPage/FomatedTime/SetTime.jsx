@@ -1,36 +1,38 @@
 import PropTypes from "prop-types";
+
 const SetTime = ({ time }) => {
   // Function to format the time based on how long ago it was
   const formatTime = (timestamp) => {
     const now = new Date();
+
+    // Convert input time to BD time (UTC+6)
     const date = new Date(timestamp);
-    const secondsAgo = Math.floor((now - date) / 1000);
+    const bdOffset = 6 * 60 * 60 * 1000; // UTC+6 in milliseconds
+    const bdTime = new Date(date.getTime() + bdOffset);
 
+    const secondsAgo = Math.floor((now.getTime() - bdTime.getTime()) / 1000);
+
+    if (secondsAgo < 60) return `${secondsAgo} seconds ago`;
     const minutesAgo = Math.floor(secondsAgo / 60);
+    if (minutesAgo < 60) return `${minutesAgo} minutes ago`;
     const hoursAgo = Math.floor(minutesAgo / 60);
+    if (hoursAgo < 24) return `${hoursAgo} hours ago`;
     const daysAgo = Math.floor(hoursAgo / 24);
-    const monthsAgo = Math.floor(daysAgo / 30); // Approximation
+    if (daysAgo < 7) return `${daysAgo} days ago`;
+    if (daysAgo < 30) return `${Math.floor(daysAgo / 7)} weeks ago`;
 
-    if (monthsAgo < 1) {
-      // If less than a month, show "time ago" format
-      if (secondsAgo < 60) return `${secondsAgo} seconds ago`;
-      if (minutesAgo < 60) return `${minutesAgo} minutes ago`;
-      if (hoursAgo < 24) return `${hoursAgo} hours ago`;
-      if (daysAgo < 7) return `${daysAgo} days ago`;
-      if (daysAgo < 30) return `${Math.floor(daysAgo / 7)} weeks ago`;
-    }
+    // Format BD time
+    const options = {
+      timeZone: "Asia/Dhaka",
+      month: "short",
+      day: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    };
 
-    // Otherwise, show full date and time
-    const options = { month: "long", day: "2-digit", year: "numeric" };
-    const formattedDate = date
-      .toLocaleDateString("en-US", options)
-      .toUpperCase();
-    const hours = date.getHours();
-    const minutes = date.getMinutes().toString().padStart(2, "0");
-    const ampm = hours >= 12 ? "PM" : "AM";
-    const formattedTime = `${hours % 12 || 12}:${minutes} ${ampm}`;
-
-    return `${formattedDate} ${formattedTime}`;
+    return bdTime.toLocaleDateString("en-US", options);
   };
 
   return <>{formatTime(time)}</>;

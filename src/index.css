@@ -2536,6 +2536,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1.2rem;
 }
 
 .blog_ownwer {
@@ -2548,7 +2549,7 @@ textarea {
 }
 
 .blog_time {
-
+  margin-bottom: 0rem;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -2765,7 +2766,7 @@ textarea {
 
 .articalCardOwndeDiv {
   border-top: none;
-  padding: 0rem 1.4rem 0.5rem 1.4rem;
+  padding: 0rem 1.4rem 1.5rem 1.4rem;
 }
 
 .blog_div_text_style p {
@@ -4089,7 +4090,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
-
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
@@ -5012,8 +5012,15 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     padding: 1rem 1.5rem;
   }
 
-  .frist_blog_owner_text_style {
+  /* .frist_blog_owner_text_style {
     padding-top: 1rem;
+  } */
+  .frist_blog_owner_text_style {
+    flex-direction: row;
+    align-items: normal;
+    justify-content: space-around;
+    padding-top: 1rem;
+    row-gap: 1.2rem;
   }
 
   .frist_blog_div_text_style h3 {
@@ -5645,11 +5652,22 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   /* blog part image  */
   .artical_part_content_info {
     gap: 0px;
+    flex-direction: row;
     padding-top: 0rem;
+  }
+
+  .articalSmallDeviceBlogTime {
+    margin-top: 6px !important;
+    margin-left: 2px;
   }
 
   .artical_heading_part {
     padding: 24px 15px 5px 10px;
+  }
+
+  .articalCardOwndeDiv {
+    border-top: none;
+    padding: 0.5rem 0.5rem 1.2rem 0.5rem;
   }
 
   .artical_heading_part h1 {
@@ -5669,11 +5687,21 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     font-weight: 400;
   }
 
+  .artical_rounde {
+    width: 38px;
+    height: 33px;
+  }
+
+  .blog_col_image_style img {
+    height: 11rem;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+  }
+
   .blog_time {
-    font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    color: #818cb6;
+    margin-top: 4px;
   }
 
   .blog_ownwer {
@@ -5685,7 +5713,28 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   .fist_blog_card {
-    height: 482px;
+    height: 470px;
+  }
+
+  .frist_part_blog_col_div_style img {
+    height: 14.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 33px;
+    object-fit: fill;
+    transition: none;
+  }
+
+  .recommended_basics_content_item {
+    gap: 15px;
+  }
+
+  .recommended_content_image img {
+    width: 100%;
+    height: 11rem;
+  }
+
+  .blog_recommended_card {
+    height: 47rem;
   }
 
   /* hero_btn_style */
@@ -5712,6 +5761,10 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     padding-top: 0rem;
   }
 
+  .listing_proposal {
+    padding-top: 3rem;
+  }
+
   /* contact us section  */
   .contactus_text_heading {
     font-size: 1.5rem;
@@ -5731,6 +5784,13 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     font-size: 0.8rem;
     line-height: 1.2rem;
 
+  }
+
+  /* responsive menu  */
+  .menu_name {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 125%;
   }
 
 }

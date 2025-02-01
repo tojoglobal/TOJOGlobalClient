@@ -1172,7 +1172,8 @@
   }
 
   .blockchain_dev_OurServicesInclude {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
+    margin-top: 0rem;
   }
 
   .blockChain_cryptoToken_development_top_part_image_div::before {
@@ -1251,7 +1252,7 @@
 
   /* blockchain_conclusionnft_platfrom_topTextstyle */
   .blockchain_conclusionnft_platfrom_topTextstyle {
-    padding-bottom: 0rem;
+    padding-bottom: 1.5rem;
     padding-top: 0rem;
     width: 100%;
   }
@@ -1272,13 +1273,14 @@
   }
 
   .BlockChaniNftPlatfromDevWhyChoose_text_icon_div {
-    width: 76%;
-    top: 7%;
-    left: 10%;
+    width: 87%;
+    top: 14%;
+    left: 5%;
   }
 
   #BlockChainNFTPlatformDevelopmentWhyChooseSvg {
     width: 100%;
+    height: 362px;
   }
 
   .BlockChaniNftPlatfromDevWhyChoose_icon_div {

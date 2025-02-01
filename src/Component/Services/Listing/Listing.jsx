@@ -21,7 +21,7 @@ const Listing = () => {
               <button className="custombtn hero_btn2">GET A PROPOSAL</button>
             </Link>
           </div>
-          <div className="client_image_div">
+          <div className="client_image_div listing_proposal">
             <div className="row d-flex justify-content-center align-items-center">
               {TrustedClientList.length > 0 ? (
                 TrustedClientList.map((d, i) => (
