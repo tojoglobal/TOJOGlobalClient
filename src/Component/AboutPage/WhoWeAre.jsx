@@ -32,7 +32,7 @@ const WhoWeAre = () => {
                 Innovative Solutions for Business Growth
               </h2>
 
-              <p>
+              <p className="about_second_para">
                 Tojo Global is a successful company that specialises in custom
                 services and is exceptionally skilled at marketing, management,
                 design, and development. We help businesses grow by coming up

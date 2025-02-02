@@ -603,6 +603,13 @@
     align-self: center;
   }
 
+  /* searchEngineMarketing_leadGenaration_card_div */
+  .searchEngineMarketing_leadGenaration_card_div {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1.14rem 0.5rem 0.81rem 0.94rem;
+  }
+
   /* leadGenaration_service_section */
   .leadGenaration_service_section {
     margin-top: 0rem;

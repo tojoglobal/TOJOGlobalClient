@@ -349,6 +349,7 @@
 /* ====================== */
 /* media query  */
 /* ================================== */
+
 .ourValue_text_div span {
     text-transform: uppercase;
     text-align: justify;
@@ -1829,6 +1830,10 @@
     }
 
     /* home page our value */
+    .ourValue_text_div {
+        margin-top: 1.55rem;
+    }
+
     .ourValue_text_div span {
         font-size: 27px;
         font-weight: 700;

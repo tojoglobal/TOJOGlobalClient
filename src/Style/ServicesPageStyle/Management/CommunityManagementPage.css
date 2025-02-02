@@ -134,7 +134,6 @@
 
 .communityManagement_second_text_div p {
   color: #fff;
-
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -1132,12 +1131,17 @@
   .communityManagement_second_text_div {
     padding: 0rem 1rem;
     transform: translateX(0%);
-    height: 34.125rem;
+    height: 25.5rem;
     justify-content: start;
   }
 
   .communityManagement_second_part_div {
     padding-left: 0rem;
+  }
+
+  .communityManagement_second_text_div p {
+    font-size: 14px;
+    line-height: 125%;
   }
 
   /* talegram and discord  */
@@ -1151,6 +1155,7 @@
     grid-template-columns: auto;
     margin-bottom: 7.5rem;
   }
+
 
   /* management help  */
   .managementHelp_text_div {
@@ -1184,7 +1189,12 @@
     right: -0.69rem;
   }
 
-  /* key fetcher */
+  /* community_management_key_fetcher */
+  .community_management_key_fetcher {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
   .communityManagemtn_keyfetcher_main_div {
     display: grid;
     grid-template-columns: 1fr;
@@ -1198,6 +1208,12 @@
     line-height: 1.8rem;
     font-style: normal;
     font-weight: 700;
+  }
+
+  .communityManagement_Crypto_project_Card div p {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 125%;
   }
 
 
