@@ -44,7 +44,7 @@ const ServiceContactUs = () => {
     <>
       {/* contact us featcher  */}
       <section className="container">
-        <div className="univarsal_service_padding_second_div mb-5">
+        <div className="univarsal_service_padding_second_div mb-1 mb-md-5">
           {/* other text contactus*/}
           <div className="contactus_text_section">
             <div className="row">

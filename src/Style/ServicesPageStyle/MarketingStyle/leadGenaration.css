@@ -379,6 +379,11 @@
   height: 19.25rem;
 }
 
+/* SocailMediaMarketing_OurExpertise_section */
+.SocailMediaMarketing_OurExpertise_section {
+  margin-bottom: 5rem;
+}
+
 /* ================================== */
 /* ====================== */
 /* lead generation service Items   */
@@ -565,7 +570,7 @@
   }
 
   .leadGenaration_service_hero_text_div h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 120%;
   }
 
@@ -649,7 +654,15 @@
     bottom: 25px;
   }
 
+  /* tailoredInfluencer_OurExpertise_Text_card_div */
+  .tailoredInfluencer_OurExpertise_Text_card_div h4 {
+    font-size: 1.4rem;
+    line-height: 120%
+  }
 
-
+  /* SocailMediaMarketing_OurExpertise_section */
+  .SocailMediaMarketing_OurExpertise_section {
+    margin-bottom: 3.5rem;
+  }
 
 }

@@ -1436,13 +1436,14 @@
   }
 
   .webContentWriting_hero_text_part h1 {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 1.4rem;
+    line-height: 120%;
   }
 
   .webContentWriting_hero_text_part p {
     font-size: 0.8rem;
     padding: 0rem 0.5rem;
+    line-height: 120%;
   }
 
   .webContentWriting_product_heading_text {

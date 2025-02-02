@@ -108,7 +108,7 @@ const AppDev = () => {
       </section>
       {/* app dev Why Choose TOJO Global */}
       <section className="container">
-        <div className="sectionTopTextstyle" data-aos="fade-up">
+        <div className="sectionTopTextstyle mb-4 mb-md-0" data-aos="fade-up">
           <h1 className="topHeadingStyle"> Why Choose TOJO Global?</h1>
         </div>
         <div className="appDevService_whyChoose_main_div">

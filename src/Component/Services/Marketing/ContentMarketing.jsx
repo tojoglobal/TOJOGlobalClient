@@ -76,13 +76,10 @@ const ContentMarketing = () => {
           {/* 01 */}
           <div className="what_is_contentMarketing_div">
             <div className="what_is_contentMarketing_image_div">
-              <img
-                src="/Images/ServicesImage/Marketing/create-an-image--content-marketing.svg"
-                alt=""
-              />
+              <img src="/Images/ServicesImage/Marketing/create-an-image--content-marketing.svg" />
             </div>
-            <div className="align-self-center">
-              <h1 className="contentMarketing_topHeadingStyle text-start md:text-end">
+            <div className="align-self-md-center">
+              <h1 className="contentMarketing_topHeadingStyle text-md-start">
                 What is Content Marketing?
               </h1>
               <p className="contentMarketing_para_text">

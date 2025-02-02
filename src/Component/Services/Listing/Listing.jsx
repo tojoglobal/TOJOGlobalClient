@@ -7,20 +7,74 @@ const Listing = () => {
     <>
       <div className="univarsal_div">
         <div className="container">
-          <HeroText
-            heroText={{
-              text1: "Services",
-              text2: "Listing",
-              description:
-                "Your One-Stop Digital Shop.  We offer a complete suite of services including Management, Marketing, Development, Design, Listing, and customizable Packages to  empower your business for success in the digital age.",
-            }}
-          />
+          <div className="univarsal_text_div" data-aos="fade-down">
+            <h1 className="text-center">
+              {" "}
+              <span className="headdingGradientText me-3">Services</span>
+              Listing
+            </h1>
+            {/* <p className="topPeraDesText">
+              At Tojo Global, we have a dedicated team that specializes in
+              listing services. We know that getting a project listed on big
+              kexchanges can be hard and take a lot of time. We know how to deal
+              with these problems and get your project listed quickly and easily
+              because our team has done it before. We keep in close touch with
+              exchange providers and follow their rules and requirements. We
+              also help and guide you through the whole selling process, from
+              getting the paperwork ready to handling the listing fee. Our help
+              will help your project meet more people and get more trades, which
+              can eventually lead to more adoption and success
+            </p> */}
+            {/* blog text &#39; */}
+            <div className="listing_services_text_div">
+              <p className="listing_services_PeraDesText">
+                At Tojo Global, we have a dedicated team that specializes in
+                listing services. We know that getting a project listed on big
+                kexchanges can be hard and take a lot of time. We know how to
+                deal with these problems and get your project listed quickly and
+                easily because our team has done it before. We keep in close
+                touch with exchange providers and follow their rules and
+                requirements. We also help and guide you through the whole
+                selling process, from getting the paperwork ready to handling
+                the listing fee. Our help will help your project meet more
+                people and get more trades, which can eventually lead to more
+                adoption and success.
+              </p>
 
-          <div className="hero_btn_style d-flex justify-content-center">
-            <Link to="/contact">
-              <button className="custombtn hero_btn2">GET A PROPOSAL</button>
-            </Link>
+              {/* Package services dynamically listed */}
+              <div className="about-basics-benefits-content about_col_list_items">
+                <div
+                  className="about_basics_benefits_item"
+                  data-aos="fade-up"
+                  data-aos-delay={1 * 200}
+                >
+                  <span>Cheapest prices for single or package listings.</span>
+                </div>
+                <div
+                  className="about_basics_benefits_item"
+                  data-aos="fade-up"
+                  data-aos-delay={2 * 200}
+                >
+                  <span>Minimize Delays, Maximize Speed!</span>
+                </div>
+                <div
+                  className="about_basics_benefits_item"
+                  data-aos="fade-up"
+                  data-aos-delay={3 * 200}
+                >
+                  <span>Positioning in queue ahead of others.</span>
+                </div>
+                <div
+                  className="about_basics_benefits_item"
+                  data-aos="fade-up"
+                  data-aos-delay={4 * 200}
+                >
+                  <span>No extra charges for promotion and marketing.</span>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div className="client_image_div listing_proposal">
             <div className="row d-flex justify-content-center align-items-center">
               {TrustedClientList.length > 0 ? (
@@ -56,50 +110,11 @@ const Listing = () => {
               </div>
             </div>
           </div>
-          {/* Effortless listing domination */}
-          <div className="text-center univarsal_text_div mt-1 mt-md-5">
-            <h1 className="listing_heading section_price2">
-              Effortless listing domination
-            </h1>
-            <p className="topPeraDesText">
-              With TOJO Global&#39;s advanced listing of cryptocurrency
-              approach, you can dominate the market and maximize sales by
-              optimizing your online presence.
-            </p>
-            <div className="listing_section_border"></div>
-          </div>
 
-          {/* blog text &#39; */}
-          <div className="services_text">
-            <p className="topPeraDesText">
-              At Tojo Global, we have a dedicated team that specializes in
-              listing services. We know that getting a project listed on big
-              kexchanges can be hard and take a lot of time. We know how to deal
-              with these problems and get your project listed quickly and easily
-              because our team has done it before. We keep in close touch with
-              exchange providers and follow their rules and requirements. We
-              also help and guide you through the whole selling process, from
-              getting the paperwork ready to handling the listing fee. Our help
-              will help your project meet more people and get more trades, which
-              can eventually lead to more adoption and success.
-            </p>
-            <p className="topPeraDesText">
-              Our mission is to give value to our clients by providing
-              top-quality services. Advantages we offer:
-            </p>
-            <ul>
-              <li>Cheapest prices for single or package listings.</li>
-              <li>
-                Fast service. Avoid the chance of delays and speed up the
-                clearance process.
-              </li>
-              <li>Positioning in queue ahead of others.</li>
-              <li>No extra charges for promotion and marketing.</li>
-            </ul>
-            <p className="topPeraDesText">
-              Choose TOJO Global for a seamless path to market dominance, where
-              your listings become the cornerstone of your success.
-            </p>
+          <div className="hero_btn_style d-flex justify-content-center">
+            <Link to="/contact">
+              <button className="custombtn hero_btn2">GET A PROPOSAL</button>
+            </Link>
           </div>
         </div>
       </div>

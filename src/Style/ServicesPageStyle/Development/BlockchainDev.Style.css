@@ -1150,6 +1150,14 @@
     width: 100%;
   }
 
+  .blockchain_services_text_div {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 99%;
+  }
+
   /* appDev_industries_services_div */
   .appDev_industries_services_div {
     grid-template-columns: 1fr !important;
@@ -1204,6 +1212,8 @@
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 2.5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 0rem;
   }
 
   .blockchain_dev_OurServicesInclude_headding::before {
@@ -1228,6 +1238,7 @@
     margin: 0 auto;
     row-gap: 2rem;
     position: relative;
+    padding-top: 2rem;
   }
 
   .whyChoose_blockChain_development_div {
@@ -1307,6 +1318,7 @@
   .blockChain_nftPlatfromkeyFeatures_services_left_text {
     margin-right: 0rem;
     row-gap: 3.5rem;
+    padding-top: 1.5rem;
   }
 
   .blockChain_nftPlatfromkeyFeatures_services_right_text {
@@ -1321,6 +1333,7 @@
   /* BlockChaniNftPlatfromDevWhyChoose_main_div */
   .BlockChaniNftPlatfromDevWhyChoose_main_div {
     grid-template-columns: 1fr;
+    padding-top: 2.5rem;
   }
 
   .blockChaninPlayToEarnGameDevelopmentWhyChoose_keyPoint {
@@ -1340,6 +1353,7 @@
   .BlockChaniNftPlatfromDevHelp_main_div {
     grid-template-columns: 1fr;
     width: 100%;
+    padding-top: 1.8rem;
   }
 
   .blockChain_PlayToEarnGameDevelopment_main_div {
@@ -1367,6 +1381,7 @@
   .blockChain_dev_PlayToEarn_Benefit_main_div {
     grid-template-columns: 1fr;
     width: 100%;
+    padding-top: 2.4rem;
   }
 
   /* blockChain_dev_PlayToEarn_expertise_main_div */
@@ -1374,6 +1389,8 @@
     width: 100%;
     border-radius: 21px;
     padding: 2rem 0.7rem;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
   }
 
   .blockChain_dev_PlayToEarn_expertise_text_div {
@@ -1403,7 +1420,8 @@
     gap: 5rem;
     width: 100%;
     margin: 0 auto;
-    padding-top: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
   }
 
   .blockChain_dev_PlayToEarn_whyChoose_div {
@@ -1424,6 +1442,8 @@
   .blockChain_dev_PlayToEarn_benefits_main_div {
     grid-template-columns: 1fr;
     width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
   }
 
   .blockChainDev_PlayToEarn_benefits_icon_div {
@@ -1437,6 +1457,7 @@
   .blockChainDev_PlayToEarn_benefits_textHeading {
     font-size: 1.4rem;
     line-height: 1.8rem;
+    margin-bottom: 0rem;
   }
 
   .blockChainDev_PlayToEarn_benefits_textSubHeading {
@@ -1447,12 +1468,12 @@
   .blockChainDev_PlayToEarn_benefits_icon_text_div {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 0.5rem;
+    row-gap: 0rem;
     width: 100%;
     margin: 0 auto;
     position: absolute;
-    top: 27%;
-    left: 3%;
+    top: 23%;
+    left: 4%;
   }
 
   #blockChainDevPlayToEarnBenefitsSvg {

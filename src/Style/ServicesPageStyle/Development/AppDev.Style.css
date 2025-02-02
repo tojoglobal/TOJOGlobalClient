@@ -457,7 +457,8 @@
     width: 99%;
     height: 100%;
     margin: 0 auto !important;
-    padding: 3rem 0rem;
+    padding-top: 1.3rem;
+    padding-bottom: 3rem;
   }
 
   .appDevService_ourServices_card {

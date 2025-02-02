@@ -44,7 +44,7 @@ const AmazonMarketing = () => {
       pathName === "/services/marketing/amazon-marketing" &&
       professionalModeration
     ) {
-      professionalModeration.style.paddingTop = "5rem";
+      professionalModeration.style.paddingTop = "1.5rem";
     }
   }, [pathName]);
 

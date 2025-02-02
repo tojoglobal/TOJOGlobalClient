@@ -38,16 +38,17 @@ const BlockchainDev = () => {
       });
   }, []);
 
-  const pathName = location.pathname;
+  // const pathName = location.pathname;
   // useEffect(() => {
   //   const aboutDiv = document.querySelector(
   //     ".blockchain_conclusionnft_platfrom_topTextstyle"
   //   );
   //   if (
   //     pathName === "/services/development/blockchain-development" &&
-  //     aboutDiv
+  //     aboutDiv &&
+  //     isLargeMobileView
   //   ) {
-  //     aboutDiv.style.paddingBottom = "1.5rem";
+  //     aboutDiv.style.paddingBottom = "2.5rem";
   //   }
   // }, [pathName]);
 
@@ -1273,7 +1274,7 @@ const BlockchainDev = () => {
           </div>
         </div>
         {/* bottom para text  */}
-        <div className="sectionTopTextstyle">
+        <div className="sectionTopTextstyle mt-5 mt-md-0">
           <p className="paraStyle">
             For businesses and developers, Play-to-Earn games foster a thriving
             ecosystem that attracts a loyal, active player base, opening doors
@@ -1413,7 +1414,11 @@ const BlockchainDev = () => {
             <div className="appDev_industries_services_text_div">
               <div>
                 {/* right side top text  */}
-                <div data-aos="fade-right" data-aos-delay={1 * 200}>
+                <div
+                  data-aos="fade-right"
+                  data-aos-delay={1 * 200}
+                  className="mt-3 mt-md-0"
+                >
                   <h4 className="blockChain_deve_nft_platfrom_subHeading">
                     Why Choose TOJO Global?
                   </h4>
@@ -1427,7 +1432,11 @@ const BlockchainDev = () => {
                 {/* right side bottom key point text div   */}
                 <div className="blockChaninPlayToEarnGameDevelopmentWhyChoose_keyPoint">
                   {/* key point 01 */}
-                  <div data-aos="fade-up" data-aos-delay={2 * 200}>
+                  <div
+                    data-aos="fade-up"
+                    data-aos-delay={2 * 200}
+                    className="mt-2 mt-md-0"
+                  >
                     <div className="blockChaninPlayToEarnGameDevelopmentWhyChoose_keyPoint_heddingIcon">
                       <div className="blockChaninPlayToEarnGameDevelopmentWhyChooseIconDiv">
                         <img
@@ -1507,8 +1516,6 @@ const BlockchainDev = () => {
                       offering unparalleled expertise in the Play-to-Earn space.
                       Here is the reason for partnering with us:
                     </p>
-                    {/* text key pont why to tojo gloabl  */}
-                    <div className="blockChaninPlayToEarnGameDevelopmentWhyChoose_keyPoint"></div>
                   </div>
                 </div>
               </div>
@@ -1700,7 +1707,7 @@ const BlockchainDev = () => {
               {/* blockChainDev_PlayToEarn_benefits_text_div */}
               <div className="blockChainDev_PlayToEarn_benefits_text_div">
                 <h4 className="blockChainDev_PlayToEarn_benefits_textHeading">
-                  Automation with Smart Contracts
+                  Automation Smart Contract
                 </h4>
                 <p className="blockChainDev_PlayToEarn_benefits_textSubHeading">
                   Smart contracts allow automatic execution of specific actions
@@ -1804,7 +1811,7 @@ const BlockchainDev = () => {
       </section>
 
       {/*Here comes TOJO GLOBAL where we specialize in creating unique logos */}
-      <section className="container">
+      <section className="container mb-5 mb-md-0">
         <div
           className="professionalModeration_div blockChainSolution_specialize_card"
           data-aos="fade-down"
