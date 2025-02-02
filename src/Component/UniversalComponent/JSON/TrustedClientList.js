@@ -20,3 +20,22 @@ export const TrustedClientList = [
     // logo: "/Images/homePage/TrustedClientTalukdar.svg",
   },
 ];
+
+export const ListingClientList = [
+  {
+    name: "Binance",
+    logo: "https://i.ibb.co.com/gZkp3JWL/download-01.jpg",
+  },
+  {
+    name: "Kucoin",
+    logo: "https://i.ibb.co.com/zH8F5k7K/download-02.jpg",
+  },
+  {
+    name: "Mexc",
+    logo: "https://i.ibb.co.com/vCV7KDCD/download-04.jpg",
+  },
+  {
+    name: "Bybit",
+    logo: "https://i.ibb.co.com/Ld7M0yWv/download-03.jpg",
+  },
+];

@@ -1,9 +1,37 @@
 import HeroText from "../UniversalComponent/HeroText/HeroText";
 import ClinetImage from "./ClinetImage";
 import { Helmet } from "react-helmet-async";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { TrustedClientList } from "../UniversalComponent/JSON/TrustedClientList";
 
 const Clients = () => {
+  const settings = {
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1000,
+    cssEase: "linear",
+    arrows: false,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  };
   return (
     <>
       <Helmet>
@@ -11,32 +39,38 @@ const Clients = () => {
       </Helmet>
       <div className="univarsal_div">
         <div className="container">
-          <HeroText
-            heroText={{
-              text1: "Happy",
-              text2: "Clients",
-              description:
-                "Your one-stop digital place. We provide a full range of services, including marketing, management, development, design, listing, and customizable packages, to empower your business for success in the digital age.",
-            }}
-          />
+          <div className="univarsal_text_div" data-aos="fade-down">
+            <h1 className="text-center mb-md-4">
+              {" "}
+              <span className="headdingGradientText me-3">Happy</span>
+              Clients
+            </h1>
+            {/* blog text &#39; */}
+            <div className="clients_services_text_div">
+              <p className="clients_services_PeraDesText">
+                Your one-stop digital place. We provide a full range of
+                services, including marketing, management, development, design,
+                listing, and customizable packages, to empower your business for
+                success in the digital age.
+              </p>
+            </div>
+          </div>
 
-          {/* other text */}
-          <div className="client_image_div">
-            <div className="row d-flex justify-content-center align-items-center">
-              {TrustedClientList.length > 0 ? (
-                TrustedClientList.map((d, i) => (
-                  <ClinetImage
-                    clientInfoImg={{
-                      imgName: d.name,
-                      imageUrl: d.logo,
-                      index: i,
-                    }}
-                    key={i}
-                  />
-                ))
-              ) : (
-                <p> No data available </p>
-              )}
+          {/* trusted client  */}
+
+          <div className="OurTrustedClient_card_image_container">
+            <div className="logo-slider ">
+              <Slider {...settings}>
+                {TrustedClientList.map((logo, index) => (
+                  <div key={index} className="slide">
+                    <img
+                      src={logo.logo}
+                      alt={`Logo ${index + 1}`}
+                      className="trusted-client-logo"
+                    />
+                  </div>
+                ))}
+              </Slider>
             </div>
           </div>
         </div>

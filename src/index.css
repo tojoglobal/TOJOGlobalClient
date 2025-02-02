@@ -152,6 +152,16 @@ a {
   padding-right: 1.5rem;
 }
 
+
+
+.listing_services_PeraDesText {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
 .univarsal_text_div h1 span {
   color: var(--text-second-color);
 }
@@ -447,8 +457,6 @@ a {
   text-align: left;
 }
 
-.subMainfont {}
-
 /* comapny dropdown maneu style */
 .menu_bar ul li:hover .comapny_dropdown_menu {
   background: linear-gradient(180deg,
@@ -555,6 +563,32 @@ a {
   white-space: nowrap;
 }
 
+/* clients_services_text_div */
+.clients_services_text_div {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clients_services_PeraDesText {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+
+}
+
+/* listing page  */
+.listing-client-logo.custom-listing-client-logo {
+  width: 250px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 150px;
+}
+
+
+/* home page hero part  */
 .hero_btn1 {
   border-radius: 1.5625rem;
   border: 1px solid var(--Gradient2, #18c8ff);
@@ -666,7 +700,6 @@ a {
 
 .hero_text_style .hero_seconde_para {
   color: var(--text-color);
-  /* font-family: "Poppins", sans-serif; */
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -5771,14 +5804,14 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     transform: translateX(0px);
   }
 
-  /* client page  */
+  /* listing page  */
   .client_image_div {
     padding-top: 0rem;
   }
 
-  .listing_proposal {
-    padding-top: 3rem;
-  }
+
+
+
 
   /* contact us section  */
   .contactus_text_heading {
@@ -5806,6 +5839,18 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     font-size: 1rem;
     font-weight: 400;
     line-height: 125%;
+  }
+
+  /* listing page  */
+  .listing-client-logo.custom-listing-client-logo {
+    width: 134px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 141px;
+  }
+
+  .OurTrustedListing_card_image_container {
+    min-height: 5.2rem;
   }
 
 }
