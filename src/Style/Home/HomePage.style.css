@@ -1609,6 +1609,11 @@
         text-align: center;
     }
 
+    .clinetPageLogoSlider {
+        padding: 0px 20px;
+        text-align: center;
+    }
+
     .slick-slider {
         position: relative;
     }
@@ -1628,6 +1633,18 @@
     .slick-slide img {
         width: 120px;
         height: 120px;
+        object-fit: contain;
+    }
+
+    .slick-slide .logo_3 {
+        width: 70px !important;
+        height: 120px !important;
+        object-fit: contain;
+    }
+
+    .slick-slide .logo_4 {
+        width: 70px !important;
+        height: 120px !important;
         object-fit: contain;
     }
 

@@ -139,7 +139,6 @@ a {
 
 .univarsal_text_div {
   color: var(--text-color);
-  font-family: var(--font-main);
   padding-bottom: 2.3rem;
 }
 
@@ -576,7 +575,6 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
-
 }
 
 /* listing page  */
@@ -2559,7 +2557,7 @@ textarea {
 }
 
 .frist_blog_div_text_style h3 {
-  font-family: var(--font-main);
+  /* font-family: var(--font-main); */
   font-weight: 700;
   font-size: 27px;
   line-height: 40px;
@@ -4593,7 +4591,7 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 
   .univarsal_text_div h1 {
     font-size: 2.5rem;
-    margin-bottom: 0.6rem;
+    padding-bottom: 0.6rem;
   }
 
 
@@ -5230,8 +5228,13 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   .univarsal_div {
-    background: #060044;
     padding-top: 6rem;
+    padding-bottom: 0.5rem;
+    min-height: 67vh;
+  }
+
+  .univarsal_text_div {
+    padding-bottom: 0rem;
   }
 
   .univarsal_text_div h1 {
@@ -5764,6 +5767,11 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     height: 470px;
   }
 
+  .frist_blog_div_text_style h3 {
+    font-size: 22px;
+    line-height: 120%;
+  }
+
   .frist_part_blog_col_div_style img {
     height: 14.5rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -5782,7 +5790,7 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   .blog_recommended_card {
-    height: 47rem;
+    height: 44rem;
   }
 
   /* hero_btn_style */
@@ -5851,6 +5859,20 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 
   .OurTrustedListing_card_image_container {
     min-height: 5.2rem;
+  }
+
+  /* clients_services_text_div */
+  .clients_services_text_div {
+    width: 98%;
+    text-align: justify;
+  }
+
+  .clients_services_PeraDesText {
+    color: var(--text-color);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
   }
 
 }

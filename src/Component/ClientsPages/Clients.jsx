@@ -49,9 +49,9 @@ const Clients = () => {
             <div className="clients_services_text_div">
               <p className="clients_services_PeraDesText">
                 Your one-stop digital place. We provide a full range of
-                services, including marketing, management, development, design,
-                listing, and customizable packages, to empower your business for
-                success in the digital age.
+                services, including marketing, branding, management,
+                development, design, listing, and customizable packages, to
+                empower your dream business for success in the digital age.
               </p>
             </div>
           </div>
@@ -59,14 +59,14 @@ const Clients = () => {
           {/* trusted client  */}
 
           <div className="OurTrustedClient_card_image_container">
-            <div className="logo-slider ">
+            <div className="logo-slider clinetPageLogoSlider">
               <Slider {...settings}>
                 {TrustedClientList.map((logo, index) => (
                   <div key={index} className="slide">
                     <img
                       src={logo.logo}
                       alt={`Logo ${index + 1}`}
-                      className="trusted-client-logo"
+                      className={`trusted-client-logo logo_${index + 1}`}
                     />
                   </div>
                 ))}

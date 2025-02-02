@@ -24,18 +24,18 @@ export const TrustedClientList = [
 export const ListingClientList = [
   {
     name: "Binance",
-    logo: "https://i.ibb.co.com/gZkp3JWL/download-01.jpg",
+    logo: "https://i.ibb.co.com/xSvPMVcg/download-01.png",
   },
   {
     name: "Kucoin",
-    logo: "https://i.ibb.co.com/zH8F5k7K/download-02.jpg",
+    logo: "https://i.ibb.co.com/Fqd0D9SL/download-02.png",
   },
   {
     name: "Mexc",
-    logo: "https://i.ibb.co.com/vCV7KDCD/download-04.jpg",
+    logo: "https://i.ibb.co.com/KcqX8RDh/download-03.png",
   },
   {
     name: "Bybit",
-    logo: "https://i.ibb.co.com/Ld7M0yWv/download-03.jpg",
+    logo: "https://i.ibb.co.com/VWj6ZqF5/download-04.png",
   },
 ];
