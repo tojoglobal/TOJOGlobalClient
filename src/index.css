@@ -5898,6 +5898,13 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     height: 11rem;
   }
 
+  .blog_div_text_style h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 120%;
+    margin-top: 0.5rem;
+  }
+
   .blog_recommended_card {
     height: 44rem;
   }
