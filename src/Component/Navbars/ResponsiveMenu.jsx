@@ -1,482 +1,138 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+import {
+  FaAngleLeft,
+  FaAngleRight,
+  FaPlus,
+  FaMinus,
+  FaXTwitter,
+  FaLinkedin,
+} from "react-icons/fa6";
+import { IoMenu } from "react-icons/io5";
 import { RxCrossCircled } from "react-icons/rx";
 import { Link, NavLink } from "react-router-dom";
-import { FaPlus } from "react-icons/fa6";
-import { FaMinus } from "react-icons/fa6";
 import { LuPhoneCall } from "react-icons/lu";
-import { FaXTwitter, FaLinkedin } from "react-icons/fa6";
 import { FaFacebookF, FaTelegramPlane } from "react-icons/fa";
-import { IoMenu } from "react-icons/io5";
 
 const ResponsiveMenu = () => {
-  // mobile responsive menu bar
-  // State to manage menu visibility
   const [responsiveNavMenuOpen, setResponsiveNavMenuOpen] = useState(false);
-  const [openMenu, setOpenMenu] = useState(null);
-  const [openSubMenu, setOpenSubMenu] = useState(null);
+  const [menuState, setMenuState] = useState("main");
 
   // Toggle menu visibility
   const responsiveNavtoggleMenu = () => {
-    setResponsiveNavMenuOpen(!responsiveNavMenuOpen);
+    setResponsiveNavMenuOpen((prev) => !prev);
+    setMenuState("main");
   };
 
-  // Toggle menu visibility
-  const toggleMenu = (menuName) => {
-    setOpenMenu(openMenu === menuName ? null : menuName);
-  };
-
-  // Toggle menu visibility
-  const toggleSubMenu = (menuName) => {
-    setOpenSubMenu(openSubMenu === menuName ? null : menuName);
+  const footerMenuBar = () => {
+    return (
+      <>
+        {/* portfolio btn */}
+        <li className="menu_footer_ltems">
+          <a
+            className="footer_social_media_link"
+            href="https://www.behance.net/TOJO_Global"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              type="button"
+              className="responsive_navbar_btn responsive_navbar_btn_portfolio"
+            >
+              <span> PORTFOLIO</span>
+            </button>
+          </a>
+        </li>
+        {/* call now btn */}
+        <li className="menu_footer_ltems">
+          <Link to="/contact">
+            <button type="button" className="responsive_navbar_btn">
+              <span>
+                {" "}
+                <LuPhoneCall className="me-1" /> BOOK A INTRO CALL
+              </span>
+            </button>
+          </Link>
+        </li>
+        {/* socila link */}
+        <li className="menu_footer_ltems">
+          <div className="resonsive_navbar_social_media">
+            <a
+              className="resonsive_navbar_social_media_link"
+              href="https://www.facebook.com/TOJOGlobal/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF className="bx bxl-twitter footer_icon" />
+            </a>
+            <a
+              className="resonsive_navbar_social_media_link"
+              href="https://x.com/TOJOGlobal"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaXTwitter className="bx bxl-twitter footer_icon" />
+            </a>
+            <a
+              className="resonsive_navbar_social_media_link"
+              href="https://www.linkedin.com/company/tojo-global/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="bx footer_icon" />
+            </a>
+            <a
+              className="resonsive_navbar_social_media_link"
+              href="https://t.me/TOJO_Global"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTelegramPlane className="bx footer_icon" />
+            </a>
+          </div>
+        </li>
+      </>
+    );
   };
 
   return (
     <>
-      <IoMenu className="manu_icon" onClick={responsiveNavtoggleMenu} />
-      <div className={responsiveNavMenuOpen ? "menu show" : "menu hide"}>
+      <IoMenu className="menu_icon" onClick={responsiveNavtoggleMenu} />
+      <div className={`menu ${responsiveNavMenuOpen ? "show" : "hide"}`}>
         <div className="navbar_cross_icon" onClick={responsiveNavtoggleMenu}>
-          <RxCrossCircled />
+          <RxCrossCircled className="close-icon" />
         </div>
-        <div id="responsive_navbar_nav">
+        {/* Main Menu */}
+        <div
+          className={`submenu-container ${
+            menuState === "main" ? "menu-main" : "menu-back"
+          }`}
+        >
           <nav className="responsive_navbar">
             <ul>
-              {/* HOME */}
-              <li>
-                <span className="plus_minus_icon">
-                  <FaPlus />
-                  {/* <FaMinus /> */}
-                </span>
-
+              {/* home  */}
+              <li className="menu_ltems">
                 <NavLink onClick={responsiveNavtoggleMenu} to="/">
                   <span className="menu_name">Home</span>
                 </NavLink>
               </li>
-              {/* ABOUT US */}
-              <li>
-                <span className="plus_minus_icon">
-                  <FaPlus />
-                </span>
-
+              {/* About us */}
+              <li className="menu_ltems">
                 <NavLink onClick={responsiveNavtoggleMenu} to="/about-us">
                   <span className="menu_name">ABOUT US</span>
                 </NavLink>
               </li>
-              {/* SERVICES */}
-              <li>
-                <span
-                  className="plus_minus_icon"
-                  onClick={() => toggleMenu("services")}
-                >
-                  {openMenu === "services" ? <FaMinus /> : <FaPlus />}
+              {/* services */}
+              <li
+                className="menu_ltems"
+                onClick={() => setMenuState("services")}
+              >
+                <span className="menu_name">SERVICES</span>
+                <span className="menu_name">
+                  <FaAngleRight className="menu-arrow" />
                 </span>
-                <div className="submenu_list_main_name">
-                  <span
-                    className="menu_name"
-                    onClick={() => toggleMenu("services")}
-                  >
-                    SERVICES
-                  </span>
-                  <ul
-                    className={`${
-                      openMenu === "services" ? "submenu show" : "submenu hide"
-                    }
-               `}
-                  >
-                    {/*  Management submenu items  */}
-                    <li>
-                      <span
-                        className="subMenu_plus_minus_icon"
-                        onClick={() => toggleSubMenu("management")}
-                      >
-                        {openSubMenu === "management" ? (
-                          <FaMinus />
-                        ) : (
-                          <FaPlus />
-                        )}
-                      </span>
-                      <div className="submenu_list_main_name">
-                        <span
-                          className="menu_name"
-                          onClick={() => toggleSubMenu("management")}
-                        >
-                          Management
-                        </span>
-                        <ul
-                          className={`responsive_services_list
-                        ${
-                          openSubMenu === "management"
-                            ? "subsubmenu show"
-                            : "subsubmenu hide"
-                        }
-                      `}
-                        >
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/mangement/community-management"
-                              className="dropdown-item"
-                            >
-                              Community Management
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/mangement/social-media-management"
-                              className="dropdown-item"
-                            >
-                              Social Media Management
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/mangement/social-media-moderation"
-                              className="dropdown-item"
-                            >
-                              Social Media Moderation
-                            </NavLink>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    {/* Marketing submenu itmes */}
-                    <li>
-                      <span
-                        className="subMenu_plus_minus_icon"
-                        onClick={() => toggleSubMenu("marketing")}
-                      >
-                        {openSubMenu === "marketing" ? <FaMinus /> : <FaPlus />}
-                      </span>
-                      <div className="submenu_list_main_name">
-                        <span
-                          className="menu_name"
-                          onClick={() => toggleSubMenu("marketing")}
-                        >
-                          Marketing
-                        </span>
-                        <ul
-                          className={
-                            openSubMenu === "marketing"
-                              ? "subsubmenu show"
-                              : "subsubmenu hide"
-                          }
-                        >
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/marketing/on-page-seo"
-                              className="dropdown-item"
-                            >
-                              SEO (On-Page)
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/marketing/socail-media-marketing"
-                              className="dropdown-item"
-                            >
-                              Social Media Marketing
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/marketing/search-engine-marketing"
-                              className="dropdown-item"
-                            >
-                              Search Engine Marketing
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/marketing/amazon-marketing"
-                              className="dropdown-item"
-                            >
-                              Amazon Marketing
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/marketing/content-marketing"
-                              className="dropdown-item"
-                            >
-                              Content Marketing
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/marketing/influencer-marketing"
-                              className="dropdown-item"
-                            >
-                              Influencer Marketing
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/marketing/lead-genaration"
-                              className="dropdown-item"
-                            >
-                              Lead Generation
-                            </NavLink>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    {/* Development submenu itmes */}
-                    <li>
-                      <span
-                        className="subMenu_plus_minus_icon"
-                        onClick={() => toggleSubMenu("development")}
-                      >
-                        {openSubMenu === "development" ? (
-                          <FaMinus />
-                        ) : (
-                          <FaPlus />
-                        )}
-                      </span>
-                      <div className="submenu_list_main_name">
-                        <span
-                          className="menu_name"
-                          onClick={() => toggleSubMenu("development")}
-                        >
-                          Development
-                        </span>
-                        <ul
-                          className={
-                            openSubMenu === "development"
-                              ? "subsubmenu show"
-                              : "subsubmenu hide"
-                          }
-                        >
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/development/blockchain-development"
-                              className="dropdown-item"
-                            >
-                              Blockchain Development
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/development/app-development"
-                              className="dropdown-item"
-                            >
-                              App Development
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/development/wordpress-development"
-                              className="dropdown-item"
-                            >
-                              Wordpress Development
-                            </NavLink>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    {/* Graphics & Visuals submenu items*/}
-                    <li>
-                      <span
-                        className="subMenu_plus_minus_icon"
-                        onClick={() => toggleSubMenu("design")}
-                      >
-                        {openSubMenu === "design" ? <FaMinus /> : <FaPlus />}
-                      </span>
-                      <div className="submenu_list_main_name">
-                        <span
-                          className="menu_name"
-                          onClick={() => toggleSubMenu("design")}
-                        >
-                          Graphics & Visuals
-                        </span>
-                        <ul
-                          className={
-                            openSubMenu === "design"
-                              ? "subsubmenu show"
-                              : "subsubmenu hide"
-                          }
-                        >
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/design/logo-design"
-                              className="dropdown-item"
-                            >
-                              Logo Design
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/design/social-media-design"
-                              className="dropdown-item"
-                            >
-                              Social Media Design
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/design/ui-ux-design"
-                              className="dropdown-item"
-                            >
-                              UI/UX design
-                            </NavLink>
-                          </li>
-                          {/* <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/design/e-commerce-photo-editing"
-                              className="dropdown-item"
-                            >
-                              Ecommerce Photo Editing
-                            </NavLink>
-                          </li> */}
-                          {/* <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/design/white-paper-design"
-                              className="dropdown-item"
-                            >
-                              White Paper Design
-                            </NavLink>
-                          </li> */}
-                          {/* <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/design/web-design"
-                              className="dropdown-item"
-                            >
-                              Web design
-                            </NavLink>
-                          </li> */}
-                        </ul>
-                      </div>
-                    </li>
-                    {/* Video editing submenu items*/}
-                    <li>
-                      <span
-                        className="subMenu_plus_minus_icon"
-                        onClick={() => toggleSubMenu("production")}
-                      >
-                        {openSubMenu === "production" ? (
-                          <FaMinus />
-                        ) : (
-                          <FaPlus />
-                        )}
-                      </span>
-                      <div className="submenu_list_main_name">
-                        <span
-                          className="menu_name"
-                          onClick={() => toggleSubMenu("production")}
-                        >
-                          Video editing
-                        </span>
-                        <ul
-                          className={
-                            openSubMenu === "production"
-                              ? "subsubmenu show"
-                              : "subsubmenu hide"
-                          }
-                        >
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/videos/motion-graphics"
-                              className="dropdown-item"
-                            >
-                              Motion Graphics
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/videos/video-editing"
-                              className="dropdown-item"
-                            >
-                              VFX
-                            </NavLink>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    {/* Content submenu items*/}
-                    <li>
-                      <span
-                        className="subMenu_plus_minus_icon"
-                        onClick={() => toggleSubMenu("content")}
-                      >
-                        {openSubMenu === "content" ? <FaMinus /> : <FaPlus />}
-                      </span>
-                      <div className="submenu_list_main_name">
-                        <span
-                          className="menu_name"
-                          onClick={() => toggleSubMenu("content")}
-                        >
-                          Content
-                        </span>
-                        <ul
-                          className={
-                            openSubMenu === "content"
-                              ? "subsubmenu show"
-                              : "subsubmenu hide"
-                          }
-                        >
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/content/web-content-writing"
-                              className="dropdown-item"
-                            >
-                              Web Content Writing
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              onClick={responsiveNavtoggleMenu}
-                              to="/services/content/white-paper-content"
-                              className="dropdown-item"
-                            >
-                              White Paper Content
-                            </NavLink>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    {/* service Listing */}
-                    {/* <li>
-                      <span className="subMenu_plus_minus_icon">
-                        <FaPlus />
-                      </span>
-                      <div className="submenu_list_main_name">
-                        <NavLink
-                          onClick={responsiveNavtoggleMenu}
-                          to="/services/listing"
-                          className="dropdown-item"
-                        >
-                          <span className="menu_name">Listing</span>
-                        </NavLink>
-                      </div>
-                    </li> */}
-                  </ul>
-                </div>
               </li>
-              {/* CLIENTS */}
-              <li>
-                <span className="plus_minus_icon">
-                  <FaPlus />
-                </span>
+              {/* Listing */}
+              <li className="menu_ltems">
                 <NavLink
                   onClick={responsiveNavtoggleMenu}
                   to="/services/listing"
@@ -484,157 +140,456 @@ const ResponsiveMenu = () => {
                   <span className="menu_name">Listing</span>
                 </NavLink>
               </li>
-              {/* CLIENTS */}
-              <li>
-                <span className="plus_minus_icon">
-                  <FaPlus />
-                </span>
+              {/*CLIENTS */}
+              <li className="menu_ltems">
                 <NavLink onClick={responsiveNavtoggleMenu} to="/clients">
                   <span className="menu_name">CLIENTS</span>
                 </NavLink>
               </li>
-
               {/* COMPANY */}
-              <li>
-                <span
-                  className="plus_minus_icon"
-                  onClick={() => toggleMenu("company")}
-                >
-                  {openMenu === "company" ? <FaMinus /> : <FaPlus />}
+              <li
+                className="menu_ltems"
+                onClick={() => setMenuState("company")}
+              >
+                <span className="menu_name">COMPANY</span>
+                <span className="menu_name">
+                  <FaAngleRight className="menu-arrow" />
                 </span>
-                <div className="submenu_list_main_name">
-                  <span className="menu_name">COMPANY</span>
-                  <ul
-                    className={
-                      openMenu === "company" ? "submenu show" : "submenu hide"
-                    }
-                  >
-                    <li>
-                      <NavLink
-                        to="/about-us"
-                        className="dropdown-item submenu_servces_name"
-                        onClick={responsiveNavtoggleMenu}
-                      >
-                        <span>About</span>
-                      </NavLink>
-                    </li>
-
-                    {/* <li>
-                            <NavLink
-                              to="/team"
-                              className="dropdown-item"
-                              onClick={handleClick}
-                            >
-                              Team
-                            </NavLink>
-                          </li> */}
-
-                    <li>
-                      <NavLink
-                        to="/packages"
-                        className="dropdown-item submenu_servces_name"
-                        onClick={responsiveNavtoggleMenu}
-                      >
-                        <span>Packages</span>
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/contact"
-                        className="dropdown-item submenu_servces_name"
-                        onClick={responsiveNavtoggleMenu}
-                      >
-                        <span>Contact</span>
-                      </NavLink>
-                    </li>
-                  </ul>
-                </div>
               </li>
-              {/* PACKAGES */}
-              <li>
-                <span className="plus_minus_icon">
-                  <FaPlus />
-                  {/* <FaMinus /> */}
-                </span>
-
+              {/*PACKAGES */}
+              <li className="menu_ltems">
                 <NavLink onClick={responsiveNavtoggleMenu} to="/packages">
                   <span className="menu_name">PACKAGES</span>
                 </NavLink>
               </li>
-              {/* BLOG */}
-              <li>
-                <span className="plus_minus_icon">
-                  <FaPlus />
-                  {/* <FaMinus /> */}
-                </span>
-
+              {/*Blog */}
+              <li className="menu_ltems">
                 <NavLink onClick={responsiveNavtoggleMenu} to="/blog">
                   <span className="menu_name">BLOG</span>
                 </NavLink>
               </li>
-              {/* portfolio btn */}
-              <li>
-                <a
-                  className="footer_social_media_link"
-                  href="https://www.behance.net/TOJO_Global"
-                  target="_blank"
-                  rel="noopener noreferrer"
+              {/* footer menu */}
+              {footerMenuBar()}
+            </ul>
+          </nav>
+        </div>
+
+        {/* Services Menu */}
+        <div
+          className={`submenu-container ${
+            menuState === "services" ? "menu-main" : "menu-services"
+          }`}
+        >
+          <div className="submenu_header">
+            <FaAngleLeft
+              className="back-btn"
+              onClick={() => setMenuState("main")}
+            />
+            <span className="menuStateText">{menuState}</span>
+          </div>
+          <nav className="responsive_navbar">
+            <ul>
+              <li
+                className="menu_ltems"
+                onClick={() => setMenuState("management")}
+              >
+                <span className="menu_name">Management</span>
+                <span className="menu_name">
+                  <FaAngleRight />
+                </span>
+              </li>
+              <li
+                className="menu_ltems"
+                onClick={() => setMenuState("marketing")}
+              >
+                <span className="menu_name">Marketing</span>
+                <span className="menu_name">
+                  <FaAngleRight />
+                </span>
+              </li>
+              <li
+                className="menu_ltems"
+                onClick={() => setMenuState("development")}
+              >
+                <span className="menu_name">Development</span>
+                <span className="menu_name">
+                  <FaAngleRight />
+                </span>
+              </li>
+              <li className="menu_ltems" onClick={() => setMenuState("design")}>
+                <span className="menu_name">Graphics & Visuals</span>
+                <span className="menu_name">
+                  <FaAngleRight />
+                </span>
+              </li>
+              <li
+                className="menu_ltems"
+                onClick={() => setMenuState("production")}
+              >
+                <span className="menu_name">Video editing</span>
+                <span className="menu_name">
+                  <FaAngleRight />
+                </span>
+              </li>
+              <li
+                className="menu_ltems"
+                onClick={() => setMenuState("content")}
+              >
+                <span className="menu_name">Content</span>
+                <span className="menu_name">
+                  <FaAngleRight />
+                </span>
+              </li>
+              <li
+                className="menu_ltems"
+                onClick={() => setMenuState("production")}
+              >
+                <span className="menu_name">Video editing</span>
+                <span className="menu_name">
+                  <FaAngleRight />
+                </span>
+              </li>
+              {/* footer menu */}
+              {footerMenuBar()}
+            </ul>
+          </nav>
+        </div>
+
+        {/* Management Submenu */}
+        <div
+          className={`submenu-container ${
+            menuState === "management" ? "menu-main" : "menu-management"
+          }`}
+        >
+          <div className="submenu_header">
+            <FaAngleLeft
+              className="back-btn"
+              onClick={() => setMenuState("services")}
+            />
+            <span className="menuStateText">{menuState}</span>
+          </div>
+          <nav className="responsive_navbar">
+            <ul>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/mangement/community-management"
+                  className="menu_name"
                 >
-                  <button
-                    type="button"
-                    className="responsive_navbar_btn responsive_navbar_btn_portfolio"
-                  >
-                    <span> PORTFOLIO</span>
-                  </button>
-                </a>
+                  Community Management
+                </NavLink>
               </li>
-              {/* call now btn */}
-              <li>
-                <Link to="/contact">
-                  <button type="button" className="responsive_navbar_btn">
-                    <span>
-                      {" "}
-                      <LuPhoneCall className="me-1" /> BOOK A INTRO CALL
-                    </span>
-                  </button>
-                </Link>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/mangement/social-media-management"
+                  className="menu_name"
+                >
+                  Social Media Management
+                </NavLink>
               </li>
-              {/* socila link */}
-              <li>
-                <div className="resonsive_navbar_social_media">
-                  <a
-                    className="resonsive_navbar_social_media_link"
-                    href="https://www.facebook.com/TOJOGlobal/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaFacebookF className="bx bxl-twitter footer_icon" />
-                  </a>
-                  <a
-                    className="resonsive_navbar_social_media_link"
-                    href="https://x.com/TOJOGlobal"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaXTwitter className="bx bxl-twitter footer_icon" />
-                  </a>
-                  <a
-                    className="resonsive_navbar_social_media_link"
-                    href="https://www.linkedin.com/company/tojo-global/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaLinkedin className="bx footer_icon" />
-                  </a>
-                  <a
-                    className="resonsive_navbar_social_media_link"
-                    href="https://t.me/TOJO_Global"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaTelegramPlane className="bx footer_icon" />
-                  </a>
-                </div>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/mangement/social-media-moderation"
+                  className="menu_name"
+                >
+                  Social Media Moderation
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        {/* Marketing Submenu */}
+        <div
+          className={`submenu-container ${
+            menuState === "marketing" ? "menu-main" : "menu-management"
+          }`}
+        >
+          <div className="submenu_header">
+            <FaAngleLeft
+              className="back-btn"
+              onClick={() => setMenuState("services")}
+            />
+            <span className="menuStateText">{menuState}</span>
+          </div>
+          <nav className="responsive_navbar">
+            <ul>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/marketing/on-page-seo"
+                  className="menu_name"
+                >
+                  SEO (On-Page)
+                </NavLink>
+              </li>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/marketing/socail-media-marketing"
+                  className="menu_name"
+                >
+                  Social Media Marketing
+                </NavLink>
+              </li>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/marketing/search-engine-marketing"
+                  className="menu_name"
+                >
+                  Search Engine Marketing
+                </NavLink>
+              </li>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/marketing/amazon-marketing"
+                  className="menu_name"
+                >
+                  Amazon Marketing
+                </NavLink>
+              </li>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/marketing/content-marketing"
+                  className="menu_name"
+                >
+                  Content Marketing
+                </NavLink>
+              </li>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/marketing/influencer-marketing"
+                  className="menu_name"
+                >
+                  Influencer Marketing
+                </NavLink>
+              </li>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/marketing/lead-genaration"
+                  className="menu_name"
+                >
+                  Lead Generation
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        {/* Development Submenu */}
+        <div
+          className={`submenu-container ${
+            menuState === "development" ? "menu-main" : "menu-management"
+          }`}
+        >
+          <div className="submenu_header">
+            <FaAngleLeft
+              className="back-btn"
+              onClick={() => setMenuState("services")}
+            />
+            <span className="menuStateText">{menuState}</span>
+          </div>
+          <nav className="responsive_navbar">
+            <ul>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/development/blockchain-development"
+                  className="menu_name"
+                >
+                  Blockchain Development
+                </NavLink>
+              </li>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/development/app-development"
+                  className="menu_name"
+                >
+                  App Development
+                </NavLink>
+              </li>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/development/wordpress-development"
+                  className="menu_name"
+                >
+                  Wordpress Development
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        {/* Design Submenu */}
+        <div
+          className={`submenu-container ${
+            menuState === "design" ? "menu-main" : "menu-management"
+          }`}
+        >
+          <div className="submenu_header">
+            <FaAngleLeft
+              className="back-btn"
+              onClick={() => setMenuState("services")}
+            />
+            <span className="menuStateText">{menuState}</span>
+          </div>
+          <nav className="responsive_navbar">
+            <ul>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/design/logo-design"
+                  className="menu_name"
+                >
+                  Logo Design
+                </NavLink>
+              </li>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/design/social-media-design"
+                  className="menu_name"
+                >
+                  Social Media Design
+                </NavLink>
+              </li>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/design/ui-ux-design"
+                  className="menu_name"
+                >
+                  UI/UX design
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        {/* Production Submenu */}
+        <div
+          className={`submenu-container ${
+            menuState === "production" ? "menu-main" : "menu-management"
+          }`}
+        >
+          <div className="submenu_header">
+            <FaAngleLeft
+              className="back-btn"
+              onClick={() => setMenuState("services")}
+            />
+            <span className="menuStateText">{menuState}</span>
+          </div>
+          <nav className="responsive_navbar">
+            <ul>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/videos/motion-graphics"
+                  className="menu_name"
+                >
+                  Motion Graphics
+                </NavLink>
+              </li>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/videos/video-editing"
+                  className="menu_name"
+                >
+                  VFX
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        {/* Content Submenu */}
+        <div
+          className={`submenu-container ${
+            menuState === "content" ? "menu-main" : "menu-management"
+          }`}
+        >
+          <div className="submenu_header">
+            <FaAngleLeft
+              className="back-btn"
+              onClick={() => setMenuState("services")}
+            />
+            <span className="menuStateText">{menuState}</span>
+          </div>
+          <nav className="responsive_navbar">
+            <ul>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/content/web-content-writing"
+                  className="menu_name"
+                >
+                  Web Content Writing
+                </NavLink>
+              </li>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/services/content/white-paper-content"
+                  className="menu_name"
+                >
+                  White Paper Content
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        {/* Company Submenu */}
+        <div
+          className={`submenu-container ${
+            menuState === "company" ? "menu-main" : "menu-management"
+          }`}
+        >
+          <div className="submenu_header">
+            <FaAngleLeft
+              className="back-btn"
+              onClick={() => setMenuState("services")}
+            />
+            <span className="menuStateText">{menuState}</span>
+          </div>
+          <nav className="responsive_navbar">
+            <ul>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/about-us"
+                  className="menu_name"
+                >
+                  About
+                </NavLink>
+              </li>
+
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/packages"
+                  className="menu_name"
+                >
+                  Packages
+                </NavLink>
+              </li>
+              <li className="menu_ltems">
+                <NavLink
+                  onClick={responsiveNavtoggleMenu}
+                  to="/contact"
+                  className="menu_name"
+                >
+                  Contact
+                </NavLink>
               </li>
             </ul>
           </nav>

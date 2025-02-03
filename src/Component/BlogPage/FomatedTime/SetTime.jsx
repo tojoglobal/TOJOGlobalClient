@@ -12,14 +12,14 @@ const SetTime = ({ time }) => {
 
     const secondsAgo = Math.floor((now.getTime() - bdTime.getTime()) / 1000);
 
-    if (secondsAgo < 60) return `${secondsAgo} seconds ago`;
+    if (secondsAgo < 60) return `${secondsAgo} seconds`;
     const minutesAgo = Math.floor(secondsAgo / 60);
-    if (minutesAgo < 60) return `${minutesAgo} minutes ago`;
+    if (minutesAgo < 60) return `${minutesAgo} minutes`;
     const hoursAgo = Math.floor(minutesAgo / 60);
-    if (hoursAgo < 24) return `${hoursAgo} hours ago`;
+    if (hoursAgo < 24) return `${hoursAgo} hours`;
     const daysAgo = Math.floor(hoursAgo / 24);
-    if (daysAgo < 7) return `${daysAgo} days ago`;
-    if (daysAgo < 30) return `${Math.floor(daysAgo / 7)} weeks ago`;
+    if (daysAgo < 7) return `${daysAgo} days`;
+    if (daysAgo < 30) return `${Math.floor(daysAgo / 7)} weeks`;
 
     // Format BD time
     const options = {

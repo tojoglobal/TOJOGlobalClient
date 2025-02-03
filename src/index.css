@@ -4042,19 +4042,24 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 
   /* toogle menu item  */
   .menu {
-    border-radius: 1.5625rem 0rem 0rem 1.5625rem;
-    background: rgba(24, 200, 255, 0.15);
+    border-radius: 10px;
+    /* background: rgba(24, 200, 255, 0.15); */
     box-shadow: #c508ff 0px 1px 2px 1px, #18c9ff 1px 0px 2px 1px;
     display: block;
     padding: 2.6rem;
-    min-height: 285px;
+    /* min-height: 285px; */
+    min-height: 100vh;
     position: fixed;
+    z-index: 500;
     right: -4px;
     top: 0.69rem;
-    width: 95%;
-    transition: transform 0.3s ease;
+    width: 98%;
+    backdrop-filter: blur(23.5px);
+    transition: transform 0.3s ease-in-out;
     z-index: 150;
   }
+
+
 
   .menu::before {
     content: "";
@@ -4063,12 +4068,13 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     left: 0;
     right: 0;
     bottom: 0;
-    background: inherit;
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(23.5px);
+    -webkit-backdrop-filter: blur(23.5px);
     z-index: -1;
     border-radius: inherit;
   }
+
+
 
   .menu.hide {
     transform: translateX(100%);
@@ -4081,7 +4087,68 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   .menu_icon {
     font-size: 30px;
     cursor: pointer;
+    color: var(--text-color);
   }
+
+  /*===============02 testing sub menu items ====================== */
+
+
+  /* Back Button */
+  .back-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .back-btn:hover {
+    color: #18c9ff;
+  }
+
+
+  /* Menu Transition */
+  .menu.hide {
+    transform: translateX(100%);
+  }
+
+  .menu.show {
+    transform: translateX(0);
+  }
+
+  /* Submenu Animation */
+  .submenu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    padding: 2rem 1rem;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* .menu-arrow {
+    margin-right: 12px;
+  } */
+
+  /* Slide animation */
+  .menu-main {
+    transform: translateX(0);
+  }
+
+  .menu-services {
+    transform: translateX(100%);
+  }
+
+  .menu-management {
+    transform: translateX(200%);
+  }
+
+  .menu-back {
+    transform: translateX(-100%);
+  }
+
+  /* ==================== */
 
   .responsive_navbar_nav {
     position: relative;
@@ -4091,15 +4158,43 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     position: absolute;
     top: 0.12rem;
     right: 0.99rem;
-    font-size: 2.5rem;
+
+  }
+
+  /* Close Icon */
+  .navbar_cross_icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .close-icon {
+    font-size: 2rem;
     color: var(--text-color);
+    transition: transform 0.2s;
+  }
+
+  .close-icon:hover {
+    transform: scale(1.1);
   }
 
   .responsive_navbar ul {
     list-style: none;
   }
 
-  .responsive_navbar ul li {
+  .responsive_navbar .menu_ltems {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    padding: 0px 44px;
+  }
+
+  .responsive_navbar .menu_footer_ltems {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -4183,6 +4278,23 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     cursor: pointer;
   }
 
+  .submenu_header {
+    color: var(--text-color);
+    margin-bottom: 0.9rem;
+  }
+
+  .menuStateText {
+    text-transform: capitalize;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .back-btn {
+    margin-top: -2.55px;
+    font-size: 17px;
+    cursor: pointer;
+  }
+
   .responsive_navbar_btn {
     display: inline-flex;
     padding: 0.7375rem 1.5625rem;
@@ -4203,7 +4315,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   .responsive_navbar_btn span {
     color: #fff;
     text-align: center;
-
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -4211,7 +4322,7 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   .responsive_navbar_btn_portfolio {
-    margin-top: 4.88rem;
+    margin-top: 2.5rem;
     padding: 0.7375rem 2.8625rem;
   }
 
@@ -4241,8 +4352,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   .hero_div {
     padding: 6.7rem 5rem 11.26rem;
   }
-
-
 
   .heroTopGradinet {
     width: 40rem;
