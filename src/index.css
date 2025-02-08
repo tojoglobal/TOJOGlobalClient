@@ -722,6 +722,7 @@ a {
   font-weight: bold;
   font-size: 1.2rem;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -3157,6 +3158,7 @@ textarea {
 .management_section_service {
   background-image: linear-gradient(90deg, #01b5e8 0%, #7752fe 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   font-weight: 700;
   font-size: 1.3rem;

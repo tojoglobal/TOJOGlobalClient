@@ -1,37 +1,52 @@
 import { Link } from "react-router-dom";
 import "../../../Style/ServicesPageStyle/Management/CommunityManagementPage.css";
-import FaqItem from "../../UniversalComponent/FaqItems/FaqItem";
 import ServiceContactUs from "../ContactUsServiceSection/ServiceContactUs";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { AppContext } from "../../../AppContext";
 
 const CommunityManagement = () => {
-  const { isLargeMobileView } = useContext(AppContext);
-
-  // Scroll to the top when the component mounts
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  const { isLargeMobileView, isMobileView } = useContext(AppContext);
 
   return (
     <main className="maindiv">
       {/* service management top part  */}
       <section>
         <div className="communityManagement_top_part">
-          <div className="communityManagement_hero_part">
+          <div
+            className="communityManagement_hero_part"
+            style={{
+              ...(isMobileView && {
+                paddingTop: "6.8rem",
+              }),
+            }}
+          >
             <div className="communityManagement_hero_part_div container">
               <div
                 className="communityManagement_hero_text_div"
                 data-aos="fade-left"
               >
-                <h1>
+                <h1
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "center",
+                      fontSize: "1.6rem",
+                    }),
+                  }}
+                >
                   Enhance your crypto community with Expert{" "}
                   <span className="headdingGradientText">
                     Telegram & discord{" "}
                   </span>
                   management.
                 </h1>
-                <p>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      wordSpacing: "-1px",
+                    }),
+                  }}
+                >
                   Tojo Global helps you grow & engage your community on Discord
                   & telegram ensuring your crypto project connects with the
                   audience in a meaningful way.
@@ -49,9 +64,13 @@ const CommunityManagement = () => {
                   </Link>
                 </div>
               </div>
+
               <div
-                className="communityManagement_hero_part_image_div"
+                className={`communityManagement_hero_part_image_div`}
                 data-aos="fade-right"
+                style={
+                  isMobileView ? { display: "none" } : { display: "block" }
+                }
               >
                 <img
                   src="/Images/ServicesImage/banner_images/communityManagement_hero_part_div_Image.png"
@@ -76,17 +95,23 @@ const CommunityManagement = () => {
                 />
               </div>
               <div className="communityManagement_second_text_div">
-                <h4>
-                  How Our Telegram & discord Management Service can elevate your
-                  crypto project 
+                <h4
+                  style={{
+                    ...(isMobileView && {
+                      paddingTop: "6.8rem",
+                    }),
+                  }}
+                >
+                  How Our Telegram & discord Management Services can elevate
+                  your crypto project 
                 </h4>
                 <p>
                   Our Telegram and Discord Management Service can significantly
                   enhance your Crypto project. We assist you in building a
-                  strong & amazing community by fostering engagement and
+                  strong and amazing community by fostering engagement and
                   encouraging discussions. Our expert team will manage your
                   channels, ensuring timely responses to questions, comments,
-                  and feedback, which keeps your audience active and involved. 
+                  and feedback, which keeps your audience active and involved.
                   With regular updates and content sharing, we keep your
                   community informed and excited about your project.
                 </p>
@@ -146,8 +171,23 @@ const CommunityManagement = () => {
                       alt="communication image"
                     />
                   </div>
-                  <h4>Direct communication</h4>
-                  <p>
+                  <h4
+                    style={{
+                      ...(isMobileView && {
+                        fontFamily: "var(--font-poppins)",
+                      }),
+                    }}
+                  >
+                    Direct communication
+                  </h4>
+                  <p
+                    style={{
+                      ...(isMobileView && {
+                        fontSize: "14px",
+                        lineHeight: "125%",
+                      }),
+                    }}
+                  >
                     It allows for regular updates and new sharing with your
                     community
                   </p>
@@ -161,8 +201,23 @@ const CommunityManagement = () => {
                   <div className="searchEngineMarketing_leadGenaration_card_div_img">
                     <img src="/Images/ServicesImage/icons/Collaborating-In-Circle.png" />
                   </div>
-                  <h4>Engagement</h4>
-                  <p>
+                  <h4
+                    style={{
+                      ...(isMobileView && {
+                        fontFamily: "var(--font-poppins)",
+                      }),
+                    }}
+                  >
+                    Engagement
+                  </h4>
+                  <p
+                    style={{
+                      ...(isMobileView && {
+                        fontSize: "14px",
+                        lineHeight: "125%",
+                      }),
+                    }}
+                  >
                     Engaging community management keeps members active and
                     encourages their participation
                   </p>
@@ -179,8 +234,25 @@ const CommunityManagement = () => {
                       alt=""
                     />
                   </div>
-                  <h4>Building trust</h4>
-                  <p>Regular support builds trust with your audience</p>
+                  <h4
+                    style={{
+                      ...(isMobileView && {
+                        fontFamily: "var(--font-poppins)",
+                      }),
+                    }}
+                  >
+                    Building trust
+                  </h4>
+                  <p
+                    style={{
+                      ...(isMobileView && {
+                        fontSize: "14px",
+                        lineHeight: "125%",
+                      }),
+                    }}
+                  >
+                    Regular support builds trust with your audience
+                  </p>
                 </div>
                 {/*04 Feedback loop */}
                 <div
@@ -191,8 +263,25 @@ const CommunityManagement = () => {
                   <div className="searchEngineMarketing_leadGenaration_card_div_img">
                     <img src="/Images/ServicesImage/icons/Popular.png" />
                   </div>
-                  <h4>Feedback loop</h4>
-                  <p>Collecting feedback allows you to improve your project</p>
+                  <h4
+                    style={{
+                      ...(isMobileView && {
+                        fontFamily: "var(--font-poppins)",
+                      }),
+                    }}
+                  >
+                    Feedback loop
+                  </h4>
+                  <p
+                    style={{
+                      ...(isMobileView && {
+                        fontSize: "14px",
+                        lineHeight: "125%",
+                      }),
+                    }}
+                  >
+                    Collecting feedback allows you to improve your project
+                  </p>
                 </div>
                 {/*05 Crisis management */}
                 <div
@@ -206,8 +295,23 @@ const CommunityManagement = () => {
                       alt="Website/public/Images/ServicesImage/management/Crisismanagement05.svg"
                     />
                   </div>
-                  <h4>Crisis management</h4>
-                  <p>
+                  <h4
+                    style={{
+                      ...(isMobileView && {
+                        fontFamily: "var(--font-poppins)",
+                      }),
+                    }}
+                  >
+                    Crisis management
+                  </h4>
+                  <p
+                    style={{
+                      ...(isMobileView && {
+                        fontSize: "14px",
+                        lineHeight: "125%",
+                      }),
+                    }}
+                  >
                     Quick response to problems helps to maintain a positive
                     image
                   </p>
@@ -221,8 +325,23 @@ const CommunityManagement = () => {
                   <div className="searchEngineMarketing_leadGenaration_card_div_img">
                     <img src="/Images/ServicesImage/icons/Positive Dynamic.png" />
                   </div>
-                  <h4>Community growth</h4>
-                  <p>
+                  <h4
+                    style={{
+                      ...(isMobileView && {
+                        fontFamily: "var(--font-poppins)",
+                      }),
+                    }}
+                  >
+                    Community growth
+                  </h4>
+                  <p
+                    style={{
+                      ...(isMobileView && {
+                        fontSize: "14px",
+                        lineHeight: "125%",
+                      }),
+                    }}
+                  >
                     A well-managed community attracts more members and makes
                     your project more visible
                   </p>
@@ -385,7 +504,14 @@ const CommunityManagement = () => {
       </div>
       {/*service offers   */}
       <section className="univarsal_service_padding">
-        <h1 className="communityManagement_service_offers_heading">
+        <h1
+          className="communityManagement_service_offers_heading"
+          style={{
+            ...(isMobileView && {
+              paddingTop: "1rem",
+            }),
+          }}
+        >
           TOJO GLOBAL offers you
         </h1>
         <div className="univarsal_service_padding_second_div communityManagement_service_offers container">
@@ -403,7 +529,17 @@ const CommunityManagement = () => {
             </div>
 
             <div>
-              <h4>Group Creation</h4>
+              <h4
+                style={{
+                  ...(isMobileView && {
+                    fontFamily: "var(--font-poppins)",
+                    fontSize: "20px",
+                    lineHeight: "125%",
+                  }),
+                }}
+              >
+                Group Creation
+              </h4>
               <p>
                 We help to set up your Discord or Telegram group, create
                 channels, and regulate rules
@@ -423,7 +559,17 @@ const CommunityManagement = () => {
               />
             </div>
             <div>
-              <h4>24/7 Community Management</h4>
+              <h4
+                style={{
+                  ...(isMobileView && {
+                    fontFamily: "var(--font-poppins)",
+                    fontSize: "20px",
+                    lineHeight: "125%",
+                  }),
+                }}
+              >
+                24/7 Community Management
+              </h4>
               <p>
                 Our team is always available to ensure your community remains
                 active and engaged around the clock
@@ -444,7 +590,17 @@ const CommunityManagement = () => {
             </div>
 
             <div>
-              <h4>Content Creation</h4>
+              <h4
+                style={{
+                  ...(isMobileView && {
+                    fontFamily: "var(--font-poppins)",
+                    fontSize: "20px",
+                    lineHeight: "125%",
+                  }),
+                }}
+              >
+                Content Creation
+              </h4>
               <p>
                 We create valuable content including announcements updates and
                 Guides to keep your members informed and connected
@@ -462,7 +618,17 @@ const CommunityManagement = () => {
             </div>
 
             <div>
-              <h4>Event planning & execution</h4>
+              <h4
+                style={{
+                  ...(isMobileView && {
+                    fontFamily: "var(--font-poppins)",
+                    fontSize: "20px",
+                    lineHeight: "125%",
+                  }),
+                }}
+              >
+                Event planning & execution
+              </h4>
               <p>
                 we assist in organizing events like webinars and AMAs giving
                 your team a chance to connect with members
@@ -485,7 +651,17 @@ const CommunityManagement = () => {
             </div>
 
             <div>
-              <h4>Growth Management</h4>
+              <h4
+                style={{
+                  ...(isMobileView && {
+                    fontFamily: "var(--font-poppins)",
+                    fontSize: "20px",
+                    lineHeight: "125%",
+                  }),
+                }}
+              >
+                Growth Management
+              </h4>
               <p>
                 We work to attract new members and expand your community reach
                 across platforms
@@ -506,7 +682,17 @@ const CommunityManagement = () => {
             </div>
 
             <div>
-              <h4>Crisis Management</h4>
+              <h4
+                style={{
+                  ...(isMobileView && {
+                    fontFamily: "var(--font-poppins)",
+                    fontSize: "20px",
+                    lineHeight: "125%",
+                  }),
+                }}
+              >
+                Crisis Management
+              </h4>
               <p>
                 We work to attract new members and expand your community reach
                 across platforms
@@ -527,7 +713,17 @@ const CommunityManagement = () => {
             </div>
 
             <div>
-              <h4>Post Management</h4>
+              <h4
+                style={{
+                  ...(isMobileView && {
+                    fontFamily: "var(--font-poppins)",
+                    fontSize: "20px",
+                    lineHeight: "125%",
+                  }),
+                }}
+              >
+                Post Management
+              </h4>
               <p>
                 We handle scheduling and regular posting to ensure regular
                 updates that keep your community engage
@@ -546,7 +742,17 @@ const CommunityManagement = () => {
             </div>
 
             <div>
-              <h4>Regular Updates</h4>
+              <h4
+                style={{
+                  ...(isMobileView && {
+                    fontFamily: "var(--font-poppins)",
+                    fontSize: "20px",
+                    lineHeight: "125%",
+                  }),
+                }}
+              >
+                Regular Updates
+              </h4>
               <p>
                 We provide consistent updates to keep your community informed
                 and excited about your project
@@ -564,7 +770,17 @@ const CommunityManagement = () => {
             </div>
 
             <div>
-              <h4>Feedback Collection & Analysis</h4>
+              <h4
+                style={{
+                  ...(isMobileView && {
+                    fontFamily: "var(--font-poppins)",
+                    fontSize: "20px",
+                    lineHeight: "125%",
+                  }),
+                }}
+              >
+                Feedback Collection & Analysis
+              </h4>
               <p>
                 We collect and analyze feedback from your community to improve
                 your project based on user needs 
@@ -574,12 +790,24 @@ const CommunityManagement = () => {
         </div>
       </section>
       {/* management service help  */}
-      <section className="univarsal_service_padding">
+      <section
+        className="univarsal_service_padding"
+        style={{
+          ...(isMobileView && {
+            paddingBottom: "1.5rem",
+          }),
+        }}
+      >
         <div className="univarsal_service_padding_second_div managementHelp">
-          <div className="managementHelp_image_div" data-aos="zoom-in-down">
+          <div
+            className="managementHelp_image_div"
+            data-aos="zoom-in-down"
+            style={isMobileView ? { display: "none" } : { display: "block" }}
+          >
             <img
               src="/Images/ServicesImage/banner_images/4--people-in-a-buble-like-chat--and-telegram-and-d.png"
               alt="managementHelp_image"
+              style={isMobileView ? { display: "none" } : { display: "block" }}
             />
           </div>
           <div className="managementHelp_text_div" data-aos="fade-down">

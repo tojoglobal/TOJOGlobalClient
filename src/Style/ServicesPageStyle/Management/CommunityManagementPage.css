@@ -614,7 +614,7 @@
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.375rem;
+  line-height: 125%;
 }
 
 /* managementHelp  section */
@@ -668,7 +668,6 @@
 
 .managementHelp_text_div h2 {
   color: #fff;
-
   font-size: 2.25rem;
   font-style: normal;
   font-weight: 700;
@@ -1111,6 +1110,8 @@
     line-height: 120%;
   }
 
+
+
   /* hero part */
   .communityManagement_hero_part {
     padding: 4.3rem 0.39rem 2.8rem 0.5rem;
@@ -1126,7 +1127,7 @@
   .communityManagement_second_text_div {
     padding: 0rem 1rem;
     transform: translateX(0%);
-    height: 22.5rem;
+    height: 22.1rem;
     justify-content: start;
   }
 
@@ -1134,8 +1135,19 @@
     padding-left: 0rem;
   }
 
+  .communityManagement_second_text_div h4 {
+    color: #fff;
+    text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
+    font-style: normal;
+    text-align: justify;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 125%;
+  }
+
   .communityManagement_second_text_div p {
     font-size: 14px;
+    text-align: justify;
     line-height: 125%;
   }
 
@@ -1151,6 +1163,7 @@
     margin-bottom: 2.5rem;
   }
 
+
   /* management help  */
   .managementHelp {
     margin-bottom: 0.6rem;
@@ -1165,8 +1178,9 @@
   }
 
   .managementHelp_text_div h2 {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 21px;
+    text-align: justify;
+    line-height: 125%;
     margin-bottom: 1rem;
   }
 
@@ -1204,26 +1218,36 @@
   }
 
   /* communityManagement_Crypto_project*/
+  .communityManagement_Crypto_project_div {
+    padding-top: 2.46rem;
+    padding-bottom: 2.4rem;
+  }
+
   .communityManagement_Crypto_project_div h1 {
     text-align: center;
     width: 100%;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 1.4rem;
+    line-height: 125%;
     font-style: normal;
     font-weight: 700;
   }
 
+  .communityManagement_Crypto_project_Card {
+    padding-top: 1.19rem;
+  }
+
   .communityManagement_Crypto_project_Card div p {
-    text-align: center;
-    font-size: 1rem;
-    line-height: 125%;
+    text-align: justify;
+    /* word-spacing: -2px; */
+    font-size: 14px;
+    line-height: 125%
   }
 
 
   .communityManagement_Crypto_project_Card div:nth-child(1) {
     padding: 3.5rem 1.19rem 1.29rem 1.29rem;
-    width: 19.37075rem;
-    height: 15.92963rem;
+    width: 18.37075rem;
+    height: 12.92963rem;
     margin: 0 auto;
   }
 
@@ -1235,11 +1259,11 @@
   }
 
   .communityManagement_Crypto_project_Card div:nth-child(2) {
-    padding: 3.5rem 1rem 1.29rem 1.1rem;
-    width: 19.37075rem;
-    height: 15.2rem;
+    padding: 3.5rem 1.6rem 1.39rem 1.5rem;
+    width: 18.37075rem;
+    height: 13.2rem;
     margin: 0 auto;
-    margin-top: 4rem;
+    margin-top: 5.8rem;
   }
 
   .communityManagement_Crypto_project_Card div:nth-child(2)::before {
@@ -1261,17 +1285,21 @@
 
 
   .service_contactus_text_para {
-    font-size: 0.8rem;
-    line-height: 23px;
+    font-size: 14px;
+    line-height: 120%;
   }
+
+
 
   .service_contactus_bottom_text_div {
-    margin-top: 2.4rem;
+    margin-top: 0.5rem;
   }
 
+
+
   .service_contactus_bottom_text_div h4 {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 120%;
     margin-bottom: 0.9rem;
   }
 
@@ -1287,9 +1315,24 @@
     line-height: 1.8rem;
   }
 
+  /* communityManagement_service_offers_div */
   .communityManagement_service_offers_div p {
     font-size: 0.8rem;
+    line-height: 120%;
   }
+
+  .communityManagement_service_offers_img_div {
+    width: 8.375rem;
+  }
+
+
+
+  .GrowthManagement_img {
+    width: 2.2rem !important;
+  }
+
+
+
 
 
 
