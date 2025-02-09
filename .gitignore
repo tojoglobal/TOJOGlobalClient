@@ -29,6 +29,3 @@ dist-ssr
 *.mov
 *.avi
 *.mkv
-
-# Ignore specific folder
-Website/public/TojoGlobalVideo/

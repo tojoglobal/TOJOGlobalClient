@@ -292,7 +292,7 @@ const CommunityManagement = () => {
                   <div className="searchEngineMarketing_leadGenaration_card_div_img">
                     <img
                       src="/Images/ServicesImage/management/Crisismanagement05.svg"
-                      alt="Website/public/Images/ServicesImage/management/Crisismanagement05.svg"
+                      alt="Images/ServicesImage/management/Crisismanagement05.svg"
                     />
                   </div>
                   <h4
@@ -461,7 +461,7 @@ const CommunityManagement = () => {
                   <div className="features_small_circel">
                     <img
                       src="/Images/ServicesImage/management/Crisismanagement05.svg"
-                      alt="Website/public/Images/ServicesImage/management/Crisismanagement05.svg"
+                      alt="Images/ServicesImage/management/Crisismanagement05.svg"
                     />
                   </div>
                   <div className="center_text_left_center_div_outline">
@@ -584,7 +584,7 @@ const CommunityManagement = () => {
           >
             <div className="communityManagement_service_offers_img_div">
               <img
-                src="\Images\ServicesImage\icons\content creation -01.svg"
+                src="/Images/ServicesImage/Allicons/content creation -01.svg"
                 alt="sevces offers icons"
               />
             </div>
@@ -614,7 +614,7 @@ const CommunityManagement = () => {
             data-aos-delay={4 * 200}
           >
             <div className="communityManagement_service_offers_img_div">
-              <img src="\Images\ServicesImage\icons\Event planning & execution-01.svg" />
+              <img src="/Images/ServicesImage/Allicons/Event planning & execution-01.svg" />
             </div>
 
             <div>
@@ -676,7 +676,7 @@ const CommunityManagement = () => {
           >
             <div className="communityManagement_service_offers_img_div">
               <img
-                src="\Images\ServicesImage\icons\Crisis-01.svg"
+                src="/Images/ServicesImage/Allicons/Crisis-01.svg"
                 alt="sevces offers icons"
               />
             </div>

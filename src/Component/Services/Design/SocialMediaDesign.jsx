@@ -266,7 +266,7 @@ const SocialMediaDesign = () => {
               >
                 <div className="features_small_circel">
                   <img
-                    src="\Images\ServicesImage\icons\Reach More People 1.svg"
+                    src="/Images/ServicesImage/Allicons/Reach More People 1.svg"
                     alt=""
                   />
                 </div>
