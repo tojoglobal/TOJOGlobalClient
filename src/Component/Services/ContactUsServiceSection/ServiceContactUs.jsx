@@ -7,7 +7,7 @@ import { AppContext } from "../../../AppContext";
 import "react-phone-input-2/lib/style.css";
 
 const ServiceContactUs = () => {
-  const { apiUrl, isTabView } = useContext(AppContext);
+  const { apiUrl, isTabView, isMobileView } = useContext(AppContext);
 
   // state
   const [errorMessage, setErrorMessage] = useState(null);
@@ -86,7 +86,14 @@ const ServiceContactUs = () => {
                   <div className="gradientRoundedDiv"></div>
                 </div>
 
-                <div className="contactus_input_section">
+                <div
+                  className="contactus_input_section"
+                  style={{
+                    ...(isMobileView && {
+                      paddingBottom: "0.5rem",
+                    }),
+                  }}
+                >
                   <h3 className="text-center">Book a Free Consultation</h3>
                   {errorMessage && errorMessage ? (
                     <p className="error-message">{errorMessage}</p>

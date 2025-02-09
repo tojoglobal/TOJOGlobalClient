@@ -5,26 +5,64 @@ import ServiceContactUs from "../ContactUsServiceSection/ServiceContactUs";
 import { AppContext } from "../../../AppContext";
 
 const SocailMediaManagement = () => {
-  const { apiUrl, isLargeMobileView } = useContext(AppContext);
+  const { isLargeMobileView, isMobileView } = useContext(AppContext);
 
   return (
     <main className="maindiv">
       {/* social service management top part  */}
-      <div className="socialMediaManagement_hero_part">
+      <div
+        className="socialMediaManagement_hero_part"
+        style={{
+          ...(isMobileView && {
+            paddingTop: "6.98rem",
+            paddingBottom: "3.19rem",
+          }),
+        }}
+      >
         <div className="socialMediaManagement_hero_part_div container">
           <div
             className="socialMediaManagement_hero_text_div "
             data-aos="fade-left"
           >
-            <h1>
+            {/* <h1
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  fontSize: "1.4rem",
+                }),
+              }}
+            >
               Elevate Your Brand with TOJO Global’s{" "}
               <span className="headdingGradientText">
                 Social Media Management
               </span>{" "}
-            </h1>
-            <p>
+            </h1> */}
+
+            <div className="hero_page_strongText">
+              <h2>
+                {" "}
+                Elevate Your{" "}
+                <span className="headdingGradientText">Brand </span>
+              </h2>
+              <h3 className="homePageHeroSubHeadingFristText">
+                with TOJO Global’s
+              </h3>
+              <h3 className="homePageHeroSubHeadingSecondText">
+                Social Media Management
+              </h3>
+            </div>
+
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  fontSize: "14px",
+                  lineHeight: "125%",
+                }),
+              }}
+            >
               In today's digital age, a strong social media presence is
-              essential. Tojo Global offers top-tier Social Media Management
+              essential. Tojo Global offers top tier Social Media Management
               services that elevate your brand, foster engagement, and deliver
               real results. Our expert team ensures your business thrives on
               ever-changing digital platforms, standing out in a competitive
@@ -59,7 +97,16 @@ const SocailMediaManagement = () => {
         <div className="WeOfferServices_hero_part_div container">
           {/* 01 */}
           <div data-aos="zoom-in-up" data-aos-delay={1 * 200}>
-            <h2 className="WeOfferServices_card_heading">
+            <h2
+              className="WeOfferServices_card_heading"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "center",
+                  paddingTop: "1.2rem",
+                  paddingBottom: "0.8rem",
+                }),
+              }}
+            >
               We Offer <br />
               Services for
             </h2>
@@ -157,8 +204,19 @@ const SocailMediaManagement = () => {
         <h1
           className="WeOfferServices_service_offers_heading"
           data-aos="zoom-in"
+          style={{
+            ...(isMobileView && {
+              textAlign: "center",
+              fontFamily: "var(--font-poppins)",
+              paddingTop: "0.2rem",
+              paddingBottom: "0.8rem",
+              lineHeight: "125%",
+            }),
+          }}
         >
-          The reason you need Social Media Management Service.
+          The reason you need{" "}
+          <span className="headdingGradientText">Social Media Management </span>{" "}
+          Service.
         </h1>
         <div className="scmServices_grid_part_div container">
           {/*01 Consistency */}
@@ -262,8 +320,26 @@ const SocailMediaManagement = () => {
             data-aos={isLargeMobileView ? "fade-up" : "fade-left"}
             data-aos-delay={1 * 200}
           >
-            <h2>Our Social Media Management Services</h2>
-            <p>
+            <h2
+              style={{
+                ...(isMobileView && {
+                  marginTop: "-1.4rem",
+                }),
+              }}
+            >
+              Our Social Media Management Services
+            </h2>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  fontFamily: "var(--font-poppins)",
+                  paddingTop: "0.5rem",
+                  paddingBottom: "1.6rem",
+                  lineHeight: "125%",
+                }),
+              }}
+            >
               Tojo Global offers a comprehensive range of social media
               management services designed to suit businesses of all sizes. We
               tailor our approach to meet your specific goals, ensuring you get

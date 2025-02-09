@@ -677,7 +677,6 @@
 
 .managementHelp_text_div p {
   color: var(--Color-4, #818cb6);
-
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -1185,8 +1184,9 @@
   }
 
   .managementHelp_text_div p {
-    color: var(--Color-4, #818cb6);
-    font-size: 0.85rem;
+    font-size: 14px;
+    line-height: 125%;
+    text-align: justify;
     margin-bottom: 0.5rem;
   }
 
