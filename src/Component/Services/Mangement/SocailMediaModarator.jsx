@@ -6,24 +6,53 @@ import ServiceContactUs from "../ContactUsServiceSection/ServiceContactUs";
 import { AppContext } from "../../../AppContext";
 
 function SocailMediaModarator() {
-  const { isLargeMobileView } = useContext(AppContext);
+  const { isLargeMobileView, isMobileView } = useContext(AppContext);
 
   return (
     <main className="maindiv">
       {/* social media modarator top part  */}
       <section className="smModaration_top_part">
-        <div className="communityManagement_hero_part">
+        <div
+          className="communityManagement_hero_part"
+          style={{
+            ...(isMobileView && {
+              paddingBottom: "3.19rem",
+            }),
+          }}
+        >
           <div className="communityManagement_hero_part_div container">
             <div
               className="communityManagement_hero_text_div"
               data-aos="fade-right"
             >
-              <h1>
+              {/* <h1>
                 Transform Your Online Business with TOJO GLOBAL’s Professional{" "}
                 <span className="headdingGradientText">Moderation </span>
                 service
-              </h1>
-              <p>
+              </h1> */}
+
+              <div className="hero_page_strongText">
+                <h2>
+                  {" "}
+                  Transform your{" "}
+                  <span className="headdingGradientText"> Online </span>
+                </h2>
+                <h3 className="homePageHeroSubHeadingFristText">
+                  Business with TOJO GLOBAL’s
+                </h3>
+                <h3 className="homePageHeroSubHeadingSecondText">
+                  Professional Moderation
+                </h3>
+              </div>
+              <p
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "14px",
+                    lineHeight: "125%",
+                  }),
+                }}
+              >
                 We offer 24/7 moderation services that enhance your business,
                 provide instant replies, manage posts seamlessly, engage your
                 audience, and drive your brand's success, all at unbeatable
@@ -59,6 +88,11 @@ function SocailMediaModarator() {
         <h1
           className="smModaration_service_offers_heading"
           data-aos="fade-down"
+          style={{
+            ...(isMobileView && {
+              fontFamily: "var(--font-poppins)",
+            }),
+          }}
         >
           Our services
         </h1>
@@ -104,15 +138,45 @@ function SocailMediaModarator() {
           <div
             className="OnePageSeo_second_part_Card_div smModaration_services_text_div"
             data-aos="fade-right"
+            style={{
+              ...(isMobileView && {
+                paddingTop: "4rem",
+                height: "18rem",
+              }),
+            }}
           >
             <div className="OnePageSeo_second_part_Card_icon">
               <img
-                src="/Images/ServicesImage/Allicons/facebook-icon.png"
+                src="https://i.ibb.co.com/WNYBDpcs/Social-FB.png"
                 alt="facebok  ico"
+                style={{
+                  ...(isMobileView && {
+                    width: "91px",
+                    height: "92px",
+                  }),
+                }}
               />
             </div>
-            <h3>Facebook Moderation Service</h3>
-            <p>
+            <h3
+              style={{
+                ...(isMobileView && {
+                  fontFamily: "var(--font-poppins)",
+                  fontSize: "20px",
+                  lineHeight: "120%",
+                  paddingBottom: "0.5rem",
+                }),
+              }}
+            >
+              Facebook Moderation Service
+            </h3>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               Our Facebook moderation service keeps your page active by replying
               to comments and messages around the clock. This helps create a
               lively community for your brand, making customers feel valued
@@ -124,15 +188,45 @@ function SocailMediaModarator() {
           <div
             className="OnePageSeo_second_part_Card_div smModaration_services_text_div"
             data-aos={isLargeMobileView ? "fade-up" : "fade-left"}
+            style={{
+              ...(isMobileView && {
+                paddingTop: "4rem",
+                height: "18rem",
+              }),
+            }}
           >
             <div className="OnePageSeo_second_part_Card_icon">
               <img
-                src="/Images/ServicesImage/Allicons/social 1.png"
+                src="https://i.ibb.co.com/3xMhCLf/Social-Insta.png"
                 alt="facebok  ico"
+                style={{
+                  ...(isMobileView && {
+                    width: "91px",
+                    height: "92px",
+                  }),
+                }}
               />
             </div>
-            <h3>Instagram Moderation Services</h3>
-            <p>
+            <h3
+              style={{
+                ...(isMobileView && {
+                  fontFamily: "var(--font-poppins)",
+                  fontSize: "20px",
+                  lineHeight: "120%",
+                  paddingBottom: "0.5rem",
+                }),
+              }}
+            >
+              Instagram Moderation Services
+            </h3>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               With our Instagram moderation service, we quickly respond to
               comments from your followers, making your brand feel more
               connected. We also manage your hashtags to help more people see
@@ -147,6 +241,15 @@ function SocailMediaModarator() {
         <h1
           className="smModaration_service_offers_heading"
           data-aos="fade-down"
+          style={{
+            ...(isMobileView && {
+              fontFamily: "var(--font-poppins)",
+              fontSize: "1.4rem",
+              lineHeight: "120%",
+              paddingTop: "0rem",
+              marginBottom: "-0.7rem",
+            }),
+          }}
         >
           We Elevate your brand’s growth with
         </h1>
@@ -238,6 +341,15 @@ function SocailMediaModarator() {
         <h1
           className="smModaration_service_offers_heading"
           data-aos="fade-down"
+          style={{
+            ...(isMobileView && {
+              fontFamily: "var(--font-poppins)",
+              fontSize: "1.4rem",
+              lineHeight: "120%",
+              paddingTop: "0.5rem",
+              marginBottom: "1.8rem",
+            }),
+          }}
         >
           Industries We Serve
         </h1>
@@ -252,10 +364,36 @@ function SocailMediaModarator() {
               <img
                 src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
+                style={{
+                  ...(isMobileView && {
+                    width: "3rem",
+                    height: "3rem",
+                  }),
+                }}
               />
             </div>
-            <h4>B2B Companies</h4>
-            <p>
+            <h4
+              style={{
+                ...(isMobileView && {
+                  fontSize: "20px",
+                  lineHeight: "120%",
+                  width: "100%",
+                }),
+              }}
+            >
+              B2B Companies
+            </h4>
+            <p
+              style={{
+                ...(isMobileView && {
+                  fontFamily: "var(--font-poppins)",
+                  fontSize: "14px",
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                  width: "100%",
+                }),
+              }}
+            >
               Enhance your brand's presence and build strong relationships with
               clients through effective moderation
             </p>
@@ -270,10 +408,36 @@ function SocailMediaModarator() {
               <img
                 src="/Images/ServicesImage/Allicons/Small Business (1).png"
                 alt="smBrandGrowth_services_card image"
+                style={{
+                  ...(isMobileView && {
+                    width: "3rem",
+                    height: "3rem",
+                  }),
+                }}
               />
             </div>
-            <h4>Small Businesses</h4>
-            <p>
+            <h4
+              style={{
+                ...(isMobileView && {
+                  fontSize: "20px",
+                  lineHeight: "120%",
+                  width: "100%",
+                }),
+              }}
+            >
+              Small Businesses
+            </h4>
+            <p
+              style={{
+                ...(isMobileView && {
+                  fontFamily: "var(--font-poppins)",
+                  fontSize: "14px",
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                  width: "100%",
+                }),
+              }}
+            >
               Engage with your local audience and create a loyal customer base
               while we manage your online interactions
             </p>
@@ -288,10 +452,36 @@ function SocailMediaModarator() {
               <img
                 src="/Images/ServicesImage/management/socailMediaModarationStartup.svg"
                 alt="smBrandGrowth_services_card image"
+                style={{
+                  ...(isMobileView && {
+                    width: "3rem",
+                    height: "3rem",
+                  }),
+                }}
               />
             </div>
-            <h4>Startups</h4>
-            <p>
+            <h4
+              style={{
+                ...(isMobileView && {
+                  fontSize: "20px",
+                  lineHeight: "120%",
+                  width: "100%",
+                }),
+              }}
+            >
+              Startups
+            </h4>
+            <p
+              style={{
+                ...(isMobileView && {
+                  fontFamily: "var(--font-poppins)",
+                  fontSize: "14px",
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                  width: "100%",
+                }),
+              }}
+            >
               Establish your brand identity and foster community growth as you
               focus on scaling your business
             </p>
@@ -300,11 +490,37 @@ function SocailMediaModarator() {
       </section>
       {/* Why Your Business Needs Moderation Services Now */}
       <section className="smBrandGrowth_hero_part">
-        <div data-aos="fade-down">
-          <h1 className="smModaration_service_offers_heading">
+        <div
+          data-aos="fade-down"
+          style={{
+            ...(isMobileView && {
+              marginTop: "-1.2rem",
+              marginBottom: "1rem",
+            }),
+          }}
+        >
+          <h1
+            className="smModaration_service_offers_heading"
+            style={{
+              ...(isMobileView && {
+                fontFamily: "var(--font-poppins)",
+                fontSize: "1.4rem",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             Why Your Business Needs Moderation Services Now
           </h1>
-          <p className="smModaration_service_offers_para">
+          <p
+            className="smModaration_service_offers_para"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                fontSize: "14px",
+                lineHeight: "125%",
+              }),
+            }}
+          >
             Without expert moderation, businesses face major challenges that
             hurt their growth. Negative or inappropriate content can damage your
             brand's reputation, and slow responses to customer inquiries can
@@ -385,6 +601,12 @@ function SocailMediaModarator() {
         <div
           className="professionalModeration_div professionalService_card_modaration_page"
           data-aos="fade-down"
+          style={{
+            ...(isMobileView && {
+              marginTop: "1rem",
+              marginBottom: "2rem",
+            }),
+          }}
         >
           <div className="professionalModeration_text_div">
             <h1 className="professionalModeration_service_offers_heading">
