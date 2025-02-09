@@ -48,7 +48,7 @@ const SocailMediaManagement = () => {
             data-aos="fade-right"
           >
             <img
-              src="/Images/ServicesImage/banner_images/12296433_4886674 1.png"
+              src="https://i.ibb.co.com/Q3FvYfZj/12296433-4886674.png"
               alt="socail media management_hero_part_div_Image.png"
             />
           </div>

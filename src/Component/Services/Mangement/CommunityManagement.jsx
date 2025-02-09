@@ -707,7 +707,7 @@ const CommunityManagement = () => {
           >
             <div className="communityManagement_service_offers_img_div">
               <img
-                src="\public\Images\ServicesImage\icons\Post Management-01 1.svg"
+                src="https://i.ibb.co.com/nMRLHYtz/Post-Management-01-1.png"
                 alt="sevces offers icons"
               />
             </div>
