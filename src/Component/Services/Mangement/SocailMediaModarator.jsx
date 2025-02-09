@@ -604,7 +604,7 @@ function SocailMediaModarator() {
           style={{
             ...(isMobileView && {
               marginTop: "1rem",
-              marginBottom: "2rem",
+              marginBottom: "1.9rem",
             }),
           }}
         >

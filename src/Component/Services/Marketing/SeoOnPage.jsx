@@ -7,9 +7,9 @@ const SeoOnPage = () => {
   const { isLargeMobileView } = useContext(AppContext);
 
   // Scroll to the top when the component mounts
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
     <main className="maindiv">
       {/* service management top part  */}
@@ -20,10 +20,24 @@ const SeoOnPage = () => {
               className="communityManagement_hero_text_div"
               data-aos="fade-left"
             >
-              <h1>
+              {/* <h1>
                 Enhance your online presence with TOJO GLOBAL’s expert{" "}
                 <span className="headdingGradientText">SEO </span> service.
-              </h1>
+              </h1> */}
+
+              <div className="hero_page_strongText">
+                <h2>
+                  {" "}
+                  Enhance your{" "}
+                  <span className="headdingGradientText"> Online </span>
+                </h2>
+                <h3 className="homePageHeroSubHeadingFristText">
+                  presence with TOJO GLOBAL’s
+                </h3>
+                <h3 className="homePageHeroSubHeadingSecondText">
+                  expert SEO service
+                </h3>
+              </div>
               <p>
                 Our expert team elevates your search engine rankings and
                 connects you with your target audience using powerful marketing

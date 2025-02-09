@@ -108,8 +108,8 @@ const CommunityManagement = () => {
                 <p>
                   Our Telegram and Discord Management Service can significantly
                   enhance your Crypto project. We assist you in building a
-                  strong and amazing community by fostering engagement and
-                  encouraging discussions. Our expert team will manage your
+                  strong & amazing community by fostering engagement &
+                  encouraging discussions. Our expert teammate will manage your
                   channels, ensuring timely responses to questions, comments,
                   and feedback, which keeps your audience active and involved.
                   With regular updates and content sharing, we keep your
@@ -138,10 +138,10 @@ const CommunityManagement = () => {
             </div>
             <div data-aos="zoom-in-up">
               <p>
-                Telegram is another well-liked platform for building a Crypto
-                community. Around 99% of Crypto communities are in Telegram. It
-                provides safe communication and offers many features that help
-                create an active community.
+                Telegram is another well platform for building a crypto
+                community. Around 99% people of Crypto communities are in
+                Telegram. It provides safe communication and offers many
+                features that help create an active community.
               </p>
             </div>
           </div>
@@ -811,15 +811,21 @@ const CommunityManagement = () => {
             />
           </div>
           <div className="managementHelp_text_div" data-aos="fade-down">
-            <h2>
+            <h2
+              style={{
+                ...(isMobileView && {
+                  marginTop: "-0.6rem",
+                }),
+              }}
+            >
               If you are searching for such a strong Telegram and Discord
               management service, we are here to help you.
             </h2>
             <p>
               Many crypto projects around the world fail due to weak community
-              management, which can lead to a lack of trust and engagement.
-              Without proper support and communication, building loyalty becomes
-              difficult. That's why you need TOJO Global's community management
+              management, which can lead a lack of trust and engagement. Without
+              proper support and communication, building loyalty becomes
+              difficult. That is why your need TOJO Global community management
               services to ensure your project thrives and connects meaningfully
               with its audience. Let us help you create a strong, engaged
               community for lasting success.
