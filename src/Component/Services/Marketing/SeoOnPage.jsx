@@ -202,7 +202,7 @@ const SeoOnPage = () => {
           >
             <div className="smIndustries_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/B2B.png"
+                src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -220,7 +220,7 @@ const SeoOnPage = () => {
           >
             <div className="smIndustries_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/Small Business (1).png"
+                src="/Images/ServicesImage/Allicons/Small Business (1).png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -238,7 +238,7 @@ const SeoOnPage = () => {
           >
             <div className="smIndustries_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/B2B.png"
+                src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -256,7 +256,7 @@ const SeoOnPage = () => {
           >
             <div className="smIndustries_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/B2B.png"
+                src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -274,7 +274,7 @@ const SeoOnPage = () => {
           >
             <div className="smIndustries_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/Small Business (1).png"
+                src="/Images/ServicesImage/Allicons/Small Business (1).png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -291,7 +291,7 @@ const SeoOnPage = () => {
           >
             <div className="smIndustries_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/B2B.png"
+                src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -353,7 +353,7 @@ const SeoOnPage = () => {
           >
             <div className="smIndustries_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/B2B.png"
+                src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -372,7 +372,7 @@ const SeoOnPage = () => {
           >
             <div className="smIndustries_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/Small Business (1).png"
+                src="/Images/ServicesImage/Allicons/Small Business (1).png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -391,7 +391,7 @@ const SeoOnPage = () => {
           >
             <div className="smIndustries_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/B2B.png"
+                src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -410,7 +410,7 @@ const SeoOnPage = () => {
           >
             <div className="smIndustries_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/B2B.png"
+                src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -429,7 +429,7 @@ const SeoOnPage = () => {
           >
             <div className="smIndustries_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/Small Business (1).png"
+                src="/Images/ServicesImage/Allicons/Small Business (1).png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -448,7 +448,7 @@ const SeoOnPage = () => {
           >
             <div className="smIndustries_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/B2B.png"
+                src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>

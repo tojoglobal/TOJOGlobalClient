@@ -167,7 +167,7 @@ const CommunityManagement = () => {
                 >
                   <div className="searchEngineMarketing_leadGenaration_card_div_img">
                     <img
-                      src="/Images/ServicesImage/icons/Communication.png"
+                      src="/Images/ServicesImage/Allicons/Communication.png"
                       alt="communication image"
                     />
                   </div>
@@ -199,7 +199,7 @@ const CommunityManagement = () => {
                   data-aos-delay={2 * 100}
                 >
                   <div className="searchEngineMarketing_leadGenaration_card_div_img">
-                    <img src="/Images/ServicesImage/icons/Collaborating-In-Circle.png" />
+                    <img src="/Images/ServicesImage/Allicons/Collaborating-In-Circle.png" />
                   </div>
                   <h4
                     style={{
@@ -230,7 +230,7 @@ const CommunityManagement = () => {
                 >
                   <div className="searchEngineMarketing_leadGenaration_card_div_img">
                     <img
-                      src="/Images/ServicesImage/icons/Handshake Heart.png"
+                      src="/Images/ServicesImage/Allicons/Handshake Heart.png"
                       alt=""
                     />
                   </div>
@@ -261,7 +261,7 @@ const CommunityManagement = () => {
                   data-aos-delay={4 * 100}
                 >
                   <div className="searchEngineMarketing_leadGenaration_card_div_img">
-                    <img src="/Images/ServicesImage/icons/Popular.png" />
+                    <img src="/Images/ServicesImage/Allicons/Popular.png" />
                   </div>
                   <h4
                     style={{
@@ -323,7 +323,7 @@ const CommunityManagement = () => {
                   data-aos-delay={6 * 100}
                 >
                   <div className="searchEngineMarketing_leadGenaration_card_div_img">
-                    <img src="/Images/ServicesImage/icons/Positive Dynamic.png" />
+                    <img src="/Images/ServicesImage/Allicons/Positive Dynamic.png" />
                   </div>
                   <h4
                     style={{
@@ -373,7 +373,7 @@ const CommunityManagement = () => {
                   </div>
                   <div className="features_small_circel topBottom_left_cirecel">
                     <img
-                      src="/Images/ServicesImage/icons/Communication.png"
+                      src="/Images/ServicesImage/Allicons/Communication.png"
                       alt="communication image"
                     />
                   </div>
@@ -396,7 +396,7 @@ const CommunityManagement = () => {
                     <div className="center_text_left_center_second_outline"></div>
                   </div>
                   <div className="features_small_circel">
-                    <img src="/Images/ServicesImage/icons/Collaborating-In-Circle.png" />
+                    <img src="/Images/ServicesImage/Allicons/Collaborating-In-Circle.png" />
                   </div>
                 </div>
                 {/*03 left bottom features */}
@@ -415,7 +415,7 @@ const CommunityManagement = () => {
                   </div>
                   <div className="features_small_circel topBottom_left_cirecel">
                     <img
-                      src="/Images/ServicesImage/icons/Handshake Heart.png"
+                      src="/Images/ServicesImage/Allicons/Handshake Heart.png"
                       alt=""
                     />
                   </div>
@@ -439,7 +439,7 @@ const CommunityManagement = () => {
                   data-aos-delay={4 * 200}
                 >
                   <div className="features_small_circel topBottom_right_cirecel">
-                    <img src="/Images/ServicesImage/icons/Popular.png" />
+                    <img src="/Images/ServicesImage/Allicons/Popular.png" />
                   </div>
                   <div className="center_text_left_center_div_outline">
                     <div className="right_text_top_bottom_second_outline"></div>
@@ -483,7 +483,7 @@ const CommunityManagement = () => {
                   data-aos-delay={6 * 200}
                 >
                   <div className="features_small_circel topBottom_right_cirecel">
-                    <img src="/Images/ServicesImage/icons/Positive Dynamic.png" />
+                    <img src="/Images/ServicesImage/Allicons/Positive Dynamic.png" />
                   </div>
                   <div className="center_text_left_center_div_outline">
                     <div className="right_text_top_bottom_second_outline"></div>
@@ -523,7 +523,7 @@ const CommunityManagement = () => {
           >
             <div className="communityManagement_service_offers_img_div">
               <img
-                src="/Images/ServicesImage/icons/Group creation -01 1.svg"
+                src="/Images/ServicesImage/Allicons/Group creation -01 1.svg"
                 alt="sevces offers icons"
               />
             </div>
@@ -554,7 +554,7 @@ const CommunityManagement = () => {
           >
             <div className="communityManagement_service_offers_img_div">
               <img
-                src="/Images/ServicesImage/icons/247 Community Management-01.svg"
+                src="/Images/ServicesImage/Allicons/247 Community Management-01.svg"
                 alt="sevces offers icons"
               />
             </div>
@@ -644,7 +644,7 @@ const CommunityManagement = () => {
           >
             <div className="communityManagement_service_offers_img_div">
               <img
-                src="/Images/ServicesImage/icons/Positive Dynamic.png"
+                src="/Images/ServicesImage/Allicons/Positive Dynamic.png"
                 alt="sevces offers icons"
                 className="GrowthManagement_img"
               />
@@ -738,7 +738,7 @@ const CommunityManagement = () => {
             data-aos-delay={8 * 200}
           >
             <div className="communityManagement_service_offers_img_div">
-              <img src="/Images/ServicesImage/icons/Regulat Updates-01.svg" />
+              <img src="/Images/ServicesImage/Allicons/Regulat Updates-01.svg" />
             </div>
 
             <div>
@@ -766,7 +766,7 @@ const CommunityManagement = () => {
             data-aos-delay={9 * 200}
           >
             <div className="communityManagement_service_offers_img_div">
-              <img src="/Images/ServicesImage/icons/Feedback Collection & Analysis-01.svg" />
+              <img src="/Images/ServicesImage/Allicons/Feedback Collection & Analysis-01.svg" />
             </div>
 
             <div>

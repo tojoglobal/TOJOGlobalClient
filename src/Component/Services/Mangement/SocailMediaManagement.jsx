@@ -72,7 +72,7 @@ const SocailMediaManagement = () => {
           >
             <div className="WeOfferServices_card_iconTitle">
               <img
-                src="/Images/ServicesImage/icons/Small Business.png"
+                src="/Images/ServicesImage/Allicons/Small Business.png"
                 alt="WeOfferServices_card_imgae"
               />
               <h4>Small Businesses</h4>
@@ -91,7 +91,7 @@ const SocailMediaManagement = () => {
           >
             <div className="WeOfferServices_card_iconTitle">
               <img
-                src="/Images/ServicesImage/icons/Spaceship Launch Documentation.png"
+                src="/Images/ServicesImage/Allicons/Spaceship Launch Documentation.png"
                 alt="WeOfferServices_card_imgae"
               />
               <h4>Startups</h4>
@@ -110,7 +110,7 @@ const SocailMediaManagement = () => {
           >
             <div className="WeOfferServices_card_iconTitle">
               <img
-                src="/Images/ServicesImage/icons/Brand.svg"
+                src="/Images/ServicesImage/Allicons/Brand.svg"
                 alt="WeOfferServices_card_imgae"
               />
               <h4>Established Brands</h4>
@@ -129,7 +129,7 @@ const SocailMediaManagement = () => {
           >
             <div className="WeOfferServices_card_iconTitle">
               <img
-                src="/Images/ServicesImage/icons/Group 9105.svg"
+                src="/Images/ServicesImage/Allicons/Group 9105.svg"
                 alt="WeOfferServices_card_imgae"
               />
               <h4>E-commerce Stores</h4>
@@ -169,7 +169,7 @@ const SocailMediaManagement = () => {
           >
             <div className="scmServices_circel_text_div">
               <img
-                src="/Images/ServicesImage/icons/Consistency 1.svg"
+                src="/Images/ServicesImage/Allicons/Consistency 1.svg"
                 alt="scm services image "
               />
               <div className="scmServices_text_div">
@@ -186,7 +186,7 @@ const SocailMediaManagement = () => {
           >
             <div className="scmServices_circel_text_div">
               <img
-                src="/Images/ServicesImage/icons/Vector.svg"
+                src="/Images/ServicesImage/Allicons/Vector.svg"
                 alt="scm services image "
               />
               <div className="scmServices_text_div">
@@ -205,7 +205,7 @@ const SocailMediaManagement = () => {
           >
             <div className="scmServices_circel_text_div">
               <img
-                src="/Images/ServicesImage/icons/Growth 1.svg"
+                src="/Images/ServicesImage/Allicons/Growth 1.svg"
                 alt="scm services image "
               />
               <div className="scmServices_text_div">
@@ -224,7 +224,7 @@ const SocailMediaManagement = () => {
           >
             <div className="scmServices_circel_text_div">
               <img
-                src="/Images/ServicesImage/icons/Engagement 1.svg"
+                src="/Images/ServicesImage/Allicons/Engagement 1.svg"
                 alt="scm services image "
               />
               <div className="scmServices_text_div">
@@ -241,7 +241,7 @@ const SocailMediaManagement = () => {
           >
             <div className="scmServices_circel_text_div">
               <img
-                src="/Images/ServicesImage/icons/Lead 1.svg"
+                src="/Images/ServicesImage/Allicons/Lead 1.svg"
                 alt="scm services image "
               />
               <div className="scmServices_text_div">
@@ -284,7 +284,7 @@ const SocailMediaManagement = () => {
             data-aos-delay={2 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/content.svg"
+              src="/Images/ServicesImage/Allicons/content.svg"
               alt="ourSocialServices_card_text_div_icon"
             />
             <h4>Content Creation and Curation</h4>
@@ -300,7 +300,7 @@ const SocailMediaManagement = () => {
             data-aos-delay={3 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/social media 1.svg"
+              src="/Images/ServicesImage/Allicons/social media 1.svg"
               alt="ourSocialServices_card_text_div_icon"
             />
             <h4>Social Media Strategy Development</h4>
@@ -316,7 +316,7 @@ const SocailMediaManagement = () => {
             data-aos-delay={4 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/platform 1.svg"
+              src="/Images/ServicesImage/Allicons/platform 1.svg"
               alt="ourSocialServices_card_text_div_icon"
             />
             <h4>Platform Management</h4>
@@ -332,7 +332,7 @@ const SocailMediaManagement = () => {
             data-aos-delay={5 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/community 1.svg"
+              src="/Images/ServicesImage/Allicons/community 1.svg"
               alt="ourSocialServices_card_text_div_icon"
             />
             <h4>Community Management</h4>
@@ -349,7 +349,7 @@ const SocailMediaManagement = () => {
             data-aos-delay={6 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/ads 1.svg"
+              src="/Images/ServicesImage/Allicons/ads 1.svg"
               alt="ourSocialServices_card_text_div_icon"
             />
             <h4>Social Media Advertising</h4>
@@ -365,7 +365,7 @@ const SocailMediaManagement = () => {
             data-aos-delay={7 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/report 1.svg"
+              src="/Images/ServicesImage/Allicons/report 1.svg"
               alt="ourSocialServices_card_text_div_icon"
             />
             <h4>Performance Analytics and Reporting</h4>

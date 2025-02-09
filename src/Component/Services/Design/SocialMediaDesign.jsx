@@ -78,7 +78,7 @@ const SocialMediaDesign = () => {
             data-aos-delay={1 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Eye-catching thumbnails 1.svg"
+              src="/Images/ServicesImage/Allicons/Eye-catching thumbnails 1.svg"
               alt="socailMediaDesign_services_image"
             />
             <h4>Eye-Catching Thumbnails</h4>
@@ -91,7 +91,7 @@ const SocialMediaDesign = () => {
             data-aos-delay={2 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Creative social media posts 1.svg"
+              src="/Images/ServicesImage/Allicons/Creative social media posts 1.svg"
               alt="socailMediaDesign_services_image"
             />
             <h4>Creative Social Media Posts</h4>
@@ -104,7 +104,7 @@ const SocialMediaDesign = () => {
             data-aos-delay={3 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Engaging banners 1.svg"
+              src="/Images/ServicesImage/Allicons/Engaging banners 1.svg"
               alt="socailMediaDesign_services_image"
             />
             <h4>Engaging Banners</h4>
@@ -117,7 +117,7 @@ const SocialMediaDesign = () => {
             data-aos-delay={4 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Attractive headers and covers 1.svg"
+              src="/Images/ServicesImage/Allicons/Attractive headers and covers 1.svg"
               alt="socailMediaDesign_services_image"
             />
             <h4>Attractive headers and covers</h4>
@@ -130,7 +130,7 @@ const SocialMediaDesign = () => {
             data-aos-delay={5 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Fun stories and carousels 1.svg"
+              src="/Images/ServicesImage/Allicons/Fun stories and carousels 1.svg"
               alt="socailMediaDesign_services_image"
             />
             <h4>Fun stories and carousels</h4>
@@ -169,7 +169,7 @@ const SocialMediaDesign = () => {
                 </div> */}
                 <div className="features_small_circel topBottom_left_cirecel">
                   <img
-                    src="/Images/ServicesImage/icons/Create a Strong Brand Identity 1.svg"
+                    src="/Images/ServicesImage/Allicons/Create a Strong Brand Identity 1.svg"
                     alt="communication image"
                   />
                 </div>
@@ -193,7 +193,7 @@ const SocialMediaDesign = () => {
                 </div> */}
                 <div className="features_small_circel">
                   <img
-                    src="/Images/ServicesImage/icons/Beat the Competition1.svg"
+                    src="/Images/ServicesImage/Allicons/Beat the Competition1.svg"
                     alt=""
                   />
                 </div>
@@ -217,7 +217,7 @@ const SocialMediaDesign = () => {
                 </div> */}
                 <div className="features_small_circel topBottom_left_cirecel">
                   <img
-                    src="/Images/ServicesImage/icons/Overcome Short Attention Spans1.svg"
+                    src="/Images/ServicesImage/Allicons/Overcome Short Attention Spans1.svg"
                     alt=""
                   />
                 </div>
@@ -242,7 +242,7 @@ const SocialMediaDesign = () => {
               >
                 <div className="features_small_circel topBottom_right_cirecel">
                   <img
-                    src="/Images/ServicesImage/icons/Catch Attention Quickly1.svg"
+                    src="/Images/ServicesImage/Allicons/Catch Attention Quickly1.svg"
                     alt=""
                   />
                 </div>
@@ -290,7 +290,7 @@ const SocialMediaDesign = () => {
               >
                 <div className="features_small_circel topBottom_right_cirecel">
                   <img
-                    src="/Images/ServicesImage/icons/Turn Followers Into Customers1.svg"
+                    src="/Images/ServicesImage/Allicons/Turn Followers Into Customers1.svg"
                     alt="f"
                   />
                 </div>
@@ -462,7 +462,7 @@ const SocialMediaDesign = () => {
                 </svg>
                 <div className="Process_one_counter_top_circel_div">
                   <img
-                    src="/Images/ServicesImage/icons/Learn about Your Project.svg"
+                    src="/Images/ServicesImage/Allicons/Learn about Your Project.svg"
                     alt=""
                   />
                 </div>
@@ -774,7 +774,7 @@ const SocialMediaDesign = () => {
                 </svg>
                 <div className="Process_four_counter_top_circel_div">
                   <img
-                    src="/Images/ServicesImage/icons/Revise and Improve.svg"
+                    src="/Images/ServicesImage/Allicons/Revise and Improve.svg"
                     alt=""
                   />
                 </div>
@@ -912,7 +912,7 @@ const SocialMediaDesign = () => {
           >
             <div className="socailMediaDesign_whyChooseService_card_icon">
               <img
-                src="/Images/ServicesImage/icons/Affordable Pricing for Social Media Graphics.svg"
+                src="/Images/ServicesImage/Allicons/Affordable Pricing for Social Media Graphics.svg"
                 alt="Affordable Pricing for Social Media Graphics.svg"
               />
             </div>
@@ -933,7 +933,7 @@ const SocialMediaDesign = () => {
           >
             <div className="socailMediaDesign_whyChooseService_card_icon">
               <img
-                src="/Images/ServicesImage/icons/Dedicated Design Experts.svg"
+                src="/Images/ServicesImage/Allicons/Dedicated Design Experts.svg"
                 alt="Dedicated Design Experts.svg"
               />
             </div>
@@ -953,7 +953,7 @@ const SocialMediaDesign = () => {
           >
             <div className="socailMediaDesign_whyChooseService_card_icon">
               <img
-                src="/Images/ServicesImage/icons/Complete Digital Marketing Solutions.svg"
+                src="/Images/ServicesImage/Allicons/Complete Digital Marketing Solutions.svg"
                 alt="Complete Digital Marketing Solutions.svg"
               />
             </div>
@@ -984,7 +984,7 @@ const SocialMediaDesign = () => {
           >
             <div className="socailMediaDesign_services_social_card_image">
               <img
-                src="/Images/ServicesImage/icons/Mesa de trabajo 1 copy 2 1.svg"
+                src="/Images/ServicesImage/Allicons/Mesa de trabajo 1 copy 2 1.svg"
                 alt="socailMediaDesign_services_social_card_image"
               />
               <div className="socailMediaDesign_services_social_card_image_under_gradient"></div>
@@ -1006,7 +1006,7 @@ const SocialMediaDesign = () => {
           >
             <div className="socailMediaDesign_services_social_card_image">
               <img
-                src="/Images/ServicesImage/icons/Mesa de trabajo 1 1.svg"
+                src="/Images/ServicesImage/Allicons/Mesa de trabajo 1 1.svg"
                 alt="socailMediaDesign_services_social_card_image"
               />
               <div className="socailMediaDesign_services_social_card_image_under_gradient"></div>
@@ -1028,7 +1028,7 @@ const SocialMediaDesign = () => {
           >
             <div className="socailMediaDesign_services_social_card_image">
               <img
-                src="/Images/ServicesImage/icons/Pinterest.svg"
+                src="/Images/ServicesImage/Allicons/Pinterest.svg"
                 alt="socailMediaDesign_services_social_card_image"
               />
               <div className="socailMediaDesign_services_social_card_image_under_gradient"></div>
@@ -1049,7 +1049,7 @@ const SocialMediaDesign = () => {
           >
             <div className="socailMediaDesign_services_social_card_image">
               <img
-                src="/Images/ServicesImage/icons/Mesa de trabajo 1 copy 4 1.svg"
+                src="/Images/ServicesImage/Allicons/Mesa de trabajo 1 copy 4 1.svg"
                 alt="socailMediaDesign_services_social_card_image"
               />
               <div className="socailMediaDesign_services_social_card_image_under_gradient"></div>
@@ -1070,7 +1070,7 @@ const SocialMediaDesign = () => {
           >
             <div className="socailMediaDesign_services_social_card_image">
               <img
-                src="/Images/ServicesImage/icons/Mesa de trabajo 1 copy 3 1.svg"
+                src="/Images/ServicesImage/Allicons/Mesa de trabajo 1 copy 3 1.svg"
                 alt="socailMediaDesign_services_social_card_image"
               />
               <div className="socailMediaDesign_services_social_card_image_under_gradient"></div>
@@ -1091,7 +1091,7 @@ const SocialMediaDesign = () => {
           >
             <div className="socailMediaDesign_services_social_card_image">
               <img
-                src="/Images/ServicesImage/icons/Mesa de trabajo 1 copy 1.svg"
+                src="/Images/ServicesImage/Allicons/Mesa de trabajo 1 copy 1.svg"
                 alt="socailMediaDesign_services_social_card_image"
               />
               <div className="socailMediaDesign_services_social_card_image_under_gradient"></div>

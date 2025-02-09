@@ -47,7 +47,7 @@ const InfluencerMarketing = () => {
           >
             <div className="InfluencerMarketing_OurExpertise_card_icon">
               <img
-                src="/Images/ServicesImage/icons/Popular woman.png"
+                src="/Images/ServicesImage/Allicons/Popular woman.png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -65,7 +65,7 @@ const InfluencerMarketing = () => {
           >
             <div className="InfluencerMarketing_OurExpertise_card_icon">
               <img
-                src="/Images/ServicesImage/icons/Small Business (1).png"
+                src="/Images/ServicesImage/Allicons/Small Business (1).png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -97,7 +97,7 @@ const InfluencerMarketing = () => {
           >
             <div className="InfluencerMarketing_OurExpertise_card_imge B2C_Influencer_Marketing_icon">
               <img
-                src="/Images/ServicesImage/icons/Popular woman.png"
+                src="/Images/ServicesImage/Allicons/Popular woman.png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -116,7 +116,7 @@ const InfluencerMarketing = () => {
           >
             <div className="InfluencerMarketing_OurExpertise_card_imge Building_Credibility_icon">
               <img
-                src="/Images/ServicesImage/icons/Trust.png"
+                src="/Images/ServicesImage/Allicons/Trust.png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -139,7 +139,7 @@ const InfluencerMarketing = () => {
           >
             <div className="InfluencerMarketing_OurExpertise_card_imge Increasing_Campaign_Impact_icon">
               <img
-                src="/Images/ServicesImage/icons/Expand Influence.png"
+                src="/Images/ServicesImage/Allicons/Expand Influence.png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>

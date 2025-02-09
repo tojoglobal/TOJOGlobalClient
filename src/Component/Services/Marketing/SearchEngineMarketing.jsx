@@ -297,7 +297,7 @@ const SearchEngineMarketing = () => {
             data-aos-delay={1 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Increase Profits.png"
+              src="/Images/ServicesImage/Allicons/Increase Profits.png"
               alt="sems servics card icon image"
             />
             <h4>Increased Visibility</h4>
@@ -309,7 +309,7 @@ const SearchEngineMarketing = () => {
             data-aos-delay={2 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Targeted Audience 1.svg"
+              src="/Images/ServicesImage/Allicons/Targeted Audience 1.svg"
               alt="sems servics card icon image"
             />
             <h4>Targeted Audience</h4>
@@ -321,7 +321,7 @@ const SearchEngineMarketing = () => {
             data-aos-delay={3 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Boosted website trrafic 1.svg"
+              src="/Images/ServicesImage/Allicons/Boosted website trrafic 1.svg"
               alt="sems servics card icon image"
             />
             <h4>Boosted Website Traffic</h4>
@@ -333,7 +333,7 @@ const SearchEngineMarketing = () => {
             data-aos-delay={4 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Higher Conversion 1.svg"
+              src="/Images/ServicesImage/Allicons/Higher Conversion 1.svg"
               alt="sems servics card icon image"
             />
             <h4>Higher Conversion Rates</h4>
@@ -345,7 +345,7 @@ const SearchEngineMarketing = () => {
             data-aos-delay={5 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Cost-Effective 1.svg"
+              src="/Images/ServicesImage/Allicons/Cost-Effective 1.svg"
               alt="sems servics card icon image"
             />
             <h4>Cost-Effective Marketing</h4>
@@ -357,7 +357,7 @@ const SearchEngineMarketing = () => {
             data-aos-delay={6 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Measurable Results 1.svg"
+              src="/Images/ServicesImage/Allicons/Measurable Results 1.svg"
               alt="sems servics card icon image"
             />
             <h4>Measurable Results</h4>
@@ -369,7 +369,7 @@ const SearchEngineMarketing = () => {
             data-aos-delay={7 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Brand Trust and 1.svg"
+              src="/Images/ServicesImage/Allicons/Brand Trust and 1.svg"
               alt="sems servics card icon image"
             />
             <h4>Brand Trust and Credibility</h4>
@@ -381,7 +381,7 @@ const SearchEngineMarketing = () => {
             data-aos-delay={8 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Competitive 1.svg"
+              src="/Images/ServicesImage/Allicons/Competitive 1.svg"
               alt="sems servics card icon image"
             />
             <h4>Competitive Advantage</h4>
@@ -395,7 +395,7 @@ const SearchEngineMarketing = () => {
             data-aos-delay={9 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Flexible Campaigns 1.svg"
+              src="/Images/ServicesImage/Allicons/Flexible Campaigns 1.svg"
               alt="sems servics card icon image"
             />
             <h4>Flexible Campaigns</h4>
@@ -407,7 +407,7 @@ const SearchEngineMarketing = () => {
             data-aos-delay={10 * 200}
           >
             <img
-              src="/Images/ServicesImage/icons/Long-Term Growth 1.svg"
+              src="/Images/ServicesImage/Allicons/Long-Term Growth 1.svg"
               alt="sems servics card icon image"
             />
             <h4>Long-Term Growth 1.svg</h4>

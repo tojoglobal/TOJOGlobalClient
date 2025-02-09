@@ -67,7 +67,7 @@ function SocailMediaModarator() {
           <div className="smModaration_services_text_div" data-aos="zoom-in">
             <div className="smModaration_services_social_iconDiv">
               <img
-                src="/Images/ServicesImage/icons/facebook-icon.png"
+                src="/Images/ServicesImage/Allicons/facebook-icon.png"
                 alt="facebok  ico"
               />
             </div>
@@ -84,7 +84,7 @@ function SocailMediaModarator() {
           <div className="smModaration_services_text_div" data-aos="zoom-in">
             <div className="smModaration_services_social_iconDiv">
               <img
-                src="/Images/ServicesImage/icons/social 1.png"
+                src="/Images/ServicesImage/Allicons/social 1.png"
                 alt="facebok  ico"
               />
             </div>
@@ -107,7 +107,7 @@ function SocailMediaModarator() {
           >
             <div className="OnePageSeo_second_part_Card_icon">
               <img
-                src="/Images/ServicesImage/icons/facebook-icon.png"
+                src="/Images/ServicesImage/Allicons/facebook-icon.png"
                 alt="facebok  ico"
               />
             </div>
@@ -127,7 +127,7 @@ function SocailMediaModarator() {
           >
             <div className="OnePageSeo_second_part_Card_icon">
               <img
-                src="/Images/ServicesImage/icons/social 1.png"
+                src="/Images/ServicesImage/Allicons/social 1.png"
                 alt="facebok  ico"
               />
             </div>
@@ -159,7 +159,7 @@ function SocailMediaModarator() {
           >
             <div className="smBrandGrowth_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/247 1.svg"
+                src="/Images/ServicesImage/Allicons/247 1.svg"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -178,7 +178,7 @@ function SocailMediaModarator() {
           >
             <div className="smBrandGrowth_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/Instant reply 1.svg"
+                src="/Images/ServicesImage/Allicons/Instant reply 1.svg"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -198,7 +198,7 @@ function SocailMediaModarator() {
           >
             <div className="smBrandGrowth_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/Post Manage 1.svg"
+                src="/Images/ServicesImage/Allicons/Post Manage 1.svg"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -218,7 +218,7 @@ function SocailMediaModarator() {
           >
             <div className="smBrandGrowth_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/COntent Mangement 1.svg"
+                src="/Images/ServicesImage/Allicons/COntent Mangement 1.svg"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -250,7 +250,7 @@ function SocailMediaModarator() {
           >
             <div className="smIndustries_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/B2B.png"
+                src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -268,7 +268,7 @@ function SocailMediaModarator() {
           >
             <div className="smIndustries_services_card_icon">
               <img
-                src="/Images/ServicesImage/icons/Small Business (1).png"
+                src="/Images/ServicesImage/Allicons/Small Business (1).png"
                 alt="smBrandGrowth_services_card image"
               />
             </div>

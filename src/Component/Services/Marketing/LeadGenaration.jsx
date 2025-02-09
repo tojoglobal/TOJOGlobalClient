@@ -111,7 +111,7 @@ const LeadGenaration = () => {
           >
             <div className="searchEngineMarketing_leadGenaration_card_div_img">
               <img
-                src="/Images/ServicesImage/icons/Conversion Rate Optimization 2.svg"
+                src="/Images/ServicesImage/Allicons/Conversion Rate Optimization 2.svg"
                 alt="lead genaration servics card icon image"
               />
             </div>
@@ -129,7 +129,7 @@ const LeadGenaration = () => {
           >
             <div className="searchEngineMarketing_leadGenaration_card_div_img">
               <img
-                src="/Images/ServicesImage/icons/Content Marketing 2.svg"
+                src="/Images/ServicesImage/Allicons/Content Marketing 2.svg"
                 alt="sems servics card icon image"
               />
             </div>
@@ -147,7 +147,7 @@ const LeadGenaration = () => {
           >
             <div className="searchEngineMarketing_leadGenaration_card_div_img">
               <img
-                src="/Images/ServicesImage/icons/Email Marketing 1.svg"
+                src="/Images/ServicesImage/Allicons/Email Marketing 1.svg"
                 alt="sems servics card icon image"
               />
             </div>
@@ -165,7 +165,7 @@ const LeadGenaration = () => {
           >
             <div className="searchEngineMarketing_leadGenaration_card_div_img">
               <img
-                src="/Images/ServicesImage/icons/Account-based Marketing (ABM) 1.svg"
+                src="/Images/ServicesImage/Allicons/Account-based Marketing (ABM) 1.svg"
                 alt="sems servics card icon image"
               />
             </div>
@@ -183,7 +183,7 @@ const LeadGenaration = () => {
           >
             <div className="searchEngineMarketing_leadGenaration_card_div_img">
               <img
-                src="/Images/ServicesImage/icons/Demand Generation 1.svg"
+                src="/Images/ServicesImage/Allicons/Demand Generation 1.svg"
                 alt="sems servics card icon image"
               />
             </div>
@@ -201,7 +201,7 @@ const LeadGenaration = () => {
           >
             <div className="searchEngineMarketing_leadGenaration_card_div_img">
               <img
-                src="/Images/ServicesImage/icons/LinkedIn Lead Generation 1.svg"
+                src="/Images/ServicesImage/Allicons/LinkedIn Lead Generation 1.svg"
                 alt="sems servics card icon image"
               />
             </div>
@@ -219,7 +219,7 @@ const LeadGenaration = () => {
           >
             <div className="searchEngineMarketing_leadGenaration_card_div_img">
               <img
-                src="/Images/ServicesImage/icons/B2B 1.svg"
+                src="/Images/ServicesImage/Allicons/B2B 1.svg"
                 alt="sems servics card icon image"
               />
             </div>
@@ -237,7 +237,7 @@ const LeadGenaration = () => {
           >
             <div className="searchEngineMarketing_leadGenaration_card_div_img">
               <img
-                src="/Images/ServicesImage/icons/IT Lead Generation 1.svg"
+                src="/Images/ServicesImage/Allicons/IT Lead Generation 1.svg"
                 alt="sems servics card icon image"
               />
             </div>
@@ -255,7 +255,7 @@ const LeadGenaration = () => {
           >
             <div className="searchEngineMarketing_leadGenaration_card_div_img">
               <img
-                src="/Images/ServicesImage/icons/Analytics & Reporting 1.svg"
+                src="/Images/ServicesImage/Allicons/Analytics & Reporting 1.svg"
                 alt="sems servics card icon image"
               />
             </div>
@@ -307,7 +307,7 @@ const LeadGenaration = () => {
                 <div className="step_buttom_gradinet"> </div>
                 <div className="step-icon">
                   <img
-                    src="/Images/ServicesImage/icons/goals 1 (1).svg"
+                    src="/Images/ServicesImage/Allicons/goals 1 (1).svg"
                     alt="Set Clear Goals Icon"
                   />
                 </div>
@@ -330,7 +330,7 @@ const LeadGenaration = () => {
                 <div className="step_buttom_gradinet"> </div>
                 <div className="step-icon">
                   <img
-                    src="/Images/ServicesImage/icons/reasearch 1.svg"
+                    src="/Images/ServicesImage/Allicons/reasearch 1.svg"
                     alt="Research and Analysis Icon"
                   />
                 </div>
@@ -352,7 +352,7 @@ const LeadGenaration = () => {
                 <div className="step_buttom_gradinet"> </div>
                 <div className="step-icon">
                   <img
-                    src="/Images/ServicesImage/icons/Strategy 1.svg"
+                    src="/Images/ServicesImage/Allicons/Strategy 1.svg"
                     alt="Custom Strategy Development Icon"
                   />
                 </div>
@@ -373,7 +373,7 @@ const LeadGenaration = () => {
                 <div className="step_buttom_gradinet"> </div>
                 <div className="step-icon">
                   <img
-                    src="/Images/ServicesImage/icons/Execution 1.svg"
+                    src="/Images/ServicesImage/Allicons/Execution 1.svg"
                     alt="Execution and Optimization Icon"
                   />
                 </div>
@@ -394,7 +394,7 @@ const LeadGenaration = () => {
                 <div className="step_buttom_gradinet"> </div>
                 <div className="step-icon">
                   <img
-                    src="/Images/ServicesImage/icons/Reporting 1.svg"
+                    src="/Images/ServicesImage/Allicons/Reporting 1.svg"
                     alt="Reporting and Insights Icon"
                   />
                 </div>
@@ -453,7 +453,7 @@ const LeadGenaration = () => {
           >
             <div className="InfluencerMarketing_OurExpertise_card_imge B2C_Influencer_Marketing_icon">
               <img
-                src="/Images/ServicesImage/icons/Reach the Right People 1.svg"
+                src="/Images/ServicesImage/Allicons/Reach the Right People 1.svg"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -472,7 +472,7 @@ const LeadGenaration = () => {
           >
             <div className="InfluencerMarketing_OurExpertise_card_imge Building_Credibility_icon">
               <img
-                src="/Images/ServicesImage/icons/Get Better Leads 1.svg"
+                src="/Images/ServicesImage/Allicons/Get Better Leads 1.svg"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -491,7 +491,7 @@ const LeadGenaration = () => {
           >
             <div className="InfluencerMarketing_OurExpertise_card_imge Increasing_Campaign_Impact_icon">
               <img
-                src="/Images/ServicesImage/icons/Save Time and Money 1.svg"
+                src="/Images/ServicesImage/Allicons/Save Time and Money 1.svg"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -510,7 +510,7 @@ const LeadGenaration = () => {
           >
             <div className="InfluencerMarketing_OurExpertise_card_imge B2C_Influencer_Marketing_icon">
               <img
-                src="/Images/ServicesImage/icons/Increase Brand Awareness 1.svg"
+                src="/Images/ServicesImage/Allicons/Increase Brand Awareness 1.svg"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -529,7 +529,7 @@ const LeadGenaration = () => {
           >
             <div className="InfluencerMarketing_OurExpertise_card_imge Building_Credibility_icon">
               <img
-                src="/Images/ServicesImage/icons/Stay Ahead of Competitors 1.svg"
+                src="/Images/ServicesImage/Allicons/Stay Ahead of Competitors 1.svg"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -548,7 +548,7 @@ const LeadGenaration = () => {
           >
             <div className="InfluencerMarketing_OurExpertise_card_imge Increasing_Campaign_Impact_icon">
               <img
-                src="/Images/ServicesImage/icons/Understand Your Audience 1.svg"
+                src="/Images/ServicesImage/Allicons/Understand Your Audience 1.svg"
                 alt="smBrandGrowth_services_card image"
               />
             </div>
@@ -567,7 +567,7 @@ const LeadGenaration = () => {
           >
             <div className="InfluencerMarketing_OurExpertise_card_imge Increasing_Campaign_Impact_icon">
               <img
-                src="/Images/ServicesImage/icons/Maximize Your ROI 1.svg"
+                src="/Images/ServicesImage/Allicons/Maximize Your ROI 1.svg"
                 alt="smBrandGrowth_services_card image"
               />
             </div>

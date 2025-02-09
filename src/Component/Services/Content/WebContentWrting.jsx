@@ -59,7 +59,7 @@ const WebContentWrting = () => {
             <div className="webContentWriting_blogWriting_card_div">
               <div className="webContentWriting_blogWriting_card_text_div">
                 <img
-                  src="/Images/ServicesImage/icons/top quality 1.svg"
+                  src="/Images/ServicesImage/Allicons/top quality 1.svg"
                   alt="webContentWriting_blogWriting_card_div image"
                 />
                 <h4>Top Quality</h4>
@@ -87,7 +87,7 @@ const WebContentWrting = () => {
             <div className="webContentWriting_blogWriting_card_div">
               <div className="webContentWriting_blogWriting_card_text_div">
                 <img
-                  src="/Images/ServicesImage/icons/polish 1.svg"
+                  src="/Images/ServicesImage/Allicons/polish 1.svg"
                   alt="webContentWriting_blogWriting_card_div image"
                 />
                 <h4>Extra Polish</h4>
@@ -100,7 +100,7 @@ const WebContentWrting = () => {
             <div className="webContentWriting_blogWriting_card_div">
               <div className="webContentWriting_blogWriting_card_text_div">
                 <img
-                  src="/Images/ServicesImage/icons/seo 1.svg"
+                  src="/Images/ServicesImage/Allicons/seo 1.svg"
                   alt="webContentWriting_blogWriting_card_div image"
                 />
                 <h4>SEO-Friendly Writing</h4>
@@ -392,7 +392,7 @@ const WebContentWrting = () => {
             <div className="webContentWriting_seoContent_text_div">
               <div className="webContentWriting_seoContent_icon">
                 <img
-                  src="/Images/ServicesImage/icons/keyword 1.svg"
+                  src="/Images/ServicesImage/Allicons/keyword 1.svg"
                   alt="webContentWriting_seoContent_icon"
                 />
               </div>
@@ -408,7 +408,7 @@ const WebContentWrting = () => {
             <div className="webContentWriting_seoContent_text_div">
               <div className="webContentWriting_seoContent_icon">
                 <img
-                  src="/Images/ServicesImage/icons/content creation 1.svg"
+                  src="/Images/ServicesImage/Allicons/content creation 1.svg"
                   alt="webContentWriting_seoContent_icon"
                 />
               </div>
@@ -423,7 +423,7 @@ const WebContentWrting = () => {
             <div className="webContentWriting_seoContent_text_div">
               <div className="webContentWriting_seoContent_icon">
                 <img
-                  src="/Images/ServicesImage/icons/optimaization 1.svg"
+                  src="/Images/ServicesImage/Allicons/optimaization 1.svg"
                   alt="webContentWriting_seoContent_icon"
                 />
               </div>
@@ -439,7 +439,7 @@ const WebContentWrting = () => {
             <div className="webContentWriting_seoContent_text_div">
               <div className="webContentWriting_seoContent_icon">
                 <img
-                  src="/Images/ServicesImage/icons/strategy 1 (1).svg"
+                  src="/Images/ServicesImage/Allicons/strategy 1 (1).svg"
                   alt="webContentWriting_seoContent_icon"
                 />
               </div>
@@ -455,7 +455,7 @@ const WebContentWrting = () => {
             <div className="webContentWriting_seoContent_text_div">
               <div className="webContentWriting_seoContent_icon">
                 <img
-                  src="/Images/ServicesImage/icons/performance 1.svg"
+                  src="/Images/ServicesImage/Allicons/performance 1.svg"
                   alt="webContentWriting_seoContent_icon"
                 />
               </div>
@@ -549,7 +549,7 @@ const WebContentWrting = () => {
                     </defs>
                   </svg>
                   <img
-                    src="/Images/ServicesImage/icons/article 1.svg"
+                    src="/Images/ServicesImage/Allicons/article 1.svg"
                     alt="webContentWriting_articalWriteOffers_light_outline-icon"
                   />
                   {/* Custom Articles */}
@@ -618,7 +618,7 @@ const WebContentWrting = () => {
                     </defs>
                   </svg>
                   <img
-                    src="/Images/ServicesImage/icons/delevery 1.svg"
+                    src="/Images/ServicesImage/Allicons/delevery 1.svg"
                     alt="webContentWriting_articalWriteOffers_light_outline-icon"
                   />
                   {/* Timely Delivery */}
@@ -687,7 +687,7 @@ const WebContentWrting = () => {
                     </defs>
                   </svg>
                   <img
-                    src="/Images/ServicesImage/icons/seo 2.svg"
+                    src="/Images/ServicesImage/Allicons/seo 2.svg"
                     alt="webContentWriting_articalWriteOffers_light_outline-icon"
                   />
                   {/* SEO Optimization */}
@@ -759,7 +759,7 @@ const WebContentWrting = () => {
                     </defs>
                   </svg>
                   <img
-                    src="/Images/ServicesImage/icons/Unlimited rivision 1.svg"
+                    src="/Images/ServicesImage/Allicons/Unlimited rivision 1.svg"
                     alt="webContentWriting_articalWriteOffers_light_outline-icon"
                   />
                   {/* Revisions*/}
@@ -830,7 +830,7 @@ const WebContentWrting = () => {
                     </defs>
                   </svg>
                   <img
-                    src="/Images/ServicesImage/icons/research 1.svg"
+                    src="/Images/ServicesImage/Allicons/research 1.svg"
                     alt="webContentWriting_articalWriteOffers_light_outline-icon"
                   />
                   {/* Research-Based Content */}
@@ -947,7 +947,7 @@ const WebContentWrting = () => {
               {/* facebook */}
               <div className="socailMediaDesign_services_social_card_image one">
                 <img
-                  src="/Images/ServicesImage/icons/Mesa de trabajo 1 1.svg"
+                  src="/Images/ServicesImage/Allicons/Mesa de trabajo 1 1.svg"
                   alt="socailMediaDesign_services_social_card_image"
                 />
                 <div className="socailMediaDesign_services_social_card_image_under_gradient "></div>
@@ -955,7 +955,7 @@ const WebContentWrting = () => {
               {/* instragram */}
               <div className="socailMediaDesign_services_social_card_image two">
                 <img
-                  src="/Images/ServicesImage/icons/Mesa de trabajo 1 copy 2 1.svg"
+                  src="/Images/ServicesImage/Allicons/Mesa de trabajo 1 copy 2 1.svg"
                   alt="socailMediaDesign_services_social_card_image"
                 />
                 <div className="socailMediaDesign_services_social_card_image_under_gradient "></div>
@@ -963,7 +963,7 @@ const WebContentWrting = () => {
               {/* twitter */}
               <div className="socailMediaDesign_services_social_card_image three">
                 <img
-                  src="/Images/ServicesImage/icons/Mesa de trabajo 1 copy 1.svg"
+                  src="/Images/ServicesImage/Allicons/Mesa de trabajo 1 copy 1.svg"
                   alt="socailMediaDesign_services_social_card_image"
                 />
                 <div className="socailMediaDesign_services_social_card_image_under_gradient"></div>
@@ -971,7 +971,7 @@ const WebContentWrting = () => {
               {/* linkedin */}
               <div className="socailMediaDesign_services_social_card_image four">
                 <img
-                  src="/Images/ServicesImage/icons/Mesa de trabajo 1 copy 3 1.svg"
+                  src="/Images/ServicesImage/Allicons/Mesa de trabajo 1 copy 3 1.svg"
                   alt="socailMediaDesign_services_social_card_image"
                 />
                 <div className="socailMediaDesign_services_social_card_image_under_gradient"></div>
