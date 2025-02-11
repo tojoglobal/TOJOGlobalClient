@@ -96,42 +96,6 @@ function SocailMediaModarator() {
         >
           Our services
         </h1>
-        {/* <div className="smModaration_services">
-          facebook modaration
-          <div className="smModaration_services_text_div" data-aos="zoom-in">
-            <div className="smModaration_services_social_iconDiv">
-              <img
-                src="/Images/ServicesImage/Allicons/facebook-icon.png"
-                alt="facebok  ico"
-              />
-            </div>
-            <h3>Facebook Moderation Service</h3>
-            <p>
-              Our Facebook moderation service keeps your page active by replying
-              to comments and messages around the clock. This helps create a
-              lively community for your brand, making customers feel valued
-              while we also remove any inappropriate content to keep things
-              positive
-            </p>
-          </div>
-          instargram  modaration
-          <div className="smModaration_services_text_div" data-aos="zoom-in">
-            <div className="smModaration_services_social_iconDiv">
-              <img
-                src="/Images/ServicesImage/Allicons/social 1.png"
-                alt="facebok  ico"
-              />
-            </div>
-            <h3>Instagram Moderation Services</h3>
-            <p>
-              With our Instagram moderation service, we quickly respond to
-              comments from your followers, making your brand feel more
-              connected. We also manage your hashtags to help more people see
-              your posts, allowing you to reach a wider audience and build a
-              loyal fanbase
-            </p>
-          </div>
-        </div> */}
 
         <div className="OnePageSeo_second_part_Card">
           {/* facebook modaration */}

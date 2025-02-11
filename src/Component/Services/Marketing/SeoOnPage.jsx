@@ -4,17 +4,25 @@ import ServiceContactUs from "../ContactUsServiceSection/ServiceContactUs";
 import { useEffect, useContext } from "react";
 import { AppContext } from "../../../AppContext";
 const SeoOnPage = () => {
-  const { isLargeMobileView } = useContext(AppContext);
+  const { isLargeMobileView, isMobileView } = useContext(AppContext);
 
   // Scroll to the top when the component mounts
   // useEffect(() => {
   //   window.scrollTo(0, 0);
   // }, []);
+
   return (
     <main className="maindiv">
       {/* service management top part  */}
       <section className="communityManagement_top_part">
-        <div className="OnePageSeo_hero_part">
+        <div
+          className="OnePageSeo_hero_part"
+          style={{
+            ...(isMobileView && {
+              paddingTop: "6rem",
+            }),
+          }}
+        >
           <div className="OnePageSeo_hero_part_div container">
             <div
               className="communityManagement_hero_text_div"
@@ -38,7 +46,14 @@ const SeoOnPage = () => {
                   expert SEO service
                 </h3>
               </div>
-              <p>
+              <p
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    wordSpacing: "-1px",
+                  }),
+                }}
+              >
                 Our expert team elevates your search engine rankings and
                 connects you with your target audience using powerful marketing
                 tools and intelligent SEO strategies
@@ -59,6 +74,7 @@ const SeoOnPage = () => {
             <div
               className="OnePageSeo_hero_part_image_div"
               data-aos="fade-right"
+              style={isMobileView ? { display: "none" } : { display: "block" }}
             >
               <img
                 src="/Images/ServicesImage/banner_images/SEO_onpage.png"
@@ -69,7 +85,15 @@ const SeoOnPage = () => {
         </div>
         <div className="OnePageSeo_second_part">
           <div>
-            <h1 className="OnePageSeo_second_part_heading" data-aos="fade-down">
+            <h1
+              className="OnePageSeo_second_part_heading"
+              data-aos="fade-down"
+              style={{
+                ...(isMobileView && {
+                  marginBottom: "5rem",
+                }),
+              }}
+            >
               Services We Cover
             </h1>
             <div className="OnePageSeo_second_part_Card">
@@ -77,6 +101,12 @@ const SeoOnPage = () => {
               <div
                 className="OnePageSeo_second_part_Card_div"
                 data-aos="fade-right"
+                style={{
+                  ...(isMobileView && {
+                    paddingTop: "4rem",
+                    height: "18rem",
+                  }),
+                }}
               >
                 <div className="OnePageSeo_second_part_Card_icon">
                   <svg
@@ -125,7 +155,15 @@ const SeoOnPage = () => {
                   </svg>
                 </div>
                 <h3>On-Page SEO</h3>
-                <p>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                      marginTop: "19px",
+                    }),
+                  }}
+                >
                   We optimize every element of your website to improve its
                   visibility on search engines. This includes making your
                   content to ensure it is relevant and engaging, updating meta
@@ -140,6 +178,12 @@ const SeoOnPage = () => {
               <div
                 className="OnePageSeo_second_part_Card_div"
                 data-aos={isLargeMobileView ? "fade-up" : "fade-left"}
+                style={{
+                  ...(isMobileView && {
+                    paddingTop: "4rem",
+                    height: "18rem",
+                  }),
+                }}
               >
                 <div className="OnePageSeo_second_part_Card_icon">
                   <svg
@@ -184,7 +228,15 @@ const SeoOnPage = () => {
                   </svg>
                 </div>
                 <h3>Off-Page SEO</h3>
-                <p>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                      marginTop: "19px",
+                    }),
+                  }}
+                >
                   We focus on building your online reputation through targeted
                   strategies beyond your website. This includes engaging with
                   audiences on social media platforms, forming partnerships with
@@ -221,7 +273,14 @@ const SeoOnPage = () => {
               />
             </div>
             <h4>SEO Analysis </h4>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               We perform a detailed analysis of your current SEO standing to
               identify strengths and areas for improvement
             </p>
