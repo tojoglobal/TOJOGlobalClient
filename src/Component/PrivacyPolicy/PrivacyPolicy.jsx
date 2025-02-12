@@ -5,11 +5,7 @@ const PrivacyPolicy = () => {
   return (
     <div className="univarsal_div">
       <Helmet>
-        <title>TOJO Global - Privacy Policy </title>
-        <link
-          rel="canonical"
-          href="https://www.tojoglobal.com/privacyPolicy/"
-        />
+        <title>TOJO Global - Privacy Policy </title>      
       </Helmet>
       <div className="container">
         <div className="text-center univarsal_text_div text-white">

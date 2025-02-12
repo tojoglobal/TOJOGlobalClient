@@ -6,11 +6,6 @@ import { AppContext } from "../../../AppContext";
 const SeoOnPage = () => {
   const { isLargeMobileView, isMobileView } = useContext(AppContext);
 
-  // Scroll to the top when the component mounts
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
-
   return (
     <main className="maindiv">
       {/* service management top part  */}
@@ -256,11 +251,20 @@ const SeoOnPage = () => {
         <h1
           className="smModaration_service_offers_heading"
           data-aos="fade-down"
+          style={{
+            ...(isMobileView && {
+              paddingBottom: "2rem",
+            }),
+          }}
         >
           Industries We Serve
         </h1>
         {/*01 SEO Analysis */}
-        <div className="smIndustries_services_card_div">
+        <div className="smIndustries_services_card_div"  style={{
+            ...(isMobileView && {
+              paddingBottom: "1.8rem",
+            }),
+          }}>
           <div
             className="smIndustries_services_Text_card_div Small_Businesses_div"
             data-aos="fade-down"
@@ -270,6 +274,12 @@ const SeoOnPage = () => {
               <img
                 src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
+                style={{
+                  ...(isMobileView && {
+                   width:'70px',
+                   height:'72px',
+                  }),
+                }}
               />
             </div>
             <h4>SEO Analysis </h4>
@@ -278,6 +288,7 @@ const SeoOnPage = () => {
                 ...(isMobileView && {
                   textAlign: "justify",
                   lineHeight: "120%",
+                  width:'100%'
                 }),
               }}
             >
@@ -295,10 +306,22 @@ const SeoOnPage = () => {
               <img
                 src="/Images/ServicesImage/Allicons/Small Business (1).png"
                 alt="smBrandGrowth_services_card image"
+                style={{
+                  ...(isMobileView && {
+                   width:'70px',
+                   height:'72px',
+                  }),
+                }}
               />
             </div>
             <h4>Keyword Research</h4>
-            <p>
+            <p style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                  width:'100%'
+                }),
+              }}>
               We perform a detailed analysis of your current SEO standing to
               identify strengths and areas for improvement
             </p>
@@ -313,10 +336,22 @@ const SeoOnPage = () => {
               <img
                 src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
+                style={{
+                  ...(isMobileView && {
+                   width:'70px',
+                   height:'72px',
+                  }),
+                }}
               />
             </div>
             <h4>Link Building</h4>
-            <p>
+            <p style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                  width:'100%'
+                }),
+              }}>
               We research essential keywords to discover what your potential
               customers are searching for
             </p>
@@ -331,10 +366,22 @@ const SeoOnPage = () => {
               <img
                 src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
+                style={{
+                  ...(isMobileView && {
+                   width:'70px',
+                   height:'72px',
+                  }),
+                }}
               />
             </div>
             <h4>SEO Monitoring</h4>
-            <p>
+            <p style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                  width:'100%'
+                }),
+              }}>
               We create high-quality backlinks to improve your rankings in
               Google and Bing search results
             </p>
@@ -349,10 +396,22 @@ const SeoOnPage = () => {
               <img
                 src="/Images/ServicesImage/Allicons/Small Business (1).png"
                 alt="smBrandGrowth_services_card image"
+                style={{
+                  ...(isMobileView && {
+                   width:'70px',
+                   height:'72px',
+                  }),
+                }}
               />
             </div>
             <h4>Local SEO</h4>
-            <p>
+            <p style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                  width:'100%'
+                }),
+              }}>
               We track your SEO progress and make continuous improvements to
               ensure long-term success
             </p>
@@ -366,10 +425,22 @@ const SeoOnPage = () => {
               <img
                 src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
+                style={{
+                  ...(isMobileView && {
+                   width:'70px',
+                   height:'72px',
+                  }),
+                }}
               />
             </div>
             <h4>SEO Audit</h4>
-            <p>
+            <p style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                  width:'100%'
+                }),
+              }}>
               We run a technical audit to find and fix any issues on your
               website that may be hurting your rankings
             </p>
@@ -378,13 +449,23 @@ const SeoOnPage = () => {
       </section>
       {/* Connect with Tojo Global for Innovative SEO Strategies That Expand Your Brand */}
       <section className="InnovativeSEOStrategies_hero_part">
-        <div className="InnovativeSEOStrategies_text_part">
+        <div className="InnovativeSEOStrategies_text_part" style={{
+                ...(isMobileView && {
+                  paddingTop:'0.6rem'
+                }),
+              }}>
           <h1 data-aos="fade-up" data-aos-delay={1 * 200}>
             Connect with Tojo Global for Innovative{" "}
             <span className="headdingGradientText">SEO</span> Strategies That
             Expand Your Brand
           </h1>
-          <p data-aos="fade-up" data-aos-delay={2 * 200}>
+          <p data-aos="fade-up" data-aos-delay={2 * 200} style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                  width:'100%'
+                }),
+              }}>
             Search engine optimization is no longer just about adding keywords
             and hoping for the best. It’s a dynamic field that requires a deep
             understanding of how search engines work and what your customers
@@ -402,19 +483,30 @@ const SeoOnPage = () => {
       {/* Our specialities */}
       <section className="smBrandGrowth_hero_part">
         <div className="seoSpecialities_text_div" data-aos="fade-down">
-          <h1 className="pb-lg-4">Our specialities</h1>
-          <h4>Industry-Specific SEO</h4>
-          <p>
-            At Tojo Global, we provide tailored SEO services designed to meet
-            the unique needs of various competitive industries. Our approach
-            ensures that businesses in specific sectors receive strategies that
-            resonate with their target audience. Here are some of the industries
-            we specialize in:
+          <h1 className="pb-lg-4"  style={{
+            ...(isMobileView && {
+              paddingTop:'1rem'
+            }),
+          }}>Our specialities industry specific SEO</h1>
+          {/* <h4></h4> */}
+          <p style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "122%",
+                  width:'100%',
+                  fontSize:'13px',
+                }),
+              }}>
+           At Tojo Global, we provide tailored SEO services designed to meet the unique needs of various competitive industries. Our highly rated and effective approach ensures that businesses in specific sectors receive top-rated SEO strategies that resonate with their target audience. Here are some of the best-rated industries we specialize in:
           </p>
         </div>
 
         {/* Crypto SEO */}
-        <div className="smIndustries_services_card_div">
+        <div className="smIndustries_services_card_div"  style={{
+            ...(isMobileView && {
+              paddingTop: "2rem",
+            }),
+          }}>
           <div className="smIndustries_Small_leftOutline"></div>
           <div className="smIndustries_Small_rightOutline"></div>
           <div className="smIndustries_Small_centerOutline"></div>
@@ -428,12 +520,26 @@ const SeoOnPage = () => {
               <img
                 src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
+                style={{
+                  ...(isMobileView && {
+                   width:'60px',
+                   height:'62px',
+                   marginBottom:'0.5rem',
+                  }),
+                }}
               />
             </div>
             <h4 className="mx-auto">Crypto SEO </h4>
-            <p>
+            <p style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "122%",
+                  width:'100%',
+                  fontSize:'13px',
+                }),
+              }}>
               We optimize your website to attract crypto enthusiasts and
-              investors, focusing on high-value keywords and content that drives
+              investors, focusing on high value keywords and seo optimization content that drives
               engagement in the fast-paced crypto market.
             </p>
           </div>
@@ -447,12 +553,25 @@ const SeoOnPage = () => {
               <img
                 src="/Images/ServicesImage/Allicons/Small Business (1).png"
                 alt="smBrandGrowth_services_card image"
+                style={{
+                  ...(isMobileView && {
+                   width:'60px',
+                   height:'62px',
+                   marginBottom:'0.5rem',
+                  }),
+                }}
               />
             </div>
             <h4 className="mx-auto">Fintech SEO</h4>
-            <p>
-              our SEO service enhances your online presence in the financial
-              technology sector, targeting keywords that cater to consumers
+            <p style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "122%",
+                  width:'100%',
+                  fontSize:'13px',
+                }),
+              }}>
+              our SEO services enhances your online appearance in the financial technology sector, targeting keywords that cater to consumers
               seeking innovative financial solutions and services
             </p>
           </div>
@@ -466,10 +585,24 @@ const SeoOnPage = () => {
               <img
                 src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
+                style={{
+                  ...(isMobileView && {
+                   width:'60px',
+                   height:'62px',
+                   marginBottom:'0.5rem',
+                  }),
+                }}
               />
             </div>
             <h4 className="mx-auto">B2B SEO</h4>
-            <p>
+            <p style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "122%",
+                  width:'100%',
+                  fontSize:'13px',
+                }),
+              }}>
               Our SEO expert team creates strategies that connect you with other
               businesses, focusing on industry-specific terms that drive
               qualified leads and foster strong partnerships
@@ -485,10 +618,24 @@ const SeoOnPage = () => {
               <img
                 src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
+                style={{
+                  ...(isMobileView && {
+                   width:'60px',
+                   height:'62px',
+                   marginBottom:'0.5rem',
+                  }),
+                }}
               />
             </div>
             <h4 className="mx-auto">Blockchain SEO</h4>
-            <p>
+            <p style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "122%",
+                  width:'100%',
+                  fontSize:'13px',
+                }),
+              }}>
               We help you navigate the complex landscape of blockchain
               technology by optimizing content that educates and informs
               potential users about your solutions.
@@ -504,10 +651,24 @@ const SeoOnPage = () => {
               <img
                 src="/Images/ServicesImage/Allicons/Small Business (1).png"
                 alt="smBrandGrowth_services_card image"
+                style={{
+                  ...(isMobileView && {
+                   width:'60px',
+                   height:'62px',
+                   marginBottom:'0.5rem',
+                  }),
+                }}
               />
             </div>
             <h4 className="mx-auto">Technical SEO</h4>
-            <p>
+            <p style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "122%",
+                  width:'100%',
+                  fontSize:'13px',
+                }),
+              }}>
               Ensure your website’s backend is optimized for search engines,
               addressing site speed, mobile responsiveness, and proper indexing
               to enhance overall performance.
@@ -523,10 +684,24 @@ const SeoOnPage = () => {
               <img
                 src="/Images/ServicesImage/Allicons/B2B.png"
                 alt="smBrandGrowth_services_card image"
+                style={{
+                  ...(isMobileView && {
+                   width:'60px',
+                   height:'62px',
+                   marginBottom:'0.5rem',
+                  }),
+                }}
               />
             </div>
             <h4 className="mx-auto">E-commerce SEO</h4>
-            <p>
+            <p style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "122%",
+                  width:'100%',
+                  fontSize:'13px',
+                }),
+              }}>
               Improve product visibility and drive sales for online stores by
               focusing on essential aspects like product descriptions, images,
               and customer reviews.
@@ -541,16 +716,27 @@ const SeoOnPage = () => {
           data-aos="fade-down"
         >
           <div className="professionalModeration_text_div">
-            <h1 className="professionalModeration_service_offers_heading">
+            <h1 className="professionalModeration_service_offers_heading" style={{
+                ...(isMobileView && {
+                  widows:'80%'
+                }),
+              }} >
               Don’t overlook the power of SEO
             </h1>
-            <p className="professionalModeration_service_offers_para">
+            <p className="professionalModeration_service_offers_para" style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "122%",
+                  width:'100%',
+                  fontSize:'12px',
+                }),
+              }}>
               If SEO isn’t a key part of your marketing strategy yet, it should
               be. Think of it as an investment, not just another cost. The
               return on investment can be massive. SEO gives you the chance to
               reach billions of people who are actively searching for services
               or products like yours, without paying for ads.
-              <br />
+              <br /><br />
               In fact, more than 50% of marketers say organic search brings the
               highest ROI compared to any other marketing channel. But showing
               up on the first page of Google isn’t as simple as it used to be.
