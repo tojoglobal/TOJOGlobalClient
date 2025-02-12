@@ -718,7 +718,7 @@ const SeoOnPage = () => {
           <div className="professionalModeration_text_div">
             <h1 className="professionalModeration_service_offers_heading" style={{
                 ...(isMobileView && {
-                  widows:'80%'
+                  width:'80%'
                 }),
               }} >
               Don’t overlook the power of SEO

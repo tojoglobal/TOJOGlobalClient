@@ -11,7 +11,7 @@ import { AppContext } from "../../../AppContext";
 gsap.registerPlugin(ScrollTrigger);
 
 const SocailMediaMarketing = () => {
-  const { isLargeMobileView } = useContext(AppContext);
+  const { isLargeMobileView , isMobileView } = useContext(AppContext);
   useGSAP(() => {
     // Animation Timeline for Hero Section
     let heroTimeline = gsap.timeline();
@@ -33,42 +33,38 @@ const SocailMediaMarketing = () => {
         opacity: 0,
         duration: 0.5,
         delay: 0.2,
-      });
-    // Animation for "Who We Serve" Section with ScrollTrigger
-    gsap.from(".socailMediaMarketing_whoWeServe_div", {
-      y: -20,
-      opacity: 0,
-      duration: 1,
-      delay: 0.2,
-      stagger: {
-        each: 0.1,
-        from: "center",
-        grid: "auto",
-        ease: "power2.inOut",
-      },
-      scrollTrigger: {
-        trigger: ".socailMediaMarketing_whoWeServe_section",
-        start: "top 20%",
-        end: "bottom 100%",
-        scrub: 1,
-        once: true,
-      },
-    });
+      });   
   }, []);
-
   return (
     <main className="maindiv">
       {/* TOJO Global Elevating Social Media Marketing for Modern Brands */}
       <section className="socailMediaMarketing_hero_section">
         <div className="container webContentWriting_hero_part">
           <div className="webContentWriting_hero_text_part">
-            <h1>
-              TOJO Global Elevating Social Media Marketing for Modern Brands
-            </h1>
-            <p>
-              We design personalized social media marketing strategies that
-              generate measurable results, ensuring your brand effectively
-              reaches its target audience and fosters long-term growth.
+            {
+              isMobileView ? (<div className="hero_page_strongText">
+                <h2>
+                  {" "}
+                  TOJO Global{" "}
+                  <span className="headdingGradientText"> Elevating </span>
+                </h2>
+                <h3 className="homePageHeroSubHeadingFristText">
+                Social Media Marketing
+                </h3>
+                <h3 className="homePageHeroSubHeadingSecondText">
+                for Modern Brands
+                </h3>
+              </div>) : (<h1>
+                TOJO Global Elevating Social Media Marketing for Modern Brands
+              </h1> ) 
+            }
+            <p style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    lineHeight:'125%',
+                  }),
+                }}>
+              We design personalized social media marketing strategies that generate measurable results, ensuring your brand effectively reaches its target audience, increases engagement, and fosters long-term growth
             </p>
             <div className="hero_btn_style">
               <Link to="/contact">
