@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import "../../../Style/ServicesPageStyle/MarketingStyle/AmazonMarketing.Style.css";
@@ -7,9 +7,11 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import KeyComponentsAmazonMarketingSvg from "./marketingSvg/KeyComponentsAmazonMarketingSvg";
+import { AppContext } from "../../../AppContext";
 gsap.registerPlugin(ScrollTrigger);
 
 const AmazonMarketing = () => {
+  const { isLargeMobileView, isMobileView } = useContext(AppContext);
   useGSAP(() => {
     // Animation Timeline for Hero Section
     let heroTimeline = gsap.timeline();
@@ -34,20 +36,6 @@ const AmazonMarketing = () => {
       });
   }, []);
 
-  const pathName = location.pathname;
-
-  useEffect(() => {
-    const professionalModeration = document.querySelector(
-      ".amazonMarketing_professionalModeration_section"
-    );
-    if (
-      pathName === "/services/marketing/amazon-marketing" &&
-      professionalModeration
-    ) {
-      professionalModeration.style.paddingTop = "1.5rem";
-    }
-  }, [pathName]);
-
   return (
     <main className="maindiv">
       <Helmet>
@@ -57,19 +45,56 @@ const AmazonMarketing = () => {
       <section className="uiuxDesign_hero_section">
         <div className="container webContentWriting_hero_part">
           <div className="webContentWriting_hero_text_part">
-            <h1>Scale your Amazon Business  with TOJO Global</h1>
-            <p>
-              we focus on strategic Amazon marketing designed to enhance your
-              product’s presence, refine listings, and accelerate sales growth
-              on the platform.
-            </p>
+            {isMobileView ? (
+              <>
+                <div className="hero_page_strongText">
+                  <h2
+                    style={{
+                      ...(isMobileView && {
+                        paddingRight: "0rem",
+                      }),
+                    }}
+                  >
+                    {" "}
+                    Scale your{" "}
+                    <span className="headdingGradientText"> Amazon </span>
+                  </h2>
+                  <h3 className="homePageHeroSubHeadingFristText">
+                    Business {" "}
+                  </h3>
+                  <h3 className="homePageHeroSubHeadingSecondText">
+                    with TOJO Global
+                  </h3>
+                </div>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                    }),
+                  }}
+                >
+                  we focus on strategic Amazon marketing designed to enhance
+                  your product’s presence, refine listings, and accelerate sales
+                  growth on the platform.
+                </p>{" "}
+              </>
+            ) : (
+              <>
+                <h1>Scale your Amazon Business  with TOJO Global</h1>
+                <p>
+                  we focus on strategic Amazon marketing designed to enhance
+                  your product’s presence, refine listings, and accelerate sales
+                  growth on the platform.
+                </p>{" "}
+              </>
+            )}
+
             <div className="hero_btn_style">
               <a href="https://www.behance.net/TOJO_Global" target="_blank">
                 <button className="custombtn hero_btn1 secondBtn">
                   <span>OUR WORKS</span>
                 </button>
               </a>
-
               <Link to="/contact">
                 <button className="custombtn hero_btn2 fristBtn">
                   <span>Lets Make a Call</span>
@@ -85,6 +110,11 @@ const AmazonMarketing = () => {
         <div
           className="wordpressDevelopment_whyChoose_main_div whatIs_amazon_marketing_main_div"
           data-aos="fade-up"
+          style={{
+            ...(isMobileView && {
+              marginTop: "2.35rem",
+            }),
+          }}
         >
           {/*What is Amazon Marketing?   */}
           <div className="amazonMarketing_whatIsAmazonM_para_text">
@@ -121,13 +151,36 @@ const AmazonMarketing = () => {
       {/*  Our Amazon Marketing Services*/}
       <section className="amazonMediaMarketing_OurServices_section container">
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">Our Amazon Marketing Services</h1>
-          <p className="paraStyle">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "1.5rem",
+              }),
+            }}
+          >
+            Our Amazon Marketing Services
+          </h1>
+          <p
+            className="paraStyle"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+              }),
+            }}
+          >
             We offer a suite of services tailored to help your business succeed
-            on Amazon:
+            on Amazon and beyond.
           </p>
         </div>
-        <div className="amazonMediaMarketing_OurService_main_div">
+        <div
+          className="amazonMediaMarketing_OurService_main_div"
+          style={{
+            ...(isMobileView && {
+              marginTop: "1.5rem",
+            }),
+          }}
+        >
           {/* 01 */}
           <div
             className="amazonMediaMarketing_OurService_div"
@@ -135,21 +188,36 @@ const AmazonMarketing = () => {
             data-aos-delay={1 * 200}
           >
             <div className="amazonMediaMarketing_OurService_number_box_div">
-              <img
-                src="/Images/ServicesImage/Marketing/AmazonMediaMarketingOurServiceSvg.svg"
-                alt=""
-              />
+              <img src="/Images/ServicesImage/Marketing/AmazonMediaMarketingOurServiceSvg.svg" />
               <h3>01</h3>
             </div>
             <div className="amazonMediaMarketing_OurService_Text_div">
-              <h3 className="appDev_industries_services_subHeading">
+              <h3
+                className="appDev_industries_services_subHeading"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "20px",
+                    lineHeight: "125%",
+                    marginBottom: "1.5rem",
+                  }),
+                }}
+              >
                 Amazon Ads Management
               </h3>
-              <p className="contentMarketingService_paraTextStyle">
-                We manage your Amazon pay-per-click (PPC) campaigns to boost
-                product visibility. Our team optimizes Sponsored Products and
-                Sponsored Brands ads to ensure your budget is spent efficiently,
-                driving sales and maximizing return on investment (ROI).
+              <p
+                className="contentMarketingService_paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    lineHeight: "120%",
+                    textAlign: "justify",
+                  }),
+                }}
+              >
+                We manage your Amazon pay-per-click campaigns to boost product
+                visibility. Our team optimizes Sponsored Products and Sponsored
+                Brands ads to ensure your budget is spent efficiently, driving
+                sales and maximizing return on investment.
               </p>
             </div>
           </div>
@@ -167,10 +235,28 @@ const AmazonMarketing = () => {
               <h3>02</h3>
             </div>
             <div className="amazonMediaMarketing_OurService_Text_div">
-              <h3 className="appDev_industries_services_subHeading">
+              <h3
+                className="appDev_industries_services_subHeading"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "20px",
+                    lineHeight: "125%",
+                    marginBottom: "1.5rem",
+                  }),
+                }}
+              >
                 Amazon SEO & Listing Optimization
               </h3>
-              <p className="contentMarketingService_paraTextStyle">
+              <p
+                className="contentMarketingService_paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    lineHeight: "120%",
+                    textAlign: "justify",
+                  }),
+                }}
+              >
                 Through keyword research, enhanced descriptions, and
                 high-quality images, we improve your product listings to help
                 them rank higher in Amazon search results, boosting visibility
@@ -192,10 +278,28 @@ const AmazonMarketing = () => {
               <h3>03</h3>
             </div>
             <div className="amazonMediaMarketing_OurService_Text_div">
-              <h3 className="appDev_industries_services_subHeading">
+              <h3
+                className="appDev_industries_services_subHeading"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "20px",
+                    lineHeight: "125%",
+                    marginBottom: "1.5rem",
+                  }),
+                }}
+              >
                 Amazon Store Creation & Management
               </h3>
-              <p className="contentMarketingService_paraTextStyle">
+              <p
+                className="contentMarketingService_paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    lineHeight: "120%",
+                    textAlign: "justify",
+                  }),
+                }}
+              >
                 We design and manage your Amazon Store to showcase your brand
                 and products, boosting recognition and creating a smooth
                 customer shopping experience.
@@ -216,10 +320,28 @@ const AmazonMarketing = () => {
               <h3>04</h3>
             </div>
             <div className="amazonMediaMarketing_OurService_Text_div">
-              <h3 className="appDev_industries_services_subHeading">
+              <h3
+                className="appDev_industries_services_subHeading"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "20px",
+                    lineHeight: "125%",
+                    marginBottom: "1.5rem",
+                  }),
+                }}
+              >
                 Review & Reputation Management
               </h3>
-              <p className="contentMarketingService_paraTextStyle">
+              <p
+                className="contentMarketingService_paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    lineHeight: "120%",
+                    textAlign: "justify",
+                  }),
+                }}
+              >
                 Customer reviews are essential for success on Amazon. We help
                 manage reviews and ratings, maintaining a positive brand
                 reputation that builds trust with customers.
@@ -240,14 +362,32 @@ const AmazonMarketing = () => {
               <h3>05</h3>
             </div>
             <div className="amazonMediaMarketing_OurService_Text_div">
-              <h3 className="appDev_industries_services_subHeading">
+              <h3
+                className="appDev_industries_services_subHeading"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "20px",
+                    lineHeight: "125%",
+                    marginBottom: "1.5rem",
+                  }),
+                }}
+              >
                 Performance Monitoring & Reporting
               </h3>
-              <p className="contentMarketingService_paraTextStyle">
-                We continuously track your Amazon performance, analyzing key
-                metrics such as traffic, sales, and ad efficiency. Our reports
-                provide actionable insights, helping you make adjustments that
-                improve results.
+              <p
+                className="contentMarketingService_paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    lineHeight: "120%",
+                    textAlign: "justify",
+                  }),
+                }}
+              >
+                We continuously track your Amazon performance, carefully
+                analyzing key metrics such as traffic, sales, and ad efficiency.
+                Our reports provide clear, actionable insights, helping you make
+                adjustments that improve results.
               </p>
             </div>
           </div>
@@ -265,10 +405,28 @@ const AmazonMarketing = () => {
               <h3>06</h3>
             </div>
             <div className="amazonMediaMarketing_OurService_Text_div">
-              <h3 className="appDev_industries_services_subHeading">
+              <h3
+                className="appDev_industries_services_subHeading"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "20px",
+                    lineHeight: "125%",
+                    marginBottom: "1.5rem",
+                  }),
+                }}
+              >
                 Amazon Inventory & Order Management
               </h3>
-              <p className="contentMarketingService_paraTextStyle">
+              <p
+                className="contentMarketingService_paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    lineHeight: "120%",
+                    textAlign: "justify",
+                  }),
+                }}
+              >
                 We help you manage inventory levels and streamline order
                 processing on Amazon, ensuring your products stay in stock and
                 customers receive timely deliveries for a seamless shopping
@@ -296,7 +454,15 @@ const AmazonMarketing = () => {
       {/*  Benefits of Working with TOJO Global for Amazon Marketing*/}
       <section className="amazonMediaMarketing_OurServices_section container">
         <div className="sectionTopTextstyle" data-aos="fade-down">
-          <h1 className="topHeadingStyle">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "2.5rem",
+                marginBottom: "1.9rem",
+              }),
+            }}
+          >
             Benefits of Working with TOJO Global for Amazon Marketing
           </h1>
         </div>
@@ -310,7 +476,7 @@ const AmazonMarketing = () => {
             <div className="amazonMediaMarketing_Benifits_number_box_div">
               <img
                 src="/Images/ServicesImage/Marketing/AmazonMediaMarketingBenifitsSvg.svg"
-                alt=""
+                alt="AmazonMediaMarketingBenifitsSvg"
               />
               <h3>01</h3>
             </div>
@@ -318,7 +484,17 @@ const AmazonMarketing = () => {
               <h3 className="appDev_industries_services_subHeading">
                 Improved Product Visibility
               </h3>
-              <p className="contentMarketingService_paraTextStyle">
+              <p
+                className="contentMarketingService_paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    lineHeight: "120%",
+                    textAlign: "justify",
+                    marginTop: "1rem",
+                  }),
+                }}
+              >
                 By optimizing your listings and managing targeted ads, we ensure
                 your products are seen by the right audience, increasing your
                 chances of making sales.
@@ -334,7 +510,7 @@ const AmazonMarketing = () => {
             <div className="amazonMediaMarketing_Benifits_number_box_div">
               <img
                 src="/Images/ServicesImage/Marketing/AmazonMediaMarketingBenifitsSvg.svg"
-                alt=""
+                alt="AmazonMediaMarketingBenifitsSvg"
               />
               <h3>02</h3>
             </div>
@@ -342,7 +518,17 @@ const AmazonMarketing = () => {
               <h3 className="appDev_industries_services_subHeading">
                 Better Search Rankings
               </h3>
-              <p className="contentMarketingService_paraTextStyle">
+              <p
+                className="contentMarketingService_paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    lineHeight: "120%",
+                    textAlign: "justify",
+                    marginTop: "1rem",
+                  }),
+                }}
+              >
                 Our SEO strategies improve your product rankings on Amazon,
                 making it easier for potential customers to discover your
                 offerings.
@@ -366,7 +552,17 @@ const AmazonMarketing = () => {
               <h3 className="appDev_industries_services_subHeading">
                 Higher Conversion Rates
               </h3>
-              <p className="contentMarketingService_paraTextStyle">
+              <p
+                className="contentMarketingService_paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    lineHeight: "120%",
+                    textAlign: "justify",
+                    marginTop: "1rem",
+                  }),
+                }}
+              >
                 By optimizing your listings and managing targeted ads, we ensure
                 your products are seen by the right audience, increasing your
                 chances of making sales.
@@ -390,7 +586,17 @@ const AmazonMarketing = () => {
               <h3 className="appDev_industries_services_subHeading">
                 Enhanced Brand Presence
               </h3>
-              <p className="contentMarketingService_paraTextStyle">
+              <p
+                className="contentMarketingService_paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    lineHeight: "120%",
+                    textAlign: "justify",
+                    marginTop: "1rem",
+                  }),
+                }}
+              >
                 A well-managed Amazon Store, coupled with consistent
                 advertising, strengthens your brand’s visibility and builds
                 trust with your target audience.
@@ -414,7 +620,17 @@ const AmazonMarketing = () => {
               <h3 className="appDev_industries_services_subHeading">
                 Continuous Improvement
               </h3>
-              <p className="contentMarketingService_paraTextStyle">
+              <p
+                className="contentMarketingService_paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    lineHeight: "120%",
+                    textAlign: "justify",
+                    marginTop: "1rem",
+                  }),
+                }}
+              >
                 By optimizing your listings and managing targeted ads, we ensure
                 your products are seen by the right audience, increasing your
                 chances of making sales.
@@ -425,7 +641,15 @@ const AmazonMarketing = () => {
       </section>
 
       {/*Ready to Elevate Your White Papers?*/}
-      <section className="container amazonMarketing_professionalModeration_section">
+      <section
+        className="container amazonMarketing_professionalModeration_section"
+        style={{
+          ...(isMobileView && {
+            marginTop: "3rem",
+            marginBottom: "1.8rem",
+          }),
+        }}
+      >
         <div
           className="professionalModeration_div blockChainSolution_specialize_card  mt-1 mt-md-5"
           data-aos="fade-down"
@@ -434,7 +658,16 @@ const AmazonMarketing = () => {
             <h1 className="professionalModeration_service_offers_heading">
               Ready to Elevate Your White Papers?
             </h1>
-            <p className="professionalModeration_service_offers_para">
+            <p
+              className="professionalModeration_service_offers_para"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  lineHeight: "120%",
+                  textAlign: "justify",
+                }),
+              }}
+            >
               {" "}
               A well-designed white paper can be a powerful tool for your
               business, helping you communicate complex ideas while reinforcing
