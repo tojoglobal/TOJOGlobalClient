@@ -5,7 +5,7 @@ import { AppContext } from "../../../AppContext";
 import SearchEngineMarketingWhoWeHelp from "../ServicesSmallComponent/SearchEngineMarketingWhoWeHelp";
 import SearchEngineMarketingWhoWeHelpDeskTop from "../ServicesSmallComponent/SearchEngineMarketingWhoWeHelpDeskTop";
 const SearchEngineMarketing = () => {
-  const { isLargeMobileView } = useContext(AppContext);
+  const { isLargeMobileView, isMobileView } = useContext(AppContext);
 
   return (
     <main className="maindiv">
@@ -17,15 +17,58 @@ const SearchEngineMarketing = () => {
               className="searchEngineMarketing_hero_text_div"
               data-aos="fade-left"
             >
-              <h1>
-                Maximize Your Visibility with TOJO Global's customized{" "}
-                <span className="headdingGradientText">SEM </span> Strategies
-              </h1>
-              <p>
-                Our expert team delivers targeted SEM solutions that drive
-                traffic, boost conversions, and elevate your online presence,
-                ensuring your brand reaches the right audience efficiently.
-              </p>
+              {isMobileView ? (
+                <>
+                  <div className="hero_page_strongText">
+                    <h2
+                      style={{
+                        ...(isMobileView && {
+                          paddingRight: "0rem",
+                        }),
+                      }}
+                    >
+                      {" "}
+                      Maximize Your{" "}
+                      <span className="headdingGradientText"> Visibility </span>
+                    </h2>
+                    <h3 className="homePageHeroSubHeadingFristText">
+                      with TOJO Global's
+                    </h3>
+                    <h3 className="homePageHeroSubHeadingSecondText">
+                      customized SEM Strategies
+                    </h3>
+                  </div>
+                  <p
+                    style={{
+                      ...(isMobileView && {
+                        textAlign: "justify",
+                        lineHeight: "125%",
+                      }),
+                    }}
+                  >
+                    Our expert team delivers targeted SEM solutions that drive
+                    traffic, boost conversions, and elevate your online
+                    presence, ensuring your brand reaches the right audience
+                    efficiently.
+                  </p>{" "}
+                </>
+              ) : (
+                <>
+                  {" "}
+                  <h1>
+                    Maximize Your Visibility with TOJO Global's customized{" "}
+                    <span className="headdingGradientText">SEM </span>{" "}
+                    Strategies
+                  </h1>
+                  <p>
+                    Our expert team delivers targeted SEM solutions that drive
+                    traffic, boost conversions, and elevate your online
+                    presence, ensuring your brand reaches the right audience
+                    efficiently.
+                  </p>{" "}
+                </>
+              )}
+
               <div className="hero_btn_style">
                 <Link to="/contact">
                   <button className="custombtn hero_btn2 fristBtn">
@@ -50,7 +93,14 @@ const SearchEngineMarketing = () => {
             </div>
           </div>
         </div>
-        <div className="container searchEngineMarketing_second_part">
+        <div
+          className="container searchEngineMarketing_second_part"
+          style={{
+            ...(isMobileView && {
+              marginTop: "1.8rem",
+            }),
+          }}
+        >
           {/* grid frist text card */}
           <div
             className="searchEngineMarketing_second_part_frist_text"
@@ -212,6 +262,11 @@ const SearchEngineMarketing = () => {
             className="searchEngineMarketing_IncreaseRevenue_main_div_image"
             data-aos={isLargeMobileView ? "fade-up" : "fade-left"}
             data-aos-delay={1 * 200}
+            style={{
+              ...(isMobileView && {
+                display: "none",
+              }),
+            }}
           >
             <div className="searchEngineMarketing_IncreaseRevenue_main_div_image_buttom_gradient"></div>
             <img
@@ -224,11 +279,28 @@ const SearchEngineMarketing = () => {
             data-aos="fade-right"
             data-aos-delay={2 * 200}
           >
-            <h2 className="searchEngineMarketing_IncreaseRevenue_headingtext">
-              How Can TOJO GLOBAL’s Strategic Search Engine Marketing Increase
-              Your Revenue? We’re Happy to Explain.
+            <h2
+              className="searchEngineMarketing_IncreaseRevenue_headingtext"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "125%",
+                  fontSize: "20px",
+                }),
+              }}
+            >
+              How Can TOJO GLOBAL’s Strategic Search Engine Marketing
+              Increaseing Your Revenue? We are Happy to Explain.
             </h2>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                  fontSize: "13px",
+                }),
+              }}
+            >
               our SEM services are designed to help you stand out in search
               results, connect with your target audience, and increase your
               revenue. We believe in delivering results that matter. Our goal is
@@ -258,7 +330,16 @@ const SearchEngineMarketing = () => {
         <div className="searchEngineMarketing_WhoHelp_top_text_div">
           <div data-aos="fade-up">
             <h1>Who We Help</h1>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                  fontSize: "13px",
+                  marginTop: "0px",
+                }),
+              }}
+            >
               For over a decade, Tojo Global has partnered with hundreds of
               clients across various industries to achieve their marketing
               goals. We are proud to serve a diverse range of businesses, from
@@ -276,11 +357,27 @@ const SearchEngineMarketing = () => {
       </section>
 
       {/* How Your Brand Grows with Our SEM Service */}
-      <section className="searchEngineMarketing_SEMService_section">
+      <section
+        className="searchEngineMarketing_SEMService_section"
+        style={{
+          ...(isMobileView && {
+            paddingTop: "2rem",
+          }),
+        }}
+      >
         <div className="searchEngineMarketing_WhoHelp_top_text_div">
           <div data-aos="fade-up">
             <h1>How Your Brand Grows with Our SEM Service</h1>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  fontSize: "13px",
+                  marginTop: "0px",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               Without effective SEM, many brands struggle to be seen online. In
               fact, studies show that over 60% of businesses fail to reach their
               potential because they don’t invest in search engine marketing.
@@ -410,7 +507,7 @@ const SearchEngineMarketing = () => {
               src="/Images/ServicesImage/Allicons/Long-Term Growth 1.svg"
               alt="sems servics card icon image"
             />
-            <h4>Long-Term Growth 1.svg</h4>
+            <h4>Long-Term Growth</h4>
           </div>
           {/* just gap  */}
           <div className=""></div>
@@ -418,7 +515,15 @@ const SearchEngineMarketing = () => {
       </section>
 
       {/*TOJO GLOBAL comes here to help you close this gap by using the power of influencers */}
-      <section className="container">
+      <section
+        className="container"
+        style={{
+          ...(isMobileView && {
+            marginTop: "2.5rem",
+            marginBottom: "2rem",
+          }),
+        }}
+      >
         <div
           className="professionalModeration_div professionalService_card_onSeo_page"
           data-aos="fade-up"
@@ -428,7 +533,15 @@ const SearchEngineMarketing = () => {
               TOJO GLOBAL comes here to help you close this gap by using the
               power of influencers
             </h1>
-            <p className="professionalModeration_service_offers_para">
+            <p
+              className="professionalModeration_service_offers_para"
+              style={{
+                ...(isMobileView && {
+                  marginTop: "0.5rem",
+                  textAlign: "justify",
+                }),
+              }}
+            >
               Our custom strategies connect your brand with the right people,
               build trust, and improve your visibility. Don’t let your brand
               fall behind, work with us to stay strong in the market!

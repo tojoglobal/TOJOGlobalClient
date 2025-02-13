@@ -102,7 +102,7 @@
 }
 
 .searchEngineMarketing_second_part_card:hover {
-  background: var(--BG-15, rgba(24, 200, 255, 0.10));
+  background: var(--BG-15, rgba(24, 200, 255, 0.1));
 }
 
 .searchEngineMarketing_second_part_card h4 {
@@ -111,7 +111,7 @@
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2.5rem;
+  line-height: 125%;
 }
 
 .searchEngineMarketing_second_part_card p {
@@ -119,7 +119,7 @@
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.375rem;
+  line-height: 120%;
 }
 
 /* How Can TOJO GLOBAL’s Strategic Search Engine Marketing Increase Your Revenue? We’re Happy to Explain. */
@@ -156,8 +156,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 30.4375rem;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   filter: blur(126px);
   width: 28.75rem;
   height: 30.4375rem;
@@ -186,11 +188,10 @@
 .searchEngineMarketing_WhoHelp_top_text_div h1 {
   color: #fff;
   text-align: center;
-
   font-size: 2.625rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2.75rem;
+  line-height: 125%;
 }
 
 .searchEngineMarketing_WhoHelp_top_text_div p {
@@ -238,7 +239,10 @@
 
 /* Active state */
 .searchEngineMarketing_whoHelp_item.active {
-  background: var(--Gradient2, linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   color: white;
   font-weight: bold;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -259,7 +263,7 @@
 }
 
 .searchEngineMarketing_whoHelp_para_div::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -7%;
   top: -50%;
@@ -269,7 +273,7 @@
 }
 
 .searchEngineMarketing_whoHelp_para_div::after {
-  content: '';
+  content: "";
   position: absolute;
   right: -7%;
   top: -50%;
@@ -299,8 +303,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 30.4375rem;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   filter: blur(126px);
   z-index: 0;
 }
@@ -340,7 +346,7 @@
 }
 
 .searchEngineMarketing_SEMService_card_div:hover {
-  background: var(--BG-15, rgba(24, 200, 255, 0.10));
+  background: var(--BG-15, rgba(24, 200, 255, 0.1));
 }
 
 .searchEngineMarketing_SEMService_card_div img {
@@ -364,7 +370,6 @@
 /* ================================== */
 /* desktop */
 @media (max-width: 1398px) {
-
   /* ...
         rules here apply to devices from 1202px to 1398px (inclusive)
         ... */
@@ -389,13 +394,10 @@
     padding-right: 2.6rem;
   }
 
-
-
   .searchEngineMarketing_SEMService_card_div {
     width: 16.5rem;
     padding: 1.14rem 1rem 1.81rem 0.94rem;
   }
-
 
   .searchEngineMarketing_whoHelp_para_div::before {
     content: none;
@@ -498,13 +500,13 @@
 
 /* vary small device  */
 @media (max-width: 500px) {
-
   /* ...
         rules here apply to devices from 0px to 460px (inclusive)
         ... */
   /* searchEngineMarketing_top_hero_section */
   .searchEngineMarketing_top_hero_section {
-    padding: 6.3rem 0.39rem 3.8rem 0.6rem;
+    background: none;
+    padding: 5.3rem 0.39rem 0.8rem 0.6rem;
   }
 
   .searchEngineMarketing_hero_text_div {
@@ -556,10 +558,20 @@
     height: 0.125rem;
   }
 
+  .searchEngineMarketing_second_part_card h4 {
+    font-size: 20px;
+  }
+
   .searchEngineMarketing_second_part_card p {
     font-family: var(--font-main);
     font-size: 0.8rem;
-    line-height: 1.2rem;
+    text-align: justify;
+    line-height: 120%;
+  }
+  .searchEngineMarketing_second_part_card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
   }
 
   /* searchEngineMarketing_IncreaseRevenue_section */
@@ -595,7 +607,6 @@
     color: #fff;
     text-align: center;
     font-size: 1.5rem;
-    line-height: 1.8rem;
     font-style: normal;
     font-weight: 700;
   }
@@ -630,44 +641,41 @@
   }
 
   .searchEngineMarketingWhoWeHelpCard_text {
-    text-align: left;
-    padding-left: 1.06rem;
+    text-align: justify;
+    width: 95%;
+    margin: 0 auto;
     padding-bottom: 1rem;
   }
 
   .searchEngineMarketingWhoWeHelpCard_text h4 {
     color: #fff;
     text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
-
-    font-size: 1.5rem;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1rem;
+    line-height: 125%;
   }
 
   .searchEngineMarketingWhoWeHelpCard_text p {
     color: #fff;
     text-shadow: 0px 4px 7.8px rgba(0, 0, 0, 0.23);
-
-    font-size: 0.8rem;
+    font-size: 13px;
+    text-align: justify;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 120%;
   }
-
 
   /* searchEngineMarketing_SEMService_section */
   .searchEngineMarketing_SEMService_section {
     padding: 3.3rem 0.5rem 0.8rem 0.5rem;
   }
 
-
-
   .searchEngineMarketing_SEMService_main_div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 0.5rem;
+    gap: 0.9rem;
   }
 
   .searchEngineMarketing_SEMService_card_div {
@@ -675,16 +683,14 @@
   }
 
   .searchEngineMarketing_SEMService_card_div img {
-    width: 4.25rem;
-    height: 4.25rem;
+    width: 50px;
+    height: 52px;
   }
 
   .searchEngineMarketing_SEMService_card_div h4 {
-    font-size: 1.2rem;
-    line-height: 1.7rem;
-    margin-top: 0.5rem;
+    font-size: 14px;
+    line-height: 120%;
+    margin-top: 0.3rem;
     width: 100%;
   }
-
-
 }
