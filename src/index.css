@@ -3,8 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Poppins font  second*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap");
 
 * {
   scroll-behavior: smooth;
@@ -27,12 +26,16 @@
   --text-second-color: #01b5e8;
   --font-main: "Barlow Condensed", sans-serif;
   --font-poppins: "Poppins", sans-serif;
-  --Gradient2: linear-gradient(225deg,
-      rgba(24, 200, 255, 1),
-      rgba(198, 8, 255, 1));
-  --Transparent-bg-1: linear-gradient(225deg,
-      rgba(24, 200, 255, 0.2),
-      rgba(24, 200, 255, 0));
+  --Gradient2: linear-gradient(
+    225deg,
+    rgba(24, 200, 255, 1),
+    rgba(198, 8, 255, 1)
+  );
+  --Transparent-bg-1: linear-gradient(
+    225deg,
+    rgba(24, 200, 255, 0.2),
+    rgba(24, 200, 255, 0)
+  );
 }
 
 #root {
@@ -40,7 +43,11 @@
 }
 
 .headdingGradientText {
-  background: linear-gradient(241deg, #18c8ff 14.59%, #c608ff 59.76%) !important;
+  background: linear-gradient(
+    241deg,
+    #18c8ff 14.59%,
+    #c608ff 59.76%
+  ) !important;
   background-clip: text !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
@@ -78,9 +85,11 @@ a {
   height: 8.625rem;
   flex-shrink: 0;
   border-radius: 56.0625rem;
-  background: linear-gradient(242deg,
-      rgba(197, 8, 255, 0.377) 14.09%,
-      rgba(24, 201, 255, 0.479) 91.45%);
+  background: linear-gradient(
+    242deg,
+    rgba(197, 8, 255, 0.377) 14.09%,
+    rgba(24, 201, 255, 0.479) 91.45%
+  );
   filter: blur(125.4000015258789px);
 }
 
@@ -111,7 +120,11 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: linear-gradient(242deg, rgba(197, 8, 255, 0.15) 14.09%, rgba(24, 201, 255, 0.2) 91.45%);
+  background: linear-gradient(
+    242deg,
+    rgba(197, 8, 255, 0.15) 14.09%,
+    rgba(24, 201, 255, 0.2) 91.45%
+  );
   border-radius: 10px;
 }
 
@@ -143,15 +156,13 @@ a {
 }
 
 .univarsal_text_div h1 {
-  color: #FFF;
+  color: #fff;
   font-size: 3.75rem;
   font-style: normal;
   font-weight: 700;
   line-height: 115%;
   padding-right: 1.5rem;
 }
-
-
 
 .listing_services_PeraDesText {
   color: var(--text-color);
@@ -183,16 +194,22 @@ a {
 }
 
 .fristBtn:hover {
-  background: var(--Transparent-bg-1,
-      linear-gradient(180deg,
-        rgba(24, 200, 255, 0.2) 0%,
-        rgba(24, 200, 255, 0) 100%));
+  background: var(
+    --Transparent-bg-1,
+    linear-gradient(
+      180deg,
+      rgba(24, 200, 255, 0.2) 0%,
+      rgba(24, 200, 255, 0) 100%
+    )
+  );
   transition: all 0.05s;
 }
 
 .secondBtn:hover {
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   transition: all 0.05s;
 }
 
@@ -240,7 +257,6 @@ a {
   color: var(--text-second-color);
 }
 
-
 .mobile_device {
   display: none;
 }
@@ -284,7 +300,6 @@ a {
   transition: all 0.4s;
 }
 
-
 /* Dropmenu items (hidden by default) */
 .menu_bar ul li .dropdown_menu {
   transform: translateY(-40px);
@@ -300,14 +315,15 @@ a {
   z-index: 90;
   border-radius: 15px;
   border: 1px solid gray;
-  background: linear-gradient(180deg,
-      rgba(24, 200, 255, 0.2) 0%,
-      rgba(24, 200, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(24, 200, 255, 0.2) 0%,
+    rgba(24, 200, 255, 0) 100%
+  );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   animation: slideDown 0.6s ease forwards;
 }
-
 
 /* Show dropdown on hover */
 .menu_bar ul li:hover .dropdown_menu {
@@ -409,9 +425,11 @@ a {
 }
 
 .menu_bar .submenu_list .submenu_services_list .submenu_servces_name:hover {
-  background: linear-gradient(180deg,
-      rgba(24, 200, 255, 0.2) 0%,
-      rgba(24, 200, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(24, 200, 255, 0.2) 0%,
+    rgba(24, 200, 255, 0) 100%
+  );
   box-shadow: #c508ff 0px 1px 2px 0px, #18c9ff 1px 0px 2px 1px;
 }
 
@@ -449,7 +467,6 @@ a {
 }
 
 .dropdown_submenu ul li .dropdown-item {
-
   font-size: 0.875rem;
   font-weight: 400;
   line-height: normal;
@@ -458,9 +475,11 @@ a {
 
 /* comapny dropdown maneu style */
 .menu_bar ul li:hover .comapny_dropdown_menu {
-  background: linear-gradient(180deg,
-      rgba(24, 200, 255, 0.2) 0%,
-      rgba(24, 200, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(24, 200, 255, 0.2) 0%,
+    rgba(24, 200, 255, 0) 100%
+  );
   border-radius: 15px;
   transform: translateY(0);
   position: absolute;
@@ -474,7 +493,12 @@ a {
   text-align: start;
 }
 
-.menu_bar ul li:hover .comapny_dropdown_menu .submenu_list .submenu_servces_name {
+.menu_bar
+  ul
+  li:hover
+  .comapny_dropdown_menu
+  .submenu_list
+  .submenu_servces_name {
   background: #818cb6;
   border-radius: 5px;
   margin-bottom: 0.2rem;
@@ -487,9 +511,11 @@ a {
 }
 
 .comapny_dropdown_menu .submenu_list li:hover .submenu_servces_name {
-  background: linear-gradient(180deg,
-      rgba(24, 200, 255, 0.2) 0%,
-      rgba(24, 200, 255, 0) 100%) !important;
+  background: linear-gradient(
+    180deg,
+    rgba(24, 200, 255, 0.2) 0%,
+    rgba(24, 200, 255, 0) 100%
+  ) !important;
   box-shadow: #c508ff 0px 1px 2px 0px, #18c9ff 1px 0px 2px 1px;
 }
 
@@ -497,10 +523,14 @@ a {
   /* background: linear-gradient(225deg,
       #18c8ff 14.89%,
       rgba(198, 8, 255, 0.79) 85.85%); */
-  background: var(--Transparent-bg-1,
-      linear-gradient(180deg,
-        rgba(24, 200, 255, 0.2) 0%,
-        rgba(24, 200, 255, 0) 100%));
+  background: var(
+    --Transparent-bg-1,
+    linear-gradient(
+      180deg,
+      rgba(24, 200, 255, 0.2) 0%,
+      rgba(24, 200, 255, 0) 100%
+    )
+  );
   height: 50px;
   width: 185px;
   padding: 3px 26px;
@@ -585,16 +615,19 @@ a {
   border-radius: 150px;
 }
 
-
 /* home page hero part  */
 .hero_btn1 {
   border-radius: 1.5625rem;
   border: 1px solid var(--Gradient2, #18c8ff);
 
-  background: var(--Transparent-bg-1,
-      linear-gradient(180deg,
-        rgba(24, 200, 255, 0.2) 0%,
-        rgba(24, 200, 255, 0) 100%));
+  background: var(
+    --Transparent-bg-1,
+    linear-gradient(
+      180deg,
+      rgba(24, 200, 255, 0.2) 0%,
+      rgba(24, 200, 255, 0) 100%
+    )
+  );
   box-shadow: 0px 4px 19.8px 0px rgba(0, 0, 0, 0.3), #c508ff 0px 1px 1px 0px,
     #18c9ff 1px 0px 1px 1px;
 }
@@ -603,8 +636,10 @@ a {
   border-radius: 1.5625rem;
   border: 1px solid var(--Transparent-bg-1, #18c8ff);
 
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   box-shadow: 0px 4px 19.8px 0px rgba(0, 0, 0, 0.3), #c508ff 0px 1px 1px 0px,
     #18c9ff 1px 0px 1px 1px;
 }
@@ -613,7 +648,8 @@ a {
 /* Home Page Design  */
 /* Hero */
 .hero_div {
-  background: url(/Images/homePage/homePageOurProgressSectionBglines.svg), url("/Images/banner/grid_2.svg"), rgb(6, 0, 66);
+  background: url(/Images/homePage/homePageOurProgressSectionBglines.svg),
+    url("/Images/banner/grid_2.svg"), rgb(6, 0, 66);
   background-position: 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -623,22 +659,21 @@ a {
   padding: 8.5rem 0rem 3.26rem 0;
 }
 
-
-
 .heroBottomGradinet {
   width: 68rem;
   height: 46rem;
   flex-shrink: 0;
   border-radius: 71.6875rem;
-  background: linear-gradient(rgba(24, 201, 255, 0.555) 11.9%,
-      rgba(197, 8, 255, 0.445) 82.04%);
+  background: linear-gradient(
+    rgba(24, 201, 255, 0.555) 11.9%,
+    rgba(197, 8, 255, 0.445) 82.04%
+  );
   filter: blur(125.4px);
   position: absolute;
   bottom: -30rem;
   left: 14rem;
   animation: rotateBg 20s linear infinite;
 }
-
 
 .hero_row_style {
   display: grid;
@@ -662,7 +697,7 @@ a {
 }
 
 .hero_text_style h1 {
-  color: #FFF;
+  color: #fff;
   font-size: 3.75rem;
   font-style: normal;
   font-weight: 700;
@@ -671,7 +706,7 @@ a {
 }
 
 .hero_page_strongText h2 {
-  color: #FFF;
+  color: #fff;
   font-size: 3.75rem;
   font-style: normal;
   font-weight: 700;
@@ -680,7 +715,7 @@ a {
 }
 
 .hero_page_strongText h3 {
-  color: #FFF;
+  color: #fff;
   font-size: 3.75rem;
   font-style: normal;
   font-weight: 700;
@@ -693,7 +728,6 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 2rem;
-
 }
 
 .hero_text_style .hero_seconde_para {
@@ -759,18 +793,22 @@ a {
   padding: 5px 30px;
   gap: 8px;
   text-decoration: none;
-  background: linear-gradient(180deg,
-      rgba(24, 200, 255, 0.2) 0%,
-      rgba(24, 200, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(24, 200, 255, 0.2) 0%,
+    rgba(24, 200, 255, 0) 100%
+  );
   border-radius: 20px;
   box-shadow: #c508ff 0px 1px 1px 0px, #18c9ff 1px 0px 1px 1px;
 }
 
 .getStartedBtn:hover .getStartedBtn_span {
   transition: all 0.4s linear;
-  background: linear-gradient(225deg,
-      #18c8ff 14.89%,
-      rgba(198, 8, 255, 0.79) 85.85%);
+  background: linear-gradient(
+    225deg,
+    #18c8ff 14.89%,
+    rgba(198, 8, 255, 0.79) 85.85%
+  );
 }
 
 /* About design */
@@ -790,7 +828,7 @@ a {
 .about_col_text_style p {
   padding-top: 1.5rem;
   padding-bottom: 0rem;
-  color: var(--Color-4, #818CB6);
+  color: var(--Color-4, #818cb6);
   /* font-family: Poppins; */
   font-size: 1rem;
   font-style: normal;
@@ -823,9 +861,6 @@ a {
   overflow: hidden;
   z-index: 1;
 }
-
-
-
 
 /* +=+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /* Key Features */
@@ -863,8 +898,10 @@ a {
   margin-left: 10rem;
   margin-right: 9.18rem;
   border-radius: 19.47581rem;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   box-shadow: 0px 4px 15.2px 0px rgba(0, 0, 0, 0.729);
   position: relative;
   z-index: 15;
@@ -889,9 +926,11 @@ a {
   height: 19rem;
   flex-shrink: 0;
   border-radius: 71.6875rem;
-  background: linear-gradient(247deg,
-      rgba(24, 201, 255, 0.705) 11.9%,
-      rgba(197, 8, 255, 0.623) 82.04%);
+  background: linear-gradient(
+    247deg,
+    rgba(24, 201, 255, 0.705) 11.9%,
+    rgba(197, 8, 255, 0.623) 82.04%
+  );
   filter: blur(125.4px);
   position: absolute;
   left: 3rem;
@@ -899,10 +938,12 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-.key_features_box_div:hover~.keyDownGradinet {
-  background: linear-gradient(247deg,
-      rgba(24, 201, 255, 0.905) 11.9%,
-      rgba(197, 8, 255, 0.823) 82.04%);
+.key_features_box_div:hover ~ .keyDownGradinet {
+  background: linear-gradient(
+    247deg,
+    rgba(24, 201, 255, 0.905) 11.9%,
+    rgba(197, 8, 255, 0.823) 82.04%
+  );
   filter: blur(150px) brightness(1.2);
 }
 
@@ -955,10 +996,14 @@ a {
   border-radius: 4.375rem;
   opacity: 1;
   box-shadow: #c508ffa1 0px 1px 1px 1px, #18c9ffab 1px 0px 1px 1px;
-  background: var(--Transparent-bg-1,
-      linear-gradient(180deg,
-        rgba(24, 200, 255, 0.2) 0%,
-        rgba(24, 200, 255, 0) 100%));
+  background: var(
+    --Transparent-bg-1,
+    linear-gradient(
+      180deg,
+      rgba(24, 200, 255, 0.2) 0%,
+      rgba(24, 200, 255, 0) 100%
+    )
+  );
   /* backdrop-filter: blur(15px); */
   margin-left: -5rem;
   display: flex;
@@ -988,9 +1033,11 @@ a {
 }
 
 .key_col_image_circle_style {
-  background: linear-gradient(65deg,
-      rgba(197, 8, 255, 0.973) 0%,
-      rgba(24, 201, 255, 0.979) 100%);
+  background: linear-gradient(
+    65deg,
+    rgba(197, 8, 255, 0.973) 0%,
+    rgba(24, 201, 255, 0.979) 100%
+  );
   width: 5.6rem;
   height: 5.6rem;
   border-radius: 50%;
@@ -1066,7 +1113,6 @@ a {
 }
 
 .toltipcard p {
-
   color: #fff;
   font-size: 1rem;
   font-style: normal;
@@ -1102,9 +1148,11 @@ a {
 
 .services_col_text_style {
   box-sizing: border-box;
-  background: linear-gradient(180deg,
-      rgba(119, 201, 255, 0.2) 0%,
-      rgba(131, 135, 137, 0.024) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(119, 201, 255, 0.2) 0%,
+    rgba(131, 135, 137, 0.024) 100%
+  );
   border-radius: 30px;
   text-align: center;
   padding: 3rem 1.5rem;
@@ -1271,9 +1319,11 @@ a {
 }
 
 .job_oppening {
-  background: linear-gradient(180deg,
-      rgba(24, 200, 255, 0.2) 0%,
-      rgba(24, 200, 255, 0) 100%) !important;
+  background: linear-gradient(
+    180deg,
+    rgba(24, 200, 255, 0.2) 0%,
+    rgba(24, 200, 255, 0) 100%
+  ) !important;
   width: 395px !important;
   min-height: 390px;
   border: none !important;
@@ -1383,9 +1433,11 @@ a {
 .job_apply_btn {
   width: 100%;
   border-radius: 25px;
-  background: linear-gradient(225.57deg,
-      rgb(24, 200, 255),
-      rgb(198, 8, 255) 101.79%);
+  background: linear-gradient(
+    225.57deg,
+    rgb(24, 200, 255),
+    rgb(198, 8, 255) 101.79%
+  );
   padding: 10px 0px;
   margin-top: 30px;
   color: rgb(255, 255, 255);
@@ -1494,9 +1546,11 @@ a {
   align-items: center;
   font-size: 1rem;
   margin-left: 0.7rem;
-  background: linear-gradient(175deg,
-      #34c9f7 14.89%,
-      rgba(193, 21, 245, 0.79) 85.85%);
+  background: linear-gradient(
+    175deg,
+    #34c9f7 14.89%,
+    rgba(193, 21, 245, 0.79) 85.85%
+  );
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
@@ -1505,9 +1559,11 @@ a {
 
 .applyBtn:hover .applyBtn_div {
   transition: all 0.4s linear;
-  background: linear-gradient(225deg,
-      #18c8ff 14.89%,
-      rgba(198, 8, 255, 0.79) 85.85%);
+  background: linear-gradient(
+    225deg,
+    #18c8ff 14.89%,
+    rgba(198, 8, 255, 0.79) 85.85%
+  );
 }
 
 .applyBtn:hover .applyBtn_div .right_erro_icon {
@@ -1753,8 +1809,6 @@ a {
   margin: 10px 0;
 }
 
-
-
 .dropdown {
   position: absolute;
   width: 250px;
@@ -1782,22 +1836,18 @@ a {
   text-align: center;
 }
 
-
-
 /* ========================================================================= */
 /* Footer section start  */
 .footer-div-style {
   background: #060044;
   padding-top: 2.5rem;
   padding-bottom: 1.5rem;
-
 }
 
 .footer_box {
   color: var(--text-color);
   position: relative;
   z-index: 50;
-
 }
 
 .footer_row_box {
@@ -1817,11 +1867,9 @@ a {
   margin: 0 auto;
 }
 
-
-
 .footer_heading {
   text-transform: capitalize;
-  color: #FFF;
+  color: #fff;
   /* font-family: Poppins; */
   font-size: 1.9rem;
   font-style: normal;
@@ -2214,9 +2262,11 @@ a {
 }
 
 .contactus_Services_icon_div .contactus_Services_icon {
-  background: linear-gradient(225deg,
-      #18c8ff 14.89%,
-      rgba(198, 8, 255, 0.79) 85.85%);
+  background: linear-gradient(
+    225deg,
+    #18c8ff 14.89%,
+    rgba(198, 8, 255, 0.79) 85.85%
+  );
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.7rem 0rem 0.7rem 0rem;
@@ -2250,7 +2300,6 @@ a {
 }
 
 .contactus_Services_text p {
-
   color: var(--text-color);
   font-size: 1rem;
   font-weight: 400;
@@ -2265,9 +2314,11 @@ a {
 
 .meassageSentbtn {
   height: 50px;
-  background: linear-gradient(225deg,
-      #18c8ff 14.89%,
-      rgba(198, 8, 255, 0.79) 85.85%);
+  background: linear-gradient(
+    225deg,
+    #18c8ff 14.89%,
+    rgba(198, 8, 255, 0.79) 85.85%
+  );
   color: white;
   padding: 10px 60px;
   margin: 8px 0;
@@ -2298,10 +2349,8 @@ a {
 }
 
 .react-tel-input .country-list .search {
-
   box-shadow: 0px 4px 19.8px 0px rgba(5, 5, 5, 0.3), #c508ff 0px 1px 1px 0px,
     #18c9ff 1px 0px 1px 1px;
-
 }
 
 .react-tel-input .country-list .search-box {
@@ -2348,9 +2397,11 @@ a {
 
 .contactus_input_section {
   box-sizing: border-box;
-  background: linear-gradient(180deg,
-      rgba(24, 200, 255, 0.2) 0%,
-      rgba(24, 200, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(24, 200, 255, 0.2) 0%,
+    rgba(24, 200, 255, 0) 100%
+  );
   border-radius: 30px;
   padding: 2.5rem 2.1rem;
   position: relative;
@@ -2411,9 +2462,11 @@ a {
 
 input[type="submit"] {
   height: 50px;
-  background: linear-gradient(225deg,
-      #18c8ff 14.89%,
-      rgba(198, 8, 255, 0.79) 85.85%);
+  background: linear-gradient(
+    225deg,
+    #18c8ff 14.89%,
+    rgba(198, 8, 255, 0.79) 85.85%
+  );
   color: white;
   padding: 10px 60px;
   margin: 8px 0;
@@ -2429,10 +2482,14 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background: var(--Transparent-bg-1,
-      linear-gradient(180deg,
-        rgba(24, 200, 255, 0.2) 0%,
-        rgba(24, 200, 255, 0) 100%));
+  background: var(
+    --Transparent-bg-1,
+    linear-gradient(
+      180deg,
+      rgba(24, 200, 255, 0.2) 0%,
+      rgba(24, 200, 255, 0) 100%
+    )
+  );
   transition: all 0.05s;
 }
 
@@ -2509,9 +2566,11 @@ textarea {
   box-sizing: border-box;
   width: 848px;
   max-height: 684px;
-  background: linear-gradient(180deg,
-      rgba(119, 201, 255, 0.2) 0%,
-      rgba(131, 135, 137, 0.024) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(119, 201, 255, 0.2) 0%,
+    rgba(131, 135, 137, 0.024) 100%
+  );
   box-shadow: 0px 14px 25px 11px rgba(23, 20, 80, 0.35);
   border-radius: 30px;
   border: 1px solid #ffffff70;
@@ -2550,7 +2609,6 @@ textarea {
 }
 
 .frist_blog_span_text_style {
-
   font-weight: 400;
   font-size: 10px;
   line-height: 14px;
@@ -2596,9 +2654,11 @@ textarea {
   padding: 1rem;
   width: 100%;
   height: 684px;
-  background: linear-gradient(180deg,
-      rgba(119, 201, 255, 0.2) 0%,
-      rgba(131, 135, 137, 0.024) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(119, 201, 255, 0.2) 0%,
+    rgba(131, 135, 137, 0.024) 100%
+  );
   box-shadow: 0px 14px 25px 11px rgba(23, 20, 80, 0.35);
   border-radius: 30px;
   border: 1px solid #ffffff70;
@@ -2652,14 +2712,12 @@ textarea {
 }
 
 .recommended_basics_benefits_content span {
-
   font-weight: 500;
   font-size: 16px;
   line-height: 32px;
 }
 
 .recommended_basics_benefits_content p {
-
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -2709,7 +2767,6 @@ textarea {
 }
 
 .recommended_content_basics_text_top span:nth-child(1) {
-
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -2724,7 +2781,6 @@ textarea {
 }
 
 .recommended_content_basics_text h5 {
-
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -2775,9 +2831,11 @@ textarea {
   border-radius: 30px;
   position: relative;
   box-sizing: border-box;
-  background: linear-gradient(180deg,
-      rgba(119, 201, 255, 0.2) 0%,
-      rgba(131, 135, 137, 0.024) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(119, 201, 255, 0.2) 0%,
+    rgba(131, 135, 137, 0.024) 100%
+  );
   box-shadow: 0px 14px 25px 11px rgba(23, 20, 80, 0.35);
   border: 1px solid #ffffff70;
   z-index: 15;
@@ -2884,7 +2942,10 @@ textarea {
   line-height: 110%;
 
   &:hover {
-    background: var(--Gradient2, linear-gradient(249deg, #18C8FF 19.43%, #C608FF 77.43%));
+    background: var(
+      --Gradient2,
+      linear-gradient(249deg, #18c8ff 19.43%, #c608ff 77.43%)
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2896,7 +2957,10 @@ textarea {
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
-    background: var(--Gradient2, linear-gradient(249deg, #18C8FF 19.43%, #C608FF 77.43%));
+    background: var(
+      --Gradient2,
+      linear-gradient(249deg, #18c8ff 19.43%, #c608ff 77.43%)
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2917,10 +2981,16 @@ textarea {
   pointer-events: stroke;
 
   &.active {
-    background: var(--Gradient2, linear-gradient(249deg, #18C8FF 19.43%, #C608FF 77.43%));
+    background: var(
+      --Gradient2,
+      linear-gradient(249deg, #18c8ff 19.43%, #c608ff 77.43%)
+    );
 
     &:hover {
-      background: var(--Gradient2, linear-gradient(249deg, #18C8FF 19.43%, #C608FF 77.43%));
+      background: var(
+        --Gradient2,
+        linear-gradient(249deg, #18c8ff 19.43%, #c608ff 77.43%)
+      );
     }
   }
 }
@@ -2937,9 +3007,11 @@ textarea {
   box-sizing: border-box;
   width: 848px;
   min-height: 600px;
-  background: linear-gradient(180deg,
-      rgba(119, 201, 255, 0.2) 0%,
-      rgba(131, 135, 137, 0.024) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(119, 201, 255, 0.2) 0%,
+    rgba(131, 135, 137, 0.024) 100%
+  );
   box-shadow: 0px 14px 25px 11px rgba(23, 20, 80, 0.35);
   border-radius: 30px;
   border: 1px solid #ffffff70;
@@ -3020,7 +3092,6 @@ textarea {
   line-height: 24px;
   color: #ffffff;
 }
-
 
 /* expart */
 
@@ -3183,9 +3254,11 @@ textarea {
   padding: 5px 30px;
   gap: 8px;
   text-decoration: none;
-  background: linear-gradient(180deg,
-      rgba(24, 200, 255, 0.2) 0%,
-      rgba(24, 200, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(24, 200, 255, 0.2) 0%,
+    rgba(24, 200, 255, 0) 100%
+  );
   border-radius: 30px;
   width: 185px;
   height: 50px;
@@ -3194,9 +3267,11 @@ textarea {
 }
 
 .package_navbar .active {
-  background: linear-gradient(225deg,
-      #18c8ff 14.89%,
-      rgba(198, 8, 255, 0.79) 85.85%);
+  background: linear-gradient(
+    225deg,
+    #18c8ff 14.89%,
+    rgba(198, 8, 255, 0.79) 85.85%
+  );
 }
 
 .package_navbar_link span {
@@ -3378,9 +3453,11 @@ textarea {
   color: var(--text-color);
   flex: 1;
   box-sizing: border-box;
-  background: linear-gradient(180deg,
-      rgba(24, 200, 255, 0.2) 0%,
-      rgba(24, 200, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(24, 200, 255, 0.2) 0%,
+    rgba(24, 200, 255, 0) 100%
+  );
   box-shadow: #c508ff 0px 1px 2px 1px, #18c9ff 1px 0px 2px 1px;
   border-radius: 30px;
   position: relative;
@@ -3401,8 +3478,6 @@ textarea {
   z-index: -1;
   border-radius: inherit;
 }
-
-
 
 .package_col_text_style .plan_text_div {
   position: absolute;
@@ -3443,7 +3518,6 @@ textarea {
 }
 
 .section_txt {
-
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -3544,7 +3618,6 @@ textarea {
 /* media query  */
 /* ================================== */
 @media (max-width: 1398px) {
-
   /* ...
 rules here apply to devices from 1202px to 1398px (inclusive)
 	... */
@@ -3617,7 +3690,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     right: -10rem;
   }
 
-
   /* footer */
   .footer_row_box {
     padding: 0.19rem 0.19rem;
@@ -3656,7 +3728,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 /* =========================================== */
 /* Desktop-First Media Queries */
 @media (max-width: 1200px) {
-
   /* ...
  rules here apply to devices from 993px to 1200px (inclusive)
 	... */
@@ -3666,13 +3737,13 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   /*navbar responsive  */
-  .navbar>.container,
-  .navbar>.container-fluid,
-  .navbar>.container-lg,
-  .navbar>.container-md,
-  .navbar>.container-sm,
-  .navbar>.container-xl,
-  .navbar>.container-xxl {
+  .navbar > .container,
+  .navbar > .container-fluid,
+  .navbar > .container-lg,
+  .navbar > .container-md,
+  .navbar > .container-sm,
+  .navbar > .container-xl,
+  .navbar > .container-xxl {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
@@ -3835,8 +3906,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     padding: 2.5rem 4rem;
   }
 
-
-
   /* footer */
   .footer_box_text_div {
     padding-left: 1.5rem;
@@ -3859,7 +3928,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   .footer_heading {
-
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
@@ -3940,7 +4008,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     row-gap: 0.5rem;
   }
 
-
   /* package section */
   .ManagementPackage_col_text_style {
     margin: 0rem !important;
@@ -3982,7 +4049,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 
 /* tab device */
 @media (max-width: 992px) {
-
   /* ...
 	 rules here apply to devices from 769px to 992px (inclusive)
 	... */
@@ -4012,13 +4078,13 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   /* navbar in tablet */
-  .navbar>.container,
-  .navbar>.container-fluid,
-  .navbar>.container-lg,
-  .navbar>.container-md,
-  .navbar>.container-sm,
-  .navbar>.container-xl,
-  .navbar>.container-xxl {
+  .navbar > .container,
+  .navbar > .container-fluid,
+  .navbar > .container-lg,
+  .navbar > .container-md,
+  .navbar > .container-sm,
+  .navbar > .container-xl,
+  .navbar > .container-xxl {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
@@ -4061,8 +4127,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     z-index: 150;
   }
 
-
-
   .menu::before {
     content: "";
     position: absolute;
@@ -4075,8 +4139,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     z-index: -1;
     border-radius: inherit;
   }
-
-
 
   .menu.hide {
     transform: translateX(100%);
@@ -4094,7 +4156,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 
   /*===============02 testing sub menu items ====================== */
 
-
   /* Back Button */
   .back-btn {
     font-size: 1.5rem;
@@ -4106,7 +4167,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   .back-btn:hover {
     color: #18c9ff;
   }
-
 
   /* Menu Transition */
   .menu.hide {
@@ -4160,7 +4220,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     position: absolute;
     top: 0.12rem;
     right: 0.99rem;
-
   }
 
   /* Close Icon */
@@ -4305,10 +4364,14 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     gap: 0.625rem;
     border-radius: 1.5625rem;
     border: 1px solid var(--Gradient2, #18c8ff);
-    background: var(--Transparent-bg-1,
-        linear-gradient(180deg,
-          rgba(24, 200, 255, 0.2) 0%,
-          rgba(24, 200, 255, 0) 100%));
+    background: var(
+      --Transparent-bg-1,
+      linear-gradient(
+        180deg,
+        rgba(24, 200, 255, 0.2) 0%,
+        rgba(24, 200, 255, 0) 100%
+      )
+    );
 
     box-shadow: 0px 4px 19.8px 0px rgba(0, 0, 0, 0.25), #c508ff 0px 1px 1px 0px,
       #18c9ff 1px 0px 1px 1px;
@@ -4334,9 +4397,11 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     align-items: center;
     width: 2.6rem;
     height: 2.6rem;
-    background: linear-gradient(180deg,
-        rgba(24, 200, 255, 0.2) 0%,
-        rgba(24, 200, 255, 0) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(24, 200, 255, 0.2) 0%,
+      rgba(24, 200, 255, 0) 100%
+    );
     color: var(--text-color) !important;
     border-radius: 0.9375rem;
     font-size: 1.3rem;
@@ -4346,8 +4411,10 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 
   .resonsive_navbar_social_media .resonsive_navbar_social_media_link:hover {
-    background: var(--Gradient2,
-        linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+    background: var(
+      --Gradient2,
+      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+    );
   }
 
   /* home page hero part */
@@ -4370,8 +4437,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   .hero_text_style h1 {
     font-size: 4.1rem;
   }
-
-
 
   /* menubar responsive  */
 
@@ -4688,7 +4753,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   }
 }
 
-
 /* moblie device  */
 @media (max-width: 768px) {
   /* ...
@@ -4704,8 +4768,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     font-size: 2.5rem;
     padding-bottom: 0.6rem;
   }
-
-
 
   /* caree */
 
@@ -4758,13 +4820,10 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     padding: 0rem 0rem;
   }
 
-
-
   .hero_btn_style {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-
   }
 
   .hero_btn_style a {
@@ -4911,7 +4970,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   .team_row_style {
     margin-top: 2rem;
   }
-
 
   .accordion button {
     padding: 0.7rem 1.9rem 0.7rem 0.7rem;
@@ -5080,7 +5138,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   .Our_Value_text_heading {
     padding-right: 0;
     font-size: 28px;
-
   }
 
   .Our_Value_Services {
@@ -5095,7 +5152,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   .Our_Value_Services_text_div P {
     font-size: 14px;
     width: 228px;
-
   }
 
   .Our_Value_Services_div {
@@ -5322,15 +5378,13 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 
 /* vary small device  */
 @media (max-width: 500px) {
-
-
   /* universla all small device heading and front chnage  */
   .headline {
     font-size: 28px;
   }
 
   .poppins-font {
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
   }
 
   /* universla style */
@@ -5357,7 +5411,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     padding-right: 0.5rem;
     line-height: 125%;
   }
-
 
   .topPeraDesText {
     color: var(--text-color);
@@ -5473,7 +5526,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     line-height: 2.1rem;
   }
 
-
   .hero_page_strongText .homePageHeroSubHeadingFristText {
     font-size: 21px;
     margin-top: -11px;
@@ -5491,7 +5543,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     padding-right: 0.5rem;
     line-height: 2.1rem;
   }
-
 
   .hero_btn1,
   .hero_btn2 {
@@ -5569,7 +5620,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     height: 42.067px;
   }
 
-
   /* top heading part text  */
   .homePageSectionTopTextstyle {
     padding-top: 1rem;
@@ -5580,14 +5630,13 @@ rules here apply to devices from 1202px to 1398px (inclusive)
 
   .topHeadingStyle {
     font-size: 1.5rem;
-    line-height: 1.8rem;
+    line-height: 125%;
     margin-top: 50px;
   }
 
   .homePageOurProgresssText {
     margin-top: 0px;
   }
-
 
   /* home page our value */
   .Our_Value_image_style {
@@ -5597,7 +5646,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   .col_text_style .about_page_strongText {
     font-size: 28px;
   }
-
 
   /* footer div */
   .footer-div-style {
@@ -5666,7 +5714,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     padding: 0px 13px;
     width: 100%;
     margin-bottom: 0.9rem;
-
   }
 
   .footer_menubar {
@@ -5764,7 +5811,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     padding-top: 3.5rem;
     padding-bottom: 0.5rem;
   }
-
 
   .bussness_top_right_img {
     position: absolute;
@@ -5935,10 +5981,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     padding-top: 0rem;
   }
 
-
-
-
-
   /* contact us section  */
   .contactus_text_heading {
     font-size: 1.5rem;
@@ -5957,7 +5999,6 @@ rules here apply to devices from 1202px to 1398px (inclusive)
   .package_basics_benefits_item span {
     font-size: 0.8rem;
     line-height: 1.2rem;
-
   }
 
   /* responsive menu  */
@@ -5992,5 +6033,4 @@ rules here apply to devices from 1202px to 1398px (inclusive)
     font-weight: 400;
     line-height: 120%;
   }
-
 }

@@ -4,9 +4,11 @@
  */
 .socailMediaMarketing_hero_section {
   overflow: hidden;
-  background: linear-gradient(278deg,
-      rgba(198, 8, 255, 0.5) -4.99%,
-      rgba(24, 200, 255, 0.41) 106.17%);
+  background: linear-gradient(
+    278deg,
+    rgba(198, 8, 255, 0.5) -4.99%,
+    rgba(24, 200, 255, 0.41) 106.17%
+  );
 }
 
 /* ====================== */
@@ -78,7 +80,7 @@
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.9rem;
+  line-height: 125%;
 }
 
 .socailMediaMarketing_OurServices_para_style {
@@ -87,7 +89,7 @@
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.125rem;
+  line-height: 125%;
 }
 
 .socailMediaMarketing_elementParaText {
@@ -165,10 +167,12 @@
 /* ================================== */
 .socailMediaMarketing_specialize_card {
   border-radius: 3.125rem;
-  background: linear-gradient(180deg,
-      rgba(0, 119, 255, 0.95) 0%,
-      rgba(10, 0, 116, 0.78) 50%,
-      rgba(198, 8, 255, 0.95) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 119, 255, 0.95) 0%,
+    rgba(10, 0, 116, 0.78) 50%,
+    rgba(198, 8, 255, 0.95) 100%
+  );
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -181,7 +185,6 @@
 /* ================================== */
 /* desktop */
 @media (max-width: 1398px) {
-
   /* ...
   rules here apply to devices from 1202px to 1398px (inclusive)
       ... */
@@ -196,7 +199,7 @@
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 115%;
+    line-height: 125%;
   }
 
   .socailMediaMarketing_OurServices_Text_icon_div {
@@ -267,14 +270,14 @@
   }
 
   .socailMediaMarketing_OurServices_heading {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 20px;
+    line-height: 125%;
   }
 
   .socailMediaMarketing_OurServices_para_style {
     font-size: 0.8rem;
+    text-align: justify;
   }
-
 
   .socailMediaMarketing_whoWeServe_main_div div:nth-child(4) {
     transform: translate(0px, 0px) !important;
@@ -350,5 +353,4 @@
     border-radius: 0.9rem;
     position: relative;
   }
-
 }

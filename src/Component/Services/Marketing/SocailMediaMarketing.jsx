@@ -11,7 +11,7 @@ import { AppContext } from "../../../AppContext";
 gsap.registerPlugin(ScrollTrigger);
 
 const SocailMediaMarketing = () => {
-  const { isLargeMobileView , isMobileView } = useContext(AppContext);
+  const { isLargeMobileView, isMobileView } = useContext(AppContext);
   useGSAP(() => {
     // Animation Timeline for Hero Section
     let heroTimeline = gsap.timeline();
@@ -33,7 +33,7 @@ const SocailMediaMarketing = () => {
         opacity: 0,
         duration: 0.5,
         delay: 0.2,
-      });   
+      });
   }, []);
   return (
     <main className="maindiv">
@@ -41,30 +41,37 @@ const SocailMediaMarketing = () => {
       <section className="socailMediaMarketing_hero_section">
         <div className="container webContentWriting_hero_part">
           <div className="webContentWriting_hero_text_part">
-            {
-              isMobileView ? (<div className="hero_page_strongText">
+            {isMobileView ? (
+              <div className="hero_page_strongText">
                 <h2>
                   {" "}
                   TOJO Global{" "}
                   <span className="headdingGradientText"> Elevating </span>
                 </h2>
                 <h3 className="homePageHeroSubHeadingFristText">
-                Social Media Marketing
+                  Social Media Marketing
                 </h3>
                 <h3 className="homePageHeroSubHeadingSecondText">
-                for Modern Brands
+                  for Modern Brands
                 </h3>
-              </div>) : (<h1>
+              </div>
+            ) : (
+              <h1>
                 TOJO Global Elevating Social Media Marketing for Modern Brands
-              </h1> ) 
-            }
-            <p style={{
-                  ...(isMobileView && {
-                    textAlign: "justify",
-                    lineHeight:'125%',
-                  }),
-                }}>
-              We design personalized social media marketing strategies that generate measurable results, ensuring your brand effectively reaches its target audience, increases engagement, and fosters long-term growth
+              </h1>
+            )}
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "125%",
+                }),
+              }}
+            >
+              We design personalized social media marketing strategies that
+              generate measurable results, ensuring your brand effectively
+              reaches its target audience, increases engagement, and fosters
+              long-term growth
             </p>
             <div className="hero_btn_style">
               <Link to="/contact">
@@ -84,8 +91,25 @@ const SocailMediaMarketing = () => {
       </section>
       {/* socailMediaMarketing who we serve  */}
       <section className="container socailMediaMarketing_whoWeServe_section">
-        <div className="sectionTopTextstyle" data-aos="fade-down">
-          <h1 className="topHeadingStyle">Who We Serve?</h1>
+        <div
+          className="sectionTopTextstyle"
+          data-aos="fade-down"
+          style={{
+            ...(isMobileView && {
+              paddingBottom: "0rem",
+            }),
+          }}
+        >
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "42px",
+              }),
+            }}
+          >
+            Who We Serve?
+          </h1>
           <p className="paraStyle">
             We deliver customized social media marketing solutions across a
             variety of industries, catering to businesses of all sizes.
@@ -158,13 +182,36 @@ const SocailMediaMarketing = () => {
         </div>
       </section>
       {/*  Our Social Media Marketing Services*/}
-      <section className="socailMediaMarketing_OurServices_section">
+      <section
+        className="socailMediaMarketing_OurServices_section"
+        style={{
+          ...(isMobileView && {
+            paddingBottom: "2rem",
+          }),
+        }}
+      >
         {/* text */}
-        <div className="sectionTopTextstyle container" data-aos="fade-up">
+        <div
+          className="sectionTopTextstyle container"
+          data-aos="fade-up"
+          style={{
+            ...(isMobileView && {
+              marginTop: "28px",
+              marginBottom: "0.7rem",
+            }),
+          }}
+        >
           <h1 className="topHeadingStyle socailMediaMarketing_OurServices_topText_div">
             Our Social Media Marketing Services
           </h1>
-          <p className="socailMediaMarketing_elementParaText">
+          <p
+            className="socailMediaMarketing_elementParaText"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+              }),
+            }}
+          >
             At TOJO Global, we offer a full suite of social media services
             designed to boost your brand and grow your online presence.
           </p>
@@ -182,6 +229,13 @@ const SocailMediaMarketing = () => {
               <img
                 src="/Images/ServicesImage/Marketing/SocailMediaMarketingOurServicesSvg01.svg"
                 alt="Our Social Media Marketing Services"
+                style={{
+                  ...(isMobileView && {
+                    width: "50px",
+                    height: "52px",
+                    marginBottom: "0.5rem",
+                  }),
+                }}
               />
               <div className="socailMediaMarketing_OurServices_text_div mt-2 md:mt-4">
                 <h4 className="socailMediaMarketing_OurServices_heading pb-2">
@@ -206,6 +260,13 @@ const SocailMediaMarketing = () => {
               <img
                 src="/Images/ServicesImage/Marketing/SocailMediaMarketingOurServicesSvg02.svg"
                 alt="Our Social Media Marketing Services"
+                style={{
+                  ...(isMobileView && {
+                    width: "50px",
+                    height: "52px",
+                    marginBottom: "0.5rem",
+                  }),
+                }}
               />
               <div className="socailMediaMarketing_OurServices_text_div mt-2 md:mt-4">
                 <h4 className="socailMediaMarketing_OurServices_heading pb-2">
@@ -230,6 +291,13 @@ const SocailMediaMarketing = () => {
               <img
                 src="/Images/ServicesImage/Marketing/SocailMediaMarketingOurServicesSvg01.svg"
                 alt="Our Social Media Marketing Services"
+                style={{
+                  ...(isMobileView && {
+                    width: "50px",
+                    height: "52px",
+                    marginBottom: "0.5rem",
+                  }),
+                }}
               />
               <div className="socailMediaMarketing_OurServices_text_div mt-2 md:mt-4">
                 <h4 className="socailMediaMarketing_OurServices_heading pb-2">
@@ -254,6 +322,13 @@ const SocailMediaMarketing = () => {
               <img
                 src="/Images/ServicesImage/Marketing/SocailMediaMarketingOurServicesSvg04.svg"
                 alt="Our Social Media Marketing Services"
+                style={{
+                  ...(isMobileView && {
+                    width: "50px",
+                    height: "52px",
+                    marginBottom: "0.5rem",
+                  }),
+                }}
               />
               <div className="socailMediaMarketing_OurServices_text_div mt-2 md:mt-4">
                 <h4 className="socailMediaMarketing_OurServices_heading pb-2">
@@ -278,6 +353,13 @@ const SocailMediaMarketing = () => {
               <img
                 src="/Images/ServicesImage/Marketing/SocailMediaMarketingOurServicesSvg05.svg"
                 alt="Our Social Media Marketing Services"
+                style={{
+                  ...(isMobileView && {
+                    width: "50px",
+                    height: "52px",
+                    marginBottom: "0.5rem",
+                  }),
+                }}
               />
               <div className="socailMediaMarketing_OurServices_text_div mt-2 md:mt-4">
                 <h4 className="socailMediaMarketing_OurServices_heading pb-2">
@@ -302,6 +384,13 @@ const SocailMediaMarketing = () => {
               <img
                 src="/Images/ServicesImage/Marketing/SocailMediaMarketingOurServicesSvg06.svg"
                 alt="Our Social Media Marketing Services"
+                style={{
+                  ...(isMobileView && {
+                    width: "50px",
+                    height: "52px",
+                    marginBottom: "0.5rem",
+                  }),
+                }}
               />
               <div className="socailMediaMarketing_OurServices_text_div mt-2 md:mt-4">
                 <h4 className="socailMediaMarketing_OurServices_heading pb-2">
@@ -321,7 +410,15 @@ const SocailMediaMarketing = () => {
       <section className="container">
         {/* text */}
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "35px",
+                marginBottom: "1.8rem",
+              }),
+            }}
+          >
             Why Social Media Marketing is Key for Business Growth
           </h1>
         </div>
@@ -457,18 +554,34 @@ const SocailMediaMarketing = () => {
       </section>
 
       {/*Here comes TOJO GLOBAL where we specialize in creating unique logos */}
-      <section className="smBrandGrowth_hero_part">
+      <section
+        className="smBrandGrowth_hero_part"
+        TOJO
+        Global
+        style={{
+          ...(isMobileView && {
+            paddingBottom: "1rem",
+          }),
+        }}
+      >
         <div
           className="professionalModeration_div socailMediaMarketing_specialize_card"
           data-aos="fade-down"
         >
           <div className="professionalModeration_text_div">
             <h1 className="professionalModeration_service_offers_heading">
-              We develop impactful social media strategies at TOJO Global,
+              We develop impactful social media strategies
             </h1>
-            <p className="professionalModeration_service_offers_para">
-              focused on increasing engagement and driving growth. Reach out to
-              us to elevate your brand’s performance.
+            <p
+              className="professionalModeration_service_offers_para"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                }),
+              }}
+            >
+              TOJO Global focusing and increasing engagement and driving growth.
+              Reach out to us to elevate your brand’s performance.
             </p>
 
             <div className="hero_btn_style">

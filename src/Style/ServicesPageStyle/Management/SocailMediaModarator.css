@@ -103,7 +103,7 @@
 }
 
 .smBrandGrowth_services_card:hover {
-  background: var(--BG-15, rgba(24, 200, 255, 0.10));
+  background: var(--BG-15, rgba(24, 200, 255, 0.1));
 }
 
 .smBrandGrowth_services_card::before {
@@ -113,9 +113,11 @@
   left: -2px;
   width: 9px;
   height: 120%;
-  background: linear-gradient(225deg,
-      #18c8ff 14.89%,
-      rgba(198, 8, 255, 0.79) 85.85%);
+  background: linear-gradient(
+    225deg,
+    #18c8ff 14.89%,
+    rgba(198, 8, 255, 0.79) 85.85%
+  );
   border-radius: 1.5625rem 0 0 1.5625rem;
 }
 
@@ -123,7 +125,6 @@
   width: 5.22644rem;
   height: 5.22644rem;
 }
-
 
 .smBrandGrowth_services_card_icon h5 {
   color: #fff;
@@ -170,8 +171,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 2.5rem;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -251,9 +254,11 @@
 }
 
 .BusinessModeration_service_item:hover {
-  background: linear-gradient(225deg,
-      #18c8ff 14.89%,
-      rgba(198, 8, 255, 0.79) 85.85%);
+  background: linear-gradient(
+    225deg,
+    #18c8ff 14.89%,
+    rgba(198, 8, 255, 0.79) 85.85%
+  );
 }
 
 .BusinessModeration_service_item::before {
@@ -263,9 +268,11 @@
   left: 0px;
   width: 2px;
   height: 95%;
-  background: linear-gradient(225deg,
-      #18c8ff 14.89%,
-      rgba(198, 8, 255, 0.79) 85.85%);
+  background: linear-gradient(
+    225deg,
+    #18c8ff 14.89%,
+    rgba(198, 8, 255, 0.79) 85.85%
+  );
   border-radius: 0.3125rem 0 0 0.3125rem;
 }
 
@@ -310,8 +317,10 @@
 
 /* Here comes TOJO GLOBAL with affordable, professional moderation services. */
 .professionalService_card_modaration_page {
-  background: var(--Woman,
-      linear-gradient(257deg, #7300ff 9.5%, #ff9ef5 112.47%));
+  background: var(
+    --Woman,
+    linear-gradient(257deg, #7300ff 9.5%, #ff9ef5 112.47%)
+  );
 }
 
 .professionalModeration_div {
@@ -337,7 +346,7 @@
   font-size: 2.25rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2.375rem;
+  line-height: 125%;
 }
 
 .professionalModeration_service_offers_para {
@@ -355,7 +364,6 @@
 /* ================================== */
 /* laptop  device  */
 @media (max-width: 1398px) {
-
   /* ...
         rules here apply to devices from 1202px to 1398px (inclusive)
         ... */
@@ -374,7 +382,6 @@
 
 /* laptop Media Queries */
 @media (max-width: 1200px) {
-
   /* ...
      rules here apply to devices from 993px to 1200px (inclusive)
         ... */
@@ -385,7 +392,6 @@
   .BusinessModeration_div {
     gap: 4.5rem;
   }
-
 
   .smBrandGrowth_services_card_div {
     margin: 5.5rem 2.1rem 0rem 2.1rem;
@@ -450,7 +456,6 @@
 
 /* vary small device  */
 @media (max-width: 500px) {
-
   /* ...
         rules here apply to devices from 0px to 500px
         ... */
@@ -512,7 +517,6 @@
     line-height: 120%;
     text-align: justify;
   }
-
 
   .smBrandGrowth_services_card_div {
     display: grid;
@@ -618,8 +622,6 @@
     margin-right: -0.49rem;
   }
 
-
-
   /* professionalModeration_div */
   .professionalModeration_div {
     margin: 0.5rem 0.25rem;
@@ -628,8 +630,7 @@
 
   .professionalModeration_service_offers_heading {
     width: 100%;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 20px;
   }
 
   .professionalModeration_service_offers_para {
@@ -640,7 +641,4 @@
   .professionalModeration_text_div {
     gap: 0.06rem;
   }
-
-
-
 }
