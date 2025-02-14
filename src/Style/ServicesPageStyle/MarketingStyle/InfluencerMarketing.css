@@ -4,9 +4,11 @@
  */
 .InfluencerMarketing_hero_section {
   overflow: hidden;
-  background: linear-gradient(225deg,
+  background: linear-gradient(
+      225deg,
       rgba(24, 200, 255, 0.3) 14.89%,
-      rgba(198, 8, 255, 0.3) 85.85%),
+      rgba(198, 8, 255, 0.3) 85.85%
+    ),
     url("/Images/ServicesImage/banner_images/influencer 1.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -92,8 +94,10 @@
   width: 6.375rem;
   height: 6.375rem;
   border-radius: 3.4375rem;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   position: absolute;
   left: -52px;
   top: 50%;
@@ -131,7 +135,6 @@
 
 .influencerMarketing_talented_second_text_card_div {
   color: #fff;
-  /* font-family: var(--font-main); */
   font-size: 1.5rem;
   margin-top: 1rem;
   font-style: normal;
@@ -192,7 +195,8 @@
   width: 11.6875rem;
   height: 11.625rem;
   border-radius: 1.5625rem;
-  transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(0.9, 0.9);
+  transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg)
+    scale(0.9, 0.9);
   box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
   transition: 0.4s ease-in-out transform;
   animation: smallImageAnimation 5s ease-in-out;
@@ -204,7 +208,8 @@
   }
 
   100% {
-    transform: perspective(750px) translate3d(50px, 0px, -550px) rotate3d(0, 190, 0, 85deg) scale3d(1.5, 1, 0.8);
+    transform: perspective(750px) translate3d(50px, 0px, -550px)
+      rotate3d(0, 190, 0, 85deg) scale3d(1.5, 1, 0.8);
   }
 }
 
@@ -291,7 +296,8 @@
 }
 
 /*Hover effect on the image background inside the card */
-.tailoredInfluencer_OurExpertise_Text_card_div:hover .InfluencerMarketing_OurExpertise_card_imge {
+.tailoredInfluencer_OurExpertise_Text_card_div:hover
+  .InfluencerMarketing_OurExpertise_card_imge {
   width: 100%;
   height: 100%;
   border-radius: 1.49rem;
@@ -299,69 +305,89 @@
 }
 
 .B2C_Influencer_Marketing {
-  background: linear-gradient(359deg,
-      rgba(1, 28, 82, 0.25) 7.39%,
-      rgba(0, 205, 233, 0.25) 75.72%);
+  background: linear-gradient(
+    359deg,
+    rgba(1, 28, 82, 0.25) 7.39%,
+    rgba(0, 205, 233, 0.25) 75.72%
+  );
 }
 
 .B2C_Influencer_Marketing_icon {
-  background: linear-gradient(358deg,
-      rgba(1, 28, 82, 0.25) -235.25%,
-      rgba(0, 205, 233, 0.25) 12.12%);
+  background: linear-gradient(
+    358deg,
+    rgba(1, 28, 82, 0.25) -235.25%,
+    rgba(0, 205, 233, 0.25) 12.12%
+  );
   transition: background 0.5s ease-in-out;
 }
 
 .B2C_Influencer_Marketing:hover .B2C_Influencer_Marketing_icon {
-  background: linear-gradient(359deg,
-      rgba(1, 28, 82, 0.5) 10%,
-      rgba(0, 205, 233, 0.5) 70%);
+  background: linear-gradient(
+    359deg,
+    rgba(1, 28, 82, 0.5) 10%,
+    rgba(0, 205, 233, 0.5) 70%
+  );
 }
 
 .Building_Credibility {
-  background: linear-gradient(24deg,
-      rgba(115, 0, 255, 0.25) 30.42%,
-      rgba(255, 158, 245, 0.25) 68.48%);
+  background: linear-gradient(
+    24deg,
+    rgba(115, 0, 255, 0.25) 30.42%,
+    rgba(255, 158, 245, 0.25) 68.48%
+  );
 }
 
 .Building_Credibility_icon {
-  background: linear-gradient(261deg,
-      rgba(115, 0, 255, 0.3) -77.82%,
-      rgba(255, 158, 245, 0.3) 109.67%);
+  background: linear-gradient(
+    261deg,
+    rgba(115, 0, 255, 0.3) -77.82%,
+    rgba(255, 158, 245, 0.3) 109.67%
+  );
   transition: background 0.5s ease-in-out;
 }
 
 .Building_Credibility:hover .Building_Credibility_icon {
-  background: linear-gradient(261deg,
-      rgba(115, 0, 255, 0.3) -77.82%,
-      rgba(255, 158, 245, 0.3) 109.67%);
+  background: linear-gradient(
+    261deg,
+    rgba(115, 0, 255, 0.3) -77.82%,
+    rgba(255, 158, 245, 0.3) 109.67%
+  );
 }
 
 .Increasing_Campaign_Impact {
-  background: linear-gradient(359deg,
-      rgba(1, 28, 82, 0.25) 7.39%,
-      rgba(0, 205, 233, 0.25) 75.72%);
+  background: linear-gradient(
+    359deg,
+    rgba(1, 28, 82, 0.25) 7.39%,
+    rgba(0, 205, 233, 0.25) 75.72%
+  );
 }
 
 .Increasing_Campaign_Impact_icon {
-  background: linear-gradient(358deg,
-      rgba(1, 28, 82, 0.25) -235.25%,
-      rgba(0, 205, 233, 0.25) 12.12%);
+  background: linear-gradient(
+    358deg,
+    rgba(1, 28, 82, 0.25) -235.25%,
+    rgba(0, 205, 233, 0.25) 12.12%
+  );
   transition: background 0.5s ease-in-out;
 }
 
 .Increasing_Campaign_Impact:hover .Increasing_Campaign_Impact {
-  background: linear-gradient(359deg,
-      rgba(1, 28, 82, 0.5) 10%,
-      rgba(0, 205, 233, 0.5) 70%);
+  background: linear-gradient(
+    359deg,
+    rgba(1, 28, 82, 0.5) 10%,
+    rgba(0, 205, 233, 0.5) 70%
+  );
 }
 
 /* ================================== */
 /* ====================== */
 /* socail-media-marketing We Offer section */
 .InfluencerMarketing_weOffer_section {
-  background: linear-gradient(270deg,
+  background: linear-gradient(
+      270deg,
       rgba(132, 41, 248, 0.27) 0.42%,
-      #060044 96.26%),
+      #060044 96.26%
+    ),
     url("/Images/ServicesImage/banner_images/an-influencer-in-photography-with-his-mobile-of-hi.png");
   background-position: top right;
   background-repeat: no-repeat;
@@ -418,11 +444,10 @@
 
 .InfluencerMarketing_weOffer_section_right_card_div h4 {
   color: var(--WHite, #fff);
-
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2rem;
+  line-height: 125%;
 }
 
 .InfluencerMarketing_weOffer_section_right_card_div p {
@@ -431,7 +456,7 @@
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.375rem;
+  line-height: 120%;
 }
 
 /* ================================== */
@@ -440,7 +465,6 @@
 /* ================================== */
 /* desktop */
 @media (max-width: 1398px) {
-
   /* ...
       rules here apply to devices from 1202px to 1398px (inclusive)
           ... */
@@ -477,12 +501,10 @@
   .InfluencerMarketing_weOffer_section_left_text_div p {
     margin-right: 5.4rem;
   }
-
 }
 
 /* laptop Media Queries */
 @media (max-width: 1200px) {
-
   /* ...
        rules here apply to devices from 993px to 1200px (inclusive)
           ... */
@@ -554,13 +576,16 @@
 
 /* vary small device  */
 @media (max-width: 500px) {
-
   /* ...
      rules here apply to devices from 0px to 460px (inclusive)
           ... */
   /* InfluencerMarketing_hero_text_div */
   .InfluencerMarketing_hero_text_div {
     padding: 0.56rem 0.6rem 3rem 0.56rem;
+  }
+  .InfluencerMarketing_hero_section {
+    object-fit: contain;
+    background-position-x: left;
   }
 
   .InfluencerMarketing_hero_text_div h1 {
@@ -580,7 +605,7 @@
   .InfluencerMarketing_OurExpertise_card_div {
     grid-template-columns: 1fr;
     justify-items: center;
-    gap: 4.69rem;
+    gap: 5.8rem;
     padding: 0.5rem;
     width: 100%;
     margin: 5rem auto 0rem auto;
@@ -588,7 +613,7 @@
 
   .InfluencerMarketing_OurExpertise_Text_card_div p {
     font-size: 0.8rem;
-    line-height: 1.2rem;
+    line-height: 120%;
   }
 
   .InfluencerMarketing_OurExpertise_card_icon {
@@ -598,7 +623,8 @@
   }
 
   .influencerMarketing_talented_second_text_card_div {
-    font-size: 16px;
+    font-size: 13px;
+    text-align: justify;
     margin-top: 0.5rem;
     font-weight: 600;
     line-height: 120%;
@@ -632,23 +658,24 @@
   .InfluencerMarketing_talented_card_bottom_small_img img {
     width: 11rem;
     height: 11.625rem;
-    transform: perspective(750px) translate3d(25px, 15px, -220px) rotateX(27deg) scale(0.9, 0.9);
+    transform: perspective(750px) translate3d(25px, 15px, -220px) rotateX(27deg)
+      scale(0.9, 0.9);
   }
 
   .InfluencerMarketing_talented_Text_card_div {
-    margin-top: 0.9rem;
+    margin-top: 0.5rem;
     padding: 0rem 0.8rem;
   }
 
   .InfluencerMarketing_talented_Text_card_div h2 {
     font-size: 1.5rem;
-    line-height: 1.8rem;
+    line-height: 125%;
   }
 
   .InfluencerMarketing_talented_Text_card_div p {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-
+    font-size: 12px;
+    line-height: 120%;
+    text-align: justify;
   }
 
   .talented_image_card_small_gradient {
@@ -663,7 +690,7 @@
     position: relative;
     z-index: 20;
     width: 19.1875rem;
-    height: 23.125rem;
+    height: 22rem;
   }
 
   .tailoredInfluencer_OurExpertise_card_div {
@@ -676,7 +703,7 @@
 
   .tailoredInfluencer_OurExpertise_Text_card_div p {
     font-size: 0.8rem;
-    line-height: 1.2rem;
+    line-height: 120%;
   }
 
   /* InfluencerMarketing_weOffer_section_div */
@@ -711,13 +738,11 @@
   }
 
   .InfluencerMarketing_weOffer_section_right_card_div h4 {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 20px;
   }
 
   .InfluencerMarketing_weOffer_section_right_card_div p {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 13px;
+    text-align: justify;
   }
-
 }

@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { AppContext } from "../../../AppContext";
 
 const SurffessImageInfluncer = () => {
+  const { isMobileView } = useContext(AppContext);
   const [bigImagesUrl, setBigImagesUrl] = useState(
     "/Images/ServicesImage/banner_images/male-influencer--bluish-banckground-amobile-in-her.jpg"
   );
@@ -30,6 +32,11 @@ const SurffessImageInfluncer = () => {
     <section
       className="InfluencerMarketing_OurExpertise_section"
       data-aos="fade-down"
+      style={{
+        ...(isMobileView && {
+          paddingTop: "1.8rem",
+        }),
+      }}
     >
       <div className="InfluencerMarketing_talented_card_div container">
         {/* Talented Text Card Image */}
