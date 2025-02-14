@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "../../../Style/ServicesPageStyle/MarketingStyle/leadGenaration.css";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { AppContext } from "../../../AppContext";
 gsap.registerPlugin(ScrollTrigger);
 const LeadGenaration = () => {
+  const { isMobileView } = useContext(AppContext);
+
   useGSAP(() => {
     gsap.from(".circel_div", {
       opacity: 0,
@@ -51,17 +54,55 @@ const LeadGenaration = () => {
             <div
               className="leadGenaration_service_hero_text_div"
               data-aos="fade-left"
+              style={{
+                ...(isMobileView && {
+                  paddingRight: "0rem",
+                }),
+              }}
             >
-              <h1>
-                Supercharge your marketing with TOJO GLOBAL's{" "}
-                <span className="headdingGradientText">lead Generation </span>{" "}
-                Service
-              </h1>
-              <p>
-                Our talented marketing team will strategically connect you with
-                your ideal customers, ensuring your business to reach new
-                heights of success and growth
-              </p>
+              {isMobileView ? (
+                <>
+                  <div className="hero_page_strongText">
+                    <h2>
+                      Boost your
+                      <span className="headdingGradientText"> marketing </span>
+                    </h2>
+                    <h3 className="homePageHeroSubHeadingFristText">
+                      with Tojo Global's{" "}
+                    </h3>
+                    <h3 className="homePageHeroSubHeadingSecondText">
+                      lead Generation Service
+                    </h3>
+                  </div>
+                  <p
+                    style={{
+                      ...(isMobileView && {
+                        textAlign: "justify",
+                      }),
+                    }}
+                  >
+                    Our talented marketing team will strategically connect you
+                    with your ideal customers, ensuring your business to reach
+                    new heights of success and growth
+                  </p>
+                </>
+              ) : (
+                <>
+                  <h1>
+                    Supercharge your marketing with TOJO GLOBAL's{" "}
+                    <span className="headdingGradientText">
+                      lead Generation{" "}
+                    </span>{" "}
+                    Service
+                  </h1>
+                  <p>
+                    Our talented marketing team will strategically connect you
+                    with your ideal customers, ensuring your business to reach
+                    new heights of success and growth
+                  </p>
+                </>
+              )}
+
               <div className="hero_btn_style">
                 <Link to="/contact">
                   <button className="custombtn hero_btn2 fristBtn">
@@ -78,6 +119,7 @@ const LeadGenaration = () => {
             <div
               className="searchEngineMarketing_hero_image_div"
               data-aos="fade-right"
+              style={isMobileView ? { display: "none" } : { display: "block" }}
             >
               <img
                 src="/Images/ServicesImage/banner_images/lead 1.png"
@@ -92,8 +134,24 @@ const LeadGenaration = () => {
       <section className="leadGenaration_service_section">
         <div className="searchEngineMarketing_WhoHelp_top_text_div">
           <div data-aos="fade-up">
-            <h1>TOJO GLOBAL Lead Generation Services</h1>
-            <p>
+            <h1
+              style={{
+                ...(isMobileView && {
+                  paddingTop: "1.8rem",
+                }),
+              }}
+            >
+              TOJO GLOBAL Lead Generation Services
+            </h1>
+            <p
+              style={{
+                ...(isMobileView && {
+                  marginTop: "0rem",
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               Without effective SEM, many brands struggle to be seen online. In
               fact, studies show that over 60% of businesses fail to reach their
               potential because they don’t invest in search engine marketing.
@@ -102,7 +160,14 @@ const LeadGenaration = () => {
             </p>
           </div>
         </div>
-        <div className="searchEngineMarketing_leadGenaration_main_div">
+        <div
+          className="searchEngineMarketing_leadGenaration_main_div"
+          style={{
+            ...(isMobileView && {
+              marginTop: "2.5rem",
+            }),
+          }}
+        >
           {/*01 Increased Visibility */}
           <div
             className="searchEngineMarketing_leadGenaration_card_div"
@@ -412,7 +477,15 @@ const LeadGenaration = () => {
         </div>
       </section>
       {/* How lead generation can help your brand? */}
-      <section className="brand_leadGenaration_service_section">
+      <section
+        className="brand_leadGenaration_service_section"
+        style={{
+          ...(isMobileView && {
+            paddingTop: "2.5rem",
+            paddingBottom: "2.9rem",
+          }),
+        }}
+      >
         <div
           className="brand_leadGenaration_service_section_gradient"
           data-aos="fade-left"
@@ -420,7 +493,14 @@ const LeadGenaration = () => {
         <div className="brand_leadGenaration_service_div" data-aos="fade-down">
           <div className="brand_leadGenaration_service_text_div">
             <h1>How lead generation can help your brand?</h1>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               A lead generation service can be a game-changer for your business.
               Instead of wasting time on trial and error, you can rely on a
               proven strategy to reach potential customers. At TOJO GLOBAL, we
@@ -443,7 +523,14 @@ const LeadGenaration = () => {
         </div>
       </section>
       {/* lead generation service Items   */}
-      <section className="SocailMediaMarketing_OurExpertise_section">
+      <section
+        className="SocailMediaMarketing_OurExpertise_section"
+        style={{
+          ...(isMobileView && {
+            marginBottom: "2.5rem",
+          }),
+        }}
+      >
         <div className="leadGenaration_service_card_div container">
           {/*01 Reach the Right People*/}
           <div
@@ -458,7 +545,14 @@ const LeadGenaration = () => {
               />
             </div>
             <h4>Reach the Right People</h4>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               We help you find and connect with the right prospects who are most
               likely to become customers. This saves you time and effort by
               focusing on leads that matter.
@@ -477,7 +571,14 @@ const LeadGenaration = () => {
               />
             </div>
             <h4>Get Better Leads</h4>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               We make sure the leads you receive are high-quality, meaning they
               are more likely to convert. This leads to better results and a
               higher return on investment.
@@ -496,7 +597,14 @@ const LeadGenaration = () => {
               />
             </div>
             <h4>Save Time and Money</h4>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               With our strategies, you won’t waste resources on ineffective
               marketing. We help you focus on what works, so you can spend less
               and achieve more.
@@ -515,7 +623,14 @@ const LeadGenaration = () => {
               />
             </div>
             <h4>Increase Brand Awareness</h4>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               We don’t just help you get leads – we also help boost your brand.
               Our methods improve your visibility, build trust, and create
               lasting connections with your audience
@@ -534,7 +649,14 @@ const LeadGenaration = () => {
               />
             </div>
             <h4>Stay Ahead of Competitors</h4>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               Our team stays up to date on the latest trends and strategies. We
               make sure your business stays competitive with modern, effective
               lead generation.
@@ -553,7 +675,14 @@ const LeadGenaration = () => {
               />
             </div>
             <h4>Understand Your Audience</h4>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               We use data to give you a clear picture of who your audience is
               and what they want. This helps you make smarter marketing
               decisions.
@@ -572,7 +701,14 @@ const LeadGenaration = () => {
               />
             </div>
             <h4>Maximize Your ROI</h4>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               We provide detailed performance data, so you know which tactics
               work best. This helps you invest in the right areas and get the
               most out of your marketing budget.
@@ -582,7 +718,14 @@ const LeadGenaration = () => {
       </section>
 
       {/*TOJO GLOBAL comes here to help you close this gap by using the power of influencers */}
-      <section className="container">
+      <section
+        className="container"
+        style={{
+          ...(isMobileView && {
+            marginBottom: "1.2rem",
+          }),
+        }}
+      >
         <div
           className="professionalModeration_div professionalService_card_onSeo_page"
           data-aos="fade-down"
@@ -591,7 +734,15 @@ const LeadGenaration = () => {
             <h1 className="professionalModeration_service_offers_heading">
               Our lead generation service is designed to help your business grow
             </h1>
-            <p className="professionalModeration_service_offers_para">
+            <p
+              className="professionalModeration_service_offers_para"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               by connecting you with the right prospects, optimizing your
               marketing efforts, and delivering measurable results. With our
               expertise and data-driven approach, you’ll see higher-quality

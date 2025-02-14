@@ -65,13 +65,15 @@
 }
 
 .searchEngineMarketing_leadGenaration_card_div:hover {
-  background: var(--BG-15, rgba(24, 200, 255, 0.20));
+  background: var(--BG-15, rgba(24, 200, 255, 0.2));
 }
 
 .searchEngineMarketing_leadGenaration_card_div_img {
   border-radius: 50%;
-  background: var(--Linear,
-      linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%));
+  background: var(
+    --Linear,
+    linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%)
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,8 +140,10 @@
   transform: translate(-50%, -50%);
   width: 15.375rem;
   height: 15.375rem;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
 }
 
 .main-circle {
@@ -166,8 +170,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 2.5rem;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -212,11 +218,13 @@
   top: 24px;
   width: 8.375rem;
   height: 0.0725rem;
-  background: repeating-linear-gradient(to right,
-      #00c7f2 1px,
-      #00c7f2 2px,
-      transparent 2px,
-      transparent 5px);
+  background: repeating-linear-gradient(
+    to right,
+    #00c7f2 1px,
+    #00c7f2 2px,
+    transparent 2px,
+    transparent 5px
+  );
 }
 
 .stepNumber3::before {
@@ -226,11 +234,13 @@
   top: 24px;
   width: 29.375rem;
   height: 0.0725rem;
-  background: repeating-linear-gradient(to right,
-      #00c7f2 1px,
-      #00c7f2 2px,
-      transparent 2px,
-      transparent 5px);
+  background: repeating-linear-gradient(
+    to right,
+    #00c7f2 1px,
+    #00c7f2 2px,
+    transparent 2px,
+    transparent 5px
+  );
   z-index: -1;
 }
 
@@ -278,9 +288,6 @@
   object-fit: fill;
 }
 
-
-
-
 .step-content {
   max-width: 500px;
   padding-left: 27px;
@@ -312,11 +319,13 @@
   top: 39px;
   width: 2px;
   height: 84%;
-  background: repeating-linear-gradient(to bottom,
-      #00c7f2,
-      #00c7f2 0px,
-      transparent 3px,
-      transparent 4px);
+  background: repeating-linear-gradient(
+    to bottom,
+    #00c7f2,
+    #00c7f2 0px,
+    transparent 3px,
+    transparent 4px
+  );
 }
 
 /* ====================== */
@@ -406,7 +415,6 @@
 /* ================================== */
 /* small desktop */
 @media (max-width: 1398px) {
-
   /* ...
         rules here apply to devices from 1202px to 1398px (inclusive)
         ... */
@@ -453,7 +461,6 @@
 
 /* laptop Media Queries */
 @media (max-width: 1200px) {
-
   /* ...
          rules here apply to devices from 993px to 1200px (inclusive)
         ... */
@@ -560,7 +567,6 @@
 
 /* vary small device  */
 @media (max-width: 500px) {
-
   /* ...
          rules here apply to devices from 0px to 460px (inclusive)
         ... */
@@ -599,13 +605,34 @@
 
   .leadGenaration_service_card_div {
     grid-template-columns: 1fr;
-    gap: 3.88rem;
+    gap: 2rem;
   }
 
   .leadGenaration_service_card_div div:nth-last-child(1) {
     grid-column: auto;
     justify-self: center;
     align-self: center;
+  }
+
+  .searchEngineMarketing_leadGenaration_card_div_img {
+    width: 3.75rem;
+    height: 3.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .searchEngineMarketing_leadGenaration_card_div_img img {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+  .searchEngineMarketing_leadGenaration_card_div h4 {
+    font-family: var(--font-poppins);
+    font-size: 19px;
+    line-height: 125%;
+  }
+  .searchEngineMarketing_leadGenaration_card_div p {
+    font-size: 13px;
+    text-align: justify;
+    line-height: 120%;
   }
 
   /* searchEngineMarketing_leadGenaration_card_div */
@@ -648,21 +675,20 @@
   }
 
   .brand_leadGenaration_service_section_gradient {
-    width: 35.9375rem;
-    height: 30.5625rem;
+    width: 36.9375rem;
+    height: 26.5625rem;
     right: -232px;
-    bottom: 25px;
+    bottom: 65px;
   }
 
   /* tailoredInfluencer_OurExpertise_Text_card_div */
   .tailoredInfluencer_OurExpertise_Text_card_div h4 {
     font-size: 1.4rem;
-    line-height: 120%
+    line-height: 120%;
   }
 
   /* SocailMediaMarketing_OurExpertise_section */
   .SocailMediaMarketing_OurExpertise_section {
     margin-bottom: 3.5rem;
   }
-
 }
