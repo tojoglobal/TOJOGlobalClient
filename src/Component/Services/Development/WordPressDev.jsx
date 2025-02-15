@@ -6,7 +6,7 @@ import WordpressWebsiteDevelopmentWhyExpertiseKeyPoint from "./SVGDev/wordpressW
 import { AppContext } from "../../../AppContext";
 
 export const WordPressDev = () => {
-  const { isLargeMobileView } = useContext(AppContext);
+  const { isLargeMobileView, isMobileView } = useContext(AppContext);
   return (
     <main className="maindiv">
       <Helmet>
@@ -22,14 +22,50 @@ export const WordPressDev = () => {
               className="communityManagement_hero_text_div"
               data-aos="fade-right"
             >
-              <h1>
-                Build Cutting-Edge websites for the modern world with TOJO
-                Global
-              </h1>
-              <p>
-                Our goal is to boost your online presence and ensure your
-                business stands out in the digital marketplace.
-              </p>
+              {isMobileView ? (
+                <>
+                  <div className="hero_page_strongText">
+                    <h2
+                      style={{
+                        ...(isMobileView && {
+                          paddingRight: "0rem",
+                          marginTop: "6px",
+                        }),
+                      }}
+                    >
+                      Build Modern
+                      <span className="headdingGradientText"> Websites</span>
+                    </h2>
+                    <h3 className="homePageHeroSubHeadingFristText">
+                      Effortlessly{" "}
+                    </h3>
+                    <h3 className="homePageHeroSubHeadingSecondText">
+                      with TOJO Global
+                    </h3>
+                  </div>
+                  <p
+                    style={{
+                      ...(isMobileView && {
+                        textAlign: "justify",
+                      }),
+                    }}
+                  >
+                    Our goal is to boost your online presence and ensure your
+                    business stands out in the digital marketplace.
+                  </p>{" "}
+                </>
+              ) : (
+                <>
+                  <h1>
+                    Build Cutting-Edge websites for the modern world with TOJO
+                    Global
+                  </h1>
+                  <p>
+                    Our goal is to boost your online presence and ensure your
+                    business stands out in the digital marketplace.
+                  </p>
+                </>
+              )}
               <div className="hero_btn_style">
                 <Link to="/contact">
                   <button className="custombtn hero_btn2 fristBtn">
@@ -145,6 +181,12 @@ export const WordPressDev = () => {
         <div
           className="wordpressDevelopment_whyChoose_main_div"
           data-aos="fade-up"
+          style={{
+            ...(isMobileView && {
+              marginTop: "0rem",
+              marginBottom: "0rem",
+            }),
+          }}
         >
           <div className="wordpressDevelopment_whyChoose_image_div">
             <img
@@ -154,8 +196,25 @@ export const WordPressDev = () => {
           </div>
           {/*wordpressDevelopment_whyChoose text   */}
           <div className="wordpressDevelopment_whyChoose_text_div">
-            <h2>Why Choose Our WordPress Development Service?</h2>
-            <p>
+            <h2
+              style={{
+                ...(isMobileView && {
+                  textAlign: "left",
+                  fontSize: "20px",
+                  marginTop: "-12px",
+                }),
+              }}
+            >
+              Why Choose Our WordPress Development Service?
+            </h2>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  fontSize: "13px",
+                }),
+              }}
+            >
               Agencies like you trust us because we have the skills and a
               professional team to build your client’s websites. This way, you
               can focus on growing your business. Here’s how we help you:
@@ -173,8 +232,7 @@ export const WordPressDev = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="124"
-            height="124"
+            className="wordpressDevelopment_whyChoose_keyPoint_svg"
             viewBox="0 0 124 124"
             fill="none"
           >
@@ -239,8 +297,7 @@ export const WordPressDev = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="124"
-            height="124"
+            className="wordpressDevelopment_whyChoose_keyPoint_svg"
             viewBox="0 0 124 124"
             fill="none"
           >
@@ -304,8 +361,7 @@ export const WordPressDev = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="124"
-            height="124"
+            className="wordpressDevelopment_whyChoose_keyPoint_svg"
             viewBox="0 0 124 124"
             fill="none"
           >
@@ -369,8 +425,7 @@ export const WordPressDev = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="124"
-            height="124"
+            className="wordpressDevelopment_whyChoose_keyPoint_svg"
             viewBox="0 0 124 124"
             fill="none"
           >
@@ -435,8 +490,7 @@ export const WordPressDev = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="124"
-            height="124"
+            className="wordpressDevelopment_whyChoose_keyPoint_svg"
             viewBox="0 0 124 124"
             fill="none"
           >
@@ -501,8 +555,7 @@ export const WordPressDev = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="124"
-            height="124"
+            className="wordpressDevelopment_whyChoose_keyPoint_svg"
             viewBox="0 0 124 124"
             fill="none"
           >
@@ -566,8 +619,7 @@ export const WordPressDev = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="124"
-            height="124"
+            className="wordpressDevelopment_whyChoose_keyPoint_svg"
             viewBox="0 0 124 124"
             fill="none"
           >
@@ -631,8 +683,7 @@ export const WordPressDev = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="124"
-            height="124"
+            className="wordpressDevelopment_whyChoose_keyPoint_svg"
             viewBox="0 0 124 124"
             fill="none"
           >
@@ -696,8 +747,7 @@ export const WordPressDev = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="124"
-            height="124"
+            className="wordpressDevelopment_whyChoose_keyPoint_svg"
             viewBox="0 0 124 124"
             fill="none"
           >
@@ -756,14 +806,21 @@ export const WordPressDev = () => {
       </section>
 
       {/* How we develop your customer’s WordPress website */}
-      <section className="container">
+      <section
+        className="container"
+        style={{
+          ...(isMobileView && {
+            marginTop: "-12px",
+          }),
+        }}
+      >
         <div className="wordpressWebsiteDevelopment_customer_keyPoint_main_div">
           {/* text part in customer website development  */}
           <div
             className="wordpressWebsiteDevelopment_customer_keyPoint_text_div"
             data-aos={isLargeMobileView ? "fade-up" : "fade-left"}
           >
-            <h1>How we develop your customer’s WordPress website</h1>
+            <h1>How we develop your customer WordPress website</h1>
             <p>
               At TOJO Global, we offer full-cycle crypto token development
               services, from conceptualization to post-launch support. Our team
@@ -773,7 +830,13 @@ export const WordPressDev = () => {
             <strong>
               “A GREAT WEBSITE IS USELESS IF IT DOESN'T GET RESULTS.”
             </strong>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  marginBottom: "17px",
+                }),
+              }}
+            >
               Here’s how we build a WordPress website in our simple 7-step
               process to ensure it works well for you
             </p>
@@ -876,9 +939,35 @@ export const WordPressDev = () => {
       </section>
       {/* WordPress Why Expertise  */}
       <section className="container">
-        <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">Our Expertise</h1>
-          <p className="paraStyle">
+        <div
+          className="sectionTopTextstyle"
+          data-aos="fade-up"
+          style={{
+            ...(isMobileView && {
+              marginBottom: "23px",
+            }),
+          }}
+        >
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "-5px",
+              }),
+            }}
+          >
+            Our Expertise
+          </h1>
+          <p
+            className="paraStyle"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                fontSize: "13px",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             Our deep understanding of WordPress allows us to create unique
             websites that look great and work well. Whether you need a
             well-coded WordPress theme, a custom plugin, site maintenance, or a
@@ -1056,7 +1145,15 @@ export const WordPressDev = () => {
           <div className="WordPressDevelopment_Target_Companies_text_div">
             <h2>Target Companies</h2>
             <div className="WordPressDevelopment_target_companies_bottom_borderInText_div"></div>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  fontSize: "13px",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               At Tojo Global, we are passionate about helping businesses thrive
               in the digital age. We focus on a diverse range of sectors that
               are driving innovation and growth.We understand the unique
@@ -1078,7 +1175,14 @@ export const WordPressDev = () => {
       </section>
 
       {/*Here comes TOJO GLOBAL where we specialize in creating unique logos */}
-      <section className="container">
+      <section
+        className="container"
+        style={{
+          ...(isMobileView && {
+            marginBottom: "23px",
+          }),
+        }}
+      >
         <div
           className="professionalModeration_div socailMediaMarketing_specialize_card"
           data-aos="fade-down"
@@ -1087,7 +1191,16 @@ export const WordPressDev = () => {
             <h1 className="professionalModeration_service_offers_heading">
               We develop impactful social media strategies at TOJO Global
             </h1>
-            <p className="professionalModeration_service_offers_para">
+            <p
+              className="professionalModeration_service_offers_para"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  fontSize: "13px",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               focused on increasing engagement and driving growth. Reach out to
               us to elevate your brand’s performance.
             </p>

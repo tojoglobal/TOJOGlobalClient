@@ -30,9 +30,11 @@
   width: 25.5rem;
   height: 25.5rem;
   border-radius: 25.5rem;
-  background: var(--Gradient2, linear-gradient(225deg, #18C8FF 14.89%, #C608FF 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   filter: blur(87.5999984741211px);
-
 }
 
 /* ====================== */
@@ -43,6 +45,7 @@
   position: relative;
   z-index: 10;
   margin-bottom: 9rem;
+  overflow: hidden;
 }
 
 .wordpressDevelopment_whyChoose_main_div {
@@ -62,7 +65,6 @@
   /* Stronger blur for glass effect */
   -webkit-backdrop-filter: blur(20px);
   /* Support for Safari */
-
 }
 
 .wordpressDevelopment_whyChoose_main_topGradient_div {
@@ -87,7 +89,6 @@
   transform: translateX(-50%);
   z-index: -15;
 }
-
 
 .wordpressDevelopment_whyChoose_text_div {
   align-self: center;
@@ -123,10 +124,13 @@
 .wordpressDevelopment_whyChoose_keyPoint_div {
   padding-right: 3rem;
 }
+.wordpressDevelopment_whyChoose_keyPoint_svg {
+  width: 124px;
+  height: 124px;
+}
 
 .wordpressDevelopment_whyChoose_keyPoint_div h4 {
   color: #fff;
-
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -281,8 +285,10 @@
   width: 31.6875rem;
   height: 31.6875rem;
   border-radius: 31.6875rem;
-  background: var(--Linear,
-      linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%));
+  background: var(
+    --Linear,
+    linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%)
+  );
   filter: blur(116.19999694824219px);
 }
 
@@ -335,7 +341,7 @@
   border-left: 10px solid #18c8ff;
   background: rgba(88, 185, 255, 0.3);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(7.5px);
+  /* backdrop-filter: blur(7.5px); */
   width: 80%;
   margin: 10rem auto;
   min-height: 20.25rem;
@@ -417,7 +423,6 @@
 
   .wordpressDevelopment_whyChoose_keyPoint_svgIcon {
     transform: translate(32px, 31px);
-
   }
 
   .wordpressWebsiteDevelopment_whyExpertise_keyPoint_main_div {
@@ -428,7 +433,6 @@
     gap: 0rem;
     position: relative;
   }
-
 
   .wordpressWebsiteDevelopment_whyExpertise_keyPoint_text_div {
     position: absolute;
@@ -442,7 +446,6 @@
 
 /* laptop Media Queries */
 @media (max-width: 1200px) {
-
   /* ...
         rules here apply to devices from 993px to 1200px (inclusive)
         ... */
@@ -501,7 +504,6 @@
 
 /* vary small device  */
 @media (max-width: 500px) {
-
   /* ...
        rules here apply to devices from 0px to 460px (inclusive)
         ... */
@@ -522,7 +524,6 @@
   .wordpressDevelopment_hero_part_image_div::before {
     width: 11.5rem;
   }
-
 
   /* wordpressDevelopment_whyChoose_image_div */
   .wordpressDevelopment_whyChoose_main_div {
@@ -551,21 +552,21 @@
 
   .wordpressDevelopment_whyChoose_main_topGradient_div {
     position: absolute;
-    top: -62px;
-    right: 35px;
+    top: 11px;
+    right: -41px;
     z-index: -15;
   }
 
   .wordpressDevelopment_whyChoose_bottom_topGradient03_div {
     position: absolute;
-    bottom: -38px;
-    right: -19%;
+    bottom: 6px;
+    right: -30%;
     transform: translateX(-50%);
     z-index: -15;
   }
 
   .wordpressDevelopment_whyChoose_section {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   /* wordpressDevelopment_whyChoose_keyPoint_main_div */
@@ -602,16 +603,20 @@
     left: -15px;
     top: 0px;
   }
+  .wordpressDevelopment_whyChoose_keyPoint_svg {
+    width: 100px;
+    height: 100px;
+  }
 
   .wordpressDevelopment_whyChoose_keyPoint_div h4 {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-
+    font-size: 18px;
+    line-height: 125%;
   }
 
   .wordpressDevelopment_whyChoose_keyPoint_div p {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 13px;
+    line-height: 120%;
+    text-align: justify;
   }
 
   /* wordpressWebsiteDevelopment_whyExpertise_keyPoint_main_div */
@@ -620,14 +625,15 @@
   }
 
   .wordpressWebsiteDevelopment_customer_keyPoint_text_div h1 {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-
+    font-size: 19px;
+    line-height: 125%;
   }
 
   .wordpressWebsiteDevelopment_customer_keyPoint_text_div p {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 120%;
+    margin-bottom: 0px;
   }
 
   .wordpressWebsiteDevelopment_customer_keyPoint_text_div strong {
@@ -635,9 +641,16 @@
     margin: 1rem 0rem;
   }
 
+  .wordpressWebsiteDevelopment_customer_keyPoint h4 {
+    font-size: 15px;
+    line-height: 125%;
+  }
+
   .wordpressWebsiteDevelopment_customer_keyPoint p {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 120%;
+    margin-bottom: 0px;
   }
 
   .wordpressWebsiteDevelopment_whyExpertise_keyPoint_main_gradinetDiv {
@@ -693,7 +706,17 @@
   }
 
   .wordpressWebsiteDevelopmentOurExpertisekeyPointSmallHeadingStyle {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 20px;
+    line-height: 125%;
+  }
+  /* WordPressDevelopment_Target_Companies_keyPoint_div */
+  .WordPressDevelopment_Target_Companies_keyPoint_div {
+    row-gap: 0.5rem;
+    margin-top: -15px;
+  }
+  .WordPressDevelopment_Target_Companies_keyPoint_div h4 {
+    font-size: 14px;
+    line-height: 120%;
+    margin-bottom: 0px;
   }
 }
