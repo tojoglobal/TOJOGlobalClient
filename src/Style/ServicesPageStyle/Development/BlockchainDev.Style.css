@@ -6,7 +6,6 @@
   background: linear-gradient(0deg, #004484 -10.02%, #08bdff 106.34%);
 }
 
-
 .blockchain_services_main_div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -82,7 +81,6 @@
 }
 
 @keyframes bounce1 {
-
   0%,
   100% {
     transform: translateX(0);
@@ -90,19 +88,16 @@
 
   50% {
     transform: translateX(30px);
-
   }
 }
 
 @keyframes bounce2 {
-
   0%,
   100% {
     transform: translateX(0);
   }
 
   50% {
-
     transform: translateX(-42px);
   }
 }
@@ -171,8 +166,10 @@
   width: 78px;
   height: 78px;
   border-radius: 442px;
-  background: var(--Linear,
-      linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%));
+  background: var(
+    --Linear,
+    linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%)
+  );
   filter: blur(50px);
   z-index: -1;
 }
@@ -196,8 +193,10 @@
   left: -54px;
   width: 3px;
   height: 100%;
-  background: var(--Linear,
-      linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%));
+  background: var(
+    --Linear,
+    linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%)
+  );
   border-radius: 5px;
 }
 
@@ -208,8 +207,10 @@
   right: -20px;
   width: 3px;
   height: 100%;
-  background: var(--Linear,
-      linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%));
+  background: var(
+    --Linear,
+    linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%)
+  );
   border-radius: 5px;
 }
 
@@ -229,8 +230,10 @@
   left: -68px;
   width: 34px;
   height: 34px;
-  background: var(--Linear,
-      linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%));
+  background: var(
+    --Linear,
+    linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%)
+  );
   border-radius: 50%;
 }
 
@@ -241,8 +244,10 @@
   right: -68px;
   width: 34px;
   height: 34px;
-  background: var(--Linear,
-      linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%));
+  background: var(
+    --Linear,
+    linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%)
+  );
   border-radius: 50%;
 }
 
@@ -468,7 +473,7 @@
   left: -4%;
   width: 2px;
   height: 94%;
-  background: #818CB6;
+  background: #818cb6;
   z-index: 11;
 }
 
@@ -476,7 +481,7 @@
   width: 4.375rem;
   height: 4.375rem;
   border-radius: 1.25rem;
-  background: linear-gradient(142deg, #18C8FF 28.49%, #C608FF 81.44%);
+  background: linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
@@ -517,7 +522,7 @@
   width: 442px;
   height: 442px;
   border-radius: 442px;
-  background: linear-gradient(142deg, #18C8FF 28.49%, #C608FF 81.44%);
+  background: linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%);
   filter: blur(100px);
 }
 
@@ -565,7 +570,11 @@
   z-index: 0;
   overflow: hidden;
   border-top: 5px solid #18c8ff;
-  background: linear-gradient(346deg, rgba(24, 200, 255, 0.15) 10.4%, rgba(198, 8, 255, 0.15) 82.02%);
+  background: linear-gradient(
+    346deg,
+    rgba(24, 200, 255, 0.15) 10.4%,
+    rgba(198, 8, 255, 0.15) 82.02%
+  );
   padding: 3rem;
 }
 
@@ -579,8 +588,7 @@
   width: 4.875rem;
   height: 0.19rem;
   margin-left: 0.8rem;
-  background: linear-gradient(142deg, #18C8FF 28.49%, #C608FF 81.44%);
-
+  background: linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%);
 }
 
 .blockChain_dev_PlayToEarn_expertise_main_box_div {
@@ -632,7 +640,7 @@
 }
 
 .blockChaninPlayToEarnGameDevelopmentWhyChoose_keyPoint_heddingIcon h4 {
-  color: #FFF;
+  color: #fff;
 
   font-size: 1rem;
   font-style: normal;
@@ -653,7 +661,7 @@
   width: 100%;
   height: 100%;
   border-radius: 225px 198px 0 0;
-  background: linear-gradient(142deg, #18C8FF 28.49%, #C608FF 81.44%);
+  background: linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%);
   filter: blur(10px);
   z-index: -1;
 }
@@ -674,7 +682,7 @@
   width: 100%;
   min-height: 19.75rem;
   border-radius: 1.875rem;
-  border-bottom: 6px solid var(--Linear, #18C8FF);
+  border-bottom: 6px solid var(--Linear, #18c8ff);
   background: var(--BG-15, rgba(24, 200, 255, 0.15));
   display: flex;
   flex-direction: column;
@@ -772,8 +780,6 @@
   line-height: 18px;
 }
 
-
-
 /* ====================== */
 /* The TOJO Global Process
   */
@@ -823,7 +829,13 @@
 /* ================================== */
 .blockChainSolution_specialize_card {
   border-radius: 3.6875rem;
-  background: linear-gradient(180deg, rgba(0, 119, 255, 0.95) 0%, rgba(6, 0, 67, 0.79) 52.17%, rgba(198, 8, 255, 0.95) 100%), url(/Images/ServicesImage/development/blockchain-solution0123.png);
+  background: linear-gradient(
+      180deg,
+      rgba(0, 119, 255, 0.95) 0%,
+      rgba(6, 0, 67, 0.79) 52.17%,
+      rgba(198, 8, 255, 0.95) 100%
+    ),
+    url(/Images/ServicesImage/development/blockchain-solution0123.png);
   box-shadow: 0px 14px 25px 11px rgba(3, 0, 65, 0.33);
   background-size: cover;
   background-position: center center;
@@ -837,7 +849,6 @@
 /* ================================== */
 /* desktop */
 @media (max-width: 1398px) {
-
   /* ...
          rules here apply to devices from 1202px to 1398px (inclusive)
         ... */
@@ -946,15 +957,10 @@
     width: 23%;
     text-align: left;
   }
-
-
-
-
 }
 
 /* laptop Media Queries */
 @media (max-width: 1200px) {
-
   /* ...
        rules here apply to devices from 993px to 1200px (inclusive)
         ... */
@@ -1113,7 +1119,6 @@
     line-height: 120%;
     margin-bottom: 1rem;
   }
-
 }
 
 /* tab device */
@@ -1132,7 +1137,6 @@
 
 /* vary small device  */
 @media (max-width: 500px) {
-
   /* ...
        rules here apply to devices from 0px to 460px (inclusive)
         ... */
@@ -1190,7 +1194,7 @@
 
   .blockChainCryptoTokenMainImage {
     width: 16rem;
-    margin-top: 3rem;
+    /* margin-top: 1rem; */
   }
 
   .blockChainCryptoTokenLeftImage {
@@ -1304,7 +1308,7 @@
     width: 60%;
   }
 
-  .blockChain_nftPlatfromkeyFeatures_services_center_img img {
+  .blockChain_nftPlatfromkeyFeatures_services_center_img {
     display: none;
   }
 
@@ -1312,18 +1316,18 @@
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
-    row-gap: 3rem;
+    row-gap: 1.5rem;
   }
 
   .blockChain_nftPlatfromkeyFeatures_services_left_text {
     margin-right: 0rem;
-    row-gap: 3.5rem;
+    row-gap: 1.5rem;
     padding-top: 1.5rem;
   }
 
   .blockChain_nftPlatfromkeyFeatures_services_right_text {
     margin-left: 0rem;
-    row-gap: 3.5rem;
+    row-gap: 1.5rem;
   }
 
   .blockChain_nftPlatfromkeyFeatures_services_center_underGradient_div {
@@ -1339,6 +1343,10 @@
   .blockChaninPlayToEarnGameDevelopmentWhyChoose_keyPoint {
     grid-template-columns: 1fr;
     gap: 1rem;
+    padding-top: 0rem;
+  }
+  .blockChaninPlayToEarnGameDevelopmentWhyChoose_keyPoint_heddingIcon {
+    margin-bottom: 0.8rem;
   }
 
   /* BlockChaniNftPlatfromDevHelp_div */
@@ -1454,6 +1462,11 @@
     content: none;
   }
 
+  .blockChainDev_PlayToEarn_benefits_text_div {
+    /* margin-right: 21px; */
+    margin-top: 11px;
+  }
+
   .blockChainDev_PlayToEarn_benefits_textHeading {
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -1483,7 +1496,4 @@
   #blockChainDevPlayToEarnBenefit {
     width: 100%;
   }
-
-
-
 }

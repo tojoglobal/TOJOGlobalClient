@@ -504,12 +504,12 @@
   /* appDev_industries_services */
   .appDev_industries_services_paraText {
     font-size: 0.8rem;
-    line-height: 1.2rem;
+    line-height: 120%;
   }
 
   /* appDev_Partnering_services */
   .appDev_Partnering_services_text_div p {
     font-size: 0.8rem;
-    line-height: 1.2rem;
+    line-height: 120%;
   }
 }

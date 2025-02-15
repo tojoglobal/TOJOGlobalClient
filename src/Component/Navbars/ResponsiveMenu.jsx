@@ -240,7 +240,7 @@ const ResponsiveMenu = () => {
                   <FaAngleRight />
                 </span>
               </li>
-              <li
+              {/* <li
                 className="menu_ltems"
                 onClick={() => setMenuState("production")}
               >
@@ -248,7 +248,7 @@ const ResponsiveMenu = () => {
                 <span className="menu_name">
                   <FaAngleRight />
                 </span>
-              </li>
+              </li> */}
               {/* footer menu */}
               {footerMenuBar()}
             </ul>

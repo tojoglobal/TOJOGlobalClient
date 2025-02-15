@@ -13,7 +13,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { AppContext } from "../../../AppContext";
 gsap.registerPlugin(ScrollTrigger);
 const BlockchainDev = () => {
-  const { isLargeMobileView } = useContext(AppContext);
+  const { isLargeMobileView, isMobileView } = useContext(AppContext);
   useGSAP(() => {
     // Animation Timeline for Hero Section
     let heroTimeline = gsap.timeline();
@@ -38,33 +38,60 @@ const BlockchainDev = () => {
       });
   }, []);
 
-  // const pathName = location.pathname;
-  // useEffect(() => {
-  //   const aboutDiv = document.querySelector(
-  //     ".blockchain_conclusionnft_platfrom_topTextstyle"
-  //   );
-  //   if (
-  //     pathName === "/services/development/blockchain-development" &&
-  //     aboutDiv &&
-  //     isLargeMobileView
-  //   ) {
-  //     aboutDiv.style.paddingBottom = "2.5rem";
-  //   }
-  // }, [pathName]);
-
   return (
     <main className="maindiv">
       {/*Shape The Future With TOJO Global’s Blockchain Innovation */}
       <section className="blockchaniDev_hero_section">
         <div className="container webContentWriting_hero_part">
           <div className="webContentWriting_hero_text_part">
-            <h1>Shape The Future With TOJO Global’s Blockchain Innovation</h1>
-            <p>
-              TOJO Global offers advanced blockchain development services,
-              creating secure and scalable solutions such as custom tokens, NFT
-              platforms, and play-to-earn games to help businesses unlock the
-              power of blockchain technology.
-            </p>
+            {isMobileView ? (
+              <>
+                <div className="hero_page_strongText">
+                  <h2
+                    style={{
+                      ...(isMobileView && {
+                        paddingRight: "0rem",
+                      }),
+                    }}
+                  >
+                    {" "}
+                    Shape The{" "}
+                    <span className="headdingGradientText"> Future </span>
+                  </h2>
+                  <h3 className="homePageHeroSubHeadingFristText">
+                    with TOJO Global{" "}
+                  </h3>
+                  <h3 className="homePageHeroSubHeadingSecondText">
+                    Blockchain Innovation
+                  </h3>
+                </div>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                    }),
+                  }}
+                >
+                  TOJO Global offers advanced blockchain development services,
+                  creating secure and scalable solutions such as custom tokens,
+                  NFT platforms & play-to-earn games to help businesses unlock
+                  the power of blockchain technology.
+                </p>{" "}
+              </>
+            ) : (
+              <>
+                <h1>
+                  Shape The Future With TOJO Global’s Blockchain Innovation
+                </h1>
+                <p>
+                  TOJO Global offers advanced blockchain development services,
+                  creating secure and scalable solutions such as custom tokens,
+                  NFT platforms, and play-to-earn games to help businesses
+                  unlock the power of blockchain technology.
+                </p>
+              </>
+            )}
+
             <div className="hero_btn_style">
               <a href="https://www.behance.net/TOJO_Global" target="_blank">
                 <button className="custombtn hero_btn1 secondBtn">
@@ -84,18 +111,41 @@ const BlockchainDev = () => {
       {/* Our Blockchain Development Services */}
       <section className="container">
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "2rem",
+              }),
+            }}
+          >
             {" "}
             Our Blockchain Development Services
           </h1>
-          <p className="paraStyle mt-3">
+          <p
+            className="paraStyle"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                fontSize: "13px",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             TOJO Global offers advanced blockchain development services,
             creating secure and scalable solutions such as custom tokens, NFT
             platforms, and play-to-earn games to help businesses unlock the
             power of blockchain technology.
           </p>
         </div>
-        <div className="blockchain_services_main_div">
+        <div
+          className="blockchain_services_main_div"
+          style={{
+            ...(isMobileView && {
+              marginTop: "0.5rem",
+            }),
+          }}
+        >
           {/* 01 */}
           <div
             className="blockchain_services_div"
@@ -149,7 +199,14 @@ const BlockchainDev = () => {
       {/* What is Crypto Token Development? */}
       <section className="container">
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "2.2rem",
+              }),
+            }}
+          >
             {" "}
             <span className="headdingGradientText">Crypto Token</span>{" "}
             Development
@@ -175,7 +232,15 @@ const BlockchainDev = () => {
                 <h4 className="appDev_industries_services_subHeading">
                   What is Crypto Token Development?
                 </h4>
-                <p className="appDev_industries_services_paraText">
+                <p
+                  className="appDev_industries_services_paraText"
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      fontSize: "12px",
+                    }),
+                  }}
+                >
                   Crypto token development involves creating digital tokens on
                   blockchain networks, enabling the representation of assets,
                   utilities, or rights. Unlike traditional cryptocurrencies,
@@ -186,7 +251,15 @@ const BlockchainDev = () => {
                   to digital shares, providing a foundation for decentralized
                   applications (dApps) or specific business ecosystems.
                 </p>
-                <p className="appDev_industries_services_paraText">
+                <p
+                  className="appDev_industries_services_paraText"
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      fontSize: "12px",
+                    }),
+                  }}
+                >
                   The process of creating these tokens includes designing their
                   structure, writing smart contracts, and ensuring security.
                   Smart contracts automate functions like token distribution and
@@ -206,10 +279,27 @@ const BlockchainDev = () => {
             className="blockChain_cryptoToken_development_top_part_text_div"
             data-aos={isLargeMobileView ? "fade-up" : "fade-left"}
           >
-            <h1 className="topHeadingStyle text-start">
+            <h1
+              className="topHeadingStyle text-start"
+              style={{
+                ...(isMobileView && {
+                  marginTop: "0.5rem",
+                  fontSize: "20px",
+                }),
+              }}
+            >
               TOJO Global's Crypto Token Development Services
             </h1>
-            <p className="blockChain_cryptoToken_development_paraStyle mt-3 text-start">
+            <p
+              className="blockChain_cryptoToken_development_paraStyle text-md-start"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               At TOJO Global, we offer full-cycle crypto token development
               services, from conceptualization to post-launch support. Our team
               works closely with clients to deliver custom token solutions that
@@ -244,11 +334,21 @@ const BlockchainDev = () => {
         {/* blockchain devlopment Our Services Include */}
         <div
           className="blockchain_dev_OurServicesInclude"
-          style={{ paddingTop: "5rem" }}
+          // style={{ paddingTop: "5rem" }}
+          style={{
+            ...(isMobileView && {
+              marginTop: "1.2rem",
+            }),
+          }}
         >
           <h1
             data-aos="fade-down"
             className="blockchain_dev_OurServicesInclude_headding"
+            style={{
+              ...(isMobileView && {
+                fontSize: "20px",
+              }),
+            }}
           >
             Our Services Include
           </h1>
@@ -270,7 +370,15 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Token Design:
               </h4>
-              <p className="appDev_industries_services_paraText">
+              <p
+                className="appDev_industries_services_paraText"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                  }),
+                }}
+              >
                 We help you define the purpose and structure of your token,
                 ensuring that it serves your business goals, whether it’s a
                 utility token for a platform or a security token representing
@@ -294,7 +402,15 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Blockchain Selection:
               </h4>
-              <p className="appDev_industries_services_paraText">
+              <p
+                className="appDev_industries_services_paraText"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                  }),
+                }}
+              >
                 We integrate your token with the best-suited blockchain
                 platform—Ethereum, Binance Smart Chain, or others—to meet your
                 specific needs.
@@ -317,7 +433,15 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Smart Contract Development:
               </h4>
-              <p className="appDev_industries_services_paraText">
+              <p
+                className="appDev_industries_services_paraText"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                  }),
+                }}
+              >
                 Our team develops secure, efficient smart contracts to automate
                 token functions, ensuring that the rules of token creation and
                 distribution are transparent and error-free.
@@ -340,7 +464,15 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Token Minting and Deployment:
               </h4>
-              <p className="appDev_industries_services_paraText">
+              <p
+                className="appDev_industries_services_paraText"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                  }),
+                }}
+              >
                 Once the design and development phases are completed, we handle
                 the minting of tokens and help deploy them onto your chosen
                 blockchain.
@@ -363,7 +495,15 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Compliance and Security Audits:
               </h4>
-              <p className="appDev_industries_services_paraText">
+              <p
+                className="appDev_industries_services_paraText"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                  }),
+                }}
+              >
                 TOJO Global ensures your token meets regulatory standards and
                 passes through rigorous security checks to eliminate
                 vulnerabilities.
@@ -386,7 +526,15 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Post-Launch Support:
               </h4>
-              <p className="appDev_industries_services_paraText">
+              <p
+                className="appDev_industries_services_paraText"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                  }),
+                }}
+              >
                 Our involvement continues after deployment, offering technical
                 support and making necessary adjustments as your project
                 evolves.
@@ -418,7 +566,15 @@ const BlockchainDev = () => {
             <h4 className="appDev_industries_services_subHeading">
               Regulatory Compliance
             </h4>
-            <p className="paraTextStyle">
+            <p
+              className="paraTextStyle"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                }),
+              }}
+            >
               We ensure your token adheres to relevant regulations, reducing the
               risk of legal complications. Staying updated on evolving
               regulations in different jurisdictions allows us to guide you
@@ -439,7 +595,15 @@ const BlockchainDev = () => {
             <h4 className="appDev_industries_services_subHeading">
                Extensive Expertise
             </h4>
-            <p className="paraTextStyle">
+            <p
+              className="paraTextStyle"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                }),
+              }}
+            >
               We bring years of experience in blockchain development, working
               across diverse industries like finance, gaming, and supply chain
               management. Our team of developers specializes in multiple
@@ -461,7 +625,15 @@ const BlockchainDev = () => {
             <h4 className="appDev_industries_services_subHeading">
               Cost-Effective Solutions
             </h4>
-            <p className="paraTextStyle">
+            <p
+              className="paraTextStyle"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                }),
+              }}
+            >
               We offer competitive pricing for businesses of all sizes. Whether
               you’re a startup with a limited budget or a large enterprise, we
               provide flexible solutions without compromising quality.
@@ -481,7 +653,15 @@ const BlockchainDev = () => {
             <h4 className="appDev_industries_services_subHeading">
               Customized Solutions
             </h4>
-            <p className="paraTextStyle">
+            <p
+              className="paraTextStyle"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                }),
+              }}
+            >
               Each business is unique, and we provide tailored solutions to meet
               your specific tokenization needs. Whether you are launching a new
               cryptocurrency or creating a token for a decentralized platform,
@@ -502,7 +682,15 @@ const BlockchainDev = () => {
             <h4 className="appDev_industries_services_subHeading">
               Seamless Ecosystem Integration
             </h4>
-            <p className="paraTextStyle">
+            <p
+              className="paraTextStyle"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                }),
+              }}
+            >
               Our tokens are designed to integrate effortlessly into various
               platforms, wallets, and exchanges, allowing users to buy, sell, or
               trade tokens easily.
@@ -522,7 +710,15 @@ const BlockchainDev = () => {
             <h4 className="appDev_industries_services_subHeading">
               Top-Notch Security
             </h4>
-            <p className="paraTextStyle">
+            <p
+              className="paraTextStyle"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                }),
+              }}
+            >
               Our development process includes extensive security audits to
               safeguard your tokens and smart contracts, minimizing the risk of
               vulnerabilities or exploits.
@@ -606,7 +802,16 @@ const BlockchainDev = () => {
       <section className="container">
         <div className="sectionTopTextstyle" data-aos="fade-up">
           <h1 className="topHeadingStyle">Conclusion</h1>
-          <p className="paraStyle">
+          <p
+            className="paraStyle"
+            style={{
+              ...(isMobileView && {
+                fontSize: "13px",
+                textAlign: "justify",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             TOJO Global offers reliable and comprehensive crypto token
             development services, helping businesses innovate through blockchain
             technology. Whether you're looking to create a token for
@@ -641,17 +846,42 @@ const BlockchainDev = () => {
             {/* text */}
             <div className="appDev_industries_services_text_div">
               <div data-aos="fade-right">
-                <h1 className="blockChain_deve_nft_platfrom_subHeading">
+                <h1
+                  className="blockChain_deve_nft_platfrom_subHeading"
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "20px",
+                    }),
+                  }}
+                >
                   What is NFT Platform Development?
                 </h1>
-                <p className="appDev_industries_services_paraText">
+                <p
+                  className="appDev_industries_services_paraText"
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "13px",
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   FTs (Non-Fungible Tokens) are unique digital assets that can
                   represent anything from artwork and music to virtual real
                   estate and in-game items. Unlike cryptocurrencies, each NFT is
                   one of a kind, secured by blockchain technology, making them
                   traceable and tamper-proof.
                 </p>
-                <p className="appDev_industries_services_paraText">
+                <p
+                  className="appDev_industries_services_paraText"
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "13px",
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   NFT platform development involves building a marketplace or
                   platform where users can create, buy, sell, and trade these
                   tokens. As the demand for digital assets grows, more
@@ -670,10 +900,28 @@ const BlockchainDev = () => {
       {/*  Our NFT Platform Development Services */}
       <section className="container">
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">
-            Our NFT Platform Development Services
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                fontSize: "20px",
+                lineHeight: "120%",
+                marginTop: "25px",
+              }),
+            }}
+          >
+            NFT Platform Development Services
           </h1>
-          <p className="paraStyle mt-2 mt-md-4">
+          <p
+            className="paraStyle mt-2 mt-md-4"
+            style={{
+              ...(isMobileView && {
+                fontSize: "13px",
+                textAlign: "justify",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             We specialize in creating NFT platforms tailored to your specific
             needs, offering a wide range of features that make it easy to launch
             your marketplace and connect with users worldwide.
@@ -684,7 +932,19 @@ const BlockchainDev = () => {
           data-aos="fade-down"
           className="blockchain_conclusionnft_platfrom_topTextstyle"
         >
-          <h1 className="topHeadingStyle">Key Features We Provide</h1>
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                fontSize: "20px",
+                lineHeight: "120%",
+                marginTop: "20px",
+                marginBottom: "-5px",
+              }),
+            }}
+          >
+            Key Features We Provide
+          </h1>
         </div>
         {/*  Key Features We Provide section div */}
         <div className="blockChain_nftPlatfromkeyFeatures_services_main_div">
@@ -704,7 +964,16 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Customizable NFT Marketplace
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We develop bespoke platforms that reflect your brand and
                 business model, whether it's a digital art gallery, gaming NFT
                 hub, or a general NFT marketplace.
@@ -724,7 +993,16 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Smart Contract Development
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We ensure smooth, automated processes through secure smart
                 contracts that handle everything from minting new tokens to
                 royalty distributions.
@@ -744,7 +1022,16 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Secure Wallet Integration
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                  Integrated wallets allow users to store, manage, and trade NFTs
                 securely within the platform.
               </p>
@@ -763,7 +1050,16 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                  Ongoing Support
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 Our services don’t end at deployment. We offer maintenance and
                 updates to ensure your platform continues to operate smoothly as
                 the market evolves.
@@ -775,7 +1071,6 @@ const BlockchainDev = () => {
             <div className="blockChain_nftPlatfromkeyFeatures_services_center_underGradient_div"></div>
             <img
               src="/Images/ServicesImage/development/blockChain_nftPlatfromkeyFeatures_services_img_nft-token-with-technology.png"
-              // className="img-fluid"
               alt="blockChain_nftPlatfromkeyFeatures_services_img"
             />
           </div>
@@ -795,7 +1090,16 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Multi-Blockchain Support
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 Our platforms support major blockchains like Ethereum, Binance
                 Smart Chain, and Solana, providing flexibility and scalability
                 for your operations.
@@ -815,7 +1119,16 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 White-Label Solutions
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 If you're looking for a faster time to market, our white-label
                 platforms can be customized with your brand identity, reducing
                 development time.
@@ -835,7 +1148,16 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 User-Friendly Interfaces
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We design intuitive and accessible interfaces to enhance user
                 experience for both buyers and creators, ensuring easy
                 navigation and interaction.
@@ -867,7 +1189,16 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Expertise in NFTs and Blockchain
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We have strong experience in blockchain and NFTs, creating
                 secure, future-ready platforms. Whether Ethereum-based or
                 multi-chain, we ensure your project is technically solid and
@@ -892,7 +1223,16 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Tailored Solutions
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We understand that every project is different. We work closely
                 with our clients to develop platforms that fit their unique
                 business models and audience, ensuring each feature is aligned
@@ -917,7 +1257,16 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Top-Notch Security
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 In the digital world, security is key. We prioritize the
                 protection of users’ data and assets with secure coding
                 practices, regular auditing of smart contracts, and robust
@@ -942,7 +1291,16 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 End-to-End Services
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We offer a comprehensive service, from initial consultation and
                 design to smart contract deployment and platform launch. Our
                 team handles everything, so you don’t have to juggle multiple
@@ -967,7 +1325,16 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 User-Centric Design
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We focus on creating user-friendly platforms that encourage
                 engagement. A seamless experience for both creators and
                 collectors leads to better retention and growth for your
@@ -981,7 +1348,16 @@ const BlockchainDev = () => {
       {/* How TOJO Global’s NFT Platform Can Help You */}
       <section className="container">
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                fontSize: "20px",
+                textAlign: "justify",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             How TOJO Global’s NFT Platform Can Help You
           </h1>
         </div>
@@ -1001,7 +1377,16 @@ const BlockchainDev = () => {
             <h4 className="appDev_industries_services_subHeading">
               Monetize Digital Assets
             </h4>
-            <p className="paraTextStyle">
+            <p
+              className="paraTextStyle"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               Our platform allows creators to tokenize and sell digital content,
               from art and music to virtual goods. This opens up new revenue
               streams and helps creators reach a broader audience.
@@ -1022,7 +1407,16 @@ const BlockchainDev = () => {
             <h4 className="appDev_industries_services_subHeading">
               Reach a Global Market
             </h4>
-            <p className="paraTextStyle">
+            <p
+              className="paraTextStyle"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               NFTs are accessible globally, and our platforms are designed to
               attract international buyers, investors, and collectors,
               maximizing your reach.
@@ -1043,7 +1437,16 @@ const BlockchainDev = () => {
             <h4 className="appDev_industries_services_subHeading">
               Stay Ahead of the Curve
             </h4>
-            <p className="paraTextStyle">
+            <p
+              className="paraTextStyle"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               Blockchain and NFTs are quickly becoming essential to digital
               business. By developing your own NFT platform, you're positioning
               yourself at the forefront of innovation, ready for the future of
@@ -1065,7 +1468,16 @@ const BlockchainDev = () => {
             <h4 className="appDev_industries_services_subHeading">
               Boost Brand Engagement
             </h4>
-            <p className="paraTextStyle">
+            <p
+              className="paraTextStyle"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               NFTs offer an exciting way to connect with your audience, whether
               through exclusive content, membership tokens, or interactive
               experiences. Our platforms help you build brand loyalty and
@@ -1087,7 +1499,16 @@ const BlockchainDev = () => {
             <h4 className="appDev_industries_services_subHeading">
               Stand Out in a Competitive Market
             </h4>
-            <p className="paraTextStyle">
+            <p
+              className="paraTextStyle"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               With more players entering the NFT space, having a cutting-edge
               platform with advanced features will set you apart. TOJO Global
               ensures your platform is not only functional but offers a top-tier
@@ -1109,7 +1530,16 @@ const BlockchainDev = () => {
             <h4 className="appDev_industries_services_subHeading">
               Unlock New Opportunities
             </h4>
-            <p className="paraTextStyle">
+            <p
+              className="paraTextStyle"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               NFTs go beyond art and collectibles. They can represent real
               estate, tickets, certifications, and more. Our platform lets you
               explore diverse possibilities, helping you innovate and tap into
@@ -1122,8 +1552,26 @@ const BlockchainDev = () => {
       {/*  Conclusion Play-to-Earn Game Development */}
       <section className="container">
         <div className="sectionTopTextstyle" data-aos="fade-down">
-          <h1 className="topHeadingStyle">Conclusion</h1>
-          <p className="paraStyle">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "20px",
+              }),
+            }}
+          >
+            Conclusion
+          </h1>
+          <p
+            className="paraStyle"
+            style={{
+              ...(isMobileView && {
+                fontSize: "13px",
+                textAlign: "justify",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             Building an NFT platform is a powerful way to tap into the growing
             world of digital assets. TOJO Global’s expertise in blockchain and
             NFT development can help you create a secure, customizable, and
@@ -1139,12 +1587,28 @@ const BlockchainDev = () => {
           className="blockchain_conclusionnft_platfrom_topTextstyle"
           data-aos="fade-up"
         >
-          <h1 className="topHeadingStyle">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "20px",
+              }),
+            }}
+          >
             {" "}
             <span className="headdingGradientText">Play-to-Earn Game</span>{" "}
             Development
           </h1>
-          <p className="paraStyle mt-2 mt-md-4">
+          <p
+            className="paraStyle mt-2 mt-md-4"
+            style={{
+              ...(isMobileView && {
+                fontSize: "13px",
+                textAlign: "justify",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             In the rapidly evolving world of gaming, Play-to-Earn (P2E) games
             have emerged as a groundbreaking innovation, offering players the
             opportunity to earn real-world rewards while playing their favorite
@@ -1165,7 +1629,16 @@ const BlockchainDev = () => {
                 <h1 className="blockChain_deve_nft_platfrom_subHeading">
                   What is Play-to-Earn?
                 </h1>
-                <p className="appDev_industries_services_paraText">
+                <p
+                  className="appDev_industries_services_paraText"
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "13px",
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   Play-to-Earn games are a revolutionary concept where gamers
                   are rewarded with digital assets, such as cryptocurrency or
                   NFTs (Non-Fungible Tokens), for their participation and
@@ -1193,16 +1666,39 @@ const BlockchainDev = () => {
       {/*  How Will Play-to-Earn Benefit You? */}
       <section className="container">
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "30px",
+              }),
+            }}
+          >
             How Will Play-to-Earn Benefit You?
           </h1>
-          <p className="paraStyle mt-2 mt-md-4">
+          <p
+            className="paraStyle mt-2 mt-md-4"
+            style={{
+              ...(isMobileView && {
+                fontSize: "13px",
+                textAlign: "justify",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             For gamers, the Play-to-Earn model offers a range of benefits beyond
             traditional gameplay. It allows you to:
           </p>
         </div>
         {/* text section  */}
-        <div className="blockChain_dev_PlayToEarn_Benefit_main_div">
+        <div
+          className="blockChain_dev_PlayToEarn_Benefit_main_div"
+          style={{
+            ...(isMobileView && {
+              paddingTop: "20px",
+            }),
+          }}
+        >
           {/* 01 */}
           <div
             className="blockChain_dev_PlayToEarn_Benefit_div"
@@ -1220,7 +1716,17 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Monetize your skills:
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                    marginRight: "10px",
+                  }),
+                }}
+              >
                 Earn rewards for your time and effort, transforming gaming into
                 a potentially lucrative activity.
               </p>
@@ -1243,7 +1749,17 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Ownership of in-game assets:
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                    marginRight: "10px",
+                  }),
+                }}
+              >
                 The digital assets you earn can be traded or sold, giving you
                 full control over their value.
               </p>
@@ -1266,7 +1782,17 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Active engagement:
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                    marginRight: "10px",
+                  }),
+                }}
+              >
                 With financial incentives, players tend to stay more engaged,
                 resulting in a more immersive and rewarding experience.
               </p>
@@ -1274,8 +1800,18 @@ const BlockchainDev = () => {
           </div>
         </div>
         {/* bottom para text  */}
-        <div className="sectionTopTextstyle mt-5 mt-md-0">
-          <p className="paraStyle">
+        <div className="sectionTopTextstyle mt-4 mt-md-0">
+          <p
+            className="paraStyle"
+            style={{
+              ...(isMobileView && {
+                fontSize: "13px",
+                textAlign: "justify",
+                lineHeight: "120%",
+                marginRight: "10px",
+              }),
+            }}
+          >
             For businesses and developers, Play-to-Earn games foster a thriving
             ecosystem that attracts a loyal, active player base, opening doors
             to new revenue streams and long-term growth.
@@ -1286,13 +1822,27 @@ const BlockchainDev = () => {
       {/* TOJO Global’s Expertise in Play-to-Earn Game Development */}
       <section className="container">
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "30px",
+              }),
+            }}
+          >
             TOJO Global’s Expertise in{" "}
             <span className="headdingGradientText"> Play-to-Earn Game</span>{" "}
             Development
           </h1>
         </div>
-        <div className="blockChain_dev_PlayToEarn_expertise_main_div">
+        <div
+          className="blockChain_dev_PlayToEarn_expertise_main_div"
+          style={{
+            ...(isMobileView && {
+              marginTop: "17px",
+            }),
+          }}
+        >
           {/* 01 */}
           <div
             className="blockChain_dev_PlayToEarn_expertise_text_div"
@@ -1302,7 +1852,16 @@ const BlockchainDev = () => {
             <h4 className="appDev_industries_services_subHeading">
               Expertise in game design:
             </h4>
-            <p className="paraTextStyle">
+            <p
+              className="paraTextStyle"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               Our team of experts specializes in developing engaging, immersive,
               and user-centric gameplay experiences. We create games that are
               not only visually stunning but also deeply immersive, providing
@@ -1326,7 +1885,16 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Custom Game Design
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We craft engaging, interactive games that align with the
                 Play-to-Earn model, ensuring an immersive user experience.
               </p>
@@ -1345,7 +1913,16 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 NFT and Token Development
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 NFT and Token Development TOJO Global helps create unique NFTs
                 and in-game tokens that add value to your gaming ecosystem.
               </p>
@@ -1364,7 +1941,16 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Blockchain Integration
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 Our team ensures seamless integration with blockchain
                 technology, enabling secure and transparent transactions for
                 in-game assets.
@@ -1384,7 +1970,16 @@ const BlockchainDev = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Ongoing Support
               </h4>
-              <p className="paraTextStyle">
+              <p
+                className="paraTextStyle"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We provide continuous support post-launch, ensuring the game
                 evolves with user needs and technological advancements.
               </p>
@@ -1403,6 +1998,11 @@ const BlockchainDev = () => {
               className="appDev_industries_services_imgDiv"
               data-aos={isLargeMobileView ? "fade-up" : "fade-left"}
               data-aos-delay={2 * 200}
+              style={{
+                ...(isMobileView && {
+                  marginTop: "-17px",
+                }),
+              }}
             >
               <img
                 src="/Images/ServicesImage/development/blockChaninPlayToEarnGameDevelopmentWhyChoose_img.png"
@@ -1414,15 +2014,20 @@ const BlockchainDev = () => {
             <div className="appDev_industries_services_text_div">
               <div>
                 {/* right side top text  */}
-                <div
-                  data-aos="fade-right"
-                  data-aos-delay={1 * 200}
-                  className="mt-3 mt-md-0"
-                >
+                <div data-aos="fade-right" data-aos-delay={1 * 200}>
                   <h4 className="blockChain_deve_nft_platfrom_subHeading">
                     Why Choose TOJO Global?
                   </h4>
-                  <p className="appDev_industries_services_paraText">
+                  <p
+                    className="appDev_industries_services_paraText"
+                    style={{
+                      ...(isMobileView && {
+                        fontSize: "13px",
+                        textAlign: "justify",
+                        lineHeight: "120%",
+                      }),
+                    }}
+                  >
                     TOJO Global is a leader in innovative game development,
                     offering unparalleled expertise in the Play-to-Earn space.
                     Here is the reason for partnering with us:
@@ -1430,7 +2035,14 @@ const BlockchainDev = () => {
                 </div>
 
                 {/* right side bottom key point text div   */}
-                <div className="blockChaninPlayToEarnGameDevelopmentWhyChoose_keyPoint">
+                <div
+                  className="blockChaninPlayToEarnGameDevelopmentWhyChoose_keyPoint"
+                  style={{
+                    ...(isMobileView && {
+                      marginTop: "31px",
+                    }),
+                  }}
+                >
                   {/* key point 01 */}
                   <div
                     data-aos="fade-up"
@@ -1448,7 +2060,16 @@ const BlockchainDev = () => {
                       <h4>Proven Expertise:</h4>
                     </div>
 
-                    <p className="paraTextStyle">
+                    <p
+                      className="paraTextStyle"
+                      style={{
+                        ...(isMobileView && {
+                          fontSize: "13px",
+                          textAlign: "justify",
+                          lineHeight: "120%",
+                        }),
+                      }}
+                    >
                       Our team consists of experienced developers, blockchain
                       specialists, and creative designers who understand the
                       intricacies of P2E game development.
@@ -1469,7 +2090,16 @@ const BlockchainDev = () => {
                       <h4>Tailored Solutions:</h4>
                     </div>
 
-                    <p className="paraTextStyle">
+                    <p
+                      className="paraTextStyle"
+                      style={{
+                        ...(isMobileView && {
+                          fontSize: "13px",
+                          textAlign: "justify",
+                          lineHeight: "120%",
+                        }),
+                      }}
+                    >
                       We customize our services to meet your unique business
                       goals and gaming vision, ensuring the end product is
                       perfectly aligned with your needs.
@@ -1490,7 +2120,16 @@ const BlockchainDev = () => {
                       <h4>Cutting-Edge Technology:</h4>
                     </div>
 
-                    <p className="paraTextStyle">
+                    <p
+                      className="paraTextStyle"
+                      style={{
+                        ...(isMobileView && {
+                          fontSize: "13px",
+                          textAlign: "justify",
+                          lineHeight: "120%",
+                        }),
+                      }}
+                    >
                       We use the latest technologies to create fun, advanced
                       games with smooth gameplay and strong blockchain
                       integration for a great experience.
@@ -1511,7 +2150,16 @@ const BlockchainDev = () => {
                       <h4>End-to-End Services:</h4>
                     </div>
 
-                    <p className="paraTextStyle">
+                    <p
+                      className="paraTextStyle"
+                      style={{
+                        ...(isMobileView && {
+                          fontSize: "13px",
+                          textAlign: "justify",
+                          lineHeight: "120%",
+                        }),
+                      }}
+                    >
                       TOJO Global is a leader in innovative game development,
                       offering unparalleled expertise in the Play-to-Earn space.
                       Here is the reason for partnering with us:
@@ -1527,16 +2175,40 @@ const BlockchainDev = () => {
       {/*Why Choose TOJO Global for Blockchain Development? */}
       <section className="container">
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "30px",
+                fontSize: "20px",
+              }),
+            }}
+          >
             Why Choose TOJO Global for Blockchain Development?
           </h1>
-          <p className="paraStyle">
+          <p
+            className="paraStyle"
+            style={{
+              ...(isMobileView && {
+                fontSize: "13px",
+                textAlign: "justify",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             Choosing TOJO Global for your blockchain projects means partnering
             with a team of skilled developers who are at the forefront of
             blockchain technology. Here’s why businesses trust us:
           </p>
         </div>
-        <div className="blockChain_dev_PlayToEarn_whyChoose_main_div">
+        <div
+          className="blockChain_dev_PlayToEarn_whyChoose_main_div"
+          style={{
+            ...(isMobileView && {
+              paddingTop: "4rem",
+            }),
+          }}
+        >
           {/* 01 */}
           <div
             className="blockChain_dev_PlayToEarn_whyChoose_div"
@@ -1552,7 +2224,16 @@ const BlockchainDev = () => {
             <h4 className="appDev_industries_services_subHeading">
               Expert Team
             </h4>
-            <p className="paraTextStyle">
+            <p
+              className="paraTextStyle"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               Our developers are well-versed in the latest blockchain
               technologies and platforms, allowing us to deliver robust and
               secure solutions for a variety of use cases.
@@ -1573,7 +2254,16 @@ const BlockchainDev = () => {
             <h4 className="appDev_industries_services_subHeading">
               Custom Solutions
             </h4>
-            <p className="paraTextStyle">
+            <p
+              className="paraTextStyle"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               We offer fully customized blockchain solutions tailored to your
               specific business requirements, ensuring that our development
               aligns with your goals and objectives.
@@ -1594,7 +2284,16 @@ const BlockchainDev = () => {
             <h4 className="appDev_industries_services_subHeading">
               Security-Focused Development
             </h4>
-            <p className="paraTextStyle">
+            <p
+              className="paraTextStyle"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               We prioritize security in every blockchain project we undertake.
               From smart contract auditing to secure transaction handling, we
               ensure your blockchain application is resistant to vulnerabilities
@@ -1616,7 +2315,16 @@ const BlockchainDev = () => {
             <h4 className="appDev_industries_services_subHeading">
               End-to-End Support
             </h4>
-            <p className="paraTextStyle">
+            <p
+              className="paraTextStyle"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               We guide you through every stage of the blockchain development
               process, from initial consultation and planning to development,
               deployment, and post-launch support.
@@ -1627,7 +2335,14 @@ const BlockchainDev = () => {
       {/* Benefits of Blockchain Development with TOJO Global */}
       <section className="container">
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                fontSize: "20px",
+              }),
+            }}
+          >
             Benefits of Blockchain Development with TOJO Global
           </h1>
         </div>
@@ -1652,7 +2367,17 @@ const BlockchainDev = () => {
                 <h4 className="blockChainDev_PlayToEarn_benefits_textHeading">
                   Decentralization
                 </h4>
-                <p className="blockChainDev_PlayToEarn_benefits_textSubHeading">
+                <p
+                  className="blockChainDev_PlayToEarn_benefits_textSubHeading"
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "13px",
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                      marginRight: "10px",
+                    }),
+                  }}
+                >
                   Blockchain eliminates the need for intermediaries, enabling
                   direct transactions and data sharing between users, which
                   reduces costs and improves efficiency.
@@ -1681,7 +2406,17 @@ const BlockchainDev = () => {
                 <h4 className="blockChainDev_PlayToEarn_benefits_textHeading">
                   Enhanced Security
                 </h4>
-                <p className="blockChainDev_PlayToEarn_benefits_textSubHeading">
+                <p
+                  className="blockChainDev_PlayToEarn_benefits_textSubHeading"
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "13px",
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                      marginRight: "10px",
+                    }),
+                  }}
+                >
                   Blockchain’s immutable nature and cryptographic security
                   ensure that your data and transactions are highly secure and
                   protected from unauthorized access.
@@ -1709,7 +2444,17 @@ const BlockchainDev = () => {
                 <h4 className="blockChainDev_PlayToEarn_benefits_textHeading">
                   Automation Smart Contract
                 </h4>
-                <p className="blockChainDev_PlayToEarn_benefits_textSubHeading">
+                <p
+                  className="blockChainDev_PlayToEarn_benefits_textSubHeading"
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "13px",
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                      marginRight: "10px",
+                    }),
+                  }}
+                >
                   Smart contracts allow automatic execution of specific actions
                   once predefined conditions are fulfilled, minimizing manual
                   efforts and boosting overall efficiency.
@@ -1737,7 +2482,17 @@ const BlockchainDev = () => {
                 <h4 className="blockChainDev_PlayToEarn_benefits_textHeading">
                   Transparency
                 </h4>
-                <p className="blockChainDev_PlayToEarn_benefits_textSubHeading">
+                <p
+                  className="blockChainDev_PlayToEarn_benefits_textSubHeading"
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "13px",
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                      marginRight: "10px",
+                    }),
+                  }}
+                >
                   Every transaction on a blockchain is recorded in a public
                   ledger, ensuring transparency and traceability, which is
                   crucial for industries such as finance and supply chain
