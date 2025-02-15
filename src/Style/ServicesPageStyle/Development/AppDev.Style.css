@@ -116,7 +116,7 @@
   border-bottom: 6px solid var(--Linear, #18c8ff);
   background: rgba(24, 200, 255, 0.3);
   box-shadow: 0px 4px 4px 0px rgba(6, 0, 68, 0.25);
-  backdrop-filter: blur(22px);
+  /* backdrop-filter: blur(22px); */
   height: 19.3125rem;
   display: flex;
   justify-content: center;
@@ -136,7 +136,7 @@
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.5rem;
+  line-height: 125%;
 }
 
 .appDevService_ourServices_card p {
@@ -145,7 +145,7 @@
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.125rem;
+  line-height: 120%;
 }
 
 /* ====================== */
@@ -434,7 +434,7 @@
   .appDevService_whyChoose_main_div {
     width: 100%;
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 1.5rem;
   }
 
   #AppDevServiceWhyChooseSvg {
@@ -483,9 +483,12 @@
 
   .appDevService_ourServices_card p {
     font-size: 0.8rem;
-    line-height: 1.2rem;
+    line-height: 120%;
   }
-
+  /* appDev_industries_services_text_div */
+  .appDev_industries_services_text_div {
+    gap: 0rem;
+  }
   /* appDev_Partnering_services_main_div */
   .appDev_Partnering_services_main_div {
     grid-template-columns: 1fr;
@@ -500,10 +503,16 @@
     transform: translate(-50%, -50%);
     width: 80%;
   }
+  .appDev_industries_services_subHeading {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 120%;
+  }
 
   /* appDev_industries_services */
   .appDev_industries_services_paraText {
-    font-size: 0.8rem;
+    font-size: 13px;
+    text-align: justify;
     line-height: 120%;
   }
 

@@ -10,7 +10,7 @@ import { useContext, useState } from "react";
 import { AppContext } from "../../../AppContext";
 gsap.registerPlugin(ScrollTrigger);
 const AppDev = () => {
-  const { isLargeMobileView } = useContext(AppContext);
+  const { isLargeMobileView, isMobileView } = useContext(AppContext);
   // state
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -82,15 +82,51 @@ const AppDev = () => {
       <section className="socailMediaMarketing_hero_section">
         <div className="container webContentWriting_hero_part">
           <div className="webContentWriting_hero_text_part">
-            <h1>
-              Turn your Ideas into Reality with TOJO Globals  Custom App
-              Development Service
-            </h1>
-            <p>
-              TOJO Global offers personalized app solutions to improve user
-              engagement, enhance efficiency, and support growth on iOS,
-              Android, or both platforms.
-            </p>
+            {isMobileView ? (
+              <>
+                <div className="hero_page_strongText">
+                  <h2
+                    style={{
+                      ...(isMobileView && {
+                        paddingRight: "0rem",
+                      }),
+                    }}
+                  >
+                    Bring Your{" "}
+                    <span className="headdingGradientText">Ideas to Life </span>
+                  </h2>
+                  <h3 className="homePageHeroSubHeadingFristText">
+                    with TOJO Global's
+                  </h3>
+                  <h3 className="homePageHeroSubHeadingSecondText">
+                    Custom App Development
+                  </h3>
+                </div>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                    }),
+                  }}
+                >
+                  TOJO Global offers personalized app solutions to improve user
+                  engagement, enhance efficiency, and support growth on iOS,
+                  Android, or both platforms.
+                </p>{" "}
+              </>
+            ) : (
+              <>
+                <h1>
+                  Turn your Ideas into Reality with TOJO Globals  Custom App
+                  Development Service
+                </h1>
+                <p>
+                  TOJO Global offers personalized app solutions to improve user
+                  engagement, enhance efficiency, and support growth on iOS,
+                  Android, or both platforms.
+                </p>
+              </>
+            )}
             <div className="hero_btn_style">
               <Link to="/contact">
                 <button className="custombtn hero_btn2 fristBtn">
@@ -109,7 +145,17 @@ const AppDev = () => {
       {/* app dev Why Choose TOJO Global */}
       <section className="container">
         <div className="sectionTopTextstyle mb-4 mb-md-0" data-aos="fade-up">
-          <h1 className="topHeadingStyle"> Why Choose TOJO Global?</h1>
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "30px",
+                marginBottom: "-5px",
+              }),
+            }}
+          >
+            Why Choose TOJO Global?
+          </h1>
         </div>
         <div className="appDevService_whyChoose_main_div">
           {/* 01 */}
@@ -121,7 +167,15 @@ const AppDev = () => {
             <AppDevServiceWhyChooseSvg />
             <div className="appDevService_whyChoose_text_div">
               <h2 className="elementHeadingText">Custom Solutions</h2>
-              <p>
+              <p
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "14px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We create apps that are tailored to fit your unique business
                 needs, ensuring a personalized user experience that aligns with
                 your goals and resonates with your audience.
@@ -139,7 +193,15 @@ const AppDev = () => {
               <h2 className="elementHeadingText">
                 Experienced Development Team
               </h2>
-              <p>
+              <p
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "14px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 Our developers stay updated on the latest trends and best
                 practices in app development, allowing us to build intuitive,
                 scalable, and future-proof apps that evolve with your business.
@@ -157,7 +219,15 @@ const AppDev = () => {
               <h2 className="elementHeadingText">
                 Comprehensive Lifecycle Suppor
               </h2>
-              <p>
+              <p
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "14px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                  From the initial concept through development, launch, and
                 beyond, we provide end-to-end support to ensure the smooth
                 functioning and long-term success of your app.
@@ -173,7 +243,15 @@ const AppDev = () => {
             <AppDevServiceWhyChooseSvg />
             <div className="appDevService_whyChoose_text_div">
               <h2 className="elementHeadingText">Security-First Approach</h2>
-              <p>
+              <p
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "14px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We prioritize security throughout the development process,
                 implementing strong protocols and compliance measures to protect
                 your data and your users' information.
@@ -191,7 +269,15 @@ const AppDev = () => {
               <h2 className="elementHeadingText">
                  Cross-Platform Development
               </h2>
-              <p>
+              <p
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "14px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 TOJO Global offers expertise in building apps for both iOS and
                 Android platforms, ensuring seamless performance and a
                 consistent user experience across all devices.
@@ -209,7 +295,15 @@ const AppDev = () => {
               <h2 className="elementHeadingText">
                  Innovative Design Approach
               </h2>
-              <p>
+              <p
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "14px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We create user-friendly and attractive designs that improve
                 usability, ensuring your app delivers a seamless and engaging
                 experience for all users.
@@ -221,7 +315,17 @@ const AppDev = () => {
       {/* app dev Our Services TOJO Global */}
       <section className="appDevService_Our_Services_section">
         <div className="sectionTopTextstyle container" data-aos="fade-down">
-          <h1 className="topHeadingStyle"> Our Services</h1>
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "39px",
+              }),
+            }}
+          >
+            {" "}
+            Our Services
+          </h1>
         </div>
         <div className="appDevService_Our_Services_belowGrandinet_div"></div>
         <div className="appDevService_Our_Services_main_div">
@@ -241,7 +345,15 @@ const AppDev = () => {
                 <h2 className="appDevService_ourServices_card_heading">
                   Custom App Development
                 </h2>
-                <p>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "13px",
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   Develop custom iOS, Android, and cross-platform apps that meet
                   your business needs, ensuring a seamless user experience and
                   strong brand relevance.
@@ -263,7 +375,15 @@ const AppDev = () => {
                 <h2 className="appDevService_ourServices_card_heading">
                   UI/UX Design
                 </h2>
-                <p>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "13px",
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   Our design team focuses on creating intuitive, visually
                   appealing interfaces that enhance the user experience,
                   ensuring smooth and enjoyable interactions.
@@ -285,7 +405,15 @@ const AppDev = () => {
                 <h2 className="appDevService_ourServices_card_heading">
                   On-Demand Apps
                 </h2>
-                <p>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "13px",
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   Whether it’s for food delivery or ride-sharing, we build
                   dynamic, real-time apps that allow businesses to connect with
                   users instantly.
@@ -307,7 +435,15 @@ const AppDev = () => {
                 <h2 className="appDevService_ourServices_card_heading">
                   Enterprise Solutions
                 </h2>
-                <p>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "13px",
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   We develop secure, large-scale applications that help
                   businesses streamline operations, improve communication, and
                   scale as needed.
@@ -329,7 +465,15 @@ const AppDev = () => {
                 <h2 className="appDevService_ourServices_card_heading">
                   App Maintenance & Support
                 </h2>
-                <p>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "13px",
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   Our support doesn't stop at launch. We offer ongoing
                   maintenance services to keep your app updated and functioning
                   optimally in a constantly changing digital landscape.
@@ -343,7 +487,18 @@ const AppDev = () => {
       {/* app dev Industries We Serve TOJO Global */}
       <section className="container">
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle"> Industries We Serve</h1>
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "35px",
+                marginBottom: "20px",
+              }),
+            }}
+          >
+            {" "}
+            Industries We Serve
+          </h1>
         </div>
         <div className="appDev_industries_services_main_div">
           {/* 01 Travel */}
@@ -353,7 +508,11 @@ const AppDev = () => {
               className="appDev_industries_services_text_div"
               data-aos={isLargeMobileView ? "fade-up" : "fade-left"}
             >
-              <h2 className="appDev_industries_services_heading">Travel</h2>
+              <h2 className="appDev_industries_services_heading">
+                {" "}
+                <span className="headdingGradientText">Travel</span>
+              </h2>
+
               <div>
                 <h4 className="appDev_industries_services_subHeading">
                   Search Tools:
@@ -409,7 +568,7 @@ const AppDev = () => {
               data-aos="fade-right"
             >
               <h2 className="appDev_industries_services_heading">
-                Entertainment
+                <span className="headdingGradientText">Entertainment</span>
               </h2>
               <div>
                 <h4 className="appDev_industries_services_subHeading">
@@ -438,7 +597,9 @@ const AppDev = () => {
               className="appDev_industries_services_text_div"
               data-aos="fade-right"
             >
-              <h2 className="appDev_industries_services_heading">E-Learning</h2>
+              <h2 className="appDev_industries_services_heading">
+                <span className="headdingGradientText">E-Learning</span>
+              </h2>
               <div>
                 <h4 className="appDev_industries_services_subHeading">
                   Video Conferencing:
@@ -486,7 +647,9 @@ const AppDev = () => {
               className="appDev_industries_services_text_div"
               data-aos="fade-right"
             >
-              <h2 className="appDev_industries_services_heading">Healthcare</h2>
+              <h2 className="appDev_industries_services_heading">
+                <span className="headdingGradientText">Healthcare</span>
+              </h2>
               <div>
                 <h4 className="appDev_industries_services_subHeading">
                   Patient Engagement:
@@ -531,10 +694,12 @@ const AppDev = () => {
               className="appDev_industries_services_text_div"
               data-aos="fade-right"
             >
-              <h2 className="appDev_industries_services_heading">Shopping</h2>
+              <h2 className="appDev_industries_services_heading">
+                <span className="headdingGradientText">Shopping</span>
+              </h2>
               <div>
                 <h4 className="appDev_industries_services_subHeading">
-                  User-Friendly Design:
+                  User Friendly Design:
                 </h4>
                 <p className="appDev_industries_services_paraText">
                   Create a streamlined, enjoyable shopping experience.
@@ -582,8 +747,17 @@ const AppDev = () => {
       {/* app dev Benefits of Partnering  TOJO Global */}
       <section className="container">
         <div className="sectionTopTextstyle" data-aos="fade-down">
-          <h1 className="topHeadingStyle">
-            Benefits of Partnering with TOJO Global
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "30px",
+                marginBottom: "20px",
+              }),
+            }}
+          >
+            Benefits of <span className="headdingGradientText">Partnering</span>{" "}
+            with TOJO Global
           </h1>
         </div>
         <div className="appDev_Partnering_services_main_div">
@@ -597,8 +771,26 @@ const AppDev = () => {
               svgImage={"appDevPartneringBenefitsServicesSvg01.svg"}
             />
             <div className="appDev_Partnering_services_text_div">
-              <h4 className="mb-3">Improved User Engagement</h4>
-              <p>
+              <h4
+                className="mb-3"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "19px",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
+                Improved User Engagement
+              </h4>
+              <p
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 Our apps are designed to encourage users to keep coming back,
                 maximizing retention and engagement.
               </p>
@@ -614,8 +806,26 @@ const AppDev = () => {
               svgImage={"appDevPartneringBenefitsServicesSvg02.svg"}
             />
             <div className="appDev_Partnering_services_text_div">
-              <h4 className="mb-3">Affordable Solutions</h4>
-              <p>
+              <h4
+                className="mb-3"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "20px",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
+                Affordable Solutions
+              </h4>
+              <p
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We provide top-quality app development within your budget,
                 delivering excellent results every time.
               </p>
@@ -631,10 +841,28 @@ const AppDev = () => {
               svgImage={"appDevPartneringBenefitsServicesSvg03.svg"}
             />
             <div className="appDev_Partnering_services_text_div">
-              <h4 className="mb-3">Scalable Architecture</h4>
-              <p>
+              <h4
+                className="mb-3"
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "19px",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
+                Scalable Architecture
+              </h4>
+              <p
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "13px",
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We build apps with scalability in mind, ensuring they can handle
-                increased traffic and added features as your business grows.
+                increased traffic & added features as business grows.
               </p>
             </div>
           </div>
@@ -659,7 +887,14 @@ const AppDev = () => {
       </section>
 
       {/*Here comes TOJO GLOBAL where we specialize in creating unique logos */}
-      <section className="container">
+      <section
+        className="container"
+        style={{
+          ...(isMobileView && {
+            marginTop: "55px",
+          }),
+        }}
+      >
         <div
           className="professionalModeration_div socailMediaMarketing_specialize_card"
           data-aos="fade-down"
@@ -668,7 +903,16 @@ const AppDev = () => {
             <h1 className="professionalModeration_service_offers_heading">
               Ready to Get Started?
             </h1>
-            <p className="professionalModeration_service_offers_para">
+            <p
+              className="professionalModeration_service_offers_para"
+              style={{
+                ...(isMobileView && {
+                  fontSize: "13px",
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               Bring your app ideas to life with TOJO Global. Whether you’re
               developing a brand-new app or enhancing an existing one, our team
               is ready to help you succeed.
