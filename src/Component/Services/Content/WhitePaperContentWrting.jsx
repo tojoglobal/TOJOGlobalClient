@@ -8,7 +8,7 @@ import { useGSAP } from "@gsap/react";
 import { AppContext } from "../../../AppContext";
 
 const WhitePaperContentWrting = () => {
-  const { isLargeMobileView } = useContext(AppContext);
+  const { isLargeMobileView, isMobileView } = useContext(AppContext);
   useGSAP(() => {
     let tl = gsap.timeline();
     tl.from(".webContentWriting_hero_text_part h1", {
@@ -39,15 +39,46 @@ const WhitePaperContentWrting = () => {
       <section className="uiuxDesign_hero_section">
         <div className="container webContentWriting_hero_part">
           <div className="webContentWriting_hero_text_part">
-            <h1>
-              Enhance Your Brand Communication with TOJO Global’s Innovative
-              White Paper Design
-            </h1>
-            <p>
-              TOJO Global transforms complex ideas into visually compelling,
-              easy-to-read white papers that enhance your message and strengthen
-              your brand
-            </p>
+            {isMobileView ? (
+              <>
+                <div className="hero_page_strongText">
+                  <h2>
+                    Brand {""}
+                    <span className="headdingGradientText">Communication</span>
+                  </h2>
+                  <h3 className="homePageHeroSubHeadingFristText">
+                    with TOJO Global’s{" "}
+                  </h3>
+                  <h3 className="homePageHeroSubHeadingSecondText">
+                    White Paper Design
+                  </h3>
+                </div>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                    }),
+                  }}
+                >
+                  TOJO Global produces dynamic motion graphics that elevate your
+                  visuals, boost marketing efforts, and engage your audience
+                  effectively.
+                </p>{" "}
+              </>
+            ) : (
+              <>
+                <h1>
+                  Enhance Your Brand Communication with TOJO Global’s Innovative
+                  White Paper Design
+                </h1>
+                <p>
+                  TOJO Global transforms complex ideas into visually compelling,
+                  easy-to-read white papers that enhance your message and
+                  strengthen your brand
+                </p>
+              </>
+            )}
+
             <div className="hero_btn_style">
               <a href="https://www.behance.net/TOJO_Global" target="_blank">
                 <button className="custombtn hero_btn1 secondBtn">
@@ -68,7 +99,17 @@ const WhitePaperContentWrting = () => {
       {/* What is White Paper Design? */}
       <section className="container">
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">What is White Paper Design?</h1>
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "32px",
+                marginBottom: "20px",
+              }),
+            }}
+          >
+            What is White Paper Design?
+          </h1>
         </div>
         {isLargeMobileView ? (
           <div
@@ -76,7 +117,15 @@ const WhitePaperContentWrting = () => {
             data-aos="fade-down"
           >
             <div className="what_is_whitepaperContent_mobile_text_div">
-              <p className="whitepaperContent_para_text mb-2 md:mb-5 ">
+              <p
+                className="whitepaperContent_para_text mb-2 md:mb-5 "
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 White paper design is the art of transforming detailed, often
                 complex information into a visually compelling, reader-friendly
                 document. It involves a blend of layout, typography, and visual
@@ -85,7 +134,15 @@ const WhitePaperContentWrting = () => {
                 enhances your document's readability and professionalism, while
                 ensuring your message is communicated effectively.
               </p>
-              <p className="whitepaperContent_para_text">
+              <p
+                className="whitepaperContent_para_text"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 A well-designed white paper does more than just organize
                 information. It keeps your audience engaged by using carefully
                 chosen fonts, colors, and images to make the reading experience
@@ -124,21 +181,54 @@ const WhitePaperContentWrting = () => {
       {/* Our White Paper Design Service */}
       <section className="container">
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">Our White Paper Design Service</h1>
-          <p className="paraStyle mt-3">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "35px",
+              }),
+            }}
+          >
+            Our White Paper Design Service
+          </h1>
+          <p
+            className="paraStyle mt-2"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             We understand that each white paper is unique and demands a designed
             approach. Our expert design team works closely with you to create a
             solution that best fits your content, target audience, and branding.
             Here’s what our service includes:
           </p>
         </div>
-        <div className="our_whitepaperContent_designService_maindiv">
+        <div
+          className="our_whitepaperContent_designService_maindiv"
+          style={{
+            ...(isMobileView && {
+              marginTop: "25px",
+              marginBottom: "20px",
+            }),
+          }}
+        >
           {/* 01 */}
           <div className="our_whitepaperContent_designService_text_div">
             <h4 className="appDev_industries_services_subHeading mt-3">
               Custom Layout & Formatting
             </h4>
-            <p className="whitepaperContent_subPara_text">
+            <p
+              className="whitepaperContent_subPara_text"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               We create professional and clean layouts that allow your content
               to flow logically and smoothly, making it easier for your audience
               to digest even the most technical information.
@@ -149,7 +239,15 @@ const WhitePaperContentWrting = () => {
             <h4 className="appDev_industries_services_subHeading mt-3">
               Brand Consistency
             </h4>
-            <p className="whitepaperContent_subPara_text">
+            <p
+              className="whitepaperContent_subPara_text"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               Your brand’s identity is crucial, and we ensure that the design of
               your white paper reflects your established colors, fonts, and
               overall visual style, creating a cohesive look across all your
@@ -161,7 +259,15 @@ const WhitePaperContentWrting = () => {
             <h4 className="appDev_industries_services_subHeading mt-3">
               Engaging Visual Elements
             </h4>
-            <p className="whitepaperContent_subPara_text">
+            <p
+              className="whitepaperContent_subPara_text"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               Incorporating infographics, charts, and other imagery helps break
               up large blocks of text, making information more digestible and
               keeping your readers engaged.
@@ -172,7 +278,15 @@ const WhitePaperContentWrting = () => {
             <h4 className="appDev_industries_services_subHeading mt-3">
               Typography Optimization
             </h4>
-            <p className="whitepaperContent_subPara_text">
+            <p
+              className="whitepaperContent_subPara_text"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
                The fonts we select are chosen with care to match the tone of
               your content, improve readability, and create a professional feel.
             </p>
@@ -180,9 +294,17 @@ const WhitePaperContentWrting = () => {
           {/* 05 */}
           <div className="our_whitepaperContent_designService_text_div">
             <h4 className="appDev_industries_services_subHeading mt-3">
-              Responsive & Print-Friendly Design
+              Responsive and Print Friendly Design
             </h4>
-            <p className="whitepaperContent_subPara_text">
+            <p
+              className="whitepaperContent_subPara_text"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
                Our designs are flexible, ensuring that your white paper looks
               fantastic whether viewed on a digital platform or printed as a
               physical document.
@@ -192,18 +314,41 @@ const WhitePaperContentWrting = () => {
       </section>
 
       {/*Benefits of Professional White Paper Design*/}
-      <section className="benefits_of_professional_whitepaperDesign_section">
+      <section
+        className="benefits_of_professional_whitepaperDesign_section"
+        style={{
+          ...(isMobileView && {
+            paddingTop: "15px",
+            paddingBottom: "21px",
+          }),
+        }}
+      >
         <div className="container benefits_of_professional_whitepaperDesign_div">
           {/* grid frist text card */}
           <div className="searchEngineMarketing_second_part_frist_text">
             <h2>
               Benefits of Professional <span>White Paper</span> Design
             </h2>
-            <p className="whitepaperContent_subPara_text">
+            <p
+              className="whitepaperContent_subPara_text"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               Investing in professional white paper design brings tangible
               benefits to your business communications. These include:
             </p>
-            <div className="searchEngineMarketing_second_part_frist_text_bottom_border"></div>
+            <div
+              className="searchEngineMarketing_second_part_frist_text_bottom_border"
+              style={{
+                ...(isMobileView && {
+                  marginBottom: "22px",
+                }),
+              }}
+            ></div>
           </div>
           {/* Enhanced Readability */}
           <div className="searchEngineMarketing_second_part_card benefits_of_professional_whitepaperDesign_card ">
@@ -257,14 +402,38 @@ const WhitePaperContentWrting = () => {
       {/*Why Choose TOJO Global?*/}
       <section className="container">
         <div className="sectionTopTextstyle">
-          <h1 className="topHeadingStyle">Why Choose TOJO Global?</h1>
-          <p className="paraStyle mt-3">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "25px",
+              }),
+            }}
+          >
+            Why Choose TOJO Global?
+          </h1>
+          <p
+            className="paraStyle mt-2"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             TOJO Global brings an expert approach to white paper design, driven
             by a focus on functionality, aesthetics, and your business goals. 
           </p>
         </div>
         {/* card */}
-        <div className="whyChoose_whitepaperContent_designService_maindiv">
+        <div
+          className="whyChoose_whitepaperContent_designService_maindiv"
+          style={{
+            ...(isMobileView && {
+              paddingTop: "15px",
+            }),
+          }}
+        >
           {/* Expert Design Team*/}
           <div className="tailoredInfluencer_OurExpertise_Text_card_div whyChoose_whitepaperContent_designService_card_div ">
             <div className="InfluencerMarketing_OurExpertise_card_imge whyChoose_whitepaperContent_designService_icon">
@@ -274,7 +443,14 @@ const WhitePaperContentWrting = () => {
               />
             </div>
             <h4>Expert Design Team</h4>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
                Our experienced team of designers specializes in white papers,
               combining knowledge of design principles with a keen understanding
               of content flow and audience engagement.
@@ -289,7 +465,14 @@ const WhitePaperContentWrting = () => {
               />
             </div>
             <h4>Tailored Solutions</h4>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
                Each white paper design is customized to align with your
               project’s goals, whether you’re communicating technical
               information or marketing a new product.
@@ -304,7 +487,14 @@ const WhitePaperContentWrting = () => {
               />
             </div>
             <h4>Attention to Detail</h4>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
                Every design element is crafted with care, from the choice of
               fonts to the placement of images, ensuring that the final product
               is both visually appealing and highly functional.
@@ -319,7 +509,14 @@ const WhitePaperContentWrting = () => {
               />
             </div>
             <h4>Fast Turnaround</h4>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               We know that time is of the essence in business, which is why we
               pride ourselves on delivering high-quality white paper designs
               within your deadline—typically within 1-2 weeks, depending on the
@@ -335,7 +532,14 @@ const WhitePaperContentWrting = () => {
               />
             </div>
             <h4>Collaborative Process</h4>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               We believe in open communication and close collaboration with our
               clients. Throughout the design process, we work with you to ensure
               that the final product aligns with your vision and effectively
@@ -346,13 +550,29 @@ const WhitePaperContentWrting = () => {
       </section>
 
       {/*Ready to Elevate Your White Papers?*/}
-      <section className="smBrandGrowth_hero_part">
+      <section
+        className="smBrandGrowth_hero_part"
+        style={{
+          ...(isMobileView && {
+            marginTop: "5px",
+            marginBottom: "-27px",
+          }),
+        }}
+      >
         <div className="professionalModeration_div blockChainSolution_specialize_card">
           <div className="professionalModeration_text_div">
             <h1 className="professionalModeration_service_offers_heading">
               Ready to Elevate Your White Papers?
             </h1>
-            <p className="professionalModeration_service_offers_para">
+            <p
+              className="professionalModeration_service_offers_para"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               {" "}
               A well-designed white paper can be a powerful tool for your
               business, helping you communicate complex ideas while reinforcing
@@ -360,11 +580,11 @@ const WhitePaperContentWrting = () => {
               design, delivering polished, professional white papers that make a
               lasting impact on your audience. Ready to get started?
             </p>
-            <p className="appDev_industries_services_subHeading md:w-50 mt-3">
+            {/* <p className="appDev_industries_services_subHeading md:w-50 mt-3">
               {" "}
               A Contact TOJO Global today and let us help you create a standout
               white paper that drives results.
-            </p>
+            </p> */}
             <div className="hero_btn_style">
               <Link to="/contact">
                 <button class="custombtn hero_btn1 secondBtn">
