@@ -9,9 +9,11 @@
 
 .socailMediaDesign_top_hero_section {
   padding: 9.3rem 4.39rem 4.8rem 5rem;
-  background: radial-gradient(83.46% 64.32% at 69.9% 50.09%,
-      #4a16a5 0%,
-      #060044 97.56%);
+  background: radial-gradient(
+    83.46% 64.32% at 69.9% 50.09%,
+    #4a16a5 0%,
+    #060044 97.56%
+  );
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -91,8 +93,10 @@
   width: 20rem;
   height: 20rem;
   border-radius: 71.6875rem;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   position: absolute;
   top: 50%;
   left: 50%;
@@ -136,13 +140,8 @@
   gap: 1rem;
 }
 
-.socailMediaDesign_mediaKey_text_div {
-  /* grid-column: 1/2; */
-}
-
 .socailMediaDesign_mediaKey_text_div h1 {
   color: var(--WBG, #ecf2f2);
-
   font-size: 2.625rem;
   font-style: normal;
   font-weight: 700;
@@ -533,8 +532,10 @@
 .socailMediaDesign_whyChooseService_card_icon {
   width: 5.0625rem;
   height: 5.0625rem;
-  background: var(--Linear,
-      linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%));
+  background: var(
+    --Linear,
+    linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%)
+  );
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -571,7 +572,8 @@
   padding: 5rem 4rem;
 }
 
-.socailMediaDesign_services_section .socailMediaDesign_services_social_card:nth-child(even) {
+.socailMediaDesign_services_section
+  .socailMediaDesign_services_social_card:nth-child(even) {
   margin-left: 35rem;
 }
 
@@ -598,8 +600,10 @@
   width: 9.3125rem;
   height: 9.3125rem;
   border-radius: 4.65625rem;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   filter: blur(44.849998474121094px);
 }
 
@@ -628,10 +632,12 @@
 }
 
 .professionalService_card_socailMediaDesign_page {
-  background: linear-gradient(177deg,
-      #c608ff -76.32%,
-      rgba(24, 200, 255, 0.3) 57%,
-      #c608ff 180.57%);
+  background: linear-gradient(
+    177deg,
+    #c608ff -76.32%,
+    rgba(24, 200, 255, 0.3) 57%,
+    #c608ff 180.57%
+  );
 }
 
 /* ================================== */
@@ -641,11 +647,11 @@
 /* ================================== */
 /* desktop */
 @media (max-width: 1398px) {
-
   /* ...
         rules here apply to devices from 1202px to 1398px (inclusive)
         ... */
-  .socailMediaDesign_services_section .socailMediaDesign_services_social_card:nth-child(even) {
+  .socailMediaDesign_services_section
+    .socailMediaDesign_services_social_card:nth-child(even) {
     margin-left: 22rem;
   }
 
@@ -706,7 +712,8 @@
     width: 100%;
   }
 
-  .socailMediaDesign_services_section .socailMediaDesign_services_social_card:nth-child(even) {
+  .socailMediaDesign_services_section
+    .socailMediaDesign_services_social_card:nth-child(even) {
     margin-left: 6rem;
   }
 
@@ -756,8 +763,6 @@
   .socailMediaDesign_Process_section {
     padding: 7.75rem 5.31rem 9rem 5.31rem;
   }
-
-
 
   .Process_counter_three_text_div {
     position: absolute;
@@ -828,7 +833,6 @@
 
 /* vary small device  */
 @media (max-width: 500px) {
-
   /* ...
        rules here apply to devices from 0px to 500px 
         ... */
@@ -838,7 +842,7 @@
 
   /* socailMediaDesign_services_main_div */
   .socailMediaDesign_service_section {
-    margin-top: 4rem;
+    margin-top: 2rem;
     padding: 0rem 0.39rem 0.8rem 0.5rem;
   }
 
@@ -855,7 +859,11 @@
   .WhyUtilizeSocialMediaServiceSection {
     display: none;
   }
-
+  /* socailMediaDesign_pull_section */
+  .socailMediaDesign_pull_section {
+    margin-top: 2rem;
+    padding: 0rem 0.5rem 0.8rem 0.5rem;
+  }
   /* socailMediaDesign_mediaKey_section */
   .socailMediaDesign_mediaKey_section {
     padding: 2.31rem 0.5rem 10.31rem 0.5rem;
@@ -874,7 +882,7 @@
 
   .socailMediaDesign_mediaKey_text_div {
     grid-column: auto;
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
     padding-right: 0rem;
   }
 
@@ -905,46 +913,59 @@
 
   .socailMediaDesign_mediaKey_rounded_socail_div div:nth-child(1) {
     position: absolute;
-    top: -64px;
-    left: -78px;
+    /* top: -64px;
+    left: -78px; */
+    top: -75px;
+    left: -81px;
   }
 
   .socailMediaDesign_mediaKey_rounded_socail_div div:nth-child(2) {
     position: absolute;
-    bottom: -66px;
-    left: -81px;
+    /* bottom: -66px;
+    left: -81px; */
+    bottom: -64px;
+    left: -87px;
   }
 
   .socailMediaDesign_mediaKey_rounded_socail_div div:nth-child(5) {
     position: absolute;
-    top: -80px;
-    left: 65px;
+    /* top: -80px;
+    left: 65px; */
+    top: -81px;
+    left: 98px;
   }
-
+  .socailMediaDesign_mediaKey_rounded_socail_div div:nth-child(4) {
+    /* position: absolute; */
+    transform: translate(1px, 45px) rotate(39deg);
+    /* bottom: -100px;
+    left: 100px; */
+  }
   .socailMediaDesign_mediaKey_rounded_socail_div div:nth-child(6) {
     position: absolute;
-    bottom: -84px;
-    left: 72px;
+    /* bottom: -84px;
+    left: 72px; */
+    bottom: -120px;
+    left: 26px;
   }
 
   .socailMediaDesign_mediaKey_text_div h1 {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 20px;
+    line-height: 125%;
   }
 
   .socailMediaDesign_mediaKey_text_div p {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: justify;
     padding-right: 0rem;
   }
-
-
 
   .socailMediaDesign_mediaKey_rounded_socail {
     width: 5rem;
     height: 5rem;
     transform: rotate(43deg);
     border-radius: 1.5rem;
+    margin-top: 10px;
   }
 
   /* socailMediaDesign_Process_section */
@@ -966,17 +987,20 @@
   }
 
   .socailMediaDesign_whyChooseService_card_div {
-    padding: 1rem 0.88rem;
-    min-height: 20.5625rem;
+    padding: 1.7rem 0.88rem 1rem 0.88rem;
+    min-height: 19rem;
   }
 
   .socailMediaDesign_whyChooseService_card_div h3 {
-    padding: 0.5rem 0rem;
+    padding: 0.9rem 0rem 0rem 0rem;
+    font-size: 19px;
+    line-height: 125%;
   }
 
   .socailMediaDesign_whyChooseService_card_div p {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 13px;
+    line-height: 120%;
+    text-align: justify;
   }
 
   /* socailMediaDesign_Process_section */
@@ -994,8 +1018,8 @@
 
   .socailMediaDesign_services_section {
     flex-direction: column;
-    gap: 2rem;
-    padding: 5rem 0rem;
+    gap: 1rem;
+    padding: 1.5rem 0rem;
   }
 
   .socailMediaDesign_services_social_card_image img {
@@ -1003,16 +1027,16 @@
   }
 
   .socailMediaDesign_services_social_card_text h2 {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-
+    font-size: 20px;
+    line-height: 125%;
   }
 
   .socailMediaDesign_services_social_card_text p {
     width: 100%;
     height: 100%;
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 13px;
+    line-height: 120%;
+    text-align: justify;
   }
 
   .socailMediaDesign_services_social_card_image_under_gradient {
@@ -1023,7 +1047,8 @@
     height: 6.3125rem;
   }
 
-  .socailMediaDesign_services_section .socailMediaDesign_services_social_card:nth-child(even) {
+  .socailMediaDesign_services_section
+    .socailMediaDesign_services_social_card:nth-child(even) {
     margin-left: 0rem;
   }
 
@@ -1036,7 +1061,4 @@
     font-size: 0.8rem;
     line-height: 1.2rem;
   }
-
-
-
 }

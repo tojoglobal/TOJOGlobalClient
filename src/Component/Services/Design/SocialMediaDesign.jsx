@@ -10,7 +10,8 @@ import SMeDLinkedineIcon from "./SvgDesign/SMeDLinkedineIcon";
 import { useContext } from "react";
 import { AppContext } from "../../../AppContext";
 const SocialMediaDesign = () => {
-  const { isLargeMobileView } = useContext(AppContext);
+  const { isLargeMobileView, isMobileView } = useContext(AppContext);
+
   return (
     <main className="maindiv">
       <Helmet>
@@ -25,17 +26,56 @@ const SocialMediaDesign = () => {
               className="searchEngineMarketing_hero_text_div"
               data-aos="fade-right"
             >
-              <h1>
-                Elevate Your Social Media Presence with our stunning{" "}
-                <span className="headdingGradientText">
-                  Social Media designs{" "}
-                </span>{" "}
-              </h1>
-              <p>
-                TOJO GLOBAL’s extremely talented designers create stunning,
-                eye-catching graphics that make your social media profiles look
-                professional and unique from others.
-              </p>
+              {isMobileView ? (
+                <>
+                  <div className="hero_page_strongText">
+                    <h2
+                      style={{
+                        ...(isMobileView && {
+                          paddingRight: "0rem",
+                        }),
+                      }}
+                    >
+                      {" "}
+                      Boost Your{" "}
+                      <span className="headdingGradientText"> Presence </span>
+                    </h2>
+                    <h3 className="homePageHeroSubHeadingFristText">
+                      Social Media Designs
+                    </h3>
+                    <h3 className="homePageHeroSubHeadingSecondText">
+                      with TOJO Global's
+                    </h3>
+                  </div>
+                  <p
+                    style={{
+                      ...(isMobileView && {
+                        textAlign: "justify",
+                        lineHeight: "125%",
+                      }),
+                    }}
+                  >
+                    TOJO GLOBAL’s extremely talented designers create stunning,
+                    eye-catching graphics that make your social media profiles
+                    look professional and unique from others.
+                  </p>{" "}
+                </>
+              ) : (
+                <>
+                  <h1>
+                    Elevate Your Social Media Presence with our stunning{" "}
+                    <span className="headdingGradientText">
+                      Social Media designs{" "}
+                    </span>{" "}
+                  </h1>
+                  <p>
+                    TOJO GLOBAL’s extremely talented designers create stunning,
+                    eye-catching graphics that make your social media profiles
+                    look professional and unique from others.
+                  </p>
+                </>
+              )}
+
               <div className="hero_btn_style">
                 <Link to="/contact">
                   <button className="custombtn hero_btn2 fristBtn">
@@ -54,6 +94,7 @@ const SocialMediaDesign = () => {
             <div
               className="searchEngineMarketing_hero_image_div"
               data-aos={isLargeMobileView ? "fade-up" : " fade-left"}
+              style={isMobileView ? { display: "none" } : { display: "block" }}
             >
               <img
                 src="/Images/ServicesImage/banner_images/lead 1.png"
@@ -163,10 +204,7 @@ const SocialMediaDesign = () => {
                     conversions with proven tactics.
                   </p>
                 </div>
-                {/* <div className="center_text_left_center_div_outline">
-                  <div className="center_text_left_center_frist_outline"></div>
-                  <div className="left_text_top_bottom_second_outline"></div>
-                </div> */}
+
                 <div className="features_small_circel topBottom_left_cirecel">
                   <img
                     src="/Images/ServicesImage/Allicons/Create a Strong Brand Identity 1.svg"
@@ -187,10 +225,7 @@ const SocialMediaDesign = () => {
                     first in the crowd.
                   </p>
                 </div>
-                {/* <div className="center_text_left_center_div_outline">
-                  <div className="center_text_left_center_frist_outline"></div>
-                  <div className="center_text_left_center_second_outline"></div>
-                </div> */}
+
                 <div className="features_small_circel">
                   <img
                     src="/Images/ServicesImage/Allicons/Beat the Competition1.svg"
@@ -211,10 +246,7 @@ const SocialMediaDesign = () => {
                     your posts grab attention in seconds.
                   </p>
                 </div>
-                {/* <div className="center_text_left_center_div_outline">
-                  <div className="center_text_left_center_frist_outline"></div>
-                  <div className="left_text_top_bottom_second_outline"></div>
-                </div> */}
+
                 <div className="features_small_circel topBottom_left_cirecel">
                   <img
                     src="/Images/ServicesImage/Allicons/Overcome Short Attention Spans1.svg"
@@ -246,10 +278,7 @@ const SocialMediaDesign = () => {
                     alt=""
                   />
                 </div>
-                {/* <div className="center_text_left_center_div_outline">
-                  <div className="right_text_top_bottom_second_outline"></div>
-                  <div className="center_text_left_center_frist_outline"></div>
-                </div> */}
+
                 <div className="features_right_text_div topBottom_text_right_div_outline">
                   <h6>Catch Attention Quickly</h6>
                   <p>
@@ -270,10 +299,7 @@ const SocialMediaDesign = () => {
                     alt=""
                   />
                 </div>
-                {/* <div className="center_text_left_center_div_outline">
-                  <div className="center_text_left_center_frist_outline"></div>
-                  <div className="center_text_right_center_second_outline"></div>
-                </div> */}
+
                 <div className="features_right_text_div center_text_right_div_outline">
                   <h6>Reach More People</h6>
                   <p>
@@ -294,10 +320,7 @@ const SocialMediaDesign = () => {
                     alt="f"
                   />
                 </div>
-                {/* <div className="center_text_left_center_div_outline">
-                  <div className="right_text_top_bottom_second_outline"></div>
-                  <div className="center_text_left_center_frist_outline"></div>
-                </div> */}
+
                 <div className="features_right_text_div topBottom_text_right_div_outline">
                   <h6>Turn Followers Into Customers</h6>
                   <p>
@@ -316,7 +339,17 @@ const SocialMediaDesign = () => {
         <div className="searchEngineMarketing_WhoHelp_top_text_div">
           <div data-aos="fade-up">
             <h1>The Right Design Pulls in Your Audience</h1>
-            <p className="mt-3">
+            <p
+              className="mt-1 mt-md-3"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  width: "100%",
+                  marginLeft: "0",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               More than 80% of small businesses use social media, but many of
               them struggle to stand out. One big reason is that they don’t use
               the right graphic designs. With our social media design package,
@@ -897,7 +930,15 @@ const SocialMediaDesign = () => {
       </section>
 
       {/* WHY CHOOSE OUR SOCIAL MEDIA DESIGN SERVICES?*/}
-      <section className="socailMediaDesign_whyChooseServices_section">
+      <section
+        className="socailMediaDesign_whyChooseServices_section"
+        style={{
+          ...(isMobileView && {
+            paddingTop: "40px",
+            paddingBottom: "14px",
+          }),
+        }}
+      >
         <div className="searchEngineMarketing_WhoHelp_top_text_div">
           <div data-aos="fade-down">
             <h1>WHY CHOOSE OUR SOCIAL MEDIA DESIGN SERVICES? </h1>
@@ -1109,7 +1150,15 @@ const SocialMediaDesign = () => {
       </section>
 
       {/*Need any kind of help with your social media design?  */}
-      <section className="container">
+      <section
+        className="container"
+        style={{
+          ...(isMobileView && {
+            marginTop: "-25px",
+            marginBottom: "30px",
+          }),
+        }}
+      >
         <div
           className="professionalModeration_div professionalService_card_socailMediaDesign_page"
           data-aos="fade-down"
@@ -1118,7 +1167,15 @@ const SocialMediaDesign = () => {
             <h1 className="professionalModeration_service_offers_heading">
               Need any kind of help with your social media design?
             </h1>
-            <p className="professionalModeration_service_offers_para">
+            <p
+              className="professionalModeration_service_offers_para"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               We are here for you! Our team can create attractive posts,
               banners, and ads that grab attention. Whether you need a fresh
               look for your Facebook page or a stunning Instagram feed, or in
