@@ -42,14 +42,46 @@ export const MotionGraphics = () => {
       <section className="blockchaniDev_hero_section">
         <div className="container webContentWriting_hero_part">
           <div className="webContentWriting_hero_text_part">
-            <h1>
-              Engage your audience with stunning motion graphics by TOJO Global
-            </h1>
-            <p>
-              TOJO Global produces dynamic motion graphics that elevate your
-              visuals, boost marketing efforts, and engage your audience
-              effectively.
-            </p>
+            {isMobileView ? (
+              <>
+                <div className="hero_page_strongText">
+                  <h2>
+                    Engage your {""}
+                    <span className="headdingGradientText">audience </span>
+                  </h2>
+                  <h3 className="homePageHeroSubHeadingFristText">
+                    with stunning motion{" "}
+                  </h3>
+                  <h3 className="homePageHeroSubHeadingSecondText">
+                    Graphics by TOJO Global
+                  </h3>
+                </div>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                    }),
+                  }}
+                >
+                  TOJO Global produces dynamic motion graphics that elevate your
+                  visuals, boost marketing efforts, and engage your audience
+                  effectively.
+                </p>{" "}
+              </>
+            ) : (
+              <>
+                <h1>
+                  Engage your audience with stunning motion graphics by TOJO
+                  Global
+                </h1>
+                <p>
+                  TOJO Global produces dynamic motion graphics that elevate your
+                  visuals, boost marketing efforts, and engage your audience
+                  effectively.
+                </p>
+              </>
+            )}
+
             <div className="hero_btn_style">
               <a href="https://www.behance.net/TOJO_Global" target="_blank">
                 <button className="custombtn hero_btn1 secondBtn">
@@ -69,14 +101,30 @@ export const MotionGraphics = () => {
       {/* In Our Motion Graphics Services We Offer You */}
       <section className="container">
         <div className="sectionTopTextstyle">
-          <h1 className="topHeadingStyle" data-aos="fade-up">
+          <h1
+            className="topHeadingStyle"
+            data-aos="fade-up"
+            style={{
+              ...(isMobileView && {
+                marginTop: "30px",
+              }),
+            }}
+          >
             {" "}
             In Our Motion Graphics Services We Offer You
           </h1>
         </div>
         {/* motion graphices Our Services Include */}
         <div>
-          <div className="blockchain_dev_OurServicesInclude_keyPoint_mainDiv">
+          <div
+            className="blockchain_dev_OurServicesInclude_keyPoint_mainDiv"
+            style={{
+              ...(isMobileView && {
+                paddingTop: "0.5rem",
+                rowGap: "1rem",
+              }),
+            }}
+          >
             {/* 01 */}
             <div
               className="blockchain_dev_OurServicesInclude_keyPoint_div"
@@ -94,7 +142,16 @@ export const MotionGraphics = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Explainer Videos
               </h4>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    marginTop: "-8px",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 Simplify complex ideas or products with visually compelling
                 explainer videos. Whether you need to demonstrate a process or
                 explain your services, we create videos that make it easy for
@@ -118,7 +175,16 @@ export const MotionGraphics = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Corporate Presentations
               </h4>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    marginTop: "-8px",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 Enhance your business presentations with dynamic motion graphics
                 that captivate your audience. From internal meetings to client
                 pitches, our visually appealing designs help convey your message
@@ -142,7 +208,16 @@ export const MotionGraphics = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Social Media Content
               </h4>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    marginTop: "-8px",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 Stand out on social media with eye-catching animations that grab
                 attention. We create short, impactful motion graphics tailored
                 for platforms like Instagram, Facebook, and LinkedIn, boosting
@@ -166,7 +241,16 @@ export const MotionGraphics = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Product Demos
               </h4>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    marginTop: "-8px",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 Showcase your products in action with sleek, animated product
                 demo videos. These can highlight the features and benefits of
                 your offerings, making it easier for customers to see the value
@@ -190,7 +274,16 @@ export const MotionGraphics = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Title Sequences & Intros
               </h4>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    marginTop: "-8px",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 Set the tone for your videos with professional title sequences
                 and intros. We craft animations that match your brand’s
                 identity, making your content more memorable.
@@ -213,7 +306,16 @@ export const MotionGraphics = () => {
               <h4 className="appDev_industries_services_subHeading">
                  Animated Infographics
               </h4>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    marginTop: "-8px",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 Make data more digestible with animated infographics. Our motion
                 graphics can turn complex statistics and figures into visually
                 engaging content, perfect for presentations, reports, or digital
@@ -227,7 +329,16 @@ export const MotionGraphics = () => {
       {/* Why Choose TOJO Global for Motion Graphics? */}
       <section className="container">
         <div className="sectionTopTextstyle">
-          <h1 className="topHeadingStyle" data-aos="fade-up">
+          <h1
+            className="topHeadingStyle"
+            data-aos="fade-up"
+            style={{
+              ...(isMobileView && {
+                marginTop: "22px",
+                marginBottom: "25px",
+              }),
+            }}
+          >
             {" "}
             Why Choose TOJO Global for Motion Graphics?
           </h1>
@@ -251,7 +362,15 @@ export const MotionGraphics = () => {
               <h4 className="appDev_industries_services_subHeading">
                  Expert Team of Designers
               </h4>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 Our team consists of talented designers and animators with a
                 deep understanding of visual storytelling. We use the latest
                 technologies and creative techniques to deliver high-quality
@@ -276,7 +395,15 @@ export const MotionGraphics = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Tailored Solutions
               </h4>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We don’t believe in one-size-fits-all. Every project we take on
                 is tailored to meet your unique needs. Whether you're looking
                 for an explainer video, social media content, or a product demo,
@@ -301,7 +428,15 @@ export const MotionGraphics = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Seamless Collaboration
               </h4>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We work closely with our clients throughout the entire process,
                 from conceptualization to final delivery. This ensures that the
                 final product reflects your vision and exceeds your
@@ -326,7 +461,15 @@ export const MotionGraphics = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Fast Turnaround Times
               </h4>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 Our efficient workflow and dedicated team allow us to deliver
                 top-quality motion graphics without unnecessary delays, helping
                 you stay on schedule.
@@ -350,7 +493,15 @@ export const MotionGraphics = () => {
               <h4 className="appDev_industries_services_subHeading">
                 Cost-Effective Solutions
               </h4>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We offer competitive pricing without compromising on quality.
                 Our motion graphics services are designed to deliver maximum
                 value, helping you get the most out of your investment.
@@ -363,18 +514,40 @@ export const MotionGraphics = () => {
       {/* Why Choose TOJO Global for Motion Graphics? */}
       <section className="container">
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "35px",
+              }),
+            }}
+          >
             Benefits of{" "}
             <span className="headdingGradientText">Motion Graphics</span> for
             Your Business
           </h1>
-          <p className="paraStyle mt-3">
+          <p
+            className="paraStyle mt-3"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             Motion graphics are an excellent way to enhance your marketing and
             communication strategies. Here are some key benefits of
             incorporating motion graphics into your content:
           </p>
         </div>
-        <div className="appDev_industries_services_main_div">
+        <div
+          className="appDev_industries_services_main_div"
+          style={{
+            ...(isMobileView && {
+              marginTop: "25px",
+            }),
+          }}
+        >
           <div className="appDev_industries_services_div">
             {/* img */}
             <div
@@ -398,7 +571,15 @@ export const MotionGraphics = () => {
                 <h4 className="appDev_industries_services_subHeading">
                    Increased Engagement
                 </h4>
-                <p className="elementParaText">
+                <p
+                  className="elementParaText"
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   Visual content is more engaging than text alone, and motion
                   graphics take it a step further by adding movement and
                   dynamism. This helps capture and hold your audience’s
@@ -415,7 +596,15 @@ export const MotionGraphics = () => {
                 <h4 className="appDev_industries_services_subHeading">
                   Simplified Messaging
                 </h4>
-                <p className="elementParaText">
+                <p
+                  className="elementParaText"
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   Motion graphics allows you to understand complex information
                   in simple-easy way. This is particularly helpful for
                   explaining intricate products, services, or concepts to your
@@ -431,7 +620,15 @@ export const MotionGraphics = () => {
                 <h4 className="appDev_industries_services_subHeading">
                    Brand Awareness
                 </h4>
-                <p className="elementParaText">
+                <p
+                  className="elementParaText"
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   By incorporating motion graphics into your digital marketing
                   efforts, you can make your brand more memorable. Animated
                   content has a higher recall value, helping to strengthen your
@@ -447,7 +644,15 @@ export const MotionGraphics = () => {
                 <h4 className="appDev_industries_services_subHeading">
                   Versatility
                 </h4>
-                <p className="elementParaText">
+                <p
+                  className="elementParaText"
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   Motion graphics can be used across a variety of platforms,
                   from your website and social media to presentations and
                   advertisements. This makes them a versatile tool for reaching
@@ -463,7 +668,15 @@ export const MotionGraphics = () => {
                 <h4 className="appDev_industries_services_subHeading">
                   Boost Conversion Rates
                 </h4>
-                <p className="elementParaText">
+                <p
+                  className="elementParaText"
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   By creating visually appealing and engaging content, motion
                   graphics can help improve your conversion rates. Whether it's
                   an explainer video or product demo, motion graphics make it
@@ -477,7 +690,15 @@ export const MotionGraphics = () => {
       </section>
 
       {/*Get Started with TOJO Global with motion Graphics */}
-      <section className="container">
+      <section
+        className="container"
+        style={{
+          ...(isMobileView && {
+            marginTop: "-8px",
+            marginBottom: "30px",
+          }),
+        }}
+      >
         <div
           className="professionalModeration_div blockChainSolution_specialize_card"
           data-aos="fade-up"
