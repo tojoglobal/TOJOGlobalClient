@@ -8,7 +8,7 @@ import { useContext } from "react";
 import { AppContext } from "../../../AppContext";
 
 const Logo = () => {
-  const { isLargeMobileView } = useContext(AppContext);
+  const { isLargeMobileView, isMobileView } = useContext(AppContext);
   return (
     <ErrorBoundary>
       <main className="maindiv">
@@ -23,18 +23,51 @@ const Logo = () => {
                 className="communityManagement_hero_text_div"
                 data-aos={isLargeMobileView ? "fade-up" : "fade-left"}
               >
-                <h1>
-                  Create Modern & <br /> Professional Logos <br /> for a Strong
-                  Brand Identity
-                  <br />
-                  <span className="logoDesignHeroSubHeadding">
-                    with TOJO GLOBAL’s  Logo Design service
-                  </span>
-                </h1>
-                <p>
-                  We create innovative and professional logo designs that
-                  reflect your brand, making it memorable and visually strong
-                </p>
+                {isMobileView ? (
+                  <>
+                    <div className="hero_page_strongText">
+                      <h2>
+                        Create{" Modern "}
+                        {/* <span className="headdingGradientText">Modern </span> */}
+                        Logos
+                      </h2>
+                      <h3 className="homePageHeroSubHeadingFristText">
+                        for a Strong Brand Identity{" "}
+                      </h3>
+                      <h3 className="homePageHeroSubHeadingSecondText">
+                        with TOJO Global
+                      </h3>
+                    </div>
+                    <p
+                      style={{
+                        ...(isMobileView && {
+                          textAlign: "justify",
+                        }),
+                      }}
+                    >
+                      We create innovative and professional logo designs that
+                      reflect your brand, making it memorable and visually
+                      strong
+                    </p>{" "}
+                  </>
+                ) : (
+                  <>
+                    <h1>
+                      Create Modern & <br /> Professional Logos <br /> for a
+                      Strong Brand Identity
+                      <br />
+                      <span className="logoDesignHeroSubHeadding">
+                        with TOJO GLOBAL’s  Logo Design service
+                      </span>
+                    </h1>
+                    <p>
+                      We create innovative and professional logo designs that
+                      reflect your brand, making it memorable and visually
+                      strong
+                    </p>
+                  </>
+                )}
+
                 <div className="hero_btn_style">
                   <Link to="/contact">
                     <button className="custombtn hero_btn2 fristBtn">
@@ -59,8 +92,22 @@ const Logo = () => {
           </div>
         </section>
         {/* logoDesign start journey*/}
-        <section className="searchEngineMarketing_IncreaseRevenue_section">
-          <div className="searchEngineMarketing_IncreaseRevenue_main_div container">
+        <section
+          className="searchEngineMarketing_IncreaseRevenue_section"
+          style={{
+            ...(isMobileView && {
+              paddingTop: "42px",
+            }),
+          }}
+        >
+          <div
+            className="searchEngineMarketing_IncreaseRevenue_main_div container"
+            style={{
+              ...(isMobileView && {
+                rowGap: "2rem",
+              }),
+            }}
+          >
             <div className="searchEngineMarketing_IncreaseRevenue_main_div_image logoDesign_start_journey_div">
               <div className="logoDesign_startJourney_image_buttom_gradient"></div>
               {/* Start Your Journey with TOJO GLOBAL Today! side image  */}
@@ -76,7 +123,16 @@ const Logo = () => {
               data-aos="fade-right"
             >
               <h1>Start Your Journey with TOJO GLOBAL Today!</h1>
-              <p>
+              <p
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "13px",
+                    marginTop: "0px",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We specialize in logo design and can help your business stand
                 out. Our team is skilled in creating logos, business cards,
                 brochures, letterheads, banners, and websites. We focus on
@@ -86,7 +142,6 @@ const Logo = () => {
             </div>
           </div>
         </section>
-
         {/* Logo Design service  */}
         <section className="container">
           <div
@@ -465,7 +520,15 @@ const Logo = () => {
             className="logoDesign_service_heading_text_div searchEngineMarketing_WhoHelp_top_text_div "
             data-aos="fade-up"
           >
-            <h1>Our Recent Work</h1>
+            <h1
+              style={{
+                ...(isMobileView && {
+                  marginTop: "14px",
+                }),
+              }}
+            >
+              Our <span className="headdingGradientText">Recent Work</span>
+            </h1>
           </div>
           <div className="logoDesign_recentWork_main_div">
             <div className="logoDesign_recentWork_gradinet"></div>
@@ -548,6 +611,11 @@ const Logo = () => {
           <div
             className="logoDesign_brand_heading_text_div searchEngineMarketing_WhoHelp_top_text_div "
             data-aos="fade-up"
+            style={{
+              ...(isMobileView && {
+                paddingTopTop: "2.5rem",
+              }),
+            }}
           >
             <h1>
               How Your Brand Grows with Our{" "}
@@ -807,12 +875,19 @@ const Logo = () => {
             </div>
           </div>
         </section>
-
         {/* logo Process */}
         <section className="container">
           <div class="logoDesign_logoProcess_main_Div">
-            <h1 className="topHeadding" data-aos="fade-up">
-              Logo Design Process
+            <h1
+              className="topHeadding"
+              data-aos="fade-up"
+              style={{
+                ...(isMobileView && {
+                  marginTop: "-0.8rem",
+                }),
+              }}
+            >
+              <span className="headdingGradientText"> Logo Design</span> Process
             </h1>
             <div class="logoDesign_logoProcess_timeline">
               {/* Clients Brief 1 */}
@@ -923,7 +998,7 @@ const Logo = () => {
                   <div className="logoDesign_logoProcess_step_image">
                     <img
                       src="/Images/ServicesImage/logDesign/Final-Delivery.svg"
-                      alt=""
+                      alt="Final-Delivery"
                     />
                   </div>
                 </div>
@@ -934,8 +1009,22 @@ const Logo = () => {
         </section>
 
         {/* brand recoganition*/}
-        <section className="searchEngineMarketing_IncreaseRevenue_section logodesign_brandRecognition_section">
-          <div className="searchEngineMarketing_IncreaseRevenue_main_div container">
+        <section
+          className="searchEngineMarketing_IncreaseRevenue_section logodesign_brandRecognition_section"
+          style={{
+            ...(isMobileView && {
+              paddingTop: "1.5rem",
+            }),
+          }}
+        >
+          <div
+            className="searchEngineMarketing_IncreaseRevenue_main_div container"
+            style={{
+              ...(isMobileView && {
+                rowGap: "1.2rem",
+              }),
+            }}
+          >
             <div
               className="searchEngineMarketing_IncreaseRevenue_main_div_image logoDesign_start_journey_div"
               data-aos={isLargeMobileView ? "fade-up" : "fade-left"}
@@ -951,8 +1040,24 @@ const Logo = () => {
               className="searchEngineMarketing_hero_text_div logoDesign_brandRecognition_text_div"
               data-aos="fade-right"
             >
-              <h1>Brand Recognition</h1>
-              <p>
+              <h1
+                style={{
+                  ...(isMobileView && {
+                    fontSize: "20px",
+                  }),
+                }}
+              >
+                Brand Recognition
+              </h1>
+              <p
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                    fontSize: "12px",
+                  }),
+                }}
+              >
                 Your logo isn’t just an image; it’s the centerpiece of your
                 digital identity and creates a lasting first impression. A
                 well-designed logo communicates your brand's story without
@@ -975,7 +1080,15 @@ const Logo = () => {
           </div>
         </section>
         {/*Here comes TOJO GLOBAL where we specialize in creating unique logos */}
-        <section className="container">
+        <section
+          className="container"
+          style={{
+            ...(isMobileView && {
+              paddingTop: "0.2rem",
+              paddingBottom: "1rem",
+            }),
+          }}
+        >
           <div
             className="professionalModeration_div logoDesign_specialize_card"
             data-aos="fade-up"
@@ -985,7 +1098,16 @@ const Logo = () => {
                 Here comes TOJO GLOBAL where we specialize in creating unique
                 logos
               </h1>
-              <p className="professionalModeration_service_offers_para">
+              <p
+                className="professionalModeration_service_offers_para"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    lineHeight: "120%",
+                    fontSize: "12px",
+                  }),
+                }}
+              >
                 that capture your brand’s essence. Our team collaborates with
                 you to develop a visual identity that stands out in the market.
                 By choosing our logo design services, you’re investing in your

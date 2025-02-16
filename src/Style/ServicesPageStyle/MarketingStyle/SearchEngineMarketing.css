@@ -516,12 +516,12 @@
 
   .searchEngineMarketing_hero_text_div h1 {
     font-size: 1.5rem;
-    line-height: 1.8rem;
+    line-height: 125%;
   }
 
   .searchEngineMarketing_hero_text_div p {
     font-size: 0.8rem;
-    line-height: 125%;
+    line-height: 120%;
     margin-right: 0rem;
   }
 

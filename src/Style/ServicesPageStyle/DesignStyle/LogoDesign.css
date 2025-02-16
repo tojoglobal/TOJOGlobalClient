@@ -3,7 +3,6 @@
   
  */
 
-
 /* univarsal  */
 .logoDesign_hero_gradinet_text_style {
   background: linear-gradient(241deg, #18c8ff 14.59%, #c608ff 59.76%);
@@ -20,8 +19,10 @@
 .logoDesginPage_hero_part {
   padding: 5.3rem 4.39rem 6.8rem 5rem;
   position: relative;
-  background: var(--pin-vio,
-      radial-gradient(131.86% 74.4% at 96.83% 6.43%, #ff9ef5 0%, #7300ff 100%));
+  background: var(
+    --pin-vio,
+    radial-gradient(131.86% 74.4% at 96.83% 6.43%, #ff9ef5 0%, #7300ff 100%)
+  );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -62,8 +63,10 @@
   width: 34.25rem;
   height: 24.9375rem;
   border-radius: 3.125rem;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   filter: blur(73.80000305175781px);
   z-index: 0;
 }
@@ -135,8 +138,10 @@
   z-index: 0;
   width: 100%;
   height: 100%;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   filter: blur(150px);
 }
 
@@ -175,9 +180,11 @@
 }
 
 .logoDesign_recentWork_img_div:hover .logoDesign_recentWork_middle {
-  background: linear-gradient(225deg,
-      rgba(24, 200, 255, 0.55) 14.89%,
-      rgba(198, 8, 255, 0.55) 85.85%);
+  background: linear-gradient(
+    225deg,
+    rgba(24, 200, 255, 0.55) 14.89%,
+    rgba(198, 8, 255, 0.55) 85.85%
+  );
   opacity: 1;
   color: white;
   transition: 0.5s ease;
@@ -382,7 +389,8 @@
   border: 5px solid #060044;
 }
 
-.logoDesign_logoProcess_step:nth-child(even) .logoDesign_logoProcess_step_content {
+.logoDesign_logoProcess_step:nth-child(even)
+  .logoDesign_logoProcess_step_content {
   order: 1;
 }
 
@@ -402,12 +410,14 @@
 /* logoDesign specialize card */
 .logoDesign_specialize_card {
   border-radius: 1.875rem;
-  background: linear-gradient(178deg,
-      #ff9ef5 -18%,
-      rgba(214, 112, 248, 0.28) 20.16%,
-      rgba(185, 79, 250, 0) 48.81%,
-      rgba(155, 46, 252, 0.34) 90.95%,
-      #7300ff 115.61%);
+  background: linear-gradient(
+    178deg,
+    #ff9ef5 -18%,
+    rgba(214, 112, 248, 0.28) 20.16%,
+    rgba(185, 79, 250, 0) 48.81%,
+    rgba(155, 46, 252, 0.34) 90.95%,
+    #7300ff 115.61%
+  );
 
   box-shadow: 0px 14px 25px 11px rgba(3, 0, 65, 0.33);
 }
@@ -418,7 +428,6 @@
 /* ================================== */
 /* desktop */
 @media (max-width: 1398px) {
-
   /* ...
         rules here apply to devices from 1202px to 1398px (inclusive)
         ... */
@@ -438,15 +447,12 @@
 
 /* laptop Media Queries */
 @media (max-width: 1200px) {
-
   /* ...
         rules here apply to devices from 993px to 1200px (inclusive)
         ... */
   .logoDesginPage_hero_part {
     padding: 5.3rem 2.39rem 6.8rem 2rem;
   }
-
-
 
   .logoDesign_services_text_hedding h2 {
     padding: 0rem;
@@ -508,7 +514,6 @@
   .logoDesign_logoProcess_step_content {
     width: 98%;
   }
-
 }
 
 /* tab device */
@@ -527,14 +532,13 @@
 
 /* vary small device  */
 @media (max-width: 500px) {
-
   /* ...
     rules here apply to devices from 0px to 460px (inclusive)
         ... */
   /* logoDesginPage_hero_part */
 
   .logoDesginPage_hero_part {
-    padding: 5.5rem 0.5rem 1.8rem 0.5rem;
+    padding: 6.5rem 0.5rem 2.5rem 0.5rem;
   }
 
   .communityManagement_hero_part_div {
@@ -557,8 +561,8 @@
 
   /* logoDesign_service_heading_text_div */
   .logoDesign_service_heading_text_div {
-    padding-top: 3.56rem;
-    padding-bottom: 2.69rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2.2rem;
   }
 
   .logoDesign_service_main_div {
@@ -581,8 +585,8 @@
   /* logoDesign_brand_heading_text_div */
   .logoDesign_brand_heading_text_div {
     max-width: 42rem;
-    padding-top: 4.56rem;
-    padding-bottom: 0.69rem;
+    padding-top: 2.5rem;
+    padding-bottom: 0rem;
     margin: 0 auto;
   }
 
@@ -591,7 +595,7 @@
     grid-template-columns: 1fr;
     justify-items: center;
     padding-bottom: 0rem;
-    padding-top: 3rem;
+    padding-top: 2.2rem;
   }
 
   .logoDesign_brandGrows_div {
@@ -623,31 +627,49 @@
     display: none;
   }
 
-
   .logoDesign_brandGrows_text_box_div {
-    margin-top: 0.9rem;
+    margin-top: 0.5rem;
     background: none;
     padding: 0;
     width: 100%;
+    min-height: 7rem;
+    gap: 0.2rem;
+  }
+  .logoDesign_brandGrows_text_box_div h3 {
+    font-size: 20px;
+    line-height: 125%;
+  }
+  .logoDesign_brandGrows_text_box_div p {
+    font-size: 13px;
+    text-align: justify;
+    line-height: 120%;
   }
 
   /* logoDesign_logoProcess_main_Div */
   .logoDesign_logoProcess_main_Div {
     padding-top: 2rem;
   }
-
+  .logoDesign_logoProcess_step_text_div {
+    max-width: 100%;
+  }
   .topHeadding {
     font-size: 1.5rem;
-    line-height: 1.8rem;
+    line-height: 125%;
   }
-
+  .logoDesign_logoProcess_step_text_div h3 {
+    font-size: 18px;
+    line-height: 125%;
+    font-weight: 700;
+  }
   .logoDesign_logoProcess_step_text_div p {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: justify;
+    margin-bottom: 0rem;
   }
 
   .logoDesign_logoProcess_timeline {
-    margin: 50px auto 3px auto;
+    margin: 40px auto 3px auto;
     padding: 0px 0;
   }
 
@@ -656,7 +678,7 @@
   }
 
   .logoDesign_logoProcess_step {
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
   }
 
   .logoDesign_logoProcess_step .circle {
@@ -668,14 +690,14 @@
   }
 
   .logoDesign_logoProcess_step_image img {
-    width: 7rem;
+    width: 5rem;
   }
 
   .logoDesign_logoProcess_step_content {
     width: 100%;
     margin: 1px;
     border-radius: 0px;
-    gap: 0.25rem;
+    gap: 0.5rem;
   }
 
   /* logoDesign_brandRecognition_text_div */
