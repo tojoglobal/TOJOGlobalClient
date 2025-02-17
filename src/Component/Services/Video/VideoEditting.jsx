@@ -16,7 +16,7 @@ import { AppContext } from "../../../AppContext";
 
 const VideoEditting = () => {
   // appcontex import
-  const { isLargeMobileView } = useContext(AppContext);
+  const { isLargeMobileView, isMobileView } = useContext(AppContext);
   // vidoe url
   const VfxVideoUrl =
     "https://res.cloudinary.com/dzhlc6ue8/video/upload/v1731237598/TojoGloablVideo/c7givr2l3htusbwvp5ty.mp4";
@@ -58,15 +58,45 @@ const VideoEditting = () => {
       <section className="videoEditing_hero_section">
         <div className="container webContentWriting_hero_part">
           <div className="webContentWriting_hero_text_part">
-            <h1>
-              Bring Your Vision to Life with TOJO GLOBAL’s Powerful Video
-              Editing
-            </h1>
-            <p>
-              We deliver professional video editing solutions that turn your raw
-              footage into engaging, high-quality content tailored to captivate
-              your audience.
-            </p>
+            {isMobileView ? (
+              <>
+                <div className="hero_page_strongText">
+                  <h2>
+                    Bring Your{" "}
+                    <span className="headdingGradientText">Vision</span>
+                  </h2>
+                  <h3 className="homePageHeroSubHeadingFristText">
+                    to life with TOJO GLOBAL's{" "}
+                  </h3>
+                  <h3 className="homePageHeroSubHeadingSecondText">
+                    Video Editing
+                  </h3>
+                </div>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                    }),
+                  }}
+                >
+                  We deliver professional video editing solutions that turn your
+                  raw footage into engaging, high-quality content tailored to
+                  captivate your audience.
+                </p>{" "}
+              </>
+            ) : (
+              <>
+                <h1>
+                  Bring Your Vision to Life with TOJO GLOBAL’s Powerful Video
+                  Editing
+                </h1>
+                <p>
+                  We deliver professional video editing solutions that turn your
+                  raw footage into engaging, high-quality content tailored to
+                  captivate your audience.
+                </p>
+              </>
+            )}
             <div className="hero_btn_style">
               <Link to="/contact">
                 <button className="custombtn hero_btn2 fristBtn">
@@ -103,7 +133,16 @@ const VideoEditting = () => {
             <h1 className="ideoEditing_hiringTextHeddingStyle">
               Video editing may take time, and hiring an editor can be costly.
             </h1>
-            <p className="heroTextParaStyle">
+            <p
+              className="heroTextParaStyle"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  fontSize: "12px",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               If you’re a YouTuber, digital marketer, or small business creating
               online videos, a video editor is your most valuable asset. You
               might have thought about hiring an in-house editor (which can cost
@@ -111,12 +150,30 @@ const VideoEditting = () => {
               or even edited your own videos (like I did before I got burned
               out).{" "}
             </p>
-            <p className="heroTextParaStyle">
+            <p
+              className="heroTextParaStyle"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  fontSize: "12px",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               In the end, these options often fall short. You make videos to
               earn money, enjoy freedom, and have fun creating amazing content,
               not to spend all day at your computer and risk burnout.
             </p>
-            <p className="heroTextParaStyle">
+            <p
+              className="heroTextParaStyle"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  fontSize: "12px",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               With our flat-rate video editing service, you can focus on making
               more videos and better videos. This service will add more value to
               your business than any other tool you’ve tried before. It’s a bold
@@ -127,12 +184,32 @@ const VideoEditting = () => {
       </section>
 
       {/*VFX video section */}
-
       <section className="container">
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">We offer:</h1>
-          <h1 className="topHeadingStyle mt-5">VFX</h1>
-          <p className="paraStyle">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "-5px",
+              }),
+            }}
+          >
+            We offer:
+          </h1>
+          <h1 className="topHeadingStyle mt-4">
+            {" "}
+            <span className="headdingGradientText">VFX</span>
+          </h1>
+          <p
+            className="paraStyle"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                fontSize: "12px",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             Visual effects (VFX) are used to create stunning imagery that can’t
             be captured through traditional filming. Whether it's transforming a
             simple scene into a magical landscape or adding realistic digital
@@ -147,8 +224,17 @@ const VideoEditting = () => {
         </div>
 
         <div className="vfx_how_it_works_text_div" data-aos="fade-up">
-          <h1 className="smallHeadingStyle mt-5">How It Works</h1>
-          <p className="paraStyle mt-3">
+          <h1 className="smallHeadingStyle mt-1">How It Works</h1>
+          <p
+            className="paraStyle mt-2"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                fontSize: "12px",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             Our VFX team works closely with you to understand your vision. Once
             we know what you want, we use cutting-edge software to create the
             effects. Whether it's animation, CGI, or compositing, we handle
@@ -157,17 +243,26 @@ const VideoEditting = () => {
           </p>
         </div>
         <div className="sectionTopTextstyle" data-aos="fade-down">
-          <h1 className="topHeadingStyle mt-5">
+          <h1 className="topHeadingStyle mt-4 mt-md-5">
             Why Choose Tojo Global for VFX Services?
           </h1>
-          <p className="paraStyle pt-4">
+          <p
+            className="paraStyle pt-1"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                fontSize: "12px",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             More than 80% of small businesses use social media, but many of them
             struggle to stand out. One big reason is that they don’t use the
             right graphic designs. With our social media design package, we
             create all the graphics your business needs.
           </p>
         </div>
-        <div className="videoEditing_vfx_service_main_div">
+        <div className="videoEditing_vfx_service_main_div mt-4 mt-md-1">
           {/* 01 Top-Notch Quality */}
           <div
             className="videoEditing_vfx_service_div"
@@ -479,8 +574,20 @@ const VideoEditting = () => {
       <section className="container">
         {/*  YouTube Video*/}
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle mt-5">YouTube Video</h1>
-          <p className="paraStyle mt-2 mt-md-4">
+          <h1 className="topHeadingStyle mt-5 mt-md-5">
+            {" "}
+            <span className="headdingGradientText">YouTube</span> Video
+          </h1>
+          <p
+            className="paraStyle mt-1 mt-md-4"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                fontSize: "12px",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             YouTube is a powerful platform to share your message, grow your
             brand, and connect with your audience. But creating professional
             videos takes time and skill. That’s where our YouTube video editing
@@ -496,10 +603,19 @@ const VideoEditting = () => {
 
         {/* What is YouTube Video Editing? */}
         <div className="vfx_how_it_works_text_div" data-aos="fade-up">
-          <h1 className="smallHeadingStyle mt-5">
+          <h1 className="smallHeadingStyle mt-1 mt-md-5">
             What is YouTube Video Editing?
           </h1>
-          <p className="paraStyle mt-3">
+          <p
+            className="paraStyle mt-1 mt-md-3"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                fontSize: "12px",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             YouTube video editing is the process of turning raw video footage
             into a polished, engaging video. It involves cutting unnecessary
             parts, adding effects, transitions, and improving the overall look
@@ -508,10 +624,10 @@ const VideoEditting = () => {
         </div>
         {/* How Does It Work? */}
         <div className="sectionTopTextstyle" data-aos="fade-down">
-          <h1 className="topHeadingStyle mt-5">How Does It Work?</h1>
+          <h1 className="topHeadingStyle mt-4 mt-md-5">How Does It Work?</h1>
         </div>
         {/* How Does It Work process */}
-        <div className="youtube_video_editing_services_main_div">
+        <div className="youtube_video_editing_services_main_div mt-2">
           {/* 01 Send Us Your Footage  */}
           <div
             className="youtube_video_editing_services_div"
@@ -560,10 +676,21 @@ const VideoEditting = () => {
         </div>
         {/* Why Choose Tojo Global? */}
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle mt-5">Why Choose Tojo Global? </h1>
+          <h1 className="topHeadingStyle mt-4 mt-md-5">
+            Why Choose Tojo Global?{" "}
+          </h1>
         </div>
         {/* why choose the youtube video editor */}
-        <div className="whyChoose_youtube_video_editor_main_div ">
+        <div
+          className="whyChoose_youtube_video_editor_main_div"
+          style={{
+            ...(isMobileView && {
+              paddingTop: "0px",
+              marginTop: "-15px",
+              rowGap: "0px",
+            }),
+          }}
+        >
           {/*01 Professional Editing */}
           <div
             className="whyChoose_youtube_video_editor_div"
@@ -644,8 +771,27 @@ const VideoEditting = () => {
                 />
               </div>
               <div className="whyChoose_youtube_video_editor_Text_div">
-                <h4 className="smallHeadingStyle ">Professional Editing</h4>
-                <p className="video_paraStyle">
+                <h4
+                  className="smallHeadingStyle"
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "18px",
+                      lineHeight: "125%",
+                    }),
+                  }}
+                >
+                  Professional Editing
+                </h4>
+                <p
+                  className="video_paraStyle"
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      fontSize: "12px",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   We have a skilled team of editors who make your videos look
                   top-notch.
                 </p>
@@ -733,8 +879,27 @@ const VideoEditting = () => {
                 />
               </div>
               <div className="whyChoose_youtube_video_editor_Text_div">
-                <h4 className="smallHeadingStyle ">Tailored to Your Style</h4>
-                <p className="video_paraStyle">
+                <h4
+                  className="smallHeadingStyle"
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "18px",
+                      lineHeight: "125%",
+                    }),
+                  }}
+                >
+                  Tailored to Your Style
+                </h4>
+                <p
+                  className="video_paraStyle"
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      fontSize: "12px",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   We follow your guidelines to ensure the video matches your
                   brand's style and tone.
                 </p>
@@ -821,8 +986,27 @@ const VideoEditting = () => {
                 />
               </div>
               <div className="whyChoose_youtube_video_editor_Text_div">
-                <h4 className="smallHeadingStyle ">Fast Turnaround</h4>
-                <p className="video_paraStyle">
+                <h4
+                  className="smallHeadingStyle"
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "18px",
+                      lineHeight: "125%",
+                    }),
+                  }}
+                >
+                  Fast Turnaround
+                </h4>
+                <p
+                  className="video_paraStyle"
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      fontSize: "12px",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   We deliver high-quality edited videos quickly, so you never
                   miss a deadline.
                 </p>
@@ -909,8 +1093,27 @@ const VideoEditting = () => {
                 />
               </div>
               <div className="whyChoose_youtube_video_editor_Text_div">
-                <h4 className="smallHeadingStyle ">Affordable Pricing</h4>
-                <p className="video_paraStyle">
+                <h4
+                  className="smallHeadingStyle"
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "18px",
+                      lineHeight: "125%",
+                    }),
+                  }}
+                >
+                  Affordable Pricing
+                </h4>
+                <p
+                  className="video_paraStyle"
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      fontSize: "12px",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   Our services are budget-friendly without compromising on
                   quality.
                 </p>
@@ -924,8 +1127,26 @@ const VideoEditting = () => {
       <section className="container">
         {/*  brand into Video text*/}
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle mt-5">Brand Video </h1>
-          <p className="paraStyle mt-2 mt-md-4">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "-19px",
+              }),
+            }}
+          >
+            <span className="headdingGradientText">Brand</span> Video 
+          </h1>
+          <p
+            className="paraStyle mt-1 mt-md-4"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                fontSize: "12px",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             Brand video editing is the process of turning raw video footage into
             a professional video that tells your brand’s story. It helps your
             audience connect with your brand, products, or services by creating
@@ -938,8 +1159,17 @@ const VideoEditting = () => {
         </div>
         {/*  How It Works Video Editing */}
         <div className="vfx_how_it_works_text_div" data-aos="fade-up">
-          <h1 className="smallHeadingStyle mt-5">How It Works</h1>
-          <p className="paraStyle mt-3">
+          <h1 className="smallHeadingStyle mt-2 mt-md-5">How It Works</h1>
+          <p
+            className="paraStyle mt-1"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                fontSize: "12px",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             our talented video editors work with your raw footage and follow
             your brand’s guidelines to create a video that meets your goals. We
             focus on details like transitions, sound, and special effects to
@@ -949,7 +1179,7 @@ const VideoEditting = () => {
         <section className="brand_video_editing_offer_main_section">
           {/* What We Offer brand video editing */}
           <div className="sectionTopTextstyle" data-aos="fade-down">
-            <h1 className="topHeadingStyle mt-5">What We Offer </h1>
+            <h1 className="topHeadingStyle mt-2 md-mt-5">What We Offer </h1>
           </div>
           {/* What We Offer brand video editing */}
           <div className="brand_video_editing_offer_main_div">
@@ -1230,7 +1460,7 @@ const VideoEditting = () => {
         </section>
         {/* Why Choose Us? */}
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle mt-5">Why Choose Us? </h1>
+          <h1 className="topHeadingStyle mt-4">Why Choose Us? </h1>
         </div>
         {/*  Why Choose Us brand video editing */}
         <div className="brand_video_editing_choose_main_div">
@@ -1246,7 +1476,15 @@ const VideoEditting = () => {
                 alt="brand_video_editing_choose_demandsvg"
               />
               <h4>Demand Generation</h4>
-              <p>
+              <p
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 Grow your brand awareness and market share with strategic
                 demand-generation methods.
               </p>
@@ -1312,8 +1550,20 @@ const VideoEditting = () => {
       <section className="container prodcast_video_editing_section">
         {/*  prodcast into Video text*/}
         <div className="sectionTopTextstyle" data-aos="fade-down">
-          <h1 className="topHeadingStyle mt-5">Podcast Video</h1>
-          <p className="paraStyle">
+          <h1 className="topHeadingStyle mt-5">
+            {" "}
+            <span className="headdingGradientText">Podcast</span> Video
+          </h1>
+          <p
+            className="paraStyle"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                fontSize: "12px",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             Podcast video editing is an essential step in creating engaging and
             professional video content for your audience. It enhances the
             overall quality of your podcast, making it look polished and
@@ -1334,7 +1584,15 @@ const VideoEditting = () => {
           {/*  prodcast video div */}
           <div className="prodCast_videoEditing_div">
             <h4>What Is Podcast Video Editing?</h4>
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  fontSize: "12px",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               Podcast video editing is the process of cleaning up raw
               recordings, adding visual elements, and ensuring smooth
               transitions between scenes. This helps your podcast look more
@@ -1662,8 +1920,26 @@ const VideoEditting = () => {
         </section>
         {/*  Why choose ? prodcast Video editor in Tojo Gloabl*/}
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">Why Choose Tojo Global?</h1>
-          <p className="paraStyle">
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "20px",
+              }),
+            }}
+          >
+            Why Choose Tojo Global?
+          </h1>
+          <p
+            className="paraStyle"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                fontSize: "12px",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             we focus on making podcast video editing easy and stress-free.
             Here’s why we stand out:
           </p>
@@ -1712,7 +1988,16 @@ const VideoEditting = () => {
             </div>
             <div className="whyChoose_prodcast_video_editorText_div">
               <h4 className="elementHeadingText">Expert Editors</h4>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 Our skilled editors have the experience needed to create
                 high-quality, visually appealing podcast videos.
               </p>
@@ -1808,7 +2093,16 @@ const VideoEditting = () => {
             </div>
             <div className="whyChoose_prodcast_video_editorText_div">
               <h4 className="elementHeadingText">Fast Turnaround</h4>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 We understand that time is valuable. Our team delivers edited
                 videos quickly without compromising on quality.
               </p>
@@ -1822,7 +2116,16 @@ const VideoEditting = () => {
           >
             <div className="whyChoose_prodcast_video_editorLeftText_div">
               <h4 className="elementHeadingText">Affordable Pricing</h4>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                  }),
+                }}
+              >
                 Our services are cost-effective, providing you with high-quality
                 results that fit your budget.
               </p>
@@ -1869,8 +2172,20 @@ const VideoEditting = () => {
       <section className="container">
         {/*  Explainer into Video text*/}
         <div className="sectionTopTextstyle" data-aos="fade-down">
-          <h1 className="topHeadingStyle mt-5"> Explainer video</h1>
-          <p className="paraStyle mt-2 mt-md-4">
+          <h1 className="topHeadingStyle mt-5">
+            {" "}
+            <span className="headdingGradientText">Explainer</span> video
+          </h1>
+          <p
+            className="paraStyle mt-2 mt-md-4"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                fontSize: "12px",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             An explainer video is a short, engaging video that helps explain a
             product, service, or idea. It uses visuals, voice overs, and
             animations to communicate complex information in a simple and fun
@@ -1880,10 +2195,19 @@ const VideoEditting = () => {
         </div>
         {/*  How Our Explainer Video Editing Works */}
         <div className="vfx_how_it_works_text_div" data-aos="fade-up">
-          <h1 className="smallHeadingStyle">
+          <h1 className="smallHeadingStyle mt-4 mt-md-2">
             How Our Explainer Video Editing Works
           </h1>
-          <p className="paraStyle mt-3">
+          <p
+            className="paraStyle mt-2 mt-md-3"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                fontSize: "12px",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             we take your raw video content and transform it into a professional,
             polished explainer video. Our team will:
           </p>
@@ -2240,8 +2564,20 @@ const VideoEditting = () => {
       <section className="container">
         {/*   Documentary  into Video text*/}
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle mt-5"> Documentary video</h1>
-          <p className="paraStyle">
+          <h1 className="topHeadingStyle mt-3">
+            {" "}
+            <span className="headdingGradientText">Documentary</span> video
+          </h1>
+          <p
+            className="paraStyle"
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                fontSize: "12px",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             Documentary video editing is all about telling a story through real
             events, interviews, and visuals. Our documentary video editing
             service at Tojo Global turns raw footage into a polished, engaging
@@ -2255,9 +2591,23 @@ const VideoEditting = () => {
           <div
             className="documentary_into_video_editing_text_div"
             data-aos="fade-right"
+            style={{
+              ...(isMobileView && {
+                width: "100%",
+              }),
+            }}
           >
             <h2>What Is Documentary Video Editing?</h2>
-            <p className="elementParaText">
+            <p
+              className="elementParaText"
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  fontSize: "12px",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               Documentary video editing involves taking hours of footage and
               cutting it down to tell a clear, compelling story. We remove
               unnecessary parts, add transitions, and include background music
@@ -2416,7 +2766,17 @@ const VideoEditting = () => {
         </div>
         {/*  Documentary  Why Choose Tojo Global?  text*/}
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">How It Works:</h1>
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "35px",
+                marginBottom: "-2px",
+              }),
+            }}
+          >
+            How It Works:
+          </h1>
         </div>
         {/*documentary video editing whyChoose  */}
         <div className="documentary_video_editing_whyChoose_main_div">
@@ -2515,7 +2875,17 @@ const VideoEditting = () => {
         </div>
         {/*  Documentary  best features  text*/}
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">SOME OF OUR BEST FEATURES </h1>
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "0.9rem",
+                marginBottom: "-0.9rem",
+              }),
+            }}
+          >
+            SOME OF OUR BEST FEATURES{" "}
+          </h1>
         </div>
         {/* documentary vidoe editon best features*/}
         <div className="documentary_video_editing_best_features_main_div">
@@ -2531,7 +2901,17 @@ const VideoEditting = () => {
             </div>
             <div className="documentary_video_editing_best_features_text_div">
               <h2 className="elementHeadingText">Professional Editing</h2>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                    width: "100%",
+                  }),
+                }}
+              >
                 Our expert editors make your documentary smooth, engaging, and
                 visually appealing, with seamless transitions and clear
                 storytelling to create a polished and captivating final product.
@@ -2550,7 +2930,17 @@ const VideoEditting = () => {
             </div>
             <div className="documentary_video_editing_best_features_text_div">
               <h2 className="elementHeadingText">Free Stock Video & Music</h2>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                    width: "100%",
+                  }),
+                }}
+              >
                 Every plan comes with free stock video and music. Just tell your
                 editor what you want, and they’ll include it in your edits to
                 make your videos even better.
@@ -2569,7 +2959,17 @@ const VideoEditting = () => {
             </div>
             <div className="documentary_video_editing_best_features_text_div">
               <h2 className="elementHeadingText">Quick and Friendly Support</h2>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                    width: "100%",
+                  }),
+                }}
+              >
                 We’re here to support you! Our goal is to help you focus on
                 creating videos and growing your business. We’ll work hard to
                 make sure you’re happy with our service.
@@ -2588,7 +2988,17 @@ const VideoEditting = () => {
             </div>
             <div className="documentary_video_editing_best_features_text_div">
               <h2 className="elementHeadingText">Fast Turnaround Time</h2>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                    width: "100%",
+                  }),
+                }}
+              >
                 You won’t wait weeks for your edits. We offer a quick turnaround
                 time of just 2 days. If you need changes, just ask! Revisions
                 take only 1 day, and complex edits may take a bit longer.
@@ -2610,7 +3020,17 @@ const VideoEditting = () => {
               <h2 className="elementHeadingText">
                 Expert Video Advice Included
               </h2>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                    width: "100%",
+                  }),
+                }}
+              >
                 We’re not just editors; we’re here to help you improve. When you
                 sign up, you can schedule a call with our team. We’ll learn
                 about your style and give you tips to create even better
@@ -2632,7 +3052,17 @@ const VideoEditting = () => {
               <h2 className="elementHeadingText">
                 High-Quality Videos Delivered
               </h2>
-              <p className="elementParaText">
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                    width: "100%",
+                  }),
+                }}
+              >
                 With TOJO GLOBAL, you’ll not only get editing help, but the
                 quality of your videos will also improve. We’ll help you become
                 an authority in your field.
@@ -2642,7 +3072,17 @@ const VideoEditting = () => {
         </div>
         {/*  Documentary SOME OF OUR BEST FEATURES*/}
         <div className="sectionTopTextstyle" data-aos="fade-up">
-          <h1 className="topHeadingStyle">SOME OF OUR BEST FEATURES </h1>
+          <h1
+            className="topHeadingStyle"
+            style={{
+              ...(isMobileView && {
+                marginTop: "-1rem",
+                marginBottom: "-0.2rem",
+              }),
+            }}
+          >
+            SOME OF OUR BEST FEATURES{" "}
+          </h1>
         </div>
         {/* documentary vidoe Why You Need the Best Video Editing Service*/}
         <div className="documentary_video_editing_why_you_need_main_div">
@@ -2656,8 +3096,18 @@ const VideoEditting = () => {
               imgeUrl={"documentary_video_editing_whyYouNeedArtboard01.svg"}
             />
             <div className="documentary_video_editing_why_you_need_text_div">
-              <h2 className="elementHeadingText pb-2">Customization</h2>
-              <p className="elementParaText">
+              <h2 className="elementHeadingText">Customization</h2>
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                    width: "100%",
+                  }),
+                }}
+              >
                 We offer a wide range of customization options to fit your
                 project’s needs. From the type of editing you need (cutting,
                 trimming, or adding music) to the specific elements you want to
@@ -2675,8 +3125,18 @@ const VideoEditting = () => {
               imgeUrl={"documentary_video_editing_whyYouNeedArtboard02.svg"}
             />
             <div className="documentary_video_editing_why_you_need_text_div">
-              <h2 className="elementHeadingText pb-2">Saves Time</h2>
-              <p className="elementParaText">
+              <h2 className="elementHeadingText">Saves Time</h2>
+              <p
+                className="elementParaText 2298"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                    width: "100%",
+                  }),
+                }}
+              >
                 Editing videos takes a lot of time. With a professional service,
                 you can focus on your main tasks while experts handle the
                 editing.
@@ -2694,8 +3154,18 @@ const VideoEditting = () => {
               imgeUrl={"documentary_video_editing_whyYouNeedArtboard03.svg"}
             />
             <div className="documentary_video_editing_why_you_need_text_div">
-              <h2 className="elementHeadingText pb-2">Creative Ideas</h2>
-              <p className="elementParaText">
+              <h2 className="elementHeadingText">Creative Ideas</h2>
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                    width: "100%",
+                  }),
+                }}
+              >
                 Experienced editors bring fresh and creative ideas. They know
                 how to make your videos more engaging.
               </p>
@@ -2712,8 +3182,18 @@ const VideoEditting = () => {
               imgeUrl={"documentary_video_editing_whyYouNeedArtboard04.svg"}
             />
             <div className="documentary_video_editing_why_you_need_text_div">
-              <h2 className="elementHeadingText pb-2">Technical Skills</h2>
-              <p className="elementParaText">
+              <h2 className="elementHeadingText">Technical Skills</h2>
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                    width: "100%",
+                  }),
+                }}
+              >
                 Video editing requires special skills and software.
                 Professionals have the right tools and knowledge to get the best
                 results.
@@ -2731,8 +3211,18 @@ const VideoEditting = () => {
               imgeUrl={"documentary_video_editing_whyYouNeedArtboard05.svg"}
             />
             <div className="documentary_video_editing_why_you_need_text_div">
-              <h2 className="elementHeadingText pb-2">Brand Consistency</h2>
-              <p className="elementParaText">
+              <h2 className="elementHeadingText">Brand Consistency</h2>
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                    width: "100%",
+                  }),
+                }}
+              >
                 A good editing service understands your brand. They ensure your
                 videos reflect your brand’s style and message.
               </p>
@@ -2748,8 +3238,18 @@ const VideoEditting = () => {
               imgeUrl={"documentary_video_editing_whyYouNeedArtboard06.svg"}
             />
             <div className="documentary_video_editing_why_you_need_text_div">
-              <h2 className="elementHeadingText pb-2">Improved Engagement</h2>
-              <p className="elementParaText">
+              <h2 className="elementHeadingText">Improved Engagement</h2>
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                    width: "100%",
+                  }),
+                }}
+              >
                 Well-edited videos attract more viewers. They keep your audience
                 interested and encourage them to watch till the end.
               </p>
@@ -2765,8 +3265,18 @@ const VideoEditting = () => {
               imgeUrl={"documentary_video_editing_whyYouNeedArtboard07.svg"}
             />
             <div className="documentary_video_editing_why_you_need_text_div">
-              <h2 className="elementHeadingText pb-2">Storytelling</h2>
-              <p className="elementParaText">
+              <h2 className="elementHeadingText">Storytelling</h2>
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                    width: "100%",
+                  }),
+                }}
+              >
                 A great video tells a story. Editors help structure your content
                 to deliver a clear and powerful message.
               </p>
@@ -2782,8 +3292,18 @@ const VideoEditting = () => {
               imgeUrl={"documentary_video_editing_whyYouNeedArtboard08.svg"}
             />
             <div className="documentary_video_editing_why_you_need_text_div">
-              <h2 className="elementHeadingText pb-2">Quick Turnaround</h2>
-              <p className="elementParaText">
+              <h2 className="elementHeadingText">Quick Turnaround</h2>
+              <p
+                className="elementParaText"
+                style={{
+                  ...(isMobileView && {
+                    textAlign: "justify",
+                    fontSize: "12px",
+                    lineHeight: "120%",
+                    width: "100%",
+                  }),
+                }}
+              >
                 Professionals can edit your videos faster. This means you can
                 share your content sooner and stay relevant.
               </p>

@@ -9,6 +9,7 @@ const DocumentaryVideoEditingWhyYouNeedSvg = ({ imgeUrl }) => {
         height="107"
         viewBox="0 0 107 107"
         fill="none"
+        className="documentary_video_editing_why_you_need_div_svg"
       >
         <g>
           <circle
