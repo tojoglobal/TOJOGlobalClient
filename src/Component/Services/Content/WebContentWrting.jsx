@@ -1,21 +1,54 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../../../Style/ServicesPageStyle/ContentWrting/WebContentWrting.css";
 import { Link } from "react-router-dom";
+import { AppContext } from "../../../AppContext";
 const WebContentWrting = () => {
+  const { isLargeMobileView, isMobileView } = useContext(AppContext);
   return (
     <main className="maindiv webContentWriting_top_main">
       {/* web content writing hero section  */}
       <section className="webContentWriting_hero_section">
         <div className="container webContentWriting_hero_part">
           <div className="webContentWriting_hero_text_part">
-            <h1>
-              Strengthen Your Brand with Tojo Global’s Expert Content Writing
-              Services
-            </h1>
-            <p>
-              Tojo Global creates powerful content writing solutions that
-              enhance your brand's voice and resonate with your audience.
-            </p>
+            {isMobileView ? (
+              <>
+                <div className="hero_page_strongText">
+                  <h2>
+                    Strengthen Your{" "}
+                    <span className="headdingGradientText">Brand</span>
+                  </h2>
+                  <h3 className="homePageHeroSubHeadingFristText">
+                    with TOJO Global’s{" "}
+                  </h3>
+                  <h3 className="homePageHeroSubHeadingSecondText">
+                    Content Writing Services
+                  </h3>
+                </div>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                    }),
+                  }}
+                >
+                  TOJO Global produces dynamic motion graphics that elevate your
+                  visuals, boost marketing efforts, and engage your audience
+                  effectively.
+                </p>{" "}
+              </>
+            ) : (
+              <>
+                <h1>
+                  Strengthen Your Brand with Tojo Global’s Expert Content
+                  Writing Services
+                </h1>
+                <p>
+                  Tojo Global creates powerful content writing solutions that
+                  enhance your brand's voice and resonate with your audience.
+                </p>
+              </>
+            )}
+
             <div className="hero_btn_style">
               <Link to="/contact">
                 <button className="custombtn hero_btn2 fristBtn">
@@ -33,12 +66,30 @@ const WebContentWrting = () => {
       </section>
       {/* Blog Writing */}
       <section>
-        <div className="searchEngineMarketing_WhoHelp_top_text_div webContentWriting_heading_text">
-          <h1>Blog Writing</h1>
+        <div
+          className="searchEngineMarketing_WhoHelp_top_text_div"
+          style={{
+            ...(isMobileView && {
+              marginTop: "27px",
+            }),
+          }}
+        >
+          <h1>
+            {" "}
+            <span className="headdingGradientText">Blog</span> Writing
+          </h1>
         </div>
         <div className="webContentWriting_blogWriting_div container">
           <div className="webContentWriting_blogWriting_text_div">
-            <p>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  fontSize: "12px",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               Great blog content is essential for content marketing, it grabs
               your audience's attention, drives traffic to your website, and
               positions your brand as an expert in your industry. While creating
@@ -46,8 +97,25 @@ const WebContentWrting = () => {
               can speed up the process. Let our talented team of writers assist
               your in-house team or handle all your blogging needs.
             </p>
-            <h2>Why Choose Tojo Global for Blog Writing Services?</h2>
-            <p>
+            <h2
+              style={{
+                ...(isMobileView && {
+                  fontSize: "18px",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
+              Why Choose Tojo Global for Blog Writing Services?
+            </h2>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  fontSize: "12px",
+                  lineHeight: "120%",
+                }),
+              }}
+            >
               At Tojo Global, we provide a user-friendly platform where talented
               freelance writers create blog content tailored to your brand’s
               voice and goals. They follow your guidelines and deliver engaging
@@ -63,7 +131,15 @@ const WebContentWrting = () => {
                   alt="webContentWriting_blogWriting_card_div image"
                 />
                 <h4>Top Quality</h4>
-                <p>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      fontSize: "12px",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   We handpick only the best writers for our platform, ensuring
                   you receive content from the very best in the industry.
                 </p>
@@ -76,7 +152,15 @@ const WebContentWrting = () => {
                   alt="webContentWriting_blogWriting_card_div image"
                 />
                 <h4>100% Unique</h4>
-                <p>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      fontSize: "12px",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   We guarantee that all content is completely original, so you
                   never have to worry about duplication.
                 </p>
@@ -91,7 +175,15 @@ const WebContentWrting = () => {
                   alt="webContentWriting_blogWriting_card_div image"
                 />
                 <h4>Extra Polish</h4>
-                <p>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      fontSize: "12px",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   With our copyediting service, your content gets an additional
                   review to make it shine and stand out.
                 </p>
@@ -104,7 +196,15 @@ const WebContentWrting = () => {
                   alt="webContentWriting_blogWriting_card_div image"
                 />
                 <h4>SEO-Friendly Writing</h4>
-                <p>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      fontSize: "12px",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
                   Boost your online presence with blog posts crafted to align
                   with the latest search engine optimization trends.
                 </p>
@@ -116,8 +216,24 @@ const WebContentWrting = () => {
       {/*  Product Description*/}
       <section>
         <div className="container webContentWriting_product_heading_text">
-          <h1>Product Description</h1>
-          <p>
+          <h1
+            style={{
+              ...(isMobileView && {
+                textAlign: "center",
+              }),
+            }}
+          >
+            <span className="headdingGradientText">Product</span> Description
+          </h1>
+          <p
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                fontSize: "12px",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             Effective product descriptions are key to successful online sales,
             they attract attention, inform customers, and encourage purchases.
             Crafting persuasive descriptions takes time and skill, but our
@@ -231,7 +347,10 @@ const WebContentWrting = () => {
       <section className="webContentWriting_service_section">
         <div className="container webContentWriting_service_div">
           <div className="webContentWriting_service_frist_text_div">
-            <h1>Web Content Writing</h1>
+            <h1>
+              {" "}
+              <span className="headdingGradientText">Web Content</span> Writing
+            </h1>
             <p>
               a website's content plays a crucial role in capturing your
               audience's interest, improving your SEO rankings, and building
@@ -311,7 +430,7 @@ const WebContentWrting = () => {
                   alt="card_image_icon "
                 />
               </div>
-              <h4>HSEO-Optimized Content</h4>
+              <h4>SEO-Optimized Content</h4>
               <p>
                 WWe write content that follows the latest SEO trends to help
                 your website rank higher on search engines.
@@ -323,7 +442,17 @@ const WebContentWrting = () => {
       {/* seo content writing  */}
       <section>
         <div className="container webContentWriting_product_heading_text">
-          <h1>SEO Content Writing Services</h1>
+          <h1
+            style={{
+              ...(isMobileView && {
+                textAlign: "center",
+                lineHeight: "120%",
+              }),
+            }}
+          >
+            <span className="headdingGradientText">SEO Content </span> Writing
+            Services
+          </h1>
           <p>
             SEO content is designed to improve your website's visibility on
             search engines like Google. It involves using relevant keywords that
@@ -849,8 +978,20 @@ const WebContentWrting = () => {
       <section className="webContentWriting_articalWriteOffers_section container">
         <div className="searchEngineMarketing_WhoHelp_top_text_div">
           <div>
-            <h1>Social Media Posts:</h1>
-            <p>
+            <h1>
+              {" "}
+              <span className="headdingGradientText">Social Media</span> Posts
+            </h1>
+            <p
+              style={{
+                ...(isMobileView && {
+                  textAlign: "justify",
+                  fontSize: "12px",
+                  lineHeight: "120%",
+                  marginTop: "0px",
+                }),
+              }}
+            >
               Social media posts are a great way to connect with your audience
               and share your brand's message. They work by grabbing attention
               and encouraging interaction. With the right content, you can
@@ -860,7 +1001,7 @@ const WebContentWrting = () => {
         </div>
         {/* socail media post  */}
         <div className="webContentWriting_socailMediaPost_main_div">
-          <h1>At Tojo Global, we offer:</h1>
+          <h1>At Tojo Global offer</h1>
           <div className="webContentWriting_socailMediaPost_rounded_main_div">
             <div className="webContentWriting_socailMediaPost_rounded_div">
               {/* 01 */}
@@ -868,6 +1009,12 @@ const WebContentWrting = () => {
                 <img
                   src="/Images/ServicesImage/content/webContentWritingSocailMediaPostRoundedIcon01.svg"
                   alt="webContentWriting_socailMediaPost_rounded_div_icon"
+                  style={{
+                    ...(isMobileView && {
+                      widows: "1rem",
+                      height: "3.5rem",
+                    }),
+                  }}
                 />
                 <h4>Custom Content Creation</h4>
                 <p>Tailored posts that reflect your brand's voice and goals.</p>
@@ -890,6 +1037,12 @@ const WebContentWrting = () => {
                 <img
                   src="/Images/ServicesImage/content/webContentWritingSocailMediaPostRoundedIcon03.svg"
                   alt="webContentWriting_socailMediaPost_rounded_div_icon"
+                  style={{
+                    ...(isMobileView && {
+                      widows: "1rem",
+                      height: "3rem",
+                    }),
+                  }}
                 />
                 <h4>Content Scheduling</h4>
                 <p>A plan to post at the best times for maximum reach.</p>
@@ -901,6 +1054,12 @@ const WebContentWrting = () => {
                 <img
                   src="/Images/ServicesImage/content/webContentWritingSocailMediaPostRoundedIcon04.svg"
                   alt="webContentWriting_socailMediaPost_rounded_div_icon"
+                  style={{
+                    ...(isMobileView && {
+                      widows: "1rem",
+                      height: "3.5rem",
+                    }),
+                  }}
                 />
                 <h4>Analytics Tracking</h4>
                 <p>
@@ -983,27 +1142,134 @@ const WebContentWrting = () => {
 
       {/* Why Choose Tojo Global for White Paper Writing Services? */}
       <section className="container">
-        <div className="webContentWriting_whitePaperContent_main_div">
-          <h1>White Paper content</h1>
-          <p>
-            White papers are powerful tools for educating your audience,
-            building trust, and establishing your business as an industry
-            leader. At Tojo Global, we make it easy for you to create
-            high-quality white papers that reflect your brand and resonate with
-            your audience. Whether you need support for your in-house team or
-            want us to manage the entire process, our talented writers are here
-            to help.
-          </p>
-        </div>
-        <div className="webContentWriting_whitePaperContent_text_div">
-          <h2>Why Choose Tojo Global for White Paper Writing Services?</h2>
-          <p>
-            We offer a simple platform where expert writers create customized
-            content that matches your brand’s tone and goals. Our team delivers
-            clear, engaging content that is ready to go live on your site and
-            can be used across other platforms like social media or newsletters.
-          </p>
-        </div>
+        {isMobileView ? (
+          <>
+            <div className="searchEngineMarketing_WhoHelp_top_text_div">
+              <h1>
+                {" "}
+                <span className="headdingGradientText">White Paper</span>{" "}
+                content
+              </h1>
+            </div>
+            <div className="webContentWriting_blogWriting_div container">
+              <div className="webContentWriting_blogWriting_text_div">
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      fontSize: "12px",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
+                  White papers are powerful tools for educating your audience,
+                  building trust, and establishing your business as an industry
+                  leader. At Tojo Global, we make it easy for you to create
+                  high-quality white papers that reflect your brand and resonate
+                  with your audience. Whether you need support for your in-house
+                  team or want us to manage the entire process, our talented
+                  writers are here to help.
+                </p>
+                <h2
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "18px",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
+                  Why Choose Tojo Global for White Paper Writing Services?
+                </h2>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      fontSize: "12px",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
+                  We offer a simple platform where expert writers create
+                  customized content that matches your brand’s tone and goals.
+                  Our team delivers clear, engaging content that is ready to go
+                  live on your site and can be used across other platforms like
+                  social media or newsletters.
+                </p>
+              </div>
+              <div>
+                <div className="webContentWriting_blogWriting_card_div">
+                  <div className="webContentWriting_blogWriting_card_text_div">
+                    <img
+                      src="/Images/ServicesImage/Allicons/top quality 1.svg"
+                      alt="webContentWriting_blogWriting_card_div image"
+                    />
+                    <h4>Top Quality</h4>
+                    <p
+                      style={{
+                        ...(isMobileView && {
+                          textAlign: "justify",
+                          fontSize: "12px",
+                          lineHeight: "120%",
+                        }),
+                      }}
+                    >
+                      We handpick only the best writers for our platform,
+                      ensuring you receive content from the very best in the
+                      industry.
+                    </p>
+                  </div>
+                </div>
+                <div className="webContentWriting_blogWriting_card_div">
+                  <div className="webContentWriting_blogWriting_card_text_div">
+                    <img
+                      src="/Images/ServicesImage/content/webContentWritingProductDesIcon01.svg"
+                      alt="webContentWriting_blogWriting_card_div image"
+                    />
+                    <h4>100% Unique</h4>
+                    <p
+                      style={{
+                        ...(isMobileView && {
+                          textAlign: "justify",
+                          fontSize: "12px",
+                          lineHeight: "120%",
+                        }),
+                      }}
+                    >
+                      We guarantee that all content is completely original, so
+                      you never have to worry about duplication.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="webContentWriting_whitePaperContent_main_div">
+              <h1>White Paper content</h1>
+              <p>
+                White papers are powerful tools for educating your audience,
+                building trust, and establishing your business as an industry
+                leader. At Tojo Global, we make it easy for you to create
+                high-quality white papers that reflect your brand and resonate
+                with your audience. Whether you need support for your in-house
+                team or want us to manage the entire process, our talented
+                writers are here to help.
+              </p>
+            </div>
+            <div className="webContentWriting_whitePaperContent_text_div">
+              <h2>Why Choose Tojo Global for White Paper Writing Services?</h2>
+              <p>
+                We offer a simple platform where expert writers create
+                customized content that matches your brand’s tone and goals. Our
+                team delivers clear, engaging content that is ready to go live
+                on your site and can be used across other platforms like social
+                media or newsletters.
+              </p>
+            </div>{" "}
+          </>
+        )}
+
         <div className="webContentWriting_whitePaperContent_card_main_div">
           {/* 01 Expert Writers*/}
           <div className="webContentWriting_whitePaperContent_card_div">
@@ -1175,27 +1441,132 @@ const WebContentWrting = () => {
         </div>
       </section>
 
-      {/*  Technical writing */}
+      {/*  Technical writing  webContentWriting_whitePaperContent_main_div*/}
       <section className="container">
-        <div className="webContentWriting_whitePaperContent_main_div">
-          <h1> Technical writing:</h1>
-          <p>
-            Creating clear and precise technical content is a must for
-            explaining complex ideas and guiding users through products or
-            processes. At TOJO GLOBAL, we make technical writing easy by
-            offering expert writers who can produce documents that are accurate,
-            clear, and user-friendly.
-          </p>
-        </div>
-        <div className="webContentWriting_whitePaperContent_text_div">
-          <h2>Why Work With Us?</h2>
-          <p>
-            We provide a effortless platform where skilled technical writers
-            deliver content that aligns with your specific goals. Whether you
-            need manuals, user guides, or technical documentation, we’ll make
-            sure it meets your standards.
-          </p>
-        </div>
+        {isMobileView ? (
+          <>
+            <div className="searchEngineMarketing_WhoHelp_top_text_div">
+              <h1>
+                {" "}
+                <span className="headdingGradientText">
+                  Technical content
+                </span>{" "}
+                writing
+              </h1>
+            </div>
+            <div className="webContentWriting_blogWriting_div container">
+              <div className="webContentWriting_blogWriting_text_div">
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      fontSize: "12px",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
+                  Creating clear and precise technical content is a must for
+                  explaining complex ideas and guiding users through products or
+                  processes. At TOJO GLOBAL, we make technical writing easy by
+                  offering expert writers who can produce documents that are
+                  accurate, clear, and user-friendly.
+                </p>
+                <h2
+                  style={{
+                    ...(isMobileView && {
+                      fontSize: "18px",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
+                  Why Work With Us?
+                </h2>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      fontSize: "12px",
+                      lineHeight: "120%",
+                    }),
+                  }}
+                >
+                  We provide a effortless platform where skilled technical
+                  writers deliver content that aligns with your specific goals.
+                  Whether you need manuals, user guides, or technical
+                  documentation, we’ll make sure it meets your standards.
+                </p>
+              </div>
+              <div>
+                <div className="webContentWriting_blogWriting_card_div">
+                  <div className="webContentWriting_blogWriting_card_text_div">
+                    <img
+                      src="/Images/ServicesImage/Allicons/top quality 1.svg"
+                      alt="webContentWriting_blogWriting_card_div image"
+                    />
+                    <h4>Top Quality</h4>
+                    <p
+                      style={{
+                        ...(isMobileView && {
+                          textAlign: "justify",
+                          fontSize: "12px",
+                          lineHeight: "120%",
+                        }),
+                      }}
+                    >
+                      We handpick only the best writers for our platform,
+                      ensuring you receive content from the very best in the
+                      industry.
+                    </p>
+                  </div>
+                </div>
+                <div className="webContentWriting_blogWriting_card_div">
+                  <div className="webContentWriting_blogWriting_card_text_div">
+                    <img
+                      src="/Images/ServicesImage/content/webContentWritingProductDesIcon01.svg"
+                      alt="webContentWriting_blogWriting_card_div image"
+                    />
+                    <h4>100% Unique</h4>
+                    <p
+                      style={{
+                        ...(isMobileView && {
+                          textAlign: "justify",
+                          fontSize: "12px",
+                          lineHeight: "120%",
+                        }),
+                      }}
+                    >
+                      We guarantee that all content is completely original, so
+                      you never have to worry about duplication.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="webContentWriting_whitePaperContent_main_div">
+              <h1> Technical writing:</h1>
+              <p>
+                Creating clear and precise technical content is a must for
+                explaining complex ideas and guiding users through products or
+                processes. At TOJO GLOBAL, we make technical writing easy by
+                offering expert writers who can produce documents that are
+                accurate, clear, and user-friendly.
+              </p>
+            </div>
+            <div className="webContentWriting_whitePaperContent_text_div">
+              <h2>Why Work With Us?</h2>
+              <p>
+                We provide a effortless platform where skilled technical writers
+                deliver content that aligns with your specific goals. Whether
+                you need manuals, user guides, or technical documentation, we’ll
+                make sure it meets your standards.
+              </p>
+            </div>
+          </>
+        )}
+
         <div className="webContentWriting_technicalWriting_card_main_div">
           {/* 01 Expert Writers */}
           <div className="webContentWriting_technicalWriting_card_div">
@@ -1379,33 +1750,93 @@ const WebContentWrting = () => {
       {/* Case studies */}
       <section className="container">
         <div className="webContentWriting_caseStudies_main_div">
-          <div>
-            {/* Case studies */}
-            <div className="webContentWriting_caseStudies_top_text_div">
-              <h2>Case studies</h2>
-              <p>
-                Case studies are powerful tools for showcasing your business's
-                success stories. They help you highlight real-world results,
-                build trust with potential clients, and demonstrate your
-                expertise in the industry. At Tojo Global, we understand the
-                importance of well-crafted case studies. Our skilled team is
-                ready to create compelling stories that show the value of your
-                products or services.
-              </p>
-            </div>
-            {/*Why Choose Tojo Global for Case Study Writing?
-             */}
-            <div className="webContentWriting_caseStudies_bottom_text_div">
-              <h2>Why Choose Tojo Global for Case Study Writing? </h2>
-              <p>
-                We offer a smooth, user-friendly service where experienced
-                writers produce case studies tailored to your business needs.
-                Following your guidelines, we create detailed, engaging content
-                that you can proudly share on your website and with potential
-                clients.
-              </p>
-            </div>
-          </div>
+          {isMobileView ? (
+            <>
+              <div className="searchEngineMarketing_WhoHelp_top_text_div">
+                <h1>
+                  {" "}
+                  <span className="headdingGradientText">Case</span> studies
+                </h1>
+              </div>
+              <div className="webContentWriting_blogWriting_div">
+                <div className="webContentWriting_blogWriting_text_div">
+                  <p
+                    style={{
+                      ...(isMobileView && {
+                        textAlign: "justify",
+                        fontSize: "12px",
+                        lineHeight: "120%",
+                      }),
+                    }}
+                  >
+                    Case studies are powerful tools for showcasing your
+                    business's success stories. They help you highlight
+                    real-world results, build trust with potential clients, and
+                    demonstrate your expertise in the industry. At Tojo Global,
+                    we understand the importance of well-crafted case studies.
+                    Our skilled team is ready to create compelling stories that
+                    show the value of your products or services.
+                  </p>
+                  <h2
+                    style={{
+                      ...(isMobileView && {
+                        fontSize: "18px",
+                        lineHeight: "120%",
+                      }),
+                    }}
+                  >
+                    Why Choose Tojo Global for Case Study Writing?
+                  </h2>
+                  <p
+                    style={{
+                      ...(isMobileView && {
+                        textAlign: "justify",
+                        fontSize: "12px",
+                        lineHeight: "120%",
+                      }),
+                    }}
+                  >
+                    We offer a smooth, user-friendly service where experienced
+                    writers produce case studies tailored to your business
+                    needs. Following your guidelines, we create detailed,
+                    engaging content that you can proudly share on your website
+                    and with potential clients.
+                  </p>
+                </div>
+              </div>
+            </>
+          ) : (
+            <>
+              {" "}
+              <div>
+                {/* Case studies */}
+                <div className="webContentWriting_caseStudies_top_text_div">
+                  <h2>Case studies</h2>
+                  <p>
+                    Case studies are powerful tools for showcasing your
+                    business's success stories. They help you highlight
+                    real-world results, build trust with potential clients, and
+                    demonstrate your expertise in the industry. At Tojo Global,
+                    we understand the importance of well-crafted case studies.
+                    Our skilled team is ready to create compelling stories that
+                    show the value of your products or services.
+                  </p>
+                </div>
+                {/*Why Choose Tojo Global for Case Study Writing?
+                 */}
+                <div className="webContentWriting_caseStudies_bottom_text_div">
+                  <h2>Why Choose Tojo Global for Case Study Writing? </h2>
+                  <p>
+                    We offer a smooth, user-friendly service where experienced
+                    writers produce case studies tailored to your business
+                    needs. Following your guidelines, we create detailed,
+                    engaging content that you can proudly share on your website
+                    and with potential clients.
+                  </p>
+                </div>
+              </div>
+            </>
+          )}
 
           <div>
             {/* 01 */}
@@ -1487,7 +1918,15 @@ const WebContentWrting = () => {
 
       {/* brand content writing */}
       <section className="container webContentWriting_brandContent_section">
-        <div className="webContentWriting_whitePaperContent_text_div">
+        <div
+          className="webContentWriting_whitePaperContent_text_div"
+          style={{
+            ...(isMobileView && {
+              paddingTop: "0px",
+              fontSize: "20px",
+            }),
+          }}
+        >
           <h2>Grow Your Brand with Our Content Writing Service</h2>
         </div>
         <div className="webContentWriting_brandContent_main_div">
@@ -2047,7 +2486,15 @@ const WebContentWrting = () => {
         </div>
 
         <div className="webContentWriting_brandContent_bottom_div">
-          <p>
+          <p
+            style={{
+              ...(isMobileView && {
+                textAlign: "justify",
+                fontSize: "12px",
+                lineHeight: "120%",
+              }),
+            }}
+          >
             More than 60% of brands fall behind because of poor content
             strategies. Without engaging and clear content, it’s hard to stand
             out and grow. Tojo Global is here to fix that. Our expert content

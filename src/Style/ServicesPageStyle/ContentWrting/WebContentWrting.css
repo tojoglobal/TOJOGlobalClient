@@ -3,10 +3,12 @@
   
  */
 .webContentWriting_hero_section {
-  background: linear-gradient(359deg,
-      #060044 -10.63%,
-      rgba(198, 8, 255, 0.5) 58.76%,
-      #18c8ff 122.61%);
+  background: linear-gradient(
+    359deg,
+    #060044 -10.63%,
+    rgba(198, 8, 255, 0.5) 58.76%,
+    #18c8ff 122.61%
+  );
 }
 
 .webContentWriting_hero_part {
@@ -28,7 +30,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: 3.375rem;
-
 }
 
 .webContentWriting_hero_text_part p {
@@ -37,7 +38,6 @@
   font-weight: 400;
   line-height: 1.5rem;
   padding: 0rem 5rem;
-
 }
 
 /* ====================== */
@@ -93,7 +93,6 @@
 .webContentWriting_blogWriting_card_text_div {
   text-align: center;
   color: #fff;
-
 }
 
 .webContentWriting_blogWriting_card_text_div h4 {
@@ -214,10 +213,12 @@
   width: 100%;
   height: 35.125rem;
   border-radius: 2.8125rem;
-  background: linear-gradient(181deg,
+  background: linear-gradient(
+      181deg,
       rgba(6, 0, 68, 0.72) 62.02%,
       rgba(24, 200, 255, 0.64) 87.3%,
-      rgba(198, 8, 255, 0.16) 98.5%),
+      rgba(198, 8, 255, 0.16) 98.5%
+    ),
     url("/Images/ServicesImage/banner_images/web-content-writing 1.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -293,7 +294,8 @@
 
 .webContentWriting_service_card_text div {
   border-radius: 1.6875rem;
-  box-shadow: 0px 4px 19.8px 0px rgba(0, 0, 0, 0.3), #c508ff 0px 1px 1px 0px, #18c9ff 1px 0px 1px 1px;
+  box-shadow: 0px 4px 19.8px 0px rgba(0, 0, 0, 0.3), #c508ff 0px 1px 1px 0px,
+    #18c9ff 1px 0px 1px 1px;
   background: var(--Color-5, #060044);
   width: 5rem;
   height: 5rem;
@@ -301,12 +303,11 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-
 }
 
 .webContentWriting_service_card_text h4 {
   padding-top: 1rem;
-  color: #FFF;
+  color: #fff;
   text-align: center;
 
   font-size: 1.125rem;
@@ -317,7 +318,7 @@
 }
 
 .webContentWriting_service_card_text p {
-  color: #FFF;
+  color: #fff;
   text-align: center;
 
   font-size: 0.875rem;
@@ -353,19 +354,23 @@
 }
 
 .webContentWriting_seoContent_image_div div:nth-child(1) {
-  background: url("/Images/ServicesImage/banner_images/-seo-content-writing (3) 1.png") lightgray 50% / cover no-repeat;
+  background: url("/Images/ServicesImage/banner_images/-seo-content-writing (3) 1.png")
+    lightgray 50% / cover no-repeat;
 }
 
 .webContentWriting_seoContent_image_div div:nth-child(2) {
-  background: url("/Images/ServicesImage/banner_images/-seo-content-writing-in-office (1) 1.png") lightgray 50% / cover no-repeat;
+  background: url("/Images/ServicesImage/banner_images/-seo-content-writing-in-office (1) 1.png")
+    lightgray 50% / cover no-repeat;
 }
 
 .webContentWriting_seoContent_image_div div:nth-child(3) {
-  background: url("/Images/ServicesImage/banner_images/-seo-content-writing-in-office (2) 1.png") lightgray 50% / cover no-repeat;
+  background: url("/Images/ServicesImage/banner_images/-seo-content-writing-in-office (2) 1.png")
+    lightgray 50% / cover no-repeat;
 }
 
 .webContentWriting_seoContent_image_div div:nth-child(4) {
-  background: url("/Images/ServicesImage/banner_images/-seo-content-writing (2) 1.png") lightgray 50% / cover no-repeat;
+  background: url("/Images/ServicesImage/banner_images/-seo-content-writing (2) 1.png")
+    lightgray 50% / cover no-repeat;
 }
 
 .webContentWriting_seoContent_div_top_center_gradient {
@@ -376,8 +381,10 @@
   z-index: 5;
   width: 15.25rem;
   height: 15.75rem;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   filter: blur(126px);
 }
 
@@ -389,8 +396,10 @@
   width: 23.375rem;
   height: 24.125rem;
   border-radius: 24.125rem;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   filter: blur(126px);
 }
 
@@ -422,8 +431,10 @@
   width: 2.875rem;
   height: 2.875rem;
   border-radius: 0.3125rem;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -587,7 +598,6 @@
 .webContentWriting_socailMediaPost_rounded_div div {
   color: #fff;
   text-align: center;
-
 }
 
 .webContentWriting_socailMediaPost_rounded_div div h4 {
@@ -645,8 +655,10 @@
   width: 18.68056rem;
   height: 10.38656rem;
   border-radius: 0 0 156px 156px;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   position: absolute;
   top: 112px;
   left: -17px;
@@ -657,25 +669,33 @@
   position: relative;
 }
 
-.webContentWriting_features_circel_div .webContentWriting_features_socail_icon .one {
+.webContentWriting_features_circel_div
+  .webContentWriting_features_socail_icon
+  .one {
   position: absolute;
   top: -32px;
   left: -250px;
 }
 
-.webContentWriting_features_circel_div .webContentWriting_features_socail_icon .two {
+.webContentWriting_features_circel_div
+  .webContentWriting_features_socail_icon
+  .two {
   position: absolute;
   top: -182px;
   left: -29px;
 }
 
-.webContentWriting_features_circel_div .webContentWriting_features_socail_icon .three {
+.webContentWriting_features_circel_div
+  .webContentWriting_features_socail_icon
+  .three {
   position: absolute;
   top: -182px;
   left: 236px;
 }
 
-.webContentWriting_features_circel_div .webContentWriting_features_socail_icon .four {
+.webContentWriting_features_circel_div
+  .webContentWriting_features_socail_icon
+  .four {
   position: absolute;
   top: -17px;
   left: 411px;
@@ -687,10 +707,12 @@
 .webContentWriting_whitePaperContent_main_div {
   width: 100%;
   border-radius: 3.125rem;
-  background: linear-gradient(185deg,
-      #18c8ff -11.76%,
-      rgba(6, 0, 68, 0.05) 44.65%,
-      #c608ff 106.52%);
+  background: linear-gradient(
+    185deg,
+    #18c8ff -11.76%,
+    rgba(6, 0, 68, 0.05) 44.65%,
+    #c608ff 106.52%
+  );
   padding: 3.29rem 4.49rem;
 }
 
@@ -1044,8 +1066,10 @@
 .webContentWriting_caseStudies_card_icon_div {
   width: 7.375rem;
   height: 4.375rem;
-  background: var(--Linear,
-      linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%));
+  background: var(
+    --Linear,
+    linear-gradient(142deg, #18c8ff 28.49%, #c608ff 81.44%)
+  );
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -1054,7 +1078,6 @@
 
 .webContentWriting_caseStudies_card_text_div {
   color: #fff;
-
 }
 
 .webContentWriting_caseStudies_card_text_div h3 {
@@ -1138,7 +1161,6 @@
 .webContentWriting_brandContent_bottom_text {
   color: #fff;
   text-align: center;
-
 }
 
 .webContentWriting_brandContent_bottom_text h3 {
@@ -1159,10 +1181,12 @@
   margin-top: 6rem;
   width: 100%;
   border-radius: 3.12rem;
-  background: linear-gradient(350deg,
+  background: linear-gradient(
+      350deg,
       rgba(24, 200, 255, 0.8) -4.41%,
       rgba(6, 0, 68, 0.8) 47.7%,
-      rgba(198, 8, 255, 0.8) 104.86%),
+      rgba(198, 8, 255, 0.8) 104.86%
+    ),
     url("/Images/ServicesImage/banner_images/content-writing 1.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1185,7 +1209,6 @@
 /* ================================== */
 /* desktop */
 @media (max-width: 1398px) {
-
   /* ...
         rules here apply to devices from 1202px to 1398px (inclusive)
         ... */
@@ -1223,12 +1246,10 @@
   }
 
   .webContentWriting_blogWriting_card_div {
-
     margin-left: 1rem;
   }
 
   .webContentWriting_whitePaperContent_card_text_div {
-
     width: 11.8125rem;
   }
 
@@ -1239,7 +1260,6 @@
 
 /* laptop Media Queries */
 @media (max-width: 1200px) {
-
   /* ...
         rules here apply to devices from 993px to 1200px (inclusive)
         ... */
@@ -1323,7 +1343,6 @@
     height: 13rem;
   }
 
-
   /* webContentWriting_technicalWriting_card_text_div */
   .webContentWriting_technicalWriting_card_text_div {
     color: #fff;
@@ -1399,9 +1418,6 @@
   .webContentWriting_brandContent_section {
     padding-bottom: 0rem;
   }
-
-
-
 }
 
 /* tab device */
@@ -1422,7 +1438,6 @@
 
 /* vary small device  */
 @media (max-width: 500px) {
-
   /* ...
       rules here apply to devices from 0px to 460px (inclusive)
         ... */
@@ -1454,17 +1469,18 @@
 
   .webContentWriting_product_heading_text h1 {
     color: #fff;
-    font-size: 28px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 2rem;
+    line-height: 125%;
     margin-top: 0px;
   }
 
   .webContentWriting_product_heading_text p {
     width: 100%;
-
-    font-size: 14px;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 120%;
   }
 
   /* webContentWriting_heading_text */
@@ -1503,34 +1519,43 @@
 
   .webContentWriting_blogWriting_card_text_div h4 {
     margin-top: 0.5rem;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 20px;
+    line-height: 125%;
   }
 
   /* webContentWriting_products_container */
+
   .webContentWriting_products_container_card {
     width: 100%;
-    height: 15.795rem;
-    margin-bottom: 1.6rem;
+    height: 12rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
   }
-
   .webContentWriting_products_container_card_two {
-    margin-top: 0rem;
+    margin-top: -0.9rem;
   }
 
   .webContentWriting_products_container_text h1 {
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    text-align: left;
+    font-size: 20px;
+    line-height: 125%;
+  }
+
+  .webContentWriting_products_container_card div h4 {
+    color: #fff;
+    font-size: 20px;
+    line-height: 120%;
+    margin: 0.5rem 0rem;
   }
 
   .webContentWriting_products_container_card div p {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: justify;
+    margin-bottom: 0px;
   }
 
   .webContentWriting_products_container_text {
@@ -1552,7 +1577,7 @@
   }
 
   .webContentWriting_products_container div:nth-child(3) {
-    margin-top: 0rem;
+    margin-top: -0.8rem;
   }
 
   .webContentWriting_products_container {
@@ -1564,18 +1589,19 @@
 
   /* webContentWriting_service_section */
   .webContentWriting_service_section {
-    padding-top: 3rem;
-    padding-bottom: 2.5rem;
+    padding-top: 2.2rem;
+    padding-bottom: 1.2rem;
   }
 
   .webContentWriting_service_frist_text_div h1 {
     font-size: 1.5rem;
-    line-height: 1.8rem;
+    line-height: 125%;
   }
 
   .webContentWriting_service_frist_text_div p {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 120%;
   }
 
   .webContentWriting_service_frist_text_div {
@@ -1583,10 +1609,31 @@
   }
 
   .webContentWriting_service_second_text_div h3 {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 18px;
+    text-align: left;
+    line-height: 120%;
+  }
+  .webContentWriting_service_second_text_div p {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: justify;
   }
 
+  .webContentWriting_service_div {
+    width: 100%;
+    padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+    margin-bottom: 3.2rem;
+    height: 21rem;
+    border-radius: 20px;
+  }
+
+  /* webContentWriting_service_card */
+  .webContentWriting_service_card {
+    height: 14rem;
+    padding: 1.5rem;
+  }
   .webContentWriting_service_card_div {
     display: grid;
     grid-template-columns: 1fr;
@@ -1595,26 +1642,22 @@
     gap: 1rem;
   }
 
-  .webContentWriting_service_div {
-    width: 100%;
-    padding: 1.5rem 0.5rem 2rem 0.5rem;
-    margin-bottom: 2rem;
-    height: 28.125rem;
-    border-radius: 1.5rem;
-  }
-
-  .webContentWriting_service_second_text_div p {
-    width: 100%;
-    margin: 0 auto;
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-  }
-
   .webContentWriting_service_card_text p {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 120%;
+    margin: 0px;
   }
 
+  .webContentWriting_service_card_text div {
+    border-radius: 13px;
+    width: 4rem;
+    height: 4rem;
+  }
+  .webContentWriting_service_card_text div img {
+    width: 40px;
+    height: 42px;
+  }
   /* webContentWriting_seoContent_main_div */
   .webContentWriting_seoContent_main_div {
     display: grid;
@@ -1622,9 +1665,14 @@
     column-gap: 4.5rem;
   }
 
+  .webContentWriting_seoContent_text h4 {
+    font-size: 15px;
+    line-height: 120%;
+  }
   .webContentWriting_seoContent_text p {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: justify;
   }
 
   .webContentWriting_seoContent_image_div {
@@ -1633,26 +1681,41 @@
     gap: 1.1rem;
     position: relative;
     z-index: 10;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
   }
 
   .webContentWriting_seoContent_main_text_div {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
   }
 
   .webContentWriting_seoContent_main_text_div div:nth-child(1) {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
+    margin-top: 5px;
+  }
+  .webContentWriting_seoContent_main_text_div div:nth-child(1) h3 {
+    line-height: 125%;
+    margin-bottom: -5px;
   }
 
   .webContentWriting_seoContent_text_div {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .webContentWriting_seoContent_div_bottom_left_gradient {
+    position: absolute;
+    left: 26px;
+    bottom: 61px;
+    z-index: 1;
+    width: 19.375rem;
+    height: 16.125rem;
   }
 
   /* webContentWriting_articalWriteOffers_section */
   .webContentWriting_articalWriteOffers_section {
-    padding-top: 3rem;
+    padding-top: 1.5rem;
   }
 
   /* webContentWriting_socailMediaPost_rounded_main_div */
@@ -1665,6 +1728,17 @@
     font-size: 1.5rem;
     line-height: 1.8rem;
     padding-bottom: 1.4rem;
+  }
+  /* webContentWriting_socailMediaPost_rounded_div */
+
+  .webContentWriting_socailMediaPost_rounded_div {
+    width: 14.25rem;
+    height: 14.0625rem;
+    padding: 1.34rem 1.2rem;
+  }
+  .webContentWriting_socailMediaPost_rounded_div div img {
+    width: 4rem;
+    height: 4rem;
   }
 
   .webContentWriting_socailMediaPost_rounded_div div h4 {
@@ -1696,12 +1770,6 @@
     position: static;
   }
 
-  .webContentWriting_socailMediaPost_rounded_div {
-    width: 17.25rem;
-    height: 17.0625rem;
-    padding: 1.34rem 3.2rem;
-  }
-
   /* webContentWriting_whitePaperContent */
 
   .webContentWriting_whitePaperContent_main_div {
@@ -1719,17 +1787,8 @@
     grid-template-columns: 1fr;
     row-gap: 8rem;
     justify-items: center;
-    padding: 4rem 0rem;
-  }
-
-  .webContentWriting_whitePaperContent_main_div h1 {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-  }
-
-  .webContentWriting_whitePaperContent_main_div p {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    padding-top: 5.2rem;
+    padding-bottom: 4.8rem;
   }
 
   .webContentWriting_whitePaperContent_card_div {
@@ -1769,33 +1828,47 @@
   .webContentWriting_technicalWriting_card_main_div {
     grid-template-columns: 1fr;
     justify-items: center;
-    row-gap: 7rem;
-    padding: 6rem 0rem 2rem;
+    row-gap: 4rem;
+    padding-top: 3.9rem;
+    padding-bottom: 3rem;
   }
 
   .webContentWriting_technicalWriting_card_div {
     width: 100%;
-    height: 14rem;
+    height: 9rem;
+  }
+  .webContentWriting_technicalWriting_card_top_gradinet_div {
+    display: none;
   }
 
   .webContentWriting_technicalWriting_card_text_div h3 {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 18px;
+    line-height: 125%;
   }
 
   .webContentWriting_technicalWriting_card_text_div p {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: justify;
   }
 
   .webContentWriting_technicalWriting_card_top_gradinet_svg {
     width: 125px;
     height: 71px;
   }
-
+  .webContentWriting_technicalWriting_card_gradinetAndImage_div {
+    position: absolute;
+    top: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   .webContentWriting_technicalWriting_card_image_div {
-    width: 6.77163rem;
-    height: 6.77163rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .webContentWriting_technicalWriting_card_image_div img {
+    width: 50px;
+    height: 52px;
   }
 
   .webContentWriting_technicalWriting_card_text_div {
@@ -1807,7 +1880,7 @@
   .webContentWriting_caseStudies_main_div {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 0rem;
     width: 100%;
     padding-bottom: 2rem;
   }
@@ -1828,7 +1901,6 @@
   }
 
   .webContentWriting_caseStudies_bottom_text_div h2 {
-
     font-size: 1.5rem;
     line-height: 1.8rem;
   }
@@ -1837,19 +1909,19 @@
     font-family: var(--font-main);
     font-size: 0.8rem;
     line-height: 1.2rem;
-
   }
 
   .webContentWriting_caseStudies_card_text_div h3 {
     font-family: var(--font-main);
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 17px;
+    line-height: 125%;
   }
 
   .webContentWriting_caseStudies_card_text_div p {
     font-family: var(--font-main);
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 13px;
+    line-height: 120%;
+    text-align: justify;
     margin-right: 0rem;
   }
 
@@ -1873,7 +1945,6 @@
     column-gap: 0.6rem;
   }
 
-
   /* webContentWriting_brandContent_main_div */
   .webContentWriting_brandContent_main_div {
     display: grid;
@@ -1883,8 +1954,12 @@
   }
 
   .webContentWriting_brandContent_bottom_text h3 {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 20px;
+    line-height: 125%;
+  }
+  .webContentWriting_brandContent_bottom_text p {
+    font-size: 12px;
+    line-height: 120%;
   }
 
   .webContentWriting_brandContent_bottom_text_box {
@@ -1908,19 +1983,12 @@
     line-height: 2.48594rem;
   }
 
-  .webContentWriting_brandContent_bottom_div p {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-  }
-
   .webContentWriting_brandContent_bottom_div {
-    margin-top: 4rem;
-    padding: 2.29rem 0.4rem;
+    margin-top: 3.5rem;
+    padding: 1.5rem 0.9rem;
   }
 
   .webContentWriting_brandContent_section {
     padding-bottom: 2rem;
   }
-
-
 }
