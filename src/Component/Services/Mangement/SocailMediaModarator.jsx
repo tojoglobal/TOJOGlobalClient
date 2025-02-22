@@ -25,39 +25,54 @@ function SocailMediaModarator() {
               className="communityManagement_hero_text_div"
               data-aos="fade-right"
             >
-              {/* <h1>
-                Transform Your Online Business with TOJO GLOBAL’s Professional{" "}
-                <span className="headdingGradientText">Moderation </span>
-                service
-              </h1> */}
-
-              <div className="hero_page_strongText">
-                <h2>
+              {isMobileView ? (
+                <>
+                  <div className="hero_page_strongText">
+                    <h2>
+                      {" "}
+                      Transform your{" "}
+                      <span className="headdingGradientText"> Online </span>
+                    </h2>
+                    <h3 className="homePageHeroSubHeadingFristText">
+                      Business with TOJO GLOBAL’s
+                    </h3>
+                    <h3 className="homePageHeroSubHeadingSecondText">
+                      Professional Moderation
+                    </h3>
+                  </div>
+                  <p
+                    style={{
+                      ...(isMobileView && {
+                        textAlign: "justify",
+                        fontSize: "14px",
+                        lineHeight: "125%",
+                      }),
+                    }}
+                  >
+                    We offer 24/7 moderation services that enhance your
+                    business, provide instant replies, manage posts seamlessly,
+                    engage your audience, and drive your brand's success, all at
+                    unbeatable prices
+                  </p>
+                </>
+              ) : (
+                <>
                   {" "}
-                  Transform your{" "}
-                  <span className="headdingGradientText"> Online </span>
-                </h2>
-                <h3 className="homePageHeroSubHeadingFristText">
-                  Business with TOJO GLOBAL’s
-                </h3>
-                <h3 className="homePageHeroSubHeadingSecondText">
-                  Professional Moderation
-                </h3>
-              </div>
-              <p
-                style={{
-                  ...(isMobileView && {
-                    textAlign: "justify",
-                    fontSize: "14px",
-                    lineHeight: "125%",
-                  }),
-                }}
-              >
-                We offer 24/7 moderation services that enhance your business,
-                provide instant replies, manage posts seamlessly, engage your
-                audience, and drive your brand's success, all at unbeatable
-                prices
-              </p>
+                  <h1>
+                    Transform Your Online Business with TOJO GLOBAL’s
+                    Professional{" "}
+                    <span className="headdingGradientText">Moderation </span>
+                    service
+                  </h1>{" "}
+                  <p>
+                    We offer 24/7 moderation services that enhance your
+                    business, provide instant replies, manage posts seamlessly,
+                    engage your audience, and drive your brand's success, all at
+                    unbeatable prices
+                  </p>
+                </>
+              )}
+
               <div className="hero_btn_style">
                 <Link to="/contact">
                   <button className="custombtn hero_btn2 fristBtn">

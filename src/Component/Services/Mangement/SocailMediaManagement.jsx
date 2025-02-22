@@ -24,50 +24,58 @@ const SocailMediaManagement = () => {
             className="socialMediaManagement_hero_text_div "
             data-aos="fade-left"
           >
-            {/* <h1
-              style={{
-                ...(isMobileView && {
-                  textAlign: "justify",
-                  fontSize: "1.4rem",
-                }),
-              }}
-            >
-              Elevate Your Brand with TOJO Global’s{" "}
-              <span className="headdingGradientText">
-                Social Media Management
-              </span>{" "}
-            </h1> */}
+            {isMobileView ? (
+              <>
+                <div className="hero_page_strongText">
+                  <h2>
+                    {" "}
+                    Elevate Your{" "}
+                    <span className="headdingGradientText">Brand </span>
+                  </h2>
+                  <h3 className="homePageHeroSubHeadingFristText">
+                    with TOJO Global’s
+                  </h3>
+                  <h3 className="homePageHeroSubHeadingSecondText">
+                    Social Media Management
+                  </h3>
+                </div>
 
-            <div className="hero_page_strongText">
-              <h2>
-                {" "}
-                Elevate Your{" "}
-                <span className="headdingGradientText">Brand </span>
-              </h2>
-              <h3 className="homePageHeroSubHeadingFristText">
-                with TOJO Global’s
-              </h3>
-              <h3 className="homePageHeroSubHeadingSecondText">
-                Social Media Management
-              </h3>
-            </div>
+                <p
+                  style={{
+                    ...(isMobileView && {
+                      textAlign: "justify",
+                      fontSize: "14px",
+                      lineHeight: "125%",
+                    }),
+                  }}
+                >
+                  In today's digital age, a strong social media presence is
+                  essential. Tojo Global offers top tier Social Media Management
+                  services that elevate your brand, foster engagement, and
+                  deliver real results. Our expert team ensures your business
+                  thrives on ever-changing digital platforms, standing out in a
+                  competitive online environment.
+                </p>
+              </>
+            ) : (
+              <>
+                <h1>
+                  Elevate Your Brand with TOJO Global’s{" "}
+                  <span className="headdingGradientText">
+                    Social Media Management
+                  </span>{" "}
+                </h1>
+                <p>
+                  In today's digital age, a strong social media presence is
+                  essential. Tojo Global offers top tier Social Media Management
+                  services that elevate your brand, foster engagement, and
+                  deliver real results. Our expert team ensures your business
+                  thrives on ever-changing digital platforms, standing out in a
+                  competitive online environment.
+                </p>
+              </>
+            )}
 
-            <p
-              style={{
-                ...(isMobileView && {
-                  textAlign: "justify",
-                  fontSize: "14px",
-                  lineHeight: "125%",
-                }),
-              }}
-            >
-              In today's digital age, a strong social media presence is
-              essential. Tojo Global offers top tier Social Media Management
-              services that elevate your brand, foster engagement, and deliver
-              real results. Our expert team ensures your business thrives on
-              ever-changing digital platforms, standing out in a competitive
-              online environment.
-            </p>
             <div className="hero_btn_style">
               <Link to="/contact">
                 <button className="custombtn hero_btn2 fristBtn">

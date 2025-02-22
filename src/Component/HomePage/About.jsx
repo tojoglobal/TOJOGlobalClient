@@ -30,7 +30,7 @@ const About = () => {
             <div className=" col-sm-12 col-lg-6 about_col_text_style col_text_style">
               <div className="about_page_strongText" data-aos="fade-right">
                 <h2
-                  style={{ marginBottom: "20px" }}
+                  // style={{ marginBottom: "20px" }}
                   className="about-us-heading text-center text-md-start"
                 >
                   About <span className="headdingGradientText">TOJO</span>{" "}

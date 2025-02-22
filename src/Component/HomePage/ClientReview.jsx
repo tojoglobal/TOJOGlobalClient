@@ -13,28 +13,28 @@ export const ClientReview = () => {
     {
       clientReviewText:
         "TOJO GLOBAL's strategic insights and customized approach have significantly improved our online presence. Their team is dedicated and results-driven. We’ve seen a noticeable increase in client engagement.",
-      clientImage: "/Images/homePage/ReviewClientImage/ClientsImge.svg",
+      clientImage: "https://randomuser.me/api/portraits/men/5.jpg",
       clientName: "Emily Clarkson",
       clientStatus: "Marketing Director",
     },
     {
       clientReviewText:
         "We are thrilled with the results from TOJO GLOBAL’s marketing services. They’ve helped us connect with the right clients and grow our business rapidly. Their expertise and support are unmatched.",
-      clientImage: "/Images/homePage/ReviewClientImage/ClientsImge.svg",
+      clientImage: "https://randomuser.me/api/portraits/men/1.jpg",
       clientName: "James Williams",
       clientStatus: "Business Owner",
     },
     {
       clientReviewText:
         "The TOJO GLOBAL team is fantastic to work with. Their creative marketing solutions and dedication have brought our company great success. I highly recommend their services.",
-      clientImage: "/Images/homePage/ReviewClientImage/ClientsImge.svg",
+      clientImage: "https://randomuser.me/api/portraits/men/9.jpg",
       clientName: "Sophia Brown",
       clientStatus: "Head of Sales",
     },
     {
       clientReviewText:
         "TOJO GLOBAL's ability to understand our needs and deliver targeted results has been exceptional. We’ve experienced increased brand visibility and client satisfaction thanks to their efforts.",
-      clientImage: "/Images/homePage/ReviewClientImage/ClientsImge.svg",
+      clientImage: "https://randomuser.me/api/portraits/men/4.jpg",
       clientName: "Liam Johnson",
       clientStatus: "Chief Marketing Officer",
     },
@@ -90,7 +90,11 @@ export const ClientReview = () => {
             </div>
             <div className="client_review_content_div">
               <div className="client_review_image_div">
-                <img src={clientImage} alt={`${clientName}`} />
+                <img
+                  src={clientImage}
+                  alt={clientName}
+                  className="client_review_image"
+                />
                 <div className="reviewOwner">
                   <h3>{clientName}</h3>
                   <p>{clientStatus}</p>
