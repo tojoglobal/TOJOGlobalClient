@@ -95,6 +95,14 @@
       <meta itemprop="url" content="https://www.tojoglobal.com" />
       <meta itemprop="name" content="TOJO Global" />
     </div>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <img
+        src="/Images/tojoGlobalIcon.svg"
+        alt="TOJO Global Loading"
+        class="image-filuid"
+      />
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <!-- Aos Script -->
@@ -108,5 +116,25 @@
         mirror: false,
       });
     </script>
+
+    <style>
+      /* Loader Styling */
+      #loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #060044;
+        z-index: 9999;
+      }
+      #loading-screen img {
+        width: 50%;
+        height: auto;
+      }
+    </style>
   </body>
 </html>
