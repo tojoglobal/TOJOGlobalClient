@@ -477,8 +477,8 @@ const SocialMediaDesign = () => {
                       y2="85.7173"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_1376_4433"
@@ -488,8 +488,8 @@ const SocialMediaDesign = () => {
                       y2="53.2433"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -550,8 +550,8 @@ const SocialMediaDesign = () => {
                       y2="110.322"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_879_5164"
@@ -561,8 +561,8 @@ const SocialMediaDesign = () => {
                       y2="66.0988"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -684,8 +684,8 @@ const SocialMediaDesign = () => {
                       y2="106.954"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_879_5180"
@@ -695,8 +695,8 @@ const SocialMediaDesign = () => {
                       y2="50.8117"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -789,8 +789,8 @@ const SocialMediaDesign = () => {
                       y2="110.322"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_878_5115"
@@ -800,8 +800,8 @@ const SocialMediaDesign = () => {
                       y2="50.8117"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -861,8 +861,8 @@ const SocialMediaDesign = () => {
                       y2="85.7183"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_879_5172"
@@ -872,8 +872,8 @@ const SocialMediaDesign = () => {
                       y2="50.8117"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </svg>

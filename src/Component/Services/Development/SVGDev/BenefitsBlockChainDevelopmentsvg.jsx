@@ -327,8 +327,8 @@ const BenefitsBlockChainDevelopmentsvg = () => {
             y2="35.6483"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.146069" stop-color="#18C8FF" />
-            <stop offset="0.653246" stop-color="#C608FF" />
+            <stop offset="0.146069" stopColor="#18C8FF" />
+            <stop offset="0.653246" stopColor="#C608FF" />
           </linearGradient>
           <clipPath id="clip0_2529_4666">
             <rect

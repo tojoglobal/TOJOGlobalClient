@@ -54,8 +54,8 @@ const DocumentaryVideoEditingWhyChooseSvg = () => {
               y2="228.407"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#18C8FF" />
-              <stop offset="1" stop-color="#C608FF" />
+              <stop stopColor="#18C8FF" />
+              <stop offset="1" stopColor="#C608FF" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_1982_4570"
@@ -65,8 +65,8 @@ const DocumentaryVideoEditingWhyChooseSvg = () => {
               y2="135.561"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#18C8FF" />
-              <stop offset="1" stop-color="#C608FF" />
+              <stop stopColor="#18C8FF" />
+              <stop offset="1" stopColor="#C608FF" />
             </linearGradient>
             <linearGradient
               id="paint2_linear_1982_4570"
@@ -76,8 +76,8 @@ const DocumentaryVideoEditingWhyChooseSvg = () => {
               y2="134.057"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#18C8FF" />
-              <stop offset="1" stop-color="#C608FF" />
+              <stop stopColor="#18C8FF" />
+              <stop offset="1" stopColor="#C608FF" />
             </linearGradient>
             <linearGradient
               id="paint3_linear_1982_4570"
@@ -87,8 +87,8 @@ const DocumentaryVideoEditingWhyChooseSvg = () => {
               y2="335.81"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#18C8FF" />
-              <stop offset="1" stop-color="#C608FF" />
+              <stop stopColor="#18C8FF" />
+              <stop offset="1" stopColor="#C608FF" />
             </linearGradient>
             <linearGradient
               id="paint4_linear_1982_4570"
@@ -98,8 +98,8 @@ const DocumentaryVideoEditingWhyChooseSvg = () => {
               y2="335.607"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#18C8FF" />
-              <stop offset="1" stop-color="#C608FF" />
+              <stop stopColor="#18C8FF" />
+              <stop offset="1" stopColor="#C608FF" />
             </linearGradient>
           </defs>
         </g>

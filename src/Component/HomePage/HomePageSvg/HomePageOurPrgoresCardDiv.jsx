@@ -68,13 +68,13 @@ export const HomePageOurPrgoresCardDiv = ({
             d="M3.99976 23.0004C3.99976 10.2978 14.2972 0.000366211 26.9998 0.000366211H195.552C208.254 0.000366211 218.552 10.2978 218.552 23.0004V127C218.552 139.703 208.254 150 195.552 150H26.9998C14.2972 150 3.99976 139.703 3.99976 127V23.0004Z"
             fill="#060044"
             fill-opacity="0.43"
-            shape-rendering="crispEdges"
+            shapeRendering="crispEdges"
           />
           <path
             d="M4.49976 23.0004C4.49976 10.574 14.5733 0.500366 26.9998 0.500366H195.552C207.978 0.500366 218.052 10.574 218.052 23.0004V127C218.052 139.427 207.978 149.5 195.552 149.5H26.9998C14.5734 149.5 4.49976 139.427 4.49976 127V23.0004Z"
             stroke="url(#paint0_linear_2820_5337)"
             stroke-opacity="0.65"
-            shape-rendering="crispEdges"
+            shapeRendering="crispEdges"
           />
           <g>
             <text
@@ -142,16 +142,16 @@ export const HomePageOurPrgoresCardDiv = ({
             y2="128.045"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" />
-            <stop offset="0.175" stop-color="#E0E0E0" stop-opacity="0.21" />
-            <stop offset="0.5" stop-color="#CDCDCD" stop-opacity="0" />
-            <stop offset="0.725" stop-color="#DDDDDD" stop-opacity="0" />
-            <stop offset="1" stop-color="white" />
+            <stop stopColor="white" />
+            <stop offset="0.175" stopColor="#E0E0E0" sstopOpacity="0.21" />
+            <stop offset="0.5" stopColor="#CDCDCD" sstopOpacity="0" />
+            <stop offset="0.725" stopColor="#DDDDDD" sstopOpacity="0" />
+            <stop offset="1" stopColor="white" />
           </linearGradient>
 
           <linearGradient id="textGradient" gradientTransform="rotate(223)">
-            <stop offset="14%" stop-color="#C9AEFF" />
-            <stop offset="87%" stop-color="#FFF" />
+            <stop offset="14%" stopColor="#C9AEFF" />
+            <stop offset="87%" stopColor="#FFF" />
           </linearGradient>
         </defs>
       </svg>

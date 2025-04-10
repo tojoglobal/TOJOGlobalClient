@@ -36,8 +36,8 @@ const DocumentaryVideoEditingBestFeatureSvg = () => {
             y2="196.862"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="1" stop-color="#C608FF" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="1" stopColor="#C608FF" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_1982_4572"
@@ -47,8 +47,8 @@ const DocumentaryVideoEditingBestFeatureSvg = () => {
             y2="68.6243"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="1" stop-color="#C608FF" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="1" stopColor="#C608FF" />
           </linearGradient>
         </defs>
       </svg>

@@ -642,8 +642,8 @@ const WebContentWrting = () => {
                     y2="-4.11754"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -672,8 +672,8 @@ const WebContentWrting = () => {
                         y2="58.8349"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="#18C8FF" />
-                        <stop offset="1" stop-color="#C608FF" />
+                        <stop stopColor="#18C8FF" />
+                        <stop offset="1" stopColor="#C608FF" />
                       </linearGradient>
                     </defs>
                   </svg>
@@ -711,8 +711,8 @@ const WebContentWrting = () => {
                     y2="-17.2275"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -741,8 +741,8 @@ const WebContentWrting = () => {
                         y2="58.8349"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="#18C8FF" />
-                        <stop offset="1" stop-color="#C608FF" />
+                        <stop stopColor="#18C8FF" />
+                        <stop offset="1" stopColor="#C608FF" />
                       </linearGradient>
                     </defs>
                   </svg>
@@ -780,8 +780,8 @@ const WebContentWrting = () => {
                     y2="-4.08175"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -810,8 +810,8 @@ const WebContentWrting = () => {
                         y2="58.8349"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="#18C8FF" />
-                        <stop offset="1" stop-color="#C608FF" />
+                        <stop stopColor="#18C8FF" />
+                        <stop offset="1" stopColor="#C608FF" />
                       </linearGradient>
                     </defs>
                   </svg>
@@ -852,8 +852,8 @@ const WebContentWrting = () => {
                     y2="-17.2275"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -882,8 +882,8 @@ const WebContentWrting = () => {
                         y2="58.8349"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="#18C8FF" />
-                        <stop offset="1" stop-color="#C608FF" />
+                        <stop stopColor="#18C8FF" />
+                        <stop offset="1" stopColor="#C608FF" />
                       </linearGradient>
                     </defs>
                   </svg>
@@ -923,8 +923,8 @@ const WebContentWrting = () => {
                     y2="-4.11754"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -953,8 +953,8 @@ const WebContentWrting = () => {
                         y2="58.8349"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="#18C8FF" />
-                        <stop offset="1" stop-color="#C608FF" />
+                        <stop stopColor="#18C8FF" />
+                        <stop offset="1" stopColor="#C608FF" />
                       </linearGradient>
                     </defs>
                   </svg>
@@ -1293,8 +1293,8 @@ const WebContentWrting = () => {
                     y2="83.6951"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -1336,8 +1336,8 @@ const WebContentWrting = () => {
                     y2="83.6951"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -1378,8 +1378,8 @@ const WebContentWrting = () => {
                     y2="83.6951"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -1420,8 +1420,8 @@ const WebContentWrting = () => {
                     y2="83.6951"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -1597,8 +1597,8 @@ const WebContentWrting = () => {
                       y2="94.6175"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1641,8 +1641,8 @@ const WebContentWrting = () => {
                       y2="94.6175"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1685,8 +1685,8 @@ const WebContentWrting = () => {
                       y2="94.6175"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1729,8 +1729,8 @@ const WebContentWrting = () => {
                       y2="94.6175"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1951,7 +1951,7 @@ const WebContentWrting = () => {
                     r="77.9455"
                     fill="#18C8FF"
                     fill-opacity="0.15"
-                    shape-rendering="crispEdges"
+                    shapeRendering="crispEdges"
                   />
                 </g>
                 <defs>
@@ -1998,8 +1998,8 @@ const WebContentWrting = () => {
                     y2="93.328"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -2025,8 +2025,8 @@ const WebContentWrting = () => {
                     y2="-1.94097"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -2061,7 +2061,7 @@ const WebContentWrting = () => {
                     r="77.9455"
                     fill="#18C8FF"
                     fill-opacity="0.15"
-                    shape-rendering="crispEdges"
+                    shapeRendering="crispEdges"
                   />
                 </g>
                 <defs>
@@ -2108,8 +2108,8 @@ const WebContentWrting = () => {
                     y2="93.328"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -2135,8 +2135,8 @@ const WebContentWrting = () => {
                     y2="-1.94097"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -2172,7 +2172,7 @@ const WebContentWrting = () => {
                     r="77.9455"
                     fill="#18C8FF"
                     fill-opacity="0.15"
-                    shape-rendering="crispEdges"
+                    shapeRendering="crispEdges"
                   />
                 </g>
                 <defs>
@@ -2219,8 +2219,8 @@ const WebContentWrting = () => {
                     y2="93.328"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -2246,8 +2246,8 @@ const WebContentWrting = () => {
                     y2="-1.94097"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -2283,7 +2283,7 @@ const WebContentWrting = () => {
                     r="77.9455"
                     fill="#18C8FF"
                     fill-opacity="0.15"
-                    shape-rendering="crispEdges"
+                    shapeRendering="crispEdges"
                   />
                 </g>
                 <defs>
@@ -2330,8 +2330,8 @@ const WebContentWrting = () => {
                     y2="93.328"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -2357,8 +2357,8 @@ const WebContentWrting = () => {
                     y2="-1.94097"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -2393,7 +2393,7 @@ const WebContentWrting = () => {
                     r="77.9455"
                     fill="#18C8FF"
                     fill-opacity="0.15"
-                    shape-rendering="crispEdges"
+                    shapeRendering="crispEdges"
                   />
                 </g>
                 <defs>
@@ -2440,8 +2440,8 @@ const WebContentWrting = () => {
                     y2="93.328"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -2467,8 +2467,8 @@ const WebContentWrting = () => {
                     y2="-1.94097"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </svg>

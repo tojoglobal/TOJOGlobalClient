@@ -23,7 +23,7 @@ export const BlockChainDevPlayToEarnBenefitsSvg = () => {
             d="M20 34.864C20 24.998 27.998 17 37.864 17H457.136C467.002 17 475 24.998 475 34.864V173.136C475 183.002 467.002 191 457.136 191H37.864C27.998 191 20 183.002 20 173.136V34.864Z"
             fill="#18C8FF"
             fill-opacity="0.15"
-            shape-rendering="crispEdges"
+            shapeRendering="crispEdges"
           />
           <path
             d="M20 17H475H20ZM475 191H20H475ZM20 191V17V191ZM457.136 17C470.316 17 481 27.6843 481 40.864V167.136C481 180.316 470.316 191 457.136 191C463.688 191 469 183.002 469 173.136V34.864C469 24.998 463.688 17 457.136 17Z"
@@ -75,8 +75,8 @@ export const BlockChainDevPlayToEarnBenefitsSvg = () => {
             y2="113.399"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="1" stop-color="#C608FF" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="1" stopColor="#C608FF" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_2640_4666"
@@ -86,8 +86,8 @@ export const BlockChainDevPlayToEarnBenefitsSvg = () => {
             y2="160.375"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="1" stop-color="#C608FF" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="1" stopColor="#C608FF" />
           </linearGradient>
         </defs>
       </svg>

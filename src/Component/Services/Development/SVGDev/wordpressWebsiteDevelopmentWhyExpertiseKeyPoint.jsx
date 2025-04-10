@@ -20,7 +20,7 @@ const WordpressWebsiteDevelopmentWhyExpertiseKeyPoint = () => {
             d="M7 43C7 20.9086 24.9086 3 47 3H347C369.091 3 387 20.9086 387 43V156C387 178.091 369.091 196 347 196H47C24.9086 196 7 178.091 7 156V43Z"
             fill="#58B9FF"
             fill-opacity="0.3"
-            shape-rendering="crispEdges"
+            shapeRendering="crispEdges"
           />
           <path
             d="M7 43C7 17.5949 27.5949 -3 53 -3H341C366.405 -3 387 17.5949 387 43C387 24.2223 369.091 9 347 9H47C24.9086 9 7 24.2223 7 43ZM387 196H7H387ZM7 196V3V196ZM387 3V196V3Z"
@@ -78,8 +78,8 @@ const WordpressWebsiteDevelopmentWhyExpertiseKeyPoint = () => {
             y2="-91.6508"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#C608FF" />
-            <stop offset="0.99" stop-color="#18C8FF" />
+            <stop stopColor="#C608FF" />
+            <stop offset="0.99" stopColor="#18C8FF" />
           </linearGradient>
         </defs>
       </svg>

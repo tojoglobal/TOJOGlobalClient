@@ -41,8 +41,8 @@ const WhatisWhitePapeContertSvg = () => {
             y2="716.729"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="0.34661" stop-color="#C608FF" stop-opacity="0" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="0.34661" stopColor="#C608FF" sstopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_2441_4770"
@@ -52,9 +52,9 @@ const WhatisWhitePapeContertSvg = () => {
             y2="726.38"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" stop-opacity="0.6" />
-            <stop offset="0.271667" stop-color="#C608FF" stop-opacity="0" />
-            <stop offset="1" stop-color="#C608FF" stop-opacity="0" />
+            <stop stopColor="#18C8FF" sstopOpacity="0.6" />
+            <stop offset="0.271667" stopColor="#C608FF" sstopOpacity="0" />
+            <stop offset="1" stopColor="#C608FF" sstopOpacity="0" />
           </linearGradient>
         </defs>
       </svg>

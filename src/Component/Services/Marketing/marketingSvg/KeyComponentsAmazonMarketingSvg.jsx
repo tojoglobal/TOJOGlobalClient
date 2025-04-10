@@ -143,8 +143,8 @@ const KeyComponentsAmazonMarketingSvg = () => {
             y2="572.551"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="1" stop-color="#C608FF" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="1" stopColor="#C608FF" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_2441_4845"
@@ -154,8 +154,8 @@ const KeyComponentsAmazonMarketingSvg = () => {
             y2="409.799"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="1" stop-color="#C608FF" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="1" stopColor="#C608FF" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_2441_4845"
@@ -165,8 +165,8 @@ const KeyComponentsAmazonMarketingSvg = () => {
             y2="674.03"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#C4C9DC" />
-            <stop offset="1" stop-color="white" />
+            <stop stopColor="#C4C9DC" />
+            <stop offset="1" stopColor="white" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_2441_4845"
@@ -176,8 +176,8 @@ const KeyComponentsAmazonMarketingSvg = () => {
             y2="936.309"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="1" stop-color="#C608FF" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="1" stopColor="#C608FF" />
           </linearGradient>
           <linearGradient
             id="paint4_linear_2441_4845"
@@ -187,8 +187,8 @@ const KeyComponentsAmazonMarketingSvg = () => {
             y2="891.413"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="1" stop-color="#C608FF" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="1" stopColor="#C608FF" />
           </linearGradient>
         </defs>
       </svg>

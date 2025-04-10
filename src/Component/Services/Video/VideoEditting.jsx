@@ -749,8 +749,8 @@ const VideoEditting = () => {
                       y2="121.207"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_1282_4475"
@@ -760,8 +760,8 @@ const VideoEditting = () => {
                       y2="121.207"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -857,8 +857,8 @@ const VideoEditting = () => {
                       y2="121.207"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_1282_4475"
@@ -868,8 +868,8 @@ const VideoEditting = () => {
                       y2="121.207"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -964,8 +964,8 @@ const VideoEditting = () => {
                       y2="121.207"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_1282_4475"
@@ -975,8 +975,8 @@ const VideoEditting = () => {
                       y2="121.207"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1071,8 +1071,8 @@ const VideoEditting = () => {
                       y2="121.207"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_1282_4475"
@@ -1082,8 +1082,8 @@ const VideoEditting = () => {
                       y2="121.207"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1216,8 +1216,8 @@ const VideoEditting = () => {
                       y2="98.2422"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                   <image
@@ -1306,8 +1306,8 @@ const VideoEditting = () => {
                       y2="98.2422"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                   <image
@@ -1352,8 +1352,8 @@ const VideoEditting = () => {
                       y2="98.2422"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                   <image
@@ -1443,8 +1443,8 @@ const VideoEditting = () => {
                       y2="98.2422"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                   <image
@@ -1653,8 +1653,8 @@ const VideoEditting = () => {
                       y2="93.0892"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_1123_5872"
@@ -1664,8 +1664,8 @@ const VideoEditting = () => {
                       y2="141.621"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </g>
@@ -1729,8 +1729,8 @@ const VideoEditting = () => {
                       y2="91.5652"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_1123_5873"
@@ -1740,8 +1740,8 @@ const VideoEditting = () => {
                       y2="13.0318"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </g>
@@ -1805,8 +1805,8 @@ const VideoEditting = () => {
                       y2="93.0892"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_1123_5872"
@@ -1816,8 +1816,8 @@ const VideoEditting = () => {
                       y2="141.621"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </g>
@@ -1881,8 +1881,8 @@ const VideoEditting = () => {
                       y2="91.5652"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_1123_5873"
@@ -1892,8 +1892,8 @@ const VideoEditting = () => {
                       y2="13.0318"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </g>
@@ -1976,8 +1976,8 @@ const VideoEditting = () => {
                       y2="50.656"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </g>
@@ -2040,8 +2040,8 @@ const VideoEditting = () => {
                       y2="50.656"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </g>
@@ -2081,8 +2081,8 @@ const VideoEditting = () => {
                       y2="50.656"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </g>
@@ -2154,8 +2154,8 @@ const VideoEditting = () => {
                       y2="50.656"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#18C8FF" />
-                      <stop offset="1" stop-color="#C608FF" />
+                      <stop stopColor="#18C8FF" />
+                      <stop offset="1" stopColor="#C608FF" />
                     </linearGradient>
                   </defs>
                 </g>
@@ -2253,8 +2253,8 @@ const VideoEditting = () => {
                     y2="133.824"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </g>
@@ -2281,8 +2281,8 @@ const VideoEditting = () => {
                   y2="6.99352"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#18C8FF" />
-                  <stop offset="1" stop-color="#C608FF" />
+                  <stop stopColor="#18C8FF" />
+                  <stop offset="1" stopColor="#C608FF" />
                 </linearGradient>
               </defs>
             </svg>
@@ -2331,8 +2331,8 @@ const VideoEditting = () => {
                     y2="133.824"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </g>
@@ -2359,8 +2359,8 @@ const VideoEditting = () => {
                   y2="6.99352"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#18C8FF" />
-                  <stop offset="1" stop-color="#C608FF" />
+                  <stop stopColor="#18C8FF" />
+                  <stop offset="1" stopColor="#C608FF" />
                 </linearGradient>
               </defs>
             </svg>
@@ -2409,8 +2409,8 @@ const VideoEditting = () => {
                     y2="133.824"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </g>
@@ -2437,8 +2437,8 @@ const VideoEditting = () => {
                   y2="6.99352"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#18C8FF" />
-                  <stop offset="1" stop-color="#C608FF" />
+                  <stop stopColor="#18C8FF" />
+                  <stop offset="1" stopColor="#C608FF" />
                 </linearGradient>
               </defs>
             </svg>
@@ -2487,8 +2487,8 @@ const VideoEditting = () => {
                     y2="133.824"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#18C8FF" />
-                    <stop offset="1" stop-color="#C608FF" />
+                    <stop stopColor="#18C8FF" />
+                    <stop offset="1" stopColor="#C608FF" />
                   </linearGradient>
                 </defs>
               </g>
@@ -2637,8 +2637,8 @@ const VideoEditting = () => {
                 y2="-8.50489"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#18C8FF" />
-                <stop offset="1" stop-color="#C608FF" />
+                <stop stopColor="#18C8FF" />
+                <stop offset="1" stopColor="#C608FF" />
               </linearGradient>
             </defs>
           </svg>

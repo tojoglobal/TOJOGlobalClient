@@ -200,8 +200,8 @@ const ExplainerVideoEditingWhyChooseIcon = () => {
             y2="143.312"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="1" stop-color="#C608FF" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="1" stopColor="#C608FF" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_1072_4697"
@@ -211,8 +211,8 @@ const ExplainerVideoEditingWhyChooseIcon = () => {
             y2="84.2511"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="1" stop-color="#C608FF" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="1" stopColor="#C608FF" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_1072_4697"
@@ -222,8 +222,8 @@ const ExplainerVideoEditingWhyChooseIcon = () => {
             y2="244.251"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="1" stop-color="#C608FF" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="1" stopColor="#C608FF" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_1072_4697"
@@ -233,8 +233,8 @@ const ExplainerVideoEditingWhyChooseIcon = () => {
             y2="244.251"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="1" stop-color="#C608FF" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="1" stopColor="#C608FF" />
           </linearGradient>
           <linearGradient
             id="paint4_linear_1072_4697"
@@ -244,8 +244,8 @@ const ExplainerVideoEditingWhyChooseIcon = () => {
             y2="314.251"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="1" stop-color="#C608FF" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="1" stopColor="#C608FF" />
           </linearGradient>
           <linearGradient
             id="paint5_linear_1072_4697"
@@ -255,8 +255,8 @@ const ExplainerVideoEditingWhyChooseIcon = () => {
             y2="84.2511"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="1" stop-color="#C608FF" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="1" stopColor="#C608FF" />
           </linearGradient>
           <clipPath id="clip0_1072_4697">
             <rect

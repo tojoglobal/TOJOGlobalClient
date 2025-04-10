@@ -20,7 +20,7 @@ const SocailMediaMarketingOurServicesSvg = () => {
             rx="34"
             fill="#818CB6"
             fill-opacity="0.7"
-            shape-rendering="crispEdges"
+            shapeRendering="crispEdges"
           />
           <rect
             x="40.5"
@@ -30,7 +30,7 @@ const SocailMediaMarketingOurServicesSvg = () => {
             rx="31.5"
             stroke="url(#paint0_linear_1763_4542)"
             stroke-width="5"
-            shape-rendering="crispEdges"
+            shapeRendering="crispEdges"
           />
         </g>
         <defs>
@@ -83,8 +83,8 @@ const SocailMediaMarketingOurServicesSvg = () => {
             y2="308.42"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="1" stop-color="#C608FF" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="1" stopColor="#C608FF" />
           </linearGradient>
         </defs>
       </svg>

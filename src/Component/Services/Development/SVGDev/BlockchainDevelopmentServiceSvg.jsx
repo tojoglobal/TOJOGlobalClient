@@ -53,8 +53,8 @@ const BlockchainDevelopmentServiceSvg = ({
             y2="199.2"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="1" stop-color="#C608FF" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="1" stopColor="#C608FF" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_2354_4635"
@@ -64,8 +64,8 @@ const BlockchainDevelopmentServiceSvg = ({
             y2="57.9485"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#18C8FF" />
-            <stop offset="1" stop-color="#C608FF" />
+            <stop stopColor="#18C8FF" />
+            <stop offset="1" stopColor="#C608FF" />
           </linearGradient>
         </defs>
       </svg>

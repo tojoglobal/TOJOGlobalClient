@@ -1057,8 +1057,8 @@ const LogosHeroSvg = () => {
             y2="160.568"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#C4C9DC" />
-            <stop offset="1" stop-color="white" />
+            <stop stopColor="#C4C9DC" />
+            <stop offset="1" stopColor="white" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_1345_4443"
@@ -1068,8 +1068,8 @@ const LogosHeroSvg = () => {
             y2="148.026"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#C4C9DC" />
-            <stop offset="1" stop-color="white" />
+            <stop stopColor="#C4C9DC" />
+            <stop offset="1" stopColor="white" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_1345_4443"
@@ -1079,8 +1079,8 @@ const LogosHeroSvg = () => {
             y2="293.12"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#C4C9DC" />
-            <stop offset="1" stop-color="white" />
+            <stop stopColor="#C4C9DC" />
+            <stop offset="1" stopColor="white" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_1345_4443"
@@ -1090,8 +1090,8 @@ const LogosHeroSvg = () => {
             y2="259.691"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#C4C9DC" />
-            <stop offset="1" stop-color="white" />
+            <stop stopColor="#C4C9DC" />
+            <stop offset="1" stopColor="white" />
           </linearGradient>
           <linearGradient
             id="paint4_linear_1345_4443"
@@ -1101,8 +1101,8 @@ const LogosHeroSvg = () => {
             y2="378.65"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#C4C9DC" />
-            <stop offset="1" stop-color="white" />
+            <stop stopColor="#C4C9DC" />
+            <stop offset="1" stopColor="white" />
           </linearGradient>
           <linearGradient
             id="paint5_linear_1345_4443"
@@ -1112,8 +1112,8 @@ const LogosHeroSvg = () => {
             y2="293.119"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#C4C9DC" />
-            <stop offset="1" stop-color="white" />
+            <stop stopColor="#C4C9DC" />
+            <stop offset="1" stopColor="white" />
           </linearGradient>
           <linearGradient
             id="paint6_linear_1345_4443"
@@ -1123,8 +1123,8 @@ const LogosHeroSvg = () => {
             y2="368.056"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#C4C9DC" />
-            <stop offset="1" stop-color="white" />
+            <stop stopColor="#C4C9DC" />
+            <stop offset="1" stopColor="white" />
           </linearGradient>
           <linearGradient
             id="paint7_linear_1345_4443"
@@ -1134,8 +1134,8 @@ const LogosHeroSvg = () => {
             y2="79.8031"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF005D" />
-            <stop offset="1" stop-color="#9C2EF0" />
+            <stop stopColor="#FF005D" />
+            <stop offset="1" stopColor="#9C2EF0" />
           </linearGradient>
           <linearGradient
             id="paint8_linear_1345_4443"
@@ -1145,8 +1145,8 @@ const LogosHeroSvg = () => {
             y2="44.1022"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF005D" />
-            <stop offset="1" stop-color="#9C2EF0" />
+            <stop stopColor="#FF005D" />
+            <stop offset="1" stopColor="#9C2EF0" />
           </linearGradient>
           <linearGradient
             id="paint9_linear_1345_4443"
@@ -1156,8 +1156,8 @@ const LogosHeroSvg = () => {
             y2="42.5358"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF005D" />
-            <stop offset="1" stop-color="#9C2EF0" />
+            <stop stopColor="#FF005D" />
+            <stop offset="1" stopColor="#9C2EF0" />
           </linearGradient>
           <linearGradient
             id="paint10_linear_1345_4443"
@@ -1167,8 +1167,8 @@ const LogosHeroSvg = () => {
             y2="41.6362"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF005D" />
-            <stop offset="1" stop-color="#9C2EF0" />
+            <stop stopColor="#FF005D" />
+            <stop offset="1" stopColor="#9C2EF0" />
           </linearGradient>
           <linearGradient
             id="paint11_linear_1345_4443"
@@ -1178,8 +1178,8 @@ const LogosHeroSvg = () => {
             y2="42.3228"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF005D" />
-            <stop offset="1" stop-color="#9C2EF0" />
+            <stop stopColor="#FF005D" />
+            <stop offset="1" stopColor="#9C2EF0" />
           </linearGradient>
           <linearGradient
             id="paint12_linear_1345_4443"
@@ -1189,8 +1189,8 @@ const LogosHeroSvg = () => {
             y2="45.8047"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF005D" />
-            <stop offset="1" stop-color="#9C2EF0" />
+            <stop stopColor="#FF005D" />
+            <stop offset="1" stopColor="#9C2EF0" />
           </linearGradient>
           <linearGradient
             id="paint13_linear_1345_4443"
@@ -1200,8 +1200,8 @@ const LogosHeroSvg = () => {
             y2="58.3613"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF005D" />
-            <stop offset="1" stop-color="#9C2EF0" />
+            <stop stopColor="#FF005D" />
+            <stop offset="1" stopColor="#9C2EF0" />
           </linearGradient>
           <linearGradient
             id="paint14_linear_1345_4443"
@@ -1211,8 +1211,8 @@ const LogosHeroSvg = () => {
             y2="53.1124"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF005D" />
-            <stop offset="1" stop-color="#9C2EF0" />
+            <stop stopColor="#FF005D" />
+            <stop offset="1" stopColor="#9C2EF0" />
           </linearGradient>
           <linearGradient
             id="paint15_linear_1345_4443"
@@ -1222,8 +1222,8 @@ const LogosHeroSvg = () => {
             y2="48.9765"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF005D" />
-            <stop offset="1" stop-color="#9C2EF0" />
+            <stop stopColor="#FF005D" />
+            <stop offset="1" stopColor="#9C2EF0" />
           </linearGradient>
           <linearGradient
             id="paint16_linear_1345_4443"
@@ -1233,8 +1233,8 @@ const LogosHeroSvg = () => {
             y2="67.8726"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF005D" />
-            <stop offset="1" stop-color="#9C2EF0" />
+            <stop stopColor="#FF005D" />
+            <stop offset="1" stopColor="#9C2EF0" />
           </linearGradient>
           <linearGradient
             id="paint17_linear_1345_4443"
@@ -1244,8 +1244,8 @@ const LogosHeroSvg = () => {
             y2="58.142"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF005D" />
-            <stop offset="1" stop-color="#9C2EF0" />
+            <stop stopColor="#FF005D" />
+            <stop offset="1" stopColor="#9C2EF0" />
           </linearGradient>
           <linearGradient
             id="paint18_linear_1345_4443"
@@ -1255,8 +1255,8 @@ const LogosHeroSvg = () => {
             y2="76.264"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF005D" />
-            <stop offset="1" stop-color="#9C2EF0" />
+            <stop stopColor="#FF005D" />
+            <stop offset="1" stopColor="#9C2EF0" />
           </linearGradient>
           <linearGradient
             id="paint19_linear_1345_4443"
@@ -1266,8 +1266,8 @@ const LogosHeroSvg = () => {
             y2="47.57"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF005D" />
-            <stop offset="1" stop-color="#9C2EF0" />
+            <stop stopColor="#FF005D" />
+            <stop offset="1" stopColor="#9C2EF0" />
           </linearGradient>
           <linearGradient
             id="paint20_linear_1345_4443"
@@ -1277,8 +1277,8 @@ const LogosHeroSvg = () => {
             y2="55.3274"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF005D" />
-            <stop offset="1" stop-color="#9C2EF0" />
+            <stop stopColor="#FF005D" />
+            <stop offset="1" stopColor="#9C2EF0" />
           </linearGradient>
           <linearGradient
             id="paint21_linear_1345_4443"
@@ -1288,8 +1288,8 @@ const LogosHeroSvg = () => {
             y2="76.1482"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF005D" />
-            <stop offset="1" stop-color="#9C2EF0" />
+            <stop stopColor="#FF005D" />
+            <stop offset="1" stopColor="#9C2EF0" />
           </linearGradient>
           <radialGradient
             id="paint22_radial_1345_4443"
@@ -1299,8 +1299,8 @@ const LogosHeroSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(274.127 251.307) scale(27.022 27.2302)"
           >
-            <stop stop-color="#FBB03B" />
-            <stop offset="1" stop-color="#F15A24" />
+            <stop stopColor="#FBB03B" />
+            <stop offset="1" stopColor="#F15A24" />
           </radialGradient>
           <radialGradient
             id="paint23_radial_1345_4443"
@@ -1310,8 +1310,8 @@ const LogosHeroSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(295.393 182.512) scale(73.4846 74.0508)"
           >
-            <stop stop-color="#FBB03B" />
-            <stop offset="1" stop-color="#F15A24" />
+            <stop stopColor="#FBB03B" />
+            <stop offset="1" stopColor="#F15A24" />
           </radialGradient>
           <radialGradient
             id="paint24_radial_1345_4443"
@@ -1321,8 +1321,8 @@ const LogosHeroSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(295.143 159.415) scale(144.426 145.539)"
           >
-            <stop stop-color="#FBB03B" />
-            <stop offset="1" stop-color="#F15A24" />
+            <stop stopColor="#FBB03B" />
+            <stop offset="1" stopColor="#F15A24" />
           </radialGradient>
           <radialGradient
             id="paint25_radial_1345_4443"
@@ -1332,8 +1332,8 @@ const LogosHeroSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(292.876 195.064) scale(52.0206 52.4214)"
           >
-            <stop stop-color="#FBB03B" />
-            <stop offset="1" stop-color="#F15A24" />
+            <stop stopColor="#FBB03B" />
+            <stop offset="1" stopColor="#F15A24" />
           </radialGradient>
           <radialGradient
             id="paint26_radial_1345_4443"
@@ -1343,8 +1343,8 @@ const LogosHeroSvg = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(297.645 191.847) scale(57.284 57.7254)"
           >
-            <stop stop-color="#FBB03B" />
-            <stop offset="1" stop-color="#F15A24" />
+            <stop stopColor="#FBB03B" />
+            <stop offset="1" stopColor="#F15A24" />
           </radialGradient>
           <linearGradient
             id="paint27_linear_1345_4443"
@@ -1354,8 +1354,8 @@ const LogosHeroSvg = () => {
             y2="232.507"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#6BC615" />
-            <stop offset="1" stop-color="#2C760D" />
+            <stop stopColor="#6BC615" />
+            <stop offset="1" stopColor="#2C760D" />
           </linearGradient>
           <linearGradient
             id="paint28_linear_1345_4443"
@@ -1365,8 +1365,8 @@ const LogosHeroSvg = () => {
             y2="238.143"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#231F20" />
-            <stop offset="1" stop-color="#231F20" />
+            <stop stopColor="#231F20" />
+            <stop offset="1" stopColor="#231F20" />
           </linearGradient>
           <linearGradient
             id="paint29_linear_1345_4443"
@@ -1376,8 +1376,8 @@ const LogosHeroSvg = () => {
             y2="216.695"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#6BC615" />
-            <stop offset="1" stop-color="#2C760D" />
+            <stop stopColor="#6BC615" />
+            <stop offset="1" stopColor="#2C760D" />
           </linearGradient>
           <linearGradient
             id="paint30_linear_1345_4443"
@@ -1387,8 +1387,8 @@ const LogosHeroSvg = () => {
             y2="207.575"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#6BC615" />
-            <stop offset="1" stop-color="#2C760D" />
+            <stop stopColor="#6BC615" />
+            <stop offset="1" stopColor="#2C760D" />
           </linearGradient>
           <linearGradient
             id="paint31_linear_1345_4443"
@@ -1398,8 +1398,8 @@ const LogosHeroSvg = () => {
             y2="203.553"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#F1F2F2" />
-            <stop offset="1" stop-color="#F1F2F2" />
+            <stop stopColor="#F1F2F2" />
+            <stop offset="1" stopColor="#F1F2F2" />
           </linearGradient>
           <linearGradient
             id="paint32_linear_1345_4443"
@@ -1409,8 +1409,8 @@ const LogosHeroSvg = () => {
             y2="181.759"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#231F20" />
-            <stop offset="1" stop-color="#231F20" />
+            <stop stopColor="#231F20" />
+            <stop offset="1" stopColor="#231F20" />
           </linearGradient>
           <linearGradient
             id="paint33_linear_1345_4443"
@@ -1420,8 +1420,8 @@ const LogosHeroSvg = () => {
             y2="202.57"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#F1F2F2" />
-            <stop offset="1" stop-color="#F1F2F2" />
+            <stop stopColor="#F1F2F2" />
+            <stop offset="1" stopColor="#F1F2F2" />
           </linearGradient>
           <linearGradient
             id="paint34_linear_1345_4443"
@@ -1431,8 +1431,8 @@ const LogosHeroSvg = () => {
             y2="183.005"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#231F20" />
-            <stop offset="1" stop-color="#231F20" />
+            <stop stopColor="#231F20" />
+            <stop offset="1" stopColor="#231F20" />
           </linearGradient>
           <clipPath id="clip0_1345_4443">
             <rect

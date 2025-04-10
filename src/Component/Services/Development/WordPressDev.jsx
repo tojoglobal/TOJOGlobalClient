@@ -116,8 +116,8 @@ export const WordPressDev = () => {
                 y2="25.271"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#18C8FF" />
-                <stop offset="1" stop-color="#C608FF" />
+                <stop stopColor="#18C8FF" />
+                <stop offset="1" stopColor="#C608FF" />
               </linearGradient>
             </defs>
           </svg>
@@ -144,8 +144,8 @@ export const WordPressDev = () => {
                 y2="25.271"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#18C8FF" />
-                <stop offset="1" stop-color="#C608FF" />
+                <stop stopColor="#18C8FF" />
+                <stop offset="1" stopColor="#C608FF" />
               </linearGradient>
             </defs>
           </svg>
@@ -172,8 +172,8 @@ export const WordPressDev = () => {
                 y2="25.271"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#18C8FF" />
-                <stop offset="1" stop-color="#C608FF" />
+                <stop stopColor="#18C8FF" />
+                <stop offset="1" stopColor="#C608FF" />
               </linearGradient>
             </defs>
           </svg>
@@ -274,8 +274,8 @@ export const WordPressDev = () => {
                 y2="66.2511"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#18C8FF" />
-                <stop offset="1" stop-color="#C608FF" />
+                <stop stopColor="#18C8FF" />
+                <stop offset="1" stopColor="#C608FF" />
               </linearGradient>
             </defs>
             <g className="wordpressDevelopment_whyChoose_keyPoint_svgIcon">
@@ -339,8 +339,8 @@ export const WordPressDev = () => {
                 y2="66.2511"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#18C8FF" />
-                <stop offset="1" stop-color="#C608FF" />
+                <stop stopColor="#18C8FF" />
+                <stop offset="1" stopColor="#C608FF" />
               </linearGradient>
             </defs>
             <g className="wordpressDevelopment_whyChoose_keyPoint_svgIcon">
@@ -403,8 +403,8 @@ export const WordPressDev = () => {
                 y2="66.2511"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#18C8FF" />
-                <stop offset="1" stop-color="#C608FF" />
+                <stop stopColor="#18C8FF" />
+                <stop offset="1" stopColor="#C608FF" />
               </linearGradient>
             </defs>
             <g className="wordpressDevelopment_whyChoose_keyPoint_svgIcon">
@@ -467,8 +467,8 @@ export const WordPressDev = () => {
                 y2="66.2511"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#18C8FF" />
-                <stop offset="1" stop-color="#C608FF" />
+                <stop stopColor="#18C8FF" />
+                <stop offset="1" stopColor="#C608FF" />
               </linearGradient>
             </defs>
             <g className="wordpressDevelopment_whyChoose_keyPoint_svgIcon">
@@ -532,8 +532,8 @@ export const WordPressDev = () => {
                 y2="66.2511"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#18C8FF" />
-                <stop offset="1" stop-color="#C608FF" />
+                <stop stopColor="#18C8FF" />
+                <stop offset="1" stopColor="#C608FF" />
               </linearGradient>
             </defs>
             <g className="wordpressDevelopment_whyChoose_keyPoint_svgIcon">
@@ -597,8 +597,8 @@ export const WordPressDev = () => {
                 y2="66.2511"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#18C8FF" />
-                <stop offset="1" stop-color="#C608FF" />
+                <stop stopColor="#18C8FF" />
+                <stop offset="1" stopColor="#C608FF" />
               </linearGradient>
             </defs>
             <g className="wordpressDevelopment_whyChoose_keyPoint_svgIcon">
@@ -661,8 +661,8 @@ export const WordPressDev = () => {
                 y2="66.2511"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#18C8FF" />
-                <stop offset="1" stop-color="#C608FF" />
+                <stop stopColor="#18C8FF" />
+                <stop offset="1" stopColor="#C608FF" />
               </linearGradient>
             </defs>
             <g className="wordpressDevelopment_whyChoose_keyPoint_svgIcon">
@@ -725,8 +725,8 @@ export const WordPressDev = () => {
                 y2="66.2511"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#18C8FF" />
-                <stop offset="1" stop-color="#C608FF" />
+                <stop stopColor="#18C8FF" />
+                <stop offset="1" stopColor="#C608FF" />
               </linearGradient>
             </defs>
             <g className="wordpressDevelopment_whyChoose_keyPoint_svgIcon">
@@ -789,8 +789,8 @@ export const WordPressDev = () => {
                 y2="66.2511"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#18C8FF" />
-                <stop offset="1" stop-color="#C608FF" />
+                <stop stopColor="#18C8FF" />
+                <stop offset="1" stopColor="#C608FF" />
               </linearGradient>
             </defs>
             <g className="wordpressDevelopment_whyChoose_keyPoint_svgIcon">

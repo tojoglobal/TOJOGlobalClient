@@ -117,9 +117,9 @@ export const HomeServersWeOfferCatagoryItemsBtn = ({
               y2="100%"
               gradientUnits="userSpaceOnUse"
             >
-              <stop offset="0%" stop-color="#C608FF" />
-              <stop offset="50%" stop-color="#060044" />
-              <stop offset="100%" stop-color="#18C8FF" />
+              <stop offset="0%" stopColor="#C608FF" />
+              <stop offset="50%" stopColor="#060044" />
+              <stop offset="100%" stopColor="#18C8FF" />
             </linearGradient>
             {/* <!-- Gradient stock Definition --> */}
             <linearGradient
@@ -130,10 +130,10 @@ export const HomeServersWeOfferCatagoryItemsBtn = ({
               y2="94.8359"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#18C8FF" />
-              <stop offset="0.425" stop-color="#060044" stop-opacity="0" />
-              <stop offset="0.71" stop-color="#060044" stop-opacity="0" />
-              <stop offset="1" stop-color="#C608FF" />
+              <stop stopColor="#18C8FF" />
+              <stop offset="0.425" stopColor="#060044" sstopOpacity="0" />
+              <stop offset="0.71" stopColor="#060044" sstopOpacity="0" />
+              <stop offset="1" stopColor="#C608FF" />
             </linearGradient>
           </defs>
         </svg>
@@ -221,11 +221,11 @@ export const HomeServersWeOfferCatagoryItemsBtn = ({
               y2="193.456"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="white" />
-              <stop offset="0.175" stop-color="#E0E0E0" stop-opacity="0.21" />
-              <stop offset="0.5" stop-color="#CDCDCD" stop-opacity="0" />
-              <stop offset="0.725" stop-color="#DDDDDD" stop-opacity="0" />
-              <stop offset="1" stop-color="white" />
+              <stop stopColor="white" />
+              <stop offset="0.175" stopColor="#E0E0E0" sstopOpacity="0.21" />
+              <stop offset="0.5" stopColor="#CDCDCD" sstopOpacity="0" />
+              <stop offset="0.725" stopColor="#DDDDDD" sstopOpacity="0" />
+              <stop offset="1" stopColor="white" />
             </linearGradient>
           </defs>
         </svg>
