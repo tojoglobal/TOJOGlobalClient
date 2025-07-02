@@ -37,7 +37,7 @@ function NavbarNav() {
           {/* website logo */}
           <Navbar.Brand>
             <NavLink to="/">
-              <img src="/Images/tojoGlobalIcon.svg" alt="TOJO Global Logo" />
+              <img src="/tojoGlobalIcon.svg" alt="TOJO Global Logo" />
             </NavLink>
           </Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav">

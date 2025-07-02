@@ -9,6 +9,7 @@ export default defineConfig({
     },
   },
   build: {
+    chunkSizeWarningLimit: 10700,
     rollupOptions: {
       output: {
         manualChunks: {

@@ -96,19 +96,9 @@
     <!-- Loading Screen -->
     <div id="root">
       <div id="loading-screen" role="status">
-        <img src="/Images/tojoGlobalIcon.svg" alt="TOJO Global Loading" />
+        <img src="/tojoGlobalIcon.svg" alt="TOJO Global Loading" />
       </div>
     </div>
-
-    <script>
-      AOS.init({
-        delay: 0,
-        duration: 500,
-        easing: "ease",
-        once: true,
-        mirror: false,
-      });
-    </script>
 
     <style>
       /* Loader Styling */
@@ -129,13 +119,16 @@
         height: auto;
       }
     </style>
-    <script type="module">
+    <!-- <script type="module">
       setTimeout(() => {
         import("/src/main.jsx");
       }, 500);
-    </script>
-    <!-- <script type="module" src="/src/main.jsx"></script> -->
+    </script> -->
+    <script type="module" src="/src/main.jsx"></script>
     <!-- Aos Script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
