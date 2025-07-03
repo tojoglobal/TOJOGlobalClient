@@ -1,15 +1,44 @@
-.react-phone-input-2 .flag-dropdown,
-.react-phone-input-2 .selected-flag,
-.react-phone-input-2 .country-list {
-    background: #fff !important;
+/* Override dropdown styles for react-phone-input-2 */
+.react-tel-input .form-control {
+    background-color: #fff !important;
+    color: #000 !important;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.react-tel-input .flag-dropdown {
+    background-color: #fff !important;
+    border-right: 1px solid #ccc;
+}
+
+.react-tel-input .selected-flag {
+    background-color: #fff !important;
+}
+
+.react-tel-input .country-list {
+    background-color: #fff !important;
+    color: #000 !important;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.react-tel-input .country-list .country {
+    color: #000 !important;
+    background-color: #fff !important;
+}
+
+.react-tel-input .country-list .country:hover {
+    background-color: #f0f0f0 !important;
     color: #000 !important;
 }
 
-.react-phone-input-2 .country-list {
-    border-radius: 0 0 5px 5px;
+.react-tel-input .country-list .country.highlight {
+    background-color: #e0e0e0 !important;
 }
 
-.react-phone-input-2 input {
-    background: #fff !important;
-    color: #000 !important;
+@media (max-width: 768px) {
+    .react-tel-input .country-list .country {
+        font-size: 14px;
+    }
 }
