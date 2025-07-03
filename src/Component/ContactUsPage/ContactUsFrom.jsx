@@ -286,6 +286,7 @@ export const ContactUsForm = () => {
   const { apiUrl } = useContext(AppContext);
   const [phoneCountry, setPhoneCountry] = useState("bd");
   const [showAboutService, setShowAboutService] = useState(false);
+  const [submittedOnce, setSubmittedOnce] = useState(false);
 
   const formik = useFormik({
     initialValues: {
@@ -306,13 +307,6 @@ export const ContactUsForm = () => {
       if (!values.service) errors.service = "Service is required";
       if (values.service === "Other" && !values.aboutService) {
         errors.aboutService = "About the service is required";
-      }
-      // Bangladeshi number validation: must be 10 chars for BD
-      if (phoneCountry === "bd") {
-        if (!/^\d{10}$/.test(values.phoneNumber)) {
-          errors.phoneNumber =
-            "Bangladeshi number must be 10 digits after +880";
-        }
       }
       return errors;
     },
@@ -359,9 +353,6 @@ export const ContactUsForm = () => {
   };
 
   const handlePhoneChange = (phone, countryData) => {
-    if (countryData?.countryCode?.toLowerCase() === "bd" && phone.length > 10) {
-      return;
-    }
     formik.setFieldValue("phoneNumber", phone);
     const cc = countryData?.countryCode?.toLowerCase() || "bd";
     setPhoneCountry(cc);
@@ -391,12 +382,10 @@ export const ContactUsForm = () => {
     formik.setFieldValue("budget", val);
   };
 
-  // Show validation errors only after submit attempt
-  const [submittedOnce, setSubmittedOnce] = useState(false);
-
   const handleSubmit = (e) => {
+    e.preventDefault();
     setSubmittedOnce(true);
-    formik.handleSubmit(e);
+    formik.handleSubmit();
   };
 
   return (
@@ -419,17 +408,7 @@ export const ContactUsForm = () => {
             autoComplete="off"
           />
           {submittedOnce && formik.errors.fullName && (
-            <div
-              className="error-message"
-              style={{
-                color: "#FC092C",
-                marginTop: 2,
-                marginBottom: 2,
-                fontSize: 13,
-              }}
-            >
-              {formik.errors.fullName}
-            </div>
+            <div className="error-message">{formik.errors.fullName}</div>
           )}
 
           <PhoneInput
@@ -449,20 +428,9 @@ export const ContactUsForm = () => {
             className="contactus_input_fild"
             disableCountryCode={false}
             disableDropdown={false}
-            masks={{ bd: "... ... ...." }}
           />
           {submittedOnce && formik.errors.phoneNumber && (
-            <div
-              className="error-message"
-              style={{
-                color: "#FC092C",
-                marginTop: 2,
-                marginBottom: 2,
-                fontSize: 13,
-              }}
-            >
-              {formik.errors.phoneNumber}
-            </div>
+            <div className="error-message">{formik.errors.phoneNumber}</div>
           )}
 
           <input
@@ -500,17 +468,7 @@ export const ContactUsForm = () => {
             ))}
           </select>
           {submittedOnce && formik.errors.service && (
-            <div
-              className="error-message"
-              style={{
-                color: "#FC092C",
-                marginTop: 2,
-                marginBottom: 2,
-                fontSize: 13,
-              }}
-            >
-              {formik.errors.service}
-            </div>
+            <div className="error-message">{formik.errors.service}</div>
           )}
           {showAboutService && (
             <>
@@ -582,6 +540,7 @@ export const ContactUsForm = () => {
               ))}
             </select>
           </div>
+
           <textarea
             name="note"
             onChange={formik.handleChange}
