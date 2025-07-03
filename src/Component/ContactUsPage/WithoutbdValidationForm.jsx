@@ -308,14 +308,6 @@ export const ContactUsForm = () => {
       if (values.service === "Other" && !values.aboutService) {
         errors.aboutService = "About the service is required";
       }
-      // Bangladeshi number validation: must be 10 digits after +880 (excluding spaces)
-      if (phoneCountry === "bd") {
-        const digitsOnly = values.phoneNumber.replace(/\D/g, "");
-        if (!/^880\d{10}$/.test(digitsOnly)) {
-          errors.phoneNumber =
-            "Bangladeshi number must be 10 digits after +880";
-        }
-      }
       return errors;
     },
     onSubmit: async (values, { resetForm }) => {
@@ -361,27 +353,15 @@ export const ContactUsForm = () => {
   };
 
   const handlePhoneChange = (phone, countryData) => {
-    const cc = countryData?.countryCode?.toLowerCase() || "bd";
-
-    // For Bangladesh, allow formatting with spaces but ensure max length
-    if (cc === "bd") {
-      const digitsOnly = phone.replace(/\D/g, "");
-      if (digitsOnly.length > 13) {
-        // +880 (3) + 10 digits = 13 total
-        return;
-      }
-    }
-    
     formik.setFieldValue("phoneNumber", phone);
+    const cc = countryData?.countryCode?.toLowerCase() || "bd";
     setPhoneCountry(cc);
-    
     if (cc === "bd") {
       formik.setFieldValue("currency", "BDT");
     } else {
       formik.setFieldValue("currency", countryToCurrency[cc] || "USD");
     }
   };
-  
 
   const getCurrencySymbol = () => {
     const currency = popularCurrencies.find(
