@@ -1,0 +1,15 @@
+.react-phone-input-2 .flag-dropdown,
+.react-phone-input-2 .selected-flag,
+.react-phone-input-2 .country-list {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+.react-phone-input-2 .country-list {
+    border-radius: 0 0 5px 5px;
+}
+
+.react-phone-input-2 input {
+    background: #fff !important;
+    color: #000 !important;
+}

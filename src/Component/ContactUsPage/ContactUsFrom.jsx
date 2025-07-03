@@ -1,11 +1,11 @@
-import React, { useContext, useState, useEffect } from "react";
+import { useContext, useState, useEffect } from "react";
 import { useFormik } from "formik";
 import axios from "axios";
 import PhoneInput from "react-phone-input-2";
 import { AppContext } from "../../AppContext";
 import "react-phone-input-2/lib/style.css";
+import "./ContactUsForm.css";
 
-// countryToCurrency, popularCurrencies, serviceOptions as before...
 const countryToCurrency = {
   af: "AFN", // Afghanistan
   al: "ALL", // Albania
@@ -277,15 +277,17 @@ const serviceOptions = [
   "I want to design & develop my website.",
   "I need Page moderation service",
   "I need social media marketing services.",
+  "Other",
 ];
 
 export const ContactUsForm = () => {
   const { apiUrl } = useContext(AppContext);
   const [errorMessage, setErrorMessage] = useState(null);
   const [submitMessage, setSubmitMessage] = useState("");
-  const [phoneCountry, setPhoneCountry] = useState("");
+  const [phoneCountry, setPhoneCountry] = useState("bd");
+  const [showAboutService, setShowAboutService] = useState(false);
 
-  // Automatically hide messages after 4 seconds
+  // Hide messages after 4 seconds
   useEffect(() => {
     let timer;
     if (errorMessage || submitMessage) {
@@ -297,6 +299,12 @@ export const ContactUsForm = () => {
     return () => clearTimeout(timer);
   }, [errorMessage, submitMessage]);
 
+  // Set BD defaults on mount
+  useEffect(() => {
+    formik.setFieldValue("currency", "BDT");
+    setPhoneCountry("bd");
+  }, []);
+
   const formik = useFormik({
     initialValues: {
       fullName: "",
@@ -304,14 +312,16 @@ export const ContactUsForm = () => {
       email: "",
       websiteLink: "",
       budget: "",
-      currency: "USD",
+      currency: "BDT",
       service: "",
+      aboutService: "",
       note: "",
     },
     onSubmit: async (values, { resetForm }) => {
       try {
         const payload = {
           ...values,
+          aboutService: values.service === "Other" ? values.aboutService : null,
           phoneCountry,
         };
         const response = await axios.post(
@@ -329,36 +339,51 @@ export const ContactUsForm = () => {
         setSubmitMessage("");
       }
       resetForm();
+      setShowAboutService(false);
     },
   });
 
   const handlePhoneChange = (phone, countryData) => {
     formik.setFieldValue("phoneNumber", phone);
-    setPhoneCountry(countryData?.countryCode?.toLowerCase() || "");
-    if (countryData?.countryCode) {
-      const countryCode = countryData.countryCode.toLowerCase();
-      const defaultCurrency = countryToCurrency[countryCode] || "USD";
-      formik.setFieldValue("currency", defaultCurrency);
-    }
+    const cc = countryData?.countryCode?.toLowerCase() || "bd";
+    setPhoneCountry(cc);
+    // If country changes, set currency to local currency
+    formik.setFieldValue("currency", countryToCurrency[cc] || "BDT");
   };
 
   const getCurrencySymbol = () => {
     const currency = popularCurrencies.find(
       (c) => c.code === formik.values.currency
     );
-    return currency?.symbol || "$";
+    return currency?.symbol || "৳";
   };
 
   const getCurrencyName = () => {
     const currency = popularCurrencies.find(
       (c) => c.code === formik.values.currency
     );
-    return currency?.name || "US Dollar";
+    return currency?.name || "Bangladeshi Taka";
   };
 
   const handleBudgetChange = (e) => {
     const val = e.target.value.replace(/[^\d.]/g, "");
     formik.setFieldValue("budget", val);
+  };
+
+  const handleServiceChange = (e) => {
+    const val = e.target.value;
+    formik.setFieldValue("service", val);
+    setShowAboutService(val === "Other");
+    if (val !== "Other") formik.setFieldValue("aboutService", "");
+  };
+
+  // PhoneInput style override: all backgrounds white, text black
+  const phoneInputStyle = {
+    background: "#fff",
+    color: "#000",
+    borderRadius: "5px",
+    border: "1px solid #ddd",
+    width: "100%",
   };
 
   return (
@@ -418,7 +443,7 @@ export const ContactUsForm = () => {
             required
           />
           <PhoneInput
-            country={"us"}
+            country={"bd"}
             value={formik.values.phoneNumber}
             onChange={handlePhoneChange}
             enableSearch={true}
@@ -429,6 +454,7 @@ export const ContactUsForm = () => {
             }}
             className="contactus_input_fild"
           />
+
           <input
             type="email"
             id="email"
@@ -447,10 +473,11 @@ export const ContactUsForm = () => {
             placeholder="Page/Website Link"
             className="contactus_input_fild"
           />
+
           <select
             name="service"
             value={formik.values.service}
-            onChange={formik.handleChange}
+            onChange={handleServiceChange}
             className="contactus_input_fild"
             required
           >
@@ -461,6 +488,18 @@ export const ContactUsForm = () => {
               </option>
             ))}
           </select>
+          {showAboutService && (
+            <input
+              type="text"
+              name="aboutService"
+              placeholder="About the service"
+              className="contactus_input_fild"
+              onChange={formik.handleChange}
+              value={formik.values.aboutService}
+              required
+            />
+          )}
+
           <div style={{ display: "flex", gap: "10px", marginBottom: "1.1rem" }}>
             <div style={{ position: "relative", flex: 1 }}>
               <input

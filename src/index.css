@@ -142,7 +142,7 @@ a {
 
 .univarsal_text_div {
   color: var(--text-color);
-  padding-bottom: 2.3rem;
+  padding-bottom: 2rem;
 }
 
 .univarsal_text_div h1 {
@@ -2320,10 +2320,30 @@ a {
   position: relative;
 }
 
+@media (max-width: 767.98px) {
+  .contactus_input_fild_div {
+    order: 1;
+  }
+
+  .contactus_text_div {
+    order: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .contactus_input_fild_div {
+    order: 2;
+  }
+
+  .contactus_text_div {
+    order: 1;
+  }
+}
+
 .contactUsCenterGradientRoundedPosition {
   position: absolute;
-  left: 20px;
-  top: 21px;
+  left: 10px;
+  top: 11px;
 }
 
 .contactus_input_section {
