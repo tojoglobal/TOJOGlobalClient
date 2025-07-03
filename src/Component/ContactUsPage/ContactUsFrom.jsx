@@ -5,6 +5,7 @@ import PhoneInput from "react-phone-input-2";
 import { AppContext } from "../../AppContext";
 import "react-phone-input-2/lib/style.css";
 import "./ContactUsForm.css";
+import { toast } from "react-hot-toast";
 
 const countryToCurrency = {
   af: "AFN", // Afghanistan
@@ -282,27 +283,14 @@ const serviceOptions = [
 
 export const ContactUsForm = () => {
   const { apiUrl } = useContext(AppContext);
-  const [errorMessage, setErrorMessage] = useState(null);
-  const [submitMessage, setSubmitMessage] = useState("");
   const [phoneCountry, setPhoneCountry] = useState("bd");
   const [showAboutService, setShowAboutService] = useState(false);
-
-  // Hide messages after 4 seconds
-  useEffect(() => {
-    let timer;
-    if (errorMessage || submitMessage) {
-      timer = setTimeout(() => {
-        setErrorMessage(null);
-        setSubmitMessage("");
-      }, 4000);
-    }
-    return () => clearTimeout(timer);
-  }, [errorMessage, submitMessage]);
 
   // Set BD defaults on mount
   useEffect(() => {
     formik.setFieldValue("currency", "BDT");
     setPhoneCountry("bd");
+    // eslint-disable-next-line
   }, []);
 
   const formik = useFormik({
@@ -329,14 +317,10 @@ export const ContactUsForm = () => {
           payload
         );
         if (response.data.Status) {
-          setErrorMessage(null);
-          setSubmitMessage("Your request has been submitted successfully.");
+          toast.success("Your request has been submitted successfully.");
         }
       } catch (error) {
-        setErrorMessage(
-          error?.response?.data?.Error || "Something went wrong."
-        );
-        setSubmitMessage("");
+        toast.error(error?.response?.data?.Error || "Something went wrong.");
       }
       resetForm();
       setShowAboutService(false);
@@ -347,7 +331,6 @@ export const ContactUsForm = () => {
     formik.setFieldValue("phoneNumber", phone);
     const cc = countryData?.countryCode?.toLowerCase() || "bd";
     setPhoneCountry(cc);
-    // If country changes, set currency to local currency
     formik.setFieldValue("currency", countryToCurrency[cc] || "BDT");
   };
 
@@ -393,44 +376,6 @@ export const ContactUsForm = () => {
       </div>
       <div className="contactus_input_section">
         <h3 className="text-center">Book a Free Consultation</h3>
-        {errorMessage && (
-          <p
-            className="error-message"
-            style={{
-              background: "#ffe2e2",
-              color: "#c0392b",
-              border: "1px solid #fa9e9e",
-              borderRadius: "6px",
-              padding: "8px 12px",
-              marginBottom: "12px",
-              fontWeight: 500,
-              boxShadow: "0 1px 2px rgba(220,0,0,0.04)",
-              fontSize: "1rem",
-              letterSpacing: ".01em",
-            }}
-          >
-            {errorMessage}
-          </p>
-        )}
-        {submitMessage && !errorMessage && (
-          <p
-            className="success-message"
-            style={{
-              background: "#eafde7",
-              color: "#267a2a",
-              border: "1px solid #81e376",
-              borderRadius: "6px",
-              padding: "8px 12px",
-              marginBottom: "12px",
-              fontWeight: 500,
-              boxShadow: "0 1px 2px rgba(39,174,96,0.04)",
-              fontSize: "1rem",
-              letterSpacing: ".01em",
-            }}
-          >
-            {submitMessage}
-          </p>
-        )}
         <form onSubmit={formik.handleSubmit} encType="multipart/form-data">
           <input
             type="text"
