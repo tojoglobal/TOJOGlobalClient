@@ -5,11 +5,11 @@ import { FaLocationDot } from "react-icons/fa6";
 import { Helmet } from "react-helmet-async";
 import { FaXTwitter, FaLinkedin } from "react-icons/fa6";
 import { FaFacebookF, FaTelegramPlane } from "react-icons/fa";
-import { ContactUsFrom } from "./ContactUsFrom";
+import { ContactUsForm } from "./ContactUsFrom";
 
 const ContactUS = () => {
   return (
-    <>
+    <div>
       <Helmet>
         <title>TOJO Global - Contact Us</title>
       </Helmet>
@@ -96,13 +96,13 @@ const ContactUS = () => {
                 </div>
               </div>
               <div className="col-sm-12 col-md-6 contactus_input_fild_div">
-                <ContactUsFrom />
+                <ContactUsForm />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

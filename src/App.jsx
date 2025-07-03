@@ -31,7 +31,6 @@ import Package from "./Component/Services/Package/Package";
 import Listing from "./Component/Services/Listing/Listing";
 import Artical from "./Component/BlogPage/Artical/Artical";
 import ScrollToTop from "./Component/UniversalComponent/ScrollToTop/ScrollToTop";
-import { HelmetProvider } from "react-helmet-async";
 import JobDescription from "./Component/CareerPage/JobDescription";
 import ApplyFrom from "./Component/CareerPage/ApplyFrom";
 import PrivacyPolicy from "./Component/PrivacyPolicy/PrivacyPolicy";
@@ -210,7 +209,6 @@ const AnimatedRoutes = () => {
 
 const App = () => {
   return (
-    <HelmetProvider>
       <AppProvider>
         <Router
           future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
@@ -222,7 +220,6 @@ const App = () => {
           <Footer />
         </Router>
       </AppProvider>
-    </HelmetProvider>
   );
 };
 

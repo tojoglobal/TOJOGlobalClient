@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactUsFrom } from "../ContactUsPage/ContactUsFrom";
+import { ContactUsForm } from "../ContactUsPage/ContactUsFrom";
 
 const LetsWork = () => {
   return (
@@ -26,7 +26,7 @@ const LetsWork = () => {
             className="col-sm-12 col-lg-6 contactus_input_fild_div"
             data-aos="fade-down"
           >
-            <ContactUsFrom />
+            <ContactUsForm />
           </div>
         </div>
       </div>
