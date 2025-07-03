@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { useFormik } from "formik";
 import axios from "axios";
 import PhoneInput from "react-phone-input-2";
@@ -285,6 +285,18 @@ export const ContactUsForm = () => {
   const [submitMessage, setSubmitMessage] = useState("");
   const [phoneCountry, setPhoneCountry] = useState("");
 
+  // Automatically hide messages after 4 seconds
+  useEffect(() => {
+    let timer;
+    if (errorMessage || submitMessage) {
+      timer = setTimeout(() => {
+        setErrorMessage(null);
+        setSubmitMessage("");
+      }, 4000);
+    }
+    return () => clearTimeout(timer);
+  }, [errorMessage, submitMessage]);
+
   const formik = useFormik({
     initialValues: {
       fullName: "",
@@ -356,9 +368,43 @@ export const ContactUsForm = () => {
       </div>
       <div className="contactus_input_section">
         <h3 className="text-center">Book a Free Consultation</h3>
-        {errorMessage && <p className="error-message">{errorMessage}</p>}
+        {errorMessage && (
+          <p
+            className="error-message"
+            style={{
+              background: "#ffe2e2",
+              color: "#c0392b",
+              border: "1px solid #fa9e9e",
+              borderRadius: "6px",
+              padding: "8px 12px",
+              marginBottom: "12px",
+              fontWeight: 500,
+              boxShadow: "0 1px 2px rgba(220,0,0,0.04)",
+              fontSize: "1rem",
+              letterSpacing: ".01em",
+            }}
+          >
+            {errorMessage}
+          </p>
+        )}
         {submitMessage && !errorMessage && (
-          <p className="success-message">{submitMessage}</p>
+          <p
+            className="success-message"
+            style={{
+              background: "#eafde7",
+              color: "#267a2a",
+              border: "1px solid #81e376",
+              borderRadius: "6px",
+              padding: "8px 12px",
+              marginBottom: "12px",
+              fontWeight: 500,
+              boxShadow: "0 1px 2px rgba(39,174,96,0.04)",
+              fontSize: "1rem",
+              letterSpacing: ".01em",
+            }}
+          >
+            {submitMessage}
+          </p>
         )}
         <form onSubmit={formik.handleSubmit} encType="multipart/form-data">
           <input
