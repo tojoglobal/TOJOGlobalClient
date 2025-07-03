@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useFormik } from "formik";
 import axios from "axios";
 import PhoneInput from "react-phone-input-2";
@@ -272,6 +272,7 @@ const popularCurrencies = [
   { code: "CNY", symbol: "¥", name: "Chinese Yuan" },
   { code: "SGD", symbol: "S$", name: "Singapore Dollar" },
 ];
+
 const serviceOptions = [
   "I need a website",
   "I need a WordPress website",
@@ -286,13 +287,6 @@ export const ContactUsForm = () => {
   const [phoneCountry, setPhoneCountry] = useState("bd");
   const [showAboutService, setShowAboutService] = useState(false);
 
-  // Set BD defaults on mount
-  useEffect(() => {
-    formik.setFieldValue("currency", "BDT");
-    setPhoneCountry("bd");
-    // eslint-disable-next-line
-  }, []);
-
   const formik = useFormik({
     initialValues: {
       fullName: "",
@@ -304,6 +298,23 @@ export const ContactUsForm = () => {
       service: "",
       aboutService: "",
       note: "",
+    },
+    validate: (values) => {
+      const errors = {};
+      if (!values.fullName) errors.fullName = "Full name is required";
+      if (!values.phoneNumber) errors.phoneNumber = "Phone number is required";
+      if (!values.service) errors.service = "Service is required";
+      if (values.service === "Other" && !values.aboutService) {
+        errors.aboutService = "About the service is required";
+      }
+      // Bangladeshi number validation: must be 10 chars for BD
+      if (phoneCountry === "bd") {
+        if (!/^\d{10}$/.test(values.phoneNumber)) {
+          errors.phoneNumber =
+            "Bangladeshi number must be 10 digits after +880";
+        }
+      }
+      return errors;
     },
     onSubmit: async (values, { resetForm }) => {
       try {
@@ -325,27 +336,54 @@ export const ContactUsForm = () => {
       resetForm();
       setShowAboutService(false);
     },
+    validateOnChange: false,
+    validateOnBlur: false,
   });
 
+  useEffect(() => {
+    formik.setFieldValue("currency", "BDT");
+    setPhoneCountry("bd");
+    // eslint-disable-next-line
+  }, []);
+
+  useEffect(() => {
+    setShowAboutService(formik.values.service === "Other");
+  }, [formik.values.service]);
+
+  const phoneInputStyle = {
+    background: "#fff",
+    color: "#000",
+    borderRadius: "1rem",
+    border: "1px solid #ccc",
+    width: "100%",
+  };
+
   const handlePhoneChange = (phone, countryData) => {
+    if (countryData?.countryCode?.toLowerCase() === "bd" && phone.length > 10) {
+      return;
+    }
     formik.setFieldValue("phoneNumber", phone);
     const cc = countryData?.countryCode?.toLowerCase() || "bd";
     setPhoneCountry(cc);
-    formik.setFieldValue("currency", countryToCurrency[cc] || "BDT");
+    if (cc === "bd") {
+      formik.setFieldValue("currency", "BDT");
+    } else {
+      formik.setFieldValue("currency", countryToCurrency[cc] || "USD");
+    }
   };
 
   const getCurrencySymbol = () => {
     const currency = popularCurrencies.find(
       (c) => c.code === formik.values.currency
     );
-    return currency?.symbol || "৳";
+    return currency?.symbol || "$";
   };
 
   const getCurrencyName = () => {
     const currency = popularCurrencies.find(
       (c) => c.code === formik.values.currency
     );
-    return currency?.name || "Bangladeshi Taka";
+    return currency?.name || "US Dollar";
   };
 
   const handleBudgetChange = (e) => {
@@ -353,20 +391,12 @@ export const ContactUsForm = () => {
     formik.setFieldValue("budget", val);
   };
 
-  const handleServiceChange = (e) => {
-    const val = e.target.value;
-    formik.setFieldValue("service", val);
-    setShowAboutService(val === "Other");
-    if (val !== "Other") formik.setFieldValue("aboutService", "");
-  };
+  // Show validation errors only after submit attempt
+  const [submittedOnce, setSubmittedOnce] = useState(false);
 
-  // PhoneInput style override: all backgrounds white, text black
-  const phoneInputStyle = {
-    background: "#fff",
-    color: "#000",
-    borderRadius: "5px",
-    border: "1px solid #ddd",
-    width: "100%",
+  const handleSubmit = (e) => {
+    setSubmittedOnce(true);
+    formik.handleSubmit(e);
   };
 
   return (
@@ -376,17 +406,32 @@ export const ContactUsForm = () => {
       </div>
       <div className="contactus_input_section">
         <h3 className="text-center">Book a Free Consultation</h3>
-        <form onSubmit={formik.handleSubmit} encType="multipart/form-data">
+        <form onSubmit={handleSubmit} encType="multipart/form-data" noValidate>
           <input
             type="text"
             id="fullName"
             name="fullName"
             onChange={formik.handleChange}
             value={formik.values.fullName}
-            placeholder="Full Name *"
+            placeholder="Full Name"
             className="contactus_input_fild"
             required
+            autoComplete="off"
           />
+          {submittedOnce && formik.errors.fullName && (
+            <div
+              className="error-message"
+              style={{
+                color: "#FC092C",
+                marginTop: 2,
+                marginBottom: 2,
+                fontSize: 13,
+              }}
+            >
+              {formik.errors.fullName}
+            </div>
+          )}
+
           <PhoneInput
             country={"bd"}
             value={formik.values.phoneNumber}
@@ -397,8 +442,28 @@ export const ContactUsForm = () => {
               required: true,
               autoFocus: false,
             }}
+            containerStyle={phoneInputStyle}
+            inputStyle={phoneInputStyle}
+            buttonStyle={{ background: "#fff", border: "none" }}
+            dropdownStyle={{ background: "#fff", color: "#000" }}
             className="contactus_input_fild"
+            disableCountryCode={false}
+            disableDropdown={false}
+            masks={{ bd: "... ... ...." }}
           />
+          {submittedOnce && formik.errors.phoneNumber && (
+            <div
+              className="error-message"
+              style={{
+                color: "#FC092C",
+                marginTop: 2,
+                marginBottom: 2,
+                fontSize: 13,
+              }}
+            >
+              {formik.errors.phoneNumber}
+            </div>
+          )}
 
           <input
             type="email"
@@ -408,6 +473,7 @@ export const ContactUsForm = () => {
             value={formik.values.email}
             placeholder="Work Email"
             className="contactus_input_fild"
+            autoComplete="off"
           />
           <input
             type="text"
@@ -417,32 +483,61 @@ export const ContactUsForm = () => {
             value={formik.values.websiteLink}
             placeholder="Page/Website Link"
             className="contactus_input_fild"
+            autoComplete="off"
           />
-
           <select
             name="service"
             value={formik.values.service}
-            onChange={handleServiceChange}
+            onChange={formik.handleChange}
             className="contactus_input_fild"
             required
           >
-            <option value="">Select Service *</option>
+            <option value="">Select Service</option>
             {serviceOptions.map((service, idx) => (
               <option value={service} key={idx}>
                 {service}
               </option>
             ))}
           </select>
+          {submittedOnce && formik.errors.service && (
+            <div
+              className="error-message"
+              style={{
+                color: "#FC092C",
+                marginTop: 2,
+                marginBottom: 2,
+                fontSize: 13,
+              }}
+            >
+              {formik.errors.service}
+            </div>
+          )}
           {showAboutService && (
-            <input
-              type="text"
-              name="aboutService"
-              placeholder="About the service"
-              className="contactus_input_fild"
-              onChange={formik.handleChange}
-              value={formik.values.aboutService}
-              required
-            />
+            <>
+              <input
+                type="text"
+                name="aboutService"
+                placeholder="About the service"
+                className="contactus_input_fild"
+                value={formik.values.aboutService}
+                onChange={formik.handleChange}
+                required
+                autoComplete="off"
+              />
+              {submittedOnce && formik.errors.aboutService && (
+                <div
+                  className="error-message"
+                  style={{
+                    color: "#FC092C",
+                    marginTop: 2,
+                    marginBottom: 2,
+                    fontSize: 13,
+                  }}
+                >
+                  {formik.errors.aboutService}
+                </div>
+              )}
+            </>
           )}
 
           <div style={{ display: "flex", gap: "10px", marginBottom: "1.1rem" }}>
@@ -473,7 +568,6 @@ export const ContactUsForm = () => {
                 {getCurrencySymbol()}
               </span>
             </div>
-
             <select
               name="currency"
               value={formik.values.currency}
@@ -488,7 +582,6 @@ export const ContactUsForm = () => {
               ))}
             </select>
           </div>
-
           <textarea
             name="note"
             onChange={formik.handleChange}
@@ -496,8 +589,8 @@ export const ContactUsForm = () => {
             placeholder="Note"
             className="contactus_input_fild"
             rows={3}
+            autoComplete="off"
           />
-
           <button type="submit" className="meassageSentbtn">
             <span className="pt-1">Submit</span>
             <img
