@@ -2363,6 +2363,10 @@ a {
   box-sizing: border-box;
 }
 
+.contactus_input_fild:focus {
+  outline: none;
+}
+
 .react-tel-input {
   padding: 0rem;
 }
