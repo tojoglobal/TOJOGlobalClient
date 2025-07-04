@@ -67,6 +67,35 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.tojoglobal.com" />
 
+    <!-- facebook pixel setup -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "3070987506408968");
+      fbq("track", "PageView");
+    </script>
+
     <!-- Schema Markup for SEO -->
     <script type="application/ld+json">
       {
@@ -89,6 +118,16 @@
     </script>
   </head>
   <body>
+    <!-- ✅ Fallback for users with JavaScript disabled -->
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=3070987506408968&ev=PageView&noscript=1"
+      />
+    </noscript>
+
     <div itemscope itemtype="https://schema.org/WebSite">
       <meta itemprop="url" content="https://www.tojoglobal.com" />
       <meta itemprop="name" content="TOJO Global" />
