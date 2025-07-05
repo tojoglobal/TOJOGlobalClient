@@ -39,11 +39,11 @@ const WebContentWrting = () => {
             ) : (
               <>
                 <h1>
-                  Strengthen Your Brand with Tojo Global’s Expert Content
+                  Strengthen Your Brand with TOJO Global’s Expert Content
                   Writing Services
                 </h1>
                 <p>
-                  Tojo Global creates powerful content writing solutions that
+                  TOJO Global creates powerful content writing solutions that
                   enhance your brand's voice and resonate with your audience.
                 </p>
               </>
@@ -105,7 +105,7 @@ const WebContentWrting = () => {
                 }),
               }}
             >
-              Why Choose Tojo Global for Blog Writing Services?
+              Why Choose TOJO Global for Blog Writing Services?
             </h2>
             <p
               style={{
@@ -116,7 +116,7 @@ const WebContentWrting = () => {
                 }),
               }}
             >
-              At Tojo Global, we provide a user-friendly platform where talented
+              At TOJO Global, we provide a user-friendly platform where talented
               freelance writers create blog content tailored to your brand’s
               voice and goals. They follow your guidelines and deliver engaging
               blog posts that are ready to be published and shared on your
@@ -362,7 +362,7 @@ const WebContentWrting = () => {
             </p>
           </div>
           <div className="webContentWriting_service_second_text_div">
-            <h3>Why Choose Tojo Global for Web Content Writing Services?</h3>
+            <h3>Why Choose TOJO Global for Web Content Writing Services?</h3>
             <p>
               We offer a simple platform where expert writers create customized
               content that matches your brand’s tone and goals. Our team
@@ -479,7 +479,7 @@ const WebContentWrting = () => {
           <div className="webContentWriting_seoContent_main_text_div">
             {/* top text heding */}
             <div>
-              <h3>What Tojo Global Offers</h3>
+              <h3>What TOJO Global Offers</h3>
               <div className="bottom_divider">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -617,7 +617,7 @@ const WebContentWrting = () => {
         {/* light system */}
         <div className="container webContentWriting_articalWriteOffers_light_text_div">
           <div className="webContentWriting_articalWriteOffers_light_text">
-            <h1>What Tojo Global Offers:</h1>
+            <h1>What TOJO Global Offers:</h1>
           </div>
           <div className="webContentWriting_articalWriteOffers_light_outline">
             {/* frist outline  */}
@@ -1001,7 +1001,7 @@ const WebContentWrting = () => {
         </div>
         {/* socail media post  */}
         <div className="webContentWriting_socailMediaPost_main_div">
-          <h1>At Tojo Global offer</h1>
+          <h1>At TOJO Global offer</h1>
           <div className="webContentWriting_socailMediaPost_rounded_main_div">
             <div className="webContentWriting_socailMediaPost_rounded_div">
               {/* 01 */}
@@ -1140,7 +1140,7 @@ const WebContentWrting = () => {
         </div>
       </section>
 
-      {/* Why Choose Tojo Global for White Paper Writing Services? */}
+      {/* Why Choose TOJO Global for White Paper Writing Services? */}
       <section className="container">
         {isMobileView ? (
           <>
@@ -1164,7 +1164,7 @@ const WebContentWrting = () => {
                 >
                   White papers are powerful tools for educating your audience,
                   building trust, and establishing your business as an industry
-                  leader. At Tojo Global, we make it easy for you to create
+                  leader. At TOJO Global, we make it easy for you to create
                   high-quality white papers that reflect your brand and resonate
                   with your audience. Whether you need support for your in-house
                   team or want us to manage the entire process, our talented
@@ -1178,7 +1178,7 @@ const WebContentWrting = () => {
                     }),
                   }}
                 >
-                  Why Choose Tojo Global for White Paper Writing Services?
+                  Why Choose TOJO Global for White Paper Writing Services?
                 </h2>
                 <p
                   style={{
@@ -1250,7 +1250,7 @@ const WebContentWrting = () => {
               <p>
                 White papers are powerful tools for educating your audience,
                 building trust, and establishing your business as an industry
-                leader. At Tojo Global, we make it easy for you to create
+                leader. At TOJO Global, we make it easy for you to create
                 high-quality white papers that reflect your brand and resonate
                 with your audience. Whether you need support for your in-house
                 team or want us to manage the entire process, our talented
@@ -1258,7 +1258,7 @@ const WebContentWrting = () => {
               </p>
             </div>
             <div className="webContentWriting_whitePaperContent_text_div">
-              <h2>Why Choose Tojo Global for White Paper Writing Services?</h2>
+              <h2>Why Choose TOJO Global for White Paper Writing Services?</h2>
               <p>
                 We offer a simple platform where expert writers create
                 customized content that matches your brand’s tone and goals. Our
@@ -1772,7 +1772,7 @@ const WebContentWrting = () => {
                     Case studies are powerful tools for showcasing your
                     business's success stories. They help you highlight
                     real-world results, build trust with potential clients, and
-                    demonstrate your expertise in the industry. At Tojo Global,
+                    demonstrate your expertise in the industry. At TOJO Global,
                     we understand the importance of well-crafted case studies.
                     Our skilled team is ready to create compelling stories that
                     show the value of your products or services.
@@ -1785,7 +1785,7 @@ const WebContentWrting = () => {
                       }),
                     }}
                   >
-                    Why Choose Tojo Global for Case Study Writing?
+                    Why Choose TOJO Global for Case Study Writing?
                   </h2>
                   <p
                     style={{
@@ -1816,16 +1816,16 @@ const WebContentWrting = () => {
                     Case studies are powerful tools for showcasing your
                     business's success stories. They help you highlight
                     real-world results, build trust with potential clients, and
-                    demonstrate your expertise in the industry. At Tojo Global,
+                    demonstrate your expertise in the industry. At TOJO Global,
                     we understand the importance of well-crafted case studies.
                     Our skilled team is ready to create compelling stories that
                     show the value of your products or services.
                   </p>
                 </div>
-                {/*Why Choose Tojo Global for Case Study Writing?
+                {/*Why Choose TOJO Global for Case Study Writing?
                  */}
                 <div className="webContentWriting_caseStudies_bottom_text_div">
-                  <h2>Why Choose Tojo Global for Case Study Writing? </h2>
+                  <h2>Why Choose TOJO Global for Case Study Writing? </h2>
                   <p>
                     We offer a smooth, user-friendly service where experienced
                     writers produce case studies tailored to your business
@@ -2497,7 +2497,7 @@ const WebContentWrting = () => {
           >
             More than 60% of brands fall behind because of poor content
             strategies. Without engaging and clear content, it’s hard to stand
-            out and grow. Tojo Global is here to fix that. Our expert content
+            out and grow. TOJO Global is here to fix that. Our expert content
             writing services help your brand connect with the right audience and
             build trust. Let us guide your brand toward success with impactful
             content.

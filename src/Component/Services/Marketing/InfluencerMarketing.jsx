@@ -7,7 +7,7 @@ const InfluencerMarketing = () => {
   const { isMobileView } = useContext(AppContext);
   return (
     <main className="maindiv">
-      {/* Inspire social choices and increase sales with Tojo Global’s
+      {/* Inspire social choices and increase sales with TOJO Global’s
           influencer marketing services */}
       <section className="InfluencerMarketing_hero_section">
         <div
@@ -29,7 +29,7 @@ const InfluencerMarketing = () => {
                   <span className="headdingGradientText"> sales </span>
                 </h2>
                 <h3 className="homePageHeroSubHeadingFristText">
-                  with Tojo Global's{" "}
+                  with TOJO Global's{" "}
                 </h3>
                 <h3 className="homePageHeroSubHeadingSecondText">
                   expert influencer marketing.
@@ -49,7 +49,7 @@ const InfluencerMarketing = () => {
           ) : (
             <div>
               <h1>
-                Inspire social choices and increase sales with Tojo Global’s
+                Inspire social choices and increase sales with TOJO Global’s
                 influencer marketing services
               </h1>
               <p>

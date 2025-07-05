@@ -77,7 +77,7 @@ const Footer = () => {
               <div className="col-12 col-md-5 col-lg-4">
                 <div className="footer_menubar_col_text">
                   <div className="footer_logo_style">
-                    <img src="/tojoGlobalIcon.svg" alt="Logo" />
+                    <img src="/tojoGlobalIcon.svg" alt="TOJO_footer_Logo" />
                     <p>
                       We&#39;re your one-stop shop for all things digital,
                       offering a complete range of services - Management,

@@ -7,8 +7,8 @@ export const AppContext = createContext();
 
 // create a provider component
 export const AppProvider = ({ children }) => {
-  const [apiUrl, setApiUrl] = useState("http://localhost:8080");
-  // const [apiUrl, setApiUrl] = useState("https://api.tojoglobal.com");
+  // const [apiUrl, setApiUrl] = useState("http://localhost:8080");
+  const [apiUrl, setApiUrl] = useState("https://api.tojoglobal.com");
   const [categories, setCategories] = useState([]);
   const [timeData, setTimeData] = useState("");
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 500);

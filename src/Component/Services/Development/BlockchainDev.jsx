@@ -2074,7 +2074,7 @@ const BlockchainDev = () => {
                       specialists, and creative designers who understand the
                       intricacies of P2E game development.
                     </p>
-                    {/* text key pont why to tojo gloabl  */}
+                    {/* text key pont why to TOJO gloabl  */}
                     <div className="blockChaninPlayToEarnGameDevelopmentWhyChoose_keyPoint"></div>
                   </div>
                   {/* key point 02 */}
@@ -2104,7 +2104,7 @@ const BlockchainDev = () => {
                       goals and gaming vision, ensuring the end product is
                       perfectly aligned with your needs.
                     </p>
-                    {/* text key pont why to tojo gloabl  */}
+                    {/* text key pont why to TOJO gloabl  */}
                     <div className="blockChaninPlayToEarnGameDevelopmentWhyChoose_keyPoint"></div>
                   </div>
                   {/* key point 03 */}
@@ -2134,7 +2134,7 @@ const BlockchainDev = () => {
                       games with smooth gameplay and strong blockchain
                       integration for a great experience.
                     </p>
-                    {/* text key pont why to tojo gloabl  */}
+                    {/* text key pont why to TOJO gloabl  */}
                     <div className="blockChaninPlayToEarnGameDevelopmentWhyChoose_keyPoint"></div>
                   </div>
                   {/* key point 04*/}

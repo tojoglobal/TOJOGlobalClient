@@ -214,7 +214,7 @@ const VideoEditting = () => {
             be captured through traditional filming. Whether it's transforming a
             simple scene into a magical landscape or adding realistic digital
             effects, VFX helps tell stories in a way that captivates your
-            audience. At Tojo Global, we provide high-quality VFX services that
+            audience. At TOJO Global, we provide high-quality VFX services that
             bring your ideas to life.
           </p>
         </div>
@@ -244,7 +244,7 @@ const VideoEditting = () => {
         </div>
         <div className="sectionTopTextstyle" data-aos="fade-down">
           <h1 className="topHeadingStyle mt-4 mt-md-5">
-            Why Choose Tojo Global for VFX Services?
+            Why Choose TOJO Global for VFX Services?
           </h1>
           <p
             className="paraStyle pt-1"
@@ -674,10 +674,10 @@ const VideoEditting = () => {
             </div>
           </div>
         </div>
-        {/* Why Choose Tojo Global? */}
+        {/* Why Choose TOJO Global? */}
         <div className="sectionTopTextstyle" data-aos="fade-up">
           <h1 className="topHeadingStyle mt-4 mt-md-5">
-            Why Choose Tojo Global?{" "}
+            Why Choose TOJO Global?{" "}
           </h1>
         </div>
         {/* why choose the youtube video editor */}
@@ -1567,7 +1567,7 @@ const VideoEditting = () => {
             Podcast video editing is an essential step in creating engaging and
             professional video content for your audience. It enhances the
             overall quality of your podcast, making it look polished and
-            captivating.  Tojo Global offer podcast video editing services that
+            captivating.  TOJO Global offer podcast video editing services that
             simplify the process, saving you time and effort.
           </p>
         </div>
@@ -1918,7 +1918,7 @@ const VideoEditting = () => {
             </div>
           </div>
         </section>
-        {/*  Why choose ? prodcast Video editor in Tojo Gloabl*/}
+        {/*  Why choose ? prodcast Video editor in TOJO Gloabl*/}
         <div className="sectionTopTextstyle" data-aos="fade-up">
           <h1
             className="topHeadingStyle"
@@ -1928,7 +1928,7 @@ const VideoEditting = () => {
               }),
             }}
           >
-            Why Choose Tojo Global?
+            Why Choose TOJO Global?
           </h1>
           <p
             className="paraStyle"
@@ -1944,7 +1944,7 @@ const VideoEditting = () => {
             Here’s why we stand out:
           </p>
         </div>
-        {/*  Why choose ? prodcast Video editor in Tojo Gloabl step */}
+        {/*  Why choose ? prodcast Video editor in TOJO Gloabl step */}
         <div className="whyChoose_prodcast_video_editor_main_div">
           {/* step 1 */}
           <div
@@ -2503,7 +2503,7 @@ const VideoEditting = () => {
         <section className="brand_video_editing_offer_main_section">
           {/*  Explainer into Video text*/}
           <div className="sectionTopTextstyle" data-aos="fade-up">
-            <h1 className="topHeadingStyle"> Why Choose Tojo Global?</h1>
+            <h1 className="topHeadingStyle"> Why Choose TOJO Global?</h1>
           </div>
           {/* explainer_video_editing_whyChooseIcon svg*/}
           <div
@@ -2580,7 +2580,7 @@ const VideoEditting = () => {
           >
             Documentary video editing is all about telling a story through real
             events, interviews, and visuals. Our documentary video editing
-            service at Tojo Global turns raw footage into a polished, engaging
+            service at TOJO Global turns raw footage into a polished, engaging
             final product. We help you highlight the important moments, enhance
             the visuals, and bring your story to life.
           </p>
@@ -2764,7 +2764,7 @@ const VideoEditting = () => {
             </div>
           </div>
         </div>
-        {/*  Documentary  Why Choose Tojo Global?  text*/}
+        {/*  Documentary  Why Choose TOJO Global?  text*/}
         <div className="sectionTopTextstyle" data-aos="fade-up">
           <h1
             className="topHeadingStyle"

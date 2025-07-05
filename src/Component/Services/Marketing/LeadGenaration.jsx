@@ -68,7 +68,7 @@ const LeadGenaration = () => {
                       <span className="headdingGradientText"> marketing </span>
                     </h2>
                     <h3 className="homePageHeroSubHeadingFristText">
-                      with Tojo Global's{" "}
+                      with TOJO Global's{" "}
                     </h3>
                     <h3 className="homePageHeroSubHeadingSecondText">
                       lead Generation Service

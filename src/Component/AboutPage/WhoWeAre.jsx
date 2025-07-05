@@ -33,7 +33,7 @@ const WhoWeAre = () => {
               </h2>
 
               <p className="about_second_para">
-                Tojo Global is a successful company that specialises in custom
+                TOJO Global is a successful company that specialises in custom
                 services and is exceptionally skilled at marketing, management,
                 design, and development. We help businesses grow by coming up
                 with new ideas, being experts in our field, and always trying to

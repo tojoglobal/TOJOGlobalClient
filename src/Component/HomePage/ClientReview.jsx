@@ -6,8 +6,10 @@ export const ClientReview = () => {
     {
       clientReviewText:
         "Working with TOJO GLOBAL has been a game-changer for our brand. Their marketing expertise helped us reach our ideal audience effortlessly. Within weeks, we saw a boost in engagement and conversions.",
-      clientImage: "/Images/homePage/ReviewClientImage/ClientsImge.svg",
-      clientName: "Sebastian Horn",
+      // clientImage: "/Images/homePage/ReviewClientImage/ClientsImge.svg",
+      clientImage:
+        "https://api.faizylegend.com/uploads/1750397298657-489769667_1639746886672632_1904350922825798334_n-scaled.webp",
+      clientName: "FAIZY LEGEND",
       clientStatus: "CEO & Founder",
     },
     {
