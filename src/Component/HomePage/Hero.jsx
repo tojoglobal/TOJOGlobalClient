@@ -25,7 +25,7 @@ const Hero = () => {
             </div>
 
             <p className="hero_seconde_para">
-              Tojo Global empowers startups to stand out and thrive with a full
+              TOJO Global empowers startups to stand out and thrive with a full
               suite of digital services. Whether you're looking to explore
               crypto opportunities, elevate your marketing, craft stunning
               designs, build seamless applications, or create captivating

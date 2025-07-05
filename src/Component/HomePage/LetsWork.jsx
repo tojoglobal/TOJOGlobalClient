@@ -15,11 +15,11 @@ const LetsWork = () => {
               Together
             </h1>
             <p className="contactus_text_para text-white">
-              Want to blast your business off like a rocket? Tojo Global&#39;s
+              Want to blast your business off like a rocket? TOJO Global&#39;s
               got a secret weapon for you: an amazing custom Marketing,
               Management , Design, Development & Crypto listing plan which will
               turn heads and grow your business faster than ever. Don&#39;t
-              wait! Call or email Tojo Global and watch your success soar!
+              wait! Call or email TOJO Global and watch your success soar!
             </p>
           </div>
           <div

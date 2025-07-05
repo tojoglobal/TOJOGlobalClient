@@ -47,7 +47,7 @@ const CommunityManagement = () => {
                     }),
                   }}
                 >
-                  Tojo Global helps you grow & engage your community on Discord
+                  TOJO Global helps you grow & engage your community on Discord
                   & telegram ensuring your crypto project connects with the
                   audience in a meaningful way.
                 </p>

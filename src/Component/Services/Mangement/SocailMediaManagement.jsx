@@ -50,7 +50,7 @@ const SocailMediaManagement = () => {
                   }}
                 >
                   In today's digital age, a strong social media presence is
-                  essential. Tojo Global offers top tier Social Media Management
+                  essential. TOJO Global offers top tier Social Media Management
                   services that elevate your brand, foster engagement, and
                   deliver real results. Our expert team ensures your business
                   thrives on ever-changing digital platforms, standing out in a
@@ -67,7 +67,7 @@ const SocailMediaManagement = () => {
                 </h1>
                 <p>
                   In today's digital age, a strong social media presence is
-                  essential. Tojo Global offers top tier Social Media Management
+                  essential. TOJO Global offers top tier Social Media Management
                   services that elevate your brand, foster engagement, and
                   deliver real results. Our expert team ensures your business
                   thrives on ever-changing digital platforms, standing out in a
@@ -348,7 +348,7 @@ const SocailMediaManagement = () => {
                 }),
               }}
             >
-              Tojo Global offers a comprehensive range of social media
+              TOJO Global offers a comprehensive range of social media
               management services designed to suit businesses of all sizes. We
               tailor our approach to meet your specific goals, ensuring you get
               the most out of your social media presence.

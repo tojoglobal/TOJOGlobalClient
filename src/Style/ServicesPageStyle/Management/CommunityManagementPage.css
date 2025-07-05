@@ -92,8 +92,10 @@
   width: 36.375rem;
   height: 36.6875rem;
   border-radius: 36.6875rem;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   filter: blur(125px);
 }
 
@@ -275,9 +277,11 @@
   width: 20rem;
   height: 20rem;
   border-radius: 71.6875rem;
-  background: linear-gradient(247deg,
-      rgba(24, 201, 255, 0.705) 11.9%,
-      rgba(197, 8, 255, 0.623) 82.04%);
+  background: linear-gradient(
+    247deg,
+    rgba(24, 201, 255, 0.705) 11.9%,
+    rgba(197, 8, 255, 0.623) 82.04%
+  );
   filter: blur(125.4px);
   position: absolute;
   top: 50%;
@@ -290,8 +294,10 @@
   width: 18.68056rem;
   height: 10.38656rem;
   border-radius: 0 0 156px 156px;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   position: absolute;
   top: 112px;
   left: -17px;
@@ -386,8 +392,10 @@
   height: 6.97744rem;
   position: relative;
   border-radius: 16.68056rem;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   box-shadow: 0px 4px 15.2px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: center;
@@ -565,7 +573,7 @@
 }
 
 .communityManagement_service_offers_div:hover {
-  background: var(--BG-15, rgba(24, 200, 255, 0.10));
+  background: var(--BG-15, rgba(24, 200, 255, 0.1));
 }
 
 .communityManagement_service_offers_div::before {
@@ -573,9 +581,11 @@
   width: 3px;
   height: 9.575rem;
   border-radius: 1.625rem;
-  background: linear-gradient(247deg,
-      rgba(24, 201, 255, 0.705) 11.9%,
-      rgba(197, 8, 255, 0.623) 82.04%);
+  background: linear-gradient(
+    247deg,
+    rgba(24, 201, 255, 0.705) 11.9%,
+    rgba(197, 8, 255, 0.623) 82.04%
+  );
   position: absolute;
   left: -2px;
 }
@@ -655,8 +665,10 @@
   width: 7.6875rem;
   height: 7.6875rem;
   border-radius: 2rem;
-  background: var(--Gradient2,
-      linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%));
+  background: var(
+    --Gradient2,
+    linear-gradient(225deg, #18c8ff 14.89%, #c608ff 85.85%)
+  );
   filter: blur(4.900000095367432px);
   z-index: -1;
 }
@@ -696,7 +708,6 @@
 /* ================================== */
 /* desktop */
 @media (max-width: 1398px) {
-
   /* ...
      rules here apply to devices from 1200px to 1398px (inclusive)
       ... */
@@ -755,7 +766,6 @@
 
 /* laptop Media Queries */
 @media (max-width: 1200px) {
-
   /* ...
    rules here apply to devices from 993px to 1200px (inclusive)
       ... */
@@ -860,7 +870,6 @@
 
 /* tab device */
 @media (max-width: 992px) {
-
   /* ...
       rules here apply to devices from 769px to 992px (inclusive)
       ... */
@@ -874,7 +883,6 @@
     width: 18.875rem;
     height: 19.875rem;
   }
-
 
   .communityManagement_hero_text_div h1 {
     font-size: 2rem;
@@ -899,7 +907,6 @@
     width: 11.68056rem;
     height: 11.38656rem;
   }
-
 
   .features_cirecle p {
     font-size: 2rem;
@@ -936,7 +943,7 @@
     gap: 0.4rem;
   }
 
-  /* tojo global offer you  */
+  /* TOJO global offer you  */
   .communityManagement_service_offers_div {
     padding: 1rem;
   }
@@ -992,7 +999,6 @@
     gap: 2.37rem;
     margin-bottom: 13.6rem;
   }
-
 }
 
 /* moblie device  */
@@ -1014,11 +1020,11 @@
   }
 
   .communityManagement_hero_text_div {
-    order: 2
+    order: 2;
   }
 
   .communityManagement_hero_part_image_div {
-    order: 1
+    order: 1;
   }
 
   .communityManagement_hero_part_image_div img {
@@ -1028,10 +1034,8 @@
   }
 
   .communityManagement_second_part_image_div::before {
-
     width: 28.375rem;
     height: 35.6875rem;
-
   }
 
   .communityManagement_Crypto_project_div h1 {
@@ -1068,14 +1072,10 @@
     width: 100%;
     margin: 0 auto;
   }
-
-
 }
-
 
 /* vary small device  */
 @media (max-width: 500px) {
-
   /* ...
        rules here apply to devices from 0px to 500px (inclusive)
       ... */
@@ -1090,13 +1090,11 @@
     padding-left: 0.9rem;
   }
 
-
   .communityManagement_hero_text_style_telegram {
     font-size: 28px !important;
     font-family: var(--font-poppins) !important;
     line-height: 2rem;
   }
-
 
   /* community mangement top  */
   .communityManagement_top_part {
@@ -1108,8 +1106,6 @@
     font-size: 1.4rem;
     line-height: 120%;
   }
-
-
 
   /* hero part */
   .communityManagement_hero_part {
@@ -1161,7 +1157,6 @@
     grid-template-columns: auto;
     margin-bottom: 2.5rem;
   }
-
 
   /* management help  */
   .managementHelp {
@@ -1240,9 +1235,8 @@
     text-align: justify;
     /* word-spacing: -2px; */
     font-size: 14px;
-    line-height: 125%
+    line-height: 125%;
   }
-
 
   .communityManagement_Crypto_project_Card div:nth-child(1) {
     padding: 3.5rem 1.19rem 1.29rem 1.29rem;
@@ -1255,7 +1249,6 @@
     top: -18%;
     left: 50%;
     transform: translateX(-50%);
-
   }
 
   .communityManagement_Crypto_project_Card div:nth-child(2) {
@@ -1283,19 +1276,14 @@
     line-height: 32px;
   }
 
-
   .service_contactus_text_para {
     font-size: 14px;
     line-height: 120%;
   }
 
-
-
   .service_contactus_bottom_text_div {
     margin-top: 0.5rem;
   }
-
-
 
   .service_contactus_bottom_text_div h4 {
     font-size: 20px;
@@ -1325,15 +1313,7 @@
     width: 8.375rem;
   }
 
-
-
   .GrowthManagement_img {
     width: 2.2rem !important;
   }
-
-
-
-
-
-
 }

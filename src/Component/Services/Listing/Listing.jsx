@@ -110,7 +110,7 @@ const Listing = () => {
                 data-aos="fade-down"
               >
                 <p className="about_second_para mb-4">
-                  At Tojo Global, we have a dedicated team that specializes in
+                  At TOJO Global, we have a dedicated team that specializes in
                   listing services. We know that getting a project listed on big
                   exchanges can be hard and take a lot of time. We know how to
                   deal with these problems and get your project listed quickly

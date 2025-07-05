@@ -307,7 +307,7 @@ const SearchEngineMarketing = () => {
               to help businesses grow through effective SEM campaigns that
               elevate your brand in both organic and paid search results.
               <br />
-              On average, clients who work with Tojo Global see significant
+              On average, clients who work with TOJO Global see significant
               returns on their investments. Our advanced marketing tools help us
               continuously enhance your results by providing valuable insights,
               ensuring accurate tracking, and driving high-quality conversions.
@@ -340,7 +340,7 @@ const SearchEngineMarketing = () => {
                 }),
               }}
             >
-              For over a decade, Tojo Global has partnered with hundreds of
+              For over a decade, TOJO Global has partnered with hundreds of
               clients across various industries to achieve their marketing
               goals. We are proud to serve a diverse range of businesses, from
               small startups to established brands. Here’s how we help:

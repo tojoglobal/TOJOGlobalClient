@@ -149,7 +149,7 @@ const Logo = () => {
             data-aos="fade-up"
           >
             <h1>
-              Why Choose Tojo Global for{" "}
+              Why Choose TOJO Global for{" "}
               <span className="headdingGradientText">Logo Design</span>{" "}
               Services?
             </h1>
